@@ -1,8 +1,8 @@
 ---
 title: Configure your CI/CD Pipeline
 seo-title: Configure your CI/CD Pipeline
-description: null
-seo-description: Before you start to deploy your code, you must configure your pipeline settings from the Cloud Manager. Follow this page to configure your pipeline settings from the Cloud Manager.
+description: Follow this page to configure your pipeline settings from the Cloud Manager.
+seo-description: Before you start to deploy your code, you must configure your pipeline settings from the AEM Cloud Manager. 
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -20,7 +20,7 @@ The following page explains how to configure the **Pipeline**. To review more co
 
 ## Understanding the Flow {#understanding-the-flow}
 
-You can configure your pipeline from the **Pipeline Settings** tile in the Cloud Manager UI.
+You can configure your pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
 The Deployment Manager is responsible for setting up the pipeline. When doing so, you first select a branch from the **Git Repository**. Pipeline configuration consists of:
 
@@ -34,15 +34,15 @@ The Deployment Manager is responsible for setting up the pipeline. When doing so
 >
 >The pipeline cannot be setup until the Git repository has at least one branch.
 
-Before you start to deploy your code, you must configure your pipeline settings from the Cloud Manager.
+Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
 >You can change the pipeline settings after initial set up.
 
-### Configuring the Pipeline Settings from Cloud Manager {#configuring-the-pipeline-settings-from-cloud-manager}
+### Configuring the Pipeline Settings from [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
-Once you have setup your program using Cloud Manager UI, you are ready to setup your pipeline.
+Once you have setup your program using [!UICONTROL Cloud Manager] UI, you are ready to setup your pipeline.
 
 Follow these steps to configure the behavior and preferences for your pipeline:
 
@@ -89,27 +89,26 @@ Last Modified Date: 2018-10-08T12:38:14.680-0400
 
    This is useful for customers who have the desire for more automated processes. The available options are:
 
-    * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
-    * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-    * **Continue immediately **- If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+   * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
+   * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
+   * **Continue immediately **- If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
    Now you define the parameters controlling the production deployment. The three available options are as follows:
 
-    * **Use Go Live Approval **- A deployment must be manually approved by a business owner, project manager, or deployment manager via the Cloud Manager UI.
-    * **Use CSE Oversight** - A CSE is engaged to actually start the deployment. During pipeline setup or edit when CSE Oversight is enabled, the Deployment Manager has the option of selecting:
+   * **Use Go Live Approval **- A deployment must be manually approved by a business owner, project manager, or deployment manager via the [!UICONTROL Cloud Manager] UI.
+   * **Use CSE Oversight** - A CSE is engaged to actually start the deployment. During pipeline setup or edit when CSE Oversight is enabled, the Deployment Manager has the option of selecting:
 
-        * **Any CSE**: refers to any available CSE  
-        
-        * **My CSE**: refers to a specific CSE assigned to the customer or their backup, if the CSE is out of the office
+     * **Any CSE**: refers to any available CSE  
+     * **My CSE**: refers to a specific CSE assigned to the customer or their backup, if the CSE is out of the office
 
-    * **Scheduled** - This option allows the user to enable the scheduled production deployment.
+   * **Scheduled** - This option allows the user to enable the scheduled production deployment.
 
    >[!NOTE]
    >
    >If **Scheduled** option is selected, you can schedule your production deployment to the pipeline **after** the stage deployment (and **Use GoLive Approval**, if that has been enabled) to wait for a schedule to be set. The user can also choose to execute the production deployment immediately.
    >
    >
-   >Please refer to [**Deploy your Code**](../using/deploying-code.md), to set the deployment schedule or execute the production immediately.
+   >Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
 
    ![](assets/screen_shot_2018-08-10at22408pm.png)
 
@@ -153,8 +152,8 @@ Last Modified Date: 2018-10-08T12:38:14.680-0400
 
    For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
 
-    * Each of the 25 pages in the Popular Live Pages set will be hit 240 times - ((200 &#42; 0.5) / 25) &#42; 30 = 120
-    * Each of the 3000 pages in the New Pages set will be hit once - ((200 &#42; 0.5) / 3000) &#42; 30 = 1
+   * Each of the 25 pages in the Popular Live Pages set will be hit 240 times - `((200 &#42; 0.5) / 25) &#42; 30 = 120`
+   * Each of the 3000 pages in the New Pages set will be hit once - `((200 &#42; 0.5) / 3000) &#42; 30 = 1`
 
    ![](assets/screen_shot_2018-06-04at23503pm.png)
 
@@ -162,7 +161,7 @@ Last Modified Date: 2018-10-08T12:38:14.680-0400
 
 >[!NOTE]
 >
->Additionally, once you have setup the pipeline, you can still edit settings for the same using **Pipeline** **Settings** tile from the Cloud Manager UI.
+>Additionally, once you have setup the pipeline, you can still edit settings for the same using **Pipeline** **Settings** tile from the [!UICONTROL Cloud Manager] UI.
 
 ![](assets/screen_shot_2018-06-04at125751pm.png) 
 
@@ -170,4 +169,4 @@ Last Modified Date: 2018-10-08T12:38:14.680-0400
 
 Once you have configured the pipeline, you need to deploy your code.
 
-Please see [Deploy your Code](https://chl-a/content/help/en/experience-manager/cloud-manager/using/deploying-code.html) for more details.
+Please see [Deploy your Code](deploying-code.md) for more details.

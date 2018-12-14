@@ -1,27 +1,24 @@
 ---
 title: Notifications
 seo-title: Notifications
-description: null
-seo-description: Follow this page to learn about how the users receive notifications when a pipeline starts and completes (successfully or unsuccessfully).
+description: How users receive notifications in AEM CLoud Manager
+seo-description: Follow this page to learn about how the users receive notifications when a pipeline starts and completes - successfully or unsuccessfully - in AEM Cloud Manager.
 uuid: 73e4bb80-36c1-4408-bdbd-1ac5328359d1
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
-index: y
-internal: n
-snippet: y
 ---
 
 # Notifications{#notifications}
 
-Cloud Manager allows the users to receive notifications when a Pipeline starts and completes (successfully or unsuccessfully) as well as when the** Go-Live Approval **and** Scheduled **steps are reached. These notifications are sent through the Adobe Experience Cloud Notification system.
+[!UICONTROL Cloud Manager] allows the users to receive notifications when a Pipeline starts and completes (successfully or unsuccessfully) as well as when the** Go-Live Approval **and** Scheduled **steps are reached. These notifications are sent through the Adobe Experience Cloud Notification system.
 
 >[!NOTE]
 >
 >The approval and scheduled notifications are only sent to users in the Business Owner, Program Manager, and Deployment Manager roles.
 
-The notifications appear in a sidebar in Cloud Manager UI (User Interface) and throughout the Adobe Experience Cloud.
+The notifications appear in a sidebar in [!UICONTROL Cloud Manager] UI (User Interface) and throughout the Adobe Experience Cloud.
 
 Click on the bell icon from the header to open the sidebar and view the notifications, as shown in the figure below:
 
@@ -35,7 +32,7 @@ Additionally, click on one of these notifications and then click on **View Detai
 
 ![](assets/screen_shot_2018-08-14at43503pm.png)
 
-### Email Notifications {#email-notifications}
+## Email Notifications {#email-notifications}
 
 By default, notifications are available in the web user interface across Adobe Experience Cloud solutions. Individual users can also opt for these notifications to be sent through email, either on an immediate or digest basis.
 

@@ -1,7 +1,7 @@
 ---
 title: Configure your Release Branches
 seo-title: Configure your Release Branches
-description: null
+description: Configure release branches in Git for AEM Cloud Manager
 seo-description: Follow this page to learn on how to configure your release branches in git.
 uuid: d12a8b85-b7fd-4b55-a05a-a0f874ce598c
 contentOwner: jsyal
@@ -51,11 +51,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->Its not a requirement to use the command-line client. There are a variety of graphical Git clients available either as standalone applications or as part of an Integrated Development Environment (IDE) such as Eclipse or IntelliJ. As long as the client application supports the Git using HTTPS, it should be compatible with Cloud Manager.
+>Its not a requirement to use the command-line client. There are a variety of graphical Git clients available either as standalone applications or as part of an Integrated Development Environment (IDE) such as Eclipse or IntelliJ. As long as the client application supports the Git using HTTPS, it should be compatible with [!UICONTROL Cloud Manager].
 
 ## Pushing Your First Branch {#pushing-your-first-branch}
 
-Once you have commited at least one revision, you can add the Cloud Manager repository as a **remote*** *and then push your commits to it:
+Once you have commited at least one revision, you can add the [!UICONTROL Cloud Manager] repository as a **remote*** *and then push your commits to it:
 
 ```shell
 $ git remote add adobe <url>
@@ -71,7 +71,7 @@ To <url>
 
 >[!NOTE]
 >
->The specific URL, along with your credentials, will be provided to your by your Customer Success Engineering during Cloud Manager onboarding.
+>The specific URL, along with your credentials, will be provided to your by your Customer Success Engineering during [!UICONTROL Cloud Manager] onboarding.
 
 ## Additional Branches {#additional-branches}
 
