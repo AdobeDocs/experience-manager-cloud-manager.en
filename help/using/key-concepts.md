@@ -39,6 +39,6 @@ For example, *We.Retail*.
 
 **Program** A set of environments that support a logical grouping of customer initiatives, usually corresponding to a purchased Service Level Agreements (SLA). Each program has exactly one production environment and may have many non-production environments.
 
-**Solution** One of the Adobe Experience Cloud solutions. For example, Adobe Experience Manager, or Adobe Target, or Adobe Analytics.
+**Solution** One of the Adobe [!UICONTROL Experience Cloud] solutions. For example, Adobe Experience Manager, or Adobe Target, or Adobe Analytics.
 
 **Step** A configured instruction set that accomplishes some unit of work, building block of a pipeline.

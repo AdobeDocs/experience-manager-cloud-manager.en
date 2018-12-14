@@ -101,4 +101,4 @@ The following diagram illustrates the customer journey to get started with Cloud
 
 ### The Next Steps {#the-next-steps}
 
-Once you get an overview of Cloud Manager, see *** [Understanding Concepts Before Using Cloud Manager](../using/understanding-concepts.md)***, to learn about concepts and terminologies that are good to know before using Cloud Manager.
+Once you get an overview of Cloud Manager, see *** [Understanding Concepts Before Using Cloud Manager](understanding-concepts.md)***, to learn about concepts and terminologies that are good to know before using Cloud Manager.

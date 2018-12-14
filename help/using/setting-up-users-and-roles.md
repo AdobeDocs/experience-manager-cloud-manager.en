@@ -39,7 +39,7 @@ The following table summarizes the roles:
 |Deployment Manager|Manages deployment operations. Uses [!UICONTROL Cloud Manager] to execute stage/production deployments. Can edit CI/CD Pipelines. Can approve important 3-tier failures. Can get access to the Git repository. Please contact your CSE/AMS representative to request it.|
 |Developer|Develops and tests custom application code. Primarily uses [!UICONTROL Cloud Manager] to view status. Should get access to the Git repository for code commit. Please contact your CSE/AMS representative when adding a user with this role to grant access to Git repository.|
 |Customer Success Engineer|Generally supports customer success for AMS customers. Interacts with [!UICONTROL Cloud Manager] for the purpose of executing deployments which require CSE oversight.|
-|Content Author|Generally does not interact with [!UICONTROL Cloud Manager]. May use [!UICONTROL Cloud Manager] Program Switcher (having navigated from Experience Cloud) to access AEM.|
+|Content Author|Generally does not interact with [!UICONTROL Cloud Manager]. May use [!UICONTROL Cloud Manager] Program Switcher (having navigated from [!UICONTROL Experience Cloud]) to access AEM.|
 
 >[!NOTE]
 >

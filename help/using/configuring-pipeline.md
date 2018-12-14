@@ -16,7 +16,7 @@ snippet: y
 
 # Configure your CI/CD Pipeline{#configure-your-ci-cd-pipeline}
 
-The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](../using/ci-cd-pipeline.md).
+The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](ci-cd-pipeline.md).
 
 ## Understanding the Flow {#understanding-the-flow}
 
@@ -75,87 +75,78 @@ Follow these steps to configure the behavior and preferences for your pipeline:
     * **Manual** - using the UI manually start the pipeline.
     * **Scheduled** - this option will be coming soon in an upcoming release.
 
-   <!-- 
 
-Comment Type: annotation
-Last Modified By: jsyal
-Last Modified Date: 2018-10-08T12:38:14.680-0400
 
-2018.8.0 Release: updated
+During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates such as Code Quality, Security Testing, and Performance Testing.
 
- -->
+This is useful for customers who have the desire for more automated processes. The available options are:
 
-   During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates such as Code Quality, Security Testing, and Performance Testing.
+* **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
+* **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
+* **Continue immediately **- If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
-   This is useful for customers who have the desire for more automated processes. The available options are:
+Now you define the parameters controlling the production deployment. The three available options are as follows:
 
-   * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
-   * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-   * **Continue immediately **- If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+* **Use Go Live Approval **- A deployment must be manually approved by a business owner, project manager, or deployment manager via the [!UICONTROL Cloud Manager] UI.
+* **Use CSE Oversight** - A CSE is engaged to actually start the deployment. During pipeline setup or edit when CSE Oversight is enabled, the Deployment Manager has the option of selecting:
 
-   Now you define the parameters controlling the production deployment. The three available options are as follows:
+  * **Any CSE**: refers to any available CSE  
+  * **My CSE**: refers to a specific CSE assigned to the customer or their backup, if the CSE is out of the office
 
-   * **Use Go Live Approval **- A deployment must be manually approved by a business owner, project manager, or deployment manager via the [!UICONTROL Cloud Manager] UI.
-   * **Use CSE Oversight** - A CSE is engaged to actually start the deployment. During pipeline setup or edit when CSE Oversight is enabled, the Deployment Manager has the option of selecting:
+* **Scheduled** - This option allows the user to enable the scheduled production deployment.
 
-     * **Any CSE**: refers to any available CSE  
-     * **My CSE**: refers to a specific CSE assigned to the customer or their backup, if the CSE is out of the office
+>[!NOTE]
+>
+>If **Scheduled** option is selected, you can schedule your production deployment to the pipeline **after** the stage deployment (and **Use GoLive Approval**, if that has been enabled) to wait for a schedule to be set. The user can also choose to execute the production deployment immediately.
+>
+>Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
 
-   * **Scheduled** - This option allows the user to enable the scheduled production deployment.
+![](assets/screen_shot_2018-08-10at22408pm.png)
 
-   >[!NOTE]
-   >
-   >If **Scheduled** option is selected, you can schedule your production deployment to the pipeline **after** the stage deployment (and **Use GoLive Approval**, if that has been enabled) to wait for a schedule to be set. The user can also choose to execute the production deployment immediately.
-   >
-   >
-   >Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
+>[!NOTE]
+>
+>The **Use CSE Oversight** option is not available to all customers.
 
-   ![](assets/screen_shot_2018-08-10at22408pm.png)
+**Dispatcher Invalidation**
 
-   >[!NOTE]
-   >
-   >The **Use CSE Oversight** option is not available to all customers.
+As a Deployment Manager, you have the opportunity to configure a set of paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache, while setting up or editing pipeline.
 
-   **Dispatcher Invalidation**
+You can configure a separate set of paths for Stage and Production deployment. If configured, these cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior - invalidate performs a cache invalidation, similar to when content is activated from author to publish; flush performs a cache deletion.
 
-   As a Deployment Manager, you have the opportunity to configure a set of paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache, while setting up or editing pipeline.
+In general, the use of the invalidate action is preferable but there may be cases where flushing is required, especially when using AEM HTML Client Libraries.
 
-   You can configure a separate set of paths for Stage and Production deployment. If configured, these cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior - invalidate performs a cache invalidation, similar to when content is activated from author to publish; flush performs a cache deletion.
+>[!NOTE]
+>
+>Please refer to [Dispatcher Overview](dispatcher.md#HowDispatcherperformsCaching) get more information on Dispatcher caching.
 
-   In general, the use of the invalidate action is preferable but there may be cases where flushing is required, especially when using AEM HTML Client Libraries.
+Follow the steps below to configure Dispatcher Invalidations:
 
-   >[!NOTE]
-   >
-   >Please refer to [Dispatcher Overview](dispatcher.md#HowDispatcherperformsCaching) get more information on Dispatcher caching.
+1. Click **Configure** under the Dispatcher Configuration heading
 
-   Follow the steps below to configure Dispatcher Invalidations:
+   ![](assets/image2018-8-7_14-53-24.png)
 
-    1. Click **Configure** under the Dispatcher Configuration heading.
-    
-       ![](assets/image2018-8-7_14-53-24.png)
+1. Enter the path, select the action from **Type**, and click **Add**. You can specify up to 100 paths per environment. Once you have added the paths, click **Apply**.
 
-    1. Enter the path, select the action from **Type**, and click **Add**. You can specify up to 100 paths per environment. Once you have added the paths, click **Apply**.
-    
-       ![](assets/image2018-8-7_14-58-11.png)
+   ![](assets/image2018-8-7_14-58-11.png)
 
-    1. Once you are back on the **Pipeline Settings** page, you will see an updated summary of the selections.
+1. Once you are back on the **Pipeline Settings** page, you will see an updated summary of the selections.
 
-       Click **Save** to persist this configuration.
-    
-       ![](assets/image2018-8-7_15-4-30.png)
+   Click **Save** to persist this configuration.
+
+   ![](assets/image2018-8-7_15-4-30.png)
 
 1. Access the **Testing** tab to define your testing criteria for your program.
 
-   Now, you can configure the performance test parameters.
+Now, you can configure the performance test parameters.
 
-   During pipeline setup, the deployment manager can decide how much traffic to direct to each bucket. They can choose anywhere from one to all three buckets. The distribution of traffic is based on the number of buckets selected, i.e. if all three are selected, 33% of the total page views are put toward each bucket; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
+During pipeline setup, the deployment manager can decide how much traffic to direct to each bucket. They can choose anywhere from one to all three buckets. The distribution of traffic is based on the number of buckets selected, i.e. if all three are selected, 33% of the total page views are put toward each bucket; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
 
-   For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
+For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
 
-   * Each of the 25 pages in the Popular Live Pages set will be hit 240 times - `((200 &#42; 0.5) / 25) &#42; 30 = 120`
-   * Each of the 3000 pages in the New Pages set will be hit once - `((200 &#42; 0.5) / 3000) &#42; 30 = 1`
+* Each of the 25 pages in the Popular Live Pages set will be hit 240 times - `((200 &#42; 0.5) / 25) &#42; 30 = 120`
+* Each of the 3000 pages in the New Pages set will be hit once - `((200 &#42; 0.5) / 3000) &#42; 30 = 1`
 
-   ![](assets/screen_shot_2018-06-04at23503pm.png)
+![](assets/screen_shot_2018-06-04at23503pm.png)
 
 1. Click **Save** to complete the setup of pipeline process.
 

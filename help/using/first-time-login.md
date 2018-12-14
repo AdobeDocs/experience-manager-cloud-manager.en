@@ -23,7 +23,7 @@ Once you have setup the general configurations for Cloud Manager, you are ready 
 
 ## Logging in for the First Time {#logging-in-for-the-first-time}
 
-1. Log in to the **Adobe Experience Cloud** and you will see the list of **Programs**.
+1. Log in to the **Adobe [!UICONTROL Experience Cloud]** and you will see the list of **Programs**.
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 

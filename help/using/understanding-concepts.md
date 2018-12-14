@@ -103,7 +103,7 @@ Finally, you will be able to configure the performance test parameters.
 
 >[!NOTE]
 >
->To learn about configuring the behavior and preferences for your pipeline, see **Configuring Pipeline** section in [**Using Cloud Manager**](../using/using-cloud-manager.md).
+>To learn about configuring the behavior and preferences for your pipeline, see **Configuring Pipeline** section in [**Using Cloud Manager**](using-cloud-manager.md).
 
 ### Help Resources {#help-resources}
 
@@ -113,4 +113,4 @@ Contact Adobe Managed Services Customer Success Engineer for support.
 
 Now you have better understanding of the Cloud Manager concepts.
 
-To set up your project, environment, and the team (user and roles), refer to ** [*Setting up General Configurations for Cloud Manager*](../using/setting-configurations-for-cloud-manager.md)**.
+To set up your project, environment, and the team (user and roles), refer to ** [*Setting up General Configurations for Cloud Manager*](setting-configurations-for-cloud-manager.md)**.

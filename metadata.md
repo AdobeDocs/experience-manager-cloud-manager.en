@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-solution-title: Experience Cloud HTL
+solution-title: [!UICONTROL Experience Cloud] HTL
 solution-hub-url: https://helpx.adobe.com/support/target.html
 solution-image: 
 getting-started-title: Getting Started

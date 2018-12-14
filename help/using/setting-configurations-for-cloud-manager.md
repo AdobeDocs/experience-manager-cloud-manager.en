@@ -53,7 +53,7 @@ Create the following roles using the Admin console for Cloud Manager:
 | Deployment Manager |Manages deployment operations. Uses Cloud Manager to execute stage/production deployments. May approve important 3-tier failures. Has git access. |
 | Developer |Develops and tests custom application code. Primarily uses Cloud Manager to view status. Has commit access to git. |
 | Customer Success Engineer |Generally supports customer success for AMS customers. Interacts with Cloud Manager for the purpose of executing deployments which require CSE oversight. |
-| Content Author |Generally does not interact with Cloud Manager. May use Cloud Manager Program Switcher (having navigated from Experience Cloud) to access AEM. |
+| Content Author |Generally does not interact with Cloud Manager. May use Cloud Manager Program Switcher (having navigated from [!UICONTROL Experience Cloud]) to access AEM. |
 
 ### Using Admin Console to Set up Team {#using-admin-console-to-set-up-team}
 

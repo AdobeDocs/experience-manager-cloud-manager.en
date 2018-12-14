@@ -25,7 +25,7 @@ Before you get into the details of using the [!UICONTROL Cloud Manager], it is r
 
 Once you have setup the general configurations for [!UICONTROL Cloud Manager], you are ready to use the [!UICONTROL Cloud Manager].
 
-1. Log in to the Adobe Experience Cloud and you will see the list of solutions. 
+1. Log in to the Adobe [!UICONTROL Experience Cloud] and you will see the list of solutions. 
 
    ![](assets/screen_shot_2018-04-22at92951am.png)
 

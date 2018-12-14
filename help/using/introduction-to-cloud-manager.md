@@ -58,7 +58,7 @@ With an automatic trigger mode, the code is automatically deployed to an environ
 
 Independently of the deployment trigger, quality checks are always performed as part of the CI/CD pipeline execution, every time a deployment is triggered. Quality checks include, code inspection, security testing, and performance testing delivered out of the box with literally no effort required from customers or their partners.
 
-To learn more about deploying code and quality checks, see [Deploy your Code](../using/deploying-code.md)
+To learn more about deploying code and quality checks, see [Deploy your Code](deploying-code.md)
 
 ### Autoscaling {#autoscaling}
 

@@ -20,7 +20,7 @@ discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 
 Role management for [!UICONTROL Cloud Manager] is done inside the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Any user of [!UICONTROL Cloud Manager] must be a member of the customer's IMS Organization and have the Adobe Managed Services Product Context. Specific role memberships are provided by adding the user to a [!UICONTROL Cloud Manager] Product Profile in the Admin Console.
 
-To learn more about how to setup your roles see [Setting up Users and Roles](../using/setting-up-users-and-roles.md).
+To learn more about how to setup your roles see [Setting up Users and Roles](setting-up-users-and-roles.md).
 
 The following table list defines the possible roles you can assign in the Admin Console.
 
@@ -31,13 +31,13 @@ The following table list defines the possible roles you can assign in the Admin 
 | Deployment Manager |Manages the deployment operations. Uses [!UICONTROL Cloud Manager] to execute stage and production deployments. May approve important 3-tier failures. Has access to Git repository. |
 | Developer |Develops and tests custom application code. Primarily uses [!UICONTROL Cloud Manager] to view status. Has commit access to Git repository. |
 | Customer Success Engineer |Generally supports customer success for AMS customers. Interacts with [!UICONTROL Cloud Manager] for the purpose of executing deployments which require Customer Success Engineer (CSE) oversight. |
-| Content Author |Generally does not interact with [!UICONTROL Cloud Manager]. This user may use the [!UICONTROL Cloud Manager] Program Switcher (having navigated from Experience Cloud) to access Adobe Experience Manager (AEM). |
+| Content Author |Generally does not interact with [!UICONTROL Cloud Manager]. This user may use the [!UICONTROL Cloud Manager] Program Switcher (having navigated from [!UICONTROL Experience Cloud]) to access Adobe Experience Manager (AEM). |
 
 ### User Permissions {#user-permissions}
 
 Each of the roles have specific permissions, preconfigured tasks, or permissions, associated with each role. This table lists the functions available and the roles who can execute the function.
 
-To learn more about how to setup your Users see [Setting up Users and Roles](../using/setting-up-users-and-roles.md).
+To learn more about how to setup your Users see [Setting up Users and Roles](setting-up-users-and-roles.md).
 
 |Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|CSE|
 |--- |--- |--- |--- |--- |--- |--- |

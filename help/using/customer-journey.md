@@ -27,7 +27,7 @@ As a customer, you may be new to Adobe Experience Manager (AEM), currently using
 
 As a new customer, you will be on-boarded to Cloud Manager as part of the on-boarding process to the Adobe managed cloud service.
 
-The URL to access Cloud Manager will be included in the welcome email, along with the instructions to login to Experience Cloud, and use the Adobe Admin Console for managing your users and their respective permisions, for those users who need to access Cloud Manager.
+The URL to access Cloud Manager will be included in the welcome email, along with the instructions to login to [!UICONTROL Experience Cloud], and use the Adobe Admin Console for managing your users and their respective permisions, for those users who need to access Cloud Manager.
 
 *b) Existing AEM Customer on Adobe Managed Services*
 
@@ -39,11 +39,11 @@ To get additional information on the benefits of upgrading to AEM 6.4, see [Upgr
 
 ## Accessing Cloud Manager {#accessing-cloud-manager}
 
-You will get acces to Cloud Manager and your AEM environments by simply logging in to the Experience Cloud landing page, using your Adobe Identity Management credentials, and selecting AEM from the solution switcher interface.
+You will get acces to Cloud Manager and your AEM environments by simply logging in to the [!UICONTROL Experience Cloud] landing page, using your Adobe Identity Management credentials, and selecting AEM from the solution switcher interface.
 
 After logging in Cloud Manager for the first time, you will have access to your AEM environments directly from the Cloud Manager UI. At this point, you are ready to explore all the possibilities of Cloud Manager, once you have your first code branch ready to be deployed to your stage and production environments.
 
-To explore and get started with Cloud Manager, see [First Time Login](../using/first-time-login.md). For additional information about AEM, see [Getting Started with AEM 6.4](/content/help/en/experience-manager/6-4/sites/deploying/using/deploy). Additionally, refer to [AEM Resources](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) for further information.
+To explore and get started with Cloud Manager, see [First Time Login](first-time-login.md). For additional information about AEM, see [Getting Started with AEM 6.4](/content/help/en/experience-manager/6-4/sites/deploying/using/deploy). Additionally, refer to [AEM Resources](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) for further information.
 
 ## Getting started with Cloud Manager {#getting-started-with-cloud-manager}
 

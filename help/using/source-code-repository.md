@@ -19,9 +19,9 @@ snippet: y
 
 Your AEM Managed Services subscription will include a source code repository provisioned and managed by Adobe. Each customer's program is assigned a single and unique **Git Repository**, where your associated code will be stored and secured. As a best practice, you should always use the Cloud Manager's Git Repository, which comes empty without any branches configured or sample projects. To use the Cloud Manager's Git Repository, you will be provided with a **private access token** that will enable you to use any Git-compatible client to create branches, store and retrieve your code, list the commit history, etc.
 
-For more information on how to setup branches in Git, see [Configuring your Release Branches](../using/configure-your-release-branches.md).
+For more information on how to setup branches in Git, see [Configuring your Release Branches](configure-your-release-branches.md).
 
-For more information on how to use the Cloud Manager's **Git Repository** with the CI/CD Pipeline, see [Configuring your CI/CD pipeline](../using/configuring-pipeline.md).
+For more information on how to use the Cloud Manager's **Git Repository** with the CI/CD Pipeline, see [Configuring your CI/CD pipeline](configuring-pipeline.md).
 
 ### On-premise Repository {#on-premise-repository}
 
