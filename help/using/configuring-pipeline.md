@@ -117,7 +117,7 @@ In general, the use of the invalidate action is preferable but there may be case
 
 >[!NOTE]
 >
->Please refer to [Dispatcher Overview](dispatcher.md#HowDispatcherperformsCaching) get more information on Dispatcher caching.
+>Please refer to [Dispatcher Overview](dispatcher-configurations.md) get more information on Dispatcher caching.
 
 Follow the steps below to configure Dispatcher Invalidations:
 
