@@ -1,8 +1,8 @@
 ---
 title: Using Cloud Manager
-seo-title: Using Cloud Manager
+seo-title: Using Adobe AEM Cloud Manager
 description: AEM Cloud Manager user interface explained
-seo-description: AEM Cloud Manager user interface explained
+seo-description: Adobe AEM Cloud Manager user interface explained
 page-status-flag: never-activated
 uuid: cef44d35-75ed-44bb-9636-2de2bca5e458
 contentOwner: jsyal
@@ -13,7 +13,7 @@ discoiquuid: c37566d5-0d1b-4c44-abd7-b271ea443c1a
 
 This section explains the User Interface (UI) for [!UICONTROL Cloud Manager] and explains the workflow from setting up the program to code deployment followed by quality checks.
 
-#### Prerequisites {#prerequisites}
+## Prerequisites {#prerequisites}
 
 Before you get into the details of using the [!UICONTROL Cloud Manager], it is recommended to go though the following sections:
 
@@ -116,12 +116,12 @@ Follow the steps below from the [!UICONTROL Cloud Manager] to configure the baha
 
    You can define trigger that will start the pipeline:
 
-    * **Manual** - someone has to click manually in the UI to start the pipeline.
+   * **Manual** - someone has to click manually in the UI to start the pipeline.
 
    Now you define the parameters controlling the production deployment. The three available options are as follows:
 
-    * **Use Go Live Approval**- A deployment must be manually approved by a business owner, project manager, or deployment manager via the [!UICONTROL Cloud Manager] UI.
-    * **Use CSE Oversight** - A CSE is engaged to actually start the deployment.
+   * **Use Go Live Approval**- A deployment must be manually approved by a business owner, project manager, or deployment manager via the [!UICONTROL Cloud Manager] UI.
+   * **Use CSE Oversight** - A CSE is engaged to actually start the deployment.
 
    ![](assets/screen_shot_2018-05-06at73715pm.png)
 
@@ -150,15 +150,15 @@ Follow the steps below to deploy your code to the production environment:
 
    **Stage Deployment**
 
-    * Repository
-    * Unit Testing
-    * Code Scanning
-    * Deployed to Stage Environment
+   * Repository
+   * Unit Testing
+   * Code Scanning
+   * Deployed to Stage Environment
 
    **Pre-Production Testing**
 
-    * Security Testing
-    * Performance Testing
+   * Security Testing
+   * Performance Testing
 
    >[!NOTE]
    >
@@ -191,13 +191,13 @@ For example, let's say that there is a 50%/50% split between the Popular Live Pa
 
 ![](assets/image2018-3-14_16-23-56.png) 
 
-#### Performance Test Metrics {#performance-test-metrics}
+### Performance Test Metrics {#performance-test-metrics}
 
 During the test period, a number of metrics are captured and compard to either the KPIs defined by the business owner or standards set by AMS.
 
 These are reported using the three-tier gating system as follows:
 
-#### Three-Tier Gates while Running a Pipeline {#three-tier-gates-while-running-a-pipeline}
+### Three-Tier Gates while Running a Pipeline {#three-tier-gates-while-running-a-pipeline}
 
 There are three gates in the pipeline as Code Quality, Performance Testing, and Security Testing.
 
@@ -270,7 +270,7 @@ These are the current thresholds:
 |Open Issues|Overall issue types - Vulnerabilities, Bugs, and Code Smells|Info|&gt; 1|
 |Duplicated Lines|Number of lines involved in duplicated blocks. <br/>For a block of code to be considered as duplicated: <br/><ul><li> Non-Java projects:<ul><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread at least on: <ul><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li></ul></li></ul>   <br/><ul><li>Java projects: <ul><li> There should be at least 10 successive and duplicated statements whatever the number of tokens and lines.</li></ul></li></ul> <br/>Differences in indentation as well as in string literals are ignored while detecting duplications.|Info|&gt; 1%|
 
-#### False Positives {#false-positives}
+### False Positives {#false-positives}
 
 The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is called a "false positive" (although "false negative" would probably be more semantically correct). In these cases, the source code can be annotated with the standard Java @SuppressWarnings annotation specifying the rule ID as the annotation attribute. For example, one common problem is that the SonarQube rule to detect hardcoded passwords is very liberal about what it considers a hardcoded password.
 

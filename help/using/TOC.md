@@ -7,8 +7,8 @@ user-guide: Experience Manager Cloud Manager Help
 
 # Experience Manager [!UICONTROL Cloud Manager] Help {#experience-manager-cloud-manager-help}
 
++ [Overview Index](overview-index.md)
 + [!UICONTROL Cloud Manager] Overview {#cloud-manager-overview}
-  + [Overview Index](overview-index.md)
   + [Overview](overview-cloud-manager.md)
   + [Introduction to [!UICONTROL Cloud Manager]](introduction-to-cloud-manager.md)
   + [Customer Journey](customer-journey.md)

@@ -17,6 +17,6 @@ As part of the on-boarding process, Adobe will create an **Organization** identi
 
 ### Users and Roles {#users-and-roles}
 
-Once Adobe has created an organization for your company, your designated administrator will be added as the first member to this organization. The administrator will be granted the administrator permissions by default, and assigned the AEM Managed Services P**roduct**, and one or more [!UICONTROL Cloud Manager] **Product Profiles**. Please visit [Add Users and Roles](setting-up-users-and-roles.md) to learn more about how to configure and manage your team users using the Admin Console.
+Once Adobe has created an organization for your company, your designated administrator will be added as the first member to this organization. The administrator will be granted the administrator permissions by default, and assigned the [!UICONTROL AEM Managed Services] P**roduct**, and one or more [!UICONTROL Cloud Manager] **Product Profiles**. Please visit [Add Users and Roles](setting-up-users-and-roles.md) to learn more about how to configure and manage your team users using the Admin Console.
 
 With these rights granted, your administrator is now set up with a single sign-on (using Adobe ID) to access the [!UICONTROL Experience Cloud] services, login to your AEM cloud environments, and use [!UICONTROL [!UICONTROL Cloud Manager].

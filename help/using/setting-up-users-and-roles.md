@@ -57,9 +57,9 @@ You can assign specific role memberships by adding the user to a [!UICONTROL Clo
 >
 >To acces the admin console and set up your team (users and roles), open a browser and visit [https://adminconsole.adobe.com](https://adminconsole.adobe.com/enterprise).
 
-In order to provide the appropriate role-based permissions to [!UICONTROL Cloud Manager] users, an administrator in the customer's **Organization**, must create new Product Profiles under the AEM Managed Services Product Context.
+In order to provide the appropriate role-based permissions to [!UICONTROL Cloud Manager] users, an administrator in the customer's **Organization**, must create new Product Profiles under the [!UICONTROL AEM Managed Services] Product Context.
 
-To provide the appropriate role-based permissions to [!UICONTROL Cloud Manager] users, as an administrator you must create four new Product Profiles under the AEM Managed Services Product Context corresponding to each of the four [!UICONTROL Cloud Manager] roles:
+To provide the appropriate role-based permissions to [!UICONTROL Cloud Manager] users, as an administrator you must create four new Product Profiles under the [!UICONTROL AEM Managed Services] Product Context corresponding to each of the four [!UICONTROL Cloud Manager] roles:
 
 * Business Owner
 * Deployment Manager

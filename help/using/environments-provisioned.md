@@ -21,7 +21,7 @@ During the customer on-boarding process, all the AEM cloud environments purchase
 
 ## Welcome Email {#welcome-email}
 
-Upon completion of the environment provisioning process, the designated customer administrator receives a **welcome email** with the confirmation they have been granted access to the Adobe [!UICONTROL Experience Cloud]. The email contains detailed information on how to get started with the [!UICONTROL Experience Cloud] services, the AEM Managed Services cloud environments, as well as the [!UICONTROL Cloud Manager] self-service portal. Additionally, the email contains important information such as the Customer Success Engineer contact information, where to go for Support Resources, Forums, or FAQs, and much more. In the list of resources provided in the email, you will also get details on how to access [!UICONTROL Cloud Manager] or your AEM cloud environments.
+Upon completion of the environment provisioning process, the designated customer administrator receives a **welcome email** with the confirmation they have been granted access to the Adobe [!UICONTROL Experience Cloud]. The email contains detailed information on how to get started with the [!UICONTROL Experience Cloud] services, the [!UICONTROL AEM Managed Services] cloud environments, as well as the [!UICONTROL Cloud Manager] self-service portal. Additionally, the email contains important information such as the Customer Success Engineer contact information, where to go for Support Resources, Forums, or FAQs, and much more. In the list of resources provided in the email, you will also get details on how to access [!UICONTROL Cloud Manager] or your AEM cloud environments.
 
 ## Next Steps {#next-steps}
 

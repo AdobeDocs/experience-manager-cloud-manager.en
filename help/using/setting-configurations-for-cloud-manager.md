@@ -57,7 +57,7 @@ Create the following roles using the Admin console for Cloud Manager:
 
 ### Using Admin Console to Set up Team {#using-admin-console-to-set-up-team}
 
-In order to provide the appropriate role-based permissions to Cloud Manager users, an administrator in the customer's organization must create new Product Profiles under the AEM Managed Services Product Context.
+In order to provide the appropriate role-based permissions to Cloud Manager users, an administrator in the customer's organization must create new Product Profiles under the [!UICONTROL AEM Managed Services] Product Context.
 
 >[!NOTE]
 >
