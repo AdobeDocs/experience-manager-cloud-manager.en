@@ -1,40 +1,37 @@
 ---
 title: Security and Privacy
-seo-title: Security and Privacy
-description: null
-seo-description: Follow this page to learn about the security and privacy of your assets (code/artifacts).
+seo-title: Security and Privacy for AEM Cloud Manager
+description: Follow this page to learn about the security and privacy of your assets (code/artifacts).
+seo-description: Follow this page to learn about the security and privacy of your assets (code/artifacts) using AEM Cloud Manager.
 uuid: 68bc2330-a62c-4c2c-925c-daa6788b143a
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
-index: y
-internal: n
-snippet: y
 ---
 
 # Security and Privacy{#security-and-privacy}
 
-Cloud Manager has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the **Git Repository**. Alternatively, a business owner has different permissions allowing them to define the Key Performance Indicators (KPIs) and approve deployments.
+[!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the **Git Repository**. Alternatively, a business owner has different permissions allowing them to define the Key Performance Indicators (KPIs) and approve deployments.
 
 ## Role Based Permissions {#role-based-permissions}
 
 ### User Roles {#user-roles}
 
-Role management for Cloud Manager is done inside the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Any user of Cloud Manager must be a member of the customer's IMS Organization and have the Adobe Managed Services Product Context. Specific role memberships are provided by adding the user to a Cloud Manager Product Profile in the Admin Console.
+Role management for [!UICONTROL Cloud Manager] is done inside the [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Any user of [!UICONTROL Cloud Manager] must be a member of the customer's IMS Organization and have the Adobe Managed Services Product Context. Specific role memberships are provided by adding the user to a [!UICONTROL Cloud Manager] Product Profile in the Admin Console.
 
 To learn more about how to setup your roles see [Setting up Users and Roles](../using/setting-up-users-and-roles.md).
 
 The following table list defines the possible roles you can assign in the Admin Console.
 
-| **Cloud Manager Role** |**Description** |
+| **[!UICONTROL Cloud Manager] Role** |**Description** |
 |---|---|
-| Business Owner |Primary user who completes the initial Cloud Manager setup. Responsible for defining KPIs, approving production deployments and overriding important 3-tier failures. |
-| Program Manager |Uses Cloud Manager to perform team setup, review status and view KPIs. May approve important 3-tier failures. |
-| Deployment Manager |Manages the deployment operations. Uses Cloud Manager to execute stage and production deployments. May approve important 3-tier failures. Has access to Git repository. |
-| Developer |Develops and tests custom application code. Primarily uses Cloud Manager to view status. Has commit access to Git repository. |
-| Customer Success Engineer |Generally supports customer success for AMS customers. Interacts with Cloud Manager for the purpose of executing deployments which require Customer Success Engineer (CSE) oversight. |
-| Content Author |Generally does not interact with Cloud Manager. This user may use the Cloud Manager Program Switcher (having navigated from Experience Cloud) to access Adobe Experience Manager (AEM). |
+| Business Owner |Primary user who completes the initial [!UICONTROL Cloud Manager] setup. Responsible for defining KPIs, approving production deployments and overriding important 3-tier failures. |
+| Program Manager |Uses [!UICONTROL Cloud Manager] to perform team setup, review status and view KPIs. May approve important 3-tier failures. |
+| Deployment Manager |Manages the deployment operations. Uses [!UICONTROL Cloud Manager] to execute stage and production deployments. May approve important 3-tier failures. Has access to Git repository. |
+| Developer |Develops and tests custom application code. Primarily uses [!UICONTROL Cloud Manager] to view status. Has commit access to Git repository. |
+| Customer Success Engineer |Generally supports customer success for AMS customers. Interacts with [!UICONTROL Cloud Manager] for the purpose of executing deployments which require Customer Success Engineer (CSE) oversight. |
+| Content Author |Generally does not interact with [!UICONTROL Cloud Manager]. This user may use the [!UICONTROL Cloud Manager] Program Switcher (having navigated from Experience Cloud) to access Adobe Experience Manager (AEM). |
 
 ### User Permissions {#user-permissions}
 
@@ -42,203 +39,40 @@ Each of the roles have specific permissions, preconfigured tasks, or permissions
 
 To learn more about how to setup your Users see [Setting up Users and Roles](../using/setting-up-users-and-roles.md).
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody>
-  <tr>
-   <td>Permission</td> 
-   <td>Description</td> 
-   <td>Business<br /> Owner</td> 
-   <td>Deployment<br /> Manager</td> 
-   <td>Program<br /> Manager</td> 
-   <td>Developer</td> 
-   <td>CSE</td> 
-  </tr>
-  <tr>
-   <td>Read Application</td> 
-   <td>See details of the program.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-  </tr>
-  <tr>
-   <td>Write Application</td> 
-   <td>Configure program (including KPIs).</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;"> </td> 
-  </tr>
-  <tr>
-   <td>Read Environment</td> 
-   <td>See Environment details.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-  </tr>
-  <tr>
-   <td>Create Execution</td> 
-   <td>Start Pipeline.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td> </td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>Read Execution</td> 
-   <td>See execution status.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-  </tr>
-  <tr>
-   <td>Resume Execution</td> 
-   <td>Can resume execution when paused.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;">x</td> 
-  </tr>
-  <tr>
-   <td>Execution Approve Deploy to Production</td> 
-   <td>Provide GoLive Approval.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td> </td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>Execution Schedule Deploy to Production</td> 
-   <td>Schedule Production Deployment.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;">x</td> 
-  </tr>
-  <tr>
-   <td>Execution Deploy to Production</td> 
-   <td>Deploy application to production when paused for CSE Oversight.</td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;">x</td> 
-  </tr>
-  <tr>
-   <td>Execution Cancel</td> 
-   <td>Cancel current execution.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td> </td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>Execution Override Quality Gate Failures</td> 
-   <td>Approve Important Quality Gate Failures.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td> </td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>Pipeline Create</td> 
-   <td>Setup / Edit Pipeline.</td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;"> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>Pipeline Read</td> 
-   <td>See Pipeline details.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-  </tr>
-  <tr>
-   <td>Pipeline Write</td> 
-   <td>Setup / Edit Pipeline.</td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;">x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>Pipeline Modify Approval</td> 
-   <td>Allows editing the Business Owner option.</td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;">x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>Pipeline Modify Managed Deployment</td> 
-   <td>Allows editing of the CSE Oversight option.</td> 
-   <td style="text-align: center;"> </td> 
-   <td style="text-align: center;">x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>Solution Read</td> 
-   <td>Read the program KPIs.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-  </tr>
-  <tr>
-   <td>Solution Write</td> 
-   <td>Configure Program (including KPIs) Setup / Edit Pipeline.</td> 
-   <td style="text-align: center;">x</td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>Step Read</td> 
-   <td>See the step quality metrics results.</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-   <td style="text-align: center;">x</td> 
-  </tr>
- </tbody>
-</table>
+|Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|CSE|
+|--- |--- |--- |--- |--- |--- |--- |
+|Read Application|See details of the program.|x|x|x|x|x|
+|Write Application|Configure program (including KPIs).|x|||||
+|Read Environment|See Environment details.|x|x|x|x|x|
+|Create Execution|Start Pipeline.|x|x|x|||
+|Read Execution|See execution status.|x|x|x|x|x|
+|Resume Execution|Can resume execution when paused.|x|x|x||x|
+|Execution Approve Deploy to Production|Provide GoLive Approval.|x|x|x|||
+|Execution Schedule Deploy to Production|Schedule Production Deployment.|x|x|x||x|
+|Execution Deploy to Production|Deploy application to production when paused for CSE Oversight.|||||x|
+|Execution Cancel|Cancel current execution.|x|x|x|||
+|Execution Override Quality Gate Failures|Approve Important Quality Gate Failures.|x|x|x|||
+|Pipeline Create|Setup / Edit Pipeline.||x||||
+|Pipeline Read|See Pipeline details.|x|x|x|x|x|
+|Pipeline Write|Setup / Edit Pipeline.||x||||
+|Pipeline Modify Approval|Allows editing the Business Owner option.||x||||
+|Pipeline Modify Managed Deployment|Allows editing of the CSE Oversight option.||x||||
+|Solution Read|Read the program KPIs.|x|x|x|x|x|
+|Solution Write|Configure Program (including KPIs) Setup / Edit Pipeline.|x|||||
+|Step Read|See the step quality metrics results.|x|x|x|x|x|
 
 ## Resource Isolation {#resource-isolation}
 
-Customers using Cloud Manager will need their IMS credentials to authenticate as all permissions tied to Cloud Manager will be configured and tied to their IMS organization. During the on-boarding process, the provisioning team ensures that resource isolation is enforced in Cloud Manager.
+Customers using [!UICONTROL Cloud Manager] will need their IMS credentials to authenticate as all permissions tied to [!UICONTROL Cloud Manager] will be configured and tied to their IMS organization. During the on-boarding process, the provisioning team ensures that resource isolation is enforced in [!UICONTROL Cloud Manager].
 
 ## Data Security {#data-security}
 
-Code in Cloud Manager is encrypted in transit. Binaries that Coud Manager builds are also encrypted in transit and encrypted when stored.
+Code in [!UICONTROL Cloud Manager] is encrypted in transit. Binaries that Coud Manager builds are also encrypted in transit and encrypted when stored.
 
 Each customer gets its own **Git Repository** and their code is secure and not shared with any other **Organizations**.
 
 ## Data Privacy {#data-privacy}
 
-Cloud Manager adheres to the privacy principles defined by Adobe. Developers push code securely into the **Git Repository** over HTTPS.
+[!UICONTROL Cloud Manager] adheres to the privacy principles defined by Adobe. Developers push code securely into the **Git Repository** over HTTPS.
 
-The User Interface (UI) for Cloud Manager is built on top of services that comply to a common control framework that is defined by Adobe. Cloud Manager uses secure services from several cloud providers.
+The [!DNL User Interface (UI) for [!UICONTROL Cloud Manager]] is built on top of services that comply to a common control framework that is defined by Adobe. [!UICONTROL Cloud Manager] uses secure services from several cloud providers.

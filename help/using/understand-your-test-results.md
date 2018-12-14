@@ -37,81 +37,16 @@ For each of these gates, there is a three-tier structure for issues identified b
 
 As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by SonarQube. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
 
-<table border="1" cellpadding="1" cellspacing="0" width="100%"> 
- <tbody> 
-  <tr> 
-   <td><strong>Name</strong></td> 
-   <td><strong>Definition</strong></td> 
-   <td><strong>Category</strong></td> 
-   <td><strong>Failure Threshold</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Security Rating</td> 
-   <td>A = 0 Vulnerability<br /> B = at least 1 Minor Vulnerability<br /> C = at least 1 Major Vulnerability<br /> D = at least 1 Critical Vulnerability<br /> E = at least 1 Blocker Vulnerability</td> 
-   <td>Critical</td> 
-   <td>&lt; B</td> 
-  </tr> 
-  <tr> 
-   <td>Reliability Rating</td> 
-   <td>A = 0 Bug<br /> B = at least 1 Minor Bug<br /> C = at least 1 Major Bug<br /> D = at least 1 Critical Bug<br /> E = at least 1 Blocker Bug</td> 
-   <td>Important</td> 
-   <td>&lt; C</td> 
-  </tr> 
-  <tr> 
-   <td>Maintainability Rating</td> 
-   <td><p>Outstanding remediation cost for code smells is:</p> 
-    <ul> 
-     <li>&lt;=5% of the time that has already gone into the application, the rating is A</li> 
-     <li>between 6 to 10% the rating is a B</li> 
-     <li>between 11 to 20% the rating is a C</li> 
-     <li>between 21 to 50% the rating is a D</li> 
-     <li>anything over 50% is an E</li> 
-    </ul> </td> 
-   <td>Important</td> 
-   <td>&lt; A</td> 
-  </tr> 
-  <tr> 
-   <td>Coverage</td> 
-   <td><p>A mix of line coverage and condition coverage using this formula:</p> <p>Coverage = (CT + CF + LC)/(2*B + EL)<br /> <br /> where:</p> <p>CT = conditions that have been evaluated to 'true' at least once<br /> CF = conditions that have been evaluated to 'false' at least once<br /> LC = covered lines = lines_to_cover - uncovered_lines<br /> <br /> B = total number of conditions<br /> EL = total number of executable lines (lines_to_cover)</p> </td> 
-   <td>Important</td> 
-   <td>&lt; 50%</td> 
-  </tr> 
-  <tr> 
-   <td>Skipped Unit Tests</td> 
-   <td>Number of skipped unit tests.</td> 
-   <td>Info</td> 
-   <td>&gt; 1</td> 
-  </tr> 
-  <tr> 
-   <td>Open Issues</td> 
-   <td>Overall issue types - Vulnerabilities, Bugs, and Code Smells</td> 
-   <td>Info</td> 
-   <td>&gt; 1</td> 
-  </tr> 
-  <tr> 
-   <td>Duplicated Lines</td> 
-   <td><p>Number of lines involved in duplicated blocks.</p> <p>For a block of code to be considered as duplicated:</p> 
-    <ul> 
-     <li>Non-Java projects: 
-      <ul> 
-       <li>There should be at least 100 successive and duplicated tokens.</li> 
-       <li>Those tokens should be spread at least on: 
-        <ul> 
-         <li>30 lines of code for COBOL</li> 
-         <li>20 lines of code for ABAP</li> 
-         <li>10 lines of code for other languages<br /> <br /> </li> 
-        </ul> </li> 
-      </ul> </li> 
-     <li>Java projects: 
-      <ul> 
-       <li>There should be at least 10 successive and duplicated statements whatever the number of tokens and lines.</li> 
-      </ul> </li> 
-    </ul> <p>Differences in indentation as well as in string literals are ignored while detecting duplications.</p> </td> 
-   <td>Info</td> 
-   <td>&gt; 1%</td> 
-  </tr> 
- </tbody> 
-</table>
+|Name|Definition|Category|Failure Threshold|
+|--- |--- |--- |--- |
+|Security Rating|A = 0 Vulnerability <br/>B = at least 1 Minor Vulnerability<br/> C = at least 1 Major Vulnerability <br/>D = at least 1 Critical Vulnerability <br/>E = at least 1 Blocker Vulnerability|Critical|&lt; B|
+|Reliability Rating|A = 0 Bug <br/>B = at least 1 Minor Bug <br/>C = at least 1 Major Bug <br/>D = at least 1 Critical Bug E = at least 1 Blocker Bug|Important|&lt; C|
+|Maintainability Rating|Outstanding remediation cost for code smells is: <br/><ul><li>&lt;=5% of the time that has already gone into the application, the rating is A </li><li>between 6 to 10% the rating is a B </li><li>between 11 to 20% the rating is a C </li><li>between 21 to 50% the rating is a D</li><li>anything over 50% is an E</li></ul>|Important|&lt; A|
+|Coverage|A mix of line coverage and condition coverage using this formula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>where: CT = conditions that have been evaluated to 'true' at least once <br/>CF = conditions that have been evaluated to 'false' at least once <br/>LC = covered lines = lines_to_cover - uncovered_lines <br/><br/> B = total number of conditions <br/>EL = total number of executable lines (lines_to_cover)|Important|&lt; 50%|
+|Skipped Unit Tests|Number of skipped unit tests.|Info|> 1|
+|Open Issues|Overall issue types - Vulnerabilities, Bugs, and Code Smells|Info|&gt; 1|
+|Duplicated Lines|Number of lines involved in duplicated blocks. <br/>For a block of code to be considered as duplicated: <br/><ul><li> Non-Java projects:<ul><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread at least on: <ul><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li></ul></li></ul>   <br/><ul><li>Java projects: <ul><li> There should be at least 10 successive and duplicated statements whatever the number of tokens and lines.</li></ul></li></ul> <br/>Differences in indentation as well as in string literals are ignored while detecting duplications.|Info|&gt; 1%|
+
 
 >[!NOTE]
 >
@@ -123,7 +58,7 @@ You can download the list of rules here:
 
 >[!NOTE]
 >
->To learn more about the custom SonarQube rules executed by Cloud Manager, please refer to [Custom Code Quality Rules](../using/custom-code-quality-rules.md).
+>To learn more about the custom SonarQube rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
 
 ### Dealing with False Positives {#dealing-with-false-positives}
 
@@ -157,11 +92,11 @@ Then the correct solution is to remove the hardcoded password.
 
 >[!NOTE]
 >
->While it is a best practice to make the `@SuppressWarnings`annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
+>While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
 ## Security Testing {#security-testing}
 
-Cloud Manager runs the existing ***AEM Security Heath Checks*** on stage following the deployment and reports the status through the UI. The results are aggregated from all AEM instances in the environment.
+[!UICONTROL Cloud Manager] runs the existing ***AEM Security Heath Checks*** on stage following the deployment and reports the status through the UI. The results are aggregated from all AEM instances in the environment.
 
 If any of the **Instances** report a failure for a given health check, the entire **Environment** fails that health check. As with Code Quality and Performance Testing, these health checks are organized into categories and reported using the three-tier gating system. The only distinction is that there is no threshold in the case of security testing. All the health checks are simply pass or fail.
 
@@ -192,15 +127,15 @@ The following table lists the current checks:
 
 ## Performance Testing {#performance-testing}
 
-*Performance testing* in Cloud Manager is implemented using a 30 minute test.
+*Performance testing* in [!UICONTROL Cloud Manager] is implemented using a 30 minute test.
 
 During pipeline setup, the deployment manager can decide how much traffic to direct to each bucket.
 
-You can learn more about bucket controls, from [Configure your CI/CD Pipeline](https://chl-aut/content/help/en/experience-manager/cloud-manager/using/configuring-pipeline.html).
+You can learn more about bucket controls, from [Configure your CI/CD Pipeline](configuring-pipeline.md).
 
 >[!NOTE]
 >
->To setup your program and define your KPIs, see [Setup your Program](https://chl-author.co/content/help/en/experience-manager/cloud-manager/using/setting-up-program.html).
+>To setup your program and define your KPIs, see [Setup your Program](setting-up-program.md).
 
 The following table summarizes the performance test matrix using the three-tier gating system:
 
@@ -222,39 +157,34 @@ New graphs and download options have been added to the Performance Test Results 
 
 When you open the Performance Test dialog, the metric panels can be expanded to display a graph, provide a link to a download, or both.
 
-For Cloud Manager Release 2018.7.0, this functionality is available for the following metrics:
+For [!UICONTROL Cloud Manager] Release 2018.7.0, this functionality is available for the following metrics:
 
 * **CPU Utilization**
-
-    * A graph of CPU Utilization during the test period.
+  * A graph of CPU Utilization during the test period.
 
 * **Disk I/O Wait Time**
-
-    * A graph of Disk I/O Wait Time during the test period.
+  * A graph of Disk I/O Wait Time during the test period.
 
 * **Page Error Rate**
-
-    * A graph of page errors per minute during the test period.
-    * A CSV file listing pages which have produced an error during the test.
+  * A graph of page errors per minute during the test period.
+  * A CSV file listing pages which have produced an error during the test.
 
 * **Disk Bandwidth Utilization**
-
-    * A graph of Disk Bandwidth Utilization during the test period.
+  * A graph of Disk Bandwidth Utilization during the test period.
 
 * **Network Bandwidth Utilization**
-
-    * A graph of Network Bandwidth Utilization during the test period.
+  * A graph of Network Bandwidth Utilization during the test period.
 
 * **Peak Response Time**
-
-    * A graph of peak response time per minute during the test period.
+  * A graph of peak response time per minute during the test period.
 
 * **95th Percentile Response Time**
-
-    * A graph of 95th percentile response time per minute during the test period.
-    * A CSV file listing pages whose 95th percentile response time has exceeded the defined KPI.
+  * A graph of 95th percentile response time per minute during the test period.
+  * A CSV file listing pages whose 95th percentile response time has exceeded the defined KPI.
 
 The following images display the performance test graphs:
 
-![](assets/graph-collapsed.png)  ![](assets/screen_shot_2018-09-05at83933pm.png)
+![](assets/graph-collapsed.png)  
+
+![](assets/screen_shot_2018-09-05at83933pm.png)
 
