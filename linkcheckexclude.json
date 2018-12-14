@@ -67,7 +67,16 @@
             "pattern": "^.*europa.eu"
         },
         {
+            "pattern": "^.*github.com"
+        },
+        {
             "pattern": "^.*html2canvas.hertzen.com"
+        },
+        {
+            "pattern": "^.*adobe.io"
+        },
+        {
+            "pattern": "^.*sling.apache.org"
         }
     ]
 }

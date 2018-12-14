@@ -92,7 +92,7 @@ For additional information, see [Getting Started with AEM 6.4](https://chl-autho
 
 An existing AEM project has to confirm to the rules to project setup. You can upgrade your existing AEM installation to obtain new capabilities and enhancements offered in AEM 6.4 and get started with [!UICONTROL Cloud Manager]. These criteria should work with minimal changes. Contact Customer Success Engineers (CSE) for support.
 
-To get additional information on upgrading your AEM instance to 6.4, see [Upgrading to AEM 6.4](/content/help/en/experience-manager/6-4/sites/deploying/using/upgrade).
+To get additional information on upgrading your AEM instance to 6.4, see [Upgrading to AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html).
 
 ### Setting up Repository {#setting-up-repository}
 

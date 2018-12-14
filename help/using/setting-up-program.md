@@ -1,8 +1,8 @@
 ---
 title: Setup your Program
 seo-title: Setup your Program
-description: null
-seo-description: After on-boarding, the business owner will need to do some initial setup of the program. This involves setting the program description and defining the KPIs which will be used for performance testing. Follow this page to learn more.
+description: After on-boarding, the business owner will need to do some initial setup of the program.
+seo-description: After on-boarding, the business owner will need to do some initial setup of Adobe AEM Cloud Manager. This involves setting the program description and defining the KPIs which will be used for performance testing. 
 uuid: 9ecf8743-1f5a-4744-86af-e2256567642f
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -25,13 +25,13 @@ The KPIs defined serves as a baseline for performance testing which is passed ea
 >
 >For example, a user expecting an average of 1000 page views per minute in their production **Environment** and having four dispatcher/publish servers in production should scale this to 250 page views per minute (assuming their stage environment consists of only a single dispatcher/publish server pair).
 >
->Additionally, many users will have a Content Delivery Network (CDN), such as Akamai or CloudFront in front of their production environment. Since Cloud Manager tests against the stage environment directly, the KPI should reflect only the traffic expected to pass through the CDN, that is, the cache misses. Typically this will be a relatively small subset of the total production traffic.
+>Additionally, many users will have a Content Delivery Network (CDN), such as Akamai or CloudFront in front of their production environment. Since [!UICONTROL Cloud Manager] tests against the stage environment directly, the KPI should reflect only the traffic expected to pass through the CDN, that is, the cache misses. Typically this will be a relatively small subset of the total production traffic.
 
-## Using Cloud Manager to Setup your Program {#using-cloud-manager-to-setup-your-program}
+## Using [!UICONTROL Cloud Manager] to Setup your Program {#using-cloud-manager-to-setup-your-program}
 
 Follow the steps below to set up the program and define KPIs:
 
-1. Click **Setup Program** to start the setup process in Cloud Manager.
+1. Click **Setup Program** to start the setup process in [!UICONTROL Cloud Manager].
 
    ![](assets/screen_shot_2018-07-18at100530pm.png)
 
@@ -59,20 +59,15 @@ Follow the steps below to set up the program and define KPIs:
 
    >[!NOTE]
    >
-   >
-   >    
-   >    
-   >    * Autoscaling feature is applicable to production environment only and may not be available for all customer programs.
-   >    * On-demand scaling is not available for this release of Cloud Manager.
-   >    
-   >
+   >* Autoscaling feature is applicable to production environment only and may not be available for all customer programs.
+   >* On-demand scaling is not available for this release of [!UICONTROL Cloud Manager].
 
-   ![](assets/screen_shot_2018-09-13at92934am.png)
+![](assets/screen_shot_2018-09-13at92934am.png)
 
 1. Click **Save** to complete the setup wizard.
 
-### The Next Steps {#the-next-steps}
+## The Next Steps {#the-next-steps}
 
 If you have already set up the **Pipeline**, the next execution will take your updated settings into account. If you have not yet set up the pipeline, follow the steps to set up your pipeline first.
 
-Please see [Configure your CI/CD Pipeline](https://chl-author./content/help/en/experience-manager/cloud-manager/using/configuring-pipeline.html) for setting up the pipeline.
+Please see [Configure your CI/CD Pipeline](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) for setting up the pipeline.
