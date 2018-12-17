@@ -54,7 +54,7 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 
 You can download the list of rules here:
 
-[](assets/sonarqube_rules.xlsx)
+[](assets/sonarqube-rules.xlsx)
 
 >[!NOTE]
 >
