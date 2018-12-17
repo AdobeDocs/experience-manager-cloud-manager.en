@@ -25,7 +25,7 @@ Before you get into the details of using the [!UICONTROL Cloud Manager], it is r
 
 Once you have setup the general configurations for [!UICONTROL Cloud Manager], you are ready to use the [!UICONTROL Cloud Manager].
 
-1. Log in to the Adobe [!UICONTROL Experience Cloud] and you will see the list of solutions. 
+1. Log in to the Adobe [!UICONTROL Experience Cloud] and you will see the list of solutions.
 
    ![](assets/screen_shot_2018-04-22at92951am.png)
 
@@ -43,7 +43,7 @@ The KPIs defined serves as a baseline for performance testing that is passed eac
 >
 >The KPIs defined are measured on tests run on the **stage** environment. Typically, these KPIs are scaled down to fit the capabilities of the stage environment.
 >
->For example, a user expecting an average of 1000 page views per minute in their production environment and having four dispatcher/publish servers in production should scale this to 250 page views per minute (assuming their stage environment consists of only a single dispatcher/publish server pair).
+>For example, a user expecting an average of 1000 page views per minute in their production environment and having four `dispatcher/publish` servers in production should scale this to 250 page views per minute (assuming their stage environment consists of only a single `dispatcher/publish` server pair).
 >
 >Also, many users will have a CDN (Akamai, CloudFront) in front of their production environment. Since [!UICONTROL Cloud Manager] tests against the stage environment directly, the KPI should reflect only the traffic expected to pass through the CDN, that is, the cache misses. Typically this will be a relatively small subset of the total production traffic.
 
@@ -133,7 +133,7 @@ Follow the steps below from the [!UICONTROL Cloud Manager] to configure the baha
 
 ## Deploying Code {#deploying-code}
 
-Once you have configured your pipeline (repository, environment, and testing environment), you are ready to deply your code.
+Once you have configured your pipeline (repository, environment, and testing environment), you are ready to deploy your code.
 
 ### Deploying Code from [!UICONTROL Cloud Manager] {#deploying-code-from-cloud-manager}
 
@@ -144,7 +144,7 @@ Follow the steps below to deploy your code to the production environment:
 
    Click **Build** to start the process.
 
-1. The complete build process takes into account several parametrs to check and deploys your code.
+1. The complete build process takes into account several parameters to check and deploys your code.
 
    The following parameters that are checked are as follows:
 
@@ -193,7 +193,7 @@ For example, let's say that there is a 50%/50% split between the Popular Live Pa
 
 ### Performance Test Metrics {#performance-test-metrics}
 
-During the test period, a number of metrics are captured and compard to either the KPIs defined by the business owner or standards set by AMS.
+During the test period, a number of metrics are captured and compared to either the KPIs defined by the business owner or standards set by AMS.
 
 These are reported using the three-tier gating system as follows:
 
@@ -211,19 +211,19 @@ The following table summarizes the performance test matrix using the three-tier 
 
 | **Metric** |**Category** |**Failure Threshold** |
 |---|---|---|
-| Page Request Error Rate % |Critical |>= 2% |
-| CPU Utilization Rate |Critical |>= 80% |
-| Disk IO Wait Time |Critical |>= 50% |
-| 95 Percetile Response Time |Important |>= Program-level KPI |
-| Peak Response Time |Important |>= 18 seconds |
-| Page Views Per Minute |Important |< Program-level KPI |
-| Disk Bandwidth Utilization |Important |>= 90% |
-| Network Bandwidth Utilization |Important |>= 90% |
-| Requests Per Minute |Info |< 6000 |
+| Page Request Error Rate % |Critical |&gt;= 2% |
+| CPU Utilization Rate |Critical |&gt;= 80% |
+| Disk IO Wait Time |Critical |&gt;= 50% |
+| 95 Percentile Response Time |Important |&gt;= Program-level KPI |
+| Peak Response Time |Important |&gt;= 18 seconds |
+| Page Views Per Minute |Important |&lt; Program-level KPI |
+| Disk Bandwidth Utilization |Important |&gt;= 90% |
+| Network Bandwidth Utilization |Important |&gt;= 90% |
+| Requests Per Minute |Info |&lt; 6000 |
 
 ### Security Testing {#security-testing}
 
-[!UICONTROL Cloud Manager] runs the existing ***AEM Security Heath Checks*** on stage following the deployment and reports their status through the UI. The results are aggregated from all AEM instances in the environment.
+[!UICONTROL Cloud Manager] runs the existing *AEM Security Heath Checks* on stage following the deployment and reports their status through the UI. The results are aggregated from all AEM instances in the environment.
 
 If any of the instances report a failure for a given health check, the entire environment fails that health check. As with Code Quality and Performance Testing, these health checks are organized into categories and reported using the three-tier gating system. The only distinction is that there is no threshold in the case of security testing. All the health checks are simply pass or fail.
 
@@ -254,7 +254,7 @@ The current checks are:
 
 ### Quality Check Implementation by SonarQube {#quality-check-implementation-by-sonarqube}
 
-As part of the pipeline, as depicted above, the code is scanned. Currently, this is implemented by SonarQube. We have 93 rules which are a combination of generic Java rules and AEM-specific rules (including some from Cognifide's existing rule set). A list of these rules can be found here: [SonarQube Rules.xlsx](https://wiki.corp.adobe.com/download/attachments/1357776655/SonarQube%20Rules.xlsx?version=3&modificationDate=1520893776617&api=v2)
+As part of the pipeline, as depicted above, the code is scanned. Currently, this is implemented by SonarQube. We have 93 rules which are a combination of generic Java rules and AEM-specific rules (including some from Cognifide's existing rule set). A list of these rules can be found here: [SonarQube Rules.xlsx](help/using/assets/sonarqube_rules.xlsx)
 
 From these rules, a variety of metrics is calculated, some of which are used as a quality gate before allowing a deployment to the stage environment.
 
@@ -272,7 +272,7 @@ These are the current thresholds:
 
 ### False Positives {#false-positives}
 
-The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is called a *false positive* (although *false negative* would probably be more semantically correct). In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common problem is that the SonarQube rule to detect hardcoded passwords is very liberal about what it considers a hardcoded password.
+The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is called a *false positive* (although *false negative* would probably be more semantically correct). In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common problem is that the SonarQube rule to detect hardcoded passwords is very liberal about what it considers a hard-coded password.
 
 To look at a specific example, this code would be fairly common in an AEM project which has code to connect to some external service:
 
@@ -296,7 +296,7 @@ However, on the other hand, if the code was actually this:
 private static final String SERVICE_PASSWORD = "password";
 ```
 
-Then the customer should take SonarQube's warning to heart and remove the hardcoded password. They will still, however, need to add the `@SuppressWarnings` annotation since the SonarQube rule is actually being triggered by the term `password`.
+Then the customer should take SonarQube's warning to heart and remove the hard-coded password. They will still, however, need to add the `@SuppressWarnings` annotation since the SonarQube rule is actually being triggered by the term `password`.
 
 >[!NOTE]
 >
