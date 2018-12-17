@@ -1,16 +1,13 @@
 ---
 title: Custom Code Quality Rules
 seo-title: Custom Code Quality Rules
-description: null
-seo-description: Follow this page to learn about the custom SonarQube rules executed by Cloud Manager.
+description: Follow this page to learn about the custom SonarQube rules executed by Cloud Manager.
+seo-description: Follow this page to learn about the custom SonarQube rules executed by Adobe Experience Manager Cloud Manager.
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-index: y
-internal: n
-snippet: y
 ---
 
 # Custom Code Quality Rules{#custom-code-quality-rules}
