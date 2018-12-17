@@ -9,7 +9,7 @@ contentOwner: jsyal
 discoiquuid: c37566d5-0d1b-4c44-abd7-b271ea443c1a
 ---
 
-# Using [!UICONTROL Cloud Manager]{#using-cloud-manager}
+# Using Cloud Manager{#using-cloud-manager}
 
 This section explains the User Interface (UI) for [!UICONTROL Cloud Manager] and explains the workflow from setting up the program to code deployment followed by quality checks.
 
@@ -272,7 +272,7 @@ These are the current thresholds:
 
 ### False Positives {#false-positives}
 
-The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is called a "false positive" (although "false negative" would probably be more semantically correct). In these cases, the source code can be annotated with the standard Java @SuppressWarnings annotation specifying the rule ID as the annotation attribute. For example, one common problem is that the SonarQube rule to detect hardcoded passwords is very liberal about what it considers a hardcoded password.
+The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is called a *false positive* (although *false negative* would probably be more semantically correct). In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common problem is that the SonarQube rule to detect hardcoded passwords is very liberal about what it considers a hardcoded password.
 
 To look at a specific example, this code would be fairly common in an AEM project which has code to connect to some external service:
 
@@ -296,9 +296,9 @@ However, on the other hand, if the code was actually this:
 private static final String SERVICE_PASSWORD = "password";
 ```
 
-Then the customer should take SonarQube's warning to heart and remove the hardcoded password. They will still, however, need to add the @SuppressWarnings annotation since the SonarQube rule is actually being triggered by the term "password".
+Then the customer should take SonarQube's warning to heart and remove the hardcoded password. They will still, however, need to add the `@SuppressWarnings` annotation since the SonarQube rule is actually being triggered by the term `password`.
 
 >[!NOTE]
 >
->It is a best practice to make the @SuppressWarnings annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
+>It is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
 
