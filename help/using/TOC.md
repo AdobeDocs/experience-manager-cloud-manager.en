@@ -5,10 +5,10 @@ archtype: administrator
 user-guide: Experience Manager Cloud Manager Help
 ---
 
-# Experience Manager Help {#experience-manager-cloud-manager-help}
+# Experience Manager Help {#using}
 
 + [Overview Index](overview-index.md)
-+ Cloud Manager Overview {#cloud-manager-overview}
++ Cloud Manager Overview {#overview}
   + [Overview](overview-cloud-manager.md)
   + [Introduction to Cloud Manager](introduction-to-cloud-manager.md)
   + [Customer Journey](customer-journey.md)
@@ -17,7 +17,7 @@ user-guide: Experience Manager Cloud Manager Help
   + [Key Concepts](key-concepts.md)
   + [Understanding Concepts Before Using Cloud Manager](understanding-concepts.md)
   + [Help Resources](help-resources.md)
-+ What is required {#what-is-required}
++ What is required {#requirements}
   + [Access Rights Granted](access-rights-granted.md)
   + [Source Code Repository](source-code-repository.md)
   + [Add Users and Roles](setting-up-users-and-roles.md)
@@ -28,7 +28,7 @@ user-guide: Experience Manager Cloud Manager Help
   + [Create an AEM Application Project](create-an-application-project.md)
   + [Configure your Release Branches](configure-your-release-branches.md)
   + [Manage your Dispatcher Configurations](dispatcher-configurations.md)
-+ How to use Cloud Manager {#how-to-use-cloud-manager}
++ How to use Cloud Manager {#how-to-use}
   + [Using Cloud Manager](using-cloud-manager.md)
   + [Configure your CI/CD Pipeline](configuring-pipeline.md)
   + [Deploy your Code](deploying-code.md)
