@@ -17,9 +17,9 @@ snippet: y
 
 This section provides concepts and terminologies that are good to know before working in Cloud Manager and covers the following topics:
 
-* **Deployment Environment **
+* **Deployment Environment**
 * **Source Code Repository**
-* **Security and Privacy **
+* **Security and Privacy**
 * **Pipeline Overview**
 * **Help Resources**
 
@@ -43,7 +43,7 @@ Section is redundant with the section in the Overview topic
 
 ## Source Code Repository {#source-code-repository}
 
-***Multiple Git Servers***: In some cases, customers will have an existing git repository and want to keep using it.
+**Multiple Git Servers**: In some cases, customers will have an existing git repository and want to keep using it.
 
 For these cases, the you can use git's support for multiple remote repositories. Day to day development would continue to happen in the your git repository. When a deployment is desired, you can simply push the latest code to the Cloud Manager git repository.
 
@@ -85,9 +85,9 @@ The single pipeline process is illustrated below:
 
 ### Understanding the Flow {#understanding-the-flow}
 
-You can configure your pipeline from the **Pipeline Settings** tile from Cloud Manager UI.
+You can configure your pipeline from the [!UICONTROL Pipeline Settings] tile from Cloud Manager UI.
 
-Refer to [Using Cloud Manager,](https://chl-author.c/content/help/en/experience-manager/cloud-manager/using/using-cloud-manager.html) for more information.
+Refer to [Using Cloud Manager,](hhttps://helpx.adobe.com/experience-manager/cloud-manager/using/using-cloud-manager.html) for more information.
 
 The Deployment Manager is responsible for setting up the pipeline, that is:
 
@@ -103,7 +103,7 @@ Finally, you will be able to configure the performance test parameters.
 
 >[!NOTE]
 >
->To learn about configuring the behavior and preferences for your pipeline, see **Configuring Pipeline** section in [**Using Cloud Manager**](using-cloud-manager.md).
+>To learn about configuring the behavior and preferences for your pipeline, see **Configuring Pipeline** section in [Using Cloud Manager](using-cloud-manager.md).
 
 ### Help Resources {#help-resources}
 
@@ -113,4 +113,4 @@ Contact Adobe Managed Services Customer Success Engineer for support.
 
 Now you have better understanding of the Cloud Manager concepts.
 
-To set up your project, environment, and the team (user and roles), refer to ** [*Setting up General Configurations for Cloud Manager*](setting-configurations-for-cloud-manager.md)**.
+To set up your project, environment, and the team (user and roles), refer to [Setting up General Configurations for Cloud Manager](setting-configurations-for-cloud-manager.md).
