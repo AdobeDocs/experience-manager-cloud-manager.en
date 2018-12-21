@@ -8,9 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Create an AEM Application Project{#create-an-aem-application-project}

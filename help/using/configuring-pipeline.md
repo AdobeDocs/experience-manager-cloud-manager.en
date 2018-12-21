@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Configure your CI/CD Pipeline{#configure-your-ci-cd-pipeline}

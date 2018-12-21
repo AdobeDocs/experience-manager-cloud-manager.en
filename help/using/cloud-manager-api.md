@@ -9,9 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8b4f7a56-49be-47d7-b243-ab1299cc2ca1
 redirecttarget: https //www.adobe.io/apis/experiencecloud/cloud-manager/docs.html
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Cloud Manager API{#cloud-manager-api}

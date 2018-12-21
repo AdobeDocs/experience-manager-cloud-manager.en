@@ -8,9 +8,7 @@ uuid: 73436882-a3f7-4048-bb8d-7f5819d29c8f
 contentOwner: jsyal
 discoiquuid: 4ac3e831-2227-4ea8-abcc-c5734e023424
 preview: true
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Deployment Environment{#deployment-environment}

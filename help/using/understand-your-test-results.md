@@ -8,9 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Understand your Test Results{#understand-your-test-results}

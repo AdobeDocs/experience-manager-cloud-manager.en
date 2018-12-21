@@ -8,9 +8,7 @@ uuid: 55cc551a-e812-4102-96c8-13d2cdd79c84
 contentOwner: jsyal
 discoiquuid: c3fd3f4e-0b57-4377-b923-a440c74773d8
 preview: true
-index: y
-internal: n
-snippet: y
+
 ---
 
 # Understanding Concepts Before Using Cloud Manager{#understanding-concepts-before-using-cloud-manager}
