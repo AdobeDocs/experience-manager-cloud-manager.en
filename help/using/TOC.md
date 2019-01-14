@@ -8,15 +8,12 @@ index: n
 
 # Experience Manager Help {#using}
 
-+ [Overview Index](overview-index.md)
-+ Cloud Manager Overview {#overview}
-  + [Overview](overview-cloud-manager.md)
-  + [Introduction to Cloud Manager](introduction-to-cloud-manager.md)
++ [Cloud Manager Overview](introduction-to-cloud-manager.md)
++ Introduction to Cloud Manager {#overview}
   + [Customer Journey](customer-journey.md)
-  + [Security and Privacy](security-and-privacy.md)
   + [CI/CD Pipeline](ci-cd-pipeline.md)
+  + [Security and Privacy](security-and-privacy.md)
   + [Key Concepts](key-concepts.md)
-  + [Understanding Concepts Before Using Cloud Manager](understanding-concepts.md)
   + [Help Resources](help-resources.md)
 + What is required {#requirements}
   + [Access Rights Granted](access-rights-granted.md)
