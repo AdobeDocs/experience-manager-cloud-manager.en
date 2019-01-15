@@ -10,7 +10,7 @@ topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 ---
 
-# First Time Login{#first-time-login}
+# First Time Login {#first-time-login}
 
 Once you have setup the general configurations for [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI) for [!UICONTROL Cloud Manager].
 
@@ -37,4 +37,3 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
    >[!NOTE]
    >
    >Please see [Setup your Program](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) to complete the next steps.
-

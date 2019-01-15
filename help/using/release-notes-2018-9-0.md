@@ -11,7 +11,7 @@ discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
 
 ---
 
-# Release Notes for 2018.9.0{#release-notes-for}
+# Release Notes for 2018.9.0 {#release-notes-for}
 
 The [!UICONTROL Cloud Manager] 2018.9.0 Release adds support for an Adobe I/O-based API, including Events, for integrating [!UICONTROL Cloud Manager]'s CI/CD pipeline with other systems. It also begins the rewrite of the UI layer in React.
 

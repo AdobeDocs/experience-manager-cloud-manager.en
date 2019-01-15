@@ -11,7 +11,7 @@ discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
 
 ---
 
-# Configure your Release Branches{#configure-your-release-branches}
+# Configure your Release Branches {#configure-your-release-branches}
 
 ## Setting Up Your First Branch in Git {#setting-up-your-first-branch-in-git}
 
@@ -53,7 +53,7 @@ $ git commit -m "initial commit"
 
 ## Pushing Your First Branch {#pushing-your-first-branch}
 
-Once you have commited at least one revision, you can add the [!UICONTROL Cloud Manager] repository as a **remote*** *and then push your commits to it:
+Once you have commited at least one revision, you can add the [!UICONTROL Cloud Manager] repository as a **remote** and then push your commits to it:
 
 ```shell
 $ git remote add adobe <url>

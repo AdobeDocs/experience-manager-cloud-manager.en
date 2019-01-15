@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: e35be81f-cfe5-4f14-b9c8-59235a7ef22c
 ---
 
-# Help Resources{#help-resources}
+# Help Resources {#help-resources}
 
 You should first reach out to your [!UICONTROL Adobe Managed Services Customer Success Engineer] (CSE) for support related to [!UICONTROL Cloud Manager]. Your CSE will advise you whether they can help you with your issue, or whether you would need to create a Support ticket using Customer Care.
 
