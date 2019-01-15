@@ -42,4 +42,4 @@ index: n
   + [Release Notes for 2018.8.0](release-notes-2018-8-0.md)
   + [Release Notes for 2018.7.0](release-notes-2018-7-0.md)
   + [Release Notes for 2018.6.0](release-notes-2018-6-0.md)
-  + [Release Notes for 2018.5.0](release-notes-2018-50.md)
+  + [Release Notes for 2018.5.0](release-notes-2018-5-0.md)
