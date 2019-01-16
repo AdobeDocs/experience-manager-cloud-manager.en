@@ -8,7 +8,7 @@ topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 ---
 
-# CI/CD Pipeline{#ci-cd-pipeline}
+# CI/CD Pipeline {#ci-cd-pipeline}
 
 ## Pipeline Overview {#pipeline-overview}
 
@@ -51,9 +51,9 @@ The CI/CD Pipeline provides quality gates, or acceptance criteria, which must be
 
 For each of these gates, there are three levels of issues identified:
 
-* Critical - issues identified by the gate which cause an immediate failure of the pipeline.
-* Important - issues identified by the gate which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure.
-* Information - issues identified by the gate which are provided purely for informational purposes and have no impact on the pipeline execution.
+* **Critical** - issues identified by the gate which cause an immediate failure of the pipeline.
+* **Important** - issues identified by the gate which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure.
+* **Information** - issues identified by the gate which are provided purely for informational purposes and have no impact on the pipeline execution.
 
 The following is an example of a Code Scan with issues identified for the code:
 

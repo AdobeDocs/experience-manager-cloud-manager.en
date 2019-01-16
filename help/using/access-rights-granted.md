@@ -9,7 +9,7 @@ topic-tags: requirements
 discoiquuid: 072dbc1b-e608-4b1f-b0e8-0e4f88c8ad12
 ---
 
-# Access Rights Granted{#access-rights-granted}
+# Access Rights Granted {#access-rights-granted}
 
 ## User Identity Types {#user-identity-types}
 

@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
 ---
 
-# Customer Journey{#customer-journey}
+# Customer Journey {#customer-journey}
 
 As a customer, you may be new to Adobe Experience Manager (AEM), currently using AEM 6.4, or may need to upgrade to the AEM 6.4 release in order to use [!UICONTROL Cloud Manager]. The following scenarios explain your journey as a new or existing customer to get started with [!UICONTROL Cloud Manager].
 
@@ -20,13 +20,13 @@ As a customer, you may be new to Adobe Experience Manager (AEM), currently using
 
 ## On-boarding to [!UICONTROL Cloud Manager]{#on-boarding-to-cloud-manager}
 
-1. New AEM Customer on Adobe Managed Services*
+1. **New AEM Customer on Adobe Managed Services**
 
    As a new customer, you will be on-boarded to [!UICONTROL Cloud Manager] as part of the on-boarding process to the Adobe managed cloud service.
 
    The URL to access [!UICONTROL Cloud Manager] will be included in the welcome email, along with the instructions to login to [!UICONTROL Experience Cloud], and use the Adobe Admin Console for managing your users and their respective permisions, for those users who need to access [!UICONTROL Cloud Manager].
 
-1. Existing AEM Customer on Adobe Managed Services*
+1. **Existing AEM Customer on Adobe Managed Services**
 
    As an existing customer, you will first need to upgrade your existing production and non-production environments to the AEM 6.4 release. At the same time you will perform the upgrade, you will be on-boarded and provided with the URL to access [!UICONTROL Cloud Manager]. Additionally, you will need to start using the Adobe Admin Console for managing your users and their respective permisions, for those users who need to access [!UICONTROL Cloud Manager].
 
@@ -42,7 +42,7 @@ After logging in [!UICONTROL Cloud Manager] for the first time, you will have ac
 
 To explore and get started with [!UICONTROL Cloud Manager], see [First Time Login](first-time-login.md). For additional information about AEM, see [Getting Started with AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html). Additionally, refer to [AEM Resources](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) for further information.
 
-## Getting started with [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
+## Getting Started with [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
 Once you are logged in to [!UICONTROL Cloud Manager], the first thing to do will be to to set up your code repository environment, then your team and roles. Specificically, the role memberships are assigned by adding the user to a [!UICONTROL Cloud Manager] profile using the Admin Console UI.
 

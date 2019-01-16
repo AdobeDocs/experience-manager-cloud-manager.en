@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 ---
 
-# Custom Code Quality Rules{#custom-code-quality-rules}
+# Custom Code Quality Rules {#custom-code-quality-rules}
 
 This page describes the custom SonarQube rules executed by Cloud Manager. These rules augment the standard SonarQube rules with best practices from AEM Engineering.
 
@@ -550,4 +550,3 @@ public void doThis(Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
-

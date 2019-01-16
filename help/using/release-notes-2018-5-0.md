@@ -11,7 +11,7 @@ discoiquuid: 6d1e7098-b56e-4172-8373-486f186f3d53
 
 ---
 
-# Release Notes for 2018.5.0{#release-notes-for}
+# Release Notes for 2018.5.0 {#release-notes-for}
 
 The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2018.5.0.
 

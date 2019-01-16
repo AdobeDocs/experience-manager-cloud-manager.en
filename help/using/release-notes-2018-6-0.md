@@ -10,7 +10,7 @@ topic-tags: release-notes
 discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
 ---
 
-# Release Notes for 2018.6.0{#release-notes-for}
+# Release Notes for 2018.6.0 {#release-notes-for}
 
 The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2018.6.0 and adds support for dispatcher invalidation during deployments, additional notifications, and usability improvements.
 
@@ -22,7 +22,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.6.0 is August 9, 20
 
 * **CI/CD Pipeline** - Configurable Dispatcher Invalidation and Cache Flushing on both Stage and Production during CI/CD Pipeline execution. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.
 
-* **CI/CD Pipeline **- During pipeline setup, it is now possible to define how the pipeline will behave when it encounters an Important failure in one of the quality gates. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.  
+* **CI/CD Pipeline** - During pipeline setup, it is now possible to define how the pipeline will behave when it encounters an Important failure in one of the quality gates. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.  
 
 * **CI/CD Pipeline** - During pipeline setup, it is now possible to select whether you want CSE Oversight to be performed by your CSE or any available CSE. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.  
 

@@ -11,7 +11,7 @@ discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 
 ---
 
-# Understand your Test Results{#understand-your-test-results}
+# Understand your Test Results {#understand-your-test-results}
 
 During the **Pipeline** process, a number of metrics are captured and compared to either the Key Performance Indicators (KPIs) defined by the business owner, or standards set by Adobe Managed Services.
 

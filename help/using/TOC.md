@@ -15,18 +15,18 @@ index: n
   + [Security and Privacy](security-and-privacy.md)
   + [Key Concepts](key-concepts.md)
   + [Help Resources](help-resources.md)
-+ What is required {#requirements}
++ What is Required {#requirements}
   + [Access Rights Granted](access-rights-granted.md)
   + [Source Code Repository](source-code-repository.md)
   + [Add Users and Roles](setting-up-users-and-roles.md)
   + [Environments Provisioned](environments-provisioned.md)
-+ Getting started {#getting-started}
++ Getting Started {#getting-started}
   + [First Time Login](first-time-login.md)
   + [Setup your Program](setting-up-program.md)
   + [Create an AEM Application Project](create-an-application-project.md)
   + [Configure your Release Branches](configure-your-release-branches.md)
   + [Manage your Dispatcher Configurations](dispatcher-configurations.md)
-+ How to use Cloud Manager {#how-to-use}
++ How to Use Cloud Manager {#how-to-use}
   + [Using Cloud Manager](using-cloud-manager.md)
   + [Configure your CI/CD Pipeline](configuring-pipeline.md)
   + [Deploy your Code](deploying-code.md)
