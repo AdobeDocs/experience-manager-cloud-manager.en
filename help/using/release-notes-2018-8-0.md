@@ -10,7 +10,7 @@ topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
 ---
 
-# Release Notes for 2018.8.0{#release-notes-for}
+# Release Notes for 2018.8.0 {#release-notes-for}
 
 The [!UICONTROL Cloud Manager] 2018.8.0 Release adds support for triggering the CI/CD pipeline automatically upon git commits and a new wizard for creating application projects in git based on the AEM Project Archetype.
 
@@ -31,7 +31,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.8.0 is October 04, 
   * Pipeline execution page now displays the version/tag name created for the execution.
   * Apache Maven version updated to 3.5.3.
 
-* **Navigation **- The following changes are added to the [!UICONTROL Cloud Manager].
+* **Navigation** - The following changes are added to the [!UICONTROL Cloud Manager].
 
   * Resources link in global navigation will navigate to the Runbook in Sharepoint.
   * Help menu has been reorganized to include more [!UICONTROL Cloud Manager]-specific content.

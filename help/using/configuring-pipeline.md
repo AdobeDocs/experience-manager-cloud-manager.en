@@ -12,7 +12,7 @@ discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 
 ---
 
-# Configure your CI/CD Pipeline{#configure-your-ci-cd-pipeline}
+# Configure your CI/CD Pipeline {#configure-your-ci-cd-pipeline}
 
 The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](ci-cd-pipeline.md).
 
@@ -81,11 +81,11 @@ This is useful for customers who have the desire for more automated processes. T
 
 * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
 * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-* **Continue immediately **- If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+* **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
 Now you define the parameters controlling the production deployment. The three available options are as follows:
 
-* **Use Go Live Approval **- A deployment must be manually approved by a business owner, project manager, or deployment manager via the [!UICONTROL Cloud Manager] UI.
+* **Use Go Live Approval** - A deployment must be manually approved by a business owner, project manager, or deployment manager via the [!UICONTROL Cloud Manager] UI.
 * **Use CSE Oversight** - A CSE is engaged to actually start the deployment. During pipeline setup or edit when CSE Oversight is enabled, the Deployment Manager has the option of selecting:
 
   * **Any CSE**: refers to any available CSE  

@@ -11,7 +11,7 @@ discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 
 ---
 
-# Manage your Environments{#manage-your-environments}
+# Manage your Environments {#manage-your-environments}
 
 The **Overview** page of Cloud Manager includes the **Environments** tile that lists all the managed AEM environments.
 
@@ -29,7 +29,7 @@ The **Environments** tile displays the Production and Stage environments provisi
 
 Click **Manage** to display the **Environments** screen.
 
-The **Environments** screen displays a card each for *Production* and *Stage* environments (as applicable) in your program. The name of the environment is seen above each card. The card includes a table of nodes in the environment along with the t-shirt size of the cpu, the storage, the region, and the status**. **
+The **Environments** screen displays a card each for *Production* and *Stage* environments (as applicable) in your program. The name of the environment is seen above each card. The card includes a table of nodes in the environment along with the t-shirt size of the cpu, the storage, the region, and the status.
 
 >[!NOTE]
 >

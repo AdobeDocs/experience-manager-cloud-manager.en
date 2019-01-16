@@ -11,7 +11,7 @@ discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 
 ---
 
-# Create an AEM Application Project{#create-an-aem-application-project}
+# Create an AEM Application Project {#create-an-aem-application-project}
 
 ## Using Wizard to Create an AEM Application Project {#using-wizard-to-create-an-aem-application-project}
 

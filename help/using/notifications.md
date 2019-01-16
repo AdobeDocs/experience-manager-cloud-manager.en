@@ -10,9 +10,9 @@ topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
 ---
 
-# Notifications{#notifications}
+# Notifications {#notifications}
 
-[!UICONTROL Cloud Manager] allows the users to receive notifications when a Pipeline starts and completes (successfully or unsuccessfully) as well as when the** Go-Live Approval **and** Scheduled **steps are reached. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
+[!UICONTROL Cloud Manager] allows the users to receive notifications when a Pipeline starts and completes (successfully or unsuccessfully) as well as when the **Go-Live Approval** and **Scheduled** steps are reached. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
 
 >[!NOTE]
 >
@@ -49,4 +49,3 @@ The users can turn on email notifications and (optionally) select the types of n
 >You can also enable digesting from the Adobe [!UICONTROL Experience Cloud], as shown below:
 
 ![](assets/image2018-7-12_12-10-51.png)
-
