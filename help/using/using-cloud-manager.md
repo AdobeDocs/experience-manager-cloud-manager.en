@@ -17,7 +17,6 @@ This section explains the User Interface (UI) for [!UICONTROL Cloud Manager] and
 
 Before you get into the details of using the [!UICONTROL Cloud Manager], it is recommended to go though the following sections:
 
-* [Overview](overview-cloud-manager.md)
 * [Understanding the Concepts before Using [!UICONTROL Cloud Manager]](understanding-concepts.md)
 * [Setting up General Configurations for [!UICONTROL Cloud Manager]](setting-configurations-for-cloud-manager.md)
 
