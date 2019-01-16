@@ -11,7 +11,7 @@ discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
 
 ---
 
-# Setup your Program{#setup-your-program}
+# Setup your Program {#setup-your-program}
 
 After on-boarding, the business owner will need to complete some initial setup of the program. This involves setting the program description and defining the Key Performance Indicators (KPIs) which will be used for performance testing. Optionally, a thumbnail can be uploaded. Additionally, the business owner can configure environments provisioning while setting up the program.
 
@@ -33,15 +33,15 @@ Follow the steps below to set up the program and define KPIs:
 
    ![](assets/screen_shot_2018-07-18at100530pm.png)
 
-1. The **Edit Program **screen displays.
+1. The **Edit Program** screen displays.
 
-   You will see three options as **General**, **KPI**, and **Provisioning** tab**.**
+   You will see three options as **General**, **KPI**, and **Provisioning** tab.
 
-1. In **General** tab, upload a thumbnail to your program. You can also add a relevant description to your program**.**
+1. In **General** tab, upload a thumbnail to your program. You can also add a relevant description to your program.
 
    ![](assets/screen_shot_2018-09-11at84546am.png)
 
-1. Under **KPI, **you can define your two KPIs (expectations for each deployment):
+1. Under **KPI**, you can define your two KPIs (expectations for each deployment):
 
     1. What is the 95th percentile response time that is acceptable to you?
 
@@ -53,7 +53,7 @@ Follow the steps below to set up the program and define KPIs:
 
    ![](assets/screen_shot_2018-09-11at84631am.png)
 
-1. Under **Provisioning**,** **you can you can view or edit the provisioning configuration for production and non-production environments in your program. You will see Autoscaling** **on,** **if autoscaling has been turned on for the program.
+1. Under **Provisioning**,you can you can view or edit the provisioning configuration for production and non-production environments in your program. You will see **Autoscale is on**, if autoscaling has been turned on for the program.
 
    >[!NOTE]
    >

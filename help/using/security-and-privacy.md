@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 ---
 
-# Security and Privacy{#security-and-privacy}
+# Security and Privacy {#security-and-privacy}
 
 [!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the **Git Repository**. Alternatively, a business owner has different permissions allowing them to define the Key Performance Indicators (KPIs) and approve deployments.
 

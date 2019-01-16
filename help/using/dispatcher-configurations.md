@@ -11,7 +11,7 @@ discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 
 ---
 
-# Manage your Dispatcher Configurations{#manage-your-dispatcher-configurations}
+# Manage your Dispatcher Configurations {#manage-your-dispatcher-configurations}
 
 ## Using Cloud Manager to Deploy Dispatcher Configuration Files {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
 
