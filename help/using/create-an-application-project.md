@@ -183,6 +183,10 @@ And if you wanted to output a simple message only when the build is run outside 
         </profile>
 ```
 
+## Custom Environment Variables
+
+In some cases, a customer's build process may depend upon specific configuration variables which would be inappropriate to place in the git repository. Cloud Manager allows for these variables to be configured by a Customer Success Engineer (CSE) on a customer-by-customer basis. These variables are stored in a secure storage location and are only visible in the build container for the specific customer. Customers wishing to use this feature need to contact their CSE to configure their variables.
+
 ## Develop your Code Based on Best Practices {#develop-your-code-based-on-best-practices}
 
 Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
