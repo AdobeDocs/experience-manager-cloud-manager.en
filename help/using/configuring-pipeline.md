@@ -135,41 +135,69 @@ Follow the steps below to configure Dispatcher Invalidations:
 
 1. Access the **Testing** tab to define your testing criteria for your program.
 
-Now, you can configure the performance test parameters.
+   Now, you can configure the performance test parameters.
 
-You can configure *AEM Sites* and *AEM Assets* Performance Testing, depending on which products you have licensed.
+   You can configure *AEM Sites* and *AEM Assets* Performance Testing, depending on which products you have licensed.
 
-**AEM Sites:**
+   **AEM Sites:**
 
-Cloud Manager executes performance testing for AEM Sites programs by requesting pages on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics.Pages are selected by three **page sets**; you can choose anywhere from one to all three sets. The distribution of traffic is based on the number of sets selected, that is, if all three are selected, 33% of the total page views are put toward each set; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
+   Cloud Manager executes performance testing for AEM Sites programs by requesting pages on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics.Pages are selected by three **page sets**; you can choose anywhere from one to all three sets. The distribution of traffic is based on the number of sets selected, that is, if all three are selected, 33% of the total page views are put toward each set; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
 
-For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
+   For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
 
-* Each of the 25 pages in the Popular Live Pages set will be hit 240 times – ((200 * 0.5) / 25) * 30 = 120
+   * Each of the 25 pages in the Popular Live Pages set will be hit 240 times – ((200 * 0.5) / 25) * 30 = 120
 
-* Each of the 3000 pages in the New Pages set will be hit once - ((200 * 0.5) / 3000) * 30 = 1
+   * Each of the 3000 pages in the New Pages set will be hit once - ((200 * 0.5) / 3000) * 30 = 1
 
-![](assets/Configuring_Pipeline_AEM-Sites.png)
+   ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
-**AEM Assets:**
+   **AEM Assets:**
 
-Cloud Manager executes performance testing for AEM Assets programs by uploading assets repeatedly for a 30 minute test period and measuring the processing time for each asset as well as various system-level metrics. This capability can upload both images and PDF documents. The distribution of how many assets of each type are uploaded per minute is set in the Pipeline Setup or Edit screen.
+   Cloud Manager executes performance testing for AEM Assets programs by uploading assets repeatedly for a 30 minute test period and measuring the processing time for each asset as well as various system-level metrics. This capability can upload both images and PDF documents. The distribution of how many assets of each type are uploaded per minute is set in the Pipeline Setup or Edit screen.
 
-For example, if a 70/30 split is used, as seen in the figure below. There are 10 assets uploaded per minute, 7 images will be uploaded per minute and 3 documents.
+   For example, if a 70/30 split is used, as seen in the figure below. There are 10 assets uploaded per minute, 7 images will be uploaded per minute and 3 documents.
 
-![](assets/Configuring_Pipeline_AEM-Assets.png)
+   ![](assets/Configuring_Pipeline_AEM-Assets.png)
 
->[!NOTE]
->
->There is a default image and PDF document, but in most cases, customers will want to upload their own assets. This can be done from the Pipeline Setup or Edit screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files.
+   >[!NOTE]
+   >
+   >There is a default image and PDF document, but in most cases, customers will want to upload their own assets. This can be done from the Pipeline Setup or Edit screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files.
 
 1. Click **Save** to complete the setup of pipeline process.
 
->[!NOTE]
->
->Additionally, once you have setup the pipeline, you can still edit settings for the same using **Pipeline** **Settings** tile from the [!UICONTROL Cloud Manager] UI.
+   >[!NOTE]
+   >
+   >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Pipeline Settings** tile from the [!UICONTROL Cloud Manager] UI.
 
-![](assets/Configuring_Pipeline-Settings.png) 
+   ![](assets/Configuring_Pipeline-Settings.png)
+
+## Non-Production & Code Quality Only Pipelines
+
+In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
+
+On the home screen, these pipelines are listed in a new card:
+
+1. Access the **Non-Production Pipelines** tile from the the Cloud Manager home screen.
+
+   ![](assets/Configuring_Pipeline_Add-Production.png)
+
+1. Clicking on the Add button, to specify the Pipeline Name, Pipeline Type, and the Git Branch.
+
+   Additionally, you can also set up Deployment Trigger and Important Failure Behavior from Pipeline Options.
+
+   ![](assets/Configuring_Pipeline_Add-Production2.png)
+
+1. Click **Save** and the pipeline is shown on the card on the home screen with three actions:
+
+   * **Edit** - allows editing of the pipeline settings
+   * **Detail** - displays the last pipeline execution (if there is one)
+   * **Build** - navigates to the execution page, from which the pipeline can be executed
+
+   ![](assets/Configuring_Pipeline_Add-Production3.png)
+
+   >[!NOTE]
+   >
+   >While the pipeline is running, the current step is displayed and only the **Details** action is available.
 
 ### The Next Steps {#the-next-steps}
 
