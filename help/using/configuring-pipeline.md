@@ -137,14 +137,31 @@ Follow the steps below to configure Dispatcher Invalidations:
 
 Now, you can configure the performance test parameters.
 
-During pipeline setup, the deployment manager can decide how much traffic to direct to each bucket. They can choose anywhere from one to all three buckets. The distribution of traffic is based on the number of buckets selected, i.e. if all three are selected, 33% of the total page views are put toward each bucket; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
+You can configure *AEM Sites* and *AEM Assets* Performance Testing, depending on which products you have licensed.
+
+**AEM Sites:**
+
+Cloud Manager executes performance testing for AEM Sites programs by requesting pages on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics.Pages are selected by three **page sets**; you can choose anywhere from one to all three sets. The distribution of traffic is based on the number of sets selected, that is, if all three are selected, 33% of the total page views are put toward each set; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
 
 For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
 
-* Each of the 25 pages in the Popular Live Pages set will be hit 240 times - `((200 &#42; 0.5) / 25) &#42; 30 = 120`
-* Each of the 3000 pages in the New Pages set will be hit once - `((200 &#42; 0.5) / 3000) &#42; 30 = 1`
+* Each of the 25 pages in the Popular Live Pages set will be hit 240 times – ((200 * 0.5) / 25) * 30 = 120
 
-![](assets/screen_shot_2018-06-04at23503pm.png)
+* Each of the 3000 pages in the New Pages set will be hit once - ((200 * 0.5) / 3000) * 30 = 1
+
+![](assets/Configuring_Pipeline_AEM-Sites.png)
+
+**AEM Assets:**
+
+Cloud Manager executes performance testing for AEM Assets programs by uploading assets repeatedly for a 30 minute test period and measuring the processing time for each asset as well as various system-level metrics. This capability can upload both images and PDF documents. The distribution of how many assets of each type are uploaded per minute is set in the Pipeline Setup or Edit screen.
+
+For example, if a 70/30 split is used, as seen in the figure below. There are 10 assets uploaded per minute, 7 images will be uploaded per minute and 3 documents.
+
+![](assets/Configuring_Pipeline_AEM-Assets.png)
+
+>[!NOTE]
+>
+>There is a default image and PDF document, but in most cases, customers will want to upload their own assets. This can be done from the Pipeline Setup or Edit screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files.
 
 1. Click **Save** to complete the setup of pipeline process.
 
@@ -152,7 +169,7 @@ For example, let us say that there is a 50%/50% split between the Popular Live P
 >
 >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Pipeline** **Settings** tile from the [!UICONTROL Cloud Manager] UI.
 
-![](assets/screen_shot_2018-06-04at125751pm.png) 
+![](assets/Configuring_Pipeline-Settings.png) 
 
 ### The Next Steps {#the-next-steps}
 
