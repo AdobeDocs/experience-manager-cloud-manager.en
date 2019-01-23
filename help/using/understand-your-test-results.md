@@ -182,7 +182,7 @@ For [!UICONTROL Cloud Manager] Release 2018.7.0, this functionality is available
 
 The following images display the performance test graphs:
 
-![](assets/graph-collapsed.png)  
+![](assets/understand_test-results-screen1.png)  
 
 ![](assets/screen_shot_2018-09-05at83933pm.png)
 
