@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager cloud manager
 archtype: administrator
-user-guide: Experience Manager Cloud Manager Help
+user-guide-title: Experience Manager Cloud Manager Help
 index: n
 ---
 
