@@ -70,7 +70,7 @@ Follow the steps below to set up the program and define KPIs:
    >* Autoscaling feature is applicable to production environment only and may not be available for all customer programs.
    >* On-demand scaling is not available for this release of [!UICONTROL Cloud Manager].
 
-   ![](assets/Setup_Program-Provisioning)
+   ![](assets/Setup_Program-Provisioning.png)
 
 1. Click **Save** to complete the setup wizard.
 
