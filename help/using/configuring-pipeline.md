@@ -69,7 +69,6 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    You can define the trigger to start the pipeline:
 
     * **On Git Changes** - starts the CI/CD pipeline whenever there are commits added to the configured git branch. Even if you select this option, you can always start the pipeline manually.  
-    
     * **Manual** - using the UI manually start the pipeline.
     * **Scheduled** - this option will be coming soon in an upcoming release.
 

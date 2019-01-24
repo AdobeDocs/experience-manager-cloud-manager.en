@@ -33,25 +33,35 @@ Follow the steps below to set up the program and define KPIs:
 
    ![](assets/screen_shot_2018-07-18at100530pm.png)
 
-1. The **Edit Program** screen displays.
+1. The **Setup Program** screen displays the Edit Program Information.
 
-   You will see three options as **General**, **KPI**, and **Provisioning** tab.
+1. You will see three options as **General**, **KPI**, and **Provisioning** tab.
 
 1. In **General** tab, upload a thumbnail to your program. You can also add a relevant description to your program.
 
-   ![](assets/screen_shot_2018-09-11at84546am.png)
+   ![](assets/Setup_Program-General.png)
 
-1. Under **KPI**, you can define your two KPIs (expectations for each deployment):
+1. Under **KPI**, you can define your two KPIs (expectations for each deployment). Separate KPIs are defined for **AEM Sites** and **AEM Assets**. You will be able to specify the KPIs for the products you have licensed.
+
+   **AEM Sites**
 
     1. What is the 95th percentile response time that is acceptable to you?
 
-        1. Recommended value - 3 seconds
+       * Recommended value - 3 seconds
 
     1. How many Page Views per Minute under the peak load?
 
-        1. Recommended value - 200 page views per minute
+        * Recommended value - 200 page views per minute
 
-   ![](assets/screen_shot_2018-09-11at84631am.png)
+   **AEM Assets**
+
+    Since its initial release, Cloud Manager has been able to execute performance testing for AEM Sites programs. With this release, the capability has been added to execute performance tests for AEM Assets programs as well. Assets performance testing is done by uploading assets repeatedly during a 30 minute test period and measuring the processing time for each asset as well as various system-level metrics.
+    During Program Setup, Assets-specific KPIs are specified:
+
+    * 95th Percentile Processing Time
+    * Assets uploaded per minute
+
+   ![](assets/Setup_Program-KPIs.png)
 
 1. Under **Provisioning**,you can you can view or edit the provisioning configuration for production and non-production environments in your program. You will see **Autoscale is on**, if autoscaling has been turned on for the program.
 
@@ -60,9 +70,27 @@ Follow the steps below to set up the program and define KPIs:
    >* Autoscaling feature is applicable to production environment only and may not be available for all customer programs.
    >* On-demand scaling is not available for this release of [!UICONTROL Cloud Manager].
 
-![](assets/screen_shot_2018-09-13at92934am.png)
+   ![](assets/Setup_Program-Provisioning)
 
 1. Click **Save** to complete the setup wizard.
+
+   >[!NOTE]
+   >
+   >* You can always edit the program once the initial program has already been set up. Follow the steps below for more details.
+
+## Editing a Program
+
+1. Navigate to the solution on the **Cloud Manager** home screen.
+
+   ![](assets/Editing_Program-screen1.png)
+
+1. Select the solution and click on **Edit** to update or modify your program, as shown in the figure below.
+
+   ![](assets/Editing_Program-screen2.png) 
+
+1. The **Edit Program** screen displays that allows you to update or modify your program.
+
+   ![](assets/Editing_Program-screen3.png)
 
 ## The Next Steps {#the-next-steps}
 
