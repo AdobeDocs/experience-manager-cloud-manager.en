@@ -76,7 +76,7 @@ Follow the steps below to set up the program and define KPIs:
 
    >[!NOTE]
    >
-   >* You can always edit the program once the initial program has already been set up. Follow the steps below for more details.
+   >You can always edit the program once the initial program has already been set up. Follow the steps below for more details.
 
 ## Editing a Program
 
