@@ -1,10 +1,10 @@
 ---
 cloud: experience-cloud
-solution-title: Experience Manager
-solution-hub-url: https://helpx.adobe.com/support/experience-manager.html
+solution-title: Experience Manager Cloud Manager
+solution-hub-url: https://helpx.adobe.com/support/experience-manager/6-4.html
 solution-image: 
 getting-started-title: Getting Started
-getting-started-url: https://helpx.adobe.com/experience-manager/6-4/sites/deploying/user-guide.html
+getting-started-url: https://helpx.adobe.com/experience-manager/get-started.html
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
