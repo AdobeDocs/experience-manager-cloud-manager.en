@@ -7,7 +7,7 @@ getting-started-title: Getting Started
 getting-started-url: https://helpx.adobe.com/experience-manager/6-4/sites/deploying/user-guide.html
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html
-git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-manager.en
+git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
 ---
 
 # Metadata for internal use
