@@ -75,4 +75,4 @@ Each customer gets its own **Git Repository** and their code is secure and not s
 
 [!UICONTROL Cloud Manager] adheres to the privacy principles defined by Adobe. Developers push code securely into the **Git Repository** over HTTPS.
 
-The [!DNL User Interface (UI) for [!UICONTROL Cloud Manager]] is built on top of services that comply to a common control framework that is defined by Adobe. [!UICONTROL Cloud Manager] uses secure services from several cloud providers.
+The [!DNL User Interface (UI) for [!UICONTROL Cloud Manager]] is built on top of services that comply to a common control framework that is defined by Adobe. [!DNL User Interface (UI) for [!UICONTROL Cloud Manager]] uses secure services from several cloud providers.

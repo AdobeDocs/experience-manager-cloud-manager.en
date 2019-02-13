@@ -61,4 +61,4 @@ The following is an example of a Code Scan with issues identified for the code:
 
 ### How to setup gates {#how-to-setup-gates}
 
-See ** [Configuring Gates](configuring-pipeline.md)** for details on setting up your code, quality and performance gates.
+See **[Configuring Gates](configuring-pipeline.md)** for details on setting up your code, quality and performance gates.
