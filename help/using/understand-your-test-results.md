@@ -50,9 +50,8 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 >
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
-You can download the list of rules here:
 
-[](assets/sonarqube-rules.xlsx)
+You can download the list of rules here [sonarqube-rules.xlsx](assets/sonarqube-rules.xlsx)
 
 >[!NOTE]
 >
