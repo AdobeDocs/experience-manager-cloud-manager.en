@@ -31,6 +31,7 @@ index: n
   + [Deploy your Code](deploying-code.md)
   + [Understand your Test Results](understand-your-test-results.md)
   + [Manage your Environments](manage-your-environment.md)
+  + [Monitor your Environments](monitor-your-environments.md)
   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
   + [Notifications](notifications.md)
   + [Custom Code Quality Rules](custom-code-quality-rules.md)
