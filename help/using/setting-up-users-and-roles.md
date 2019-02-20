@@ -26,6 +26,11 @@ Many features in [!UICONTROL Cloud Manager] require specific permissions to oper
 >
 >To use [!UICONTROL Cloud Manager], you must have an Adobe ID and the Adobe Managed Services Product Context.
 
+>[!NOTE]
+>
+>The Developer persona in Admin Console is unrelated to the Developer role in [!UICONTROL Cloud Manager].
+
+
 ## Role Definitions {#role-definitions}
 
 The following table summarizes the roles:
