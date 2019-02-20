@@ -1,14 +1,8 @@
 ---
-title: Release Notes for 2018.9.2
-seo-title: AEM Cloud Manager Release Notes for 2018.9.2
-description: Follow this page to get information for Cloud Manager Release 2018.9.2.
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2018.9.2.
-uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
-contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: release-notes
-discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-
+title: Release Notes for 2019.9.2
+seo-title: AEM Cloud Manager Release Notes for 2019.9.2
+description: Follow this page to get information for Cloud Manager Release 2019.9.2.
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.9.2.
 ---
 
 # Release Notes for 2018.9.2 {#release-notes-for}
