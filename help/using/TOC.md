@@ -37,7 +37,7 @@ index: n
   + [Custom Code Quality Rules](custom-code-quality-rules.md)
 + Release Notes {#release-notes}
   + [Current Release Notes (2019.2.0)](release-notes-current.md)
-  + [Current Release Notes (2019.1.0)](release-notes-2019-1-0.md)
+  + [Release Notes for 2019.1.0](release-notes-2019-1-0.md)
   + [Release Notes for 2018.9.0](release-notes-2018-9-0.md)
   + [Release Notes for 2018.8.0](release-notes-2018-8-0.md)
   + [Release Notes for 2018.7.0](release-notes-2018-7-0.md)

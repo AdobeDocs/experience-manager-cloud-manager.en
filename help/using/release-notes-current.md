@@ -43,6 +43,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.2.0 is February 21,
 * When monitoring data is refreshed, any hidden series are unhidden.
 * Customers wishing to view their existing SLA reports will need to manually navigate until the next release. 
 
-  To formulate this URL, follow the pattern https://<Experience Cloud URL>/content/mac/<Experience Cloud Tenant>/managedservices/sla.html, for example, if URL for your Experience Cloud is (https://weretailprod.experiencecloud.adobe.com), then your SLA reports URL is (https://weretailprod.experiencecloud.adobe.com/content/mac/weretailprod/managedservices/sla/html).
+  To formulate this URL, follow the pattern (`https://<Experience Cloud URL>/content/mac/<Experience Cloud Tenant>/managedservices/sla.html`), for example, if URL for your Experience Cloud is (`https://weretailprod.experiencecloud.adobe.com`), then your SLA reports URL is (`https://weretailprod.experiencecloud.adobe.com/content/mac/weretailprod/managedservices/sla/html`).
 
   This is expected to be resolved in the next release with the availability of SLA reports inside [!UICONTROL Cloud Manager].
