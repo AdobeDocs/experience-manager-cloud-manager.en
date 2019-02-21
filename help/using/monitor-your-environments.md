@@ -15,14 +15,17 @@ If a metric is over its critical threshold, it is considered to be in a critical
 
 Navigating to the System Monitoring feature can be done in two ways. 
 
-* Log in to Program landing page and the third icon on the program card.
+1. Log in to **Managed Services - Programs** landing page.
 
+   ![](assets/ProgramLanding.png)
+
+1. Click on the third icon on the program card.
+ 
    ![](assets/program-card.png)
 
- *Or*,
+   *Or*,
 
 * Navigate to the **System Monitoring** landing page through the **Reports** global navigation menu item within [!UICONTROL Cloud Manager].
-
 
 
 ## System Monitoring Overview Page {#system-monitoring-overview-page}
