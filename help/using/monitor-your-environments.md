@@ -19,7 +19,7 @@ Navigating to the System Monitoring feature can be done in two ways.
 
    ![](assets/program-card.png)
 
-*Or*,
+ *Or*,
 
 * Navigate to the **System Monitoring** landing page through the **Reports** global navigation menu item within [!UICONTROL Cloud Manager].
 
@@ -42,7 +42,7 @@ The status in each category is a summary of individual metrics – if any metric
 >
 >By default when navigating to this page, the production environment instances are visible, but other environments can be opened as well.
 
-## System Monitoring Detail {system-monitoring-detail}
+## System Monitoring Detail {#system-monitoring-detail}
 
 To view the details of specific metrics, you can either click on one of the categories in the left navigation or click on one of the category indicators for a specific instance. Each detail page shows a series of graphs for the metrics within that category. You can either view the metrics for all instances in an environment or for a specific instance. You can switch between the environment and instances using the dropdown boxes in the top-right corner.
 
@@ -61,7 +61,7 @@ For example, if you click on the warning threshold series, you will see only the
 
 ![](assets/System_Monitoring4.png)
 
-# Metric Definitions {metric-definitions}
+## Metric Definitions {#metric-definitions}
 
 **Host**
 
