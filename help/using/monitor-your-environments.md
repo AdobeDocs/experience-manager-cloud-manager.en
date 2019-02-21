@@ -11,14 +11,19 @@ System Monitoring in [!UICONTROL Cloud Manager] is done by observing the individ
 
 If a metric is over its critical threshold, it is considered to be in a critical state; if a metric is over its warning threshold (but below its critical threshold), it is considered to be in a warning state. The thresholds are set by Adobe Managed Services and can be visualized in [!UICONTROL Cloud Manager]. In most cases, thresholds are consistent between customers, but there are cases where Adobe Managed Services will modify thresholds to match specific customer requirements. Questions about the thresholds should be directed to your Customer Success Engineer (CSE).
 
-
 ## Navigating to System Monitoring {#navigating-system-monitoring}
 
-Navigating to the System Monitoring feature can be done in two ways. From the program landing page, the third icon on the program card will navigate to the landing page.
+Navigating to the System Monitoring feature can be done in two ways. 
 
-![](assets/program-card.png)
+* Log in to Program landing page and the third icon on the program card.
 
-In addition, within [!UICONTROL Cloud Manager] you can navigate to the System Monitoring landing page through the Reports global navigation menu item.
+   ![](assets/program-card.png)
+
+*Or*,
+
+* Navigate to the **System Monitoring** landing page through the **Reports** global navigation menu item within [!UICONTROL Cloud Manager].
+
+
 
 ## System Monitoring Overview Page {#system-monitoring-overview-page}
 
@@ -39,7 +44,7 @@ The status in each category is a summary of individual metrics – if any metric
 
 ## System Monitoring Detail {system-monitoring-detail}
 
-To view the details of specific metrics, you can either click on one of the categories in the left navigation or click on one of the category indicators for a specific instance. Each detail page shows a series of graphs for the metrics within that category. You can either view the metrics for all instances in an environment or for a specific instance. The environment and instances can be switched using the dropdown boxes in the top-right corner.
+To view the details of specific metrics, you can either click on one of the categories in the left navigation or click on one of the category indicators for a specific instance. Each detail page shows a series of graphs for the metrics within that category. You can either view the metrics for all instances in an environment or for a specific instance. You can switch between the environment and instances using the dropdown boxes in the top-right corner.
 
 ![](assets/System_Monitoring1.png)
 
@@ -51,7 +56,8 @@ An individual graph will show the status and a graph of the data over time along
 
 ![](assets/System-Monitoring3.png)
 
-Individual series can be hidden on a graph by clicking on the series in the legend. For example, if you click on the warning threshold series, you will see only the critical threshold.
+Individual series can be hidden on a graph by clicking on the series in the legend. 
+For example, if you click on the warning threshold series, you will see only the critical threshold.
 
 ![](assets/System_Monitoring4.png)
 
