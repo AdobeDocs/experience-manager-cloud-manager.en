@@ -1,45 +1,48 @@
 ---
-title: Release Notes for 2019.1.0
-seo-title: AEM Cloud Manager Release Notes for 2019.1.0
-description: Follow this page to get information for Cloud Manager Release 2019.1.0.
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.1.0.
-uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
-contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: release-notes
-discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-
+title: Release Notes for 2019.2.0
+seo-title: AEM Cloud Manager Release Notes for 2019.2.0
+description: Follow this page to get information for Cloud Manager Release 2019.2.0.
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.2.0.
 ---
 
-# Release Notes for 2019.1.0 {#release-notes-for}
+# Release Notes for 2019.2.0 {#release-notes-for}
 
-The [!UICONTROL Cloud Manager] 2018.9.0 Release adds support testing AEM Assets programs as well as additional pipeline types which run the build and code quality steps, optionally deploying to a non-production environment.
+The [!UICONTROL Cloud Manager] 2019.2.0 Release adds a new System Monitoring capability. This allows customers to view the state of their Adobe Managed Services environments at a system level.
+
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.1.0 is January 17, 2019.
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.2.0 is February 21, 2019.
 
 ## What's New {#whats-new}
 
-* Added support for performance testing of AEM Assets. Please refer to Configure your [CI/CD Pipeline](configuring-pipeline.md)for more details.
-* Added support for pipelines running only build and code quality steps and pipelines deploying to non-production environments. Please refer to **Non-Production & Code Quality Only Pipelines** section in [Configure your CI/CD Pipeline](configuring-pipeline.md) for more details.
-* Added support for custom environment variables in build environment. Please refer to [Create an AEM Application Project](create-an-application-project.md) for more details.
-* For customers with multiple stage or production environments, selection of which environment will be deployed to as part of the production pipeline is available in [Configure your CI/CD Pipeline](configuring-pipeline.md) page.
-* httxt2dbm has been added to build container.
-* All help menu items open a new tab.
+* New System Monitoring feature. Refer to [Monitor your Environments](monitor-your-environments.md) to learn more.
+* The dispatcher module in wizard-generated projects now contains a README file.
+* The sort ordering of Code Scanning issues has been improved to match the issue priority.
+* Stage instances are now always restored to the load balancer even in the case of a deployment failure.
+* A new API Developer role is available in the Admin Console which allows specific users to be granted the permission to create integrations in the Adobe I/O console. Refer to [Manage Developers](https://www.adobe.com/go/aac_api_prod_learn.html) to learn more.
+* The version of the Maven Archetype was updated to version 16.
+* The version of Maven was updated to version 3.6.0.
 
 ## Bug Fixes {#bug-fixes}
 
-* While editing a program, it was possible to de-select all page sets.
-* The approval step was incorrectly titled.
-* In some situations, the program logo was incorrectly matted.
-* If only dispatcher configuration package was built, the deployment step would fail.
-* Environments which contained cold standby instances were not handled correctly.
-* Some terminated programs appeared on the program switcher.
-* If a new branch was added to the git repository while the pipeline was being edited, it may not have been immediately been selectable.
-* On some screens, the Developer Connection icon in the Help menu was not visible.
-* The tab key was not handled properly in the dispatcher flushing configuration dialog.
+* In some circumstances, pipelines would not execute when the target environment was hosted in Azure.
+* Ordering of environments was inconsistent.
+* Performance testing could fail when discovered page paths contained a comma character.
+* When a pipeline execution was started from the web UI, the browser back button did not function correctly.
+* The Learn More links on the Overview page didn't open a new tab.
+* When uploading a program thumbnail, it may not have been immediately visible.
+* In some cases, Code Scanning failed because of project-specific configuration.
+* The Learn More link on the Non-Production Pipelines card went to the wrong location.
+* When a quality gate was overridden, the status was displayed inconsistently.
+* Customers using cold standby topologies received incorrect results for security tests.
+* When creating a new project using the wizard, it was not possible to create a branch containing the dash character.
 
 ## Known Issues {#known-issues}
 
-* When opening a program which has Sites, but not Assets, KPIs set, all users see a call to action card with a **Setup Program** button. However, only users in the Business Owner role can actually click on the **Setup Program** button.
+* When monitoring data is refreshed, any hidden series are unhidden.
+* Customers wishing to view their existing SLA reports will need to manually navigate until the next release. 
+
+  To formulate this URL, follow the pattern (`https://<Experience Cloud URL>/content/mac/<Experience Cloud Tenant>/managedservices/sla.html`), for example, if URL for your Experience Cloud is (`https://weretailprod.experiencecloud.adobe.com`), then your SLA reports URL is (`https://weretailprod.experiencecloud.adobe.com/content/mac/weretailprod/managedservices/sla/html`).
+
+  This is expected to be resolved in the next release with the availability of SLA reports inside [!UICONTROL Cloud Manager].
