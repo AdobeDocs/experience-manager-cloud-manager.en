@@ -198,7 +198,7 @@ On the home screen, these pipelines are listed in a new card:
    >
    >While the pipeline is running, the current step is displayed and only the **Details** action is available.
 
-### The Next Steps {#the-next-steps}
+## The Next Steps {#the-next-steps}
 
 Once you have configured the pipeline, you need to deploy your code.
 
