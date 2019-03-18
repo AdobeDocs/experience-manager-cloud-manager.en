@@ -30,7 +30,7 @@ The Deployment Manager is responsible for setting up the pipeline. When doing so
 
 >[!CAUTION]
 >
->The pipeline cannot be setup until the Git repository has at least one branch.
+>The pipeline cannot be setup until the Git repository has at least one branch and [Program Setup](setting-up-program.md) is complete.
 
 Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
