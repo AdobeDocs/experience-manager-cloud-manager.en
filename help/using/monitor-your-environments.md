@@ -64,7 +64,7 @@ For example, if you click on the warning threshold series, you will see only the
 
 ![](assets/System_Monitoring4.png)
 
-## Metric Definitions {#metric-definitions}
+### Metric Definitions {#metric-definitions}
 
 **Host**
 
