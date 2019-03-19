@@ -70,15 +70,15 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 
 
-During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates such as Code Quality, Security Testing, and Performance Testing.
+    During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates such as Code Quality, Security Testing, and Performance Testing.
 
-This is useful for customers who have the desire for more automated processes. The available options are:
+   This is useful for customers who have the desire for more automated processes. The available options are:
 
 * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
 * **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
 * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
-Now you define the parameters controlling the production deployment. The three available options are as follows:
+  Now you define the parameters controlling the production deployment. The three available options are as follows:
 
 * **Use Go Live Approval** - A deployment must be manually approved by a business owner, project manager, or deployment manager via the [!UICONTROL Cloud Manager] UI.
 * **Use CSE Oversight** - A CSE is engaged to actually start the deployment. During pipeline setup or edit when CSE Oversight is enabled, the Deployment Manager has the option of selecting:
@@ -88,13 +88,13 @@ Now you define the parameters controlling the production deployment. The three a
 
 * **Scheduled** - This option allows the user to enable the scheduled production deployment.
 
->[!NOTE]
->
->If **Scheduled** option is selected, you can schedule your production deployment to the pipeline **after** the stage deployment (and **Use GoLive Approval**, if that has been enabled) to wait for a schedule to be set. The user can also choose to execute the production deployment immediately.
->
->Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
+ >[!NOTE]
+ >
+ >If **Scheduled** option is selected, you can schedule your production deployment to the pipeline **after** the stage deployment (and **Use GoLive Approval**, if that has been enabled) to wait for a schedule to be set. The user can also choose to execute the production deployment immediately.
+ >
+ >Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
 
-![](assets/Configure_ci-cd-3.png)
+ ![](assets/Configure_ci-cd-3.png)
 
 >[!NOTE]
 >
