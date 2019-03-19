@@ -51,8 +51,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 1. The **Setup Pipeline** screen displays.
 
    The three-step wizard allows you to setup your **Branch**, **Environments**, and **Testing** environment. 
-   
-   Select your Git branch to set up. and click **Next**.
+   Select your Git branch and click **Next**.
    
    >[!NOTE]
    >
