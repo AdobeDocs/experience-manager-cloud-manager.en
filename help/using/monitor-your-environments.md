@@ -88,3 +88,32 @@ For example, if you click on the warning threshold series, you will see only the
 
 * Replication Agent: The time, in seconds, for a test replication event. There are separate metrics for each replication agent.
 * Dispatcher Flush: The number of items currently in the dispatcher flush queue.
+
+## SLA Reporting {#sla-reporting}
+
+Customers are able to see the performance of their production AEM environment relative to their contracted Service Level Agreement (SLA). This is available through a sub-menu on the Reports screen. 
+For example, the graph below shows the monthly SLA attainment for 2018.
+
+![](assets/sla-reporting1.png)
+
+As with the system monitoring graphs, rolling over a data point shows the specific values for that month.
+
+![](assets/sla-reporting2.png)
+
+The Event Analysis section under this graph shows the set of incidents which occurred for the program during the currently selected year. Each incident has a time range, a cause, and a set of comments:
+
+![](assets/sla-reporting3.png)
+
+## SLA Metrics {sla-metrics}
+
+* **Author Contract**: This is the SLA defined in your contract with Adobe Managed Services for the author tier.
+
+* **AMS Author SLA**: This is the measured uptime of the production author tier factoring incidents caused by Adobe or our vendors.
+
+* **Author SLA**: This is the measured uptime of the author tier ignoring scheduled downtime such as maintenance windows.
+
+* **End User Contract**: This is the SLA defined in your contract with Adobe Managed Services for the publish tier.
+
+* **AMS End User SLA**: This is the measured uptime of the production publish tier factoring incidents caused by Adobe or our vendors.
+
+* **End User SLA**: This is the measured uptime of the publish tier ignoring scheduled downtime such as maintenance windows.
