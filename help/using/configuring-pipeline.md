@@ -46,23 +46,20 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 1. Click **Setup Pipeline** to setup and configure your pipeline.
 
-   ![](assets/screen_shot_2018-07-18at105633pm.png)
+   ![](assets/Configure_ci-cd-1.png)
 
-1. The **Edit Deployment Pipeline** screen displays.
+1. The **Setup Pipeline** screen displays.
 
-   You will see three tabs namely **Branch**, **Environments**, and **Testing**.
-
-   ![](assets/screen_shot_2018-06-04at23950pm.png)
-
-1. Access the **Branch** tab to set up the application branch.
-
-   Select the Git branch to set up.
-
+   The three-step wizard allows you to setup your **Branch**, **Environments**, and **Testing** environment. 
+   
+   Select your Git branch to set up. and click **Next**.
+   
    >[!NOTE]
    >
    >Branches found in the Git repository are linked to your program.
 
-   ![](assets/screen_shot_2018-06-04at124228pm.png)
+   ![](assets/Configure_ci-cd-2.png)
+
 
 1. Access the **Environments** tab to select **Stage** and **Production** options.
 
@@ -98,7 +95,7 @@ Now you define the parameters controlling the production deployment. The three a
 >
 >Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
 
-![](assets/screen_shot_2018-08-10at22408pm.png)
+![](assets/Configure_ci-cd-3.png)
 
 >[!NOTE]
 >
