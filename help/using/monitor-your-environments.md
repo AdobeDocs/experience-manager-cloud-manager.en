@@ -100,7 +100,7 @@ As with the system monitoring graphs, rolling over a data point shows the specif
 
 ![](assets/sla-reporting2.png)
 
-The Event Analysis section under this graph shows the set of incidents which occurred for the program during the currently selected year. Each incident has a time range, a cause, and a set of comments:
+The Event Analysis section under this graph shows the set of incidents which occurred for the program during the currently selected year. Each incident has a time range, a cause, and a set of comments.
 
 ![](assets/sla-reporting3.png)
 
