@@ -30,7 +30,7 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
 
 1. The dashboard for [!UICONTROL Cloud Manager] displays.
 
-   ![](assets/screen_shot_2018-09-20at121716pm.png)
+   ![](assets/FirstLogin1.png)
 
 1. Click **Setup Program** for setting the **Program** description and defining the Key Performance Indicators (KPIs).
 
