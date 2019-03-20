@@ -17,7 +17,7 @@ The **Overview** page of Cloud Manager includes the **Environments** tile that l
 
 Each of the listed environments displays its associated status.
 
-![](assets/manage_environments1.png)
+![](assets/Manage_Environments1.png)
 
 ## Accessing Environments in Cloud Manager {#accessing-environments-in-cloud-manager}
 
@@ -37,4 +37,4 @@ The **Environments** screen displays a card each for *Production* and *Stage* en
 >
 >The **STATUS** of the node represents the power state of the VM and does not reflect the status of AEM on the server. The status can be **Running** (green circle), **Stopped** (red circle), **Coming up** (blue circle) or **Unavailable** (yellow circle).
 
-![](assets/manage_environments2.png)
+![](assets/Manage_Environments2.png)
