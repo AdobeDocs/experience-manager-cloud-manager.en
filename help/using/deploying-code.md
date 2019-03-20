@@ -19,13 +19,13 @@ Once you have configured your **Pipeline** (repository, environment, and testing
 
 1. Click **Deploy** from the Cloud Manager to start the deployment process.
 
-   ![](assets/screen_shot_2018-07-18at110042pm.png)
+   ![](assets/Deploy1.png)
 
 1. The **Pipeline Execution** screen displays.
 
    Click **Build** to start the process.
 
-   ![](assets/screen_shot_2018-07-18at101116pm.png)
+   ![](assets/Deploy2.png)
 
 1. The complete build process deploys your code.
 

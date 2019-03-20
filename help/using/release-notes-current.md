@@ -15,7 +15,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.3.0 is March 21, 20
 
 ## What's New {#whats-new}
 
-* SLA Reports are now visible inside Cloud Manager. Refer to [Monitor your Environments](monitor-your-environments.md)
+* SLA Reports are now visible inside Cloud Manager. Refer to [Monitor your Environments](monitor-your-environments.md) for more details.
 * The overview and pipeline execution pages have been restructured to better take advantage of vertical space.
 * The Activity page now uses a long date format.
 
