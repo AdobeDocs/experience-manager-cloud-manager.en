@@ -32,7 +32,7 @@ Once you have configured your **Pipeline** (repository, environment, and testing
    The following stages are involved in the build process:
 
     1. Stage Deployment
-    1. Pre-Production Testing
+    1. Stage Testing
     1. Production Deployment
 
    >[!NOTE]
@@ -45,14 +45,14 @@ Once you have configured your **Pipeline** (repository, environment, and testing
     * Code Scanning
     * Deploy to Stage
 
-   ![](assets/screen_shot_2018-07-19at75742pm.png)
+   ![](assets/Stage_Testing.png)
 
-   The **Pre-Production Testing**, involves the following steps:
+   The **Stage Testing**, involves the following steps:
 
     * Security Testing
     * Performance Testing
 
-   ![](assets/screen_shot_2018-05-30at115748am.png)
+   ![](assets/Stage_Deployment.png)
 
    The **Production Deployment**, involves the following steps:
 
