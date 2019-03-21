@@ -82,11 +82,11 @@ Follow the steps below to set up the program and define KPIs:
 
 1. Navigate to the solution on the **Cloud Manager** home screen.
 
-   ![](assets/Editing_Program-screen1.png)
+   ![](assets/SetUpProgram5.png)
 
 1. Select the solution and click on **Edit** to update or modify your program, as shown in the figure below.
 
-   ![](assets/Editing_Program-screen2.png) 
+   ![](assets/SetUpProgram6.png) 
 
 1. The **Edit Program** screen displays that allows you to update or modify your program.
 
