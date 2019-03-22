@@ -20,7 +20,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.2.0 is February 21,
 * The dispatcher module in wizard-generated projects now contains a README file.
 * The sort ordering of Code Scanning issues has been improved to match the issue priority.
 * Stage instances are now always restored to the load balancer even in the case of a deployment failure.
-* A new API Developer role is available in the Admin Console which allows specific users to be granted the permission to create integrations in the Adobe I/O console. Refer to [Manage Developers](https://www.adobe.com/go/aac_api_prod_learn.html) to learn more.
+* A new API Developer role is available in the Admin Console which allows specific users to be granted the permission to create integrations in the Adobe I/O console. Refer to [Manage Developers](https://www.adobe.com/go/aac_api_prod_learn) to learn more.
 * The version of the Maven Archetype was updated to version 16.
 * The version of Maven was updated to version 3.6.0.
 
