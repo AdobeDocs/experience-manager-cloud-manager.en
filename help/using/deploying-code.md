@@ -74,13 +74,13 @@ Once you have configured your **Pipeline** (repository, environment, and testing
    >
    >Click **Confirm** to verify your settings.
 
-   ![](assets/screen_shot_2018-07-19at74908pm.png)
+   ![](assets/Production_Deployment1.png)
 
    Once you confirm the deployment schedule, your code deployment completes.
 
    The following screen displays, when the **Deploy Now** option is selected from the above step.
 
-   ![](assets/screen_shot_2018-07-19at85757pm.png)
+   ![](assets/Production_Deployment2.png)
 
 ## Deployment Process {#deployment-process}
 
