@@ -66,7 +66,7 @@ Once you have configured your **Pipeline** (repository, environment, and testing
    >The **Schedule Production Deployment** is enabled while configuring the pipeline.
    >
    >
-   >Using this option, you can either schedule your production delpoyment or click **Deply Now** to execute the production deployment immediately.
+   >Using this option, you can either schedule your production delpoyment or click **Now** to execute the production deployment immediately.
    >
    >
    >The scheduled date and time is specified in terms of the user's timezone.
@@ -78,7 +78,7 @@ Once you have configured your **Pipeline** (repository, environment, and testing
 
    Once you confirm the deployment schedule, your code deployment completes.
 
-   The following screen displays, when the **Deploy Now** option is selected from the above step.
+   The following screen displays, when **Now** option is selected from the above step.
 
    ![](assets/Production_Deployment2.png)
 
