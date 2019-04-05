@@ -101,25 +101,25 @@ The following table lists the current checks:
 
 | **Name** | **Health Check Implementation** |**Category** |
 |---|---|---|
-| Deserialization firewall Attach API Readiness is in an acceptable state	| Deserialization Firewall Attach API Readiness |Critical |
-| Deserialization firewall is functional	| Deserialization Firewall Functional |Critical |
-| Deserialization firewall is loaded	| Deserialization Firewall Loaded |Critical |
-| AuthorizableNodeName implementation does not expose authorizable ID in the node name/path.	| Authorizable Node Name Generation |Critical |
-| Default passwords have been changed	| Default Login Accounts |Critical |
-| Sling default GET servlet is protected from DOS attacks.	| Sling Get Servlet |Critical |
-| Dispatcher is properly filtering requests	| CQ Dispatcher Configuration |Critical |
-| The Adobe Granite HTML Library Manager is configured appropriately	| CQ HTML Library Manager Config |Critical |
+| Deserialization firewall Attach API Readiness is in an acceptable state | Deserialization Firewall Attach API Readiness |Critical |
+| Deserialization firewall is functional | Deserialization Firewall Functional |Critical |
+| Deserialization firewall is loaded | Deserialization Firewall Loaded |Critical |
+| AuthorizableNodeName implementation does not expose authorizable ID in the node name/path. | Authorizable Node Name Generation |Critical |
+| Default passwords have been changed | Default Login Accounts |Critical |
+| Sling default GET servlet is protected from DOS attacks. | Sling Get Servlet |Critical |
+| Dispatcher is properly filtering requests | CQ Dispatcher Configuration |Critical |
+| The Adobe Granite HTML Library Manager is configured appropriately | CQ HTML Library Manager Config |Critical |
 | The Sling Java Script Handler is configured appropriately | Sling Java Script Handler |Critical |
-| The Sling JSP Script Handler is configured appropriately	| Sling JSP Script Handler |Critical |
-| The Sling Referrer Filter is configured in order to prevent CSRF attacks	| Sling Referrer Filter |Critical |
-| SSL is configured correctly	| SSL Configuration |Critical |
-| No obviously insecure user profile policies found	| User Profile Default Access |Critical |
-| CRXDE Support bundle is disabled	| CRXDE Support |Important |
-| Sling DavEx bundle and servlet are disabled	| DavEx Health Check |Important |
-| Sample content is not installed	| Example Content Packages |Important |
-| Both the WCM Request Filter and the WCM Debug Filter are disabled	| WCM Filters Configuration |Important |
-| Sling WebDAV bundle and servlet are configured appropriately	| WebDAV Health Check |Important |
-| The web server is configured to prevent clickjacking	| Web Server Configuration |Important |
+| The Sling JSP Script Handler is configured appropriately | Sling JSP Script Handler |Critical |
+| The Sling Referrer Filter is configured in order to prevent CSRF attacks | Sling Referrer Filter |Critical |
+| SSL is configured correctly | SSL Configuration |Critical |
+| No obviously insecure user profile policies found | User Profile Default Access |Critical |
+| CRXDE Support bundle is disabled | CRXDE Support |Important |
+| Sling DavEx bundle and servlet are disabled | DavEx Health Check |Important |
+| Sample content is not installed | Example Content Packages |Important |
+| Both the WCM Request Filter and the WCM Debug Filter are disabled | WCM Filters Configuration |Important |
+| Sling WebDAV bundle and servlet are configured appropriately | WebDAV Health Check |Important |
+| The web server is configured to prevent clickjacking | Web Server Configuration |Important |
 | Replication is not using the 'admin' user | Replication and Transport Users |Info |
 
 ## Performance Testing {#performance-testing}
