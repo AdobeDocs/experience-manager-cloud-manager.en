@@ -1,25 +1,29 @@
 ---
-title: Release Notes for 2019.3.0
-seo-title: AEM Cloud Manager Release Notes for 2019.3.0
-description: Follow this page to get information for Cloud Manager Release 2019.3.0.
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.3.0.
+title: Release Notes for 2019.4.0
+seo-title: AEM Cloud Manager Release Notes for 2019.4.0
+description: Follow this page to get information for Cloud Manager Release 2019.4.0.
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.4.0.
 ---
 
-# Release Notes for 2019.3.0 {#release-notes-for}
+# Release Notes for 2019.4.0 {#release-notes-for}
 
 The [!UICONTROL Cloud Manager] 2019.3.0 Release adds SLA reporting to the System Monitoring capability delivered in the last release.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.3.0 is March 21, 2019.
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.4.0 is April 18, 2019.
 
 ## What's New {#whats-new}
 
-* SLA Reports are now visible inside Cloud Manager. Refer to [Monitor your Environments](monitor-your-environments.md) for more details.
-* The overview and pipeline execution pages have been restructured to better take advantage of vertical space.
-* The Activity page now uses a long date format.
+* Cloud Manager UI is now available in French, German, and Japanese.
+* Deployment steps now contain the currently running process, that is, when a backup is running, packages are being installed, and load balancers are being reconfigured
 
 ## Bug Fixes {bug-fixes}
 
-* Some monitoring graphs were not displayed consistently.
-* If monitoring was misconfigured, the error message appeared more frequently than it should have.
+* The deployment approach used for Dispatcher changes has been improved to handle additional use cases.
+* Some instance size types weren't displayed properly on the Environments page.
+* The code quality rules CQBP-84-dependencies produced false positives for embedded Adobe libraries such as WCM Core Components and Asset Share Commons.
+* The details button for the code scanning step was enabled when the details were unavailable.
+* The error message when specifying an invalid value for the page views per minute KPI had the wrong lower boundary.
+* The deployment category on a non-production pipeline was capitalized incorrectly.
+* The call to action card on the Overview page had incorrect text when the git repository was not configured properly.
