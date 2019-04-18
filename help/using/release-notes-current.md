@@ -15,7 +15,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.4.0 is April 18, 20
 
 ## What's New {#whats-new}
 
-* Cloud Manager UI is now available in French, German, and Japanese.
+* Cloud Manager UI is now available in English, French, German, and Japanese.
 * Deployment steps now contain the currently running process, that is, when a backup is running, packages are being installed, and load balancers are being reconfigured
 
 ## Bug Fixes {bug-fixes}
