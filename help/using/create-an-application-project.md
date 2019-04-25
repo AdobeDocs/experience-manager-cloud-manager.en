@@ -198,7 +198,7 @@ Once configured, these variables will be available as environment variables. In 
                   </property>
             </activation>
             <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>       
+                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
             </properties>
         </profile>
 ```
