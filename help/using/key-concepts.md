@@ -1,7 +1,7 @@
 ---
 title: Key Concepts
 seo-title: Key Concepts
-description: null
+description: This page lists the key terms associated with Cloud Manager.
 seo-description: Follow this page to understand the key terms associated with Cloud Manager.
 uuid: 2a37810b-98f8-4f01-90de-1e52c754ad16
 contentOwner: jsyal
