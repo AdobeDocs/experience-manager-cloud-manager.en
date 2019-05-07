@@ -29,13 +29,13 @@ Follow the steps below to complete the initial process in configuring Dispatcher
 1. Remove hard-coded environment-specific data (for example, publish renderer IP) and replace with variables.
 1. Define required variables in key-value pairs for each target Dispatcher and request your CSE to add to ***/etc/sysconfig/httpd*** on each instance.
 1. Test the updated configurations on your stage environment, then request your CSE to deploy to production.
-1. Commit files to **Git** **Repository**.
+1. Commit files to **Git Repository**.
 
 1. Deploy through Cloud Manager.
 
 >[!NOTE]
 >
->Migrating Dispatcher and web server configurations to **Git Repository** may be done during Cloud Manager on-boarding, but can also be done at a later point in time.
+>Migrating Dispatcher and web server configurations to **Git&nbsp;Repository** may be done during Cloud Manager on-boarding, but can also be done at a later point in time.
 
 ### Example {#example}
 
