@@ -28,7 +28,7 @@ There are three gates in the pipeline:
 For each of these gates, there is a three-tier structure for issues identified by the gate.
 
 * **Critical** - These are issues identified by the gate which cause an immediate failure of the pipeline.
-* **Important** - These are issues identified by the gate which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure.
+* **Important** - These are issues identified by the gate which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure. Override of important failures are subject to a [Timeout](deploying-code.md#timeouts).
 * **Info** - These are issues identified by the gate which are provided purely for informational purposes and have no impact on the pipeline execution.
 
 ## Code Quality Testing {#code-quality-testing}
