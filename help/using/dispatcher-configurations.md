@@ -35,7 +35,7 @@ Follow the steps below to complete the initial process in configuring Dispatcher
 
 >[!NOTE]
 >
->Migrating Dispatcher and web server configurations to **Git Repository** may be done during Cloud Manager on-boarding, but can also be done at a later point in time.
+>Migrating Dispatcher and web server configurations to **Git&nbsp;Repository** may be done during Cloud Manager on-boarding, but can also be done at a later point in time.
 
 ### Example {#example}
 
