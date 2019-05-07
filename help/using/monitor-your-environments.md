@@ -104,7 +104,7 @@ The Event Analysis section under this graph shows the set of incidents which occ
 
 ![](assets/sla-reporting3.png)
 
-## SLA Metrics {sla-metrics}
+## SLA Metrics {#sla-metrics}
 
 * **Author Contract**: This is the SLA defined in your contract with Adobe Managed Services for the author tier.
 

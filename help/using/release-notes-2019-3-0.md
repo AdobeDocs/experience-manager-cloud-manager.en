@@ -19,7 +19,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.3.0 is March 21, 20
 * The overview and pipeline execution pages have been restructured to better take advantage of vertical space.
 * The Activity page now uses a long date format.
 
-## Bug Fixes {bug-fixes}
+## Bug Fixes {#bug-fixes}
 
 * Some monitoring graphs were not displayed consistently.
 * If monitoring was misconfigured, the error message appeared more frequently than it should have.
