@@ -28,5 +28,5 @@ In some cases, you will have an existing Git Repository and want to keep using i
 
 >[!NOTE]
 >
->To view the common Git commands, see the [Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf).
+>To view the common Git commands, see the [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf).
 
