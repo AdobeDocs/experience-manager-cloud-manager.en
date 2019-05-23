@@ -19,9 +19,9 @@ Follow [Adobe Experience League](https://expleague.azureedge.net/labs/L722/index
 
 ## Webinar Series {#webinar-series}
 
-Follow [Adobe Forums] (https://forums.adobe.com/message/11061595) to get additional learning path created for Cloud Manager as webinar series.
+Follow [Adobe Forums](https://forums.adobe.com/message/11061595) to get additional learning path created for Cloud Manager as webinar series.
 
 ## Demo Video Series {#demo-videos}
 
-Follow [Using the CI/CD Pipeline in Cloud Manager for AEM] (https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)
-to that includes video series exploring,setting up and executing Cloud Manager's CI/CD Pipeline in both failure and success scenarios.
+Follow [Using the CI/CD Pipeline in Cloud Manager for AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)
+that includes video series focussed on exploring,setting up and executing Cloud Manager's CI/CD Pipeline in both failure and success scenarios.
