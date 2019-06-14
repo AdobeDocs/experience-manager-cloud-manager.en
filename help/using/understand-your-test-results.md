@@ -51,11 +51,11 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
 
-You can download the list of rules here [sonarqube-rules.xlsx](assets/sonarqube-rules.xlsx)
+You can download the list of rules here [code-quality-rules.xlsx](assets/code-quality-rules.xlsx)
 
 >[!NOTE]
 >
->To learn more about the custom SonarQube rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
+>To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to [Custom Code Quality Rules](custom-code-quality-rules.md).
 
 ### Dealing with False Positives {#dealing-with-false-positives}
 
