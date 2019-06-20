@@ -550,3 +550,78 @@ public void doThis(Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
+
+
+## OakPAL Content Rules {#oakpal-rules}
+
+Please find below the OakPAL checks executed by Cloud Manager.
+
+>[!NOTE]
+>OakPAL is a framework developed by an AEM Partner (and winner of 2019 AEM Rockstar North America) which validates content packages using a standalone Oak repository.
+
+### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
+
+**Key**: BannedPaths
+
+**Type**: Bug
+
+**Severity**: Blocker
+
+**Since**: Version 2019.6.0
+
+It has been a long-standing best practice that the /libs content tree in the AEM content repository should be considered read-only by customers. Modifying nodes and properties under */libs* creates significant risk for major and minor updates. Modifications to */libs* should only be made by Adobe through official channels.
+
+### Packages Should Not Contain Duplicate OSGi Configurations {#oakpal-package-osgi}
+
+**Key**: DuplicateOsgiConfigurations
+
+**Type**: Bug
+
+**Severity**: Major
+
+**Since**: Version 2019.6.0
+
+A common problem that occurs on complex projects is where the same OSGi component is configured multiple times. This creates an ambiguity as to which configuration will be operable. This rule is "runmode-aware" in that it will only identify issues where the same component is configured multiple times in the same runmode (or combination of runmodes).
+
+#### Non Compliant Code {#non-compliant-code-osgi}
+
+```+ apps
+  + projectA
+    + config
+      + com.day.cq.commons.impl.ExternalizerImpl
+  + projectB
+    + config
+      + com.day.cq.commons.impl.ExternalizerImpl
+```
+
+#### Compliant Code {#compliant-code-osgi}
+
+```+ apps
+  + shared-config
+    + config
+      + com.day.cq.commons.impl.ExternalizerImpl
+```
+
+### Config and Install Folders Should Only Contain OSGi Nodes {#oakpal-config-install}
+
+**Key**: ConfigAndInstallShouldOnlyContainOsgiNodes
+
+**Type**: Bug
+
+**Severity**: Major
+
+**Since**: Version 2019.6.0
+
+For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. Placing other types of content under paths which contain these segments results in application behavior which unintentionally varies between administrative and non-administrative users.
+
+### Packages Should Not Overlap {#oakpal-no-overlap}
+
+**Key**: PackageOverlaps
+
+**Type**: Bug
+
+**Severity**: Major
+
+**Since**: Version 2019.6.0
+
+Similar to the *Packages Should Not Contain Duplicate OSGi Configurations* this is a common problem on complex projects where the same node path is written to by multiple separate content packages. While using content package dependencies can be used to ensure a consistent result, it is better to avoid overlaps entirely. 
