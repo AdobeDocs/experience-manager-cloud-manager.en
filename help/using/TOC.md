@@ -35,8 +35,12 @@ index: n
   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
   + [Notifications](notifications.md)
   + [Custom Code Quality Rules](custom-code-quality-rules.md)
++ Product Update Wizard {#product-update-wizard}
+  + [Overview](overview-productupdate-wizard.md)
+  + [Evaluation](evaluation.md)
 + Release Notes {#release-notes}
-  + [Current Release Notes (2019.5.0)](release-notes-current.md)
+  + [Current Release Notes (2019.6.0)](release-notes-current.md)
+  + [Release Notes for 2019.5.0](release-notes-2019-5-0.md)
   + [Release Notes for 2019.4.0](release-notes-2019-4-0.md)
   + [Release Notes for 2019.3.0](release-notes-2019-3-0.md)
   + [Release Notes for 2019.2.0](release-notes-2019-2-0.md)

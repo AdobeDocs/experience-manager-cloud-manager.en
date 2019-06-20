@@ -33,7 +33,7 @@ For each of these gates, there is a three-tier structure for issues identified b
 
 ## Code Quality Testing {#code-quality-testing}
 
-As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by SonarQube. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
+As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
