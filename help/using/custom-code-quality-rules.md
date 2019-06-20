@@ -559,7 +559,7 @@ Please find below the OakPAL checks executed by Cloud Manager.
 >[!NOTE]
 >OakPAL is a framework developed by an AEM Partner (and winner of 2019 AEM Rockstar North America) which validates content packages using a standalone Oak repository.
 
-#### Customer Packages Should Not Create or Modify Nodes Under /libs {oakpal-customer-package}
+#### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
 
 **Key**: BannedPaths
 
@@ -571,7 +571,7 @@ Please find below the OakPAL checks executed by Cloud Manager.
 
 It has been a long-standing best practice that the /libs content tree in the AEM content repository should be considered read-only by customers. Modifying nodes and properties under */libs* creates significant risk for major and minor updates. Modifications to */libs* should only be made by Adobe through official channels.
 
-#### Packages Should Not Contain Duplicate OSGi Configurations {oakpal-package-osgi}
+#### Packages Should Not Contain Duplicate OSGi Configurations {#oakpal-package-osgi}
 
 **Key**: DuplicateOsgiConfigurations
 
@@ -602,7 +602,7 @@ A common problem that occurs on complex projects is where the same OSGi componen
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-#### Config and Install Folders Should Only Contain OSGi Nodes {oakpal-config-install}
+#### Config and Install Folders Should Only Contain OSGi Nodes {#oakpal-config-install}
 
 **Key**: ConfigAndInstallShouldOnlyContainOsgiNodes
 
@@ -614,7 +614,7 @@ A common problem that occurs on complex projects is where the same OSGi componen
 
 For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. Placing other types of content under paths which contain these segments results in application behavior which unintentionally varies between administrative and non-administrative users.
 
-#### Packages Should Not Overlap {oakpal-no-overlap}
+#### Packages Should Not Overlap {#oakpal-no-overlap}
 
 **Key**: PackageOverlaps
 

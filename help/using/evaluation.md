@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 ---
 
-## Evaulation Phase {#evaluation}
+# Evaulation Phase {#evaluation}
 
 Once you click Start Update, the first phase in Product Update Wizard is the Evaluation phase. In this phase, you can assess the upgrade complexity with the pattern detector accessible to you directly from the wizard. At the end of this step, you will have access to the evaluation report.
 
