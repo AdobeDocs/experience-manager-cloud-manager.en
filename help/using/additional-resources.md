@@ -9,19 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 
 # Additional Resources to [!UICONTROL Cloud Manager]{#additional-resources-to-cloud-manager}
 
-## Introduction {#introduction}
+You should first reach out to your Adobe Managed Services Customer Success Engineer (CSE) for support related to Cloud Manager. 
+Your CSE will advise you whether they can help you with your issue, or whether you would need to create a Support ticket using Customer Care.
+You can access [Enterprise Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) to create Support tickets. See Accessing the AEM Support Portal for more information on creating Support tickets in Customer Care.
 
-This section highlights additional useful resources for [!UICONTROL Cloud Manager], part of the Adobe Managed Cloud Services.
-
-## Experience League {#experience-league-resource}
-
-Follow [Adobe Experience League](https://expleague.azureedge.net/labs/L722/index.html) to get started with lab overviews and consolidated tutorials for Cloud Manager.
-
-## Webinar Series {#webinar-series}
-
-Follow [Adobe Forums](https://forums.adobe.com/message/11061595) to get additional learning path created for Cloud Manager as webinar series.
-
-## Demo Video Series {#demo-videos}
-
-Follow [Using the CI/CD Pipeline in Cloud Manager for AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)
-that includes video series focussed on exploring,setting up and executing Cloud Manager's CI/CD Pipeline in both failure and success scenarios.
