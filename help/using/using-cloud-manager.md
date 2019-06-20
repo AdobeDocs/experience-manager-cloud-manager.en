@@ -253,7 +253,7 @@ The current checks are:
 
 ### Quality Check Implementation by SonarQube {#quality-check-implementation-by-sonarqube}
 
-As part of the pipeline, as depicted above, the code is scanned. Currently, this is implemented by SonarQube. We have 93 rules which are a combination of generic Java rules and AEM-specific rules (including some from Cognifide's existing rule set). A list of these rules can be found here: [SonarQube Rules](assets/sonarqube-rules.xlsx)
+As part of the pipeline, as depicted above, the code is scanned. Currently, this is implemented by SonarQube. We have 93 rules which are a combination of generic Java rules and AEM-specific rules (including some from Cognifide's existing rule set). A list of these rules can be found here: [code-quality-rules.xlsx](/using/assets/code-quality-rules.xlsx)
 
 From these rules, a variety of metrics is calculated, some of which are used as a quality gate before allowing a deployment to the stage environment.
 
