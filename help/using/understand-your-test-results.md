@@ -31,6 +31,10 @@ For each of these gates, there is a three-tier structure for issues identified b
 * **Important** - These are issues identified by the gate which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure.
 * **Info** - These are issues identified by the gate which are provided purely for informational purposes and have no impact on the pipeline execution.
 
+>[!NOTE]
+>
+>In a Code Quality Only Pipeline, Important failures in the Code Quality Testing gate cannot be overridden since the Code Quality Testing step is the final step in the pipeline.
+
 ## Code Quality Testing {#code-quality-testing}
 
 As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by SonarQube. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
