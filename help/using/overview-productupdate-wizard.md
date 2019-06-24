@@ -33,4 +33,4 @@ The wizard includes five phases that guides the user during an AEM product updat
 
    ![](assets/Start-Update.png)
 
-The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process, as seen in the [Evaluation Phase](evaluation.md).
+   The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process as seen in the [Evaluation Phase](evaluation.md).
