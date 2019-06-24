@@ -11,7 +11,8 @@ discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 
 # Evaluation Phase {#evaluation}
 
-Once you click **[!UICONTROL Start Update]**, the first phase in Product Update wizard is the **[!UICONTROL Evaluation]** phase. In this phase, you can assess the upgrade complexity with the pattern detector accessible to you directly from the wizard. At the end of this step, you will have access to the evaluation report.
+The first phase in the Product Update wizard is **[!UICONTROL Evaluation]** phase. 
+Here you can assess the upgrade complexity with the pattern detector accessible to you directly from the wizard. At the end of this step, you will have access to the evaluation report.
 
 The generated report allows you to check the Author instance for upgradability by detecting patterns that:
 
@@ -26,24 +27,21 @@ This serves as an assessment of the development effort that is involved in upgra
 
 ## Running the Evaluator {#running-evaluator}
 
-Follow the steps below to run the evaluator:
+Follow the steps below to generate evaluation report:
 
-1. Click on **[!UICONTROL Run Evaluation]** to run the pattern detector.
+1. Click on **[!UICONTROL Run Evaluation]**.
 
    >[!NOTE]
      >The pattern detector can run on any environment. However, in order to increase detection rate and avoid any slowdowns on business critical instances, Cloud Manager will run it on staging environment on the author instance.
 
    ![](assets/Run-Evaluation.png)
 
-1. The wizard informs you the status of your action. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
+1. The wizard informs you of the status of your action. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
-   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy of the evaluation report.
+   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy.
 
    ![](assets/Evaluation-1.png)
 
-   Additionaly, you can view the updated pulse notifications, as your status updates.
-
-   ![](assets/Evaluation-pulse-notification.png)
 
 >[!NOTE]
-   >The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
+   >The current release of Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
