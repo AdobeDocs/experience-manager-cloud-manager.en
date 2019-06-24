@@ -29,15 +29,22 @@ This serves as an assessment of the development effort that is involved in upgra
 
 Follow the steps below to run the evaluator:
 
-1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector. The pattern detector can run on any environment. However, in order to increase detection rate and avoid any slowdowns on business critical instances, Cloud Manager will run it on staging environment on the author instance.
+1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector.
 
-![](assets/Run-Evaluation.png)
+   >[!NOTE]
+     >The pattern detector can run on any environment. However, in order to increase detection rate and avoid any slowdowns on business critical instances, Cloud Manager will run it on staging environment on the author instance.
+
+   ![](assets/Run-Evaluation.png)
 
 1. The wizard informs you the status of your action. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
-Once the report is generated, you can select [!UICONTROL Download] to save a copy of the evaluation report.
+   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy of the evaluation report.
 
-![](assets/Evaluation-1.png)
+   ![](assets/Evaluation-1.png)
+
+   Additionaly, you can view the updated pulse notifications, as your status updates.
+
+   ![](assets/Evaluation-pulse-notification.png)
 
 >[!NOTE]
    >The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
