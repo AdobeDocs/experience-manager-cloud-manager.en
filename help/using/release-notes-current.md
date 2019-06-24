@@ -10,12 +10,12 @@ The [!UICONTROL Cloud Manager] 2019.6.0 Release does not contain significant fun
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is .
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is June 20, 2019 .
 
 ## What's New {#whats-new}
 
-* New Product Update Wizard to help customers successfully execute an AEM update. (link to Product Update Wizard page)
-* Code quality rules which examine content structures. (link to Custom Code Quality Rules page)
+* New Product Update wizard to help customers successfully execute an AEM update. Refer to [Product Update Wizard](overview-productupdate-wizard.md) to learn more.
+* Code quality rules which examine content structures. Refer to [Custom Code Quality Rules](custom-code-quality-rules.md)for more information.
 * The maximum size of a git push has been increased to 1 GB.
 
 ## Bug Fixes {#bug-fixes}
@@ -25,4 +25,4 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.6.0 is .
 ## Known Issues {#known-issues}
 
 * The code quality CSV download is not always sorted according to severity.
-* False positives may be reported by the ConfigAndInstallShouldOnlyContainOsgiNodes rule if OSGi configurations are placed in a nested folder under a config folder.
+* False positives may be reported by the *ConfigAndInstallShouldOnlyContainOsgiNodes* rule if OSGi configurations are placed in a nested folder under a config folder.

@@ -9,17 +9,17 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 ---
 
-# Introduction {#introduction}
+# Overview to Product Update Wizard {#overview-product-update-wizard}
 
-The Product Update Wizard is a guided, step-by-step experience for Cloud Manager customers who are upgrading to the latest Adobe Experience Manager (AEM) 6.5. It streamlines the end-to-end process, ensures adherence to AEM best practices using Cloud Manager’s CI/CD framework and built-in automated testing.
+The Product Update wizard is a guided, step-by-step experience for Cloud Manager customers who are upgrading to the latest Adobe Experience Manager (AEM) 6.5. It streamlines the end-to-end process, ensures adherence to AEM best practices using Cloud Manager’s CI/CD framework and built-in automated testing.
 
 The wizard includes five phases that guides the user during an AEM product update. The five phases are:
 
-* Evaluation
-* Remediation
-* Execution
-* Validation
-* Completion
+* **Evaluation**
+* **Remediation**
+* **Execution**
+* **Validation**
+* **Completion**
 
 >[!NOTE]
    >The current release of Product Update feature in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
