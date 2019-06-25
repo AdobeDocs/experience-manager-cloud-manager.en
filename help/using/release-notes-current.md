@@ -6,7 +6,7 @@ seo-description: Follow this page to get information for AEM Cloud Manager Relea
 ---
 # Release Notes for 2019.6.0 {#release-notes-for}
 
-The [!UICONTROL Cloud Manager] 2019.6.0 Release does not contain significant functional changes. Follow the sections below for more details.
+The [!UICONTROL Cloud Manager] 2019.6.0 Release adds new code quality rules and new Product Update wizard. Follow the sections below for more details.
 
 ## Release Date {#release-date}
 
