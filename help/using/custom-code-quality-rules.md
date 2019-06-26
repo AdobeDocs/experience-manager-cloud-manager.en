@@ -614,6 +614,27 @@ A common problem that occurs on complex projects is where the same OSGi componen
 
 For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. Placing other types of content under paths which contain these segments results in application behavior which unintentionally varies between administrative and non-administrative users.
 
+A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. To resolve this the offending node should be renamed to a compliant name. For the rich text editor configuration make use of the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
+
+#### Non Compliant Code {#non-compliant-code-config-install}
+
+```
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    + config [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
+
+#### Compliant Code {#compliant-code-config-install}
+
+```
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    ./configPath = inplaceEditingConfig (String)
+    + inplaceEditingConfig [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
+
 ### Packages Should Not Overlap {#oakpal-no-overlap}
 
 **Key**: PackageOverlaps
