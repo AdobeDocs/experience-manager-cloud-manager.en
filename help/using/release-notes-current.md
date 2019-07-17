@@ -6,11 +6,11 @@ seo-description: Follow this page to get information for AEM Cloud Manager Relea
 ---
 # Release Notes for 2019.7.0 {#release-notes-for}
 
-The [!UICONTROL Cloud Manager] 2019.7.0 Release adds new code quality rules and new Product Update wizard. Follow the sections below for more details.
+The [!UICONTROL Cloud Manager] 2019.7.0 Release adds updates to Experience Cloud notifications and improvements as bug fixes. Follow the sections below for more details.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.7.0 is July 18, 2019 .
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.7.0 is July 18, 2019.
 
 ## What's New {#whats-new}
 
@@ -22,5 +22,5 @@ There is now an Experience Cloud notification sent on the start of a production 
 * Packages which contained FileVault InstallHooks were not consistently run through the code quality step.
 * In certain combinations, code quality issues were not consistently sorted.
 * There were a few visual problems on the pipeline execution page.
-* The performance testing step could fail randomly some of the time due to resource constraints from the underlying cloud infrastructure.
+* The performance testing step could fail randomly sometimes due to resource constraints from the underlying cloud infrastructure.
 * Certain customer builds would fail due to networking issues.
