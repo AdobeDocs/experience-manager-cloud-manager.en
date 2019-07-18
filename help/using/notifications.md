@@ -12,7 +12,7 @@ discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
 
 # Notifications {#notifications}
 
-[!UICONTROL Cloud Manager] allows the users to receive notifications at the start of a production deployment as well as when the **Go-Live Approval** and **Scheduled** steps are reached. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
+[!UICONTROL Cloud Manager] allows the user to receive notifications when a Pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment, as well as when the **Go-Live Approval** and **Scheduled** steps are reached. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
 
 >[!NOTE]
 >
