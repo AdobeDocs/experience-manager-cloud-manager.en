@@ -102,6 +102,7 @@ Cloud Manager builds and tests your code using a specialized build runtime **Env
     * graphicsmagick
     * If you require other packages, you will need to request those via your Customer Success Engineers (CSE).
 
+* Every build is done on a pristine environment; the build container does not keep any state between executions.
 * Maven is always run with the command: *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe **Artifact** repository. (Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
 
