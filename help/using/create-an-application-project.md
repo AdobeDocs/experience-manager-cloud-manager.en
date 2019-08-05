@@ -88,9 +88,9 @@ Last Modified Date: 2018-10-08T09:20:10.106-0400
 
 ## Build Environment Details {#build-environment-details}
 
-Cloud Manager builds and tests your code using a specialized build runtime **Environment**. This environment has the following attributes:
+Cloud Manager builds and tests your code using a specialized build environment. This environment has the following attributes:
 
-* The build environment is Linux-based.
+* The build environment is Linux-based, derived from Ubuntu 18.04.
 * Apache Maven 3.6.0 is installed.
 * The Java version installed is Oracle JDK 8u202.
 * There are some additional system packages installed which are necessary:
@@ -100,8 +100,8 @@ Cloud Manager builds and tests your code using a specialized build runtime **Env
     * libpng
     * imagemagick
     * graphicsmagick
-    * If you require other packages, you will need to request those via your Customer Success Engineers (CSE).
 
+* Other packages may be installed at build time as described [below](#installing-additional-system-packages).
 * Every build is done on a pristine environment; the build container does not keep any state between executions.
 * Maven is always run with the command: *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe **Artifact** repository. (Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
@@ -207,6 +207,67 @@ Once configured, these variables will be available as environment variables. In 
 >[!NOTE]
 >
 >Environment variable names may only contain alphanumeric and underscore (_) characters. By convention, the names should be all upper-case.
+
+## Installing Additional System Packages {#installing-additional-system-packages}
+
+Some builds require additional system packages to be installed to function fully. For example, a build may invoke a Python or ruby script and, as a result, need to have an appropriate language interpreter installed. This can be done by calling the [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin/) to invoke APT. This execution should generally be wrapped in a Cloud Manager-specific Maven profile. For example, to install python:
+
+```xml
+        <profile>
+            <id>install-python</id>
+            <activation>
+                <property>
+                        <name>env.CM_BUILD</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>1.6.0</version>
+                        <executions>
+                            <execution>
+                                <id>apt-get-update</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>apt-get</executable>
+                                    <arguments>
+                                        <argument>update</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>install-python</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>apt-get</executable>
+                                    <arguments>
+                                        <argument>install</argument>
+                                        <argument>-y</argument>
+                                        <argument>--no-install-recommends</argument>
+                                        <argument>python</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+```
+
+This same technique can be used to install language specific packages, i.e. using `gem` for RubyGems or `pip` for Python Packages.
+
+>[!NOTE]
+>
+>Installing a system package in this manner does **not** install it in the runtime environment used for running Adobe Experience Manager. If you need a system package installed on the AEM environment, contact your Customer Success Engineers (CSE).
 
 ## Develop your Code Based on Best Practices {#develop-your-code-based-on-best-practices}
 
