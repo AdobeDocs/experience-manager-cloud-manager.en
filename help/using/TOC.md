@@ -1,9 +1,9 @@
 ---
-cloud: experience-cloud
-product: adobe experience manager cloud manager
-archtype: administrator
+product: adobe experience manager
+sub-product: adobe experience manager cloud manager
+archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
-index: n
+
 ---
 
 # Experience Manager Help {#using}
