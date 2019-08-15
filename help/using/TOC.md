@@ -33,13 +33,15 @@ user-guide-title: Experience Manager Cloud Manager Help
   + [Manage your Environments](manage-your-environment.md)
   + [Monitor your Environments](monitor-your-environments.md)
   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+  + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
   + [Notifications](notifications.md)
   + [Custom Code Quality Rules](custom-code-quality-rules.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](overview-productupdate-wizard.md)
   + [Evaluation](evaluation.md)
 + Release Notes {#release-notes}
-  + [Current Release Notes (2019.7.0)](release-notes-current.md)
+  + [Current Release Notes (2019.8.0)](release-notes-current.md)
+  + [Current Release Notes (2019.7.0)](release-notes-2019-7-0.md)
   + [Release Notes for 2019.6.0](release-notes-2019-6-0.md)
   + [Release Notes for 2019.5.0](release-notes-2019-5-0.md)
   + [Release Notes for 2019.4.0](release-notes-2019-4-0.md)

@@ -269,6 +269,43 @@ This same technique can be used to install language specific packages, i.e. usin
 >
 >Installing a system package in this manner does **not** install it in the runtime environment used for running Adobe Experience Manager. If you need a system package installed on the AEM environment, contact your Customer Success Engineers (CSE).
 
+## Skipping Content Packages {#skipping-content-packages}
+
+In Cloud Manager, builds may produce any number of content packages. 
+For a variety of reasons, it may be desirable to product a content package but not deploy it. This may be useful, for example, when building content packages used only for testing or which will be repackaged by another step in the build process, that is, as a sub-package of another package. 
+
+To accommodate these scenarios, Cloud Manager will look for a property named ***cloudManagerTarget*** in the properties of built content packages. If this property is set to none, the package will be skipped and not deployed. The mechanism to set this property depends upon the way the build is producing the content package. For example, with the filevault-maven-plugin you would configure the plugin like this:
+
+```xml
+        <plugin>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            <extensions>true</extensions>
+            <configuration>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
+        <!-- other configuration -->
+            </configuration>
+        </plugin>
+```
+
+With the content-package-maven-plugin it is similar:
+
+```xml
+        <plugin>
+            <groupId>com.day.jcr.vault</groupId>
+            <artifactId>content-package-maven-plugin</artifactId>
+            <extensions>true</extensions>
+            <configuration>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
+        <!-- other configuration -->
+            </configuration>
+        </plugin>
+```
+
 ## Develop your Code Based on Best Practices {#develop-your-code-based-on-best-practices}
 
 Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
