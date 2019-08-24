@@ -1,6 +1,6 @@
 ---
 product: adobe experience manager
-sub-product: adobe experience manager cloud manager
+sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
 
