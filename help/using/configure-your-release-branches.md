@@ -77,5 +77,4 @@ A single `master` branch may suffice for very simple projects, but in most cases
 
 >[!NOTE]
 >
->To view the common git commands, see the [Git Cheat Sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf).
-
+>To view the common git commands, see the [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
