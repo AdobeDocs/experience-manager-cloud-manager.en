@@ -57,12 +57,12 @@ The navigation on the left will show the available metrics within the currently 
 
 An individual graph will show the status and a graph of the data over time along with the thresholds. If multiple instances are displayed, each instance's data will be on a separate series.
 
-![](assets/System-Monitoring3.png)
+![](assets/Monitoring_Graphs1.png)
 
 Individual series can be hidden on a graph by clicking on the series in the legend. 
 For example, if you click on the warning threshold series, you will see only the critical threshold.
 
-![](assets/System_Monitoring4.png)
+![](assets/Monitoring_Graphs2.png)
 
 ### Metric Definitions {#metric-definitions}
 

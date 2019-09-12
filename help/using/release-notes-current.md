@@ -1,29 +1,37 @@
 ---
-title: Release Notes for 2019.8.0
-seo-title: AEM Cloud Manager Release Notes for 2019.8.0
-description: Follow this page to get information for Cloud Manager Release 2019.8.0.
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.8.0.
+title: Release Notes for 2019.9.0
+seo-title: AEM Cloud Manager Release Notes for 2019.9.0
+description: Follow this page to get information for Cloud Manager Release 2019.9.0.
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.9.0.
 ---
-# Release Notes for 2019.8.0 {#release-notes-for}
+# Release Notes for 2019.9.0 {#release-notes-for}
 
-The [!UICONTROL Cloud Manager] 2019.8.0 Release adds support for selective built content packages, improves build performance, and fixes a variety of minor bugs.
+The [!UICONTROL Cloud Manager] 2019.9.0 Release adds updates to Sling Referrer Filter health check and monitoring graphs.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.8.0 is August 19, 2019.
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.9.0 is September 11, 2019.
 
 ## What's New {#whats-new}
 
-* New Command Line Interface to the Cloud Manager API, powered by the [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
-* Specific content packages produced by the build may be declared as skippable and will not be deployed. Refer to ***Skipping Content Packages*** section in [Create an AEM Application Project](create-an-application-project.md) for more details.
-* The set of preloaded dependencies in the build container has been reworked to avoid some unnecessary network requests.
-* The message on the overview page for certain incorrectly configured programs has been improved.
+* The categorization of the Sling Referrer Filter health check has been changed from Critical to Important.
+* The categorization of the HTML Library Manager Config health check has been changed from Critical to Important.
+* Monitoring graphs can now be downloaded. Refer to [Monitor your Environments](monitor-your-environments.md) for more details.
+* If a program does not have a production AEM environment, clicking on the program card from the landing page will navigate to the Cloud Manager overview page, not produce an error dialog.
+* The Pipeline Settings Card on the Overview page has been retitled to **Production Pipeline Settings**.
+* The Important Failure Behavior radio buttons have been removed from code-quality only pipelines.
+* The activity page now displays the name of the pipeline for each execution.
+* The execution page now displays the name of the pipeline.
+* The Code Quality summary dialog now shows a description for each rating.
 
 ## Bug Fixes {#bug-fixes}
 
-* When accessing SLA reports, the default year was 2018, not 2019.
-* For long environment names, the environment selector on the Reports screen did not properly increase in size.
-* The ***ConfigAndInstallShouldOnlyContainOsgiNodes*** code quality rule produced false positives when the Sling Rewriter component was used.
-* The ***ConfigAndInstallShouldOnlyContainOsgiNodes*** code quality rule produced false positives for certain uncommon path structures.
-* Assets-only customers may not have been consistently able to navigate to their AEM environments.
-* The [!UICONTROL Create a Branch and Project] dialog rendered differently across different browsers.
+* Some users could not view an execution details when it was waiting for approval.
+* On Overview page, the right margin was not consistent.
+* The build container could run out of memory in large projects.
+* Under certain circumstances, the BannedPaths OakPAL rule did not identify installed content under /libs.
+* When a quality gate was rejected, the dialog heading still showed "Partially Passed".
+
+## Known Issues {#known-issues}
+
+Downloading of monitoring graphs is not available in Safari.

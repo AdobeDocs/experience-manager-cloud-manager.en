@@ -45,14 +45,14 @@ Once you have configured your **Pipeline** (repository, environment, and testing
     * Code Scanning
     * Deploy to Stage
 
-   ![](assets/Stage_Testing.png)
+   ![](assets/Stage_Deployment1.png)
 
    The **Stage Testing**, involves the following steps:
 
     * Security Testing
     * Performance Testing
 
-   ![](assets/Stage_Deployment.png)
+   ![](assets/Stage_Testing1.png)
 
    The **Production Deployment**, involves the following steps:
 
@@ -60,6 +60,8 @@ Once you have configured your **Pipeline** (repository, environment, and testing
     * **Schedule Production Deployment** (if enabled)
     * **CSE Support** (if enabled)
     * **Deploy to Production**
+
+   ![](assets/Prod_Deployment1.png)
 
    >[!NOTE]
    >
