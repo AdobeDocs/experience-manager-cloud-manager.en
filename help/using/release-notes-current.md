@@ -6,11 +6,11 @@ seo-description: Follow this page to get information for AEM Cloud Manager Relea
 ---
 # Release Notes for 2019.9.0 {#release-notes-for}
 
-The [!UICONTROL Cloud Manager] 2019.9.0 Release adds updates to Sling Referrer Filter health check and monitoring graphs.
+The [!UICONTROL Cloud Manager] 2019.9.0 Release updates the security test criteria, adds downloadable monitoring graphs, and fixes some customer-reported usability issues.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.9.0 is September 11, 2019.
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.9.0 is September 12, 2019.
 
 ## What's New {#whats-new}
 
@@ -34,4 +34,4 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.9.0 is September 11
 
 ## Known Issues {#known-issues}
 
-Downloading of monitoring graphs is not available in Safari.
+* Downloading of monitoring graphs is not available in Safari.
