@@ -111,10 +111,10 @@ The following table lists the current checks:
 | Default passwords have been changed | Default Login Accounts |Critical |
 | Sling default GET servlet is protected from DOS attacks. | Sling Get Servlet |Critical |
 | Dispatcher is properly filtering requests | CQ Dispatcher Configuration |Critical |
-| The Adobe Granite HTML Library Manager is configured appropriately | CQ HTML Library Manager Config |Critical |
+| The Adobe Granite HTML Library Manager is configured appropriately | CQ HTML Library Manager Config |Important |
 | The Sling Java Script Handler is configured appropriately | Sling Java Script Handler |Critical |
 | The Sling JSP Script Handler is configured appropriately | Sling JSP Script Handler |Critical |
-| The Sling Referrer Filter is configured in order to prevent CSRF attacks | Sling Referrer Filter |Critical |
+| The Sling Referrer Filter is configured in order to prevent CSRF attacks | Sling Referrer Filter |Important |
 | SSL is configured correctly | SSL Configuration |Critical |
 | No obviously insecure user profile policies found | User Profile Default Access |Critical |
 | CRXDE Support bundle is disabled | CRXDE Support |Important |
