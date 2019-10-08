@@ -3,7 +3,6 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
-
 ---
 
 # Experience Manager Help {#using}
@@ -36,6 +35,9 @@ user-guide-title: Experience Manager Cloud Manager Help
   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
   + [Notifications](notifications.md)
   + [Custom Code Quality Rules](custom-code-quality-rules.md)
++ Manage your Code {#managing-code}
+  + [Activating Maven Profiles](activating-maven-project.md)
+  + [Integrating with Git](setup-cloud-manager-git-integration.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](overview-productupdate-wizard.md)
   + [Evaluation](evaluation.md)
@@ -55,4 +57,3 @@ user-guide-title: Experience Manager Cloud Manager Help
   + [Release Notes for 2018.7.0](release-notes-2018-7-0.md)
   + [Release Notes for 2018.6.0](release-notes-2018-6-0.md)
   + [Release Notes for 2018.5.0](release-notes-2018-5-0.md)
-  

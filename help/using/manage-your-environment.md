@@ -19,6 +19,13 @@ Each of the listed environments displays its associated status.
 
 ![](assets/Manage_Environments1.png)
 
+## Overview Video to Environments {#environments-video}
+
+The following video provides an overview to Cloud Manager Environments that are composed of AEM Author, AEM Publish and Dispatcher instances.
+Refer to the video below for more details.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)
+
 ## Accessing Environments in Cloud Manager {#accessing-environments-in-cloud-manager}
 
 The **Environments** tile displays the Production and Stage environments provisioned in your program along with the status.

@@ -94,6 +94,13 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
 1. Cloud Manager determines whether each artifact is an AEM or dispatcher package.
 1. Cloud Manager removes all dispatchers from the Load Balancer to isolate the environment during the deployment.
+
+   Unless configured otherwise you can skip Load Balancer Changes in Dev and Stage Deployments, that is, detach and attach steps in both non-production pipelines, for dev environments, and the production pipeline, for stage environments.
+
+   >[!NOTE]
+   >
+   >This feature is expected to be primarily used by 1-1-1 customers.
+
 1. Each AEM artifact is deployed to each AEM instance via Package Manager APIs, with package dependences determining the deployment order.
 
    To learn more about how you can use packages to install new functionality, transfer content between instances, and back up repository content, please refer to How to Work with Packages.
@@ -115,6 +122,10 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
    >Cloud Manager expects the dispatcher artifact to contain the full file set.  All dispatcher configuration files must be present in the git repository. Missing files or folders will result in deployment failure.
 
 1. Following the successful deployment of all AEM and dispatcher packages to all nodes, the dispatchers are added back to the load balancer and the deployment is complete.
+
+   >[!NOTE]
+   >
+   >You can skip load lalancer changes in development and stage deployments, that is, detach and attach steps in both non-production pipelines, for developer environments, and the production pipeline, for stage environments. This feature is expected to be primarily used by 1-1-1 customers.
 
 ### Deployment to Production Phase {#deployment-production-phase}
 
