@@ -23,9 +23,6 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
 The following video provides an overview to Cloud Manager Programs that represent sets of AEM environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA).
 
 
-[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12)
-
-
 ## Logging in for the First Time {#logging-in-for-the-first-time}
 
 1. Log in to the **Adobe [!UICONTROL Experience Cloud]** and you will see the list of **Programs**.
