@@ -128,6 +128,12 @@ Follow the steps below to configure Dispatcher Invalidations:
 
    ![](assets/image2018-8-7_15-4-30.png)
 
+   **Approve after Stage Deployment**
+    There is an optional step **Approve after Stage Deployment** which can be configured in the Production Pipeline. 
+      >[!NOTE]
+      >
+      >**Approve after Stage Deployment** functions similarly to the approval before the production deployment, but occurs immediately after the stage deployment step,that is, before any testing is done, compared with the approval before the production deployment, which is done after all testing is complete.
+    
 1. Access the **Testing** tab to define your testing criteria for your program.
 
    Now, you can configure the performance test parameters.

@@ -25,4 +25,4 @@ If the original version does meet this criteria then the generated version will 
 
 >[!NOTE]
 >
->Regardless of whether or not the original version was incorporated into the Cloud Manager-initialized version, the original version is available as a Maven property with the name *cloudManagerOriginalVersion*.
+>Regardless of whether or not the original version was incorporated into the Cloud Manager-initialized version, the original version is available as a Maven property with the name *cloudManagerOriginalVersion.*
