@@ -153,7 +153,7 @@ Follow the best practices for setting up project in [!UICONTROL Cloud Manager]:
 * You will be provided with exactly one git repository. There must be a pom.xml file in the root of this repository. This pom.xml file can refer to as many submodules (which in turn may have other submodules, etc.) as necessary, but there has to be only one entry point.
 * Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe artifact repository (repo.adobe.com).
 * You can add additional repositories in your pom.xml files. However, access to password-protected or network-protected artifact repositories is not supported.
-* Deployable content packages are discovered by scanning for zip files which are contained in a directory named target. Again, any number of submodules may produce content packages.
+* Deployable content packages are discovered by scanning for zip files which are contained in a directory named target. Again, any number of submodules may produce content packages. (Packages may anyhow to be skipped from deployment via marker)
 * If there is more than one content package, the ordering of package deployments is not guaranteed. Should a specific order be needed, content package dependencies can be used to define the order.
 
 <!-- 
