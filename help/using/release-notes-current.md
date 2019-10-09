@@ -6,8 +6,8 @@ seo-description: Follow this page to get information for AEM Cloud Manager Relea
 ---
 # Release Notes for 2019.10.0 {#release-notes-for}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2018.10.0 and adds updates to deployment steps and maven project version handling.
-Follow the page below for more details.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2019.10.0 and adds updates to deployment steps and maven project version handling.
+Follow the sections below for more details.
 
 ## Release Date {#release-date}
 
@@ -18,7 +18,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.10.0 is October 12,
 * Significant portions of the deployment steps have been made more performant.
 * When appropriate, the version of the build Maven project will now incorporate the project version in git.
 * At build time, new environment variables are available.
-* Non-Production Pipelines can be deleted from the card on the Overview page as well as the API.
+* Non-Production Pipelines can be deleted from the card on the **Overview** page as well as the API.
 * There is a new optional approval step immediately after the stage deploy step, but before the security test step.
 * When configuring a CI/CD pipeline, the detaching and attaching of dispatcher instances from the load balancer can be skipped for dev and stage environments. 
   Refer to **[Deployment Process](deploying-code.md#deployment-process)** for more details.
