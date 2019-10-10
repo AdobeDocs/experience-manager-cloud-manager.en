@@ -97,6 +97,8 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
    Unless configured otherwise you can skip Load Balancer Changes in Dev and Stage Deployments, that is, detach and attach steps in both non-production pipelines, for dev environments, and the production pipeline, for stage environments.
 
+   ![](assets/load_balancer.png)
+
    >[!NOTE]
    >
    >This feature is expected to be primarily used by 1-1-1 customers.

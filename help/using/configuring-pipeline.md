@@ -130,9 +130,17 @@ Follow the steps below to configure Dispatcher Invalidations:
 
    **Approve after Stage Deployment**
     There is an optional step **Approve after Stage Deployment** which can be configured in the Production Pipeline. 
+    This is enabled in a new option on the **Pipeline Edit** screen:
+
+    ![](assets/post_deployment1.png) 
+
+    It is then shown as a separate step during pipeline execution:
+  ![](assets/post_deployment2.png) 
+  
       >[!NOTE]
       >
       >**Approve after Stage Deployment** functions similarly to the approval before the production deployment, but occurs immediately after the stage deployment step,that is, before any testing is done, compared with the approval before the production deployment, which is done after all testing is complete.
+
     
 1. Access the **Testing** tab to define your testing criteria for your program.
 
