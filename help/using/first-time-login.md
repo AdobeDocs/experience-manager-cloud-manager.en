@@ -18,7 +18,9 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
 >
 >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
-## Overview Video to Programs {#programs-video}
+## Video Tutorial {#video-tutorial-one}
+
+### Cloud Manager Programs {#programs-video}
 
 The following video provides an overview to Cloud Manager Programs that represent sets of AEM environments supporting logical sets of business initiatives, typically corresponding to a purchased Service Level Agreement (SLA).
 
@@ -44,7 +46,9 @@ The following video provides an overview to Cloud Manager Programs that represen
    >
    >Please see [Setup your Program](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) to complete the next steps.
 
-## The Activity tab {#activity-video}
+## Video Tutorial {#video-tutorial-two}
+
+### Cloud Manager Activity tab {#activity-video}
 
 Cloud Manager provides a consolidated view into a Program's activity, listing all CI/CD Pipeline executions, both production and non-production, allowing visibility into the past and present activity, and any activity's Details can be reviewed.
 

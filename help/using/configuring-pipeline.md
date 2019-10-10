@@ -16,6 +16,15 @@ discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 
 The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](ci-cd-pipeline.md).
 
+## Video Tutorial {#video-tutorial-one}
+
+### Configuring Pipeline in Cloud Manager {#config-pipeline-video}
+
+The CI/CD Production Pipeline configuration defines the trigger that will initiate the pipeline, parameters controlling the production deployment and performance test parameters.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
+
+
 ## Understanding the Flow {#understanding-the-flow}
 
 You can configure your pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
@@ -100,6 +109,21 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 >
 >The **Use CSE Oversight** option is not available to all customers.
 
+**Approve after Stage Deployment**
+
+There is an optional step **Approve after Stage Deployment** which can be configured in the Production Pipeline. 
+This is enabled in a new option on the **Pipeline Edit** screen:
+
+![](assets/post_deployment1.png) 
+
+It is then shown as a separate step during pipeline execution:
+
+![](assets/post_deployment2.png) 
+  
+>[!NOTE]
+>
+>**Approve after Stage Deployment** functions similarly to the approval before the production deployment, but occurs immediately after the stage deployment step,that is, before any testing is done, compared with the approval before the production deployment, which is done after all testing is complete.
+
 **Dispatcher Invalidation**
 
 As a Deployment Manager, you have the opportunity to configure a set of paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache, while setting up or editing pipeline.
@@ -127,19 +151,6 @@ Follow the steps below to configure Dispatcher Invalidations:
    Click **Save** to persist this configuration.
 
    ![](assets/image2018-8-7_15-4-30.png)
-
-   **Approve after Stage Deployment**
-    There is an optional step **Approve after Stage Deployment** which can be configured in the Production Pipeline. 
-    This is enabled in a new option on the **Pipeline Edit** screen:
-
-    ![](assets/post_deployment1.png) 
-
-    It is then shown as a separate step during pipeline execution:
-  ![](assets/post_deployment2.png) 
-  
-      >[!NOTE]
-      >
-      >**Approve after Stage Deployment** functions similarly to the approval before the production deployment, but occurs immediately after the stage deployment step,that is, before any testing is done, compared with the approval before the production deployment, which is done after all testing is complete.
 
     
 1. Access the **Testing** tab to define your testing criteria for your program.
@@ -184,10 +195,13 @@ Follow the steps below to configure Dispatcher Invalidations:
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
 
-### Video on Non-Production & Code Quality Only Pipelines
+## Video on Non-Production & Code Quality Only Pipelines
+
+## Video Tutorial {#video-tutorial-two}
+
+### Cloud Manager Non-Production & Code Quality Only Pipelines {#non-prod-video}
 
 CI/CD Non-production pipelines are broken into two categories, Code Quality pipelines, and Deployment pipelines. Code Quality pipelines all code from a Git branch to build and be evaluated against Cloud Manager's code quality scan. 
-Refer to the following video for more details.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
