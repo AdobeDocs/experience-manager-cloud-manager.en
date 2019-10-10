@@ -195,8 +195,6 @@ Follow the steps below to configure Dispatcher Invalidations:
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
 
-## Video on Non-Production & Code Quality Only Pipelines
-
 ## Video Tutorial {#video-tutorial-two}
 
 ### Cloud Manager Non-Production & Code Quality Only Pipelines {#non-prod-video}
