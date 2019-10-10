@@ -22,7 +22,7 @@ The following page explains how to configure the **Pipeline**. To review more co
 
 The CI/CD Production Pipeline configuration defines the trigger that will initiate the pipeline, parameters controlling the production deployment and performance test parameters.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## Understanding the Flow {#understanding-the-flow}
