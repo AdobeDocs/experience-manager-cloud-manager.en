@@ -45,7 +45,9 @@ The status in each category is a summary of individual metrics – if any metric
 >
 >By default when navigating to this page, the production environment instances are visible, but other environments can be opened as well.
 
-## Overview Video to Reports {#video-reports}
+## Video Tutorial {#video-tutorial}
+
+### Cloud Manager Reports Overview {#reports-video}
 
 Cloud Manager Reports provide a view into the Program's Environments and AEM instances through a set of charts that report on and track a variety of metrics for each AEM instance.
 Refer to the video below for more details.

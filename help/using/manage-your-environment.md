@@ -19,10 +19,11 @@ Each of the listed environments displays its associated status.
 
 ![](assets/Manage_Environments1.png)
 
-## Overview Video to Environments {#environments-video}
+## Video Tutorial {#video-tutorial}
+
+### Cloud Manager Environment Overview {#environ-video}
 
 The following video provides an overview to Cloud Manager Environments that are composed of AEM Author, AEM Publish and Dispatcher instances.
-Refer to the video below for more details.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/)
 
