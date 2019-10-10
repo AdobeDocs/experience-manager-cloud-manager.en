@@ -16,7 +16,7 @@ discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 
 The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](ci-cd-pipeline.md).
 
-## Video Tutorial {#video-tutorial}
+## Video Tutorial {#video-tutorial-one}
 
 ### Configuring Pipeline in Cloud Manager {#config-pipeline-video}
 
@@ -120,9 +120,9 @@ It is then shown as a separate step during pipeline execution:
 
 ![](assets/post_deployment2.png) 
   
- >[!NOTE]
- >
- >**Approve after Stage Deployment** functions similarly to the approval before the production deployment, but occurs immediately after the stage deployment step,that is, before any testing is done, compared with the approval before the production deployment, which is done after all testing is complete.
+>[!NOTE]
+>
+>**Approve after Stage Deployment** functions similarly to the approval before the production deployment, but occurs immediately after the stage deployment step,that is, before any testing is done, compared with the approval before the production deployment, which is done after all testing is complete.
 
 **Dispatcher Invalidation**
 
@@ -197,7 +197,7 @@ In addition to the main pipeline which deploys to stage and production, customer
 
 ## Video on Non-Production & Code Quality Only Pipelines
 
-## Video Tutorial {#video-tutorial}
+## Video Tutorial {#video-tutorial-two}
 
 ### Cloud Manager Non-Production & Code Quality Only Pipelines {#non-prod-video}
 

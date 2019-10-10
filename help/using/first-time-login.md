@@ -18,7 +18,7 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
 >
 >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
-## Video Tutorial {#video-tutorial}
+## Video Tutorial {#video-tutorial-one}
 
 ### Cloud Manager Programs {#programs-video}
 
@@ -46,7 +46,7 @@ The following video provides an overview to Cloud Manager Programs that represen
    >
    >Please see [Setup your Program](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) to complete the next steps.
 
-## Video Tutorial {#video-tutorial}
+## Video Tutorial {#video-tutorial-two}
 
 ### Cloud Manager Activity tab {#activity-video}
 
