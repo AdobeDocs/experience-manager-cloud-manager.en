@@ -36,7 +36,7 @@ user-guide-title: Experience Manager Cloud Manager Help
   + [Notifications](notifications.md)
   + [Custom Code Quality Rules](custom-code-quality-rules.md)
 + Manage your Code {#managing-code}
-  + [Activating Maven Profiles](activating-maven-project.md)
+  + [Maven Project Version Handling](activating-maven-project.md)
   + [Integrating with Git](setup-cloud-manager-git-integration.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](overview-productupdate-wizard.md)
