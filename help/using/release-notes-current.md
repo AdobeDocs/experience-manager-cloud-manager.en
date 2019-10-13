@@ -11,7 +11,7 @@ Follow the sections below for more details.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.10.0 is October 12, 2019.
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.10.0 is October 10, 2019.
 
 ## What's New {#whats-new}
 
@@ -29,4 +29,4 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.10.0 is October 12,
 ## Bug Fixes {#bug-fixes}
 
 * Some of the cards on the **Overview** page were not vertically aligned properly.
-* Certain failure conditions did not cause pipeline executions to be marked properly and prevented subsequence executions.
+* Certain failure conditions did not cause pipeline executions to be marked properly and prevented subsequent executions.

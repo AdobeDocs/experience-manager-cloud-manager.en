@@ -127,7 +127,7 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
    >[!NOTE]
    >
-   >You can skip load lalancer changes in development and stage deployments, that is, detach and attach steps in both non-production pipelines, for developer environments, and the production pipeline, for stage environments. This feature is expected to be primarily used by 1-1-1 customers.
+   >You can skip load lalancer changes in development and stage deployments, that is, detach and attach steps in both non-production pipelines, for developer environments, and the production pipeline, for stage environments. 
 
 ### Deployment to Production Phase {#deployment-production-phase}
 
