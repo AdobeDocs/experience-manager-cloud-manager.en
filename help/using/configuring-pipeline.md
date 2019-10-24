@@ -205,7 +205,7 @@ CI/CD Non-production pipelines are broken into two categories, Code Quality pipe
 
 On the home screen, these pipelines are listed in a new card:
 
-1. Access the **Non-Production Pipelines** tile from the the Cloud Manager home screen.
+1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
 
    ![](assets/Configuring_Pipeline_Add-Production.png)
 
