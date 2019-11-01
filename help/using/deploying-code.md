@@ -41,16 +41,17 @@ Once you have configured your **Pipeline** (repository, environment, and testing
 
    The **Stage Deployment**, involves the following steps:
 
-    * Build & Unit Testing
-    * Code Scanning
+    * Validation: This step ensures that the pipeline is configured to use the currently available resources, for example, that the configured branch exists, the environments are available.
+    * Build & Unit Testing: This step runs a containerized build process. See [Create an AEM Application Project](create-an-application-project.md) for details on the build environment.
+    * Code Scanning: This step evaluates the quality of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
     * Deploy to Stage
 
    ![](assets/Stage_Deployment1.png)
 
    The **Stage Testing**, involves the following steps:
 
-    * Security Testing
-    * Performance Testing
+    * Security Testing -- This step evaluates the security impact of your application code on the AEM environment. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
+   * Performance Testing -- This step evaluates the performance of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
 
    ![](assets/Stage_Testing1.png)
 
