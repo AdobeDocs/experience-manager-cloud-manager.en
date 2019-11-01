@@ -50,8 +50,8 @@ Once you have configured your **Pipeline** (repository, environment, and testing
 
    The **Stage Testing**, involves the following steps:
 
-    * Security Testing -- This step evaluates the security impact of your application code on the AEM environment. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
-   * Performance Testing -- This step evaluates the performance of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
+    * Security Testing: This step evaluates the security impact of your application code on the AEM environment. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
+   * Performance Testing: This step evaluates the performance of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
 
    ![](assets/Stage_Testing1.png)
 
