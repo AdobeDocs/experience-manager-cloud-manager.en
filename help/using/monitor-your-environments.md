@@ -39,7 +39,7 @@ The System Monitoring Overview page lists the monitored environments in the prog
 
 The status in each category is a summary of individual metrics – if any metric in a category is in the critical state, the whole category is in a critical state for the purpose of the overview page. The same summarization can be viewed at an environment level and at an instance level. 
 
-![](assets/Reports.png)
+![](assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -103,11 +103,11 @@ For example, if you click on the warning threshold series, you will see only the
 Customers are able to see the performance of their production AEM environment relative to their contracted Service Level Agreement (SLA). This is available through a sub-menu on the Reports screen. 
 For example, the graph below shows the monthly SLA attainment for 2018.
 
-![](assets/sla-reporting1.png)
+![](assets/SLA-Reports-one.png)
 
 As with the system monitoring graphs, rolling over a data point shows the specific values for that month.
 
-![](assets/sla-reporting2.png)
+![](assets/SLA-Reports-two.png)
 
 The Event Analysis section under this graph shows the set of incidents which occurred for the program during the currently selected year. Each incident has a time range, a cause, and a set of comments.
 
