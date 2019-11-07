@@ -189,7 +189,7 @@ Follow the steps below to configure Dispatcher Invalidations:
    >
    >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Production Pipeline Settings** tile from the [!UICONTROL Cloud Manager] UI.
 
-   ![](assets/Production-pipeline.png)
+   ![](assets/Production-Pipeline.png)
 
 ## Non-Production & Code Quality Only Pipelines
 
