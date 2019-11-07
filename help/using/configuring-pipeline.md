@@ -221,7 +221,7 @@ On the home screen, these pipelines are listed in a new card:
    * **Detail** - displays the last pipeline execution (if there is one)
    * **Build** - navigates to the execution page, from which the pipeline can be executed
 
-   ![](assets/Configuring_Pipeline_Add-Production3.png)
+   ![](assets/Non-prod-2.png)
 
    >[!NOTE]
    >

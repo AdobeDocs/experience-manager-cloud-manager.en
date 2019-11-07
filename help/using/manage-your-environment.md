@@ -17,7 +17,7 @@ The **Overview** page of Cloud Manager includes the **Environments** tile that l
 
 Each of the listed environments displays its associated status.
 
-![](assets/Manage-Environments1.png)
+![](assets/Manage-Environ-Overview.png)
 
 ## Video Tutorial {#video-tutorial}
 
