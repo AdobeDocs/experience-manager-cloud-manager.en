@@ -55,7 +55,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 1. Click **Setup Pipeline** to setup and configure your pipeline.
 
-   ![](assets/Configure_ci-cd-1.png)
+   ![](assets/Setup-Pipeline.png)
 
 1. The **Setup Pipeline** screen displays.
 
@@ -189,7 +189,7 @@ Follow the steps below to configure Dispatcher Invalidations:
    >
    >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Production Pipeline Settings** tile from the [!UICONTROL Cloud Manager] UI.
 
-   ![](assets/Prod-Pipeline-Settings-Dialog.png)
+   ![](assets/Production-pipeline.png)
 
 ## Non-Production & Code Quality Only Pipelines
 
@@ -207,7 +207,7 @@ On the home screen, these pipelines are listed in a new card:
 
 1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
 
-   ![](assets/Configuring_Pipeline_Add-Production.png)
+   ![](assets/Non-Production-Pipeline.png)
 
 1. Clicking on the Add button, to specify the Pipeline Name, Pipeline Type, and the Git Branch.
 
