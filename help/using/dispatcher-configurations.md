@@ -302,3 +302,6 @@ The specific file and directory structure may vary based on the specifics of you
        69017                     66 files
    ```
 
+# Adobe Managed Services Dispatcher Manual {#Adobe-Managed-Services-Dispatcher-Manual}
+
+For more information on AMS dispatcher configuation as a whole start [here](https://helpx.adobe.com/experience-manager/kb/ams-dispatcher-manual.html)
