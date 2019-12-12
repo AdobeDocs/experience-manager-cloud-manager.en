@@ -110,7 +110,6 @@ The following table lists the current checks:
 | AuthorizableNodeName implementation does not expose authorizable ID in the node name/path. | Authorizable Node Name Generation |Critical |
 | Default passwords have been changed | Default Login Accounts |Critical |
 | Sling default GET servlet is protected from DOS attacks. | Sling Get Servlet |Critical |
-| Dispatcher is properly filtering requests | CQ Dispatcher Configuration |Critical |
 | The Sling Java Script Handler is configured appropriately | Sling Java Script Handler |Critical |
 | The Sling JSP Script Handler is configured appropriately | Sling JSP Script Handler |Critical |
 | SSL is configured correctly | SSL Configuration |Critical |
