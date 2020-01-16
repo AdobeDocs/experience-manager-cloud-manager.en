@@ -1,32 +1,26 @@
 ---
-title: Release Notes for 2019.12.0
-seo-title: AEM Cloud Manager Release Notes for 2019.12.0
-description: Follow this page to get information for Cloud Manager Release 2019.12.0.
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.12.0.
+title: Release Notes for 2020.1.0
+seo-title: AEM Cloud Manager Release Notes for 2020.1.0
+description: Follow this page to get information for Cloud Manager Release 2020.1.0
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.1.0
 ---
-# Release Notes for 2019.12.0 {#release-notes-for}
+# Release Notes for 2020.1.0 {#release-notes-for}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2019.12.0 and adds updates to pipeline execution and enhancements to code quality scans.
-Follow the sections below for more details.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.1.0 and adds updates to accessing Git credentials and the login experience.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.12.0 is December 12, 2019.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.1.0 is January 16, 2020.
 
 ## What's New {#whats-new}
 
-* Steps in the pipeline execution now show the completion timestamp for each step.
-* Code quality scans for projects which do not contain Java code now report a code coverage rate of 100%.
-* The CQ Dispatcher Configuration health check has been removed.
+* Git credentials can now be obtained from inside the Cloud Manager user interface. Refer to [Manage Git](/help/using/accessing-git.md) for more details.
+* The login experience and URL structure has changed as part of an Adobe-wide initiative. Old bookmarks will redirect to the new URLs.
 
 
 ## Bug Fixes {#bug-fixes}
 
-* Dates were not correctly displayed in certain browsers.
-* In rare cases, the production pipeline would move to the approval step while performance testing was still running.
-* On certain states, the buttons on top area of the overview page were not correctly aligned.
-* In certain circumstances, unauthorized users saw a button to start the pipeline, although the button itself was not clickable.
-* The action buttons for non-production pipelines would sometimes be displayed in the wrong location.
-* Packages with the granite:Ranking node type were not able to be scanned for certain quality rule violations.
-* Certain failures in the code quality process were incorrectly counted as bugs.
-* Monitoring data could not be loaded for certain topologies.
+* Deployments to author-only topologies did not deploy dispatcher configuration changes.
+* In certain configurations, a code quality only pipeline could not be created.
+* The environment summary card on the overview page did not render correctly sometimes.
+* Pipeline executions could timeout on large topologies.

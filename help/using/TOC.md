@@ -37,12 +37,14 @@ user-guide-title: Experience Manager Cloud Manager Help
   + [Custom Code Quality Rules](custom-code-quality-rules.md)
 + Manage your Code {#managing-code}
   + [Maven Project Version Handling](activating-maven-project.md)
+  + [Accessing Git](accessing-git.md)
   + [Integrating with Git](setup-cloud-manager-git-integration.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](overview-productupdate-wizard.md)
   + [Evaluation](evaluation.md)
 + Release Notes {#release-notes}
   + [Current Release Notes (2019.12.0)](release-notes-current.md)
+  + [Release Notes for 2019.12.0)](release-notes-current.md)
   + [Release Notes for 2019.11.0](release-notes-2019-11-0.md)
   + [Release Notes for 2019.10.0](release-notes-2019-10-0.md)
   + [Release Notes for 2019.9.0](release-notes-2019-9-0.md)
