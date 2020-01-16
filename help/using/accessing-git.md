@@ -10,9 +10,9 @@ seo-description: Follow this page to learn how to access and manage your Git rep
 
 You can access and manage your Git Repository using Self-Service Git Account Management from Cloud Manager UI.
 
-You can use the the **Manage Git** option available in the Cloud Manager UI, most prominently on the pipeline card.
-
 ## Using Self-Service Git Account Management {#self-service-git}
+
+Use the **Manage Git** button available from the Cloud Manager UI, most prominently on the pipeline card.
 
 1. Navigate to your *Program's Overview* page and to Pipelines card.
 
