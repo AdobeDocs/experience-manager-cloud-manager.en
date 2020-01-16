@@ -44,7 +44,7 @@ user-guide-title: Experience Manager Cloud Manager Help
   + [Evaluation](evaluation.md)
 + Release Notes {#release-notes}
   + [Current Release Notes (2020.1.0)](release-notes-current.md)
-  + [Release Notes for 2019.12.0](release-notes-current.md)
+  + [Release Notes for 2019.12.0](release-notes-2019-12-0.md)
   + [Release Notes for 2019.11.0](release-notes-2019-11-0.md)
   + [Release Notes for 2019.10.0](release-notes-2019-10-0.md)
   + [Release Notes for 2019.9.0](release-notes-2019-9-0.md)
