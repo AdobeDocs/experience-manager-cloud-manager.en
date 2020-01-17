@@ -4,6 +4,7 @@ seo-title: AEM Cloud Manager Release Notes for 2019.12.0
 description: Follow this page to get information for Cloud Manager Release 2019.12.0.
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.12.0.
 ---
+
 # Release Notes for 2019.12.0 {#release-notes-for}
 
 The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2019.12.0 and adds updates to pipeline execution and enhancements to code quality scans.
@@ -18,7 +19,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.12.0 is December 12
 * Steps in the pipeline execution now show the completion timestamp for each step.
 * Code quality scans for projects which do not contain Java code now report a code coverage rate of 100%.
 * The CQ Dispatcher Configuration health check has been removed.
-
 
 ## Bug Fixes {#bug-fixes}
 
