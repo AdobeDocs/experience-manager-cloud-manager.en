@@ -35,6 +35,7 @@ Follow the steps below to create an AEM application project in Cloud Manager:
 
    ![](assets/image2018-10-3_14-29-44.png)
 
+[Shankari] the second step described below is incorrect. please delete it.
 1. Click **Create** to navigate to the **Pipeline Setup** screen.
 
    ![](assets/image2018-10-3_14-30-22.png)
