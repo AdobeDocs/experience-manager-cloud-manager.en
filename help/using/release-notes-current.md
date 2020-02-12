@@ -1,26 +1,30 @@
 ---
-title: Release Notes for 2020.1.0
-seo-title: AEM Cloud Manager Release Notes for 2020.1.0
-description: Follow this page to get information for Cloud Manager Release 2020.1.0
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.1.0
+title: Release Notes for 2020.2.0
+seo-title: AEM Cloud Manager Release Notes for 2020.2.0
+description: Follow this page to get information for Cloud Manager Release 2020.2.0
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.2.0
 ---
 # Release Notes for 2020.1.0 {#release-notes-for}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.1.0 and adds updates to accessing Git credentials and the login experience.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.2.0 and adds updates to accessing Git credentials and the login experience.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.1.0 is January 16, 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.2.0 is February 13, 2020.
 
 ## What's New {#whats-new}
 
-* Git credentials can now be obtained from inside the Cloud Manager user interface. Refer to [Accessing Git](/help/using/accessing-git.md) for more details.
-* The login experience and URL structure has changed as part of an Adobe-wide initiative. Old bookmarks will redirect to the new URLs.
-
+* The Adobe Experience Manager archetype version has been updated to version 22.
+* Add active instances in stage deployments logs
+* URLs used in Experience Cloud notifications were optimized to avoid an extra redirect.
+* Pipeline execution steps which timed out now explicitly state this.
+* The Code Scanning step now has a downloadable log.
+* The Security Testing step now has a downloadable log.
+* The list of pages accessed during Performance Testing is now downloadable.
+* The spreadsheet containing issues discovered during code scanning now has a column with a link to documentation for the specific rule.
+* If the Performance Testing step fails to start, the reason for the failure is now displayed.
 
 ## Bug Fixes {#bug-fixes}
 
-* Deployments to author-only topologies did not deploy dispatcher configuration changes.
-* In certain configurations, a code quality only pipeline could not be created.
-* The environment summary card on the overview page did not render correctly sometimes.
-* Pipeline executions could timeout on large topologies.
+* Browser security policies would sometimes prevent certain buttons in the pipeline execution screen from working properly.
+* The Overview, Environments, and Activity links were sometimes available on the Cloud Manager landing page.
