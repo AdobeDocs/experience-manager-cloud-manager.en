@@ -7,7 +7,7 @@ uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 ---
-SHANKARI_TEST_CHANGE
+
 # CI/CD Pipeline {#ci-cd-pipeline}
 
 ## Pipeline Overview {#pipeline-overview}
