@@ -100,7 +100,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
  >
  >Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
 
- ![](assets/Configure_ci-cd-3.png)
+ ![](assets/configure-pipeline3.png)
 
 >[!NOTE]
 >
