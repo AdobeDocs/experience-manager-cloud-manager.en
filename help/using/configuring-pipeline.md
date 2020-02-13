@@ -210,7 +210,7 @@ On the home screen, these pipelines are listed in a new card:
 
    Additionally, you can also set up Deployment Trigger and Important Failure Behavior from Pipeline Options.
 
-   ![](assets/Configuring_Pipeline_Add-Production2.png)
+   ![](assets/non-prod-pipe.png)
 
 1. Click **Save** and the pipeline is shown on the card on the home screen with three actions:
 
