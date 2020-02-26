@@ -18,6 +18,7 @@ user-guide-title: Experience Manager Cloud Manager Help
   + [Access Rights Granted](access-rights-granted.md)
   + [Source Code Repository](source-code-repository.md)
   + [Add Users and Roles](setting-up-users-and-roles.md)
+  + [Role Based Permissions](role-based-permissions.md)
   + [Environments Provisioned](environments-provisioned.md)
 + Getting Started {#getting-started}
   + [First Time Login](first-time-login.md)
