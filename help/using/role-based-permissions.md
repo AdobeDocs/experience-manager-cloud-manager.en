@@ -38,6 +38,7 @@ To learn more about how to setup your Users see [Setting up Users and Roles](set
 |--- |--- |--- |--- |--- |--- |--- |
 |Read Application|Read Program KPIs.|x|x|x|x|x|
 |Write Application|Program setup or edit.|x|||||
+|Add Program|Add New Program.|x|||||
 |Read Environment|See Environment details.|x|x|x|x|x|
 |Create Execution|Start Pipeline.|x|x|x|||
 |Read Execution|See execution status.|x|x|x|x|x|
