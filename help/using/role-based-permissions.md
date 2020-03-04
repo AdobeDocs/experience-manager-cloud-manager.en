@@ -54,3 +54,5 @@ To learn more about how to setup your Users see [Setting up Users and Roles](set
 |Pipeline Modify Approval|Allows editing the Business Owner option.||x||||
 |Pipeline Modify Managed Deployment|Allows editing of the CSE Oversight option.||x||||
 |Step Read|See the step quality metrics results.|x|x|x|x|x|
+|Generate Personal Access Token|Access Git.||x||x||
+
