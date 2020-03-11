@@ -26,10 +26,6 @@ Follow the steps below to create an AEM application project in Cloud Manager:
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-1. Click **Create** to navigate to the **Pipeline Setup** screen.
-
-   ![](assets/image2018-10-3_14-30-22.png)
-
 1. Click **Create to** open a dialog box, which allows the user to provide the parameters required by the AEM Project Archetype. In its default form, the dialog box asks for two values:
 
     * **Title** - by default this is set to the *Program Name*
