@@ -19,15 +19,6 @@ When customers are on-boarded to Cloud Manager, they are provided with an empty 
 
 To help get new customers started, Cloud Manger is now able to create a minimal AEM project as a starting point. This process is based on the [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
-<!-- 
-
-Comment Type: annotation
-Last Modified By: jsyal
-Last Modified Date: 2018-10-08T12:52:50.071-0400
-
-2018.8.0: Added this new section
-
- -->
 
 Follow the steps below to create an AEM application project in Cloud Manager:
 
@@ -35,7 +26,6 @@ Follow the steps below to create an AEM application project in Cloud Manager:
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-[Shankari] the second step described below is incorrect. please delete it.
 1. Click **Create** to navigate to the **Pipeline Setup** screen.
 
    ![](assets/image2018-10-3_14-30-22.png)
