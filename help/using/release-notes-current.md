@@ -1,27 +1,31 @@
 ---
-title: Release Notes for 2020.3.0
-seo-title: AEM Cloud Manager Release Notes for 2020.3.0
-description: Follow this page to get information for Cloud Manager Release 2020.3.0
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.3.0
+title: Release Notes for 2020.4.0
+seo-title: AEM Cloud Manager Release Notes for 2020.4.0
+description: Follow this page to get information for Cloud Manager Release 2020.4.0
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.4.0
 ---
-# Release Notes for 2020.3.0 {#release-notes-for}
+# Release Notes for 2020.4.0 {#release-notes-for}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.3.0.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.4.0.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.3.0 is March 05, 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.4.0 is April 09, 2020.
 
 ## What's New {#whats-new}
 
-* The log for the build step is now available while the build step is running.
-* Some of the messages on the pipeline execution details page have been edited for clarity.
+* Changes to navigation CM overview page to allow user to Edit or Switch program from CM overview page.
+* Changes to allow user to Edit program from the program card on CM landing page.
+* New pipeline status "Pipeline Running" displayed against the environment it is associated with.
+* Improvements to pipeline execution page comprehensibility. This includes display of Pipeline name (non-production pipeline only) and Type, and a badge to indicate if the pipeline status is In Progress/Cancelled/Failed.
+* The process used to generate git passwords has been made more resilient to issues in the underlying service layer.
 
 ## Bug Fixes {#bug-fixes}
 
-* Certain deployment configurations could cause logs for the deploy steps to be unavailable if the deployment failed.
-* Specific failures inside the deployment steps for Managed Services programs could cause subsequent executions to fail to start.
-* The ephemeral SonarQube instance used in the build step was occasionally failing to start within the configured timeout.
-* In specific projects, the *ResourceResolver objects should always be closed* would produce a Null Pointer Exception; this, however, did not impact pipeline execution.
-
+* Monitoring data could sometimes be displayed in an incorrect fashion or not at all based on minor variances in technical values.
+* The Maven configuration used in the build container was updated to avoid deadlocks when downloading artifact metadata.
+* The Assets performance testing process was occasionally unable to decrypt the AEM password, causing testing to fail.
+* Certain topologies with standby instances could have false negatives in security testing.
+* If the stage environment contained a stopped instance, the security testing step would sometimes fail.
+* Experience Cloud notifications were not consistently received.
 
