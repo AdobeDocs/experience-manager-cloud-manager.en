@@ -34,7 +34,7 @@ The following video provides an overview to Cloud Manager Programs that represen
 
 1. Select the program (for example, **We.Retail Global**) and click on the top left icon to open [!UICONTROL Cloud Manager].
 
-   ![](assets/screen_shot_2018-06-04at12611pm.png)
+   ![](assets/first-timea1.png)
 
 1. The dashboard for [!UICONTROL Cloud Manager] displays.
 
