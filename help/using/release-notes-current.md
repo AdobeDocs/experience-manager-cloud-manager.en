@@ -14,9 +14,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.4.0 is April 09, 20
 
 ## What's New {#whats-new}
 
-* Changes to navigation CM overview page to allow user to Edit or Switch program from CM overview page.
-* Changes to allow user to Edit program from the program card on CM landing page.
-* New pipeline status "Pipeline Running" displayed against the environment it is associated with.
+* Changes to navigation Cloud Manager overview page to allow user to edit or switch program.
+* Changes to allow user to Edit program from the program card on Cloud Manager landing page.
+* New pipeline status **Pipeline Running** displayed against the environment it is associated with.
 * Improvements to pipeline execution page comprehensibility. This includes display of Pipeline name (non-production pipeline only) and Type, and a badge to indicate if the pipeline status is In Progress/Cancelled/Failed.
 * The process used to generate git passwords has been made more resilient to issues in the underlying service layer.
 
