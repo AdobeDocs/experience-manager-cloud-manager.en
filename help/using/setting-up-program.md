@@ -31,7 +31,13 @@ Follow the steps below to set up the program and define KPIs:
 
 1. Click **Setup Program** to start the setup process in [!UICONTROL Cloud Manager].
 
-   ![](assets/SetUpProgram1.png)
+   ![image1](assets/set-up-program/setup1.png)
+
+   >[!NOTE]
+   > You can always switch, edit, or add a new program from the action bar, as shown in the figure below.
+
+   ![image1](assets/set-up-program/setup2.png)
+
 
 1. The **Setup Program** screen displays the Edit Program Information.
 

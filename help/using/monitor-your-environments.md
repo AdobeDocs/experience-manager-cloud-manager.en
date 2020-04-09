@@ -19,9 +19,9 @@ Navigating to the System Monitoring feature can be done in two ways.
 
    ![](assets/ProgramLanding.png)
 
-1. Click on the third icon on the program card.
+1. Click on the fourth icon on the program card.
  
-   ![](assets/program-card.png)
+   ![](assets/first-timea1.png)
 
    *Or*,
 
