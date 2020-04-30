@@ -46,13 +46,14 @@ To learn more about how to setup your Users see [Setting up Users and Roles](set
 |Execution Approve Deploy to Production|Provide GoLive Approval.|x|x|x|||
 |Execution Schedule Deploy to Production|Schedule Production Deployment.|x|x|x||x|
 |Execution Deploy to Production|Deploy application to production when paused for CSE Oversight.|||||x|
-|Execution Cancel|Cancel current execution.|x|x|x|||
+|Execution Cancel|Cancel current execution.|||x|||
 |Execution Override Quality Gate Failures|Approve Important Quality Gate Failures.|x|x|x|||
 |Pipeline Create|Setup / Edit Pipeline.||x||||
 |Pipeline Read|See Pipeline details.|x|x|x|x|x|
 |Pipeline Write|Setup / Edit Pipeline.||x||||
 |Pipeline Modify Approval|Allows editing the Business Owner option.||x||||
 |Pipeline Modify Managed Deployment|Allows editing of the CSE Oversight option.||x||||
+|Pipeline Delete|Allows deleting of a Pipeline.||x||||
 |Step Read|See the step quality metrics results.|x|x|x|x|x|
 |Generate Personal Access Token|Access Git.||x||x||
 
