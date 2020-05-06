@@ -635,7 +635,7 @@ A common problem is use of nodes named `config` within component dialogs or when
       + rtePlugins [nt:unstructured]
 ```
 
-### Packages Should Not Overlap {#oakpal-no-overlap}
+#### Packages Should Not Overlap {#oakpal-no-overlap}
 
 **Key**: PackageOverlaps
 
@@ -646,3 +646,94 @@ A common problem is use of nodes named `config` within component dialogs or when
 **Since**: Version 2019.6.0
 
 Similar to the *Packages Should Not Contain Duplicate OSGi Configurations* this is a common problem on complex projects where the same node path is written to by multiple separate content packages. While using content package dependencies can be used to ensure a consistent result, it is better to avoid overlaps entirely. 
+
+#### OakPAL - Default Authoring Mode Should Not Be Classic UI {#oakpal-default-authoring}
+
+**Key**: ClassicUIAuthoringMode
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defines the default authoring mode within AEM. As Classic UI has been deprecated since AEM 6.4, an issue will now be raised when the default authoring mode is configured to Classic UI.
+
+#### OakPal - Components With Dialogs Should Have Touch UI Dialogs {#oakpal-components-dialogs}
+
+**Key**: ComponentWithOnlyClassicUIDialog
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+AEM Components which have a Classic UI dialog should always have a corresponding Touch UI dialog both to provide an optimal authoring experience and to be compatible with the Cloud Service deployment model, where Classic UI is not supported. This rule verifies the following scenarios:
+
+* A component with a Classic UI dialog (that is, a dialog child node) must have a corresponding Touch UI dialog (that is, a `cq:dialog` child node).
+* A component with a Classic UI design dialog (i.e. a design_dialog node) must have a corresponding Touch UI design dialog (that is, a `cq:design_dialog` child node).
+* A component with both a Classic UI dialog and a Classic UI design dialog must have both a corresponding Touch UI dialog and a corresponding Touch UI design dialog.
+
+The AEM Modernization Tools documentation provides documentation and tooling for how to convert components from Classic UI to Touch UI. Refer  to [The AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) for more details.
+
+#### OakPal - Packages Should Not Mix Mutable and Immutable Content {#oakpal-packages-immutable}
+
+**Key**: ImmutableMutableMixedPackage
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+In order to be compatible with the Cloud Service deployment model, individual content packages must contain either content for the immutable areas of the repository (that is, `/apps and /libs, although /libs` should not be modified by customer code and will cause a separate violation) or the mutable area (that is, everything else), but not both. For example, a package which includes both `/apps/myco/components/text and /etc/clientlibs/myco` is not compatible with Cloud Service and will cause an issue to be reported.
+
+Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
+
+### OakPal - Reverse Replication Agents Should Not Be Used {#oakpal-reverse-replication}
+
+**Key**: ReverseReplication
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+Support for Reverse Replication is not available in Cloud Service deployments, as described in [Release Notes: Removal of Replication Agents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+
+Customers using reverse replication should contact Adobe for alternative solutions.
+
+### SonarQube - Sling Scheduler Should Not Be Used {#sonarqube-sling-scheduler}
+
+**Key**: CQRules:AMSCORE-554
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+The Sling Scheduler must not be used for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
+
+Refer to [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in a clustered environments.
+
+### SonarQube - SonarQube - AEM Deprecated APIs Should Not Be Used {#sonarqube-aem-deprecated}
+
+**Key**: AMSCORE-553
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+The AEM API surface is under constant revision to identify APIs for which usage is discouraged and thus considered deprecated. 
+
+In many cases, these APIs are deprecated using the standard Java *@Deprecated* annotation and, as such, as identified by `squid:CallToDeprecatedMethod`. 
+
+However, there are cases where an an API is deprecated in the context of AEM but may not be deprecated in other contexts. This rule identifies this second class.
+
+
+
