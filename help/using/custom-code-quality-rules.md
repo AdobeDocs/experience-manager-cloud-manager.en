@@ -550,6 +550,7 @@ public void doThis(Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
+
 ### Sling Scheduler Should Not Be Used {#sonarqube-sling-scheduler}
 
 **Key**: CQRules:AMSCORE-554
