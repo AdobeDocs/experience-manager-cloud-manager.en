@@ -48,7 +48,7 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 |Skipped Unit Tests|Number of skipped unit tests.|Info|> 1|
 |Open Issues|Overall issue types - Vulnerabilities, Bugs, and Code Smells|Info|&gt; 1|
 |Duplicated Lines|Number of lines involved in duplicated blocks. <br/>For a block of code to be considered as duplicated: <br/><ul><li>**Non-Java projects:**</li><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread at least on: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li><li>**Java projects:**</li><li> There should be at least 10 successive and duplicated statements whatever the number of tokens and lines.</li></ul> <br/>Differences in indentation as well as in string literals are ignored while detecting duplications.|Info|&gt; 1%|
-|Cloud Service Compatibility|Number of identified Cloud Service Compatibility issues.|Info|>0|
+|Cloud Service Compatibility|Number of identified Cloud Service Compatibility issues.|Info|> 0|
 
 
 >[!NOTE]
