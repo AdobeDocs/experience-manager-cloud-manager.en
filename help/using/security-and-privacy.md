@@ -23,7 +23,7 @@ Customers using [!UICONTROL Cloud Manager] will need their IMS credentials to au
 
 ## Data Security {#data-security}
 
-Code in [!UICONTROL Cloud Manager] is encrypted in transit. Binaries that Coud Manager builds are also encrypted in transit and encrypted when stored.
+Code in [!UICONTROL Cloud Manager] is encrypted in transit. Binaries that Cloud Manager builds are also encrypted in transit and encrypted when stored.
 
 Each customer gets its own **Git Repository** and their code is secure and not shared with any other **Organizations**.
 
