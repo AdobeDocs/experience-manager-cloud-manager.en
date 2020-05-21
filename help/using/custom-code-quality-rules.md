@@ -98,7 +98,7 @@ Using a format string from an external source (such a request parameter or user-
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
-  request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text");
+  request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
   response.sendStatus(HttpServletResponse.SC_OK);
 }
 ```
