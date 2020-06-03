@@ -1,36 +1,34 @@
 ---
-title: Release Notes for 2020.5.0
-seo-title: AEM Cloud Manager Release Notes for 2020.5.0
-description: Follow this page to get information for Cloud Manager Release 2020.5.0
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.5.0
+title: Release Notes for 2020.6.0
+seo-title: AEM Cloud Manager Release Notes for 2020.6.0
+description: Follow this page to get information for Cloud Manager Release 2020.6.0
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.6.0
 ---
-# Release Notes for 2020.5.0 {#release-notes-for}
+# Release Notes for 2020.6.0 {#release-notes-for}
 
 The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.5.0.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.5.0 is May 07, 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.6.0 is June 04, 2020.
 
 ## What's New {#whats-new}
 
-* Six additional code quality rules have been added to help customers identify potential issues when planning a migration to Cloud Service.
+* Coach marks on the landing page to inform and instruct the user about basic navigation. 
 
-* A new metric *Cloud Service Compatibility* has been added to summarize the number of compatibility-related issues.
+* A **LEARN** page is now available in Cloud Manager, accessible via the top navigation. This page includes resources to help users learn about the most frequently used work-flows as relevant to their roles assigned in Cloud Manager.
 
-* The performance of the Activity page and the Pipeline Executions List API has been improved.
+* The maximum value for the Assets 95th Percentile Processing Time has been increased to 500 seconds.
 
-* The code quality log now contains complete stack traces for exceptions.
+* The Build log now includes the list of discovered artifacts, including skipped content packages.
+
+* The Build step now validates that all of the generated content packages include all mandatory properties – name, group and version.
 
 ## Bug Fixes {#bug-fixes}
 
-* A misleading card was displayed on the overview page while the production pipeline was running.
 
-* The *DontImplementOrExtendProviderTypesPomCheck* code quality rule could sometimes produce a Null Pointer Exception.
+* When configuring the production pipeline, the Scheduled Deployment option was not visible for some customers.
 
-* Some documentation links from the overview page did not work correctly.
+* Certain deployment messages were truncated.
 
-* Certain cards on the overview page did not display entity names correctly.
-
-* Certain topology configurations would cause the performance testing step to generate an error, rather than reporting missing metrics.
 
