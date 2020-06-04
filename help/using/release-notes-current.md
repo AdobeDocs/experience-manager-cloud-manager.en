@@ -6,7 +6,7 @@ seo-description: Follow this page to get information for AEM Cloud Manager Relea
 ---
 # Release Notes for 2020.6.0 {#release-notes-for}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.5.0.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.6.0.
 
 ## Release Date {#release-date}
 
@@ -26,9 +26,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.6.0 is June 04, 202
 
 ## Bug Fixes {#bug-fixes}
 
-
 * When configuring the production pipeline, the Scheduled Deployment option was not visible for some customers.
 
 * Certain deployment messages were truncated.
-
-
