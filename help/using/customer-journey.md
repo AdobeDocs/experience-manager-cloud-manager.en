@@ -44,7 +44,7 @@ To explore and get started with [!UICONTROL Cloud Manager], see [First Time Logi
 
 ## Getting Started with [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
-Once you are logged in to [!UICONTROL Cloud Manager], the first thing to do will be to to set up your code repository environment, then your team and roles. Specificically, the role memberships are assigned by adding the user to a [!UICONTROL Cloud Manager] profile using the Admin Console UI.
+Once you are logged in to [!UICONTROL Cloud Manager], the first thing to do will be to set up your code repository environment, then your team and roles. Specificically, the role memberships are assigned by adding the user to a [!UICONTROL Cloud Manager] profile using the Admin Console UI.
 
 Next, you have to set up your source code branches in the **Git Repository**, define your goals in terms of load and performance KPIs, and test scenarios to successfully deploy your code to your stage and production environments once all the quality checks have passed successfully.
 
