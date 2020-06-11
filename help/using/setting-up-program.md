@@ -69,7 +69,7 @@ Follow the steps below to set up the program and define KPIs:
 
    ![](assets/Setup_Program-KPIs.png)
 
-1. Under **Provisioning**,you can you can view or edit the provisioning configuration for production and non-production environments in your program. You will see **Autoscale is on**, if autoscaling has been turned on for the program.
+1. Under **Provisioning**, you can view or edit the provisioning configuration for production and non-production environments in your program. You will see **Autoscale is on**, if autoscaling has been turned on for the program.
 
    >[!NOTE]
    >
