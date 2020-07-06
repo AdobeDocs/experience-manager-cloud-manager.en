@@ -614,7 +614,9 @@ A common problem that occurs on complex projects is where the same OSGi componen
 
 #### Non Compliant Code {#non-compliant-code-osgi}
 
-```+ apps
+```
+
++ apps
   + projectA
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -625,7 +627,9 @@ A common problem that occurs on complex projects is where the same OSGi componen
 
 #### Compliant Code {#compliant-code-osgi}
 
-```+ apps
+```
+
++ apps
   + shared-config
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -648,6 +652,7 @@ A common problem is use of nodes named `config` within component dialogs or when
 #### Non Compliant Code {#non-compliant-code-config-install}
 
 ```
+
 + cq:editConfig [cq:EditConfig]
   + cq:inplaceEditing [cq:InplaceEditConfig]
     + config [nt:unstructured]
@@ -657,6 +662,7 @@ A common problem is use of nodes named `config` within component dialogs or when
 #### Compliant Code {#compliant-code-config-install}
 
 ```
+
 + cq:editConfig [cq:EditConfig]
   + cq:inplaceEditing [cq:InplaceEditConfig]
     ./configPath = inplaceEditingConfig (String)
