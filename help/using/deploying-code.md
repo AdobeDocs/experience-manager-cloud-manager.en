@@ -104,19 +104,19 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
    >
    >This feature is expected to be primarily used by 1-1-1 customers.
 
-1. Each AEM artifact is deployed to each AEM instance via Package Manager APIs, with package dependences determining the deployment order.
+1. Each AEM artifact is deployed to each AEM instance via Package Manager APIs, with package dependencies determining the deployment order.
 
    To learn more about how you can use packages to install new functionality, transfer content between instances, and back up repository content, please refer to How to Work with Packages.
 
    >[!NOTE]
    >
-   >All AEM artifacts are deployed to both the author and the publishers. Runmodes should be leveraged when node-specific configurations are required. To learn more about how the runmodes allow you to tune your AEM instance for a specific purpose, please refer to Run Modes.
+   >All AEM artifacts are deployed to both the author and the publishers. Run-modes should be leveraged when node-specific configurations are required. To learn more about how the run-modes allow you to tune your AEM instance for a specific purpose, please refer to Run Modes.
 
 1. The dispatcher artifact is deployed to each dispatcher as follows:
 
    1. Current configs are backed up and copied to a temporary location
    1. All configs are deleted except the immutable files. Refer to Manage your Dispatcher Configurations for more details. This clears the directories to ensure no orphaned files are left behind.
-   1. The artifact is extracted to the httpd directory.  Immutable files are not overwritten. Any changes you make to immutable files in your git repository will be ignored at the time of deployment.  These files are core to the AMS dispatcher framework and cannot be changed.
+   1. The artifact is extracted to the `httpd` directory.  Immutable files are not overwritten. Any changes you make to immutable files in your git repository will be ignored at the time of deployment.  These files are core to the AMS dispatcher framework and cannot be changed.
    1. Apache performs a config test. If no errors are found, the service is reloaded. If an error occurs, the configs are restored from backup, the service is reloaded, and the error is reported back to Cloud Manager.
    1. Each path specified in the pipeline configuration is invalidated or flushed from the dispatcher cache.
    
