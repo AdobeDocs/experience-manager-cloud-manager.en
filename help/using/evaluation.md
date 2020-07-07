@@ -23,7 +23,8 @@ The generated report allows you to check the Author instance for upgradability b
 This serves as an assessment of the development effort that is involved in upgrading to Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
-   >To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
+>
+>To learn more about pattern detector, refer to [Assessing the Upgrade Complexity with the Pattern Detector](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
 
 ## Running the Evaluator {#running-evaluator}
 
@@ -43,5 +44,6 @@ Follow the steps below to generate evaluation report:
    ![](assets/Evaluation-1.png)
 
 
->[!NOTE]
+   >[!NOTE]
+   >
    >The current release of Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
