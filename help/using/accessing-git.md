@@ -25,6 +25,7 @@ Use the **Manage Git** button available from the Cloud Manager UI, most prominen
    ![](assets/manage-git-new2.png)
 
 >[!NOTE]
+>
 >The **Manage Git** option is visible to users in the Developer or Deployment Manager role. Clicking on this button opens a dialog which allows the user to find the URL to their Cloud Manager Git Repository along with their username and password. 
 
    ![](assets/manage-git3.png)

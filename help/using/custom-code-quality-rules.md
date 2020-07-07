@@ -586,6 +586,7 @@ However, there are cases where an an API is deprecated in the context of AEM but
 Please find below the OakPAL checks executed by Cloud Manager.
 
 >[!NOTE]
+>
 >OakPAL is a framework developed by an AEM Partner (and winner of 2019 AEM Rockstar North America) which validates content packages using a standalone Oak repository.
 
 ### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
