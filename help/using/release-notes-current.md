@@ -16,11 +16,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.6.0 is July 09, 202
 
 * Detaching and attaching dispatcher instances from the load balancers during production deployments now works in a more consistent fashion.
 
-* The Cloud Manager build container now supports both Java 8 and Java 11. 
+* The Cloud Manager build container now supports both Java 8 and Java 11.
 
-* Cloud Manager pipelines now support customer-set variables and secrets. 
-
-   Refer to [Pipeline Variables](/help/using/create-an-application-project.md#pipeline-variables) for more details.
+* Cloud Manager pipelines now support customer-set variables and secrets.
 
 ## Bug Fixes {#bug-fixes}
 

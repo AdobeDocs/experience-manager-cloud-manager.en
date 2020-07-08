@@ -100,32 +100,30 @@ Cloud Manager now supports building customer projects with both Java 8 and Java 
 To do this, in the pom.xml file, add a <plugin> entry that looks like this:
 
 ```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-toolchains-plugin</artifactId>
-    <version>1.1</version>
-    <executions>
-        <execution>
-            <goals>
-                <goal>toolchain</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <toolchains>
-            <jdk>
-                <version>11</version>
-                <vendor>oracle</vendor>
-           </jdk>
-        </toolchains>
-    </configuration>
-</plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
 ```
 
 >[!NOTE]
->The Supported Vendors are Oracle and Sun Microsystems .
->
->The Supported versions are 1.8, 1.11, and 11.
+>The Supported Vendors are Oracle and Sun Microsystems and the Supported Versions are 1.8, 1.11, and 11.
 
 ## Environment Variables {#environment-variables}
 
@@ -161,7 +159,7 @@ Current variables can be listed:
 
 Variable names may only contain alphanumeric and underscore characters. By convention, the names should be all upper-case. There is a limit of 200 variables per pipeline, each name must be less than 100 characters and each value must be less than 2048 characters.
 
-When used inside a Maven pom.xml  file, it is typically helpful to map these variables to Maven properties using a syntax similar to this:
+When used inside a Maven pom.xml file, it is typically helpful to map these variables to Maven properties using a syntax similar to this:
 
 ```xml
         <profile>
@@ -254,7 +252,6 @@ And if you wanted to output a simple message only when the build is run outside 
             </build>
         </profile>
 ```
-
 
 ## Installing Additional System Packages {#installing-additional-system-packages}
 
