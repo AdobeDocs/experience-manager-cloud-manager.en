@@ -26,4 +26,4 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.8.0 is August 19, 2
 * The ***ConfigAndInstallShouldOnlyContainOsgiNodes*** code quality rule produced false positives when the Sling Rewriter component was used.
 * The ***ConfigAndInstallShouldOnlyContainOsgiNodes*** code quality rule produced false positives for certain uncommon path structures.
 * Assets-only customers may not have been consistently able to navigate to their AEM environments.
-* The [!UICONTROL Create a Branch and Project] dialog rendered differently across different browsers.
+* The Create a Branch and Project dialog was rendered differently across different browsers.
