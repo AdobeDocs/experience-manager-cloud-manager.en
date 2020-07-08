@@ -18,7 +18,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.6.0 is July 09, 202
 
 * The Cloud Manager build container now supports both Java 8 and Java 11. Refer to [Build Environment Details](/help/using/create-an-application-project.md#build-environment-details) for more information.
 
-* Cloud Manager pipelines now support customer-set variables and secrets. Refer to [Using Java 11](/help/using/create-an-application-project.md#build-environment-details##using-java-11) for more details.
+* Cloud Manager pipelines now support customer-set variables and secrets. Refer to [Using Java 11](/help/using/create-an-application-project.md#using-java-11) for more details.
 
 ## Bug Fixes {#bug-fixes}
 
