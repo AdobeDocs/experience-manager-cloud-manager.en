@@ -23,7 +23,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.1.0 is January 17, 
 
 * Added support for performance testing of AEM Assets. Please refer to Configure your [CI/CD Pipeline](configuring-pipeline.md)for more details.
 * Added support for pipelines running only build and code quality steps and pipelines deploying to non-production environments. Please refer to **Non-Production & Code Quality Only Pipelines** section in [Configure your CI/CD Pipeline](configuring-pipeline.md) for more details.
-* Added support for custom environment variables in build environment. Please refer to [Create an AEM Application Project](create-an-application-project.md) for more details.
+* Added support for custom environment variables in build environment. Refer to [Create an AEM Application Project](/help/using/create-an-application-project.md) for more details.
 * For customers with multiple stage or production environments, selection of which environment will be deployed to as part of the production pipeline is available in [Configure your CI/CD Pipeline](configuring-pipeline.md) page.
 * httxt2dbm has been added to build container.
 * All help menu items open a new tab.
