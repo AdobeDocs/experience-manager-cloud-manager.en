@@ -149,7 +149,9 @@ To support this, Cloud Manager adds these standard environment variables to the 
 
 ### Pipeline Variables {#pipeline-variables}
 
-In some cases, a customer's build process may depend upon specific configuration variables which would be inappropriate to place in the git repository. Cloud Manager allows for these variables to be configured through the Cloud Manager API or Cloud Manager CLI on a per-pipeline basis. Variables may be stored as either plain text or encrypted at rest. In either case, variables are made available inside the build environment as an environment variable which can then be referenced from inside the pom.xml  file or other build scripts. To set a variable using the CLI, run a command like:
+In some cases, a customer's build process may depend upon specific configuration variables which would be inappropriate to place in the git repository. Cloud Manager allows for these variables to be configured through the Cloud Manager API or Cloud Manager CLI on a per-pipeline basis. Variables may be stored as either plain text or encrypted at rest. In either case, variables are made available inside the build environment as an environment variable which can then be referenced from inside the pom.xml  file or other build scripts. 
+
+To set a variable using the CLI, run a command like:
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
@@ -157,7 +159,7 @@ Current variables can be listed:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Variable names may only contain alphanumeric and underscore (_) characters. By convention, the names should be all upper-case. There is a limit of 200 variables per pipeline, each name must be less than 100 characters and each value must be less than 2048 characters.
+Variable names may only contain alphanumeric and underscore characters. By convention, the names should be all upper-case. There is a limit of 200 variables per pipeline, each name must be less than 100 characters and each value must be less than 2048 characters.
 
 When used inside a Maven pom.xml  file, it is typically helpful to map these variables to Maven properties using a syntax similar to this:
 
