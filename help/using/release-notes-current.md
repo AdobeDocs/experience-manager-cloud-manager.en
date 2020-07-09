@@ -18,7 +18,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 * The Cloud Manager build container now supports both Java 8 and Java 11.
 
-
 ## Bug Fixes {#bug-fixes}
 
 * The **Cancel** and **Save** options on the Non-Production Pipeline Edit page were not always visible.
