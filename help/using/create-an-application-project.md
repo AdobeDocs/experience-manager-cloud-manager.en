@@ -114,8 +114,8 @@ To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
             <configuration>
                 <toolchains>
                     <jdk>
-                    <version>11</version>
-                    <vendor>oracle</vendor>
+                        <version>11</version>
+                        <vendor>oracle</vendor>
                     </jdk>
                 </toolchains>
             </configuration>
@@ -123,7 +123,7 @@ To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
 ```
 
 >[!NOTE]
->The Supported Vendors are Oracle and Sun Microsystems and the Supported Versions are 1.8, 1.11, and 11.
+>The Supported `vendor` values are `oracle` and `sun` and the Supported `version` values are `1.8`, `1.11`, and `11`.
 
 ## Environment Variables {#environment-variables}
 
