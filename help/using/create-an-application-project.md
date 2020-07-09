@@ -147,13 +147,15 @@ To support this, Cloud Manager adds these standard environment variables to the 
 
 ### Pipeline Variables {#pipeline-variables}
 
-In some cases, a customer's build process may depend upon specific configuration variables which would be inappropriate to place in the git repository. Cloud Manager allows for these variables to be configured through the Cloud Manager API or Cloud Manager CLI on a per-pipeline basis. Variables may be stored as either plain text or encrypted at rest. In either case, variables are made available inside the build environment as an environment variable which can then be referenced from inside the pom.xml  file or other build scripts. 
+In some cases, a customer's build process may depend upon specific configuration variables which would be inappropriate to place in the Git repository. Cloud Manager allows for these variables to be configured through the Cloud Manager API or Cloud Manager CLI on a per-pipeline basis. 
 
-To set a variable using the CLI, run a command like:
+Variables may be stored as either plain text or encrypted at rest. In either case, variables are made available inside the build environment as an environment variable which can then be referenced from inside the pom.xml file or other build scripts. 
+
+Use the command below to set a variable using the CLI:
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
-Current variables can be listed:
+You can list the current variables, as shown below:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
