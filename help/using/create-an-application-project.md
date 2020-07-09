@@ -123,7 +123,7 @@ To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
 ```
 
 >[!NOTE]
->The Supported `vendor` values are `oracle` and `sun` and the Supported `version` values are `1.8`, `1.11`, and `11`.
+>The supported `vendor` values are `oracle` and `sun` and the supported `version` values are `1.8`, `1.11`, and `11`.
 
 ## Environment Variables {#environment-variables}
 
