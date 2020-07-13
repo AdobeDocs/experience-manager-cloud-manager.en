@@ -158,7 +158,11 @@ Follow the steps below to configure Dispatcher Invalidations:
 
    **AEM Sites:**
 
-   Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user) on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics.Pages are selected by three **page sets**; you can choose anywhere from one to all three sets. The distribution of traffic is based on the number of sets selected, that is, if all three are selected, 33% of the total page views are put toward each set; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
+   Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user) on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics.
+   
+   Prior to the start of the 30 minute test period, Cloud Manager will crawl the Stage environment using a set of one or more *seed* URLs configured by the Customer Success Engineer. Starting from these URLs, the HTML of each page is inspected and links are traversed in a breadth-first fashion. This crawling process is limited to a maximum of 5000 pages. Requests from the crawler have a fixed timeout of 10 seconds.
+   
+   Pages are selected by three **page sets**; you can choose anywhere from one to all three sets. The distribution of traffic is based on the number of sets selected, that is, if all three are selected, 33% of the total page views are put toward each set; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
 
    For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
 
