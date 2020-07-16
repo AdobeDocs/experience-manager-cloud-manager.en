@@ -93,6 +93,9 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 * Maven is always run with the command: *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe **Artifact** repository. (Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
 
+>[!NOTE]
+>Although Cloud Manager does not define a specific version of the `jacoco-maven-plugin`, the version used must be at least `0.7.5.201505241946`.
+
 ### Using Java 11 {#using-java-11}
 
 Cloud Manager now supports building customer projects with both Java 8 and Java 11. By default, projects are built using Java 8. Customers who intend to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
