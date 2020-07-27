@@ -56,7 +56,7 @@ In order to be built and deployed successfully with Cloud Manager, existing AEM 
 * Projects must be built using Apache Maven.
 * There must be a *pom.xml* file in the root of the Git repository. This *pom.xml* file can refer to as many submodules (which in turn may have other submodules, etc.) as necessary.
 
-* You can add references to additional Maven artifact repositories in your *pom.xml* files. However, access to password-protected or network-protected artifact repositories is not supported.
+* You can add references to additional Maven artifact repositories in your *pom.xml* files. Access to [password-protected artifact repositories](#password-protected-maven-repositories) is supported when configured. However, access to network-protected artifact repositories is not supported.
 * Deployable content packages are discovered by scanning for content package *zip* files which are contained in a directory named *target*. Any number of submodules may produce content packages.
 
 * Deployable Dispatcher artifacts are discovered by scanning for *zip* files (again, contained in a directory named *target*) which have directories named *conf* and *conf.d*.
@@ -256,6 +256,75 @@ And if you wanted to output a simple message only when the build is run outside 
                 </plugins>
             </build>
         </profile>
+```
+
+## Password-Protected Maven Repository Support {#password-protected-maven-repositories}
+
+In order to use a password-protected Maven repository from Cloud Manager, specify the password (and optionally, the username) as a secret [Pipeline Variable](#pipeline-variables) and then reference that secret inside a file named `.cloudmanager/maven/settings.xml` in the git repository. This file follows the [Maven Settings File](https://maven.apache.org/settings.html) schema. When the Cloud Manager build process starts, the `<servers>` element in this file will be merged into the default `settings.xml` file provided by Cloud Manager. With this file in place, the server id would be referenced from inside a `<repository>` and/or `<pluginRepository>` element inside the `pom.xml` file. Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile]{#activating-maven-profiles-in-cloud-manager}, although that's not strictly necessary.
+
+As an example, let's say that the repository is at https://repository.myco.com/maven2, the username Cloud Manager should use is `cloudmanager` and the password is `secretword`.
+
+First, set the password as a secret on the pipeline:
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
+
+Then reference this from the `.cloudmanager/maven/settings.xml` file:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>myco-repository</id>
+            <username>cloudmanager</username>
+            <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+        </server>
+    </servers>
+</settings>
+```
+
+And finally reference the server id inside the `pom.xml` file:
+
+```xml
+<profiles>
+    <profile>
+        <id>cmBuild</id>
+        <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+        </activation>
+        <build>
+            <repositories>
+                <repository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>myco-repository</id>
+                    <name>MyCo Releases</name>
+                    <url>https://repository.myco.com/maven2</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+        </build>
+    </profile>
+</profiles>
 ```
 
 ## Installing Additional System Packages {#installing-additional-system-packages}
