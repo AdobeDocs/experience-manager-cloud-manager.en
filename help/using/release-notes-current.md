@@ -1,33 +1,40 @@
 ---
-title: Release Notes for 2020.7.0
-seo-title: AEM Cloud Manager Release Notes for 2020.7.0
-description: Follow this page to get information for Cloud Manager Release 2020.7.0
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.7.0
+title: Release Notes for 2020.8.0
+seo-title: AEM Cloud Manager Release Notes for 2020.8.0
+description: Follow this page to get information for Cloud Manager Release 2020.8.0
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.8.0
 ---
-# Release Notes for 2020.7.0 {#release-notes-for}
+# Release Notes for 2020.8.0 {#release-notes-for}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.7.0.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.8.0.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2020.
 
 ## What's New {#whats-new}
 
-* Detaching and attaching dispatcher instances from the load balancers during production deployments now works in a more consistent fashion.
+* Sites Performance Testing now supports the optional use of authentication.
 
-* The Cloud Manager build container now supports both Java 8 and Java 11.
+   Refer to for more details.
 
-* Cloud Manager pipelines now support customer-set variables and secrets.
-   Refer to [Pipeline Variables](/help/using/create-an-application-project.md#pipeline-variables) for more details.
+*  Authentication-bound Private Maven Repositories are now supported.
 
 ## Bug Fixes {#bug-fixes}
 
-* The **Cancel** and **Save** options on the Non-Production Pipeline Edit page were not always visible.
+* Some unnecessary and undesired SonarQube plugins were being executed as part of the Code Quality scanning. 
 
-* Certain failures in the code quality process could result in the log file not being generated correctly.
+* On the pipeline execution page, the branch name was incorrectly formatted. 
 
-* Some large pipeline step logs could not be consistently downloaded through the user interface. 
+* When deploying to topologies with a single publish, a single dispatcher and a cold standby author, the dispatcher was erroneously removed from the load balancer. 
+
+* In some cases, completed pipeline executions were not successfully recorded as having been completed thereby preventing new executions of the pipeline.
+
+* Pipeline executions would occasionally get *stuck* due to internal communication issues.
+
+* The tooltip on the program cards were not consistently correct.
+
+* There was a color mismatch on the overview page.
 
 ## Known Issues {#known-issues}
 

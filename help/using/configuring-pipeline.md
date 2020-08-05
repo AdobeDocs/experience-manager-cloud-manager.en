@@ -158,7 +158,7 @@ Follow the steps below to configure Dispatcher Invalidations:
 
    **AEM Sites:**
 
-   Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user) on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics.
+   Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user by default) on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics.
    
    Prior to the start of the 30 minute test period, Cloud Manager will crawl the Stage environment using a set of one or more *seed* URLs configured by the Customer Success Engineer. Starting from these URLs, the HTML of each page is inspected and links are traversed in a breadth-first fashion. This crawling process is limited to a maximum of 5000 pages. Requests from the crawler have a fixed timeout of 10 seconds.
    
@@ -171,6 +171,9 @@ Follow the steps below to configure Dispatcher Invalidations:
    * Each of the 3000 pages in the New Pages set will be hit once - ((200 * 0.5) / 3000) * 30 = 1
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
+
+   
+   Refer to [Authenticated Sites Performance Testing](configuring-pipeline.md#authenticated-sites-performance) to learn how to authenticate AEM Sites performance testing.
 
    **AEM Assets:**
 
@@ -191,6 +194,22 @@ Follow the steps below to configure Dispatcher Invalidations:
    >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Production Pipeline Settings** tile from the [!UICONTROL Cloud Manager] UI.
 
    ![](assets/Production-Pipeline.png)
+
+### Authenticated Sites Performance Testing {#authenticated-sites-performance}
+
+Adobe Managed Services (AMS) customers with authenticated sites can specify a username and password which Cloud Manager will use to access the website during Sites Performance Testing.
+
+The username and password are specified as Pipeline Variables with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD` .
+
+>[!NOTE]
+> Although not strictly required, it is recommended to use the string variable type for the username and the secretString variable type for the password. If both of these are specified, every request from the performance test crawler and the test virtual users will contain these credentials as HTTP Basic authentication.
+
+To set these variables using the Cloud Manager CLI, run:
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
+
+
+
 
 ## Non-Production & Code Quality Only Pipelines
 
