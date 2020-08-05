@@ -199,17 +199,14 @@ Follow the steps below to configure Dispatcher Invalidations:
 
 Adobe Managed Services (AMS) customers with authenticated sites can specify a username and password which Cloud Manager will use to access the website during Sites Performance Testing.
 
-The username and password are specified as Pipeline Variables with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD` .
+The username and password are specified as [Pipeline Variables](create-an-application-project.md#pipeline-variables) with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD` .
 
 >[!NOTE]
 > Although not strictly required, it is recommended to use the string variable type for the username and the secretString variable type for the password. If both of these are specified, every request from the performance test crawler and the test virtual users will contain these credentials as HTTP Basic authentication.
 
-To set these variables using the Cloud Manager CLI, run:
+To set these variables using the [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager), run:
 
 `$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
-
-
-
 
 ## Non-Production & Code Quality Only Pipelines
 
