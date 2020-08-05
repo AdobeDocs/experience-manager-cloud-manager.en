@@ -18,7 +18,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
    Refer to [Authenticated Sites Performance Testing](configuring-pipeline.md#authenticated-sites-performance) to learn how to authenticate AEM Sites performance testing.
 
-*  Authentication-bound Private Maven Repositories are now supported.
+* Authentication-bound Private Maven Repositories are now supported.
 
 ## Bug Fixes {#bug-fixes}
 
@@ -36,8 +36,3 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * There was a color mismatch on the overview page.
 
-## Known Issues {#known-issues}
-
-* When an AMS environment contains a standby instance, the logged message states that the instance is down as opposed to in standby mode.
-
-* Due to a change in how code coverage is calculated, the _minimum_ version of the Jacoco plugin is now 0.7.5.201505241946 (released May 2015). Customers explicitly referencing an older version will receive an error message in the code quality process.
