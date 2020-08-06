@@ -14,11 +14,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 ## What's New {#whats-new}
 
-* Sites Performance Testing now supports the optional use of authentication.
-
-   Refer to [Authenticated Sites Performance Testing](configuring-pipeline.md#authenticated-sites-performance) to learn how to authenticate AEM Sites performance testing.
-
-* Authentication-bound Private Maven Repositories are now supported.
+Authentication-bound Private Maven Repositories are now supported.
 
 ## Bug Fixes {#bug-fixes}
 
