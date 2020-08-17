@@ -123,7 +123,7 @@ It is then shown as a separate step during pipeline execution:
 
 **Dispatcher Invalidation**
 
-As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache, while setting up or editing pipeline.
+As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache for publish instances, while setting up or editing pipeline.
 
 You can configure a separate set of paths for Stage and Production deployment. If configured, these cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior - invalidate performs a cache invalidation, similar to when content is activated from author to publish; flush performs a cache deletion.
 
@@ -172,6 +172,8 @@ Follow the steps below to configure Dispatcher Invalidations:
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
+   Refer to [Authenticated Performance Testing](#authenticated-performance-testing) for more details.
+
    **AEM Assets:**
 
    Cloud Manager executes performance testing for AEM Assets programs by uploading assets repeatedly for a 30 minute test period and measuring the processing time for each asset as well as various system-level metrics. This capability can upload both images and PDF documents. The distribution of how many assets of each type are uploaded per minute is set in the Pipeline Setup or Edit screen.
@@ -192,6 +194,17 @@ Follow the steps below to configure Dispatcher Invalidations:
 
    ![](assets/Production-Pipeline.png)
 
+### Authenticated Performance Testing {#authenticated-performance-testing}
+
+AMS customers with authenticated sites can specify a username and password which Cloud Manager will use to access the website during Sites Performance Testing.
+
+The username and password are specified as [Pipeline Variables](/help/using/create-an-application-project.md#pipeline-variables) with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`. 
+
+Although not strictly required, it is recommended to use the string variable type for the username and the secretString variable type for the password. If both of these are specified, every request from the performance test crawler and the test virtual users will contain these credentials as HTTP Basic authentication.
+
+To set these variables using the [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager), run:
+
+`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## Non-Production & Code Quality Only Pipelines
 
