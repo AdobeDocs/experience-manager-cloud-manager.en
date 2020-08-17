@@ -30,5 +30,9 @@ Authentication-bound Private Maven Repositories are now supported.
 
 * The tooltip on the program cards were not consistently correct.
 
-* There was a color mismatch on the overview page.
+* There was a color mismatch on the **Overview** page.
+
+* Sites Performance Testing now supports the optional use of authentication.
+
+* Dispatcher caches for author instances are automatically flushed when dispatcher configurations are deployed through Cloud Manager.
 
