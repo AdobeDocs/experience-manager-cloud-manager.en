@@ -13,7 +13,7 @@ discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 
 # Understand your Test Results {#understand-your-test-results}
 
-During the **Pipeline** process, a number of metrics are captured and compared to either the Key Performance Indicators (KPIs) defined by the business owner, or standards set by Adobe Managed Services.
+During the Pipeline execution, a number of metrics are captured and compared to either the Key Performance Indicators (KPIs) defined by the business owner, or standards set by Adobe Managed Services.
 
 These are reported using the three-tier gating system as defined in this section.
 
@@ -41,9 +41,10 @@ This step evaluates the quality of your application code. It is the core objecti
 
 ### Understanding Code Quality Testing {#understanding-code-quality-testing}
 
-In Code Quality Testing, the source code is scanned to ensure that it deployments meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
+In Code Quality Testing, the source code is scanned to ensure that it meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
 
-You can download the list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
+>[!NOTE]
+>You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
 
 The results of this step is delivered as *Rating*. The table below summarizes the ratings for various test criteria:
 
