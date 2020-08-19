@@ -15,7 +15,7 @@ discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 
 ## Deploying Code with Cloud Manager {#deploying-code-with-cloud-manager}
 
-Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
+Once you have configured your Production Pipeline (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. Click **Deploy** from the Cloud Manager to start the deployment process.
 
