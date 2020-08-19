@@ -37,7 +37,15 @@ For each of these gates, there is a three-tier structure for issues identified b
 
 ## Code Quality Testing {#code-quality-testing}
 
-As part of the pipeline the source code is scanned to ensure that deployments meet certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. The following table summarizes the rating for testing criteria:
+This step evaluates the quality of your application code. It is the core objective of a Code-Quality only pipeline  and is executed immediately following the build step in all non-production and production pipelines. Refer to [Configuring your CI-CD Pipeline](/help/using/configuring-pipeline.md) to learn more about different types of pipelines.
+
+### Understanding Code Quality Testing {#understanding-code-quality-testing}
+
+In Code Quality Testing, the source code is scanned to ensure that it deployments meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
+
+You can download the list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
+
+The results of this step is delivered as *Rating*. The table below summarizes the ratings for various test criteria:
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
@@ -54,8 +62,6 @@ As part of the pipeline the source code is scanned to ensure that deployments me
 >[!NOTE]
 >
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
-
-You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
