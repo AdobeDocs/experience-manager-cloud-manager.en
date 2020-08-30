@@ -14,7 +14,7 @@ discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 The first phase in the Product Update wizard is **[!UICONTROL Evaluation]** phase. 
 Here you can assess the upgrade complexity with the pattern detector accessible to you directly from the wizard. At the end of this step, you will have access to the evaluation report.
 
-The generated report allows you to check the Author instance for upgradability by detecting patterns that:
+The generated report allows you to check the Author instance for upgrade by detecting patterns that:
 
 * Violate certain rules and are done in areas that will be affected or overwritten by the upgrade.
 

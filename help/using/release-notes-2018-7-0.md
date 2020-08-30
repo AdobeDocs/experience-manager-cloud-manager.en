@@ -28,9 +28,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.7.0 is September 10
 
 * **Code Quality Analysis** - New rule to identify incorrect API usage. Please refer to [Custom Code Quality Rules](custom-code-quality-rules.md) to learn more.  
 
-* **Performance Testing** - While viewing performance test results, graphs for CPU Utilization, Disk I/O Wait Time, Page Error Rate, Disk Bandwidth Utilization, Network Bandwidth Utilization, Peak Page Response Time and 95th Percentile Page Response Time are available. Please refer to *Performance Testing *section on [Understand your Test Results](understand-your-test-results.md) page.
+* **Performance Testing** - While viewing performance test results, graphs for CPU Utilization, Disk I/O Wait Time, Page Error Rate, Disk Bandwidth Utilization, Network Bandwidth Utilization, Peak Page Response Time and 95th Percentile Page Response Time are available. Please refer to *Performance Testing* section on [Understand your Test Results](understand-your-test-results.md) page.
 
-* **Performance Testing** - While viewing performance test results, the list of page errors and slow requests can be downloaded. Please refer to *Performance Testing *section on [Understand your Test Results](understand-your-test-results.md) page.
+* **Performance Testing** - While viewing performance test results, the list of page errors and slow requests can be downloaded. Please refer to *Performance Testing* section on [Understand your Test Results](understand-your-test-results.md) page.
 
 ## Bug Fixes {#bug-fixes}
 

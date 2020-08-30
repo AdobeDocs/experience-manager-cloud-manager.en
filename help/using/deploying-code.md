@@ -69,7 +69,7 @@ Once you have configured your Production Pipeline (repository, environment, and 
    >The **Schedule Production Deployment** is enabled while configuring the pipeline.
    >
    >
-   >Using this option, you can either schedule your production delpoyment or click **Now** to execute the production deployment immediately.
+   >Using this option, you can either schedule your production deployment or click **Now** to execute the production deployment immediately.
    >
    >
    >The scheduled date and time is specified in terms of the user's timezone.
@@ -121,13 +121,11 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
    1. Each path specified in the pipeline configuration is invalidated or flushed from the dispatcher cache.
    
    >[!NOTE]
-   >
    >Cloud Manager expects the dispatcher artifact to contain the full file set.  All dispatcher configuration files must be present in the git repository. Missing files or folders will result in deployment failure.
 
 1. Following the successful deployment of all AEM and dispatcher packages to all nodes, the dispatchers are added back to the load balancer and the deployment is complete.
 
    >[!NOTE]
-   >
    >You can skip Load Balancer changes in development and stage deployments, that is, detach and attach steps in both non-production pipelines, for developer environments, and the production pipeline, for stage environments. 
 
 ### Deployment to Production Phase {#deployment-production-phase}
