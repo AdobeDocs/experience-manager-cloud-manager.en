@@ -260,6 +260,9 @@ And if you wanted to output a simple message only when the build is run outside 
 
 ## Password-Protected Maven Repository Support {#password-protected-maven-repositories}
 
+>[!NOTE]
+>Artifacts from a password-protected Maven repository should only be used very cautiously as code deployed through this mechanism is currently not run through Cloud Manager's Quality Gates. Therefore it should only be used in rare cases and for code not tied to AEM. It is advised to also deploy the Java sources as well as the whole project source code alongside with the binary.
+
 In order to use a password-protected Maven repository from Cloud Manager, specify the password (and optionally, the username) as a secret [Pipeline Variable](#pipeline-variables) and then reference that secret inside a file named `.cloudmanager/maven/settings.xml` in the git repository. This file follows the [Maven Settings File](https://maven.apache.org/settings.html) schema. When the Cloud Manager build process starts, the `<servers>` element in this file will be merged into the default `settings.xml` file provided by Cloud Manager. Server IDs starting with `adobe` and `cloud-manager` are considered reserved and should not be used by custom servers. Server IDs **not** matching one of these prefixes or the default ID `central` will never be mirrored by Cloud Manager. With this file in place, the server id would be referenced from inside a `<repository>` and/or `<pluginRepository>` element inside the `pom.xml` file. Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
 
 As an example, let's say that the repository is at https://repository.myco.com/maven2, the username Cloud Manager should use is `cloudmanager` and the password is `secretword`.
@@ -326,6 +329,54 @@ And finally reference the server id inside the `pom.xml` file:
     </profile>
 </profiles>
 ```
+
+### Deploying Sources {#deploying-sources}
+
+It is a good practice to deploy the Java sources alongside with the binary to a Maven repository. 
+ 
+Configure the maven-source-plugin in your project:
+
+ ```xml
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-source-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>attach-sources</id>
+                     <goals>
+                         <goal>jar-no-fork</goal>
+                     </goals>
+                 </execution>
+             </executions>
+         </plugin>
+ ```
+
+### Deploying Project Sources {#deploying-project-sources}
+
+It is a good practice to deploy the whole project source alongside with the binary to a Maven repository - this allows as to rebuild the exact artifact. 
+ 
+Configure the maven-assembly-plugin in your project:
+
+ ```xml
+         <plugin>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-assembly-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>project-assembly</id>
+                     <phase>package</phase>
+                     <goals>
+                         <goal>single</goal>
+                     </goals>
+                     <configuration>
+                         <descriptorRefs>
+                             <descriptorRef>project</descriptorRef>
+                         </descriptorRefs>
+                     </configuration>
+                 </execution>
+             </executions>
+         </plugin>
+ ```
 
 ## Installing Additional System Packages {#installing-additional-system-packages}
 
