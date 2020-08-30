@@ -23,6 +23,6 @@ Upon completion of the environment provisioning process, the designated customer
 
 ## Next Steps {#next-steps}
 
-After receiving the welcome email, you are ready to log in to [!UICONTROL Cloud Manager] as an administrator, using your Adobe IMS credentials. Once logged in, you will be able to verify that your AEM cloud production and non-production environmnents are available, and running successfully.
+After receiving the welcome email, you are ready to log in to [!UICONTROL Cloud Manager] as an administrator, using your Adobe IMS credentials. Once logged in, you will be able to verify that your AEM cloud production and non-production environments are available, and running successfully.
 
 These AEM cloud environments will be used by [!UICONTROL Cloud Manager] to execute the CI/CD pipeline when deploying your code, starting from the [!UICONTROL Cloud Manager]'s Git repository, through the staging **Environment**, and up to your AEM production environment. You will also be able to access your AEM cloud environments directly from [!UICONTROL Cloud Manager], when you are ready to start creating digital experiences for your web properties.

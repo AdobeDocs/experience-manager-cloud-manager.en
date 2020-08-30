@@ -23,7 +23,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.9.0 is November 01,
 
 * **CI/CD Pipeline** - New API and Event system for integrating [!UICONTROL Cloud Manager]'s CI/CD pipeline with other systems. Please refer to [!UICONTROL Cloud Manager] API Documentation (https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) for more information.  
 
-* **UI** - Introduction of new UI layer which is more responsive and performant.
+* **UI** - Introduction of new UI layer which is more responsive.
 
 ## Bug Fixes {#bug-fixes}
 

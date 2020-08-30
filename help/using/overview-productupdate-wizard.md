@@ -26,7 +26,7 @@ The wizard includes five phases that guides the user during an AEM product updat
 
 >[!NOTE]
 >
->Customers onboarded to Cloud Manager and eligible to upgrade to AEM 6.5 will be able to leverage the Product Update wizard. Contact your Customer Success Engineer (CSE) for more details.
+>Customers on-boarded to Cloud Manager and eligible to upgrade to AEM 6.5 will be able to leverage the Product Update wizard. Contact your Customer Success Engineer (CSE) for more details.
 
 1. You will receive a pulse notification via Cloud Manager informing you that AEM 6.5 is available to your program.
 
