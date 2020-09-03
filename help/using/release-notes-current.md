@@ -1,38 +1,21 @@
 ---
-title: Release Notes for 2020.8.0
-seo-title: AEM Cloud Manager Release Notes for 2020.8.0
-description: Follow this page to get information for Cloud Manager Release 2020.8.0
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.8.0
+title: Release Notes for 2020.9.0
+seo-title: AEM Cloud Manager Release Notes for 2020.9.0
+description: Follow this page to get information for Cloud Manager Release 2020.9.0
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.9.0
 ---
-# Release Notes for 2020.8.0 {#release-notes-for}
+# Release Notes for 2020.9.0 {#release-notes-for}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.8.0.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2020.9.0.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is September 03, 2020.
 
 ## What's New {#whats-new}
 
-Authentication-bound Private Maven Repositories are now supported.
+* The build process has been separated into three separate Maven commands.
+* If the git repository fails to be cloned, it will be reattempted up to three times.
+* There is now an indicator on the pipeline execution details page when authentication is used during performance testing
 
-## Bug Fixes {#bug-fixes}
-
-* Some unnecessary and undesired SonarQube plugins were being executed as part of the Code Quality scanning. 
-
-* On the pipeline execution page, the branch name was incorrectly formatted. 
-
-* When deploying to topologies with a single publish, a single dispatcher and a cold standby author, the dispatcher was erroneously removed from the load balancer. 
-
-* In some cases, completed pipeline executions were not successfully recorded as having been completed thereby preventing new executions of the pipeline.
-
-* Pipeline executions would occasionally get *stuck* due to internal communication issues.
-
-* The tooltip on the program cards were not consistently correct.
-
-* There was a color mismatch on the **Overview** page.
-
-* Sites Performance Testing now supports the optional use of authentication.
-
-* Dispatcher caches for author instances are automatically flushed when dispatcher configurations are deployed through Cloud Manager.
 
