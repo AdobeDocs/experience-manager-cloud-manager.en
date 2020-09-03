@@ -24,7 +24,9 @@ user-guide-description: Learn to use Adobe Managed Services to self-manage Exper
 + Getting Started {#getting-started}
   + [First Time Login](first-time-login.md)
   + [Setup your Program](setting-up-program.md)
-  + [Create an AEM Application Project](create-an-application-project.md)
+  + Create an AEM Application Project {#create-application-project}
+    + [Create an AEM Application Project](create-an-application-project.md)
+    + [Using the Wizard](using-the-wizard.md)
   + [Configure your Release Branches](configure-your-release-branches.md)
   + [Manage your Dispatcher Configurations](dispatcher-configurations.md)
 + How to Use {#how-to-use}
@@ -45,7 +47,8 @@ user-guide-description: Learn to use Adobe Managed Services to self-manage Exper
   + [Overview](overview-productupdate-wizard.md)
   + [Evaluation](evaluation.md)
 + Release Notes {#release-notes}
-  + [Current Release Notes (2020.8.0)](release-notes-current.md)
+  + [Current Release Notes (2020.9.0)](release-notes-current.md)
+  + [Release Notes for 2020.8.0](release-notes-2020-8-0.md)
   + [Release Notes for 2020.7.0](release-notes-2020-7-0.md)
   + [Release Notes for 2020.6.0](release-notes-2020-6-0.md)
   + [Release Notes for 2020.5.0](release-notes-2020-5-0.md)

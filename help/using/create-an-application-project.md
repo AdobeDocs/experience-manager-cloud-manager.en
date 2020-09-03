@@ -90,7 +90,12 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 
 * Other packages may be installed at build time as described [below](#installing-additional-system-packages).
 * Every build is done on a pristine environment; the build container does not keep any state between executions.
-* Maven is always run with the command: *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
+* Maven is always run with these three commands: 
+   
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+
 * Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe **Artifact** repository. (Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
 
 >[!NOTE]
