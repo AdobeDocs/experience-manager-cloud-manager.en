@@ -10,7 +10,7 @@ The following section outlines the general Release Notes for [!UICONTROL Cloud M
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is September 03, 2020.
+The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03, 2020.
 
 ## What's New {#whats-new}
 
