@@ -25,8 +25,9 @@ user-guide-description: Learn to use Adobe Managed Services to self-manage Exper
   + [First Time Login](first-time-login.md)
   + [Setup your Program](setting-up-program.md)
   + Create an AEM Application Project {#create-application-project}
-    + [Create an AEM Application Project](create-an-application-project.md)
     + [Using the Wizard](using-the-wizard.md)
+    + [Setting up your Project](setting-up-project.md)
+    + [Understanding the Build Environment](build-environment-details.md)
   + [Configure your Release Branches](configure-your-release-branches.md)
   + [Manage your Dispatcher Configurations](dispatcher-configurations.md)
 + How to Use {#how-to-use}
