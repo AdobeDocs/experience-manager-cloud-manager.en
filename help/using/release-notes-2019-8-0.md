@@ -15,7 +15,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.8.0 is August 19, 2
 ## What's New {#whats-new}
 
 * New Command Line Interface to the Cloud Manager API, powered by the [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
-* Specific content packages produced by the build may be declared as skippable and will not be deployed. Refer to ***Skipping Content Packages*** section in [Create an AEM Application Project](/help/using/create-an-application-project.md) for more details.
+* Specific content packages produced by the build may be declared as skipped and will not be deployed. Refer to [Skipping Content Packages](/help/using/setting-up-project.md#skipping-content-packages) for more details.
 * The set of preloaded dependencies in the build container has been reworked to avoid some unnecessary network requests.
 * The message on the overview page for certain incorrectly configured programs has been improved.
 
