@@ -20,7 +20,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.8.0 is October 04, 
 
 ## What's New {#what-s-new}
 
-* **Program Setup** - New wizard to create an application project in git using the AEM Project Archetype Please refer to [Create an AEM Application Project](/help/using/create-an-application-project.md) to learn more.  
+* **Program Setup** - New wizard to create an application project in git using the AEM Project Archetype 
 
 * **CI/CD Pipeline** - The following changes are added to CI/CD Pipeline. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.
 

@@ -42,7 +42,7 @@ Once you have configured your Production Pipeline (repository, environment, and 
    The **Stage Deployment**, involves the following steps:
 
     * Validation: This step ensures that the pipeline is configured to use the currently available resources, for example, that the configured branch exists, the environments are available.
-    * Build & Unit Testing: This step runs a containerized build process. See [Create an AEM Application Project](create-an-application-project.md) for details on the build environment.
+    * Build & Unit Testing: This step runs a containerized build process. See [Understanding the Build Environment](/help/using/build-environment-details.md) for details on the build environment.
     * Code Scanning: This step evaluates the quality of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
     * Deploy to Stage
 

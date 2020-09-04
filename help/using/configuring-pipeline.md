@@ -198,7 +198,7 @@ Follow the steps below to configure Dispatcher Invalidations:
 
 AMS customers with authenticated sites can specify a username and password which Cloud Manager will use to access the website during Sites Performance Testing.
 
-The username and password are specified as [Pipeline Variables](/help/using/create-an-application-project.md#pipeline-variables) with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`. 
+The username and password are specified as [Pipeline Variables](/help/using/build-environment-details.md#pipeline-variables) with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`. 
 
 Although not strictly required, it is recommended to use the string variable type for the username and the secretString variable type for the password. If both of these are specified, every request from the performance test crawler and the test virtual users will contain these credentials as HTTP Basic authentication.
 
