@@ -16,6 +16,6 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 
 * The build process has been separated into three separate Maven commands.
 * If the git repository fails to be cloned, it will be reattempted up to three times.
-* There is now an indicator on the pipeline execution details page when authentication is used during performance testing
+* There is now an indicator on the pipeline execution details page when authentication is used during performance testing.
 
 
