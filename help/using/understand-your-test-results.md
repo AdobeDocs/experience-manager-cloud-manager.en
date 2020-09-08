@@ -156,7 +156,7 @@ The following table summarizes the performance test matrix using the three-tier 
 | Page Views Per Minute |Important |< Program-level KPI |
 | Disk Bandwidth Utilization |Important |>= 90% |
 | Network Bandwidth Utilization |Important |>= 90% |
-| Requests Per Minute |Info |< 6000 |
+| Requests Per Minute |Info |>= 6000 |
 
 ### Performance Testing Results Graphs {#performance-testing-results-graphs}
 
