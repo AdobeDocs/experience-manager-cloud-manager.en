@@ -63,6 +63,9 @@ To do this, in the pom.xml file, add a `<plugin>` entry that looks like this:
 >[!NOTE]
 >The supported `vendor` values are `oracle` and `sun` and the supported `version` values are `1.8`, `1.11`, and `11`.
 
+>[!NOTE]
+>The Cloud Manager project build is still using Java 8 to invoke Maven, therefore checking/enforcing the Java version configured in the toolchain plugin through plugins like the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) does not work and such plugins must not be used.
+
 ## Environment Variables {#environment-variables}
 
 ### Standard Environment Variables {#standard-environ-variables}
