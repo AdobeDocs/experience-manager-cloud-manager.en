@@ -33,7 +33,8 @@ Follow the steps below to generate evaluation report:
 1. Click on **[!UICONTROL Run Evaluation]**.
 
    >[!NOTE]
-     >The pattern detector can run on any environment. However, in order to increase detection rate and avoid any slowdowns on business critical instances, Cloud Manager will run it on staging environment on the author instance.
+   >
+   >The pattern detector can run on any environment. However, in order to increase detection rate and avoid any slowdowns on business critical instances, Cloud Manager will run it on staging environment on the author instance.
 
    ![](assets/Run-Evaluation.png)
 
