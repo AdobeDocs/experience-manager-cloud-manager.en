@@ -100,7 +100,7 @@ Current variables can be listed:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Variable names may only contain alphanumeric and underscore (_) characters. By convention, the names should be all upper-case. There is a limit of 200 variables per pipeline, each name must be less than 100 characters and each value must be less than 2048 characters.
+Variable names may only contain alphanumeric and underscore (_) characters. By convention, the names should be all upper-case. There is a limit of 200 variables per pipeline, each name must be less than 100 characters and each value must be less than 2048 characters in the case of string type variables and 500 characters in the case of secretString type variables.
 
 When used inside a `Maven pom.xml` file, it is typically helpful to map these variables to Maven properties using a syntax similar to this:
 
