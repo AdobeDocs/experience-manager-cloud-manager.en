@@ -100,7 +100,7 @@ Current variables can be listed:
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-Variable names may only contain alphanumeric and underscore (_) characters. By convention, the names should be all upper-case. There is a limit of 200 variables per pipeline, each name must be less than 100 characters and each value must be less than 2048 characters.
+Variable names may only contain alphanumeric and underscore (_) characters. By convention, the names should be all upper-case. There is a limit of 200 variables per pipeline, each name must be less than 100 characters and each value must be less than 2048 characters in the case of string type variables and 500 characters in the case of secretString type variables.
 
 When used inside a `Maven pom.xml` file, it is typically helpful to map these variables to Maven properties using a syntax similar to this:
 
@@ -176,5 +176,4 @@ Some builds require additional system packages to be installed to function fully
 This same technique can be used to install language specific packages, i.e. using `gem` for RubyGems or `pip` for Python Packages.
 
 >[!NOTE]
->
->Installing a system package in this manner does **not** install it in the runtime environment used for running Adobe Experience Manager. If you need a system package installed on the AEM environment, contact your Customer Success Engineers (CSE).
+>Installing a system package in this manner does **not** install it in the runtime environment used for running Adobe Experience Manager. If you need a system package installed on the AEM environment, contact your Adobe Representative.
