@@ -66,4 +66,4 @@ During an autoscaling event, [!UICONTROL Cloud Manager] automatically triggers t
 The autoscaling feature will apply only to the Dispatcher/Publish tier, and will always be executed using a horizontal scaling method, with a minimum of one additional segment of a Dispatcher/Publish pair, and up to a maximum of ten segments. Any additional capacity provisioned will be manually scaled-in within a period of ten business days as determined by the CSE (Customer Success Engineer). 
 
 >[!NOTE]
->Customers interested in exploring whether or not Autoscaling is appropriate for their application must contact their CSE or Adobe representative.
+>Customers interested in exploring whether or not autoscaling is appropriate for their application must contact their CSE or Adobe representative.
