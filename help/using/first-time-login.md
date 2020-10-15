@@ -15,7 +15,6 @@ discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 Once you have setup the general configurations for [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI) for [!UICONTROL Cloud Manager].
 
 >[!NOTE]
->
 >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
 ## Video Tutorial {#video-tutorial-one}
