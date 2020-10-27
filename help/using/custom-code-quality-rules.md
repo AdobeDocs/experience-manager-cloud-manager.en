@@ -554,7 +554,7 @@ public void doThis(Resource resource) {
 
 **Key**: CQRules:AMSCORE-554
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -568,7 +568,7 @@ Refer to [Apache Sling Eventing and Job Handling](https://sling.apache.org/docum
 
 **Key**: AMSCORE-553
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -686,7 +686,7 @@ Similar to the *Packages Should Not Contain Duplicate OSGi Configurations* this 
 
 **Key**: ClassicUIAuthoringMode
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -698,7 +698,7 @@ The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 
 **Key**: ComponentWithOnlyClassicUIDialog
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -716,7 +716,7 @@ The AEM Modernization Tools documentation provides documentation and tooling for
 
 **Key**: ImmutableMutableMixedPackage
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
@@ -730,7 +730,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experien
 
 **Key**: ReverseReplication
 
-**Type**: Code Smell
+**Type**: Code Smell/Cloud Service Compatibility
 
 **Severity**: Minor
 
