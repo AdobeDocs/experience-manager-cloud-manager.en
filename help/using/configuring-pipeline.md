@@ -158,7 +158,7 @@ Follow the steps below to configure Dispatcher Invalidations:
 
    **AEM Sites:**
 
-   Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user by default) on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics.
+   Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user by default) on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics. These requests are made from a set of known, dedicated addresses. The address ranges can be obtained from your Customer Success Engineer or Adobe representative.
    
    Prior to the start of the 30 minute test period, Cloud Manager will crawl the Stage environment using a set of one or more *seed* URLs configured by the Customer Success Engineer. Starting from these URLs, the HTML of each page is inspected and links are traversed in a breadth-first fashion. This crawling process is limited to a maximum of 5000 pages. Requests from the crawler have a fixed timeout of 10 seconds.
    
