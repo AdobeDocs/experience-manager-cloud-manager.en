@@ -45,6 +45,7 @@ user-guide-description: Learn to use Adobe Managed Services to self-manage Exper
   + [Maven Project Version Handling](activating-maven-project.md)
   + [Accessing Git](accessing-git.md)
   + [Integrating with Git](setup-cloud-manager-git-integration.md)
+  + [Working with Multiple Source Git Repositories](/help/using/working-with-multiple-source-git-repos.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](overview-productupdate-wizard.md)
   + [Evaluation](evaluation.md)
