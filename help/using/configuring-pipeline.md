@@ -66,8 +66,6 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    >
    >Branches found in the Git repository are linked to your program.
 
-   ![](assets/Configure_ci-cd-2.png)
-
 
 1. Access the **Environments** tab to select **Stage** and **Production** options.
 
