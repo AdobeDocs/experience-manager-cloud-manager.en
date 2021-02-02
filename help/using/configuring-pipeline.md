@@ -164,7 +164,7 @@ Follow the steps below to configure Dispatcher Invalidations:
 
    For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
 
-   * Each of the 25 pages in the Popular Live Pages set will be hit 240 times – ((200 * 0.5) / 25) * 30 = 120
+   * Each of the 25 pages in the Popular Live Pages set will be hit 120 times – ((200 * 0.5) / 25) * 30 = 120
 
    * Each of the 3000 pages in the New Pages set will be hit once - ((200 * 0.5) / 3000) * 30 = 1
 
