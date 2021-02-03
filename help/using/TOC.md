@@ -38,7 +38,7 @@ user-guide-description: Learn to use Adobe Managed Services to self-manage Exper
   + [Manage your Environments](manage-your-environment.md)
   + [Monitor your Environments](monitor-your-environments.md)
   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-  + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
+  + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
   + [Notifications](notifications.md)
   + [Custom Code Quality Rules](custom-code-quality-rules.md)
 + Manage your Code {#managing-code}
