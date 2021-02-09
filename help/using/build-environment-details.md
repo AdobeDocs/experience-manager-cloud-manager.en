@@ -31,6 +31,13 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 >[!NOTE]
 >Although Cloud Manager does not define a specific version of the `jacoco-maven-plugin`, the version used must be at least `0.7.5.201505241946`.
 
+
+>[!NOTE]
+>Refer to the following additional resources to learn how to use Cloud Manager APIs:
+> * [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+>* [Creating an API Integration](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
+>* [API Permissions](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
+
 ## Using Java 11 {#using-java-11}
 
 Cloud Manager now supports building customer projects with both Java 8 and Java 11. By default, projects are built using Java 8. Customers who intend to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
@@ -117,6 +124,7 @@ When used inside a `Maven pom.xml` file, it is typically helpful to map these va
             </properties>
         </profile>
 ```
+
 
 ## Installing Additional System Packages {#installing-additional-system-packages}
 
