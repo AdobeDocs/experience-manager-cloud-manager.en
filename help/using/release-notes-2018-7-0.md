@@ -1,7 +1,7 @@
 ---
 title: Release Notes for 2018.7.0
 seo-title: Release Notes for 2018.7.0
-description: null
+description: Learn about Cloud Manager Release 2018.7.0
 seo-description: Follow this page to get information for Cloud Manager Release 2018.7.0.
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal

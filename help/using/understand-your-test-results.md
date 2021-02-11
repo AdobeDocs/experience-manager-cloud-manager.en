@@ -1,7 +1,7 @@
 ---
 title: Understand your Test Results
 seo-title: Understand your Test Results
-description: null
+description: Learn more about three tier gates while running a pipeline in Cloud Manager
 seo-description: Follow this page to learn about three tier gates while running a pipeline, code scanning, performance, and security tests validating your program in Cloud Manager.
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal

@@ -1,8 +1,8 @@
 ---
 title: Deploy your Code
 seo-title: Deploy your Code
-description: null
-seo-description: Once you have configured your pipeline (repository, environment, and testing environment), you are ready to deploy your code. Follow this page to learn more.
+description: Provides an overview on deployment process in Cloud Manager
+seo-description: Learn how to deploy your code once you have configured your pipeline (repository, environment, and testing environment)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER

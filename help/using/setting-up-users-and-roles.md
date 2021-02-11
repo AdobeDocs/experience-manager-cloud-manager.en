@@ -1,7 +1,7 @@
 ---
 title: Add Users and Roles
 seo-title: Add Users and Roles
-description: null
+description: Learn about users and roles and how to use Admin Console to create a profile
 seo-description: You can assign specific role memberships by adding the user to a Cloud Manager Product Profile in the Admin Console. Follow this section to learn more.
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
