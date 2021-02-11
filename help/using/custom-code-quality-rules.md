@@ -764,7 +764,7 @@ AEM client libraries may contain static resources like images and fonts. As desc
         + myimage.jpg
 ```
 
-#### Compliant Code {#non-compliant-proxy-enabled}
+#### Compliant Code {#compliant-proxy-enabled}
 
 ```
 
@@ -836,7 +836,7 @@ AEM Cloud Service enforces a strict naming policy for runmode names and a strict
 
 AEM Cloud Service requires that custom search index definitions (i.e. nodes of type oak:QueryIndexDefinition) be direct child nodes of `/oak:index`. Indexes in other locations must be moved to be compatible with AEM Cloud Service. More information on search indexes can be found on [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
 
-### OakPAL - Custom Search Index Definition Nodes Must Have a compatVersion of 2 {#oakpal-custom-search-index}
+### OakPAL - Custom Search Index Definition Nodes Must Have a compatVersion of 2 {#oakpal-custom-search-compatVersion}
 
 **Key**: IndexCompatVersion
 
