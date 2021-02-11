@@ -24,6 +24,8 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2021.2.0 is February 11,
 
 * Properties set in customer `pom.xml` files prefixed with sonar will now be dynamically removed in order to avoid build and quality scanning failures.
 
+* Additional Code Quality Rules have been added to cover Cloud Service Compatibility issues.
+
 ## Bug Fixes {#bug-fixes}
 
 * On occasion, the CI/CD (deployment) pipeline failed during a performance test step due to a container running the load test which encountered an error.
