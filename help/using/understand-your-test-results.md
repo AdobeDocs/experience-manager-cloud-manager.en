@@ -1,7 +1,7 @@
 ---
 title: Understand your Test Results
 seo-title: Understand your Test Results
-description: null
+description: Learn more about three tier gates while running a pipeline in Cloud Manager
 seo-description: Follow this page to learn about three tier gates while running a pipeline, code scanning, performance, and security tests validating your program in Cloud Manager.
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
@@ -44,7 +44,7 @@ This step evaluates the quality of your application code. It is the core objecti
 In Code Quality Testing, the source code is scanned to ensure that it meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
 
 >[!NOTE]
->You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
+>You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 The results of this step is delivered as *Rating*. The table below summarizes the ratings for various test criteria:
 

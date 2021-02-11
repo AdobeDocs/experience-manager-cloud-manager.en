@@ -50,7 +50,8 @@ user-guide-description: Learn to use Adobe Managed Services to self-manage Exper
   + [Overview](overview-productupdate-wizard.md)
   + [Evaluation](evaluation.md)
 + Release Notes {#release-notes}
-  + [Current Release Notes (2020.12.0)](release-notes-current.md)
+  + [Current Release Notes (2021.2.0)](release-notes-current.md)
+  + [Release Notes for 2020.12.0](release-notes-2020-12-0.md)
   + [Release Notes for 2020.11.0](release-notes-2020-11-0.md)
   + [Release Notes for 2020.10.0](release-notes-2020-10-0.md)
   + [Release Notes for 2020.9.0](release-notes-2020-9-0.md)

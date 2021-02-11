@@ -1,8 +1,8 @@
 ---
 title: Deploy your Code
 seo-title: Deploy your Code
-description: null
-seo-description: Once you have configured your pipeline (repository, environment, and testing environment), you are ready to deploy your code. Follow this page to learn more.
+description: Provides an overview on deployment process in Cloud Manager
+seo-description: Learn how to deploy your code once you have configured your pipeline (repository, environment, and testing environment)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
@@ -136,10 +136,10 @@ Production deployments generally follow the same steps as above, but in a rollin
 
 1. Deploy AEM packages to author.
 1. Detach dispatcher1 from the load balancer.
-1. Deploy AEM packages to publish1 and the dispatcher package to dispatcher1, flush dispatcher cache.
+1. Deploy AEM packages to publish1 and the dispatcher package to dispatcher1 in parallel, flush dispatcher cache.
 1. Put dispatcher1 back into the load balancer.
 1. Once dispatcher1 is back in service, detach dispatcher2 from the load balancer.
-1. Deploy AEM packages to publish2 and the dispatcher package to dispatcher2, flush dispatcher cache.
+1. Deploy AEM packages to publish2 and the dispatcher package to dispatcher2 in parallel, flush dispatcher cache.
 1. Put dispatcher2 back into the load balancer.
 This process continues until the deployment has reached all publishers and dispatchers in the topology.
 

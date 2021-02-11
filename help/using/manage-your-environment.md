@@ -1,7 +1,7 @@
 ---
 title: Manage your Environments
 seo-title: Manage your Environments
-description: null
+description: Learn about Cloud Manager environment
 seo-description: Follow this page to view the list of production and non-production environments that are used for setting up and running the CI/CD pipeline in Cloud Manager.
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal

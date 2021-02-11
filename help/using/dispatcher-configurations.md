@@ -1,7 +1,7 @@
 ---
 title: Manage your Dispatcher Configurations
 seo-title: Manage your Dispatcher Configurations
-description: null
+description: Learn how to deploy dispatcher configuration files using Cloud Manager
 seo-description: Follow this page to learn about configuring dispatcher.
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
