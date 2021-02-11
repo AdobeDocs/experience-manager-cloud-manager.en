@@ -22,7 +22,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2021.2.0 is February 11,
 
 * SonarQube profile for Cloud Manager updated to remove Sonar rule `squid:S2142`. This will no longer conflict with thread interruption checks.
 
-* Properties set in customer `pom.xml` files prefixed with Sonar will now be dynamically removed in order to avoid build and quality scanning failures.
+* Properties set in customer `pom.xml` files prefixed with sonar will now be dynamically removed in order to avoid build and quality scanning failures.
 
 ## Bug Fixes {#bug-fixes}
 
