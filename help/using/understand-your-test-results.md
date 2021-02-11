@@ -44,7 +44,7 @@ This step evaluates the quality of your application code. It is the core objecti
 In Code Quality Testing, the source code is scanned to ensure that it meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
 
 >[!NOTE]
->You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-latest.xlsx).
+>You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 The results of this step is delivered as *Rating*. The table below summarizes the ratings for various test criteria:
 

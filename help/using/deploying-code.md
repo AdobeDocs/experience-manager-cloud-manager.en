@@ -136,10 +136,10 @@ Production deployments generally follow the same steps as above, but in a rollin
 
 1. Deploy AEM packages to author.
 1. Detach dispatcher1 from the load balancer.
-1. Deploy AEM packages to publish1 and the dispatcher package to dispatcher1, flush dispatcher cache.
+1. Deploy AEM packages to publish1 and the dispatcher package to dispatcher1 in parallel, flush dispatcher cache.
 1. Put dispatcher1 back into the load balancer.
 1. Once dispatcher1 is back in service, detach dispatcher2 from the load balancer.
-1. Deploy AEM packages to publish2 and the dispatcher package to dispatcher2, flush dispatcher cache.
+1. Deploy AEM packages to publish2 and the dispatcher package to dispatcher2 in parallel, flush dispatcher cache.
 1. Put dispatcher2 back into the load balancer.
 This process continues until the deployment has reached all publishers and dispatchers in the topology.
 
