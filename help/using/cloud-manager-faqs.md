@@ -7,11 +7,11 @@ seo-description: Follow this page to get answers on Cloud Manager FAQs
 
 # Cloud Manager FAQs {#cloud-manager-faqs}
 
-The following section provides answers to few of the commonly asked FAQs related to Cloud Manager.
+The following section provides answers to some commonly asked FAQs related to Cloud Manager.
 
 ## 1. Is it possible to use Java 11 with Cloud Manager builds? {#java-11-cloud-manager}
 
-AEM Cloud Manager build fails when attempting to switch the build from Java 8 to Java 11. The problem can have many causes and most common ones are documented below:
+AEM Cloud Manager build fails when attempting to switch the build from Java 8 to 11. The problem can have many causes and most common ones are documented below:
 
 * Add the maven-toolchains-plugin with the correct settings for Java 11 as documented [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started).  For example, see the [wknd sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -36,7 +36,7 @@ Some notes about the performance test step:
 * The *Performance Step* is a web performance step - meaning it is the time to load the page using a web browser.
 * The URLs listed in the result CSV file are loaded in a Chrome browser in the Cloud Manager infrastructure during the test.
 * A common metric that fails is the *error rate*. In order for a URL to pass, the main URL must load with 200 status and in less than 20 seconds. Page loads that exceed 20 seconds are marked as 504 errors.
-* If your site requires user authentication, then see this documentation for configuring the test to authenticate to your site.
+* If your site requires User Authentication, then see [Authenticated Performance Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) for configuring the test to authenticate to your site.
 
 ## 4. Are we allowed to use SNAPSHOT in the version of the maven project? How does versioning of the packages and bundle jar files work for stage and production deploys? {#snapshot-version}
 
@@ -68,7 +68,7 @@ See [Git Resource](https://github.com/cqsupport/cloud-manager/blob/main/cm-build
 
 ## 6. Unable to set a variable via aio cloud manager set pipeline variables. How to debug these issues? {#set-variable} 
 
-If you are getting a 403 error when attempting to list or set pipeline variables via commands similar to the ones below, then you need to be added as a *Deployment Manager* Cloud Manager product role in the admin console.  
+If you are getting a 403 error when attempting to list or set pipeline variables via commands similar to the ones below, then you need to be added as a *Deployment Manager* Cloud Manager product role in the Admin Console.  
 See [API Permissions](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) for more details.
 
 Related commands and errors:
