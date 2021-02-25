@@ -40,11 +40,11 @@ Some notes about the Performance Test step:
 
 ## Are we allowed to use SNAPSHOT in the version of the Maven project? How does versioning of the packages and bundle jar files work for stage and production deploys? {#snapshot-version}
 
-1. For dev deploys, the Git branch `pom.xml` files must contain `-SNAPSHOT` at the end of the `<version>` value. This allows subsequent deployment where the version does not change to still get installed. In dev deployments, no automatic version is added or generated for the maven build.
+1. For developer deployments, the Git branch `pom.xml` files must contain `-SNAPSHOT` at the end of the `<version>` value. This allows subsequent deployment where the version does not change to still get installed. In developer deployments, no automatic version is added or generated for the maven build.
 
-1. In stage and production deployment, an automatic version is generated as documented [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code).
+1. In Stage and Production deployment, an automatic version is generated as documented [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code).
 
-1. For custom versioning in stage and production deploys, set a 3 part proper maven version like `1.0.0`. Increase the version each time you have to do another deploy to production.
+1. For custom versioning in Stage and Production deployments, set a 3 part proper maven version like `1.0.0`. Increase the version each time you have to do another deploy to production.
 
 1. Cloud Manager automatically adds its version to Stage and Production builds and even creates a Git branch. No special configuration is required. If step 3 above is skipped, the deployment would still work fine and a version would automatically be set.
 
@@ -75,8 +75,8 @@ Related commands and errors:
 
 `$ aio cloudmanager:list-pipeline-variables 222`
 
-Error: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*Error*: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
 
 `$ aio cloudmanager:set-pipeline-variables 222 --variable TEST 1`
 
-Error: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*Error*: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
