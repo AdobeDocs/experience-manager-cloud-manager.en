@@ -16,6 +16,7 @@ user-guide-description: Learn to use Adobe Managed Services to self-manage Exper
   + [CI/CD Pipeline](ci-cd-pipeline.md)
   + [Security and Privacy](security-and-privacy.md)
   + [Help Resources](help-resources.md)
+  + [Cloud Manager FAQs](cloud-manager-faqs.md)
 + What is Required {#requirements}
   + [Access Rights Granted](access-rights-granted.md)
   + [Source Code Repository](source-code-repository.md)
