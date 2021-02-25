@@ -25,7 +25,7 @@ AEM Cloud Manager build fails when attempting to switch the build from Java 8 to
 
 All Code Quality failures except for *Security Rating* are non-critical metrics, so they can be bypassed by expanding the items in the results UI.  
 
-A user with [deployment manager, project manager, or business owner](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en#requirements) role can override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure.  See [Three-Tier Gates while Running a Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) for more details.
+A user with [Deployment Manager, Project Manager, or Business Owner](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en#requirements) role can override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure.  See [Three-Tier Gates while Running a Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) for more details.
 
 ## 3. Cloud Manager deployments fail at the performance test step in Adobe Managed Services environments. How do we debug this to pass the critical metrics? {debug-critical-metrics}
 
@@ -46,7 +46,7 @@ Some notes about the performance test step:
 
 1. For custom versioning in stage and production deploys, set a 3 part proper maven version like `1.0.0`. Increase the version each time you have to do another deploy to production.
 
-1. Cloud manager automatically adds its version to stage and production builds and even creates a git branch. No special configuration is required. If step 3 above is skipped, the deployment would still work fine and a version would automatically be set.
+1. Cloud Manager automatically adds its version to stage and production builds and even creates a git branch. No special configuration is required. If step 3 above is skipped, the deployment would still work fine and a version would automatically be set.
 
 1. If you leave the version with `-SNAPSHOT` for stage and production build or deploys then even that is ok. Cloud Manager automatically sets a proper version number and creates a tag for you in git. This tag can be referred to later, if required.
 
@@ -66,7 +66,7 @@ Some notes about the performance test step:
 
 See [Git Resource](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) for more details.
 
-## 6. Unable to set a variable via aio cloudmanager:set-pipeline-variables. How to debug these issues? {#set-variable} 
+## 6. Unable to set a variable via aio cloud manager set pipeline variables. How to debug these issues? {#set-variable} 
 
 If you are getting a 403 error when attempting to list or set pipeline variables via commands similar to the ones below, then you need to be added as a *Deployment Manager* Cloud Manager product role in the admin console.  
 See [API Permissions](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) for more details.
