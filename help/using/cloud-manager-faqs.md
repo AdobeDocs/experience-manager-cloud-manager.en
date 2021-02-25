@@ -36,7 +36,7 @@ Some notes about the Performance Test step:
 * The *Performance Step* is a web performance step, that is, the time to load the page using a Web browser.
 * The URLs listed in the result *CSV* file are loaded in a Chrome browser in the Cloud Manager infrastructure during the test.
 * A common metric that fails is the *error rate*. In order for a URL to pass, the main URL must load with `200` status and in less than `20` seconds. Page loads that exceed `20` seconds are marked as `504` errors.
-* If your site requires User Authentication, then see [Authenticated Performance Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) for configuring the test to authenticate to your site.
+* If your site requires User Authentication, see [Authenticated Performance Testing](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) for configuring the test to authenticate to your Site.
 
 ## Are we allowed to use SNAPSHOT in the version of the Maven project? How does versioning of the packages and bundle jar files work for stage and production deploys? {#snapshot-version}
 
