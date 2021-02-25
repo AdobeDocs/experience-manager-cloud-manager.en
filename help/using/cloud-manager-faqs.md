@@ -48,9 +48,9 @@ Some notes about the Performance Test step:
 
 1. Cloud Manager automatically adds its version to Stage and Production builds and even creates a Git branch. No special configuration is required. If step 3 above is skipped, the deployment would still work fine and a version would automatically be set.
 
-1. If you leave the version with `-SNAPSHOT` for stage and production builds or deployments then even that is ok. Cloud Manager automatically sets a proper version number and creates a tag for you in Git. This tag can be referred to later, if required.
+1. There are no issues, if you leave the version with `-SNAPSHOT` for Stage and Production builds or deployments. Cloud Manager automatically sets a proper version number and creates a tag for you in Git. This tag can be referred to later, if required.
 
-1. If you want to try out some experimental code on development environment, you can create a new Git branch and set the pipeline to use that different branch. This is useful when deployments start failing and you would like to test with older versions of the code to see when it broke.
+1. If you want to try out some experimental code on Development environment, you can create a new Git branch and set the pipeline to use that different branch. This is useful when deployments start failing and you would like to test with older versions of the code to see when it broke.
 
    The Git command below creates a remote branch named *testbranch1* against a specific pre-existing commit `485548e4fbafbc83b11c3cb12b035c9d26b6532b`.  This special branch could be used in Cloud Manager without affecting any other branches:
 
