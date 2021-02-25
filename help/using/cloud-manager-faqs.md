@@ -7,7 +7,7 @@ seo-description: Follow this page to get answers on Cloud Manager FAQs
 
 # Cloud Manager FAQs {#cloud-manager-faqs}
 
-The following section provides answers to some commonly asked FAQs related to Cloud Manager.
+The following section provides answers to frequently asked questions related to Cloud Manager.
 
 ## Is it possible to use Java 11 with Cloud Manager builds? {#java-11-cloud-manager}
 
@@ -15,7 +15,7 @@ AEM Cloud Manager build fails when attempting to switch the build from Java 8 to
 
 * Add the maven-toolchains-plugin with the correct settings for Java 11 as documented [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started).  For example, see the [wknd sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-* If you encounter the error below then you need to remove use of maven-scr-plugin and convert all OSGi annotations to OSGi R6 annotations. For instructions, see [here](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+* If you encounter the error below then you need to remove use of `maven-scr-plugin` and convert all OSGi annotations to OSGi R6 annotations. For instructions, see [here](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
    `[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]`
 
@@ -40,11 +40,11 @@ Some notes about the Performance Test step:
 
 ## Are we allowed to use SNAPSHOT in the version of the Maven project? How does versioning of the packages and bundle jar files work for stage and production deploys? {#snapshot-version}
 
-1. For dev deploys, the Git branch `pom.xml` files must contain -SNAPSHOT at the end of the `<version>` value. This allows subsequent deployment where the version does not change to still get installed. In dev deployments, no automatic version is added or generated for the mMven build.
+1. For dev deploys, the Git branch `pom.xml` files must contain `-SNAPSHOT` at the end of the `<version>` value. This allows subsequent deployment where the version does not change to still get installed. In dev deployments, no automatic version is added or generated for the maven build.
 
 1. In stage and production deployment, an automatic version is generated as documented [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code).
 
-1. For custom versioning in stage and production deploys, set a 3 part proper Maven version like `1.0.0`. Increase the version each time you have to do another deploy to production.
+1. For custom versioning in stage and production deploys, set a 3 part proper maven version like `1.0.0`. Increase the version each time you have to do another deploy to production.
 
 1. Cloud Manager automatically adds its version to Stage and Production builds and even creates a Git branch. No special configuration is required. If step 3 above is skipped, the deployment would still work fine and a version would automatically be set.
 
