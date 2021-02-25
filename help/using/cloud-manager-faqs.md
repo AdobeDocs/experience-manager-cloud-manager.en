@@ -9,9 +9,9 @@ seo-description: Follow this page to get answers on Cloud Manager FAQs
 
 The following section provides answers to few of the commonly asked FAQs related to Cloud Manager.
 
-## 1. Is it possible to use Java 11 with Cloud Manager builds? {java-11-cloud-manager}
+## 1. Is it possible to use Java 11 with Cloud Manager builds? {#java-11-cloud-manager}
 
-AEM Cloud Manager build fails when attempting to switch the build from Java 8 to  Java 11. The problem can have many causes and most common ones are documented below:
+AEM Cloud Manager build fails when attempting to switch the build from Java 8 to Java 11. The problem can have many causes and most common ones are documented below:
 
 * Add the maven-toolchains-plugin with the correct settings for Java 11 as documented [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started).  For example, see the [wknd sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -27,7 +27,7 @@ All Code Quality failures except for *Security Rating* are non-critical metrics,
 
 A user with [Deployment Manager, Project Manager, or Business Owner](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en#requirements) role can override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure.  See [Three-Tier Gates while Running a Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) for more details.
 
-## 3. Cloud Manager deployments fail at the performance test step in Adobe Managed Services environments. How do we debug this to pass the critical metrics? {debug-critical-metrics}
+## 3. Cloud Manager deployments fail at the performance test step in Adobe Managed Services environments. How do we debug this to pass the critical metrics? {#debug-critical-metrics}
 
 See [Understand your Test Results](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) to understand the results.
 
