@@ -138,34 +138,32 @@ And finally reference the server id inside the `pom.xml` file:
                     <name>env.CM_BUILD</name>
                 </property>
         </activation>
-        <build>
-            <repositories>
-                <repository>
-                    <id>myco-repository</id>
-                    <name>MyCo Releases</name>
-                    <url>https://repository.myco.com/maven2</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>myco-repository</id>
-                    <name>MyCo Releases</name>
-                    <url>https://repository.myco.com/maven2</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                </pluginRepository>
-            </pluginRepositories>
-        </build>
+        <repositories>
+            <repository>
+                <id>myco-repository</id>
+                <name>MyCo Releases</name>
+                <url>https://repository.myco.com/maven2</url>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+            </repository>
+        </repositories>
+        <pluginRepositories>
+            <pluginRepository>
+                <id>myco-repository</id>
+                <name>MyCo Releases</name>
+                <url>https://repository.myco.com/maven2</url>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+            </pluginRepository>
+        </pluginRepositories>
     </profile>
 </profiles>
 ```
