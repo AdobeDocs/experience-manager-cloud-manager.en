@@ -1,0 +1,37 @@
+---
+title: Release Notes for 2021.2.0
+seo-title: AEM Cloud Manager Release Notes for 2021.2.0
+description: Follow this page to get information for Cloud Manager Release 2021.2.0
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2021.2.0
+---
+# Release Notes for 2021.2.0 {#release-notes-for}
+
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2021.2.0.
+
+## Release Date {#release-date}
+
+The Release Date for [!UICONTROL Cloud Manager] Version 2021.2.0 is February 11, 2021.
+
+## What's New {#whats-new}
+
+* The AEM Project Archetype used in Project and Sandbox Creation has been updated to version 25. 
+
+* The list of deprecated APIs identified during code scanning has been refined to include additional classes and methods deprecated in the latest Cloud Service SDK releases.
+
+* Production deployments now deploy to the paired publish and dispatcher instances in parallel. 
+
+* SonarQube profile for Cloud Manager updated to remove Sonar rule `squid:S2142`. This will no longer conflict with thread interruption checks.
+
+* Properties set in customer `pom.xml` files prefixed with sonar will now be dynamically removed in order to avoid build and quality scanning failures.
+
+* Additional Code Quality Rules have been added to cover Cloud Service Compatibility issues.
+
+## Bug Fixes {#bug-fixes}
+
+* On occasion, the CI/CD (deployment) pipeline failed during a performance test step due to a container running the load test which encountered an error.
+
+* On occasion, load test container may report the run as failed even if only one exception happens. The failure will be reported only if the testing process cannot be restored.
+
+* Certain casing mismatches between the way environment names were stored would lead to performance testing failures.
+
+* Some pipeline failures were incorrectly reported as pipeline errors.
