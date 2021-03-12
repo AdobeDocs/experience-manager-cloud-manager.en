@@ -612,6 +612,8 @@ It has been a long-standing best practice that the /libs content tree in the AEM
 
 A common problem that occurs on complex projects is where the same OSGi component is configured multiple times. This creates an ambiguity as to which configuration will be operable. This rule is "runmode-aware" in that it will only identify issues where the same component is configured multiple times in the same runmode (or combination of runmodes).
 
+This rule will produce issues where the same configuration, at the same path, is defined in multiple packages, including cases where the same package is duplicated in the overall list of built packages. For example, if the build produces packages named `com.myco:com.myco.ui.apps` and `com.myco:com.myco.all` where `com.myco:com.myco.all` embeds `com.myco:com.myco.ui.apps`, then all of the configurations within `com.myco:com.myco.ui.apps` will be reported as duplicates. This is generally a case of not following the [Content Package Structure Guidelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target); in this specific example, the package `com.myco:com.myco.ui.apps` is missing the `<cloudManagerTarget>none</cloudManagerTarget>` property.
+
 #### Non Compliant Code {#non-compliant-code-osgi}
 
 ```
