@@ -28,7 +28,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2021.3.0 is March 11, 20
 
 * The **Version** label has been relabeled to **Git Tag** in the Production pipeline execution screen.
 
-* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior – **Cancel Immediately** and **Approve Immediately**.
+* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior – **Cancel Immediately** and **Approve Immediately**. Refer  to [Configuring the Pipeline Settings from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager) for more details.
 
 * The class and method deprecation lists have been updated based on version `2021.3.4997.20210303T022849Z-210225` of the AEM Cloud Service SDK.
 
