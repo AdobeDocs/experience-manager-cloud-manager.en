@@ -20,7 +20,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2021.3.0 is March 11, 20
    * Remove Sites (or Assets) from an existing program with both Sites and Assets.
    * Adding (back) a solution can be done to the existing program or as a new Program.
 
-* A new code quality tool has been introduced to validate customer dispatcher configuration (Dispatcher Optimization Tool).
+* A new code quality tool [Dispatcher Optimization Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules) has been introduced to validate customer dispatcher configuration.
 
 * Users can now see their Cloud Manager role(s) by selecting the **View Cloud Manager Role(s)** option after navigating to the User Profile icon (top right) of Unified Shell. 
 
@@ -28,7 +28,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2021.3.0 is March 11, 20
 
 * The **Version** label has been relabeled to **Git Tag** in the Production pipeline execution screen.
 
-* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior – *Cancel Immediately* and Approve *Immediately*.
+* The labels which define the behavior when important metrics do not meet the defined threshold have been relabeled to reflect their true behavior – **Cancel Immediately** and **Approve Immediately**.
 
 * The class and method deprecation lists have been updated based on version `2021.3.4997.20210303T022849Z-210225` of the AEM Cloud Service SDK.
 

@@ -79,8 +79,8 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    This is useful for customers who have the desire for more automated processes. The available options are:
 
 * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
-* **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-* **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+* **Cancel Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
+* **Approve Immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
   Now you define the parameters controlling the production deployment. The three available options are as follows:
 
@@ -98,7 +98,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
  >
  >Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
 
- ![](assets/configure-pipeline3.png)
+ ![](assets/configure-pipeline-new.png)
 
 >[!NOTE]
 >
