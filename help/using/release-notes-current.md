@@ -16,7 +16,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2021.3.0 is March 11, 20
 
 * Users with requisite permission can now edit program, allowing them to do the following in a self-service manner:
 
-   *Add Sites solution to an existing program with Assets (or vice-versa).
+   * Add Sites solution to an existing program with Assets (or vice-versa).
    * Remove Sites (or Assets) from an existing program with both Sites and Assets.
    * Adding (back) a solution can be done to the existing program or as a new Program.
 
