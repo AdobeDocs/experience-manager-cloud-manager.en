@@ -15,12 +15,6 @@ The next release is planned for April 08, 2021.
 
 ## What's New {#whats-new}
 
-* Users with requisite permissions can now edit program, allowing them to do the following in a self-service manner:
-
-   * Add Sites solution to an existing program with Assets (or vice-versa).
-   * Remove Sites (or Assets) from an existing program with both Sites and Assets.
-   * Adding (back) a solution can be done to the existing program or as a new Program.
-
 * A new code quality tool [Dispatcher Optimization Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules) has been introduced to validate customer dispatcher configuration.
 
 * Users can now see their Cloud Manager role(s) by selecting the **View Cloud Manager Role(s)** option after navigating to the User Profile icon (top right) of Unified Shell. 
