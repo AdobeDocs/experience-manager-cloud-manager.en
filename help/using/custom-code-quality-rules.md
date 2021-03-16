@@ -782,7 +782,7 @@ AEM client libraries may contain static resources like images and fonts. As desc
 
 **Type**: Code Smell
 
-**Severity**: Minor
+**Severity**: Blocker
 
 **Since**: Version 2021.2.0
 
