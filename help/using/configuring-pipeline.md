@@ -98,7 +98,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
  >
  >Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
 
- ![](assets/setup-pipeline-new.png)
+ ![](assets/configure-pipeline-new.png)
 
 >[!NOTE]
 >
