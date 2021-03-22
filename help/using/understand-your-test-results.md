@@ -166,7 +166,7 @@ Cloud Manager executes performance testing for AEM Sites programs. The performan
 
        * Each of the 3000 pages in the New Pages set will be hit once - ((200 * 0.5) / 3000) * 30 = 1
  
-### Testing and Reporting {#testing-reporting}
+#### Testing and Reporting {#testing-reporting}
 
 Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user by default) on the stage publish server for a 30 minute test period and measuring the (virtual) user-generated metrics (response time, error rate, views per minute, etc.) for each page as well as various system-level metrics (CPU, memory, networking data) for all instances.  
 The following table summarizes the performance test metrics vis-a-vis using the three-tier gating system:
@@ -225,10 +225,10 @@ Cloud Manager executes performance testing for AEM Assets programs by uploading 
 
 1. **Testing and Reporting**
 
-   Cloud Manager will create a folder on Author instance, using the username and password setup by the CSE from step #1 (Onbbrading Requirements) as mentioned above and upload assets in the folder using a library that is opensource. The tests run by the Assets testing step are written using this open source library - https://github.com/adobe/toughday2. Both processing time for each asset as well as various system-level metrics are measured across the 30-minute testing duration. This capability can upload both images and PDF documents.
+   Cloud Manager will create a folder on Author instance, using the username and password setup by the CSE from step #1 (Onboarding Requirements) as mentioned above and upload assets in the folder using a library that is open source. The tests run by the Assets testing step are written using this [open source library](https://github.com/adobe/toughday2). Both processing time for each asset as well as various system-level metrics are measured across the 30-minute testing duration. This capability can upload both images and PDF documents.
 
    >[!NOTE]
-   >You can learn more about configuring performance testing, from [Configure your CI/CD Pipeline](configuring-pipeline.md). Refer to [Setup your Program](setting-up-program.md) to learn how to setup your program and define your KPIs, see .
+   >You can learn more about configuring performance testing, from [Configure your CI/CD Pipeline](configuring-pipeline.md). Refer to [Setup your Program](setting-up-program.md) to learn how to setup your program and define your KPIs.
 
 ### Performance Testing Results Graphs {#performance-testing-results-graphs}
 
