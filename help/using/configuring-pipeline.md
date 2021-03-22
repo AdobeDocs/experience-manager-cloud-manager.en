@@ -93,7 +93,6 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 * **Scheduled** - This option allows the user to enable the scheduled production deployment.
 
  >[!NOTE]
- >
  >If **Scheduled** option is selected, you can schedule your production deployment to the pipeline **after** the stage deployment (and **Use GoLive Approval**, if that has been enabled) to wait for a schedule to be set. The user can also choose to execute the production deployment immediately.
  >
  >Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
@@ -146,63 +145,18 @@ Follow the steps below to configure Dispatcher Invalidations:
    Click **Save** to persist this configuration.
 
    ![](assets/image2018-8-7_15-4-30.png)
-
     
-1. Access the **Testing** tab to define your testing criteria for your program.
+1. Access the **Testing** tab to define your testing criteria for your program. You can now configure the performance test parameters.
 
-   Now, you can configure the performance test parameters.
-
-   You can configure *AEM Sites* and *AEM Assets* Performance Testing, depending on which products you have licensed.
-
-   **AEM Sites:**
-
-   Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user by default) on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics. These requests are made from a set of known, dedicated addresses. The address ranges can be obtained from your Customer Success Engineer or Adobe representative.
-   
-   Prior to the start of the 30 minute test period, Cloud Manager will crawl the Stage environment using a set of one or more *seed* URLs configured by the Customer Success Engineer. Starting from these URLs, the HTML of each page is inspected and links are traversed in a breadth-first fashion. This crawling process is limited to a maximum of 5000 pages. Requests from the crawler have a fixed timeout of 10 seconds.
-   
-   Pages are selected by three **page sets**; you can choose anywhere from one to all three sets. The distribution of traffic is based on the number of sets selected, that is, if all three are selected, 33% of the total page views are put toward each set; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
-
-   For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
-
-   * Each of the 25 pages in the Popular Live Pages set will be hit 120 times – ((200 * 0.5) / 25) * 30 = 120
-
-   * Each of the 3000 pages in the New Pages set will be hit once - ((200 * 0.5) / 3000) * 30 = 1
-
-   ![](assets/Configuring_Pipeline_AEM-Sites.png)
-
-   Refer to [Authenticated Performance Testing](#authenticated-performance-testing) for more details.
-
-   **AEM Assets:**
-
-   Cloud Manager executes performance testing for AEM Assets programs by uploading assets repeatedly for a 30 minute test period and measuring the processing time for each asset as well as various system-level metrics. This capability can upload both images and PDF documents. The distribution of how many assets of each type are uploaded per minute is set in the Pipeline Setup or Edit screen.
-
-   For example, if a 70/30 split is used, as seen in the figure below. There are 10 assets uploaded per minute, 7 images will be uploaded per minute and 3 documents.
-
-   ![](assets/Configuring_Pipeline_AEM-Assets.png)
-
-   >[!NOTE]
-   >
-   >There is a default image and PDF document, but in most cases, customers will want to upload their own assets. This can be done from the Pipeline Setup or Edit screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files.
+   You can configure *AEM Sites* and *AEM Assets* Performance Testing, depending on which products you have licensed. Refer to [Performance Testing](understand-your-test-results.md#performance-testing) for more details.
 
 1. Click **Save** to complete the setup of pipeline process.
 
    >[!NOTE]
-   >
    >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Production Pipeline Settings** tile from the [!UICONTROL Cloud Manager] UI.
 
    ![](assets/Production-Pipeline.png)
 
-### Authenticated Performance Testing {#authenticated-performance-testing}
-
-AMS customers with authenticated sites can specify a username and password which Cloud Manager will use to access the website during Sites Performance Testing.
-
-The username and password are specified as [Pipeline Variables](/help/using/build-environment-details.md#pipeline-variables) with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`. 
-
-Although not strictly required, it is recommended to use the string variable type for the username and the secretString variable type for the password. If both of these are specified, every request from the performance test crawler and the test virtual users will contain these credentials as HTTP Basic authentication.
-
-To set these variables using the [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager), run:
-
-`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## Non-Production & Code Quality Only Pipelines
 
