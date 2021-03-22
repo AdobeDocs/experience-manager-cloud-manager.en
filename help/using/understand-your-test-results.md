@@ -134,13 +134,13 @@ The following table lists the current checks:
 
 ## Performance Testing {#performance-testing}
 
-### AEM Sites {aem-sites}
+### AEM Sites {#aem-sites}
 
 Cloud Manager executes performance testing for AEM Sites programs. The performance test is run for ~ 30 mins by spinning up virtual users (containers) that simulate actual users to access pages on Stage environment and simulate traffic. These pages are found using a crawler.
 
 1. **Virtual Users**
 
-   The number of virtual users (containers) that are spun up by Cloud Manager are driven by the KPI's (response time and pageviews/min) defined by the user in the Business Owner role while creating or editing the program (Insert link to documentation here). Based on KPIs defined, up to 10 containers that simulate actual users will be spun up. The pages that are selected for testing are split and assigned to each virtual.
+   The number of virtual users or containers that are spun up by Cloud Manager are driven by the KPI's (response time and pageviews/min) defined by the user in the Business Owner role while [creating or editing the program](setting-up-program.md). Based on KPIs defined, up to 10 containers that simulate actual users will be spun up. The pages that are selected for testing are split and assigned to each virtual.
 
 1. **Crawler**
 
@@ -150,11 +150,11 @@ Cloud Manager executes performance testing for AEM Sites programs. The performan
 
    Pages are selected by three page sets. Cloud Manager uses the access logs from the AEM instances across Production and Stage to determine the following three buckets: 
 
-   * Popular Live Pages: This option is selected to make sure that the most popular pages accessed by live customers are tested. Cloud Manager will read the access log and determine the top 25 most-accessed pages by live customers to generate a list of top `Popular Live Pages`. The intersection of these that are also present in Stage are then crawled on Stage environment. 
+   * *Popular Live Pages*: This option is selected to make sure that the most popular pages accessed by live customers are tested. Cloud Manager will read the access log and determine the top 25 most-accessed pages by live customers to generate a list of top `Popular Live Pages`. The intersection of these that are also present in Stage are then crawled on Stage environment. 
 
-   * Other Live Pages: This option is selected to make sure that the pages that fall outside the top 25 popular live pages that may not be popular, but important to test are tested. Similar to Popular live pages, these are extracted from the access log and must also be present on Stage.
+   * *Other Live Pages*: This option is selected to make sure that the pages that fall outside the top 25 popular live pages that may not be popular, but important to test are tested. Similar to Popular live pages, these are extracted from the access log and must also be present on Stage.
 
-   * New Pages: This option is selected to test new pages that may have only been deployed to Stage and not yet to Production, but are must be tested. 
+   * *New Pages*: This option is selected to test new pages that may have only been deployed to Stage and not yet to Production, but are must be tested. 
 
      **Distribution of traffic across page sets selected**
 
@@ -185,7 +185,7 @@ The following table summarizes the performance test matrix using the three-tier 
 | Network Bandwidth Utilization |Important |>= 90% |
 | Requests Per Minute |Info |>= 6000 |
 
-Refer to [Authenticated Performance Testing] for more details on using basic authentication for performance testing for Sites and Assets.
+Refer to the section below, **Authenticated Performance Testing** for more details on using basic authentication for performance testing for Sites and Assets.
 
 >[!NOTE]
 >Each instance is monitored during the period of the test, for both Publish and Author. If any metric for even one instance is not obtained, that metric is reported as unknown and the corresponding step will fail.
