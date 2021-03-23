@@ -3,6 +3,7 @@ title: Monitor your Environments
 seo-title: Monitor your Environments
 description: Learn how to monitor your environments in Cloud Manager
 seo-description: Follow this page to learn about System Monitoring in Cloud Manager that is done by observing the individual instances within an environment and tracking a variety of metrics for each instance.
+feature: Environments
 ---
 
 # System Monitoring {#system-monitoring}

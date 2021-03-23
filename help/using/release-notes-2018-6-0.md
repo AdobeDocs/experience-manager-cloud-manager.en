@@ -1,13 +1,14 @@
 ---
 title: Release Notes for 2018.6.0
 seo-title: AEM Cloud Manager Release Notes for 2018.6.0
-description: ollow this page to get information for Cloud Manager Release 2018.6.0.
+description: Follow this page to get information for Cloud Manager Release 2018.6.0.
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2018.6.0.
 uuid: 211b6e1b-10fb-46b0-b591-44d5e44abd77
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
+feature: Release Information
 ---
 
 # Release Notes for 2018.6.0 {#release-notes-for}

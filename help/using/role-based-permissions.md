@@ -5,6 +5,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
+feature: User Roles
 ---
 
 # Role Based Permissions {#role-based-permissions}

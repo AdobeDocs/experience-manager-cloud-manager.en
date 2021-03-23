@@ -8,6 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
+feature: Getting Started
+level: Beginner
 ---
 
 # Customer Journey {#customer-journey}

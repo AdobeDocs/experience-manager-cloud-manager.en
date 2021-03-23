@@ -3,7 +3,7 @@ title: Accessing Git
 seo-title: Accessing Git
 description: This page describes how you can access and manage Git repository.
 seo-description: Follow this page to learn how to access and manage your Git repository.
-
+feature: Git Repositories
 ---
 
 # Accessing Git {#accessing-git}

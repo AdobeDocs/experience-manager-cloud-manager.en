@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
-
+feature: Dispatcher
 ---
 
 # Manage your Dispatcher Configurations {#manage-your-dispatcher-configurations}

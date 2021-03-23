@@ -8,6 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
+feature: Getting Started
+level: Beginner
 ---
 
 # Introduction to [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager}

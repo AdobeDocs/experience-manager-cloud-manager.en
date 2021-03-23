@@ -1,9 +1,9 @@
 ---
 title: Release Notes for 2021.3.0
-seo-title: AEM Cloud Manager Release Notes for 2021.3.0
 description: Follow this page to get information for Cloud Manager Release 2021.3.0
-seo-description: Follow this page to get information for AEM Cloud Manager Release 2021.3.0
+feature: Release Information
 ---
+
 # Release Notes for 2021.3.0 {#release-notes-for}
 
 The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2021.3.0.
