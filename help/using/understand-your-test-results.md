@@ -106,28 +106,30 @@ Then the correct solution is to remove the hardcoded password.
 
 [!UICONTROL Cloud Manager] runs the existing ***AEM Security Heath Checks*** on stage following the deployment and reports the status through the UI. The results are aggregated from all AEM instances in the environment.
 
+These same Health Checks can be executed at any time through the Web Console or the Operations Dashboard.
+
 If any of the **Instances** report a failure for a given health check, the entire **Environment** fails that health check. As with Code Quality and Performance Testing, these health checks are organized into categories and reported using the three-tier gating system. The only distinction is that there is no threshold in the case of security testing. All the health checks are simply pass or fail.
 
 The following table lists the current checks:
 
 | **Name** | **Health Check Implementation** |**Category** |
 |---|---|---|
-| Deserialization firewall Attach API Readiness is in an acceptable state | Deserialization Firewall Attach API Readiness |Critical |
-| Deserialization firewall is functional | Deserialization Firewall Functional |Critical |
-| Deserialization firewall is loaded | Deserialization Firewall Loaded |Critical |
-| AuthorizableNodeName implementation does not expose authorizable ID in the node name/path. | Authorizable Node Name Generation |Critical |
-| Default passwords have been changed | Default Login Accounts |Critical |
+| Deserialization firewall Attach API Readiness is in an acceptable state | [Deserialization Firewall Attach API Readiness](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) |Critical |
+| Deserialization firewall is functional | [Deserialization Firewall Functional](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) |Critical |
+| Deserialization firewall is loaded | [Deserialization Firewall Loaded](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) |Critical |
+| AuthorizableNodeName implementation does not expose authorizable ID in the node name/path. | [Authorizable Node Name Generation](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=en#security) |Critical |
+| Default passwords have been changed | [Default Login Accounts](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=en#users-and-groups-in-aem) |Critical |
 | Sling default GET servlet is protected from DOS attacks. | Sling Get Servlet |Critical |
 | The Sling Java Script Handler is configured appropriately | Sling Java Script Handler |Critical |
 | The Sling JSP Script Handler is configured appropriately | Sling JSP Script Handler |Critical |
 | SSL is configured correctly | SSL Configuration |Critical |
 | No obviously insecure user profile policies found | User Profile Default Access |Critical |
-| The Sling Referrer Filter is configured in order to prevent CSRF attacks | Sling Referrer Filter |Important |
+| The Sling Referrer Filter is configured in order to prevent CSRF attacks | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en#security) |Important |
 | The Adobe Granite HTML Library Manager is configured appropriately | CQ HTML Library Manager Config |Important |
 | CRXDE Support bundle is disabled | CRXDE Support |Important |
 | Sling DavEx bundle and servlet are disabled | DavEx Health Check |Important |
 | Sample content is not installed | Example Content Packages |Important |
-| Both the WCM Request Filter and the WCM Debug Filter are disabled | WCM Filters Configuration |Important |
+| Both the WCM Request Filter and the WCM Debug Filter are disabled | [WCM Filters Configuration](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=en#configuring) |Important |
 | Sling WebDAV bundle and servlet are configured appropriately | WebDAV Health Check |Important |
 | The web server is configured to prevent clickjacking | Web Server Configuration |Important |
 | Replication is not using the 'admin' user | Replication and Transport Users |Info |
