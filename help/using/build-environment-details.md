@@ -1,6 +1,7 @@
 ---
 title: Understanding the Build Environment
 description: Follow this page to learn about environments
+feature: Environments
 ---
 
 # Understanding the Build Environment {#build-environment-details}

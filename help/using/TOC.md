@@ -5,6 +5,8 @@ archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Guide
 breadcrumb-title: Cloud Manager Guide
 user-guide-description: Learn to use Adobe Managed Services to self-manage Experience Manager in the cloud.
+role: Administrator
+level: Intermediate
 ---
 
 # Cloud Manager Guide {#using}

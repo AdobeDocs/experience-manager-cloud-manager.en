@@ -1,6 +1,7 @@
 ---
 title: Using the Wizard
 description: Follow this page to learn how to use the wizard to create an AEM Application Project
+feature: Getting Started
 ---
 
 # Using the Wizard {#using-wizard-to-create-an-aem-application-project}

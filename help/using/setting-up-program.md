@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
 
+feature: Getting Started
 ---
 
 # Setup your Program {#setup-your-program}

@@ -3,6 +3,7 @@ title: Maven Project Version Handling
 seo-title: Maven Project Version Handling
 description: Learn more about Maven Project Version Handling.
 seo-description: Follow this page to learn more about Maven Project Version Handling.
+feature: Getting Started
 ---
 
 # Maven Project Version Handling {#project-version}

@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
 
+feature: Git Repositories
 ---
 
 # Configure your Release Branches {#configure-your-release-branches}

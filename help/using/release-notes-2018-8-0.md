@@ -8,6 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
+feature: Release Information
 ---
 
 # Release Notes for 2018.8.0 {#release-notes-for}

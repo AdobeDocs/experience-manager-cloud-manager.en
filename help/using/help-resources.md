@@ -8,6 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: e35be81f-cfe5-4f14-b9c8-59235a7ef22c
+feature: Getting Started
 ---
 
 # Help Resources {#help-resources}

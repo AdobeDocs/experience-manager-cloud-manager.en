@@ -3,6 +3,7 @@ title: Cloud Manager FAQs
 seo-title: Cloud Manager FAQs
 description: Refer to Cloud Manager FAQs to get some troubleshooting tips
 seo-description: Follow this page to get answers on Cloud Manager FAQs
+feature: Getting Started
 ---
 
 # Cloud Manager FAQs {#cloud-manager-faqs}

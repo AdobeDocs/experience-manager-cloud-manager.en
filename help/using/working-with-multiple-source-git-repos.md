@@ -1,6 +1,7 @@
 ---
 title: Working with Multiple Source Git Repositories
 description: Working with Multiple Source Git Repositories - Cloud Manager
+feature: Git Repositories
 ---
 
 # Working with Multiple Source Git Repositories {#working-with-multiple-source-git-repos} 
