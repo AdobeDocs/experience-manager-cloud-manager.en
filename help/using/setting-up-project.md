@@ -1,7 +1,7 @@
 ---
 title: Setting up the Project
 description: Follow this page to learn how to set up a Project
-feature: "Getting Started, Production"
+feature: Getting Started, Production
 ---
 
 # Setting up your Project {#setting-up-your-project}
