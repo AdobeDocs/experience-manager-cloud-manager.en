@@ -783,7 +783,7 @@ AEM client libraries may contain static resources like images and fonts. As desc
 
 **Type**: Code Smell
 
-**Severity**: Minor
+**Severity**: Blocker
 
 **Since**: Version 2021.2.0
 
@@ -921,6 +921,43 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 
 AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named reindex. Indexing using this property must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
 
+## Dispatcher Optimization Tool {#dispatcher-optimization-tool-rules}
 
+The following section highlights the DOT checks executed by Cloud Manager:
 
+* [DOT - Parsing Violation - Dispatcher Configuration Unexpected Tokens](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Unmatched Quote](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Missing Brace](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Extra Brace](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Missing Mandatory Property](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Deprecated Property](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Not Found](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
+
+* [DOT - Parsing Violation - Httpd Configuration Include file not found](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+
+* [DOT - Parsing Violation - Dispatcher Configuration General](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
+
+* [DOT - The Dispatcher publish farm cache should have serveStaleOnError enabled](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+
+* [DOT - The Dispatcher publish farm filters should contain the default deny rules from the 6.x.x version of the AEM archetype](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+
+* [DOT - The Dispatcher publish farm cache statfileslevel property should be >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+
+* [DOT - The Dispatcher publish farm gracePeriod property should be >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+
+* [DOT - Each Dispatcher farm should have a unique name](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+
+* [DOT - The Dispatcher publish farm cache should have its ignoreUrlParams rules configured in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+
+* [DOT - The Dispatcher publish farm filters should specify the allowed Sling selectors in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+
+* [DOT - The Dispatcher publish farm filters should specify the allowed Sling suffix patterns in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+
+* [DOT - The 'Require all granted' directive should not be used in a VirtualHost Directory section with a root directory-path](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
 

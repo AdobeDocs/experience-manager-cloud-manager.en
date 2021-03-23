@@ -41,10 +41,10 @@ This step evaluates the quality of your application code. It is the core objecti
 
 ### Understanding Code Quality Testing {#understanding-code-quality-testing}
 
-In Code Quality Testing, the source code is scanned to ensure that it meets certain quality criteria. Currently, this is implemented by a combination of SonarQube and content package-level examination using OakPAL. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
+In Code Quality Testing, the source code is scanned to ensure that it meets certain quality criteria. Currently, this is implemented by a combination of SonarQube, content package-level examination using OakPAL, and dispatcher validation using the Dispatcher Optimization Tool. There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
 
 >[!NOTE]
->You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx).
+>You can download the complete list of rules [here](/help/using/assets/CodeQuality-rules-AMS.xlsx).
 
 The results of this step is delivered as *Rating*. The table below summarizes the ratings for various test criteria:
 
@@ -106,43 +106,72 @@ Then the correct solution is to remove the hardcoded password.
 
 [!UICONTROL Cloud Manager] runs the existing ***AEM Security Heath Checks*** on stage following the deployment and reports the status through the UI. The results are aggregated from all AEM instances in the environment.
 
+These same Health Checks can be executed at any time through the Web Console or the Operations Dashboard.
+
 If any of the **Instances** report a failure for a given health check, the entire **Environment** fails that health check. As with Code Quality and Performance Testing, these health checks are organized into categories and reported using the three-tier gating system. The only distinction is that there is no threshold in the case of security testing. All the health checks are simply pass or fail.
 
 The following table lists the current checks:
 
 | **Name** | **Health Check Implementation** |**Category** |
 |---|---|---|
-| Deserialization firewall Attach API Readiness is in an acceptable state | Deserialization Firewall Attach API Readiness |Critical |
-| Deserialization firewall is functional | Deserialization Firewall Functional |Critical |
-| Deserialization firewall is loaded | Deserialization Firewall Loaded |Critical |
-| AuthorizableNodeName implementation does not expose authorizable ID in the node name/path. | Authorizable Node Name Generation |Critical |
-| Default passwords have been changed | Default Login Accounts |Critical |
+| Deserialization firewall Attach API Readiness is in an acceptable state | [Deserialization Firewall Attach API Readiness](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) |Critical |
+| Deserialization firewall is functional | [Deserialization Firewall Functional](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) |Critical |
+| Deserialization firewall is loaded | [Deserialization Firewall Loaded](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) |Critical |
+| AuthorizableNodeName implementation does not expose authorizable ID in the node name/path. | [Authorizable Node Name Generation](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=en#security) |Critical |
+| Default passwords have been changed | [Default Login Accounts](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=en#users-and-groups-in-aem) |Critical |
 | Sling default GET servlet is protected from DOS attacks. | Sling Get Servlet |Critical |
 | The Sling Java Script Handler is configured appropriately | Sling Java Script Handler |Critical |
 | The Sling JSP Script Handler is configured appropriately | Sling JSP Script Handler |Critical |
 | SSL is configured correctly | SSL Configuration |Critical |
 | No obviously insecure user profile policies found | User Profile Default Access |Critical |
-| The Sling Referrer Filter is configured in order to prevent CSRF attacks | Sling Referrer Filter |Important |
+| The Sling Referrer Filter is configured in order to prevent CSRF attacks | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en#security) |Important |
 | The Adobe Granite HTML Library Manager is configured appropriately | CQ HTML Library Manager Config |Important |
 | CRXDE Support bundle is disabled | CRXDE Support |Important |
 | Sling DavEx bundle and servlet are disabled | DavEx Health Check |Important |
 | Sample content is not installed | Example Content Packages |Important |
-| Both the WCM Request Filter and the WCM Debug Filter are disabled | WCM Filters Configuration |Important |
+| Both the WCM Request Filter and the WCM Debug Filter are disabled | [WCM Filters Configuration](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=en#configuring) |Important |
 | Sling WebDAV bundle and servlet are configured appropriately | WebDAV Health Check |Important |
 | The web server is configured to prevent clickjacking | Web Server Configuration |Important |
 | Replication is not using the 'admin' user | Replication and Transport Users |Info |
 
 ## Performance Testing {#performance-testing}
 
-*Performance testing* in [!UICONTROL Cloud Manager] is implemented using a 30 minute test.
+### AEM Sites {#aem-sites}
 
-During pipeline setup, the deployment manager can decide how much traffic to direct to each bucket.
+Cloud Manager executes performance testing for AEM Sites programs. The performance test is run for ~ 30 mins by spinning up virtual users (containers) that simulate actual users to access pages on Stage environment and simulate traffic. These pages are found using a crawler.
 
-You can learn more about bucket controls, from [Configure your CI/CD Pipeline](configuring-pipeline.md).
+1. **Virtual Users**
 
->[!NOTE]
->
->To setup your program and define your KPIs, see [Setup your Program](setting-up-program.md).
+   The number of virtual users or containers that are spun up by Cloud Manager are driven by the KPI's (response time and pageviews/min) defined by the user in the Business Owner role while [creating or editing the program](setting-up-program.md). Based on KPIs defined, up to 10 containers that simulate actual users will be spun up. The pages that are selected for testing are split and assigned to each virtual.
+
+1. **Crawler**
+
+   Prior to the start of the 30 minute test period, Cloud Manager will crawl the Stage environment using a set of one or more seed URLs configured by the Customer Success Engineer. Starting from these URLs, the HTML of each page is inspected and links are traversed in a breadth-first fashion. This crawling process is limited to a maximum of 5000 pages. Requests from the crawler have a fixed timeout of 10 seconds.
+
+1. **Page Sets for Testing**
+
+   Pages are selected by three page sets. Cloud Manager uses the access logs from the AEM instances across Production and Stage to determine the following three buckets: 
+
+   * *Popular Live Pages*: This option is selected to make sure that the most popular pages accessed by live customers are tested. Cloud Manager will read the access log and determine the top 25 most-accessed pages by live customers to generate a list of top `Popular Live Pages`. The intersection of these that are also present in Stage are then crawled on Stage environment. 
+
+   * *Other Live Pages*: This option is selected to make sure that the pages that fall outside the top 25 popular live pages that may not be popular, but important to test are tested. Similar to Popular live pages, these are extracted from the access log and must also be present on Stage.
+
+   * *New Pages*: This option is selected to test new pages that may have only been deployed to Stage and not yet to Production, but are must be tested. 
+
+     **Distribution of traffic across page sets selected**
+
+      You can choose anywhere from one to all three sets in the 'Testing' tab of your pipeline configuration (Insert link). The distribution of traffic is based on the number of sets selected, that is, if all three are selected, 33% of the total page views are put toward each set; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
+
+      For example, let us say that there is a 50% - 50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
+
+       * Each of the 25 pages in the Popular Live Pages set will be hit 120 times – ((200 * 0.5) / 25) * 30 = 120
+
+       * Each of the 3000 pages in the New Pages set will be hit once - ((200 * 0.5) / 3000) * 30 = 1
+ 
+#### Testing and Reporting {#testing-reporting}
+
+Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user by default) on the stage publish server for a 30 minute test period and measuring the (virtual) user-generated metrics (response time, error rate, views per minute, etc.) for each page as well as various system-level metrics (CPU, memory, networking data) for all instances.  
+The following table summarizes the performance test metrics vis-a-vis using the three-tier gating system:
 
 The following table summarizes the performance test matrix using the three-tier gating system:
 
@@ -157,6 +186,51 @@ The following table summarizes the performance test matrix using the three-tier 
 | Disk Bandwidth Utilization |Important |>= 90% |
 | Network Bandwidth Utilization |Important |>= 90% |
 | Requests Per Minute |Info |>= 6000 |
+
+Refer to the section below, **Authenticated Performance Testing** for more details on using basic authentication for performance testing for Sites and Assets.
+
+>[!NOTE]
+>Each instance is monitored during the period of the test, for both Publish and Author. If any metric for even one instance is not obtained, that metric is reported as unknown and the corresponding step will fail.
+
+#### Authenticated Performance Testing {#authenticated-performance-testing}
+
+This feature is Sites optional.
+AMS customers with authenticated sites can specify a username and password which Cloud Manager will use to access the website during Sites Performance Testing.
+The username and password are specified as Pipeline Variables with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`.
+Although not strictly required, it is recommended to use the string variable type for the username and the secretString variable type for the password. If both of these are specified, every request from the performance test crawler and the test virtual users will contain these credentials as HTTP Basic authentication.
+
+To set these variables using the Cloud Manager CLI, run:
+
+```shell
+
+$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
+```
+
+Refer to [Variables](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchPipelineVariables) to learn how to use the API. 
+
+### AEM Assets {#aem-assets}
+
+Cloud Manager executes performance testing for AEM Assets programs by uploading assets repeatedly for a 30 minute test period. 
+
+1. **Onboarding Requirement**
+
+   For Assets performance testing, your Customer Success Engineer will create a `cloudmanager` user (and password) during the onboarding of the Author to Stage environment. The performance test steps will need the user called `cloudmanager` and the associated password set up by your CSE. This should neither be removed from the Author nor changed wrt to permissions. Doing so will likely fail the Assets performance testing.
+
+1. **Images and Assets for Testing**
+
+   Customers can  upload their own assets for testing. This can be done from the Pipeline Setup or Edit screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files. However, if no images are uploaded, Cloud Manager will use a default image and PDF document for testing.
+
+1. **Distribution of Assets for Testing**
+
+   The distribution of how many assets of each type are uploaded per minute is set in the Pipeline Setup or Edit screen.
+   For example, if a 70/30 split is used, as seen in the figure below. There are 10 assets uploaded per minute, 7 images will be uploaded per minute and 3 documents.
+
+1. **Testing and Reporting**
+
+   Cloud Manager will create a folder on Author instance, using the username and password setup by the CSE from step #1 (Onboarding Requirements) as mentioned above and upload assets in the folder using a library that is open source. The tests run by the Assets testing step are written using this [open source library](https://github.com/adobe/toughday2). Both processing time for each asset as well as various system-level metrics are measured across the 30-minute testing duration. This capability can upload both images and PDF documents.
+
+   >[!NOTE]
+   >You can learn more about configuring performance testing, from [Configure your CI/CD Pipeline](configuring-pipeline.md). Refer to [Setup your Program](setting-up-program.md) to learn how to setup your program and define your KPIs.
 
 ### Performance Testing Results Graphs {#performance-testing-results-graphs}
 
