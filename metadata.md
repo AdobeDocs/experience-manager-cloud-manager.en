@@ -1,7 +1,7 @@
 ---
 solution: Experience Manager
 type: Documentation
-cloud: experience-cloud
+cloud: Experience Cloud
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
 ---
 
