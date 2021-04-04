@@ -4,8 +4,8 @@ description: A video series that walks through the set up and integration of a c
 seo-title:  Git Integration with Adobe Cloud Manager
 seo-description: A video series that walks through the set up and integration of a customer-managed (on-premise) git repository with Adobe Cloud Manager.
 feature: Git Repositories
+exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 ---
-
 # Git Integration with Adobe Cloud Manager
 
 Adobe Cloud Manager comes provisioned with a single git repository that is used to deploy code using Cloud Manager's CI/CD pipelines. Customers can use the Cloud Manager's git repository out of the box. Customers also have the option of integrating an on-premise or **customer-managed** git repository with Cloud Manager.

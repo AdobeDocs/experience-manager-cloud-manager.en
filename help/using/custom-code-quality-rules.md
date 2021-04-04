@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: Code Quality Rules
+exl-id: 7d118225-5826-434e-8869-01ee186e0754
 ---
-
 # Custom Code Quality Rules {#custom-code-quality-rules}
 
 This page describes the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
@@ -960,4 +960,3 @@ The following section highlights the DOT checks executed by Cloud Manager:
 * [DOT - The Dispatcher publish farm filters should specify the allowed Sling suffix patterns in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
 * [DOT - The 'Require all granted' directive should not be used in a VirtualHost Directory section with a root directory-path](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
-

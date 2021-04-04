@@ -10,8 +10,8 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
+exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 ---
-
 # Configure your CI/CD Pipeline {#configure-your-ci-cd-pipeline}
 
 The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](ci-cd-pipeline.md).

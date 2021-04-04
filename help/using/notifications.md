@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
 feature: Getting Started
+exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 ---
-
 # Notifications {#notifications}
 
 [!UICONTROL Cloud Manager] allows the user to receive notifications when the production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment, as well as when the **Go-Live Approval** and **Scheduled** steps are reached. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.

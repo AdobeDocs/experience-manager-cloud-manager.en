@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 feature: Getting Started
+exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 ---
-
 # Security and Privacy {#security-and-privacy}
 
 [!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. This section highlights the security and privacy of your assets (code/artifacts) using AEM Cloud Manager. Additionally, [!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. 

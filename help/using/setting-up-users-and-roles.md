@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
 feature: User Roles
+exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 ---
-
 # Add Users and Roles {#add-users-and-roles}
 
 Many features in [!UICONTROL Cloud Manager] require specific permissions to operate. For example, only certain users are allowed to set the Key Performance Indicators (KPIs) for a program. These permissions are logically grouped into roles.
@@ -92,4 +92,3 @@ You can create, or add, users/groups to these Product Profiles with the [Admin C
    ![](assets/image2018-4-9_15-19-26.png)
    
    ![](assets/image2018-4-9_15-16-47.png)
-

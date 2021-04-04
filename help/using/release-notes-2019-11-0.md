@@ -4,6 +4,7 @@ seo-title: AEM Cloud Manager Release Notes for 2019.11.0
 description: Follow this page to get information for Cloud Manager Release 2019.11.0.
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.11.0.
 feature: Release Information
+exl-id: 04563c9c-189c-4374-a4ba-3907d0061be5
 ---
 # Release Notes for 2019.11.0 {#release-notes-for}
 

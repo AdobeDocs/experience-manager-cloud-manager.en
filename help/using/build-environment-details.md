@@ -2,8 +2,8 @@
 title: Understanding the Build Environment
 description: Follow this page to learn about environments
 feature: Environments
+exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 ---
-
 # Understanding the Build Environment {#build-environment-details}
 
 Cloud Manager builds and tests your code using a specialized build environment. This environment has the following attributes:

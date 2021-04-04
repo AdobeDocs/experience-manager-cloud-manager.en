@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 7d32ba78-4ded-4656-aac2-c3e7cc0518de
 feature: Environments, Provisioning
+exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
 ---
-
 # Environments Provisioned {#environments-provisioned}
 
 ## Provisioning {#provisioning}

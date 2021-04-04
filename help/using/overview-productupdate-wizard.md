@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 feature: Getting Started
+exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 ---
-
 # Overview {#overview-product-update-wizard}
 
 The Product Update wizard is a guided, step-by-step experience for Cloud Manager customers who are upgrading to the latest Adobe Experience Manager (AEM) 6.5. It streamlines the end-to-end process, ensures adherence to AEM best practices using Cloud Manager’s CI/CD framework and built-in automated testing.

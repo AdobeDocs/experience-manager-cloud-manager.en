@@ -8,8 +8,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 072dbc1b-e608-4b1f-b0e8-0e4f88c8ad12
 feature: Getting Started
+exl-id: 9e51936c-9727-4b9c-a86a-2ea3aabd42cf
 ---
-
 # Access Rights Granted {#access-rights-granted}
 
 ## User Identity Types {#user-identity-types}

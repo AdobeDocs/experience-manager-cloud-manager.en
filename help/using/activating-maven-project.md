@@ -4,8 +4,8 @@ seo-title: Maven Project Version Handling
 description: Learn more about Maven Project Version Handling.
 seo-description: Follow this page to learn more about Maven Project Version Handling.
 feature: Getting Started
+exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
 ---
-
 # Maven Project Version Handling {#project-version}
 
 ## Understanding Maven Project Version Handling {#understanding-project-version}

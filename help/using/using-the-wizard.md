@@ -2,8 +2,8 @@
 title: Using the Wizard
 description: Follow this page to learn how to use the wizard to create an AEM Application Project
 feature: Getting Started
+exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 ---
-
 # Using the Wizard {#using-wizard-to-create-an-aem-application-project}
 
 When customers are on-boarded to Cloud Manager, they are provided with an empty git repository. Current Adobe Managed Services (AMS) customers (or on-premise AEM customers who are migrating to AMS) will generally already have their project code in git (or another version control system) and will import their project into the Cloud Manager git repository. New customers, however, do not have existing projects.

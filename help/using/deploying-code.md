@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
+exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 ---
-
 # Deploy your Code {#deploy-your-code}
 
 ## Deploying Code with Cloud Manager {#deploying-code-with-cloud-manager}
@@ -142,5 +142,3 @@ Production deployments generally follow the same steps as above, but in a rollin
 1. Deploy AEM packages to publish2 and the dispatcher package to dispatcher2 in parallel, flush dispatcher cache.
 1. Put dispatcher2 back into the load balancer.
 This process continues until the deployment has reached all publishers and dispatchers in the topology.
-
-

@@ -8,8 +8,8 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 feature: Getting Started
+exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 ---
-
 # Evaluation Phase {#evaluation}
 
 The first phase in the Product Update wizard is **[!UICONTROL Evaluation]** phase. 

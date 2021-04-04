@@ -3,6 +3,7 @@ title: Release Notes for 2021.2.0
 seo-title: AEM Cloud Manager Release Notes for 2021.2.0
 description: Follow this page to get information for Cloud Manager Release 2021.2.0
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2021.2.0
+exl-id: 4f3c3a63-141b-414f-a24e-1870e985873a
 ---
 # Release Notes for 2021.2.0 {#release-notes-for}
 

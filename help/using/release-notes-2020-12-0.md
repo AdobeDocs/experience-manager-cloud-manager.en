@@ -4,6 +4,7 @@ seo-title: AEM Cloud Manager Release Notes for 2020.12.0
 description: Follow this page to get information for Cloud Manager Release 2020.12.0
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.12.0
 feature: Release Information
+exl-id: 8ecc6fcc-e657-4eca-ad86-3ee7469cd821
 ---
 # Release Notes for 2020.12.0 {#release-notes-for}
 

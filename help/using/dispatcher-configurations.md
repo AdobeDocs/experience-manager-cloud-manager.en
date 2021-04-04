@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 feature: Dispatcher
+exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 ---
-
 # Manage your Dispatcher Configurations {#manage-your-dispatcher-configurations}
 
 ## Using Cloud Manager to Deploy Dispatcher Configuration Files {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
@@ -301,4 +301,3 @@ The specific file and directory structure may vary based on the specifics of you
    ---------                     -------
        69017                     66 files
    ```
-

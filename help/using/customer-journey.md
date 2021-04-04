@@ -10,8 +10,8 @@ topic-tags: introduction
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
 feature: Getting Started
 level: Beginner
+exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 ---
-
 # Customer Journey {#customer-journey}
 
 As a customer, you may be new to Adobe Experience Manager (AEM), currently using AEM 6.4, or may need to upgrade to the AEM 6.4 release in order to use [!UICONTROL Cloud Manager]. The following scenarios explain your journey as a new or existing customer to get started with [!UICONTROL Cloud Manager].
@@ -55,4 +55,3 @@ Next, you have to set up your source code branches in the **Git Repository**, de
 The following diagram illustrates the customer journey at a high level, when using [!UICONTROL Cloud Manager] CI/CD pipeline for deploying your code changes to your stage and production environments.
 
 ![](assets/screen_shot_2018-05-15at124004pm.png)
-

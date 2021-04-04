@@ -4,6 +4,7 @@ seo-title: AEM Cloud Manager Release Notes for 2020.8.0
 description: Follow this page to get information for Cloud Manager Release 2020.8.0
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.8.0
 feature: Release Information
+exl-id: 94163e28-5c29-4a00-9a2b-e45bf6f71098
 ---
 # Release Notes for 2020.8.0 {#release-notes-for}
 
@@ -36,4 +37,3 @@ Authentication-bound Private Maven Repositories are now supported.
 * Sites Performance Testing now supports the optional use of authentication.
 
 * Dispatcher caches for author instances are automatically flushed when dispatcher configurations are deployed through Cloud Manager.
-

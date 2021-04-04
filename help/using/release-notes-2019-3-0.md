@@ -4,8 +4,8 @@ seo-title: AEM Cloud Manager Release Notes for 2019.3.0
 description: Follow this page to get information for Cloud Manager Release 2019.3.0.
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.3.0.
 feature: Release Information
+exl-id: 182cd359-1009-40ca-bd33-65647df4a941
 ---
-
 # Release Notes for 2019.3.0 {#release-notes-for}
 
 The [!UICONTROL Cloud Manager] 2019.3.0 Release adds SLA reporting to the System Monitoring capability delivered in the last release.

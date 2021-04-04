@@ -2,8 +2,8 @@
 title: Setting up the Project
 description: Follow this page to learn how to set up a Project
 feature: Getting Started, Production
+exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 ---
-
 # Setting up your Project {#setting-up-your-project}
 
 ## Modifying Project Setup Details {#modifying-project-setup-details}

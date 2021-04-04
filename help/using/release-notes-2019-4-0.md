@@ -4,8 +4,8 @@ seo-title: AEM Cloud Manager Release Notes for 2019.4.0
 description: Follow this page to get information for Cloud Manager Release 2019.4.0.
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.4.0.
 feature: Release Information
+exl-id: 8ca6386c-5de9-48b8-9034-466d4913d5a9
 ---
-
 # Release Notes for 2019.4.0 {#release-notes-for}
 
 The [!UICONTROL Cloud Manager] 2019.4.0 Release does not contain significant functional changes. Follow the sections below for more details.

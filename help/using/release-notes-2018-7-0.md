@@ -9,8 +9,8 @@ topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
 feature: Release Information
+exl-id: fc0214b4-d138-470a-9b04-191224927f7b
 ---
-
 # Release Notes for 2018.7.0 {#release-notes-for}
 
 The following section outlines the [!UICONTROL Cloud Manager] 2018.7.0 release that delivers *autoscaling* feature.
@@ -43,4 +43,3 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.7.0 is September 10
 
 * Although customers are able to select the commit trigger, the pipeline may not actually start based on new commits.
 * The [!UICONTROL Experience Cloud] notification sidebar may not load notifications consistently. Notifications, however, are visible in the [!UICONTROL Experience Cloud] and, if configured, will still be sent via email.
-

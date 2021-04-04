@@ -4,6 +4,7 @@ seo-title: AEM Cloud Manager Release Notes for 2020.4.0
 description: Follow this page to get information for Cloud Manager Release 2020.4.0
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.4.0
 feature: Release Information
+exl-id: bb21b7ea-6bae-4755-becb-37cef0d49412
 ---
 # Release Notes for 2020.4.0 {#release-notes-for}
 
@@ -29,4 +30,3 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.4.0 is April 09, 20
 * Certain topologies with standby instances could have false negatives in security testing.
 * If the stage environment contained a stopped instance, the security testing step would sometimes fail.
 * Experience Cloud notifications were not consistently received.
-

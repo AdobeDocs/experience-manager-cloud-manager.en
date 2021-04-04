@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 feature: Environments
+exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 ---
-
 # Manage your Environments {#manage-your-environments}
 
 The **Overview** page of Cloud Manager includes the **Environments** tile that lists all the managed AEM environments.

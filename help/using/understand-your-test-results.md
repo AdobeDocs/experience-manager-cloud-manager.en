@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
+exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 ---
-
 # Understand your Test Results {#understand-your-test-results}
 
 During the Pipeline execution, a number of metrics are captured and compared to either the Key Performance Indicators (KPIs) defined by the business owner, or standards set by Adobe Managed Services.
@@ -268,4 +268,3 @@ The following images display the performance test graphs:
 ![](assets/understand_test-results-screen1.png)  
 
 ![](assets/screen_shot_2018-09-05at83933pm.png)
-

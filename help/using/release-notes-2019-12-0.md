@@ -4,8 +4,8 @@ seo-title: AEM Cloud Manager Release Notes for 2019.12.0
 description: Follow this page to get information for Cloud Manager Release 2019.12.0.
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.12.0.
 feature: Release Information
+exl-id: e173962f-587d-439e-a499-81ea98c52cc9
 ---
-
 # Release Notes for 2019.12.0 {#release-notes-for}
 
 The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2019.12.0 and adds updates to pipeline execution and enhancements to code quality scans.

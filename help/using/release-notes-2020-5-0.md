@@ -4,6 +4,7 @@ seo-title: AEM Cloud Manager Release Notes for 2020.5.0
 description: Follow this page to get information for Cloud Manager Release 2020.5.0
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2020.5.0
 feature: Release Information
+exl-id: f8a80419-e480-450a-8768-6d9ab690a425
 ---
 # Release Notes for 2020.5.0 {#release-notes-for}
 
@@ -34,4 +35,3 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.5.0 is May 07, 2020
 * Certain cards on the overview page did not display entity names correctly.
 
 * Certain topology configurations would cause the performance testing step to generate an error, rather than reporting missing metrics.
-

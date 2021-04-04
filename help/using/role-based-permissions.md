@@ -6,8 +6,8 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 feature: User Roles
+exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 ---
-
 # Role Based Permissions {#role-based-permissions}
 
 [!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the **Git Repository**. Alternatively, a business owner has different permissions allowing them to define the Key Performance Indicators (KPIs) and approve deployments.
@@ -57,4 +57,3 @@ To learn more about how to setup your Users see [Setting up Users and Roles](set
 |Pipeline Delete|Allows deleting of a Pipeline.||x||||
 |Step Read|See the step quality metrics results.|x|x|x|x|x|
 |Generate Personal Access Token|Access Git.||x||x||
-
