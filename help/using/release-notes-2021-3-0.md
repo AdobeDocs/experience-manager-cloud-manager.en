@@ -2,7 +2,7 @@
 title: Release Notes for 2021.3.0
 description: Follow this page to get information for Cloud Manager Release 2021.3.0
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea,e05b22fe-f071-4b69-9db1-e3d7ee4cfbcc
 ---
 # Release Notes for 2021.3.0 {#release-notes-for}
 
