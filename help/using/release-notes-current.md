@@ -25,11 +25,11 @@ The next release is planned for May 06, 2021.
 
 * The error message when starting a pipeline when an environment was deleted has been clarified.
 
-* OSGi bundles provided by Eclipse projects are now excluded from rule. 
+* OSGi bundles provided by Eclipse projects are now excluded from rule `CQBP-84--dependencies`.
 
 ## Bug Fixes {#bug-fixes}
 
-* Rare, transient errors that may occur at Assets Test step in the production pipeline.
+* Rare, transient errors that may occur at *Assets Test* step in the production pipeline.
 
 * A trailing slash in the production pipeline Load Test was causing a 404 failure.
 
