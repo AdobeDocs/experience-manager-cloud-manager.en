@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-
+feature: Release Information
+exl-id: bf611743-ded2-4503-97c8-12b12454c7b7
 ---
-
 # Release Notes for 2018.9.0 {#release-notes-for}
 
 The [!UICONTROL Cloud Manager] 2018.9.0 Release adds support for an Adobe I/O-based API, including Events, for integrating [!UICONTROL Cloud Manager]'s CI/CD pipeline with other systems. It also begins the rewrite of the UI layer in React.
@@ -23,7 +23,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.9.0 is November 01,
 
 * **CI/CD Pipeline** - New API and Event system for integrating [!UICONTROL Cloud Manager]'s CI/CD pipeline with other systems. Please refer to [!UICONTROL Cloud Manager] API Documentation (https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) for more information.  
 
-* **UI** - Introduction of new UI layer which is more responsive and performant.
+* **UI** - Introduction of new UI layer which is more responsive.
 
 ## Bug Fixes {#bug-fixes}
 
@@ -40,4 +40,3 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.9.0 is November 01,
 
 * Branches created using the Application Project Wizard cannot contain dashes.
 * The Adobe [!UICONTROL Experience Cloud] Notification sidebar may not load notifications consistently. Notifications, however, are visible in the Adobe [!UICONTROL Experience Cloud] and, if configured, will be still sent via email.
-

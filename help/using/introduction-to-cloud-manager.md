@@ -8,13 +8,22 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
+feature: Getting Started
+level: Beginner
+exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 ---
-
 # Introduction to [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cloudmanager_introduction"
+>title="Introduction to Cloud Manager"
+>abstract="Enables organizations to self-manage Experience Manager in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en#cloud-manager" text="Create Programs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager" text="Create Environments"
 
 ## Introduction {#introduction}
 
-[!UICONTROL Cloud Manager], part of the Adobe Managed Cloud Services, enables organizations to self-manage Experience Manager in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security.
+[!UICONTROL Cloud Manager], part of Adobe Experience Manager (AEM) in Cloud, enables organizations to self-manage Experience Manager in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security.
 
 Using the [!UICONTROL Cloud Manager] self-service customer portal, **Organizations** can perform/leverage the following:
 
@@ -63,4 +72,7 @@ To learn more about deploying code and quality checks, see [Deploy your Code](de
 
 During an autoscaling event, [!UICONTROL Cloud Manager] automatically triggers the autoscaling provisioning process, sends a notification of the autoscaling event, and brings on-line the additional capacity within minutes. The additional capacity will be provisioned in the production environment, in the same region(s) and matching the same system specifications as the running Dispatcher/Publish nodes.
 
-The autoscaling feature will apply only to the Dispatcher/Publish tier, and will always be executed using a horizontal scaling method, with a minimum of one additional segment of a Dispatcher/Publish pair, and up to a maximum of ten segments. Any additional capacity provisioned will be manually scaled-in within a period of ten business days as determined by the CSE (Customer Success Engineer).
+The autoscaling feature will apply only to the Dispatcher/Publish tier, and will always be executed using a horizontal scaling method, with a minimum of one additional segment of a Dispatcher/Publish pair, and up to a maximum of ten segments. Any additional capacity provisioned will be manually scaled-in within a period of ten business days as determined by the CSE (Customer Success Engineer). 
+
+>[!NOTE]
+>Customers interested in exploring whether or not autoscaling is appropriate for their application must contact their CSE or Adobe representative.

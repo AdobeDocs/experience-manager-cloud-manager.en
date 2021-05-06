@@ -1,13 +1,14 @@
 ---
 title: CI/CD Pipeline
 seo-title: CI/CD Pipeline
-description: null
-seo-description: Follow this section to learn about the CI/CD pipeline, which handles deployments to stage and production in Cloud Manager.
+description: Overview to CI/CD Pipeline, which handles deployments to stage and production in Cloud Manager
+seo-description: Follow this section to learn about the CI/CD pipeline, which handles deployments to stage and production in Cloud Manager
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
+feature: CI-CD Pipeline
+exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 ---
-
 # CI/CD Pipeline {#ci-cd-pipeline}
 
 ## Pipeline Overview {#pipeline-overview}

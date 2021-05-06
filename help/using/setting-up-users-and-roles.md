@@ -1,17 +1,17 @@
 ---
 title: Add Users and Roles
 seo-title: Add Users and Roles
-description: null
+description: Learn about users and roles and how to use Admin Console to create a profile
 seo-description: You can assign specific role memberships by adding the user to a Cloud Manager Product Profile in the Admin Console. Follow this section to learn more.
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
-
+feature: User Roles
+exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 ---
-
-# Add Users and Roles{#add-users-and-roles}
+# Add Users and Roles {#add-users-and-roles}
 
 Many features in [!UICONTROL Cloud Manager] require specific permissions to operate. For example, only certain users are allowed to set the Key Performance Indicators (KPIs) for a program. These permissions are logically grouped into roles.
 
@@ -38,16 +38,10 @@ The following table summarizes the roles:
 |--- |--- |
 |Business Owner|Responsible for defining KPIs, approving production deployments and overriding important 3-tier failures.|
 |Program Manager|Uses [!UICONTROL Cloud Manager] to perform team setup, review status and view KPIs. Can approve important 3-tier failures.|
-|Deployment Manager|Manages deployment operations. Uses [!UICONTROL Cloud Manager] to execute stage/production deployments. Can edit CI/CD Pipelines. Can approve important 3-tier failures. Can get access to the Git repository. Please contact your CSE/AMS representative to request it.|
-|Developer|Develops and tests custom application code. Primarily uses [!UICONTROL Cloud Manager] to view status. Should get access to the Git repository for code commit. Please contact your CSE/AMS representative when adding a user with this role to grant access to Git repository.|
+|Deployment Manager|Manages deployment operations. Uses [!UICONTROL Cloud Manager] to execute stage/production deployments. Can edit CI/CD Pipelines. Can approve important 3-tier failures. Can get access to the Git repository.|
+|Developer|Develops and tests custom application code. Primarily uses [!UICONTROL Cloud Manager] to view status. Can get access to the Git repository for code commit.|
 |Customer Success Engineer|Generally supports customer success for AMS customers. Interacts with [!UICONTROL Cloud Manager] for the purpose of executing deployments which require CSE oversight.|
 |Content Author|Generally does not interact with [!UICONTROL Cloud Manager]. May use [!UICONTROL Cloud Manager] Program Switcher (having navigated from [!UICONTROL Experience Cloud]) to access AEM.|
-
->[!NOTE]
->
->Access to the [!UICONTROL Cloud Manager] Git repository is managed by your CSE. Contact them to add and remove users.
->
->If a newly added user requires access to the Git repository you will need to contact your CSE/AMS representative to have the access granted. These roles are not providing automatic access to the Git repository. You can only have a maximum of 3 users with Git repository access.
 
 ## Using Admin Console to Create a Profile {#using-admin-console-to-create-a-profile}
 
@@ -98,4 +92,3 @@ You can create, or add, users/groups to these Product Profiles with the [Admin C
    ![](assets/image2018-4-9_15-19-26.png)
    
    ![](assets/image2018-4-9_15-16-47.png)
-

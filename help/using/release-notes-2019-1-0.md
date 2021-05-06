@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-
+feature: Release Information
+exl-id: 383ca5a0-4b0b-48e9-aa48-1d1388875329
 ---
-
 # Release Notes for 2019.1.0 {#release-notes-for}
 
 The [!UICONTROL Cloud Manager] 2018.9.0 Release adds support testing AEM Assets programs as well as additional pipeline types which run the build and code quality steps, optionally deploying to a non-production environment.
@@ -23,7 +23,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2019.1.0 is January 17, 
 
 * Added support for performance testing of AEM Assets. Please refer to Configure your [CI/CD Pipeline](configuring-pipeline.md)for more details.
 * Added support for pipelines running only build and code quality steps and pipelines deploying to non-production environments. Please refer to **Non-Production & Code Quality Only Pipelines** section in [Configure your CI/CD Pipeline](configuring-pipeline.md) for more details.
-* Added support for custom environment variables in build environment. Please refer to [Create an AEM Application Project](create-an-application-project.md) for more details.
+* Added support for custom environment variables in build environment.
 * For customers with multiple stage or production environments, selection of which environment will be deployed to as part of the production pipeline is available in [Configure your CI/CD Pipeline](configuring-pipeline.md) page.
 * httxt2dbm has been added to build container.
 * All help menu items open a new tab.

@@ -8,14 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
-
+feature: Getting Started
+level: Beginner
+exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 ---
-
 # Key Concepts {#key-concepts}
 
 This page describes some basic terminology used in Cloud Manager. We strongly recommend you read this page before reviewing the rest of the Cloud Manager documentation.
 
-**Application** The set of customizations and configurations created by a customer (or their customizer) in order to adapt the underlying solution for their specific use cases and needs. An application is a logical unit which may be composed of multiple artifacts.
+**Application** The set of customizations and configurations created by a customer in order to adapt the underlying solution for their specific use cases and needs. An application is a logical unit which may be composed of multiple artifacts.
 
 For example, *We.Retail*.
 
@@ -33,7 +34,7 @@ For example, *We.Retail*.
 
 **Pipeline** A set of deployment steps which are executed in sequence.
 
-**Product** A specific set of functionality within a solution licensed by an organization. Different programs within an organization may be entitiled to different sets of products. For example, Sites, Assets of Forms.
+**Product** A specific set of functionality within a solution licensed by an organization. Different programs within an organization may be entitled to different sets of products. For example, Sites, Assets of Forms.
 
 **Program** A set of environments that support a logical grouping of customer initiatives, usually corresponding to a purchased Service Level Agreements (SLA). Each program has exactly one production environment and may have many non-production environments.
 

@@ -9,12 +9,21 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-
+feature: CI-CD Pipeline
+exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 ---
-
 # Configure your CI/CD Pipeline {#configure-your-ci-cd-pipeline}
 
 The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](ci-cd-pipeline.md).
+
+## Video Tutorial {#video-tutorial-one}
+
+### Configuring Pipeline in Cloud Manager {#config-pipeline-video}
+
+The CI/CD Production Pipeline configuration defines the trigger that will initiate the pipeline, parameters controlling the production deployment and performance test parameters.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
+
 
 ## Understanding the Flow {#understanding-the-flow}
 
@@ -46,7 +55,7 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
 1. Click **Setup Pipeline** to setup and configure your pipeline.
 
-   ![](assets/Configure_ci-cd-1.png)
+   ![](assets/Setup-Pipeline.png)
 
 1. The **Setup Pipeline** screen displays.
 
@@ -57,8 +66,6 @@ Follow these steps to configure the behavior and preferences for your pipeline:
    >
    >Branches found in the Git repository are linked to your program.
 
-   ![](assets/Configure_ci-cd-2.png)
-
 
 1. Access the **Environments** tab to select **Stage** and **Production** options.
 
@@ -66,17 +73,14 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 
     * **On Git Changes** - starts the CI/CD pipeline whenever there are commits added to the configured git branch. Even if you select this option, you can always start the pipeline manually.  
     * **Manual** - using the UI manually start the pipeline.
-    * **Scheduled** - this option will be coming soon in an upcoming release.
-
-
 
     During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates such as Code Quality, Security Testing, and Performance Testing.
 
    This is useful for customers who have the desire for more automated processes. The available options are:
 
 * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
-* **Fail immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-* **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+* **Cancel Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
+* **Approve Immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
   Now you define the parameters controlling the production deployment. The three available options are as follows:
 
@@ -89,20 +93,34 @@ Follow these steps to configure the behavior and preferences for your pipeline:
 * **Scheduled** - This option allows the user to enable the scheduled production deployment.
 
  >[!NOTE]
- >
  >If **Scheduled** option is selected, you can schedule your production deployment to the pipeline **after** the stage deployment (and **Use GoLive Approval**, if that has been enabled) to wait for a schedule to be set. The user can also choose to execute the production deployment immediately.
  >
  >Please refer to [**Deploy your Code**](deploying-code.md), to set the deployment schedule or execute the production immediately.
 
- ![](assets/Configure_ci-cd-3.png)
+ ![](assets/configure-pipeline-new.png)
 
 >[!NOTE]
 >
 >The **Use CSE Oversight** option is not available to all customers.
 
+**Approve after Stage Deployment**
+
+There is an optional step **Approve after Stage Deployment** which can be configured in the Production Pipeline. 
+This is enabled in a new option on the **Pipeline Edit** screen:
+
+![](assets/post_deployment1.png) 
+
+It is then shown as a separate step during pipeline execution:
+
+![](assets/post_deployment2.png) 
+  
+>[!NOTE]
+>
+>**Approve after Stage Deployment** functions similarly to the approval before the production deployment, but occurs immediately after the stage deployment step,that is, before any testing is done, compared with the approval before the production deployment, which is done after all testing is complete.
+
 **Dispatcher Invalidation**
 
-As a Deployment Manager, you have the opportunity to configure a set of paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache, while setting up or editing pipeline.
+As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache for publish instances, while setting up or editing pipeline.
 
 You can configure a separate set of paths for Stage and Production deployment. If configured, these cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior - invalidate performs a cache invalidation, similar to when content is activated from author to publish; flush performs a cache deletion.
 
@@ -127,60 +145,42 @@ Follow the steps below to configure Dispatcher Invalidations:
    Click **Save** to persist this configuration.
 
    ![](assets/image2018-8-7_15-4-30.png)
+    
+1. Access the **Testing** tab to define your testing criteria for your program. You can now configure the performance test parameters.
 
-1. Access the **Testing** tab to define your testing criteria for your program.
-
-   Now, you can configure the performance test parameters.
-
-   You can configure *AEM Sites* and *AEM Assets* Performance Testing, depending on which products you have licensed.
-
-   **AEM Sites:**
-
-   Cloud Manager executes performance testing for AEM Sites programs by requesting pages (as an unauthenticated user) on the stage publish server for a 30 minute test period and measuring the response time for each page as well as various system-level metrics.Pages are selected by three **page sets**; you can choose anywhere from one to all three sets. The distribution of traffic is based on the number of sets selected, that is, if all three are selected, 33% of the total page views are put toward each set; if two are selected, 50% goes to each set; if one is selected, 100% of the traffic goes to that set.
-
-   For example, let us say that there is a 50%/50% split between the Popular Live Pages and New Pages set (in this example, Other Live Pages is not used) and the New Pages set contains 3000 pages. The page views per minute KPI is set to 200. Over the 30 minute test period:
-
-   * Each of the 25 pages in the Popular Live Pages set will be hit 240 times – ((200 * 0.5) / 25) * 30 = 120
-
-   * Each of the 3000 pages in the New Pages set will be hit once - ((200 * 0.5) / 3000) * 30 = 1
-
-   ![](assets/Configuring_Pipeline_AEM-Sites.png)
-
-   **AEM Assets:**
-
-   Cloud Manager executes performance testing for AEM Assets programs by uploading assets repeatedly for a 30 minute test period and measuring the processing time for each asset as well as various system-level metrics. This capability can upload both images and PDF documents. The distribution of how many assets of each type are uploaded per minute is set in the Pipeline Setup or Edit screen.
-
-   For example, if a 70/30 split is used, as seen in the figure below. There are 10 assets uploaded per minute, 7 images will be uploaded per minute and 3 documents.
-
-   ![](assets/Configuring_Pipeline_AEM-Assets.png)
-
-   >[!NOTE]
-   >
-   >There is a default image and PDF document, but in most cases, customers will want to upload their own assets. This can be done from the Pipeline Setup or Edit screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files.
+   You can configure *AEM Sites* and *AEM Assets* Performance Testing, depending on which products you have licensed. Refer to [Performance Testing](understand-your-test-results.md#performance-testing) for more details.
 
 1. Click **Save** to complete the setup of pipeline process.
 
    >[!NOTE]
-   >
-   >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Pipeline Settings** tile from the [!UICONTROL Cloud Manager] UI.
+   >Additionally, once you have setup the pipeline, you can still edit settings for the same using **Production Pipeline Settings** tile from the [!UICONTROL Cloud Manager] UI.
 
-   ![](assets/Configuring_Pipeline-Settings.png)
+   ![](assets/Production-Pipeline.png)
+
 
 ## Non-Production & Code Quality Only Pipelines
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
 
+## Video Tutorial {#video-tutorial-two}
+
+### Cloud Manager Non-Production & Code Quality Only Pipelines {#non-prod-video}
+
+CI/CD Non-production pipelines are broken into two categories, Code Quality pipelines, and Deployment pipelines. Code Quality pipelines all code from a Git branch to build and be evaluated against Cloud Manager's code quality scan. 
+
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
+
 On the home screen, these pipelines are listed in a new card:
 
-1. Access the **Non-Production Pipelines** tile from the the Cloud Manager home screen.
+1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
 
-   ![](assets/Configuring_Pipeline_Add-Production.png)
+   ![](assets/Non-Production-Pipeline.png)
 
 1. Clicking on the Add button, to specify the Pipeline Name, Pipeline Type, and the Git Branch.
 
    Additionally, you can also set up Deployment Trigger and Important Failure Behavior from Pipeline Options.
 
-   ![](assets/Configuring_Pipeline_Add-Production2.png)
+   ![](assets/non-prod-pipe.png)
 
 1. Click **Save** and the pipeline is shown on the card on the home screen with three actions:
 
@@ -188,7 +188,7 @@ On the home screen, these pipelines are listed in a new card:
    * **Detail** - displays the last pipeline execution (if there is one)
    * **Build** - navigates to the execution page, from which the pipeline can be executed
 
-   ![](assets/Configuring_Pipeline_Add-Production3.png)
+   ![](assets/Non-prod-2.png)
 
    >[!NOTE]
    >

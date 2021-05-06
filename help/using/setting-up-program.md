@@ -8,9 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
-
+feature: Getting Started
+exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 ---
-
 # Setup your Program {#setup-your-program}
 
 After on-boarding, the business owner will need to complete some initial setup of the program. This involves setting the program description and defining the Key Performance Indicators (KPIs) which will be used for performance testing. Optionally, a thumbnail can be uploaded. Additionally, the business owner can configure environments provisioning while setting up the program.
@@ -31,7 +31,13 @@ Follow the steps below to set up the program and define KPIs:
 
 1. Click **Setup Program** to start the setup process in [!UICONTROL Cloud Manager].
 
-   ![](assets/SetUpProgram1.png)
+   ![image1](assets/set-up-program/setup1.png)
+
+   >[!NOTE]
+   > You can always switch, edit, or add a new program from the action bar, as shown in the figure below.
+
+   ![image1](assets/set-up-program/setup2.png)
+
 
 1. The **Setup Program** screen displays the Edit Program Information.
 
@@ -63,7 +69,7 @@ Follow the steps below to set up the program and define KPIs:
 
    ![](assets/Setup_Program-KPIs.png)
 
-1. Under **Provisioning**,you can you can view or edit the provisioning configuration for production and non-production environments in your program. You will see **Autoscale is on**, if autoscaling has been turned on for the program.
+1. Under **Provisioning**, you can view or edit the provisioning configuration for production and non-production environments in your program. You will see **Autoscale is on**, if autoscaling has been turned on for the program.
 
    >[!NOTE]
    >

@@ -1,21 +1,21 @@
 ---
 title: Deploy your Code
 seo-title: Deploy your Code
-description: null
-seo-description: Once you have configured your pipeline (repository, environment, and testing environment), you are ready to deploy your code. Follow this page to learn more.
+description: Provides an overview on deployment process in Cloud Manager
+seo-description: Learn how to deploy your code once you have configured your pipeline (repository, environment, and testing environment)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-
+feature: Code Deployment
+exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 ---
-
 # Deploy your Code {#deploy-your-code}
 
 ## Deploying Code with Cloud Manager {#deploying-code-with-cloud-manager}
 
-Once you have configured your **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
+Once you have configured your Production Pipeline (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. Click **Deploy** from the Cloud Manager to start the deployment process.
 
@@ -41,18 +41,19 @@ Once you have configured your **Pipeline** (repository, environment, and testing
 
    The **Stage Deployment**, involves the following steps:
 
-    * Build & Unit Testing
-    * Code Scanning
+    * Validation: This step ensures that the pipeline is configured to use the currently available resources, for example, that the configured branch exists, the environments are available.
+    * Build & Unit Testing: This step runs a containerized build process. See [Understanding the Build Environment](/help/using/build-environment-details.md) for details on the build environment.
+    * Code Scanning: This step evaluates the quality of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
     * Deploy to Stage
 
-   ![](assets/Stage_Testing.png)
+   ![](assets/Stage_Deployment1.png)
 
    The **Stage Testing**, involves the following steps:
 
-    * Security Testing
-    * Performance Testing
+    * Security Testing: This step evaluates the security impact of your application code on the AEM environment. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
+   * Performance Testing: This step evaluates the performance of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
 
-   ![](assets/Stage_Deployment.png)
+   ![](assets/Stage_Testing1.png)
 
    The **Production Deployment**, involves the following steps:
 
@@ -61,12 +62,14 @@ Once you have configured your **Pipeline** (repository, environment, and testing
     * **CSE Support** (if enabled)
     * **Deploy to Production**
 
+   ![](assets/Prod_Deployment1.png)
+
    >[!NOTE]
    >
    >The **Schedule Production Deployment** is enabled while configuring the pipeline.
    >
    >
-   >Using this option, you can either schedule your production delpoyment or click **Now** to execute the production deployment immediately.
+   >Using this option, you can either schedule your production deployment or click **Now** to execute the production deployment immediately.
    >
    >
    >The scheduled date and time is specified in terms of the user's timezone.
@@ -105,27 +108,38 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
 1. Cloud Manager determines whether each artifact is an AEM or dispatcher package.
 1. Cloud Manager removes all dispatchers from the Load Balancer to isolate the environment during the deployment.
-1. Each AEM artifact is deployed to each AEM instance via Package Manager APIs, with package dependences determining the deployment order.
+
+   Unless configured otherwise you can skip Load Balancer Changes in Dev and Stage Deployments, that is, detach and attach steps in both non-production pipelines, for dev environments, and the production pipeline, for stage environments.
+
+   ![](assets/load_balancer.png)
+
+   >[!NOTE]
+   >
+   >This feature is expected to be primarily used by 1-1-1 customers.
+
+1. Each AEM artifact is deployed to each AEM instance via Package Manager APIs, with package dependencies determining the deployment order.
 
    To learn more about how you can use packages to install new functionality, transfer content between instances, and back up repository content, please refer to How to Work with Packages.
 
    >[!NOTE]
    >
-   >All AEM artifacts are deployed to both the author and the publishers. Runmodes should be leveraged when node-specific configurations are required. To learn more about how the runmodes allow you to tune your AEM instance for a specific purpose, please refer to Run Modes.
+   >All AEM artifacts are deployed to both the author and the publishers. Run-modes should be leveraged when node-specific configurations are required. To learn more about how the run-modes allow you to tune your AEM instance for a specific purpose, please refer to Run Modes.
 
 1. The dispatcher artifact is deployed to each dispatcher as follows:
 
    1. Current configs are backed up and copied to a temporary location
    1. All configs are deleted except the immutable files. Refer to Manage your Dispatcher Configurations for more details. This clears the directories to ensure no orphaned files are left behind.
-   1. The artifact is extracted to the httpd directory.  Immutable files are not overwritten. Any changes you make to immutable files in your git repository will be ignored at the time of deployment.  These files are core to the AMS dispatcher framework and cannot be changed.
+   1. The artifact is extracted to the `httpd` directory.  Immutable files are not overwritten. Any changes you make to immutable files in your git repository will be ignored at the time of deployment.  These files are core to the AMS dispatcher framework and cannot be changed.
    1. Apache performs a config test. If no errors are found, the service is reloaded. If an error occurs, the configs are restored from backup, the service is reloaded, and the error is reported back to Cloud Manager.
    1. Each path specified in the pipeline configuration is invalidated or flushed from the dispatcher cache.
    
    >[!NOTE]
-   >
    >Cloud Manager expects the dispatcher artifact to contain the full file set.  All dispatcher configuration files must be present in the git repository. Missing files or folders will result in deployment failure.
 
 1. Following the successful deployment of all AEM and dispatcher packages to all nodes, the dispatchers are added back to the load balancer and the deployment is complete.
+
+   >[!NOTE]
+   >You can skip Load Balancer changes in development and stage deployments, that is, detach and attach steps in both non-production pipelines, for developer environments, and the production pipeline, for stage environments. 
 
 ### Deployment to Production Phase {#deployment-production-phase}
 
@@ -135,11 +149,9 @@ Production deployments generally follow the same steps as above, but in a rollin
 
 1. Deploy AEM packages to author.
 1. Detach dispatcher1 from the load balancer.
-1. Deploy AEM packages to publish1 and the dispatcher package to dispatcher1, flush dispatcher cache.
+1. Deploy AEM packages to publish1 and the dispatcher package to dispatcher1 in parallel, flush dispatcher cache.
 1. Put dispatcher1 back into the load balancer.
 1. Once dispatcher1 is back in service, detach dispatcher2 from the load balancer.
-1. Deploy AEM packages to publish2 and the dispatcher package to dispatcher2, flush dispatcher cache.
+1. Deploy AEM packages to publish2 and the dispatcher package to dispatcher2 in parallel, flush dispatcher cache.
 1. Put dispatcher2 back into the load balancer.
 This process continues until the deployment has reached all publishers and dispatchers in the topology.
-
-

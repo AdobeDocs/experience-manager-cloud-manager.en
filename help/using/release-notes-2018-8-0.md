@@ -8,8 +8,9 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
+feature: Release Information
+exl-id: 20f87048-30f7-4869-aad0-13ca383a404b
 ---
-
 # Release Notes for 2018.8.0 {#release-notes-for}
 
 The [!UICONTROL Cloud Manager] 2018.8.0 Release adds support for triggering the CI/CD pipeline automatically upon git commits and a new wizard for creating application projects in git based on the AEM Project Archetype.
@@ -20,7 +21,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.8.0 is October 04, 
 
 ## What's New {#what-s-new}
 
-* **Program Setup** - New wizard to create an application project in git using the AEM Project Archetype Please refer to [Create an AEM Application Project](create-an-application-project.md) to learn more.  
+* **Program Setup** - New wizard to create an application project in git using the AEM Project Archetype 
 
 * **CI/CD Pipeline** - The following changes are added to CI/CD Pipeline. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.
 
@@ -48,4 +49,3 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.8.0 is October 04, 
 
 * Branches created using the Application Project Wizard cannot contain dashes.
 * The [!UICONTROL Experience Cloud] notification sidebar may not load notifications consistently. Notifications, however, are visible in the [!UICONTROL Experience Cloud] and, if configured, will still be sent via email.
-

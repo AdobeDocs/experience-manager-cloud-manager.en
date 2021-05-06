@@ -8,14 +8,14 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
+feature: Getting Started
+exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 ---
-
 # First Time Login {#first-time-login}
 
 Once you have setup the general configurations for [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI) for [!UICONTROL Cloud Manager].
 
 >[!NOTE]
->
 >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
 
 ## Logging in for the First Time {#logging-in-for-the-first-time}
@@ -26,7 +26,7 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
 
 1. Select the program (for example, **We.Retail Global**) and click on the top left icon to open [!UICONTROL Cloud Manager].
 
-   ![](assets/screen_shot_2018-06-04at12611pm.png)
+   ![](assets/first-timea1.png)
 
 1. The dashboard for [!UICONTROL Cloud Manager] displays.
 
@@ -37,3 +37,11 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
    >[!NOTE]
    >
    >Please see [Setup your Program](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) to complete the next steps.
+
+## Video Tutorial {#video-tutorial-two}
+
+### Cloud Manager Activity tab {#activity-video}
+
+Cloud Manager provides a consolidated view into a Program's activity, listing all CI/CD Pipeline executions, both production and non-production, allowing visibility into the past and present activity, and any activity's Details can be reviewed.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)

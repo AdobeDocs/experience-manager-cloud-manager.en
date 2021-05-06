@@ -1,22 +1,22 @@
 ---
 title: Custom Code Quality Rules
 seo-title: Custom Code Quality Rules
-description: Follow this page to learn about the custom SonarQube rules executed by Cloud Manager.
-seo-description: Follow this page to learn about the custom SonarQube rules executed by Adobe Experience Manager Cloud Manager.
+description: Follow this page to learn about the custom code quality rules executed by Cloud Manager.
+seo-description: Follow this page to learn about the custom code quality rules executed by Adobe Experience Manager Cloud Manager.
 uuid: a7feb465-1982-46be-9e57-e67b59849579
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
+feature: Code Quality Rules
+exl-id: 7d118225-5826-434e-8869-01ee186e0754
 ---
-
 # Custom Code Quality Rules {#custom-code-quality-rules}
 
-This page describes the custom SonarQube rules executed by Cloud Manager. These rules augment the standard SonarQube rules with best practices from AEM Engineering.
+This page describes the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
 >[!NOTE]
->
->The code samples provided here are only for illustrative purposes.
+>The code samples provided here are only for illustrative purposes. See [Concepts](https://docs.sonarqube.org/7.4/user-guide/concepts/) to learn about SonarQube concepts and quality rules.
 
 ## SonarQube Rules {#sonarqube-rules}
 
@@ -98,7 +98,7 @@ Using a format string from an external source (such a request parameter or user-
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   String messageFormat = request.getParameter("messageFormat");
-  request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text");
+  request.getResource().getValueMap().put("some property", String.format(messageFormat, "some text"));
   response.sendStatus(HttpServletResponse.SC_OK);
 }
 ```
@@ -550,3 +550,413 @@ public void doThis(Resource resource) {
   return resource.isResourceType("foundation/components/text");
 }
 ```
+
+### Sling Scheduler Should Not Be Used {#sonarqube-sling-scheduler}
+
+**Key**: CQRules:AMSCORE-554
+
+**Type**: Code Smell/Cloud Service Compatibility
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+The Sling Scheduler must not be used for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
+
+Refer to [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in a clustered environments.
+
+### AEM Deprecated APIs Should Not Be Used {#sonarqube-aem-deprecated}
+
+**Key**: AMSCORE-553
+
+**Type**: Code Smell/Cloud Service Compatibility
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+The AEM API surface is under constant revision to identify APIs for which usage is discouraged and thus considered deprecated. 
+
+In many cases, these APIs are deprecated using the standard Java *@Deprecated* annotation and, as such, as identified by `squid:CallToDeprecatedMethod`. 
+
+However, there are cases where an an API is deprecated in the context of AEM but may not be deprecated in other contexts. This rule identifies this second class.
+
+## OakPAL Content Rules {#oakpal-rules}
+
+Please find below the OakPAL checks executed by Cloud Manager.
+
+>[!NOTE]
+>
+>OakPAL is a framework developed by an AEM Partner (and winner of 2019 AEM Rockstar North America) which validates content packages using a standalone Oak repository.
+
+### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
+
+**Key**: BannedPaths
+
+**Type**: Bug
+
+**Severity**: Blocker
+
+**Since**: Version 2019.6.0
+
+It has been a long-standing best practice that the /libs content tree in the AEM content repository should be considered read-only by customers. Modifying nodes and properties under */libs* creates significant risk for major and minor updates. Modifications to */libs* should only be made by Adobe through official channels.
+
+### Packages Should Not Contain Duplicate OSGi Configurations {#oakpal-package-osgi}
+
+**Key**: DuplicateOsgiConfigurations
+
+**Type**: Bug
+
+**Severity**: Major
+
+**Since**: Version 2019.6.0
+
+A common problem that occurs on complex projects is where the same OSGi component is configured multiple times. This creates an ambiguity as to which configuration will be operable. This rule is "runmode-aware" in that it will only identify issues where the same component is configured multiple times in the same runmode (or combination of runmodes).
+
+#### Non Compliant Code {#non-compliant-code-osgi}
+
+```
+
++ apps
+  + projectA
+    + config
+      + com.day.cq.commons.impl.ExternalizerImpl
+  + projectB
+    + config
+      + com.day.cq.commons.impl.ExternalizerImpl
+```
+
+#### Compliant Code {#compliant-code-osgi}
+
+```
+
++ apps
+  + shared-config
+    + config
+      + com.day.cq.commons.impl.ExternalizerImpl
+```
+
+### Config and Install Folders Should Only Contain OSGi Nodes {#oakpal-config-install}
+
+**Key**: ConfigAndInstallShouldOnlyContainOsgiNodes
+
+**Type**: Bug
+
+**Severity**: Major
+
+**Since**: Version 2019.6.0
+
+For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. Placing other types of content under paths which contain these segments results in application behavior which unintentionally varies between administrative and non-administrative users.
+
+A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. To resolve this the offending node should be renamed to a compliant name. For the rich text editor configuration make use of the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
+
+#### Non Compliant Code {#non-compliant-code-config-install}
+
+```
+
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    + config [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
+
+#### Compliant Code {#compliant-code-config-install}
+
+```
+
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    ./configPath = inplaceEditingConfig (String)
+    + inplaceEditingConfig [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
+
+### Packages Should Not Overlap {#oakpal-no-overlap}
+
+**Key**: PackageOverlaps
+
+**Type**: Bug
+
+**Severity**: Major
+
+**Since**: Version 2019.6.0
+
+Similar to the *Packages Should Not Contain Duplicate OSGi Configurations* this is a common problem on complex projects where the same node path is written to by multiple separate content packages. While using content package dependencies can be used to ensure a consistent result, it is better to avoid overlaps entirely. 
+
+### Default Authoring Mode Should Not Be Classic UI {#oakpal-default-authoring}
+
+**Key**: ClassicUIAuthoringMode
+
+**Type**: Code Smell/Cloud Service Compatibility
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defines the default authoring mode within AEM. As Classic UI has been deprecated since AEM 6.4, an issue will now be raised when the default authoring mode is configured to Classic UI.
+
+### Components With Dialogs Should Have Touch UI Dialogs {#oakpal-components-dialogs}
+
+**Key**: ComponentWithOnlyClassicUIDialog
+
+**Type**: Code Smell/Cloud Service Compatibility
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+AEM Components which have a Classic UI dialog should always have a corresponding Touch UI dialog both to provide an optimal authoring experience and to be compatible with the Cloud Service deployment model, where Classic UI is not supported. This rule verifies the following scenarios:
+
+* A component with a Classic UI dialog (that is, a dialog child node) must have a corresponding Touch UI dialog (that is, a `cq:dialog` child node).
+* A component with a Classic UI design dialog (i.e. a design_dialog node) must have a corresponding Touch UI design dialog (that is, a `cq:design_dialog` child node).
+* A component with both a Classic UI dialog and a Classic UI design dialog must have both a corresponding Touch UI dialog and a corresponding Touch UI design dialog.
+
+The AEM Modernization Tools documentation provides documentation and tooling for how to convert components from Classic UI to Touch UI. Refer  to [The AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) for more details.
+
+### Packages Should Not Mix Mutable and Immutable Content {#oakpal-packages-immutable}
+
+**Key**: ImmutableMutableMixedPackage
+
+**Type**: Code Smell/Cloud Service Compatibility
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+In order to be compatible with the Cloud Service deployment model, individual content packages must contain either content for the immutable areas of the repository (that is, `/apps and /libs, although /libs` should not be modified by customer code and will cause a separate violation) or the mutable area (that is, everything else), but not both. For example, a package which includes both `/apps/myco/components/text and /etc/clientlibs/myco` is not compatible with Cloud Service and will cause an issue to be reported.
+
+Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
+
+### Reverse Replication Agents Should Not Be Used {#oakpal-reverse-replication}
+
+**Key**: ReverseReplication
+
+**Type**: Code Smell/Cloud Service Compatibility
+
+**Severity**: Minor
+
+**Since**: Version 2020.5.0
+
+Support for Reverse Replication is not available in Cloud Service deployments, as described in [Release Notes: Removal of Replication Agents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+
+Customers using reverse replication should contact Adobe for alternative solutions.
+
+### OakPAL - Resources Contained in Proxy-Enabled Client Libraries Should Be in a folder named resources {#oakpal-resources-proxy}
+
+**Key**: ClientlibProxyResource
+
+**Type**: Bug
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM client libraries may contain static resources like images and fonts. As described in [Using Preprocessors](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), when using proxied client libraries these static resources must  be contained in a child folder named resources in order to be effectively referenced on the publish instances.
+
+#### Non Compliant Code {#non-compliant-proxy-enabled}
+
+```
+
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + images
+        + myimage.jpg
+```
+
+#### Compliant Code {#compliant-proxy-enabled}
+
+```
+
++ apps
+  + projectA
+    + clientlib
+      - allowProxy=true
+      + resources
+        + myimage.jpg
+```
+
+### OakPAL - Usage of Cloud Service Incompatible Workflow Processes {#oakpal-usage-cloud-service}
+
+**Key**: CloudServiceIncompatibleWorkflowProcess
+
+**Type**: Code Smell
+
+**Severity**: Blocker
+
+**Since**: Version 2021.2.0
+
+With the move to Asset micro-services for asset processing on AEM Cloud Service, several workflow processes which were used in on-premise and AMS versions of AEM have become either unsupported or unnecessary. The migration tool at [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration) can be used to update workflow models during AEM Cloud Service migration.
+
+### OakPAL - Usage of Static Templates is Discouraged in Favor of Editable Templates {#oakpal-static-template}
+
+**Key**: StaticTemplateUsage
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+While the use of static templates has historically been very common in AEM projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found on [Page Templates - Editable](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). Migration from static to editable templates can be largely automated using the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL - Usage of Legacy Foundation Components is Discouraged {#oakpal-usage-legacy}
+
+**Key**: LegacyFoundationComponentUsage
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+The legacy foundation components (i.e. components under `/libs/foundation`) have been deprecated for several AEM releases in favor of the WCM Core Components. Usage of the legacy foundation components as the basis for custom components – whether by overlay or inheritance – is discouraged and should be converted to the corresponding core component. This conversion can be facilitated by the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
+
+### OakPAL - Only Supported Runmode Names and Ordering Should Be Used {#oakpal-supported-runmodes}
+
+**Key**: SupportedRunmode
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service enforces a strict naming policy for runmode names and a strict ordering for those runmodes. The list of supported runmodes can be found on [Runmodes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#runmodes) and any deviation from this will be identified as an issue.
+
+### OakPAL - Custom Search Index Definition Nodes Must Be Direct Children of /oak:index {#oakpal-custom-search}
+
+**Key**: OakIndexLocation
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service requires that custom search index definitions (i.e. nodes of type oak:QueryIndexDefinition) be direct child nodes of `/oak:index`. Indexes in other locations must be moved to be compatible with AEM Cloud Service. More information on search indexes can be found on [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL - Custom Search Index Definition Nodes Must Have a compatVersion of 2 {#oakpal-custom-search-compatVersion}
+
+**Key**: IndexCompatVersion
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service requires that custom search index definitions (i.e. nodes of type oak:QueryIndexDefinition) must have the compatVersion property set to 2. Any other value is not supported by AEM Cloud Service. More information on search indexes can be found on [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en).
+
+### OakPAL - Descendent Nodes of Custom Search Index Definition Nodes Must Be Of Type nt:unstructured {#oakpal-descendent-nodes}
+
+**Key**: IndexDescendantNodeType
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+Hard to troubleshoot issues can occur when occur when a custom search index definition node has unordered child nodes. To avoid these, it is recommended that all descendent nodes of an `oak:QueryIndexDefinition` node be of type nt:unstructured.
+
+### OakPAL - Custom Search Index Definition Nodes Must Contain a Child Node Named indexRules that Has Children {#oakpal-custom-search-index}
+
+**Key**: IndexRulesNode
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+A properly defined custom search index definition node must contain a child node named indexRules which, in turn must have at least one child. More information can be found on [Oak Documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+
+### OakPAL - Custom Search Index Definition Nodes Must Follow Naming Conventions {#oakpal-custom-search-definitions}
+
+**Key**: IndexName
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service requires that custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) must be named following a specific pattern described on [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use).
+
+### OakPAL - Custom Search Index Definition Nodes Must Use the Index Type lucene  {#oakpal-index-type-lucene}
+
+**Key**: IndexType
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service requires that custom search index definitions (i.e. nodes of type oak:QueryIndexDefinition) have a type property with the value set to **lucene**. Indexing using legacy index types must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
+
+### OakPAL - Custom Search Index Definition Nodes Must Not Contain a Property Named seed {#oakpal-property-name-seed}
+
+**Key**: IndexSeedProperty
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named seed. Indexing using this property must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
+
+### OakPAL - Custom Search Index Definition Nodes Must Not Contain a Property Named reindex {#oakpal-reindex-property}
+
+**Key**: IndexReindexProperty
+
+**Type**: Code Smell
+
+**Severity**: Minor
+
+**Since**: Version 2021.2.0
+
+AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named reindex. Indexing using this property must be updated before migration to AEM Cloud Service. See [Content Search and Indexing](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use) for more information.
+
+## Dispatcher Optimization Tool {#dispatcher-optimization-tool-rules}
+
+The following section highlights the DOT checks executed by Cloud Manager:
+
+* [DOT - Parsing Violation - Dispatcher Configuration Unexpected Tokens](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Unmatched Quote](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Missing Brace](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Extra Brace](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Missing Mandatory Property](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Deprecated Property](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+
+* [DOT - Parsing Violation - Dispatcher Configuration Not Found](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
+
+* [DOT - Parsing Violation - Httpd Configuration Include file not found](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+
+* [DOT - Parsing Violation - Dispatcher Configuration General](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
+
+* [DOT - The Dispatcher publish farm cache should have serveStaleOnError enabled](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+
+* [DOT - The Dispatcher publish farm filters should contain the default deny rules from the 6.x.x version of the AEM archetype](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+
+* [DOT - The Dispatcher publish farm cache statfileslevel property should be >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+
+* [DOT - The Dispatcher publish farm gracePeriod property should be >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+
+* [DOT - Each Dispatcher farm should have a unique name](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+
+* [DOT - The Dispatcher publish farm cache should have its ignoreUrlParams rules configured in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+
+* [DOT - The Dispatcher publish farm filters should specify the allowed Sling selectors in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+
+* [DOT - The Dispatcher publish farm filters should specify the allowed Sling suffix patterns in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+
+* [DOT - The 'Require all granted' directive should not be used in a VirtualHost Directory section with a root directory-path](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)

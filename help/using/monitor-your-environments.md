@@ -1,10 +1,11 @@
 ---
 title: Monitor your Environments
 seo-title: Monitor your Environments
-description: null
+description: Learn how to monitor your environments in Cloud Manager
 seo-description: Follow this page to learn about System Monitoring in Cloud Manager that is done by observing the individual instances within an environment and tracking a variety of metrics for each instance.
+feature: Environments
+exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 ---
-
 # System Monitoring {#system-monitoring}
 
 System Monitoring in [!UICONTROL Cloud Manager] is done by observing the individual instances within an environment and tracking a variety of metrics for each instance. Each metric has two defined thresholds – a *warning threshold* and a *critical threshold*. 
@@ -19,9 +20,9 @@ Navigating to the System Monitoring feature can be done in two ways.
 
    ![](assets/ProgramLanding.png)
 
-1. Click on the third icon on the program card.
+1. Click on the fourth icon on the program card.
  
-   ![](assets/program-card.png)
+   ![](assets/first-timea1.png)
 
    *Or*,
 
@@ -39,11 +40,20 @@ The System Monitoring Overview page lists the monitored environments in the prog
 
 The status in each category is a summary of individual metrics – if any metric in a category is in the critical state, the whole category is in a critical state for the purpose of the overview page. The same summarization can be viewed at an environment level and at an instance level. 
 
-![](assets/Reports.png)
+![](assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
 >By default when navigating to this page, the production environment instances are visible, but other environments can be opened as well.
+
+## Video Tutorial {#video-tutorial}
+
+### Cloud Manager Reports Overview {#reports-video}
+
+Cloud Manager Reports provide a view into the Program's Environments and AEM instances through a set of charts that report on and track a variety of metrics for each AEM instance.
+Refer to the video below for more details.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)
 
 ## System Monitoring Detail {#system-monitoring-detail}
 
@@ -57,12 +67,12 @@ The navigation on the left will show the available metrics within the currently 
 
 An individual graph will show the status and a graph of the data over time along with the thresholds. If multiple instances are displayed, each instance's data will be on a separate series.
 
-![](assets/System-Monitoring3.png)
+![](assets/Monitoring_Graphs1.png)
 
 Individual series can be hidden on a graph by clicking on the series in the legend. 
 For example, if you click on the warning threshold series, you will see only the critical threshold.
 
-![](assets/System_Monitoring4.png)
+![](assets/Monitoring_Graphs2.png)
 
 ### Metric Definitions {#metric-definitions}
 
@@ -94,17 +104,17 @@ For example, if you click on the warning threshold series, you will see only the
 Customers are able to see the performance of their production AEM environment relative to their contracted Service Level Agreement (SLA). This is available through a sub-menu on the Reports screen. 
 For example, the graph below shows the monthly SLA attainment for 2018.
 
-![](assets/sla-reporting1.png)
+![](assets/SLA-Reports-one.png)
 
 As with the system monitoring graphs, rolling over a data point shows the specific values for that month.
 
-![](assets/sla-reporting2.png)
+![](assets/SLA-Reports-two.png)
 
 The Event Analysis section under this graph shows the set of incidents which occurred for the program during the currently selected year. Each incident has a time range, a cause, and a set of comments.
 
 ![](assets/sla-reporting3.png)
 
-## SLA Metrics {sla-metrics}
+## SLA Metrics {#sla-metrics}
 
 * **Author Contract**: This is the SLA defined in your contract with Adobe Managed Services for the author tier.
 

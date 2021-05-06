@@ -3,8 +3,9 @@ title: Release Notes for 2019.2.0
 seo-title: AEM Cloud Manager Release Notes for 2019.2.0
 description: Follow this page to get information for Cloud Manager Release 2019.2.0.
 seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.2.0.
+feature: Release Information
+exl-id: e7198efa-4a73-42e5-bb17-8dea255e056e
 ---
-
 # Release Notes for 2019.2.0 {#release-notes-for}
 
 The [!UICONTROL Cloud Manager] 2019.2.0 Release adds a new System Monitoring capability. This allows customers to view the state of their Adobe Managed Services environments at a system level.
