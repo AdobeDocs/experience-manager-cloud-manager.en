@@ -85,6 +85,19 @@ Once you have configured your Production Pipeline (repository, environment, and 
 
    ![](assets/Production_Deployment2.png)
 
+## Timeouts {#timeouts}
+
+The following steps will timeout if left waiting for user feedback:
+
+|Step|Timeout|
+|--- |--- |
+|Code Quality Testing|7 days|
+|Security Testing|7 days|
+|Performance Testing|7 days|
+|Application for Approval|7 days|
+|Schedule Production Deployment|7 days|
+|CSE Support|7 days|
+
 ## Deployment Process {#deployment-process}
 
 The following section describes how AEM and dispatcher packages are deployed in the stage phase and in the production phase.
