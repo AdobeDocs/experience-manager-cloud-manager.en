@@ -26,8 +26,6 @@ The next release is planned for June 03, 2021.
 
 ## Bug Fixes {#bug-fixes}
 
-* On occasion, user may see a green *active* status next to an IP Allowlist even when that configuration was not deployed.
-
 * Instead of removing 'deleted' variables, the pipelines variables API would only mark them with status 'DELETED'.
 
 * Some Code Smell-type quality issues were incorrectly impacting the Reliability Rating.
