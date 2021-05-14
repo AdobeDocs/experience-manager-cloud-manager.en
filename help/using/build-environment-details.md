@@ -27,7 +27,7 @@ Cloud Manager builds and tests your code using a specialized build environment. 
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe **Artifact** repository.
+* Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe **Artifact** repository using a profile named `adobe-public`.
    Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details.
 
 >[!NOTE]
