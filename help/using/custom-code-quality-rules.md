@@ -13,6 +13,9 @@ exl-id: 7d118225-5826-434e-8869-01ee186e0754
 ---
 # Custom Code Quality Rules {#custom-code-quality-rules}
 
+>[!NOTE]
+>To learn about Custom Code Quality Rules for Cloud Manager in AEM as a Cloud Service, see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=en#using-cloud-manager).
+
 This page describes the custom code quality rules executed by Cloud Manager created based on best practices from AEM Engineering.
 
 >[!NOTE]
