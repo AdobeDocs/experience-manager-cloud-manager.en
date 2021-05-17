@@ -7,6 +7,9 @@ feature: Release Information
 
 The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2021.5.0.
 
+>[!NOTE]
+>Refer to [Current Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) to see the latest release notes for Cloud Manager in AEM as a Cloud Service.
+
 ## Release Date {#release-date}
 
 The Release Date for [!UICONTROL Cloud Manager] Version 2021.5.0 is May 06, 2021.
