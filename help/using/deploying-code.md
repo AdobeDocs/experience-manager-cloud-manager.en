@@ -15,6 +15,9 @@ exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 
 ## Deploying Code with Cloud Manager {#deploying-code-with-cloud-manager}
 
+>[!NOTE]
+>To learn about deploying code for Cloud Manager in AEM as a Cloud Service, see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager).
+
 Once you have configured your Production Pipeline (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. Click **Deploy** from the Cloud Manager to start the deployment process.

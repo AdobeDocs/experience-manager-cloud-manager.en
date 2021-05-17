@@ -13,6 +13,9 @@ exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 ---
 # Manage your Environments {#manage-your-environments}
 
+>[!NOTE]
+>To learn about managing environments for Cloud Manager in AEM as a Cloud Service, see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager).
+
 The **Overview** page of Cloud Manager includes the **Environments** tile that lists all the managed AEM environments.
 
 Each of the listed environments displays its associated status.

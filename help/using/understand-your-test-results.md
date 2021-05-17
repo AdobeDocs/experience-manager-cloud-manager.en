@@ -13,6 +13,9 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 ---
 # Understand your Test Results {#understand-your-test-results}
 
+>[!NOTE]
+>To learn about test results and tests supported by Cloud Manager for Cloud Services Pipeline, see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=en#using-cloud-manager).
+
 During the Pipeline execution, a number of metrics are captured and compared to either the Key Performance Indicators (KPIs) defined by the business owner, or standards set by Adobe Managed Services.
 
 These are reported using the three-tier gating system as defined in this section.
