@@ -14,6 +14,9 @@ exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 ---
 # Configure your CI/CD Pipeline {#configure-your-ci-cd-pipeline}
 
+>[!NOTE]
+>To learn how to configure CI/CD Pipeline for Cloud Manager in AEM as a Cloud Service, see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager).
+
 The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](ci-cd-pipeline.md).
 
 ## Video Tutorial {#video-tutorial-one}
