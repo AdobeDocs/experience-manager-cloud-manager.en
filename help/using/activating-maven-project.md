@@ -16,6 +16,10 @@ This version is seen on the pipeline execution details page as well as the activ
 
 If the original project version meets certain criteria, the updated Maven project version will merge both the original project version and the Cloud Manager generated version. The tag, however, always uses the generated version. For this merging to occur, the original project version must be formed with exactly three version segments, for example, 1.0.0 or 1.2.3, but not 1.0 or 1, and the original version must not end in -SNAPSHOT. 
 
+>[!NOTE]
+>
+>This original project version value must be statically set in the `<version>` element of the top-level `pom.xml` file in the git repository branch.
+
 If the original version does meet this criteria then the generated version will be appended to the original version as a new version segment. The generated version will also be slightly modified to include proper sorting and version handling. For example, assuming a generated version of 2019.926.121356.0000020490:
 
 | **Version** | **version in pom.xml** |**Comment** |
