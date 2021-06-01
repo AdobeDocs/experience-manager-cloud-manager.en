@@ -34,7 +34,7 @@ For example, *We.Retail*.
 
 **Pipeline** A set of deployment steps which are executed in sequence.
 
-**Product** A specific set of functionality within a solution licensed by an organization. Different programs within an organization may be entitled to different sets of products. For example, Sites, Assets of Forms.
+**Product** A specific set of functionality within a solution licensed by an organization. Different programs within an organization may be entitled to different sets of products. For example, Sites, Assets or Forms.
 
 **Program** A set of environments that support a logical grouping of customer initiatives, usually corresponding to a purchased Service Level Agreements (SLA). Each program has exactly one production environment and may have many non-production environments.
 
