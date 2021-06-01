@@ -25,6 +25,8 @@ exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 
 [!UICONTROL Cloud Manager], part of Adobe Experience Manager (AEM) in Cloud, enables organizations to self-manage Experience Manager in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security.
 
+This documentation site specifically describes the features and functions of Cloud Manager available to Adobe Managed Services (AMS) customers. Documentation on Cloud Manager features and functions for AEM as a Cloud Service customers can be found in the [Experience Manager as a Cloud Service User Guides](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=en).
+
 Using the [!UICONTROL Cloud Manager] self-service customer portal, **Organizations** can perform/leverage the following:
 
 * **Continuous Integration / Continuous Delivery** of code to reduce time to market from months/weeks to days/hours.
