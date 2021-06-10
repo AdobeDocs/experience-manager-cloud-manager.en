@@ -73,7 +73,7 @@ Follow the steps below to set up the program and define KPIs:
    >[!NOTE]
    >You can always edit the program once the initial program has already been set up. Follow the steps below for more details.
 
-## Editing a Program
+## Editing a Program {#editing-program}
 
 1. Navigate to the program from the **Cloud Manager** home screen.
 
