@@ -23,7 +23,7 @@ The next release is planned for July 15, 2021.
 
 * The default branch name used during both project creation and  in the default push command via manage git workflows has been changed to `main`. 
 
-* Edit program experience in the UI has been refreshed. 
+* Edit program experience in the UI has been refreshed. Refer to [Editing a Program](/help/using/setting-up-program.md#editing-program) to learn more.
 
 * The quality rule `ImmutableMutableMixCheck` has been updated to classify `/oak:index` nodes as being immutable.
 
