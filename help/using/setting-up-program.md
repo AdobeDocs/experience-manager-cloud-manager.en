@@ -83,7 +83,7 @@ Follow the steps below to set up the program and define KPIs:
 
 1. The **Edit Program** screen displays that allows you to update or modify your program.
 
-   You can update your program name and description from the **General** tab.
+   You can update your program description from the **General** tab.
 
    ![](assets/set-up-program/edit-program-general.png)
 
