@@ -1,42 +1,36 @@
 ---
-title: Release Notes for 2021.6.0
-description: Follow this page to get information for Cloud Manager Release 2021.6.0
+title: Release Notes for 2021.7.0
+description: Follow this page to get information for Cloud Manager Release 2021.7.0
 feature: Release Information
 ---
-# Release Notes for 2021.6.0 {#release-notes-for}
+# Release Notes for 2021.7.0 {#release-notes-for}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2021.6.0.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2021.7.0.
 
 >[!NOTE]
 >Refer to [Current Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) to see the latest release notes for Cloud Manager in AEM as a Cloud Service.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2021.6.0 is June 10, 2021.
-The next release is planned for July 15, 2021.
+The Release Date for [!UICONTROL Cloud Manager] Version 2021.7.0 is July 15, 2021.
+The next release is planned for August 12, 2021.
 
 ## What's New {#whats-new}
 
-* Assets and Sites tests will now run in parallel (when applicable), thereby reducing the total pipeline execution time. This feature will be enabled for customers over the next several weeks.
+* Customers are now able to use Azul 8 and 11 JDKs for their Cloud Manager build processes and can either select to use one of these JDKs for toolchains-compatible Maven plugins *or* the entire Maven process execution.
 
-* Maven Dependencies downloaded during the build step will now be cached between pipeline executions. This feature will be enabled for customers over the next several weeks. 
+* The outbound egress IP will now be logged in the build step log file. 
 
-* The default branch name used during both project creation and  in the default push command via manage git workflows has been changed to `main`. 
+* The Manage Git buttons has been retitled Access Git Info and the dialog has been visually refreshed. 
 
-* Edit program experience in the UI has been refreshed. Refer to [Editing a Program](/help/using/setting-up-program.md#editing-program) to learn more.
-
-* The quality rule `ImmutableMutableMixCheck` has been updated to classify `/oak:index` nodes as being immutable.
-
-* The quality rules `CQBP-84` and `CQBP-84--dependencies` have been consolidated into a single rule. As part of this consolidation, the scanning of dependencies more accurately identifies issues in third party dependencies which are being deployed to the AEM runtime.
-
-* In some situations, a failure to calculate the Skipped Tests metric would cause pipeline executions to fail.
+* Some unexpected topology reconfigurations could result in detailed testing reports no longer being available from the pipeline execution details page.
 
 ## Bug Fixes {#bug-fixes}
 
-* JCR node definitions containing a newline after the root element name were not correctly parsed.
+* Manually navigating to the execution details page for a non-existing execution did not show an error, just an endless loading screen. 
 
-* List repositories API would not filter deleted repositories.
+* In some cases, the automatic retry for failed containers used in Sites performance would not take effect for 2 hours, resulting in a test failure.
 
-* An incorrect error message was displayed when an invalid value was provided for the schedule step. 
+## Known Issues {#known-issues}
 
-* In some cases when the pipeline execution reached deploy to production step, and user stops execution, the deploy status  message in the UI did not correctly reflect what was actually happening.
+Customers switching to use the Azul JDKs should be aware that not all existing applications will compile without error on Azul JDK. It is highly recommended to test locally before switching.
