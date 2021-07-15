@@ -21,7 +21,9 @@ The next release is planned for August 12, 2021.
 
 * The outbound egress IP will now be logged in the build step log file. 
 
-* The Manage Git buttons has been retitled Access Git Info and the dialog has been visually refreshed. 
+* The **Manage Git** buttons has been retitled **Access Git Info** and the dialog has been visually refreshed. 
+
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 28.
 
 * Some unexpected topology reconfigurations could result in detailed testing reports no longer being available from the pipeline execution details page.
 
