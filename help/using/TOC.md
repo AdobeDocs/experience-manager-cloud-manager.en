@@ -54,7 +54,8 @@ level: Intermediate
   + [Overview](overview-productupdate-wizard.md)
   + [Evaluation](evaluation.md)
 + Release Notes {#release-notes}
-  + [Current Release Notes (2021.7.0)](release-notes-current.md)
+  + [Current Release Notes (2021.8.0)](release-notes-current.md)
+  + [Release Notes for 2021.7.0](release-notes-2021-7-0.md)
   + [Release Notes for 2021.6.0](release-notes-2021-6-0.md)
   + [Release Notes for 2021.5.0](release-notes-2021-5-0.md)
   + [Release Notes for 2021.4.0](release-notes-2021-4-0.md)
