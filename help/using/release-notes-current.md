@@ -27,6 +27,4 @@ The next release is planned for September 09, 2021.
 
 ## Bug Fixes {#bug-fixes}
 
-* *Update Available* status should not be displayed when the latest release is less than the current release.
-
 * Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error. 
