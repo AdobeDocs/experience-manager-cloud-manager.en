@@ -23,9 +23,7 @@ The next release is planned for September 09, 2021.
 
 * There is now an API available to invalidate the Maven dependency cache per pipeline.
 
-* The flow and task related to assets testing should happen in the region of the pipeline execution. 
-
-* As a Deployment Manager, you can add or edit a non-Production Pipeline from the pipeline card.
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 28. 
 
 ## Bug Fixes {#bug-fixes}
 
