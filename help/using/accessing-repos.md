@@ -1,12 +1,12 @@
 ---
 title: Accessing Git
-seo-title: Accessing Git
+seo-title: Accessing Repositories
 description: This page describes how you can access and manage Git repository.
 seo-description: Follow this page to learn how to access and manage your Git repository.
 feature: Git Repositories
 exl-id: 403fc93d-60fc-4439-8c9d-0a512ca34458
 ---
-# Accessing Git {#accessing-git}
+# Accessing Repositories {#accessing-repos}
 
 You can access and manage your Git Repository using Self-Service Git Account Management from Cloud Manager UI.
 
