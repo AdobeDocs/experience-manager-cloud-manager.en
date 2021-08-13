@@ -1,5 +1,5 @@
 ---
-title: Accessing Git
+title: Accessing Repositories
 seo-title: Accessing Repositories
 description: This page describes how you can access and manage Git repository.
 seo-description: Follow this page to learn how to access and manage your Git repository.
