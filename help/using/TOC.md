@@ -47,7 +47,8 @@ level: Intermediate
   + [Custom Code Quality Rules](custom-code-quality-rules.md)
 + Manage your Code {#managing-code}
   + [Maven Project Version Handling](activating-maven-project.md)
-  + [Accessing Git](accessing-git.md)
+  + [Repositories in Cloud Manager](cloud-manager-repositories.md)
+  + [Accessing Repositories](accessing-repos.md)
   + [Integrating with Git](setup-cloud-manager-git-integration.md)
   + [Working with Multiple Source Git Repositories](/help/using/working-with-multiple-source-git-repos.md)
 + Product Update Wizard {#product-update-wizard}

@@ -23,7 +23,7 @@ The next release is planned for September 09, 2021.
 
 * There is now an API available to invalidate the Maven dependency cache per pipeline.
 
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 28. 
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 29. 
 
 ## Bug Fixes {#bug-fixes}
 
