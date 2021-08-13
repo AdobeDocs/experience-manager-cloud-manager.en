@@ -33,7 +33,7 @@ Follow the steps below to view and manage repositories in Cloud Manager:
 
 1. You can select the repository and click on the menu options from the far right of the table to **Copy Repository URL**, **View & Update** or **Delete** your repository, as shown in the  figure below.
 
-   ![](assets/repos/create-repo3.png)
+   ![](assets/create-repo3.png)
 
 
 
