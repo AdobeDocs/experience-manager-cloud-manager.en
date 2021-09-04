@@ -2,6 +2,7 @@
 title: Release Notes for 2021.8.0
 description: Follow this page to get information for Cloud Manager Release 2021.8.0
 feature: Release Information
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 # Release Notes for 2021.8.0 {#release-notes-for}
 
@@ -27,4 +28,4 @@ The next release is planned for September 09, 2021.
 
 ## Bug Fixes {#bug-fixes}
 
-* Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error. 
+* Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error.

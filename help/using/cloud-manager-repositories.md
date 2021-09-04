@@ -1,6 +1,7 @@
 ---
 title: Cloud Manager Repositories
 description: Cloud Manager Repositories
+exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 ---
 # Cloud Manager Repositories {#cloud-manager-repos} 
 
@@ -94,5 +95,4 @@ When using git submodules, please keep these things in mind:
 
 * The Git URL must be exactly in the syntax described above. For security reasons, do not  embed credentials in these URLs.
 * Only submodules at the root of the branch are supported.
-* Git submodules references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated, for example, by using `git submodule update --remote` . 
-
+* Git submodules references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated, for example, by using `git submodule update --remote` .
