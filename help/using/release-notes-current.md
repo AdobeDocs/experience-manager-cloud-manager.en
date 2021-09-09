@@ -26,7 +26,7 @@ The next release is planned for October 07, 2021.
 
 * The Activity page menu options will now include an option to "Download Log" for completed Code Generator executions. Selecting this will download the log of the build step.
 
-* Clicking directly on the Program card will now navigate to Cloud Manager Overview page.
+* Clicking directly on the Program card will now navigate to Cloud Manager's **Overview** page. 
 
 ## Bug Fixes {#bug-fixes}
 
