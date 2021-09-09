@@ -13,7 +13,7 @@ The following section outlines the general Release Notes for [!UICONTROL Cloud M
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2021.8.0 is September 09, 2021.
+The Release Date for [!UICONTROL Cloud Manager] Version 2021.9.0 is September 09, 2021.
 The next release is planned for October 07, 2021.
 
 ## What's New {#whats-new}
