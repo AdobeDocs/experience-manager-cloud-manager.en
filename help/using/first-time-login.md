@@ -22,8 +22,6 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
 
 1. Log in to the **Adobe [!UICONTROL Experience Cloud]** and you will see the list of **Programs**.
 
-   ![](assets/screen_shot_2018-06-04at120643pm.png)
-
 1. Select the program (for example, **We.Retail Global**). Once you see your program card on the landing page, select the **...** to see menu options available to you.   Select **Cloud Manager** to navigate to the Cloud Manager's **Overview** page. 
 
    ![](assets/navigate-cm1.png)
