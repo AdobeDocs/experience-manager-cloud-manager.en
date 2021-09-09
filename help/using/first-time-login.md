@@ -24,11 +24,11 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
-1. Select the program (for example, **We.Retail Global**) and click on the top left icon to open [!UICONTROL Cloud Manager].
+1. Select the program (for example, **We.Retail Global**). Once you see your program card on the landing page, select the **...** to see menu options available to you.   Select **Cloud Manager** to navigate to the Cloud Manager's **Overview** page. 
 
-   ![](assets/first-timea1.png)
+   ![](assets/navigate-cm1.png)
 
-1. The dashboard for [!UICONTROL Cloud Manager] displays.
+1. The Cloud Manager's **Overview** page displays.
 
    ![](assets/FirstLogin1.png)
 
