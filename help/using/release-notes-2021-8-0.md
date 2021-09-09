@@ -2,6 +2,7 @@
 title: Release Notes for 2021.8.0
 description: Follow this page to get information for Cloud Manager Release 2021.8.0
 feature: Release Information
+exl-id: 8b402d09-87f6-4e46-a5cc-46a5ffc3cd3b
 ---
 # Release Notes for 2021.8.0 {#release-notes-for}
 
