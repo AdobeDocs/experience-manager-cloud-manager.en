@@ -1,31 +1,33 @@
 ---
-title: Release Notes for 2021.8.0
-description: Follow this page to get information for Cloud Manager Release 2021.8.0
+title: Release Notes for 2021.9.0
+description: Follow this page to get information for Cloud Manager Release 2021.9.0
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
-# Release Notes for 2021.8.0 {#release-notes-for}
+# Release Notes for 2021.9.0 {#release-notes-for}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2021.8.0.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2021.9.0.
 
 >[!NOTE]
 >Refer to [Current Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) to see the latest release notes for Cloud Manager in AEM as a Cloud Service.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2021.8.0 is August 12, 2021.
-The next release is planned for September 09, 2021.
+The Release Date for [!UICONTROL Cloud Manager] Version 2021.8.0 is September 09, 2021.
+The next release is planned for October 07, 2021.
 
 ## What's New {#whats-new}
 
-* Self-service capability to allow users to create and manage multiple repositories via Cloud Manager UI.
+* The program cards on Cloud Manager landing page and the associated experience has been refreshed.
 
-* SonarQube was unnecessarily reading git history data. On large code bases, this could lead to an unnecessary build performance penalty.
+* The Code Quality Step Log now includes verbose logging information on the OakPal scanning process.
 
-* There is now an API available to invalidate the Maven dependency cache per pipeline.
+* The Activity page menu options will now include an option to "Download Log" for completed Code Generator executions. Selecting this will download the log of the build step.
 
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 29. 
+* Clicking directly on the Program card will now navigate to Cloud Manager Overview page.
+
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
 
 ## Bug Fixes {#bug-fixes}
 
-* Occasionally, when a pipeline is triggered twice for some reason, it results in one of the executions failing with *cannot update pipeline execution status* error.
+* Wrong URL was copied when selecting the copy URL menu option from Repositories screen.
