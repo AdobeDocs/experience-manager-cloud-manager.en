@@ -13,10 +13,12 @@ The following section outlines the general Release Notes for [!UICONTROL Cloud M
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2021.8.0 is September 09, 2021.
+The Release Date for [!UICONTROL Cloud Manager] Version 2021.9.0 is September 09, 2021.
 The next release is planned for October 07, 2021.
 
 ## What's New {#whats-new}
+
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
 
 * The program cards on Cloud Manager landing page and the associated experience has been refreshed.
 
@@ -25,8 +27,6 @@ The next release is planned for October 07, 2021.
 * The Activity page menu options will now include an option to "Download Log" for completed Code Generator executions. Selecting this will download the log of the build step.
 
 * Clicking directly on the Program card will now navigate to Cloud Manager Overview page.
-
-* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 30.
 
 ## Bug Fixes {#bug-fixes}
 
