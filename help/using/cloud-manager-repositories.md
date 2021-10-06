@@ -7,7 +7,7 @@ exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 
 Repositories that are created and available in Cloud Manager can be viewed and managed via the Repositories page. 
 
-## Adding and and Managing Repositories {#add-manage-repos}
+## Adding and Managing Repositories {#add-manage-repos}
 
 Follow the steps below to view and manage repositories in Cloud Manager:
 
@@ -46,7 +46,7 @@ Git submodules can be used to merge the content of multiple branches across git 
 $ git submodule update --init
 ```
 
-This will check out each submodule into the appropriate directory. This technique is a potential alternative to https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html for organizations which are comfortable with using git submodules and do not want to manage an external merging process.
+This will check out each submodule into the appropriate directory. This technique is a potential alternative to [working with multiple source Git repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html) for organizations which are comfortable with using git submodules and do not want to manage an external merging process.
 
 For example, let's say there are three repositories, each containing a single branch named main . In the "primary" repository, i.e. the one configured in the pipelines, the main  branch has a pom.xml file declaring the projects contained in the other two repositories:
 
