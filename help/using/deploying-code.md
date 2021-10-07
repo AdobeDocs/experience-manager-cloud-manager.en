@@ -158,3 +158,32 @@ Production deployments generally follow the same steps as above, but in a rollin
 1. Deploy AEM packages to publish2 and the dispatcher package to dispatcher2 in parallel, flush dispatcher cache.
 1. Put dispatcher2 back into the load balancer.
 This process continues until the deployment has reached all publishers and dispatchers in the topology.
+
+## Emergency Pipeline Execution Mode {#emergency-pipeline}
+
+In critical situations, Adobe Managed Services customers may need to deploy code changes to their stage and production environments without waiting for a full Cloud Manager test cycle to execute. 
+
+To address these situations, the Cloud Manager production pipeline may be executed in an *emergency* mode. When this mode is used, the security and performance test steps are not  executed; all other steps, including any configured approval steps, are executed as in the normal pipeline execution mode. 
+
+>[!NOTE]
+>Emergency Pipeline Execution Mode capability is activated on a program basis by the Customer Success Engineers.
+
+### Using Emergency Pipeline Execution Mode {#using-emergency-pipeline}
+
+When starting a production pipeline execution, if this feature has been activated, you can start the execution in either normal or emergency mode from the dialog box, as shown in the figure below.
+
+![](assets/execution-emergency1.png)
+
+Additionally, viewing the pipeline execution details page for an execution run in emergency mode, the breadcrumbs at the top of the screen shows an indicator that emergency mode was used for this particular execution.
+
+![](assets/execution-emergency2.png)
+
+
+Creating a pipeline execution in this emergency mode can also be done through the Cloud Manager API or CLI. To start an execution in Emergency Mode, submit a PUT request to the pipeline's execution endpoint with the query parameter `?pipelineExecutionMode=EMERGENCY` or, when using the CLI:
+
+```
+$ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
+```
+
+>[!IMPORTANT]
+>Using `--emergency` flag may require updating to the latest `aio-cli-plugin-cloudmanager` version.
