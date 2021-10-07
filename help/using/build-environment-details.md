@@ -11,6 +11,7 @@ Cloud Manager builds and tests your code using a specialized build environment. 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
 * Apache Maven 3.6.0 is installed.
 * The Java versions installed are Oracle JDK 8u202, Azul Zulu 8u292, Oracle JDK 11.0.2, and Azul Zulu 11.0.11.
+* By default, the JAVA_HOME  environment variable is set to `/usr/lib/jvm/jdk1.8.0_202` which contains Oracle JDK 8u202. See [Alternate Maven Execution JDK Version](#alternate-maven) section for more details.
 * There are some additional system packages installed which are necessary:
 
     * bzip2
@@ -74,7 +75,7 @@ The [Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-
 
 This will cause all toolchains-aware Maven plugins to use the Oracle JDK, version 11.
 
-When using this method, Maven itself still runs using the default JDK (Oracle 8). Therefore checking or enforcing the Java version through plugins like the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) does not work and such plugins must not be used.
+When using this method, Maven itself still runs using the default JDK (Oracle 8) and the `JAVA_HOME` environment variable is not changed. Therefore checking or enforcing the Java version through plugins like the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) does not work and such plugins must not be used.
 
 The currently available vendor/version combinations are:
 
@@ -92,11 +93,7 @@ The currently available vendor/version combinations are:
 
 It is also possible to select Azul 8 or Azul 11 as the JDK for the entire Maven execution. Unlike the toolchains options, this changes the JDK used for all plugins unless the toolchains configuration is also  set in which case the toolchains configuration is still applied for toolchains-aware Maven plugins. As a result, checking and enforcing the Java version using the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) will work.
 
-To do this, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. This file can have either the content 11 or 8. Any other value is ignored. If 11 is specified, Azul 11 is used. If 8 is specified, Azul 8 is used.
-
->[!NOTE]
->In a future release of Cloud Manager, currently estimated to be in October 2021, the default JDK will be changed and the default will be Azul 11. Projects which are not compatible with Java 11 should create this file with the content 8  as soon as possible to ensure they are not impacted by this switch.
-
+To do this, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. This file can have either the content 11 or 8. Any other value is ignored. If 11 is specified, Azul 11 is used and the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk-11.0.11`. If 8 is specified, Azul 8 is used and the JAVA_HOME environment variable is set to `/usr/lib/jvm/jdk-8.0.292`.
 
 ## Environment Variables {#environment-variables}
 

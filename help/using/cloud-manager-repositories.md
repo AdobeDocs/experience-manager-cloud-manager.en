@@ -95,4 +95,5 @@ When using git submodules, please keep these things in mind:
 
 * The Git URL must be exactly in the syntax described above. For security reasons, do not  embed credentials in these URLs.
 * Only submodules at the root of the branch are supported.
-* Git submodules references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated, for example, by using `git submodule update --remote` .
+* Git submodules references are stored to specific git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated, for example, by using `git submodule update --remote`.
+* Unless otherwise necessary, it is highly recommended to use "shallow" submodules. To do this, run `git config -f .gitmodules submodule.<submodule path>.shallow true` for each submodule.
