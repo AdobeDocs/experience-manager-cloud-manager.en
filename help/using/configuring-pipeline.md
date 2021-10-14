@@ -95,7 +95,9 @@ Follow these steps to configure the behavior and preferences for your production
 
          * **Skip Load Balancer**
 
-    1. Select the **Dispatcher Configurations** for Stage.
+    1. Select the **Dispatcher Configurations** for Stage. Enter the path, select the action from **Type**, and click **Add Path**. You can specify up to 100 paths per environment. 
+
+       ![](/help/using/assets/configure-pipelines/dispatcher-stage.png)
 
     1. Select the **Deployment Options** for Production. Now you define the parameters controlling the production deployment. The three available options are as follows:
 
@@ -112,7 +114,9 @@ Follow these steps to configure the behavior and preferences for your production
           >
           >Please refer to [Deploy your Code](deploying-code.md), to set the deployment schedule or execute the production immediately.
 
-    1. Setup the **Dispatcher Configurations** for Production.
+    1. Setup the **Dispatcher Configurations** for Production. Enter the path, select the action from **Type**, and click **Add Path**. You can specify up to 100 paths per environment.
+
+       ![](/help/using/assets/configure-pipelines/dispatcher-prod.png)
 
        As a Deployment Manager, you have the opportunity to configure a set of content paths which will either be **invalidated** or **flushed** from the AEM Dispatcher cache for publish instances, while setting up or editing pipeline.
 
