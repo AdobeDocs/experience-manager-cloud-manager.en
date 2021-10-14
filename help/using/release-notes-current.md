@@ -13,14 +13,14 @@ The following section outlines the general Release Notes for [!UICONTROL Cloud M
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2021.10.0 is October 07, 2021.
+The Release Date for [!UICONTROL Cloud Manager] Version 2021.10.0 is October 14, 2021.
 The next release is planned for  November 04, 2021.
 
 ## What's New {#whats-new}
 
 * Production pipelines can now be executed in an "emergency" mode, bypassing security and performance testing steps for emergency deployments.
 
-* Existing deployment pipelines will now be referenced and labelled in the UI as 'Full Stack' pipelines. For consistency with Cloud Service, existing deployment pipelines will now be referenced and labelled in the UI as 'Full Stack' pipelines.
+* For consistency with Cloud Service, existing deployment pipelines will now be referenced and labelled in the UI as 'Full Stack' pipelines.
 
 * Pipeline card has been refreshed to now display a single, integrated face that shows both production and non-production pipelines, and user can select Run/Pause/Resume directly from the action menu associated with each pipeline.
 
