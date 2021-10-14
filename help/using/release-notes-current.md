@@ -24,6 +24,8 @@ The next release is planned for  November 04, 2021.
 
 * Pipeline card has been refreshed to now display a single, integrated face that shows both production and non-production pipelines, and user can select Run/Pause/Resume directly from the action menu associated with each pipeline.
 
+* A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the UI.
+
 * Add and edit pipeline experiences have been refreshed to now use familiar, modern modals.
 
 * Users of Cloud Manager can now submit feedback directly from the UI via the **Feedback** button on top right of the landing page.
