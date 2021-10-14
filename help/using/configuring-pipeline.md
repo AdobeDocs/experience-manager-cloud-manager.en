@@ -209,11 +209,12 @@ Follow the steps below to edit the configured non-production pipeline:
 
 1. Select the non-production pipeline and click on **...**. Click on **Edit**, as shown in the figure below.
 
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit1.png)
 
-1. The **Edit Production Pipeline** dialog box displays.
+1. The **Edit Production Pipeline** dialog box displays that allows you to update the **Pipeline Name**, **Repository**, **Git Branch**, **Deployment Trigger**, and **Important Metrics Failure Behavior**.
 
-   1. The **Configuration** tab allows you to update the **Pipeline Name**, **Deployment Trigger**, and **Important Metrics Failure Behavior**.
-
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit2.png)
+   
       >[!NOTE]
       >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
