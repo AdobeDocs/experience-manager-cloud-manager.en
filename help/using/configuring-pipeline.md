@@ -173,31 +173,53 @@ CI/CD Non-production pipelines are broken into two categories, Code Quality pipe
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
+### Adding a Non-Production Pipeline {#add-non-production-pipeline}
+
 On the home screen, these pipelines are listed in a new card:
 
-1. Access the **Non-Production Pipelines** tile from the Cloud Manager home screen.
+1. Access the **Pipelines** card from the Cloud Manager home screen. Click on **+Add** and select **Add Non-Production Pipeline**. 
 
-   ![](/help/using/assets/non-prod-add.png)
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
-1. Click on the **Add** button, to specify the Pipeline Name, Pipeline Type, and the Git Branch.
+1. **Add Non-Production Pipeline**  dialog box displays. Select the type of pipeline you want to create, either **Code Quality Pipeline** or **Deployment Pipeline**.
 
-   Additionally, you can also set up Deployment Trigger and Important Failure Behavior from Pipeline Options.
+   Additionally, you can also set up **Deployment Trigger** and **Important Failure Behavior** from **Deployment Options**. Click on **Continue**.
 
-   ![](assets/non-prod-pipe.png)
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add2.png)
 
-1. Click **Save** and the pipeline is shown on the card on the home screen with five actions:
 
-   * **Edit** - allows editing of the pipeline settings
-   * **Details** - displays the last pipeline execution (if there is one)
-   * **Build** - navigates to the execution page, from which the pipeline can be executed
-   * **Access Repo Info** - allows the user to get the information necessary to access Cloud Manager Git repository
-   * **Learn More** - navigates to understanding the CI/CD pipeline documentation resource.
+1. The newly created non-production pipeline now displays in the **Pipelines** card.
 
-       ![](assets/prod-one.png)
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add4.png)
 
-   >[!NOTE]
-   >
-   >While the pipeline is running, the current step is displayed and only the **Details** action is available.
+
+   The pipeline is shown on the card on the home screen with three actions, as shown below:
+   
+   * **Add** - allows adding of a new pipeline.
+   * **Access Repo Info** - allows the user to get the information necessary to access Cloud Manager Git repository.
+   * **Learn More** - navigates to understanding the CI/CD pipeline documentation resource. 
+
+### Editing a Non-Production Pipeline {#editing-nonprod-pipeline}
+
+You can edit the pipeline configurations from the **Pipelines card** from **Program Overview** page. 
+
+Follow the steps below to edit the configured non-production pipeline:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Select the non-production pipeline and click on **...**. Click on **Edit**, as shown in the figure below.
+
+
+1. The **Edit Production Pipeline** dialog box displays.
+
+   1. The **Configuration** tab allows you to update the **Pipeline Name**, **Deployment Trigger**, and **Important Metrics Failure Behavior**.
+
+      >[!NOTE]
+      >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+
+
+1. Click on **Update** once you are done editing the non-production pipeline.
+
 
 ## The Next Steps {#the-next-steps}
 
