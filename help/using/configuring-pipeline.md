@@ -64,28 +64,27 @@ Follow these steps to configure the behavior and preferences for your production
 
 1. **Add Production Pipeline** dialog box displays. 
 
-    1. Enter the pipeline name. You can choose the **Repository** and the **Git Branch**.
+    1. Enter the **Pipeline Name**. You can choose the **Repository** and the **Git Branch**.
 
        ![](/help/using/assets/configure-pipelines/add-prod2.png)
 
-     1. You can set up **Deployment Trigger** and **Important Failure Behavior** from **Deployment Options**.
+     1. You can set up **Deployment Trigger** and **Important Metric Failures Behavior** from **Deployment Options**.
 
         ![](/help/using/assets/configure-pipelines/add-prod3.png)
 
 
-        You can define the trigger to start the pipeline:
+        You can assign the following deployment triggers to start the pipeline:
 
         * **Manual** - using the UI manually start the pipeline.
         * **On Git Changes** - starts the CI/CD pipeline whenever there are commits added to the configured git branch. Even if you select this option, you can always start the pipeline manually.  
 
-          >[!NOTE]
-          >During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates.
+         During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates.
 
         This is useful for customers who have the desire for more automated processes. The available options are:
 
          * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
-         * **Cancel Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
-         * **Approve immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
+         * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
+         * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
     1. Select the **Deployment Options**.
 
@@ -93,19 +92,19 @@ Follow these steps to configure the behavior and preferences for your production
 
          * **Approve after Stage Deployment** functions similarly to the approval before the production deployment, but occurs immediately after the stage deployment step,that is, before any testing is done, compared with the approval before the production deployment, which is done after all testing is complete.
 
-         * **Skip Load Balancer**
+         * **Skip Load Balancer changes** skips the changes.
 
-    1. Select the **Dispatcher Configurations** for Stage. Enter the path, select the action from **Type**, and click **Add Path**. You can specify up to 100 paths per environment. 
+    1. Select the **Dispatcher Configuration** for Stage. Enter the path, select the action from **Type**, and click **Add Path**. You can specify up to 100 paths per environment. 
 
        ![](/help/using/assets/configure-pipelines/dispatcher-stage.png)
 
-    1. Select the **Deployment Options** for Production. Now you define the parameters controlling the production deployment. The three available options are as follows:
+    1. Select the **Deployment Options** for Production. Now you define the parameters controlling the production deployment. 
+    
+       ![](/help/using/assets/configure-pipelines/prod-deploymentoptions.png)
+
+       The three available options are as follows:
 
        * **Use Go Live Approval** - A deployment must be manually approved by a business owner, project manager, or deployment manager via the [!UICONTROL Cloud Manager] UI.
-       * **Use CSE Oversight** - A CSE is engaged to actually start the deployment. During pipeline setup or edit when CSE Oversight is enabled, the Deployment Manager has the option of selecting:
-
-        * **Any CSE**: refers to any available CSE  
-        * **My CSE**: refers to a specific CSE assigned to the customer or their backup, if the CSE is out of the office
 
        * **Scheduled** - This option allows the user to enable the scheduled production deployment.
 
@@ -113,6 +112,11 @@ Follow these steps to configure the behavior and preferences for your production
           >If **Scheduled** option is selected, you can schedule your production deployment to the pipeline **after** the stage deployment (and **Use GoLive Approval**, if that has been enabled) to wait for a schedule to be set. The user can also choose to execute the production deployment immediately.
           >
           >Please refer to [Deploy your Code](deploying-code.md), to set the deployment schedule or execute the production immediately.
+
+         * **Use CSE Oversight** - A CSE is engaged to actually start the deployment. During pipeline setup or edit when CSE Oversight is enabled, the Deployment Manager has the option of selecting:
+
+            * **Any CSE**: refers to any available CSE  
+            * **My CSE**: refers to a specific CSE assigned to the customer or their backup, if the CSE is out of the office
 
     1. Setup the **Dispatcher Configurations** for Production. Enter the path, select the action from **Type**, and click **Add Path**. You can specify up to 100 paths per environment.
 
@@ -166,6 +170,28 @@ Follow the steps below to edit the configured pipeline:
 
 1. Click on **Update** once you are done editing the pipeline.
 
+### Additional Production Pipeline Actions {#additional-prod-actions}
+
+#### Running a Production Pipeline {#run-prod}
+
+You can run the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Run**, as shown in the figure below.
+
+   ![](/help/using/assets/configure-pipelines/prod-run.png)
+
+#### Deleting a Production Pipeline {#delete-prod}
+
+You can delete the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Delete**, as shown in the figure below.
+
+   ![](/help/using/assets/configure-pipelines/prod-delete.png)
+
 ## Non-Production & Code Quality Only Pipelines
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
@@ -188,7 +214,7 @@ On the home screen, these pipelines are listed in a new card:
 
 1. **Add Non-Production Pipeline**  dialog box displays. Select the type of pipeline you want to create, either **Code Quality Pipeline** or **Deployment Pipeline**.
 
-   Additionally, you can also set up **Deployment Trigger** and **Important Failure Behavior** from **Deployment Options**. Click on **Continue**.
+   Additionally, you can also set up **Deployment Trigger** and **Important Metric Failures Behavior** from **Deployment Options**. Click on **Continue**.
 
    ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add2.png)
 
@@ -223,6 +249,16 @@ Follow the steps below to edit the configured non-production pipeline:
       >[!NOTE]
       >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
+      You can assign the following deployment triggers to start the pipeline:
+
+      * **Manual** - using the UI manually start the pipeline.
+      * **On Git Changes** - starts the CI/CD pipeline whenever there are commits added to the configured git branch. Even if you select this option, you can always start the pipeline manually.  
+
+      During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates. This is useful for customers who have the desire for more automated processes. The available options are:
+
+      * **Ask every time** - This is the default setting and requires manual intervention on any Important failure.
+      * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an Important failure occurs. This is essentially emulating a user manually rejecting each failure.
+      * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
 1. Click on **Update** once you are done editing the non-production pipeline.
 
