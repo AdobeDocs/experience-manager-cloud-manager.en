@@ -192,6 +192,9 @@ You can delete the production pipeline from the Pipelines card:
 
    ![](/help/using/assets/configure-pipelines/prod-delete.png)
 
+   >[!NOTE]
+   >A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the **Delete** option from the Pipeline card.
+
 ## Non-Production & Code Quality Only Pipelines
 
 In addition to the main pipeline which deploys to stage and production, customers are able to set up additional pipelines, referred to as **Non-Production Pipelines**. These pipelines always execute the build and code quality steps. They can optionally also deploy to Adobe Managed Services environment.
@@ -261,6 +264,28 @@ Follow the steps below to edit the configured non-production pipeline:
       * **Continue immediately** - If selected, the pipeline will proceed automatically whenever an Important failure occurs. This is essentially emulating a user manually approving each failure.
 
 1. Click on **Update** once you are done editing the non-production pipeline.
+
+### Additional Non-Production Pipeline Actions {#additional-nonprod-actions}
+
+#### Running a Non-Production Pipeline {#run-nonprod}
+
+You can run the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Run**, as shown in the figure below.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-run1.png)
+
+#### Deleting a Non-Production Pipeline {#delete-nonprod}
+
+You can delete the production pipeline from the Pipelines card:
+
+1. Navigate to **Pipelines** card from the **Program Overview** page.
+
+1. Click on **...** from the **Pipelines** card and click on **Delete**, as shown in the figure below.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-delete.png)
 
 
 ## The Next Steps {#the-next-steps}
