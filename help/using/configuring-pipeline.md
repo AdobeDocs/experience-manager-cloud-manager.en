@@ -152,29 +152,19 @@ Follow the steps below to edit the configured pipeline:
 
 1. Click on **...** from the **Pipelines** card and click on **Edit**, as shown in the figure below.
 
+   ![](/help/using/assets/configure-pipelines/edit-prod1.png)
 
 1. The **Edit Production Pipeline** dialog box displays.
 
-   1. The **Configuration** tab allows you to update the **Pipeline Name**, **Deployment Trigger**, and **Important Metrics Failure Behavior**.
+   1. The **Configuration** tab allows you to update the **Pipeline Name**, **Repository**, **Git Branch**, **Deployment Trigger**, **Important Metrics Failure Behavior**, **Deployment Options** and **Dispatcher Configurations**.
 
       >[!NOTE]
       >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
 
-   1. The **Source** tab provides you an option to check or uncheck **Pause before deploying to Production** and **Scheduled** options from **Production Deployment Options**.
-
-
-   1. The **Experience Audit** option allows you to update or add new pages.
-
+   1. The **Stage Testing** tab provides you an option to re-select your options from **Sites Content Delivery/Distributed Load Weight** and **Assets Performance Testing Distribution**.
 
 1. Click on **Update** once you are done editing the pipeline.
-
-1. Click **Setup Pipeline** to setup and configure your pipeline.
-
-   ![](assets/Setup-Pipeline.png)
-
-
-
 
 ## Non-Production & Code Quality Only Pipelines
 
