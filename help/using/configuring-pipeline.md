@@ -19,14 +19,6 @@ exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 
 The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](ci-cd-pipeline.md).
 
-## Video Tutorial {#video-tutorial-one}
-
-### Configuring Pipeline in Cloud Manager {#config-pipeline-video}
-
-The CI/CD Production Pipeline configuration defines the trigger that will initiate the pipeline, parameters controlling the production deployment and performance test parameters.
-
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
-
 
 ## Understanding the Flow {#understanding-the-flow}
 
@@ -37,6 +29,14 @@ The Deployment Manager is responsible for setting up the pipeline. When doing so
 * defining the trigger that will start the pipeline.
 * defining the parameters controlling the production deployment.
 * configuring the performance test parameters.
+
+## Video Tutorial {#video-tutorial-one}
+
+### Configuring Pipeline in Cloud Manager {#config-pipeline-video}
+
+The CI/CD Production Pipeline configuration defines the trigger that will initiate the pipeline, parameters controlling the production deployment and performance test parameters.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 ## Setting up the Pipeline {#setting-up-the-pipeline}
 
@@ -50,7 +50,7 @@ Before you start to deploy your code, you must configure your pipeline settings 
 >
 >You can change the pipeline settings after initial set up.
 
-## Adding a New Production Pipeline from Pipelines Card {#adding-production-pipeline}
+### Adding a New Production Pipeline from Pipelines Card {#adding-production-pipeline}
 
 Once you have setup your program and have at least one environment using [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline.
 
