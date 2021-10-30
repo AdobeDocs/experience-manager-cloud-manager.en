@@ -23,16 +23,19 @@ exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 
 ## Introduction {#introduction}
 
-[!UICONTROL Cloud Manager], part of Adobe Experience Manager (AEM) in Cloud, enables organizations to self-manage Experience Manager in the cloud. It includes a continuous integration and continuous delivery (CI/CD) framework that lets IT teams and implementation partners expedite the delivery of customizations or updates without compromising performance or security.
+[!UICONTROL Cloud Manager] for Adobe Experience Manager gives developers the ability to create impactful customer experiences through streamlined workflows, built upon Adobe Experience Manager best practices. CI/CD pipelines optimized for Adobe Experience Manager, allow you to easily merge development workflows simply by checking in your code and moving all the way to being production-ready. During the build phase, your custom code updates are thoroughly tested using tried and learned best practices to deliver impactful digital experiences for your customers. Cloud Manager uses an open-API approach and enables you to integrate with your systems without disrupting existing processes and tools.
+ 
+This documentation site specifically describes the features and functions of Cloud Manager for Adobe Managed Services (AMS) customers. The equivalent documentation for AEM as a Cloud Service customers can be found in the [Implementing Applications for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en).
+ 
+With Cloud Manager, your development team can leverage the following:
 
-This documentation site specifically describes the features and functions of Cloud Manager available to Adobe Managed Services (AMS) customers. Documentation on Cloud Manager features and functions for AEM as a Cloud Service customers can be found in the [Implementing Applications for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en).
+* Continuous Integration / Continuous Delivery of code to reduce time to market from months/weeks to days/hours.
 
-Using the [!UICONTROL Cloud Manager] self-service customer portal, **Organizations** can perform/leverage the following:
+* Code Inspection, performance testing and security validation based on best practices before pushing to production to minimize production disruptions.
 
-* **Continuous Integration / Continuous Delivery** of code to reduce time to market from months/weeks to days/hours.
-* **Code Inspection, performance testing and security validation** based on best practices before pushing to production to minimize production disruptions.
-* **Automatic, scheduled or manual deployment** even outside of business hours for maximum flexibility and control.
-* **Autoscaling** feature intelligently detects the need for increased capacity and automatically brings online additional Dispatcher/Publish segment(s).
+* API Connectivity to complement existing DevOps processes.
+
+* Autoscaling feature intelligently detects the need for increased capacity and automatically brings online additional Dispatcher/Publish segment(s).
 
 The following image illustrates the CI/CD process flow used in [!UICONTROL Cloud Manager]:
 
