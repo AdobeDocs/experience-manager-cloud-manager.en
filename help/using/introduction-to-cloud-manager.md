@@ -29,9 +29,9 @@ This documentation site specifically describes the features and functions of Clo
  
 With Cloud Manager, your development team can leverage the following:
 
-* Continuous Integration / Continuous Delivery of code to reduce time to market from months/weeks to days/hours.
+* Continuous Integration/Continuous Delivery of code to reduce time to market from months/weeks to days/hours.
 
-* Code Inspection, performance testing and security validation based on best practices before pushing to production to minimize production disruptions.
+* Code Inspection, performance testing, and security validation based on best practices before pushing to production to minimize production disruptions.
 
 * API Connectivity to complement existing DevOps processes.
 
