@@ -163,7 +163,7 @@ Follow the steps below to edit the configured pipeline:
    1. The **Configuration** tab allows you to update the **Pipeline Name**, **Repository**, **Git Branch**, **Deployment Trigger**, **Important Metrics Failure Behavior**, **Deployment Options** and **Dispatcher Configurations**.
 
       >[!NOTE]
-      >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+      >See [Adding and Managing Repositories](/help/using/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
 
    1. The **Stage Testing** tab provides you an option to re-select your options from **Sites Content Delivery/Distributed Load Weight** and **Assets Performance Testing Distribution**.
@@ -250,7 +250,7 @@ Follow the steps below to edit the configured non-production pipeline:
    ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit2.png)
    
       >[!NOTE]
-      >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+      >See [Adding and Managing Repositories](/help/using/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
       You can assign the following deployment triggers to start the pipeline:
 
