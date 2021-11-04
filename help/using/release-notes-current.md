@@ -24,6 +24,8 @@ The next release is planned for  December 09, 2021.
 
 * As a user, I see Pipeline card with zero pipelines provide me with appropriate guidance. 
 
+* A new Activity Page is now available where activities such as pipeline and code executions can be viewed along with their associated details. Over time, the activities listed in this page will expand in scope along with the details provided.
+
 * A new Pipelines page with an on-hover, status popover for easy view of the summary of details is now available. Pipeline executions can be viewed along with their associated details.
 
 * The Edit Pipeline API now supports setting the dispatcher invalidation and flush paths. 
