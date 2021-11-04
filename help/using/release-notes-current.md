@@ -22,15 +22,13 @@ The next release is planned for  December 09, 2021.
 
 * The `x-request-id` response header is now visible in the API Playground on [www.adobe.io](https://www.adobe.io/). This header is useful when submitting customer care issues for troubleshooting.
 
-* As a user, I see  Pipeline card with zero pipelines provide me with appropriate guidance. 
+* As a user, I see Pipeline card with zero pipelines provide me with appropriate guidance. 
 
-* A new Activity Page is now available where activities such as pipeline and code executions can be viewed along with their associated details. Over time, the activities listed in this page will expand in scope along with the details provided.
+* A new Pipelines page with an on-hover, status popover for easy view of the summary of details is now available. Pipeline executions can be viewed along with their associated details.
 
 * The Edit Pipeline API now supports setting the dispatcher invalidation and flush paths. 
 
-* The Edit Pipeline API now supports changing the environment used in the deploy phases.
-
-* The pipelines page will now include an on-hover, status popover for easy view of the summary of details of the pipeline. 
+* The Edit Pipeline API now supports changing the environment used in the deploy phases. 
 
 * An optimization in the OakPal scanning process has been introduced for large packages.
 
