@@ -4,7 +4,7 @@ description: Follow this page to get information for Cloud Manager Release 2021.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
-# Release Notes for 2021.10.0 {#release-notes-for}
+# Release Notes for 2021.11.0 {#release-notes-for}
 
 The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2021.11.0.
 
