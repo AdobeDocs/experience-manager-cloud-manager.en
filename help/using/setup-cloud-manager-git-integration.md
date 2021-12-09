@@ -22,7 +22,7 @@ This video series explores several use cases when it comes to integrating a cust
 * [Production Deployment](#production-deployment)
 * [Synchronizing Release Tags](#sync-tags)
 
-For a complete overview, please review the [Cloud Manager User Guide](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html). The video series assumes a basic knowledge of git and source control management. See the [additional resources below](#additional-resources) for more details on git.
+For a complete overview, please review the [Cloud Manager User Guide.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) The video series assumes a basic knowledge of git and source control management. See the [additional resources below](#additional-resources) for more details on git.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ First steps for synchronizing a customer-managed Git repository with Cloud Manag
 
 ## Basic Branching Strategy {#branching-strategy}
 
-Set up a basic branching strategy in order to take advantage of Cloud Manager's [production and non-production pipelines](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html).
+Set up a basic branching strategy in order to take advantage of Cloud Manager's [production and non-production pipelines.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -60,7 +60,7 @@ Synchronize release tags from a Cloud Manager git repository into a customer-man
 
 ## Additional Resources {#additional-resources}
 
-* [Cloud Manager Documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GitHub Resources](https://try.github.io)
 * [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
