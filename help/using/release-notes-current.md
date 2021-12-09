@@ -2,7 +2,6 @@
 title: Release Notes for 2021.12.0
 description: These are the release notes for Cloud Manager release 2021.11.0.
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 # Release Notes for Cloud Manager Release 2021.12.0 {#release-notes}
 
@@ -13,11 +12,11 @@ The following section outlines the general Release Notes for [!UICONTROL Cloud M
 
 ## Release Date {#release-date}
 
-The Release date for [!UICONTROL Cloud Manager] release 2021.12.0 is 16 December 2021. The next release is planned for February 2021.
+The release date for [!UICONTROL Cloud Manager] release 2021.12.0 is 16 December 2021. The next release is planned for February 2021.
 
 ## What's New {#whats-new}
 
-* Enhancements to information presented in the Activities page
-* A user with the Deployment Manager role can now initiate the Project/Branch creation wizard for a repository with no branches from the action menu in the repositories page.
+* Enhancements to information presented in the Activities page were added.
+* A user with the Deployment Manager role can now initiate the Project/Branch creation wizard for a repository with no branches from the action menu on the repositories page.
 * An optimization in the OakPal scanning process has been introduced for large packages.
 * In the edit Production Pipeline, when there is more than one Stage (for Production) environment, a dropdown for environment selection is available.
