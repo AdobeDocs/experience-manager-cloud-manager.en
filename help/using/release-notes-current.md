@@ -13,11 +13,18 @@ The following section outlines the general Release Notes for [!UICONTROL Cloud M
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2021.12.0 is 16 December 2021. The next release is planned for February 2021.
+The release date for [!UICONTROL Cloud Manager] release 2021.12.0 is 16 December 2021. The next release is planned for January 2022.
 
 ## What's New {#whats-new}
 
-* Enhancements to information presented in the Activities page were added.
+* The commit hash, which is already visible in the UI, is now also provided in the API.
+* The Activity page now includes a pop-over for running pipelines that provides a summary of pipeline details at-a-glance.
+* Updates to include additional details presented in the Activities page were added.
+* The Learn tab in Cloud Manager now includes quick access to API guides and associated resources.
 * A user with the Deployment Manager role can now initiate the Project/Branch creation wizard for a repository with no branches from the action menu on the repositories page.
-* An optimization in the OakPal scanning process has been introduced for large packages.
-* In the edit Production Pipeline, when there is more than one Stage (for Production) environment, a dropdown for environment selection is available.
+* The Deployment Manager, who is in the add or edit pipeline workflow, is now informed on how to create a branch or project if the selected repository has no branches.
+* In the Edit Production Pipeline window, when there is more than one stage environment for production, a dropdown for environment selection is available.
+
+## Bug Fixes {#bug-fixes}
+
+* Full stack production pipelines remain named "Production Pipeline" even when the user inputs a different name in the name field.
