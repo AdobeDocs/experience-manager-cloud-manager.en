@@ -2,6 +2,7 @@
 title: Release Notes for 2021.4.0
 description: Follow this page to get information for Cloud Manager Release 2021.4.0
 feature: Release Information
+exl-id: 4c8926bb-5a82-4965-90ac-44317d337269
 ---
 # Release Notes for 2021.4.0 {#release-notes-for}
 

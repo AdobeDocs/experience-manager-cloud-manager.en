@@ -2,6 +2,7 @@
 title: Release Notes for 2021.10.0
 description: Follow this page to get information for Cloud Manager Release 2021.10.0
 feature: Release Information
+exl-id: 0a8f1a34-7750-43b7-ad5d-813c56631d56
 ---
 # Release Notes for 2021.10.0 {#release-notes-for}
 

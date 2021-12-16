@@ -2,6 +2,7 @@
 title: Release Notes for 2021.12.0
 description: These are the release notes for Cloud Manager release 2021.12.0.
 feature: Release Information
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 # Release Notes for Cloud Manager Release 2021.12.0 {#release-notes}
 
