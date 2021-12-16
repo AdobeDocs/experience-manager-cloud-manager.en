@@ -728,7 +728,7 @@ The AEM Modernization Tools documentation provides documentation and tooling for
 
 In order to be compatible with the Cloud Service deployment model, individual content packages must contain either content for the immutable areas of the repository (that is, `/apps and /libs, although /libs` should not be modified by customer code and will cause a separate violation) or the mutable area (that is, everything else), but not both. For example, a package which includes both `/apps/myco/components/text and /etc/clientlibs/myco` is not compatible with Cloud Service and will cause an issue to be reported.
 
-Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
+Refer to [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
 
 ### Reverse Replication Agents Should Not Be Used {#oakpal-reverse-replication}
 
@@ -740,7 +740,7 @@ Refer to [AEM Project Structure](https://docs.adobe.com/content/help/en/experien
 
 **Since**: Version 2020.5.0
 
-Support for Reverse Replication is not available in Cloud Service deployments, as described in [Release Notes: Removal of Replication Agents](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+Support for Reverse Replication is not available in Cloud Service deployments, as described in [Release Notes: Removal of Replication Agents.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en#replication-agents)
 
 Customers using reverse replication should contact Adobe for alternative solutions.
 

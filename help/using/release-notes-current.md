@@ -1,51 +1,30 @@
 ---
-title: Release Notes for 2021.11.0
-description: Follow this page to get information for Cloud Manager Release 2021.11.0
+title: Release Notes for 2021.12.0
+description: These are the release notes for Cloud Manager release 2021.12.0.
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
-# Release Notes for 2021.11.0 {#release-notes-for}
+# Release Notes for Cloud Manager Release 2021.12.0 {#release-notes}
 
-The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] Release 2021.11.0.
+The following section outlines the general Release Notes for [!UICONTROL Cloud Manager] release 2021.12.0.
 
 >[!NOTE]
->Refer to [Current Release Notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access) to see the latest release notes for Cloud Manager in AEM as a Cloud Service.
+>
+>For the latest release notes for Cloud Manager in AEM as a Cloud Service, refer to [Cloud Manager in AEM as a Cloud Service's current release notes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2021.11.0 is November 04, 2021.
-The next release is planned for  December 16, 2021.
+The release date for [!UICONTROL Cloud Manager] release 2021.12.0 is 16 December 2021. The next release is planned for January 2022.
 
 ## What's New {#whats-new}
 
-* The Git Commit ID will now be displayed in the pipeline execution details making it easier to track the code that was built. 
-
-* The `x-request-id` response header is now visible in the API Playground on [www.adobe.io](https://www.adobe.io/). This header is useful when submitting customer care issues for troubleshooting.
-
-* As a user, I see Pipeline card with zero pipelines provide me with appropriate guidance. 
-
-* A new Activity Page is now available where activities such as pipeline and code executions can be viewed along with their associated details. Over time, the activities listed in this page will expand in scope along with the details provided.
-
-* A new Pipelines page with an on-hover, status popover for easy view of the summary of details is now available. Pipeline executions can be viewed along with their associated details.
-
-* The Edit Pipeline API now supports setting the dispatcher invalidation and flush paths. 
-
-* The Edit Pipeline API now supports changing the environment used in the deploy phases. 
-
-* An optimization in the OakPal scanning process has been introduced for large packages.
-
-* The quality issue CSV file will now contain the timestamp for each quality issue.
-
-* Manage button in the Environments page will no longer be visible in the UI.
+* The commit hash, which is already visible in the UI, is now also provided in the API.
+* The Activity page now includes a pop-over for running pipelines that provides a summary of pipeline details at-a-glance.
+* Updates to include additional details presented in the Activities page were added.
+* The Learn tab in Cloud Manager now includes quick access to API guides and associated resources.
+* A user with the Deployment Manager role can now initiate the Project/Branch creation wizard for a repository with no branches from the action menu on the repositories page.
+* The Deployment Manager, who is in the add or edit pipeline workflow, is now informed on how to create a branch or project if the selected repository has no branches.
+* In the Edit Production Pipeline window, when there is more than one stage environment for production, a dropdown for environment selection is available.
 
 ## Bug Fixes {#bug-fixes}
 
-* Certain unorthodox build configurations resulted in unnecessary files being stored in the pipeline's Maven artifact cache which resulted in extraneous network I/O when starting and stopping the build container.
-
-* Pipeline PATCH API fails if deploy phase does not exist.
-
-* The `ClientlibProxyResourceCheck` quality rule was producing false positive issues when there were client libraries with common base paths.
-
-* Error message when max number of repositories has been reached did not specify the reason for the error.
-
-* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes. 
+* Full stack production pipelines remain named "Production Pipeline" even when the user inputs a different name in the name field.
