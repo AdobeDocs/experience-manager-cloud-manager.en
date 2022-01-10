@@ -25,6 +25,7 @@ The release date for [!UICONTROL Cloud Manager] release 2021.12.0 is 16 December
 * A user with the Deployment Manager role can now initiate the Project/Branch creation wizard for a repository with no branches from the action menu on the repositories page.
 * The Deployment Manager, who is in the add or edit pipeline workflow, is now informed on how to create a branch or project if the selected repository has no branches.
 * In the Edit Production Pipeline window, when there is more than one stage environment for production, a dropdown for environment selection is available.
+* The version of the AEM Project Archetype used by Cloud Manager has been updated to version 32.
 
 ## Bug Fixes {#bug-fixes}
 
