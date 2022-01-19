@@ -46,7 +46,7 @@ Git submodules can be used to merge the content of multiple branches across git 
 $ git submodule update --init
 ```
 
-This will check out each submodule into the appropriate directory. This technique is a potential alternative to [working with multiple source Git repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html) for organizations which are comfortable with using git submodules and do not want to manage an external merging process.
+This will check out each submodule into the appropriate directory. This technique is a potential alternative to [working with multiple source Git repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html) for organizations which are comfortable with using git submodules and do not want to manage an external merging process.
 
 For example, let's say there are three repositories, each containing a single branch named main . In the "primary" repository, i.e. the one configured in the pipelines, the main  branch has a pom.xml file declaring the projects contained in the other two repositories:
 
