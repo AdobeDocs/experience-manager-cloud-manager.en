@@ -256,6 +256,40 @@ With the content-package-maven-plugin it is similar:
         </plugin>
 ```
 
+## Build Artifact Reuse {#build-artifact-reuse}
+
+In many cases, the same code is deployed to multiple AEM environments. Where possible, Cloud Manager will avoid rebuilding the code base when it detects that the same git commit is used in multiple full-stack pipeline executions.
+
+When an execution is started, the current HEAD commit for the branch pipeline is extracted. The commit hash is visible in the UI and via the API. When the build step completes successfully, the resulting artifacts are stored based on that commit hash and may be reused in subsequent pipeline executions. When a reuse occurs, the build and code quality steps are effectively replaced with the results from the original execution. The log file for the build step will list the artifacts and the execution information which was used to build them originally.
+
+The following is an example of such log output.
+
+```shell
+The following build artifacts were reused from the prior execution 4 of pipeline 1 which used commit f6ac5e6943ba8bce8804086241ba28bd94909aef:
+build/aem-guides-wknd.all-2021.1216.1101633.0000884042.zip (content-package)
+build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatcher-configuration)
+```
+
+The log of the code quality step will contain similar information.
+
+### Opting Out {#opting-out}
+
+If desired, the reuse behavior can be disabled for specific pipelines by setting the pipeline variable `CM_DISABLE_BUILD_REUSE` to `true`. If this variable is set, the commit hash is still extracted and the resulting artifacts will be stored for later use, but any previously stored artifacts will not be reused. To understand this behavior, consider the following scenario.
+
+1. A new pipeline is created.
+1. The pipeline is executed (execution #1) and the current HEAD commit is `becdddb`. The execution is successful and the resulting artifacts are stored.
+1. The `CM_DISABLE_BUILD_REUSE` variable is set.
+1. The pipeline is re-executed without changing code. Although there are stored artifacts associated with `becdddb`, they are not reused due to the `CM_DISABLE_BUILD_REUSE` variable.
+1. The code is changed and the pipeline is executed. The HEAD commit is now `f6ac5e6`. The execution is successful and the resulting artifacts are stored.
+1. The `CM_DISABLE_BUILD_REUSE` variable is deleted.
+1. The pipeline is re-executed without changing the code. Since there are stored artifacts associated with `f6ac5e6`, those artifacts are reused.
+
+### Caveats {#caveats}
+
+* [Maven version handling](/help/using/activating-maven-project.md) replace the project version only in production pipelines. Therefore if the same commit is used on both a development deploy execution and a production pipeline execution and the development deploy pipeline is executed first, the versions will be deployed to stage and production without being changed. However, a tag will still be created in this case.
+* If the retrieval of the stored artifacts is not successful, the build step will be executed as if no artifacts had been stored.
+* Pipeline variables other than `CM_DISABLE_BUILD_REUSE` are not considered when Cloud Manager decides to reuse previously created build artifacts.
+
 ## Develop your Code Based on Best Practices {#develop-your-code-based-on-best-practices}
 
-Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
+Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html)

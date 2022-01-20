@@ -56,6 +56,7 @@ level: Intermediate
   + [Evaluation](evaluation.md)
 + Release Notes {#release-notes}
   + [Current Release Notes](release-notes-current.md)
+  + [Release Notes for 2021.12.0](release-notes-2021-12-0.md)
   + [Release Notes for 2021.11.0](release-notes-2021-11-0.md)
   + [Release Notes for 2021.10.0](release-notes-2021-10-0.md)
   + [Release Notes for 2021.9.0](release-notes-2021-9-0.md)
