@@ -18,12 +18,10 @@ The release date for [!UICONTROL Cloud Manager] release 2022.01.0 is 20 January 
 
 ## What's New {#whats-new}
 
+* Cloud Manager will [avoid rebuilding the code base when it detects that the same git commit is used](/help/using/setting-up-project.md#build-artifact-reuse) in multiple full stack pipeline executions.
 * Upon generating a git password, the expiration date will be displayed.
 
 ## Bug Fixes {#bug-fixes}
 
 * Infrequent occurrences of false positive pipeline failures have been addressed.
-
-## Known Issues {#known-issues}
-
-* For programs with only one repository, the pipeline execution screen will not display the repository name.
+* For programs with only one repository, the pipeline execution screen will now display the repository name.
