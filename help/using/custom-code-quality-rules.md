@@ -547,7 +547,7 @@ public class DontDoThis implements Page {
 
 ### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
 
-* **Key**: BannedPaths
+* **Key**: BannedPath
 * **Type**: Bug
 * **Severity**: Blocker
 * **Since**: Version 2019.6.0
