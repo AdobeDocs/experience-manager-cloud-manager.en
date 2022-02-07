@@ -18,7 +18,7 @@ The release date for [!UICONTROL Cloud Manager] release 2022.2.0 is 10 February 
 
 ## What's New {#whats-new}
 
-
+*  A refreshed Cloud Manager landing page experience delivers improved navigation, easy switching between grid/tile views, and pop-overs for quick program summary. 
 
 ## Bug Fixes {#bug-fixes}
 
