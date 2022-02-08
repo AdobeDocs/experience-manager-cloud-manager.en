@@ -1,10 +1,7 @@
 ---
-title: Configure your CI/CD Pipeline
-seo-title: Configure your CI/CD Pipeline
-description: Follow this page to configure your pipeline settings from the Cloud Manager.
-seo-description: Before you start to deploy your code, you must configure your pipeline settings from the AEM Cloud Manager. 
+title: Configure Your CI/CD Pipeline
+description: Learn how to use Cloud Manager to create and configure your pipelines in order to deploy your code.
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
-contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
@@ -14,55 +11,55 @@ exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 ---
 # Configure your CI/CD Pipeline {#configure-your-ci-cd-pipeline}
 
+Learn how to use Cloud Manager to create and configure your pipelines in order to deploy your code. if you would first like a more conceptual overview of how pipelines work in Cloud Manager, please see the [CI/CD pipeline overview documentation.](ci-cd-pipeline.md)
+
+
 >[!NOTE]
->To learn how to configure CI/CD Pipeline for Cloud Manager in AEM as a Cloud Service, see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager).
-
-The following page explains how to configure the **Pipeline**. To review more conceptual information on how the pipeline works see the [CI/CD pipeline overview](ci-cd-pipeline.md).
-
-
-## Understanding the Flow {#understanding-the-flow}
-
-You can configure your pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
-
-The Deployment Manager is responsible for setting up the pipeline. When doing so, you first select a branch from the **Git Repository**. Pipeline configuration consists of:
-
-* defining the trigger that will start the pipeline.
-* defining the parameters controlling the production deployment.
-* configuring the performance test parameters.
-
-## Video Tutorial {#video-tutorial-one}
-
-### Configuring Pipeline in Cloud Manager {#config-pipeline-video}
-
-The CI/CD Production Pipeline configuration defines the trigger that will initiate the pipeline, parameters controlling the production deployment and performance test parameters.
-
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
-
-## Setting up the Pipeline {#setting-up-the-pipeline}
-
->[!CAUTION]
 >
->The pipeline cannot be setup until the Git repository has at least one branch and [Program Setup](setting-up-program.md) is complete.
+>To learn how to configure CI/CD pipelines for Cloud Manager in AEM as a Cloud Service, see [the AEMaaCS documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html#using-cloud-manager)
 
-Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
+## Overview {#understanding-the-flow}
+
+You configure pipelines using the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+
+You can create two different types of pipelines.
+
+* Production Pipelines - A production pipelines is a purpose-built pipeline made of a series of orchestrated steps to take source code all the way into production.
+* Non-Production Pipelines - A non-production pipeline primarily serves to run code-quality scans or to deploy source code into a development environment.
+
+To learn more about the types of pipelines, see the [CI/CD pipeline overview documentation.](ci-cd-pipeline.md)
+
+The **Deployment Manager** role is responsible for setting up the pipeline. Pipeline configuration consists of:
+
+1. Defining the trigger that will start the pipeline.
+1. Defining the parameters controlling the production deployment.
+1. Configuring the performance test parameters.
+
+>[!NOTE]
+>
+>A pipeline can not be setup until its associated git repository has at least one branch and [program setup](setting-up-program.md) is complete.
 
 >[!NOTE]
 >
 >You can change the pipeline settings after initial set up.
 
-### Adding a New Production Pipeline from Pipelines Card {#adding-production-pipeline}
+## Video Tutorial {#video-tutorial-one}
 
-Once you have setup your program and have at least one environment using [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline.
+Watch this video for an overview of the pipeline creation process.
 
-Follow these steps to configure the behavior and preferences for your production pipeline:
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page.
+## Adding a New Production Pipeline {#adding-production-pipeline}
 
-1. Click on **+Add** and select **Add Production Pipeline**. 
+Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and have at least one environment, you are ready to add a production pipeline.
 
-   ![](/help/using/assets/configure-pipelines/add-prod1.png)
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. **Add Production Pipeline** dialog box displays. 
+ 1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **+Add** and select **Add Production Pipeline**.
+
+   ![Add a production pipeline](/help/using/assets/configure-pipelines/add-prod1.png)
+
+1. In the **Add Production Pipeline** dialog, you must define your pipeline. 
 
     1. Enter the **Pipeline Name**. You can choose the **Repository** and the **Git Branch**.
 
