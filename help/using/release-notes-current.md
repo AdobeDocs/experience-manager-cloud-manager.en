@@ -22,3 +22,5 @@ The release date for [!UICONTROL Cloud Manager] release 2022.2.0 is 10 February 
 
 ## Bug Fixes {#bug-fixes}
 
+* Rollback executions  are now properly differentiated from full stack pipeline executions.
+* Old git repository passwords are now always invalidated when a new password is generated.
