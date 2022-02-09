@@ -36,7 +36,7 @@ First steps for synchronizing a customer-managed Git repository with Cloud Manag
 
 ## Basic Branching Strategy {#branching-strategy}
 
-Set up a basic branching strategy in order to take advantage of Cloud Manager's [production and non-production pipelines.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)
+Set up a basic branching strategy in order to take advantage of Cloud Manager's [production](configuring-production-pipelines.md) and [non-production pipelines.](configuring-non-production-pipelines.md)
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 

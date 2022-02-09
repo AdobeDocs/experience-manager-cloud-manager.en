@@ -101,4 +101,4 @@ Follow the steps below to set up the program and define KPIs:
 
 If you have already setup the Pipeline, the next execution will take your updated settings into account. If you have not yet setup the pipeline, follow the steps to setup your pipeline first.
 
-Please see [Configure your CI/CD Pipeline](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) for setting up the pipeline.
+Please see the documents [Configuring Production Pipelines](configuring-production-pipelines.md) and [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md) for setting up the pipeline.
