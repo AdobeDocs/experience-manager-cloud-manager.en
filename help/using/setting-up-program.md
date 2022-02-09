@@ -1,6 +1,6 @@
 ---
-title: Setup your Program
-seo-title: Setup your Program
+title: Set Up Your Program
+seo-title: Set Up Your Program
 description: After onboarding, the business owner will need to do some initial setup of the program.
 seo-description: After onboarding, the business owner will need to do some initial setup of Adobe AEM Cloud Manager. This involves setting the program description and defining the KPIs which will be used for performance testing. 
 feature: Getting Started

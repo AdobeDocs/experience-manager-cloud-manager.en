@@ -55,17 +55,102 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
- 1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **+Add** and select **Add Production Pipeline**.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **+Add** and select **Add Production Pipeline**.
 
    ![Add a production pipeline](/help/using/assets/configure-pipelines/add-prod1.png)
 
-1. In the **Add Production Pipeline** dialog, you must define your pipeline. 
+1. The **Add Production Pipeline** dialog box opens to the **Configuration** tab where a number of options for your pipeline must be defined. These options are grouped into collapsible sections and are described in the following steps.
 
-    1. Enter the **Pipeline Name**. You can choose the **Repository** and the **Git Branch**.
+   1. Provide a descriptive name for your pipeline in the **Pipeline Name** field.
 
        ![](/help/using/assets/configure-pipelines/add-prod2.png)
 
-     1. You can set up **Deployment Trigger** and **Important Metric Failures Behavior** from **Deployment Options**.
+   1. Under the **Source Code** section, you define where the pipeline retrieves the code it will process.
+
+      * **Repository** - This option defines from which git repo the pipeline should retrieve the code.
+
+      >[!TIP]
+      >
+      >See the document [Set Up Your Program](setting-up-program.md) to learn how to add and manage repositories in Cloud Manager.
+
+      * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
+      * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
+
+   1. Under the **Environments** section, you define what triggers a deployment and how it should be rolled out per environment.
+
+      1. In the **STAGE** section, you can define how the pipeline rolls out to your staging environment.
+
+         * **Deployment Trigger** - You have the following options to define the deployment triggers to start the pipeline.
+
+           * **Manual** - Use this option to manually start the pipeline using the Cloud Manager UI.
+           * **On Git Changes** - This options starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.
+
+         * **Important Metric Failures Behavior** - During pipeline setup or edit, the Deployment Manager has the option of defining the behavior of the pipeline when an important failure is encountered in any of the quality gates. The available options are:
+
+           * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
+           * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
+           * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
+
+         * **Deployment Options** - You can accelerate certain deployment tasks.
+
+           * **Approve after Stage Deployment** - This approval occurs after deployment to the staging environment before any testing is done. Otherwise approval occurs before the production deployment, which is done after all testing is complete.
+
+           * **Skip Load Balancer changes** - Load balancer changes are not made.
+
+         * **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths which will either be invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
+        
+           1.  Under **PATH** provide a content path.
+           1.  Under **TYPE**, select the action to be taken on that path.
+           
+             * **Flush** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.
+             * **Invalidate** - Performs a cache deletion.
+             
+           1. Click **Add Path** to add your specified path. You can add up to 100 paths per environment.
+
+           >[!TIP]
+           >
+           >In general, the use of the invalidate action is preferable, but there may be cases where flushing is required, especially when using AEM HTML Client Libraries.
+
+      1. In the **PRODUCTION** section, you can define how the pipeline rolls out to your production environment.
+
+         * **Deployment Options** - You can define the parameters controlling the production deployment.
+
+           * **Use Go Live Approval** - A deployment must be manually approved by a user with the **Business Owner**, **Project Manager**, or **Deployment Manager** role via the [!UICONTROL Cloud Manager] UI.
+           * **Scheduled** - This option allows production deployment to be scheduled.
+
+           >[!NOTE]
+           >
+           >If the **Scheduled** option is selected, you can schedule your production deployment to the pipeline **after** the stage deployment (and **Use GoLive Approval**, if that has been enabled) to wait for a schedule to be set. The user can also choose to execute the production deployment immediately.
+           >
+           >Please refer to the document [Deploy your Code,](deploying-code.md) to learn how to set the deployment schedule or execute the pipeline immediately.
+
+           * **Use CSE Oversight** - If this option is select, a CSE is engaged to actually start the deployment. When creating or editing a pipeline when this option is enabled, the **Deployment Manager** role has the following options.
+
+             * **Any CSE** - This option allows any available CSE to start the deployment.
+             * **My CSE** - This option allows only the specific CSE assigned to the customer to start the deployment. This also applies for the designated backup of the CSE if the assigned CSE is unavailable.
+
+         * **Dispatcher Configuration** - Define the dispatcher configuration for your production environment. The options are the same as those for the staging environment.
+   
+1. Click on **Continue** to advance to the **Stage Testing** tab where you can configure AEM Sites and AEM Assets Performance Testing, depending on which products you have licensed. Refer to the document [Understanding Your Test Results](understand-your-test-results.md#performance-testing) for more details.
+   
+   1. Under the **Sites Content Delivery/Distributed Load Weight** section, you define where the pipeline retrieves the code it will process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   1. You can set up **Deployment Trigger** and **Important Metric Failures Behavior** from **Deployment Options**.
 
         ![](/help/using/assets/configure-pipelines/add-prod3.png)
 
