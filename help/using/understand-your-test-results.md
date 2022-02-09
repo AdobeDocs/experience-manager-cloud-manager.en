@@ -43,7 +43,7 @@ For each of these gates, there is a three-tiered structure for issues identified
 
 ## Code Quality Testing {#code-quality-testing}
 
-This step evaluates the quality of your application code, which is the main purpose of a code quality only pipeline, and is executed immediately following the build step in all non-production and production pipelines. Refer to the document [Configuring your CI-CD Pipeline](/help/using/configuring-pipeline.md) to learn more about different types of pipelines.
+This step evaluates the quality of your application code, which is the main purpose of a code quality only pipeline, and is executed immediately following the build step in all non-production and production pipelines. Please refer to the document [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md) to learn more.
 
 ### Understanding Code Quality Testing {#understanding-code-quality-testing}
 
@@ -248,7 +248,7 @@ Cloud Manager will create a folder on the author instance using the username and
 
 >[!TIP]
 >
->You can learn more about configuring performance testing in the document [Configure your CI/CD Pipeline.](configuring-pipeline.md) Refer to the document [Setup your Program](setting-up-program.md) to learn how to setup your program and define your KPIs.
+>Please refer to the document [Configure Production Pipelines](configuring-production-pipelines.md) to learn more. Refer to the document [Setup your Program](setting-up-program.md) to learn how to setup your program and define your KPIs.
 
 ### Performance Testing Results Graphs {#performance-testing-results-graphs}
 

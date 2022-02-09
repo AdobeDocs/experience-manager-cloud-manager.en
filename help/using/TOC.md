@@ -36,7 +36,10 @@ level: Intermediate
   + [Configure your Release Branches](configure-your-release-branches.md)
   + [Manage your Dispatcher Configurations](dispatcher-configurations.md)
 + How to Use {#how-to-use}
-  + [Configure your CI/CD Pipeline](configuring-pipeline.md)
+  + CI/CD Pipelines {#pipelines}
+    + [Configuring Production Pipelines](configuring-production-pipelines.md)
+    + [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md)
+    + [Managing Pipelines](managing-pipelines.md)
   + [Deploy your Code](deploying-code.md)
   + [Understand your Test Results](understand-your-test-results.md)
   + [Manage your Environments](manage-your-environment.md)

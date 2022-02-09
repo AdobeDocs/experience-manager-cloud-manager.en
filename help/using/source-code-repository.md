@@ -21,7 +21,7 @@ As a best practice, you should always use the Cloud Manager's Git Repository, wh
 
 For more information on how to setup branches in Git, see [Configuring your Release Branches](configure-your-release-branches.md).
 
-For more information on how to use the Cloud Manager's **Git Repository** with the CI/CD Pipeline, see [Configuring your CI/CD pipeline](configuring-pipeline.md).
+For more information on how to use the Cloud Manager's **Git Repository** with the CI/CD Pipeline, Please refer to the documents [Configure Production Pipelines](configuring-production-pipelines.md) and [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md) to learn more.
 
 ## On-premise Repository {#on-premise-repository}
 
