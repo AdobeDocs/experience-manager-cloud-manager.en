@@ -168,7 +168,7 @@ Pages are selected by three page sets. Cloud Manager uses the access logs from t
 
 ##### Distribution of Traffic Across Page Sets Selected {#distribution-of-traffic}
 
-You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration.](configure-pipeline.md) The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put toward each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
+You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration.](configuring-production-pipeline.md) The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put toward each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
 
 Let us consider this example.
 

@@ -23,10 +23,10 @@ By clicking the ellipsis button next to each pipeline you can take the following
 
 At the bottom of the list of pipelines, you have general options.
 
-   * **Add** - To [add a new production pipeline](configuring-production-pipelines.md) or [add new non-production pipeline](configuring-non-production-pipelines.md)
-   * **Show All** - Takes the user to the **Pipelines** screen to view all pipelines in a more detailed table.
-   * **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
-   * **Learn More** - Navigates to CI/CD pipeline documentation resources. 
+* **Add** - To [add a new production pipeline](configuring-production-pipelines.md) or [add new non-production pipeline](configuring-non-production-pipelines.md)
+* **Show All** - Takes the user to the **Pipelines** screen to view all pipelines in a more detailed table.
+* **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
+* **Learn More** - Navigates to CI/CD pipeline documentation resources. 
 
 ## Running Pipelines {#running-pipelines}
 
