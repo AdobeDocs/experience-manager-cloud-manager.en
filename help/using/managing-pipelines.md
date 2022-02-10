@@ -2,8 +2,8 @@
 title: Managing Pipelines
 description: Learn how to manage your existing pipelines including editing, running, and deleting them.
 index: yes
+exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 ---
-
 # Managing Pipelines {#managing-pipelines}
 
 Learn how to manage your existing pipelines including editing, running, and deleting them.

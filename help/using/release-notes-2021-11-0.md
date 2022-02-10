@@ -2,6 +2,7 @@
 title: Release Notes for 2021.11.0
 description: Follow this page to get information for Cloud Manager Release 2021.11.0
 feature: Release Information
+exl-id: 835c3989-3232-4d86-bff3-b426e3250a8c
 ---
 # Release Notes for 2021.11.0 {#release-notes-for}
 
@@ -47,4 +48,4 @@ The next release is planned for  December 16, 2021.
 
 * Error message when max number of repositories has been reached did not specify the reason for the error.
 
-* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes. 
+* In rare cases, pipelines were failing due to inappropriate retry handling of certain response codes.

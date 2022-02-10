@@ -2,6 +2,7 @@
 title: Release Notes for 2022.01.0
 description: These are the release notes for Cloud Manager release 2022.01.0.
 feature: Release Information
+exl-id: 9cc40326-cb8e-415f-b2ad-937d42189ee3
 ---
 # Release Notes for Cloud Manager Release 2021.12.0 {#release-notes}
 
