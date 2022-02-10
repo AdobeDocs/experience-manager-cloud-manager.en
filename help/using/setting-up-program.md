@@ -1,6 +1,6 @@
 ---
-title: Setup your Program
-seo-title: Setup your Program
+title: Set Up Your Program
+seo-title: Set Up Your Program
 description: After onboarding, the business owner will need to do some initial setup of the program.
 seo-description: After onboarding, the business owner will need to do some initial setup of Adobe AEM Cloud Manager. This involves setting the program description and defining the KPIs which will be used for performance testing. 
 feature: Getting Started
@@ -101,4 +101,4 @@ Follow the steps below to set up the program and define KPIs:
 
 If you have already setup the Pipeline, the next execution will take your updated settings into account. If you have not yet setup the pipeline, follow the steps to setup your pipeline first.
 
-Please see [Configure your CI/CD Pipeline](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html) for setting up the pipeline.
+Please see the documents [Configuring Production Pipelines](configuring-production-pipelines.md) and [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md) for setting up the pipeline.

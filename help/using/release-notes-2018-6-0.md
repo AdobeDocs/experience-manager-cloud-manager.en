@@ -21,11 +21,11 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.6.0 is August 9, 20
 
 ## What's New {#what-s-new}
 
-* **CI/CD Pipeline** - Configurable Dispatcher Invalidation and Cache Flushing on both Stage and Production during CI/CD Pipeline execution. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.
+* **CI/CD Pipeline** - Configurable Dispatcher Invalidation and Cache Flushing on both Stage and Production during CI/CD Pipeline execution. Please refer to the document [Configure Production Pipelines](configuring-production-pipelines.md) to learn more.
 
-* **CI/CD Pipeline** - During pipeline setup, it is now possible to define how the pipeline will behave when it encounters an Important failure in one of the quality gates. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.  
+* **CI/CD Pipeline** - During pipeline setup, it is now possible to define how the pipeline will behave when it encounters an Important failure in one of the quality gates. Please refer to the document [Configure Production Pipelines](configuring-production-pipelines.md) to learn more.  
 
-* **CI/CD Pipeline** - During pipeline setup, it is now possible to select whether you want CSE Oversight to be performed by your CSE or any available CSE. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.  
+* **CI/CD Pipeline** - During pipeline setup, it is now possible to select whether you want CSE Oversight to be performed by your CSE or any available CSE. Please refer to the document [Configure Production Pipelines](configuring-production-pipelines.md) to learn more.
 
 * **CI/CD Pipeline** - When the CI/CD pipeline reaches the business approval step, a notification will be sent to users who are authorized to approve the deployment. Please refer to [Notifications](notifications.md) to learn more.  
 

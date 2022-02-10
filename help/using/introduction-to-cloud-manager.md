@@ -59,7 +59,7 @@ One of the key capabilities of [!UICONTROL Cloud Manager] is the ability to exer
 
 Through the [!UICONTROL Cloud Manager] UI, customers can configure and kick off their CI/CD pipeline. During this pipeline, a thorough code scan is executed to ensure that only high-quality applications pass through to the production environment.
 
-To learn more about configuring pipeline from [!UICONTROL Cloud Manager]'s UI, see [Configure your CI/CD Pipeline](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html).
+To learn more about configuring pipeline from [!UICONTROL Cloud Manager]'s UI, see the documents [Configuring Production Pipelines](configuring-production-pipelines.md) and [Configuring Non-Production Pipelines.](configuring-non-production-pipelines.md)
 
 ### Flexible Deployment Modes {#flexible-deployment-modes}
 

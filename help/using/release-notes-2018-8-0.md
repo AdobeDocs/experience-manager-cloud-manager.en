@@ -23,7 +23,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2018.8.0 is October 04, 
 
 * **Program Setup** - New wizard to create an application project in git using the AEM Project Archetype 
 
-* **CI/CD Pipeline** - The following changes are added to CI/CD Pipeline. Please refer to [Configure your CI/CD Pipeline](configuring-pipeline.md) to learn more.
+* **CI/CD Pipeline** - The following changes are added to CI/CD Pipeline. Please refer to the document [Configure Production Pipelines](configuring-production-pipelines.md) to learn more.
 
   * On Git Changes trigger, which starts the CI/CD pipeline whenever there are commits added to the configured git branch.  
   * Cards on home screen now deep link into specific sections of pipeline execution page.

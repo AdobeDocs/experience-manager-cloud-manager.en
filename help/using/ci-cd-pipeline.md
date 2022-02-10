@@ -40,7 +40,7 @@ The following table details what is going on during each step of the process:
 
 ### How to setup a CI/CD Pipeline {#how-to-setup-a-ci-cd-pipeline}
 
-To learn more about pipeline configuration, see [configuring pipeline](configuring-pipeline.md).
+To learn more about pipeline configuration, see the documents [Configuring Production Pipelines](configuring-production-pipelines.md) and [Configuring Non-Production Pipelines.](configuring-non-production-pipelines.md)
 
 ## Quality Gates {#quality-gates}
 
@@ -62,4 +62,4 @@ The following is an example of a Code Scan with issues identified for the code:
 
 ### How to setup gates {#how-to-setup-gates}
 
-See **[Configuring Gates](configuring-pipeline.md)** for details on setting up your code, quality and performance gates.
+See the document [Configuring Production Pipelines](configuring-production-pipelines.md) for details on setting up your code, quality, and performance gates.
