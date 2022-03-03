@@ -1,12 +1,12 @@
 ---
-title: Release Notes for 2022.01.0
-description: These are the release notes for Cloud Manager release 2022.01.0.
+title: Release Notes for 2022.1.0
+description: These are the release notes for Cloud Manager release 2022.1.0.
 feature: Release Information
 exl-id: 9cc40326-cb8e-415f-b2ad-937d42189ee3
 ---
-# Release Notes for Cloud Manager Release 2021.12.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2022.1.0 {#release-notes}
 
-The following section outlines the general release notes for [!UICONTROL Cloud Manager] release 2022.01.0.
+The following section outlines the general release notes for [!UICONTROL Cloud Manager] release 2022.1.0.
 
 >[!NOTE]
 >
@@ -14,7 +14,7 @@ The following section outlines the general release notes for [!UICONTROL Cloud M
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2022.01.0 is 20 January 2022. The next release is planned for 10 February 2022.
+The release date for [!UICONTROL Cloud Manager] release 2022.1.0 is January 20, 2022. The next release is planned for  February 10, 2022.
 
 ## What's New {#whats-new}
 
