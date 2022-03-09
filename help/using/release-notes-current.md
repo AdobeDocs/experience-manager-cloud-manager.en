@@ -27,5 +27,5 @@ The release date for [!UICONTROL Cloud Manager] release 2022.3.0 is 10 March 202
 * [The **Skip Load Balancer changes** option](configuring-production-pipelines.md#adding-production-pipeline) can now be properly disabled.
 * [The **Skip Load Balancer changes** option](configuring-production-pipelines.md#adding-production-pipeline) is now displayed for the edit deployment pipeline workflow. 
 * A subset of manually-created git repositories had incorrect name values which affected [the build artifact reuse feature.](setting-up-project.md#build-artifact-reuse) The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
-* When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
+* [When adding or editing a code quality pipeline,](confiugring-non-production-pipelines.md) the options to handle metric failures is no longer displayed.
 * Unexpected pipeline variable configurations no longer cause errors in the build step.

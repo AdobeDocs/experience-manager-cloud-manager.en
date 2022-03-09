@@ -66,7 +66,7 @@ Once you have set up your program and have at least one environment using the Cl
       * **Manual** - Use this option to manually start the pipeline.
       * **On Git Changes** - This options starts the pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.
 
-    1. Under **Important Metric Failures Behavior**, define the behavior of the pipeline when an important failure is encountered in any of the quality gates.
+    1. For deployment pipelines, under **Important Metric Failures Behavior**, define the behavior of the pipeline when an important failure is encountered in any of the quality gates.
 
        * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
        * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
