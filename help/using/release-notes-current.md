@@ -17,16 +17,15 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 The release date for [!UICONTROL Cloud Manager] release 2022.3.0 is 10 March 2022. The next release is planned for 7 April 2022.
 
-## What's New {#whats-new}
+## What's New {#what-is-new}
 
-* Bulleted
-* List
-* of
-* Features
+* [The `reliability_rating` critical metric](understand-your-test-results.md) has been disabled.
+* A user can now sort on the columns in the **Pipelines** page in Cloud Manager.
 
 ## Bug Fixes {#bug-fixes}
 
-* Bulleted
-* List
-* of
-* Fixes
+* [The **Skip Load Balancer changes** option](configuring-production-pipelines.md#adding-production-pipeline) can now be properly disabled.
+* [The **Skip Load Balancer changes** option](configuring-production-pipelines.md#adding-production-pipeline) is now displayed for the edit deployment pipeline workflow. 
+* A subset of manually-created git repositories had incorrect name values which affected [the build artifact reuse feature.](setting-up-project.md#build-artifact-reuse) The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
+* When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
+* Unexpected pipeline variable configurations no longer cause errors in the build step.
