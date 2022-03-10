@@ -20,13 +20,14 @@ The release date for [!UICONTROL Cloud Manager] release 2022.3.0 is 10 March 202
 ## What's New {#what-is-new}
 
 * (Cloud Service only) Accessing the AEM Environment log can be done using the Developer role.
-* The [`reliability_rating` critical metric](understand-your-test-results.md) has been disabled.
+* (AMS): Outbounds HTTP requests from asset tests will now come from a Fixed IP range.
 
 
 ## Bug Fixes {#bug-fixes}
 
-* [The **Skip Load Balancer changes** option](configuring-production-pipelines.md#adding-production-pipeline) can now be properly disabled.
-* [The **Skip Load Balancer changes** option](configuring-production-pipelines.md#adding-production-pipeline) is now displayed for the edit deployment pipeline workflow. 
-* A subset of manually-created git repositories had incorrect name values which affected [the build artifact reuse feature.](setting-up-project.md#build-artifact-reuse) The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
-* [When adding or editing a code quality pipeline,](configuring-non-production-pipelines.md) the options to handle metric failures is no longer displayed.
-* Unexpected pipeline variable configurations no longer cause errors in the build step.
+* (AMS only) The **Skip Load Balancer changes** option was not able to be disabled.
+* (AMS) The **Skip Load Balancer changes** option was not displayed on the AMS Dev Deploy **Edit Pipeline Workflow**. 
+* A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
+* Build artifacts from non-production pipelines were inappropriately reused on production full stack pipelines.
+ * When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
+* Some unexpected pipeline variable configurations could cause in the build step.
