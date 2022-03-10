@@ -19,8 +19,9 @@ The release date for [!UICONTROL Cloud Manager] release 2022.3.0 is 10 March 202
 
 ## What's New {#what-is-new}
 
-* [The `reliability_rating` critical metric](understand-your-test-results.md) has been disabled.
-* A user can now sort on the columns in the **Pipelines** page in Cloud Manager.
+* (Cloud Service only) Accessing the AEM Environment log can be done using the Developer role.
+* The [`reliability_rating` critical metric](understand-your-test-results.md) has been disabled.
+
 
 ## Bug Fixes {#bug-fixes}
 
