@@ -2,8 +2,8 @@
 title: Release Notes for 2022.2.0
 description: These are the release notes for Cloud Manager release 2022.2.0.
 feature: Release Information
+exl-id: c13ee200-197e-4855-a08c-99d36b471bb6
 ---
-
 # Release Notes for Cloud Manager Release 2022.2.0 {#release-notes}
 
 This page documents the general release notes for [!UICONTROL Cloud Manager] release 2022.2.0.
