@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2022.3.0
-description: These are the release notes for Cloud Manager release 2022.3.0.
+title: Release Notes for 2022.4.0
+description: These are the release notes for Cloud Manager release 2022.4.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2022.3.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2022.4.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2022.3.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2022.4.0.
 
 >[!NOTE]
 >
@@ -15,18 +15,13 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2022.3.0 is 10 March 2022. The next release is planned for 7 April 2022.
+The release date for [!UICONTROL Cloud Manager] release 2022.4.0 is 7 April 2022. The next release is planned for 5 May 2022.
 
 ## What's New {#what-is-new}
 
-* Outbounds HTTP requests from asset tests will now come from a Fixed IP range.
-
+* You can now easily find a git branch by typing the first few characters of the name in the input field in the add and edit pipeline wizard and selecting from suggested matches.
+* The **Pipelines** page now has pagination to improve usability for programs with a large number of pipelines.
+  * 50 rows per page will be displayed in the table.
+* The version of the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) used by Cloud Manager has been updated to version 36.
 
 ## Bug Fixes {#bug-fixes}
-
-* The **Skip Load Balancer changes** option was not able to be disabled.
-* The **Skip Load Balancer changes** option was not displayed on the AMS Dev Deploy **Edit Pipeline Workflow**. 
-* A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
-* Build artifacts from non-production pipelines were inappropriately reused on production full stack pipelines.
- * When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
-* Some unexpected pipeline variable configurations could cause in the build step.
