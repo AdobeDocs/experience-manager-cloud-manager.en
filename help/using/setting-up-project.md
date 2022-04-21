@@ -260,7 +260,11 @@ With the content-package-maven-plugin it is similar:
 
 In many cases, the same code is deployed to multiple AEM environments. Where possible, Cloud Manager will avoid rebuilding the code base when it detects that the same git commit is used in multiple full-stack pipeline executions.
 
-When an execution is started, the current HEAD commit for the branch pipeline is extracted. The commit hash is visible in the UI and via the API. When the build step completes successfully, the resulting artifacts are stored based on that commit hash and may be reused in subsequent pipeline executions. When a reuse occurs, the build and code quality steps are effectively replaced with the results from the original execution. The log file for the build step will list the artifacts and the execution information which was used to build them originally.
+When an execution is started, the current HEAD commit for the branch pipeline is extracted. The commit hash is visible in the UI and via the API. When the build step completes successfully, the resulting artifacts are stored based on that commit hash and may be reused in subsequent pipeline executions.
+
+Packages are reused across pipelines if they are in the same program. When looking for packages that can be reused, AEM disregards branches and reuses artifacts across branches.
+
+When a reuse occurs, the build and code quality steps are effectively replaced with the results from the original execution. The log file for the build step will list the artifacts and the execution information which was used to build them originally.
 
 The following is an example of such log output.
 
@@ -271,6 +275,34 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 ```
 
 The log of the code quality step will contain similar information.
+
+### Examples {#example-reuse}
+
+#### Example 1 {#example-1}
+
+Consider that your program has two development pipelines:
+
+* Pipeline 1 on branch `foo`
+* Pipeline 2 on branch `bar`
+
+Both branches are on the same commit ID.
+
+1. Running Pipeline 1 first will build the packages normally.
+1. Then running Pipeline 2 will reuse packages created by Pipeline 1.
+
+#### Example 2 {#example-2}
+
+Consider that your program has two branches:
+
+* Branch `foo``
+* Branch `bar``
+
+Both branches have the same commit ID.
+
+1. A development pipeline builds and executes `foo`.
+1. Subsequently a production pipeline builds and executes `bar`.
+
+In this case, the artifact from foo will be reused for the production pipeline since the same commit hash was identified.
 
 ### Opting Out {#opting-out}
 
@@ -286,6 +318,8 @@ If desired, the reuse behavior can be disabled for specific pipelines by setting
 
 ### Caveats {#caveats}
 
+* Build artifacts are not reused across different programs, regardless if the commit hash is identical.
+* Build artifacts are reused within the same program even if the branch and/or pipeline is different.
 * [Maven version handling](/help/using/activating-maven-project.md) replace the project version only in production pipelines. Therefore if the same commit is used on both a development deploy execution and a production pipeline execution and the development deploy pipeline is executed first, the versions will be deployed to stage and production without being changed. However, a tag will still be created in this case.
 * If the retrieval of the stored artifacts is not successful, the build step will be executed as if no artifacts had been stored.
 * Pipeline variables other than `CM_DISABLE_BUILD_REUSE` are not considered when Cloud Manager decides to reuse previously created build artifacts.
