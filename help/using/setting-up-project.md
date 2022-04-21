@@ -294,15 +294,15 @@ Both branches are on the same commit ID.
 
 Consider that your program has two branches:
 
-* Branch `foo``
-* Branch `bar``
+* Branch `foo`
+* Branch `bar`
 
 Both branches have the same commit ID.
 
 1. A development pipeline builds and executes `foo`.
 1. Subsequently a production pipeline builds and executes `bar`.
 
-In this case, the artifact from foo will be reused for the production pipeline since the same commit hash was identified.
+In this case, the artifact from `foo` will be reused for the production pipeline since the same commit hash was identified.
 
 ### Opting Out {#opting-out}
 
