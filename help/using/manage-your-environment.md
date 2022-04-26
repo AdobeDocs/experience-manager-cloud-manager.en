@@ -49,3 +49,7 @@ The **Environments** screen displays a card each for *Production* and *Stage* en
 >The **STATUS** of the node represents the power state of the VM and does not reflect the status of AEM on the server. The status can be **Running** (green circle), **Stopped** (red circle), **Coming up** (blue circle) or **Unavailable** (yellow circle).
 
 ![](assets/Environments-tab.png)
+
+>[!NOTE]
+>
+>If you require your environment logs they can be requested via your Customer Success Engineer.
