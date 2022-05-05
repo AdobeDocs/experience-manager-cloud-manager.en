@@ -20,7 +20,7 @@ The release date for [!UICONTROL Cloud Manager] release 2022.2.0 is 10 February 
 
 Here's what's new in the February release:
 
-* (Cloud Service only) Accessing the AEM Environment log can be done using the Developer role.
+* Accessing the AEM Environment log can be done using the Developer role.
 * You can now disable the reliability_rating critical metric.
 
 ## Bug Fixes {#bug-fixes}
