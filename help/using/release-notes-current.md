@@ -19,11 +19,13 @@ The release date for [!UICONTROL Cloud Manager] release 2022.5.0 is May 5, 2022.
 
 ## What's New {#what-is-new}
 
-Accessing the AEM Environment log can be done using the Developer role.
+Outbounds HTTP requests from asset tests will now come from a Fixed IP range.
 
 ## Bug Fixes {#bug-fixes}
 
-* A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
+* The "Skip Load Balancer" changes option was not able to be disabled.
+* Skip Load Balancer Changes option was not displayed on the AMS Dev Deploy edit pipeline workflow.
+* A subset of GIT repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
 * Build artifacts from non-production pipelines were inappropriately reused on production full stack pipelines.
 * When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
 * Some unexpected pipeline variable configurations could cause errors in the build step.
