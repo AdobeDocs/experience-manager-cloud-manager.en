@@ -15,8 +15,15 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2022.5.0 is 5 May 2022. The next release is planned for 9 June 2022.
+The release date for [!UICONTROL Cloud Manager] release 2022.5.0 is May 5, 2022. The next release is planned for June 9, 2022.
 
 ## What's New {#what-is-new}
 
+Accessing the AEM Environment log can be done using the Developer role.
+
 ## Bug Fixes {#bug-fixes}
+
+* A subset of git repositories created manually had an incorrect name value which prevented the build artifact reuse feature from being effective. The names of those repositories have been changed and users will see the corrected name in the Cloud Manager API/UI.
+* Build artifacts from non-production pipelines were inappropriately reused on production full stack pipelines.
+* When adding or editing a code quality pipeline, the options to handle metric failures is no longer displayed.
+* Some unexpected pipeline variable configurations could cause errors in the build step.
