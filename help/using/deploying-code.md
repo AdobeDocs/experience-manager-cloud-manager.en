@@ -54,7 +54,7 @@ Once you have configured your Production Pipeline (repository, environment, and 
    The **Stage Testing**, involves the following steps:
 
     * Security Testing: This step evaluates the security impact of your application code on the AEM environment. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
-   * Performance Testing: This step evaluates the performance of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
+    * Performance Testing: This step evaluates the performance of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
 
    ![](assets/Stage_Testing1.png)
 
@@ -190,6 +190,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ## Re-Execute a Production Deployment {#Reexecute-Deployment}
 
 Re-execution of the production deployment step is supported for executions where the production deploy step has completed. The type  of completion is not important – the deployment could be successful (only for AMS programs), cancelled, or unsuccessful. That said, the primary use case is expected to be cases where the production deployment step failed for transient reasons. Re-execution creates a new execution using the same pipeline. This new execution consists of three steps:
+
 1. The validate step – this is essentially the same validation that occurs during a normal pipeline execution.
 1. The build step – in the context of a re-execution, the build step is copying artifacts, not actually executing a new build process.
 1. The production deployment step – this uses the same configuration and options as the production deployment step in a normal pipeline execution.
@@ -206,13 +207,13 @@ Limitations:
 * If the last execution is a push update execution, re-execution is not possible.
 * If the last execution failed at any point prior to the production deployment step, re-execution is not possible.
 
-## Re-Execute API {#Reexecute-API}
+### Re-Execute API {#Reexecute-API}
 
-# Identifying a re-execute execution
+### Identifying a re-execute execution
 
 To identify if an execution is a re-execute execution, the trigger  field can be examined. Its value will be *RE_EXECUTE*.
 
-# Triggering a new execution
+### Triggering a new execution
 
 To trigger a re-execution, a PUT request needs to be made to the HAL Link <(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> on the production deploy step state. If this link is present, the execution can be restarted from that step. If it is absent, the execution cannot be restarted from that step. In the initial release, this link will only ever be present on the production deploy step but future releases may support starting the pipeline from other steps. Example:
 
