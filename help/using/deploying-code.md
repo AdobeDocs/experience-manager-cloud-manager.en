@@ -178,7 +178,6 @@ Additionally, viewing the pipeline execution details page for an execution run i
 
 ![](assets/execution-emergency2.png)
 
-
 Creating a pipeline execution in this emergency mode can also be done through the Cloud Manager API or CLI. To start an execution in Emergency Mode, submit a PUT request to the pipeline's execution endpoint with the query parameter `?pipelineExecutionMode=EMERGENCY` or, when using the CLI:
 
 ```
@@ -187,3 +186,72 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 >[!IMPORTANT]
 >Using `--emergency` flag may require updating to the latest `aio-cli-plugin-cloudmanager` version.
+
+## Re-Execute a Production Deployment {#Reexecute-Deployment}
+
+Re-execution of the production deployment step is supported for executions where the production deploy step has completed. The type  of completion is not important – the deployment could be successful (only for AMS programs), cancelled, or unsuccessful. That said, the primary use case is expected to be cases where the production deployment step failed for transient reasons. Re-execution creates a new execution using the same pipeline. This new execution consists of three steps:
+1. The validate step – this is essentially the same validation that occurs during a normal pipeline execution.
+1. The build step – in the context of a re-execution, the build step is copying artifacts, not actually executing a new build process.
+1. The production deployment step – this uses the same configuration and options as the production deployment step in a normal pipeline execution.
+
+The build step may be slightly differently labeled in the UI to reflect that it is copying artifacts, not re-building.
+
+![](assets/Re-deploy.png)
+
+Limitations:
+
+* Re-executing the production deployment step will only be available on the last  execution.
+* Re-execution is not  available for rollback executions. 
+* If the last execution is a rollback execution, re-execution is not possible.
+* If the last execution is a push update execution, re-execution is not possible.
+* If the last execution failed at any point prior to the production deployment step, re-execution is not possible.
+
+## Re-Execute API {#Reexecute-API}
+
+# Identifying a re-execute execution
+
+To identify if an execution is a re-execute execution, the trigger  field can be examined. Its value will be *RE_EXECUTE*.
+
+# Triggering a new execution
+
+To trigger a re-execution, a PUT request needs to be made to the HAL Link <(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> on the production deploy step state. If this link is present, the execution can be restarted from that step. If it is absent, the execution cannot be restarted from that step. In the initial release, this link will only ever be present on the production deploy step but future releases may support starting the pipeline from other steps. Example:
+
+``` Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+The syntax of the HAL link's *href*  value above is not intended to be used as a point of reference. The actual value should always be read from the HAL link and not generated.
+
+Submitting a *PUT* request to this endpoint will result in a *201* response if successful and the response body will be the representation of the new  execution. This is similar to starting a regular execution through the API.
