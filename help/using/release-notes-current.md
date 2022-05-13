@@ -21,6 +21,7 @@ The release date for [!UICONTROL Cloud Manager] release 2022.5.0 is May 5, 2022.
 
 * Pipeline execution will now display UI top level errors on the execution screen.
 * Default configuration updated to include pause to B/G configuration.
+* Re-execute Production Deploy Step via Cloud Manager UI.
 
 ## Bug Fixes {#bug-fixes}
 
