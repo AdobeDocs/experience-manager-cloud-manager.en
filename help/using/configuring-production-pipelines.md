@@ -105,8 +105,8 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
            1.  Under **PATH** provide a content path.
            1.  Under **TYPE**, select the action to be taken on that path.
            
-             * **Flush** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.
-             * **Invalidate** - Performs a cache deletion.
+             * **Flush** - Performs a cache deletion.
+             * **Invalidate** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.
              
            1. Click **Add Path** to add your specified path. You can add up to 100 paths per environment.
 
