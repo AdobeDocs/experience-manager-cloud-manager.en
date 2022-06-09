@@ -20,6 +20,7 @@ The release date for [!UICONTROL Cloud Manager] release 2022.6.0 is 9 June 2022.
 ## What's New {#what-is-new}
 
  * A new welcome card on the Cloud Manager landing page gives users quick access to onboarding tutorials and progress metrics related to the tenant.
+   * This feature will be rolled out in a phased approach over the week following the 2022.06.0 release.
  * [Build artifacts can now be reused](/help/using/setting-up-project.md#build-artifact-reuse) when using git mirroring.
 
 ## Bug Fixes {#bug-fixes}
