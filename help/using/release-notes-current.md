@@ -23,4 +23,8 @@ The release date for [!UICONTROL Cloud Manager] release 2022.6.0 is 9 June 2022.
    * This feature will be rolled out in a phased approach over the week following the 2022.06.0 release.
  * [Build artifacts can now be reused](/help/using/setting-up-project.md#build-artifact-reuse) when using git mirroring.
 
-## Bug Fixes {#bug-fixes}
+## API Changes {#api-changes}
+
+* The [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API has been deprecated and [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) should be used instead.
+  * `List Programs` continues to work, but its usage will generate warning messages in logs.
+  * It will no longer be supported after three months.
