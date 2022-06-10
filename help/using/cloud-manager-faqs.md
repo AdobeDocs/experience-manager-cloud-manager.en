@@ -22,11 +22,13 @@ AEM Cloud Manager build fails when attempting to switch the build from Java 8 to
 
 * For Cloud Manager builds, the maven enforcer plugin fails with error `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`. This is a known issue due to Cloud Manager using a different version of Java to run the maven command versus compiling code. For now, omit `requireJavaVersion` from your maven-enforcer-plugin configurations.
 
-## Our deployment is stuck because the Code Quality check failed. Is there a way to bypass this check? {#deployment-stuck}
+## Our deployment is stuck because the code quality check failed. Is there a way to bypass this check? {#deployment-stuck}
 
-All Code Quality failures except for *Security Rating* are non-critical metrics, so they can be bypassed by expanding the items in the results UI.  
+Yes. All code quality failures except for *Security Rating* are non-critical metrics, so they can be bypassed as part of a deployment pipeline by expanding the items in the results UI.  
 
-A user with [Deployment Manager, Project Manager, or Business Owner](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en#requirements) role can override the issues, in which case the pipeline proceeds or they can accept the issues, in which case the pipeline stops with a failure.  See [Three-Tier Gates while Running a Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) for more details.
+A user with [Deployment Manager, Project Manager, or Business Owner](/help/using/setting-up-users-and-roles.md#role-definitions) role can override the issues, in which case the pipeline proceeds or they can accept the issues, in which case the pipeline stops with a failure.
+
+See the documents [Three-Tier Gates while Running a Pipeline](/help/using/understand-your-test-results.md#three-tier-gates-while-running-a-pipeline) and [Configuring Non-Production Pipelines](/help/using/configuring-non-production-pipelines.md#understanding-the-flow) for more details.
 
 ## Cloud Manager deployments fail at the performance test step in Adobe Managed Services environments. How do we debug this to pass the critical metrics? {#debug-critical-metrics}
 
