@@ -20,7 +20,7 @@ These are reported using three-tiered rating system as defined in the next secti
 
 >[!NOTE]
 >
->To learn about tests supported by Cloud Manager for AEM as a Cloud Service, see the [AEM as a Cloud Service documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html).
+>To learn about tests supported by Cloud Manager for AEM as a Cloud Service, see the [AEM as a Cloud Service documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html).
 
 
 ## Three-Tiered Ratings  {#three-tier-gates-while-running-a-pipeline}
@@ -55,7 +55,7 @@ There are over 100 rules combining generic Java rules and AEM-specific rules. So
 >
 >You can download the complete list of rules [using this link.](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)
 
-The results of code quality testing is delivered as **ratings**. The following table summarizes the ratings for various test criteria.
+The results of code quality testing are delivered as **ratings**. The following table summarizes the ratings for various test criteria.
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
