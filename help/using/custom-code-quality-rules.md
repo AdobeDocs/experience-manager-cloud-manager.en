@@ -15,7 +15,7 @@ This page describes the custom code quality rules executed by Cloud Manager as p
 
 >[!NOTE]
 >
->To learn about custom code quality rules for Cloud Manager in AEM as a Cloud Service, please refer [to this documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager).
+>To learn about custom code quality rules for Cloud Manager in AEM as a Cloud Service, please refer [to this documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager).
 
 >[!NOTE]
 >
@@ -315,7 +315,7 @@ In general, the INFO log level should be used to demarcate important actions and
 
 >[!NOTE]
 >
->This does not apply to access.log-type logging for each requests.
+>This does not apply to access.log-type logging for each request.
 
 #### Non-Compliant Code {#non-compliant-code-8}
 
