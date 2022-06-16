@@ -20,7 +20,7 @@ These are reported using three-tiered rating system as defined in the next secti
 
 >[!NOTE]
 >
->To learn about tests supported by Cloud Manager for AEM as a Cloud Service, see the [AEM as a Cloud Service documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html).
+>To learn about tests supported by Cloud Manager for AEM as a Cloud Service, see the [AEM as a Cloud Service documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html).
 
 
 ## Three-Tiered Ratings  {#three-tier-gates-while-running-a-pipeline}
@@ -55,7 +55,7 @@ There are over 100 rules combining generic Java rules and AEM-specific rules. So
 >
 >You can download the complete list of rules [using this link.](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)
 
-The results of code quality testing is delivered as **ratings**. The following table summarizes the ratings for various test criteria.
+The results of code quality testing are delivered as **ratings**. The following table summarizes the ratings for various test criteria.
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
@@ -70,7 +70,7 @@ The results of code quality testing is delivered as **ratings**. The following t
 
 >[!NOTE]
 >
->Refer to [SonarQube's metric definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed information.
+>Refer to [SonarQube's metric definitions](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) for more detailed information.
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ You can choose anywhere from one to all three sets on the **Testing** tab of you
 Let us consider this example.
 
 * There is a 50/50 split between the popular live pages and new pages sets.
-* Other live pages is not used.
+* Other live pages are not used.
 * The new pages set contains 3000 pages.
 * The page views per minute KPI is set to 200. 
 

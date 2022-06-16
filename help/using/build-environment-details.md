@@ -29,7 +29,7 @@ Cloud Manager builds and tests your code using a specialized build environment. 
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
 * Maven is configured at a system level with a settings.xml file which automatically includes the public Adobe **Artifact** repository using a profile named `adobe-public`.
-   Refer to [Adobe Public Maven Repository](https://repo.adobe.com/) for more details.
+   Refer to [Adobe Public Maven Repository](https://repo1.maven.org/) for more details.
 
 >[!NOTE]
 >Although Cloud Manager does not define a specific version of the `jacoco-maven-plugin`, the version used must be at least `0.7.5.201505241946`.

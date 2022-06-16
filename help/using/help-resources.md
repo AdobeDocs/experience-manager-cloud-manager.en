@@ -15,4 +15,4 @@ exl-id: 6a4573a6-d9f0-41bc-8ce2-289ba9cc9f47
 
 You should first reach out to your [!UICONTROL Adobe Managed Services Customer Success Engineer] (CSE) for support related to [!UICONTROL Cloud Manager]. Your CSE will advise you whether they can help you with your issue, or whether you would need to create a Support ticket using Customer Care.
 
-You can access [Enterprise Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) to create Support tickets. See [Accessing the AEM Support Portal](https://help.adobe.com/experience-manager/kb/accessing-aem-support-portal.html) for more information on creating Support tickets in Customer Care.
+You can access [Enterprise Support](https://experienceleague.adobe.com/?lang=en&support-tab=home#support) to create Support tickets. See [Accessing the AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-and-expert-services.html) for more information on creating Support tickets in Customer Care.
