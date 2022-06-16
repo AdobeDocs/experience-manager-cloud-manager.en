@@ -173,7 +173,7 @@ You can choose anywhere from one to all three sets on the **Testing** tab of you
 Let us consider this example.
 
 * There is a 50/50 split between the popular live pages and new pages sets.
-* Other live pages is not used.
+* Other live pages are not used.
 * The new pages set contains 3000 pages.
 * The page views per minute KPI is set to 200. 
 
