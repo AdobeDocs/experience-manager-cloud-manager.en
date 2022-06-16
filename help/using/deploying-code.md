@@ -215,7 +215,7 @@ To identify if an execution is a re-execute execution, the trigger  field can be
 
 ### Triggering a new execution
 
-To trigger a re-execution, a PUT request needs to be made to the HAL Link <(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> on the production deploy step state. If this link is present, the execution can be restarted from that step. If it is absent, the execution cannot be restarted from that step. In the initial release, this link will only ever be present on the production deploy step but future releases may support starting the pipeline from other steps. Example:
+To trigger a re-execution, a PUT request needs to be made to the HAL Link ```http://ns.adobe.com/adobecloud/rel/pipeline/reExecute``` on the production deploy step state. If this link is present, the execution can be restarted from that step. If it is absent, the execution cannot be restarted from that step. In the initial release, this link will only ever be present on the production deploy step but future releases may support starting the pipeline from other steps. Example:
 
 ``` Javascript
  {
