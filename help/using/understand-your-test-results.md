@@ -70,7 +70,7 @@ The results of code quality testing is delivered as **ratings**. The following t
 
 >[!NOTE]
 >
->Refer to [SonarQube's metric definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed information.
+>Refer to [SonarQube's metric definitions](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) for more detailed information.
 
 >[!NOTE]
 >

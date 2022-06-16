@@ -645,7 +645,7 @@ AEM Components which have a Classic UI dialog should always have a corresponding
 * A component with a Classic UI design dialog (i.e. a `design_dialog` node) must have a corresponding Touch UI design dialog (that is, a `cq:design_dialog` child node).
 * A component with both a Classic UI dialog and a Classic UI design dialog must have both a corresponding Touch UI dialog and a corresponding Touch UI design dialog.
 
-The AEM Modernization Tools documentation provides details and tooling for how to convert components from Classic UI to Touch UI. Refer  to [The AEM Modernization Tools documentation ](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) for more details.
+The AEM Modernization Tools documentation provides details and tooling for how to convert components from Classic UI to Touch UI. Refer  to [The AEM Modernization Tools documentation ](https://opensource.adobe.com/aem-modernize-tools/) for more details.
 
 ### Packages Should Not Mix Mutable and Immutable Content {#oakpal-packages-immutable}
 
