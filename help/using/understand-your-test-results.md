@@ -154,7 +154,12 @@ The number of virtual users or containers that are spun up by Cloud Manager is d
 
 #### Crawler {#crawler}
 
-Prior to the start of the 30 minute test period, Cloud Manager will crawl the staging environment using a set of one or more seed URLs configured by the Customer Success Engineer. Starting from these URLs, the HTML of each page is inspected and links are traversed in a breadth-first fashion. This crawling process is limited to a maximum of 5000 pages. Requests from the crawler have a fixed timeout of 10 seconds.
+Prior to the start of the 30 minute test period, Cloud Manager will crawl the staging environment using a set of one or more seed URLs configured by the Customer Success Engineer. Starting from these URLs, the HTML of each page is inspected and links are traversed in a breadth-first fashion.
+
+* This crawling process is by default limited to a maximum of 5000 pages.
+* The maximum number of pages to be tested can be overwritten by setting the `MAX_PAGES` environment variable.
+  * Allowed values are `2000` - `7000`.
+* Requests from the crawler have a fixed timeout of 10 seconds.
 
 #### Page Sets for Testing {#page-sets}
 
