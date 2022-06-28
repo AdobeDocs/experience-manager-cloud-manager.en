@@ -19,12 +19,9 @@ The release date for [!UICONTROL Cloud Manager] release 2022.7.0 is 30 June 2022
 
 ## What's New {#what-is-new}
 
-* A new welcome card on the Cloud Manager landing page gives users quick access to onboarding tutorials and progress metrics related to the tenant.
-   * This feature will be rolled out in a phased approach over the week following the 2022.06.0 release.
-* [Build artifacts can now be reused](/help/using/setting-up-project.md#build-artifact-reuse) when using git mirroring.
+* Cloud Manager users can now access useful video tutorials from the landing page **Welcome** card at any time.
+* The maximum number of pages to be tested [can now be overridden by setting the MAX_PAGES environment variable.](understand-your-test-results.md#crawler)
 
-## API Changes {#api-changes}
+## Bug Fixes {#bug-fixes}
 
-* The [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) API has been deprecated and [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) should be used instead.
-  * `List Programs` continues to work, but its usage will generate warning messages in logs.
-  * It will no longer be supported after three months.
+* A problem was fixed where after the approval of a frontend pipeline no call was made to execute the deployment step.
