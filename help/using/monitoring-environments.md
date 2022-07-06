@@ -18,11 +18,11 @@ Navigating to the System Monitoring feature can be done in two ways.
 
 1. Log in to **Managed Services - Programs** landing page.
 
-   ![](assets/ProgramLanding.png)
+   ![](/help/assets/ProgramLanding.png)
 
 1. Click on the fourth icon on the program card.
  
-   ![](assets/first-timea1.png)
+   ![](/help/assets/first-timea1.png)
 
    *Or*,
 
@@ -40,7 +40,7 @@ The System Monitoring Overview page lists the monitored environments in the prog
 
 The status in each category is a summary of individual metrics – if any metric in a category is in the critical state, the whole category is in a critical state for the purpose of the overview page. The same summarization can be viewed at an environment level and at an instance level. 
 
-![](assets/System-Monitoring-Reports.png)
+![](/help/assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -59,20 +59,20 @@ Refer to the video below for more details.
 
 To view the details of specific metrics, you can either click on one of the categories in the left navigation or click on one of the category indicators for a specific instance. Each detail page shows a series of graphs for the metrics within that category. You can either view the metrics for all instances in an environment or for a specific instance. You can switch between the environment and instances using the dropdown boxes in the top-right corner.
 
-![](assets/System_Monitoring1.png)
+![](/help/assets/System_Monitoring1.png)
 
 The navigation on the left will show the available metrics within the currently selected category for which there is data for the currently selected environment and instances.
 
-![](assets/System_Monitoring2.png)
+![](/help/assets/System_Monitoring2.png)
 
 An individual graph will show the status and a graph of the data over time along with the thresholds. If multiple instances are displayed, each instance's data will be on a separate series.
 
-![](assets/Monitoring_Graphs1.png)
+![](/help/assets/Monitoring_Graphs1.png)
 
 Individual series can be hidden on a graph by clicking on the series in the legend. 
 For example, if you click on the warning threshold series, you will see only the critical threshold.
 
-![](assets/Monitoring_Graphs2.png)
+![](/help/assets/Monitoring_Graphs2.png)
 
 ### Metric Definitions {#metric-definitions}
 
@@ -104,15 +104,15 @@ For example, if you click on the warning threshold series, you will see only the
 Customers are able to see the performance of their production AEM environment relative to their contracted Service Level Agreement (SLA). This is available through a sub-menu on the Reports screen. 
 For example, the graph below shows the monthly SLA attainment for 2018.
 
-![](assets/SLA-Reports-one.png)
+![](/help/assets/SLA-Reports-one.png)
 
 As with the system monitoring graphs, rolling over a data point shows the specific values for that month.
 
-![](assets/SLA-Reports-two.png)
+![](/help/assets/SLA-Reports-two.png)
 
 The Event Analysis section under this graph shows the set of incidents which occurred for the program during the currently selected year. Each incident has a time range, a cause, and a set of comments.
 
-![](assets/sla-reporting3.png)
+![](/help/assets/sla-reporting3.png)
 
 ## SLA Metrics {#sla-metrics}
 

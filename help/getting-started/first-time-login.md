@@ -24,11 +24,11 @@ Once you have setup the general configurations for [!UICONTROL Cloud Manager], y
 
 1. Select the program (for example, **We.Retail Global**). Once you see your program card on the landing page, select the **...** to see menu options available to you.   Select **Cloud Manager** to navigate to the Cloud Manager's **Overview** page. 
 
-   ![](assets/navigate-cm1.png)
+   ![](/help/assets/navigate-cm1.png)
 
 1. The Cloud Manager's **Overview** page displays.
 
-   ![](assets/FirstLogin1.png)
+   ![](/help/assets/FirstLogin1.png)
 
 1. Click **Setup Program** for setting the **Program** description and defining the Key Performance Indicators (KPIs).
 

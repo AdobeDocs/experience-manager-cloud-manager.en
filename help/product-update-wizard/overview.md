@@ -33,6 +33,6 @@ The wizard includes five phases that guides the user during an AEM product updat
 
 1. An **[!UICONTROL AEM 6.5 Update]** card displays on the overview screen of [!UICONTROL Cloud Manager]. This card will help track which phase of the update process you are currently in and will inform you as to what the next step to be taken is. Select **[!UICONTROL Start Update]** to launch the wizard.
 
-   ![](assets/Start-Update.png)
+   ![](/help/assets/Start-Update.png)
 
    The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process as seen in the [Evaluation Phase](evaluation.md).

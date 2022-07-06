@@ -20,7 +20,7 @@ The **Overview** page of Cloud Manager includes the **Environments** tile that l
 
 Each of the listed environments displays its associated status.
 
-![](assets/Manage-Environ-Overview.png)
+![](/help/assets/Manage-Environ-Overview.png)
 
 ## Video Tutorial {#video-tutorial}
 
@@ -36,7 +36,7 @@ The **Environments** tile displays the Production and Stage environments provisi
 
 The status is the rolled-up power state across the nodes in the environment. It is green if all nodes are running, red if even one node is stopped, blue if even one node is coming up, and yellow if even one node has a power state unavailable (in this order of priority).
 
-![](assets/Environments-card-new.png)
+![](/help/assets/Environments-card-new.png)
 
 ### Environments {#environments}
 
@@ -48,7 +48,7 @@ The **Environments** screen displays a card each for *Production* and *Stage* en
 >
 >The **STATUS** of the node represents the power state of the VM and does not reflect the status of AEM on the server. The status can be **Running** (green circle), **Stopped** (red circle), **Coming up** (blue circle) or **Unavailable** (yellow circle).
 
-![](assets/Environments-tab.png)
+![](/help/assets/Environments-tab.png)
 
 >[!NOTE]
 >

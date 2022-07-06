@@ -43,12 +43,12 @@ Once you have set up your program and have at least one environment using the Cl
 
 1. Access the Pipelines card from the Cloud Manager home screen. Click on **Add** and select **Add Non-Production Pipeline**.
 
-   ![Add non-production pipeline](/help/using/assets/configure-pipelines/nonprod-pipeline-add1.png)
+   ![Add non-production pipeline](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
 1. On the **Configuration** tab of the **Add Non-Production Pipeline** dialog, select the type of pipeline you want to create, either a **Code Quality Pipeline** or a **Deployment Pipeline**.
 
    
-   ![Choose pipeline type](/help/using/assets/configure-pipelines/add-non-production-pipeline.png)
+   ![Choose pipeline type](/help/assets/configure-pipelines/add-non-production-pipeline.png)
 
 1. Provide a description for your pipeline in the **Non-Production Pipeline Name** field.
 

@@ -23,15 +23,15 @@ The notifications appear in a sidebar in [!UICONTROL Cloud Manager] UI (User Int
 
 Click on the bell icon from the header to open the sidebar and view the notifications, as shown in the figure below:
 
-![](assets/image2018-7-12_11-52-40.png)
+![](/help/assets/image2018-7-12_11-52-40.png)
 
 The sidebar lists the most recent notifications.
 
-![](assets/screen_shot_2018-07-20at91406pm.png)
+![](/help/assets/screen_shot_2018-07-20at91406pm.png)
 
 Additionally, click on one of these notifications and then click on **View Details** to access the Pipeline execution details page.
 
-![](assets/screen_shot_2018-08-14at43503pm.png)
+![](/help/assets/screen_shot_2018-08-14at43503pm.png)
 
 ## Email Notifications {#email-notifications}
 
@@ -39,7 +39,7 @@ By default, notifications are available in the web user interface across Adobe [
 
 Click on the gear icon at the bottom of the notifications sidebar, as shown in the figure below:
 
-![](assets/image2018-7-12_12-8-19.png)
+![](/help/assets/image2018-7-12_12-8-19.png)
 
 This will take the user to the Notifications Preferences screen in Adobe [!UICONTROL Experience Cloud].
 
@@ -49,4 +49,4 @@ The users can turn on email notifications and (optionally) select the types of n
 >
 >You can also enable digesting from the Adobe [!UICONTROL Experience Cloud], as shown below:
 
-![](assets/image2018-7-12_12-10-51.png)
+![](/help/assets/image2018-7-12_12-10-51.png)

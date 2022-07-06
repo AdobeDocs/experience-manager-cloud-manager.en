@@ -54,4 +54,4 @@ Next, you have to set up your source code branches in the **Git Repository**, de
 
 The following diagram illustrates the customer journey at a high level, when using [!UICONTROL Cloud Manager] CI/CD pipeline for deploying your code changes to your stage and production environments.
 
-![](assets/screen_shot_2018-05-15at124004pm.png)
+![](/help/assets/screen_shot_2018-05-15at124004pm.png)

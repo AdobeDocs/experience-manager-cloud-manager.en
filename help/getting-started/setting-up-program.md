@@ -23,12 +23,12 @@ Follow the steps below to set up the program and define KPIs:
 
 1. Click **Setup Program** to start the setup process in [!UICONTROL Cloud Manager].
 
-   ![image1](assets/set-up-program/setup1.png)
+   ![image1](/help/assets/set-up-program/setup1.png)
 
    >[!NOTE]
    > You can always switch, edit, or add a new program from the action bar, as shown in the figure below.
 
-   ![image1](assets/set-up-program/setup2.png)
+   ![image1](/help/assets/set-up-program/setup2.png)
 
 
 1. The **Setup Program** screen displays the Edit Program Information.
@@ -37,7 +37,7 @@ Follow the steps below to set up the program and define KPIs:
 
 1. In **General** tab, upload a thumbnail to your program. You can also add a relevant description to your program.
 
-   ![](assets/Setup_Program-General.png)
+   ![](/help/assets/Setup_Program-General.png)
 
 1. Under **KPI**, you can define your two KPIs (expectations for each deployment). Separate KPIs are defined for **AEM Sites** and **AEM Assets**. You will be able to specify the KPIs for the products you have licensed.
 
@@ -59,14 +59,14 @@ Follow the steps below to set up the program and define KPIs:
     * 95th Percentile Processing Time
     * Assets uploaded per minute
 
-   ![](assets/Setup_Program-KPIs.png)
+   ![](/help/assets/Setup_Program-KPIs.png)
 
 1. Under **Provisioning**, you can view or edit the provisioning configuration for production and non-production environments in your program. You will see **Autoscale is on**, if autoscaling has been turned on for the program.
 
    >[!NOTE]
    >Autoscaling feature is applicable to production environment only and may not be available for all customer programs.
 
-   ![](assets/Setup_Program-Provisioning.png)
+   ![](/help/assets/Setup_Program-Provisioning.png)
 
 1. Click **Save** to complete the setup wizard.
 
@@ -79,21 +79,21 @@ Follow the steps below to set up the program and define KPIs:
 
 1. Click on **Edit program** to update or modify your program from the **Overview** page, as shown in the figure below.
 
-   ![](assets/set-up-program/edit-program1.png) 
+   ![](/help/assets/set-up-program/edit-program1.png) 
 
 1. The **Edit Program** screen displays that allows you to update or modify your program.
 
    You can update your program description from the **General** tab.
 
-   ![](assets/set-up-program/edit-program-general.png)
+   ![](/help/assets/set-up-program/edit-program-general.png)
 
    Navigate to **KPI** tab to update information on AEM Sites and Assets.
 
-   ![](assets/set-up-program/edit-program-kpi.png)
+   ![](/help/assets/set-up-program/edit-program-kpi.png)
 
    Additionally, you can navigate to **Provisioning** tab to edit the provisioning configuration for production and non-production environments in your program.
 
-   ![](assets/set-up-program/edit-program-provision.png)
+   ![](/help/assets/set-up-program/edit-program-provision.png)
 
 1. Click on **Update** to save your edits.
 

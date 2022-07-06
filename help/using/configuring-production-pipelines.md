@@ -56,7 +56,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
 1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **+Add** and select **Add Production Pipeline**.
 
-   ![Add a production pipeline](/help/using/assets/configure-pipelines/add-prod1.png)
+   ![Add a production pipeline](/help/assets/configure-pipelines/add-prod1.png)
 
 1. The **Add Production Pipeline** dialog box opens to the **Configuration** tab where a number of options for your pipeline must be defined. These options are grouped into collapsible sections and are described in the following steps.
 
@@ -73,7 +73,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
       * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
       * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
 
-      ![Define repos for the pipeline](/help/using/assets/configure-pipelines/add-prod2.png)
+      ![Define repos for the pipeline](/help/assets/configure-pipelines/add-prod2.png)
 
    1. Under the **Environments** section, you define what triggers a deployment and how it should be rolled out per environment.
 
@@ -90,7 +90,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
            * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
            * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
 
-         ![Deployment trigger](/help/using/assets/configure-pipelines/add-prod3.png)
+         ![Deployment trigger](/help/assets/configure-pipelines/add-prod3.png)
 
          * **Deployment Options** - You can accelerate certain deployment tasks.
 
@@ -98,7 +98,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
            * **Skip Load Balancer changes** - Load balancer changes are not made.
 
-         ![Staging deployment options](/help/using/assets/configure-pipelines/add-prod4.png)
+         ![Staging deployment options](/help/assets/configure-pipelines/add-prod4.png)
 
          * **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths which will either be invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
         
@@ -110,7 +110,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
              
            1. Click **Add Path** to add your specified path. You can add up to 100 paths per environment.
 
-         ![Dispatcher configuration](/help/using/assets/configure-pipelines/dispatcher-stage.png)
+         ![Dispatcher configuration](/help/assets/configure-pipelines/dispatcher-stage.png)
 
            >[!TIP]
            >
@@ -135,7 +135,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
              * **Any CSE** - This option allows any available CSE to start the deployment.
              * **My CSE** - This option allows only the specific CSE assigned to the customer to start the deployment. This also applies for the designated backup of the CSE if the assigned CSE is unavailable.
 
-           ![Production deployment options](/help/using/assets/configure-pipelines/prod-deploymentoptions.png)
+           ![Production deployment options](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
          * **Dispatcher Configuration** - Define the dispatcher configuration for your production environment. The options are the same as those for the staging environment.
    
@@ -151,7 +151,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
       * **Other Live Pages**
       * **New Pages**
 
-      ![Sites load weight](/help/using/assets/configure-pipelines/add-prod5.png)
+      ![Sites load weight](/help/assets/configure-pipelines/add-prod5.png)
 
    1. Under the **Assets Performance Testing Distribution** section, you define the test distribution of images and PDFs as well as define your own test assets.
 
@@ -164,22 +164,9 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
         1. **FILENAME** - Use the file browser button to select an image from your local machine.
         1. **Add Test File** - Click to upload your selected asset.
 
-      ![Assets testing distribution](/help/using/assets/configure-pipelines/add-prod6.png)
+      ![Assets testing distribution](/help/assets/configure-pipelines/add-prod6.png)
 
 1. Click **Save** to complete adding your production pipeline.
-
-
-
-
-
-
-
-
-
-
-
-
-  
  
 ### Editing a Production Pipeline {#editing-prod-pipeline}
 
@@ -191,7 +178,7 @@ Follow the steps below to edit the configured pipeline:
 
 1. Click on **...** from the **Pipelines** card and click on **Edit**, as shown in the figure below.
 
-   ![](/help/using/assets/configure-pipelines/edit-prod1.png)
+   ![](/help/assets/configure-pipelines/edit-prod1.png)
 
 1. The **Edit Production Pipeline** dialog box displays.
 
@@ -215,7 +202,7 @@ You can run the production pipeline from the Pipelines card:
 
 1. Click on **...** from the **Pipelines** card and click on **Run**, as shown in the figure below.
 
-   ![](/help/using/assets/configure-pipelines/prod-run.png)
+   ![](/help/assets/configure-pipelines/prod-run.png)
 
 #### Deleting a Production Pipeline {#delete-prod}
 
@@ -225,7 +212,7 @@ You can delete the production pipeline from the Pipelines card:
 
 1. Click on **...** from the **Pipelines** card and click on **Delete**, as shown in the figure below.
 
-   ![](/help/using/assets/configure-pipelines/prod-delete.png)
+   ![](/help/assets/configure-pipelines/prod-delete.png)
 
    >[!NOTE]
    >A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the **Delete** option from the Pipeline card.

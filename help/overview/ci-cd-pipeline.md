@@ -21,7 +21,7 @@ The CI/CD pipeline also automates unit and performance testing processes to incr
 
 The following diagram illustrates what happens once a release is triggered in [!UICONTROL Cloud Manager]. The accompanying table explains each step in the workflow.
 
-![](assets/screen_shot_2018-05-30at82457pm.png)
+![](/help/assets/screen_shot_2018-05-30at82457pm.png)
 
 The following table details what is going on during each step of the process:
 
@@ -58,7 +58,7 @@ For each of these gates, there are three levels of issues identified:
 
 The following is an example of a Code Scan with issues identified for the code:
 
-![](assets/quality-gate-failed.png) 
+![](/help/assets/quality-gate-failed.png) 
 
 ### How to setup gates {#how-to-setup-gates}
 

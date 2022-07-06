@@ -66,7 +66,7 @@ You can create, or add, users/groups to these Product Profiles with the [Admin C
 
 1. Log in to Admin console and click **New Profile** to add a new profile.
 
-   ![](assets/admin_console_roles-1.png)
+   ![](/help/assets/admin_console_roles-1.png)
 
 1. Fill in the fields to set up a new role for [!UICONTROL Cloud Manager].
 
@@ -85,10 +85,10 @@ You can create, or add, users/groups to these Product Profiles with the [Admin C
    | Developer |CM_DEVELOPER_ROLE_PROFILE |[!UICONTROL Cloud Manager] - Developer Role |
    | Program Manager |CM_PROGRAM_MANAGER_ROLE_PROFILE |[!UICONTROL Cloud Manager] - Program Manager Role |
 
-   ![](assets/screen_shot_2018-05-04at171819.png)
+   ![](/help/assets/screen_shot_2018-05-04at171819.png)
 
 1. Once you create product profile, you can add users (or groups) to these Product Profiles.
 
-   ![](assets/image2018-4-9_15-19-26.png)
+   ![](/help/assets/image2018-4-9_15-19-26.png)
    
-   ![](assets/image2018-4-9_15-16-47.png)
+   ![](/help/assets/image2018-4-9_15-16-47.png)

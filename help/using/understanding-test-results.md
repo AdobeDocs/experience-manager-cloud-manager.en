@@ -259,11 +259,11 @@ Cloud Manager will create a folder on the author instance using the username and
 
 A number of metrics are available in the **Performance Test dialog**
 
-![List of metrics](assets/understand_test-results-screen1.png)  
+![List of metrics](/help/assets/understand_test-results-screen1.png)  
 
 The metric panels can be expanded to display a graph, provide a link to a download, or both.
 
-![Metrics expanded as a graph](assets/screen_shot_2018-09-05at83933pm.png)
+![Metrics expanded as a graph](/help/assets/screen_shot_2018-09-05at83933pm.png)
 
 This functionality is available for the following metrics.
 

@@ -15,7 +15,7 @@ Follow the steps below to create an AEM application project in Cloud Manager:
 
 1. Once you log in to Cloud Manager and the basic program setup is complete, a special call to action card will be shown on the **Overview** screen, if the repository is empty.
 
-   ![](assets/image2018-10-3_14-29-44.png)
+   ![](/help/assets/image2018-10-3_14-29-44.png)
 
 1. Click **Create to** open a dialog box, which allows the user to provide the parameters required by the AEM Project Archetype. In its default form, the dialog box asks for two values:
 
@@ -23,11 +23,11 @@ Follow the steps below to create an AEM application project in Cloud Manager:
     
     * **New Branch Name** - by default this is *master*
 
-   ![](assets/screen_shot_2018-10-08at55825am.png)
+   ![](/help/assets/screen_shot_2018-10-08at55825am.png)
 
    The dialog box has a drawer which can be opened by clicking on the handle toward the bottom of the dialog. In its expanded form, the dialog shows all of the configuration parameters for the Archetype. Many of these parameters have default values which are generated based on the **Title**.
 
-   ![](assets/screen_shot_2018-10-08at60032am.png)
+   ![](/help/assets/screen_shot_2018-10-08at60032am.png)
 
    >[!NOTE]
    >

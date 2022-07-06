@@ -22,13 +22,13 @@ Once you have configured your Production Pipeline (repository, environment, and 
 
 1. Click **Deploy** from the Cloud Manager to start the deployment process.
 
-   ![](assets/Deploy1.png)
+   ![](/help/assets/Deploy1.png)
 
 1. The **Pipeline Execution** screen displays.
 
    Click **Build** to start the process.
 
-   ![](assets/Deploy2.png)
+   ![](/help/assets/Deploy2.png)
 
 1. The complete build process deploys your code.
 
@@ -49,14 +49,14 @@ Once you have configured your Production Pipeline (repository, environment, and 
     * Code Scanning: This step evaluates the quality of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
     * Deploy to Stage
 
-   ![](assets/Stage_Deployment1.png)
+   ![](/help/assets/Stage_Deployment1.png)
 
    The **Stage Testing**, involves the following steps:
 
     * Security Testing: This step evaluates the security impact of your application code on the AEM environment. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
     * Performance Testing: This step evaluates the performance of your application code. See [Understand your Test Results](understand-your-test-results.md) for details on the testing process.
 
-   ![](assets/Stage_Testing1.png)
+   ![](/help/assets/Stage_Testing1.png)
 
    The **Production Deployment**, involves the following steps:
 
@@ -65,7 +65,7 @@ Once you have configured your Production Pipeline (repository, environment, and 
     * **CSE Support** (if enabled)
     * **Deploy to Production**
 
-   ![](assets/Prod_Deployment1.png)
+   ![](/help/assets/Prod_Deployment1.png)
 
    >[!NOTE]
    >
@@ -80,13 +80,13 @@ Once you have configured your Production Pipeline (repository, environment, and 
    >
    >Click **Confirm** to verify your settings.
 
-   ![](assets/Production_Deployment1.png)
+   ![](/help/assets/Production_Deployment1.png)
 
    Once you confirm the deployment schedule, your code deployment completes.
 
    The following screen displays, when **Now** option is selected from the above step.
 
-   ![](assets/Production_Deployment2.png)
+   ![](/help/assets/Production_Deployment2.png)
 
 ## Timeouts {#timeouts}
 
@@ -114,7 +114,7 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
    Unless configured otherwise you can skip Load Balancer Changes in Dev and Stage Deployments, that is, detach and attach steps in both non-production pipelines, for dev environments, and the production pipeline, for stage environments.
 
-   ![](assets/load_balancer.png)
+   ![](/help/assets/load_balancer.png)
 
    >[!NOTE]
    >
@@ -172,11 +172,11 @@ To address these situations, the Cloud Manager production pipeline may be execut
 
 When starting a production pipeline execution, if this feature has been activated, you can start the execution in either normal or emergency mode from the dialog box, as shown in the figure below.
 
-![](assets/execution-emergency1.png)
+![](/help/assets/execution-emergency1.png)
 
 Additionally, viewing the pipeline execution details page for an execution run in emergency mode, the breadcrumbs at the top of the screen shows an indicator that emergency mode was used for this particular execution.
 
-![](assets/execution-emergency2.png)
+![](/help/assets/execution-emergency2.png)
 
 Creating a pipeline execution in this emergency mode can also be done through the Cloud Manager API or CLI. To start an execution in Emergency Mode, submit a PUT request to the pipeline's execution endpoint with the query parameter `?pipelineExecutionMode=EMERGENCY` or, when using the CLI:
 
@@ -197,7 +197,7 @@ Re-execution of the production deployment step is supported for executions where
 
 The build step may be slightly differently labeled in the UI to reflect that it is copying artifacts, not re-building.
 
-![](assets/Re-deploy.png)
+![](/help/assets/Re-deploy.png)
 
 Limitations:
 

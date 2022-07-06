@@ -18,7 +18,7 @@ Follow the resources below to begin your journey for using [!UICONTROL Cloud Man
 
 The figure below illustrates the road map to your learning of [!UICONTROL Cloud Manager]:
 
-![](assets/screen_shot_2018-05-04at94510pm.png)
+![](/help/assets/screen_shot_2018-05-04at94510pm.png)
 
 Follow the resources in the Overview section to get an introduction to [!UICONTROL Cloud Manager]:
 

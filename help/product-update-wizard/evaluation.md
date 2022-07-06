@@ -37,13 +37,13 @@ Follow the steps below to generate evaluation report:
    >
    >The pattern detector can run on any environment. However, in order to increase detection rate and avoid any slowdowns on business critical instances, Cloud Manager will run it on staging environment on the author instance.
 
-   ![](assets/Run-Evaluation.png)
+   ![](/help/assets/Run-Evaluation.png)
 
 1. The wizard informs you of the status of your action. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
    Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy.
 
-   ![](assets/Evaluation-1.png)
+   ![](/help/assets/Evaluation-1.png)
 
 
    >[!NOTE]

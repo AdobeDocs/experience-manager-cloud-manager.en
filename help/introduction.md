@@ -39,7 +39,7 @@ With Cloud Manager, your development team can leverage the following:
 
 The following image illustrates the CI/CD process flow used in [!UICONTROL Cloud Manager]:
 
-![](assets/screen_shot_2018-05-12at73843pm.png) 
+![](/help/assets/screen_shot_2018-05-12at73843pm.png) 
 
 ## Key Features in [!UICONTROL Cloud Manager] {#key-features-in-cloud-manager}
 
