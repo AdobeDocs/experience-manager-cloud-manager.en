@@ -1,43 +1,59 @@
 ---
 title: Key Concepts
-seo-title: Key Concepts
-description: This page lists the key terms associated with Cloud Manager.
-seo-description: Follow this page to understand the key terms associated with Cloud Manager.
-uuid: 2a37810b-98f8-4f01-90de-1e52c754ad16
-contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: introduction
-discoiquuid: b702dfc0-3534-4d90-af19-8559d8baf6a6
-feature: Getting Started
-level: Beginner
+description: Like all powerful tools, Cloud Manager encompasses many concepts and terms. This document summarizes some of the most important for you as you get started using Cloud Manager.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 ---
+
 # Key Concepts {#key-concepts}
 
-This page describes some basic terminology used in Cloud Manager. We strongly recommend you read this page before reviewing the rest of the Cloud Manager documentation.
+Like all powerful tools, Cloud Manager encompasses many concepts and terms. This document summarizes some of the most important for you as you get started using Cloud Manager.
 
-**Application** The set of customizations and configurations created by a customer in order to adapt the underlying solution for their specific use cases and needs. An application is a logical unit which may be composed of multiple artifacts.
+## Application {#application}
 
-For example, *We.Retail*.
+And application is the set of customizations and configurations created by a customer in order to adapt the underlying [solution](#solution) (such as AEM Sites or AEM Assets) for their specific use cases and needs. An application is a logical unit which may be composed of multiple [artifacts.](#artifact)
 
-**Artifact** A deployable unit. The result of some build process which transforms source code into a single unit. For example a Zip file containing the source code.
+An example application is the fictional [WKND lifestyle application.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-**Artifact Repository** A storage location where customer-specific artifacts are saved and secured.
+## Artifact {#artifact}
 
-**Environment** A single cluster of virtual machines within a program. For AEM, this is composed of an author instance (optionally with an additional cold standby author instance), zero or more publish instances, one or more dispatcher instances, and a load balancer.
+An artifact is a deployable unit and is the result of some build process which transforms source code into a single unit. For example a .zip file containing the source code.
 
-**Git Repository** A location where customer-specific source code is stored, accessible using the Git protocol.
+## Artifact Repository {#artifact-repository}
 
-**Instance** A specific virtual server running the AEM solution. Instances represent a single logical unit from a deployment perspective.
+An artifact repository is a storage location where customer-specific [artifacts](#artifact) are saved and secured.
 
-**Organization** Adobe construct representing an Enterprise customer. One company may have multiple organizations depending on how they were originally provisioned in Adobe's Identity Management System.
+## Environment {#environment}
 
-**Pipeline** A set of deployment steps which are executed in sequence.
+An environment is a single cluster of virtual machines within a [program.](#program) For AEM, this is composed of an authoring instance (optionally with an additional cold standby authoring instance), zero or more publishing instances, one or more dispatcher instances, and a load balancer.
 
-**Product** A specific set of functionality within a solution licensed by an organization. Different programs within an organization may be entitled to different sets of products. For example, Sites, Assets or Forms.
+## git Repository {#git-repository}
 
-**Program** A set of environments that support a logical grouping of customer initiatives, usually corresponding to a purchased Service Level Agreements (SLA). Each program has exactly one production environment and may have many non-production environments.
+A git repository is a location where customer-specific source code is stored and is accessible [using git.](https://git-scm.com)
 
-**Solution** One of the Adobe [!UICONTROL Experience Cloud] solutions. For example, Adobe Experience Manager, or Adobe Target, or Adobe Analytics.
+## Instance {#instance}
 
-**Step** A configured instruction set that accomplishes some unit of work, building block of a pipeline.
+An instance is a specific virtual server running the AEM [solution.](#solution) Instances represent a single logical unit from a deployment perspective.
+
+## Organization {#organization}
+
+An organization is an Adobe construct representing an enterprise customer. One company may have multiple organizations depending on how they were provisioned in Adobe's Identity Management System (IMS).
+
+## Pipeline {#pipeline}
+
+A pipeline is a set of deployment steps which are executed in sequence.
+
+## Product {#product}
+
+A product is a specific set of functionality within a [solution](#solution) licensed by an organization. Different [programs](#program) within an organization may be entitled to different sets of products, for example, AEM Sites, AEM Assets, or AEM Forms.
+
+## Program {#program}
+
+A program is a set of environments that support a logical grouping of customer initiatives, usually corresponding to a purchased service level agreements (SLA). Each program has exactly one production environment and may have many non-production environments.
+
+## Solution {#solution}
+
+A solution is one of the Adobe [!UICONTROL Experience Cloud] solutions. For example, Adobe Experience Manager, Adobe Target, or Adobe Analytics.
+
+## Step {#step}
+
+A step is a configured instruction set that accomplishes some unit of work as a building block of a [pipeline.](#pipeline)
