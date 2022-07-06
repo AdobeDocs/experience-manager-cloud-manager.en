@@ -1,32 +1,25 @@
 ---
 title: Source Code Repository
-seo-title: Source Code Repository for Adobe AEM Cloud Manager
-description: Follow this page to learn about the git repository that is provisioned for each program you have in Cloud Manager.
-seo-description: Follow this page to learn about the git repository that is provisioned for each program you have in Adobe AEM Cloud Manager.
-uuid: 2c42775f-8703-43f7-bad2-7dc086ea9dd7
-contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: requirements
-discoiquuid: f90f0f4c-c1ff-47f6-8d97-ff5018561bf2
-feature: Provisioning
+description: Learn about the git repository that is provisioned for each program you have in Cloud Manager.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
 ---
+
 # Source Code Repository {#source-code-repository}
+
+Learn about the git repository that is provisioned for each program you have in Cloud Manager.
 
 ## Cloud Manager Repository {#cloud-manager-repository}
 
-Your [!UICONTROL AEM Managed Services] subscription will include a source code repository provisioned and managed by Adobe. Each customer's program is assigned a single and unique **Git Repository**, where your associated code will be stored and secured. 
+Your [!UICONTROL AEM Managed Services] subscription includes a source code repository provisioned and managed by Adobe. Each program is assigned a single and unique git repository, where your associated code will be stored and secured. 
 
-As a best practice, you should always use the Cloud Manager's Git Repository, which comes empty without any branches configured or sample projects. To use the Cloud Manager's Git Repository, you will be provided with a **private access token** that will enable you to use any Git-compatible client to create branches, store and retrieve your code, list the commit history, etc.
+As a best practice, you should always use the Cloud Manager's git repository, which comes empty without any branches configured or sample projects. To use the Cloud Manager's git repository, you will be provided with a private access token that will enable you to use any git client to create branches, store and retrieve your code, list the commit history, etc.
 
-For more information on how to setup branches in Git, see [Configuring your Release Branches](configure-your-release-branches.md).
+For more information on how to setup branches in git, see [Configuring Release Branches.](/help/getting-started/configuring-release-branches.md)
 
-For more information on how to use the Cloud Manager's **Git Repository** with the CI/CD Pipeline, Please refer to the documents [Configure Production Pipelines](configuring-production-pipelines.md) and [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md) to learn more.
+For more information on how to use the Cloud Manager's git repository with the CI/CD pipeline, please refer to the documents [Configure Production Pipelines](/help/using/configuring-production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/configuring-non-production-pipelines.md) to learn more.
 
-## On-premise Repository {#on-premise-repository}
+## On-Premise Repository {#on-premise-repository}
 
-In some cases, you will have an existing Git Repository and want to keep using it. In these cases, you can use Git's supported feature for multiple remote repositories. Day to day development would continue to happen in your Git Repository. When a release branch is ready for a deployment to production, you will push your latest code to the Cloud Manager's Git repository and trigger the Cloud Manager CI/CD pipeline.
+You may have an existing git repository and want to keep using it in which case you can use git's feature for multiple remote repositories. Day-to-day development would continue to happen in your git repository. When a release branch is ready for a deployment to production, you can push your latest code to the Cloud Manager's git repository and trigger the Cloud Manager CI/CD pipeline.
 
->[!NOTE]
->
->To view the common Git commands, see the [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf).
+To view common git commands, see the [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf) on the GitHub website.
