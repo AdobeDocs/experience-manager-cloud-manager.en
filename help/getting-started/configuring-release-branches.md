@@ -1,6 +1,6 @@
 ---
-title: Configure your Release Branches
-seo-title: Configure your Release Branches
+title: Configuring Release Branches
+seo-title: Configuring Release Branches
 description: Configure release branches in Git for AEM Cloud Manager
 seo-description: Follow this page to learn on how to configure your release branches in git.
 uuid: d12a8b85-b7fd-4b55-a05a-a0f874ce598c
@@ -11,7 +11,7 @@ discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
 feature: Git Repositories
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 ---
-# Configure your Release Branches {#configure-your-release-branches}
+# Configuring Release Branches {#configuring-release-branches}
 
 ## Setting Up Your First Branch in Git {#setting-up-your-first-branch-in-git}
 

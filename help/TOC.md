@@ -1,62 +1,60 @@
 ---
-product: adobe experience manager
-sub-product: experience manager cloud manager
-archetype: administrator
-user-guide-title: Experience Manager Cloud Manager Guide
+product: Adobe Experience Manager
+sub-product: Cloud Manager
+user-guide-title: Cloud Manager Documentation
 breadcrumb-title: Cloud Manager Guide for AEM 6.x
-user-guide-description: Learn to use Adobe Managed Services to self-manage Experience Manager in the cloud.
+user-guide-description: Learn how to use Cloud Manager to self-manage Experience Manager in the cloud.
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
-level: Intermediate
 ---
 
-# Cloud Manager Guide {#content}
+# Cloud Manager Documentation {#content}
 
-+ [Introduction to Cloud Manager](introduction-to-cloud-manager.md)
++ [Introduction](introduction.md)
 + Overview {#overview}
   + [Key Concepts](overview/key-concepts.md)
   + [Customer Journey](overview/customer-journey.md)
   + [CI/CD Pipeline](overview/ci-cd-pipeline.md)
   + [Security and Privacy](overview/security-and-privacy.md)
   + [Help Resources](overview/help-resources.md)
-  + [Cloud Manager FAQs](overview/cloud-manager-faqs.md)
+  + [Cloud Manager FAQs](overview/faqs.md)
 + What is Required {#requirements}
   + [Access Rights Granted](requirements/access-rights-granted.md)
   + [Source Code Repository](requirements/source-code-repository.md)
-  + [Role Based Permissions](requirements/role-based-permissions.md)
-  + [Add Users and Roles](requirements/setting-up-users-and-roles.md)
+  + [Role-Based Permissions](requirements/role-based-permissions.md)
+  + [Setting Up Users and Roles](requirements/setting-up-users-and-roles.md)
   + [Environments Provisioned](requirements/environments-provisioned.md)
 + Getting Started {#getting-started}
   + [First Time Login](getting-started/first-time-login.md)
-  + [Setup your Program](getting-started/setting-up-program.md)
+  + [Setting Up Your Program](getting-started/setting-up-program.md)
   + Create an AEM Application Project {#create-application-project}
     + [Using the Wizard](getting-started/using-the-wizard.md)
-    + [Setting up your Project](getting-started/setting-up-project.md)
-    + [Understanding the Build Environment](getting-started/build-environment-details.md)
-  + [Configure your Release Branches](getting-started/configure-your-release-branches.md)
-  + [Manage your Dispatcher Configurations](getting-started/dispatcher-configurations.md)
+    + [Setting Up Your Project](getting-started/setting-up-project.md)
+    + [Understanding the Build Environment](getting-started/build-environment.md)
+  + [Configuring Release Branches](getting-started/configuring-release-branches.md)
+  + [Managing Dispatcher Configurations](getting-started/dispatcher-configurations.md)
 + Using {#using}
   + CI/CD Pipelines {#pipelines}
     + [Configuring Production Pipelines](using/configuring-production-pipelines.md)
     + [Configuring Non-Production Pipelines](using/configuring-non-production-pipelines.md)
     + [Managing Pipelines](using/managing-pipelines.md)
-  + [Deploy your Code](using/deploying-code.md)
-  + [Understand your Test Results](using/understand-your-test-results.md)
-  + [Manage your Environments](using/manage-your-environment.md)
-  + [Monitor your Environments](using/monitor-your-environments.md)
+  + [Deploying Code](using/deploying-code.md)
+  + [Understanding Test Results](using/understanding-test-results.md)
+  + [Managing Environments](using/managing-environments.md)
+  + [Monitoring Environments](using/monitoring-environments.md)
   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
   + [Notifications](using/notifications.md)
   + [Custom Code Quality Rules](using/custom-code-quality-rules.md)
 + Managing Code {#managing-code}
   + [Maven Project Version Handling](managing-code/activating-maven-project.md)
-  + [Repositories in Cloud Manager](managing-code/cloud-manager-repositories.md)
+  + [Repositories](managing-code/repositories.md)
   + [Accessing Repositories](managing-code/accessing-repos.md)
-  + [Integrating with Git](managing-code/setup-cloud-manager-git-integration.md)
-  + [Working with Multiple Source Git Repositories](managing-code/working-with-multiple-source-git-repos.md)
+  + [Integrating with git](managing-code/git-integration.md)
+  + [Working with Multiple git Repositories](managing-code/working-with-multiple-git-repos.md)
 + Product Update Wizard {#product-update-wizard}
-  + [Overview](overview-productupdate-wizard.md)
-  + [Evaluation](evaluation.md)
+  + [Overview](product-update-wizard/overview.md)
+  + [Evaluation](product-update-wizard/evaluation.md)
 + Release Notes {#release-notes}
   + [Current Release Notes](release-notes/current.md)
   + 2022 {#2022}
