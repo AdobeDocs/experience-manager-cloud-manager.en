@@ -31,7 +31,7 @@ role: Admin
     + [Using the Wizard](getting-started/using-the-wizard.md)
     + [Project Setup](getting-started/project-setup.md)
     + [The Build Environment](getting-started/build-environment.md)
-  + [Configuring Release Branches](getting-started/configuring-release-branches.md)
+  + [Configuring Branches](getting-started/configuring-branches.md)
   + [Managing Dispatcher Configurations](getting-started/dispatcher-configurations.md)
 + Using {#using}
   + CI/CD Pipelines {#pipelines}

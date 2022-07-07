@@ -83,12 +83,18 @@ When using this method, Maven itself still runs using the default JDK (Oracle 8)
 
 The currently available vendor/version combinations are:
 
-* oracle 1.8
-* oracle 1.11
-* oracle 11
-* sun 1.8
-* sun 1.11
-* sun 11
+|Vendor|Version|
+|---|---|
+| oracle |1.8|
+| oracle |1.11|
+| oracle |11|
+| sun |1.8|
+| sun |1.11|
+| sun |11|
+
+>[!NOTE]
+>
+>Starting April 2022, Oracle JDK will be the default JDK for the development and operation of AEM applications. Cloud Manager’s build process will automatically switch to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. Please refer to [the April release notes](/help/release-notes/2022/2022-4-0.md) for further details.
 
 ### Alternate Maven Execution JDK Version {#alternate-maven}
 

@@ -1,23 +1,18 @@
 ---
-title: Configuring Release Branches
-seo-title: Configuring Release Branches
-description: Configure release branches in Git for AEM Cloud Manager
-seo-description: Follow this page to learn on how to configure your release branches in git.
-uuid: d12a8b85-b7fd-4b55-a05a-a0f874ce598c
-contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: getting-started
-discoiquuid: 53807ea6-9464-429d-9322-85c9f405dff6
-feature: Git Repositories
+title: Configuring Branches
+description: Learn how to set up your first branch in git and how it is used by the CI/CD pipeline to deploy your application code.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 ---
-# Configuring Release Branches {#configuring-release-branches}
+
+# Configuring Branches {#configuring-branches}
+
+Learn how to set up your first branch in git and how it is used by the CI/CD pipeline to deploy your application code.
 
 ## Setting Up Your First Branch in Git {#setting-up-your-first-branch-in-git}
 
-A single, initially empty, **Git Repository** is provisioned for each program on-boarded in Cloud Manager. This repository can contain as many (or as few) branches as your development process follows, but there must be at least one branch which is used by the CI/CD pipeline to deploy application code to stage and production. The best practice is to use `master` as the name of this branch. Conveniently, this is the default behavior of Git clients when setting up new projects.
+A single, initially empty, git repository [is provisioned](/help/requirements/environment-provisioning.md) for each program onboarded in Cloud Manager. This repository can contain as many branches as your development process requires, but there must be at least one branch which is used by the CI/CD pipeline to deploy application code to stage and production. The best practice is to use `main` as the name of this branch. Conveniently, this is the default behavior of git clients when setting up new projects.
 
-For example, when setting up a new project, you will run a set of commands like this:
+For example, when setting up a new project, you will run a set of commands similar to the following.
 
 ```shell
 $ git init
@@ -49,11 +44,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->Its not a requirement to use the command-line client. There are a variety of graphical Git clients available either as standalone applications or as part of an Integrated Development Environment (IDE) such as Eclipse or IntelliJ. As long as the client application supports the Git using HTTPS, it should be compatible with [!UICONTROL Cloud Manager].
+>Its not a requirement to use the command-line client. There are a variety of graphical git clients available either as standalone applications or as part of an integrated development environment (IDE) such as Eclipse or IntelliJ. As long as the client application supports git using HTTPS, it should be compatible with [!UICONTROL Cloud Manager].
 
 ## Pushing Your First Branch {#pushing-your-first-branch}
 
-Once you have commited at least one revision, you can add the [!UICONTROL Cloud Manager] repository as a **remote** and then push your commits to it:
+Once you have committed at least one revision, you can add the [!UICONTROL Cloud Manager] repository as a remote and then push your commits to it.
 
 ```shell
 $ git remote add adobe <url>
@@ -64,7 +59,7 @@ Compressing objects: 100% (27/27), done.
 Writing objects: 100% (36/36), 7.31 KiB | 1.83 MiB/s, done.
 Total 36 (delta 6), reused 0 (delta 0)
 To <url>
- * [new branch]      master -> master
+ * [new branch]      main -> main
 ```
 
 >[!NOTE]
@@ -73,8 +68,8 @@ To <url>
 
 ## Additional Branches {#additional-branches}
 
-A single `master` branch may suffice for very simple projects, but in most cases, a more complex branching strategy will be required. Many customers follow a process where day-to-day development activities are performed on a branch called `develop` and the develop branch is merged into the `master` branch when it is time for a deployment.
+A single `main` branch may suffice for very simple projects, but in most cases, a more complex branching strategy will be required. Many customers follow a process where day-to-day development activities are performed on a branch called `develop` and the develop branch is merged into the `main` branch when it is time for a deployment.
 
->[!NOTE]
+>[!TIP]
 >
->To view the common git commands, see the [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>To view common git commands, see the [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
