@@ -23,10 +23,10 @@ role: Admin
   + [Source Code Repository](requirements/source-code-repository.md)
   + [Role-Based Permissions](requirements/role-based-permissions.md)
   + [Setting Up Users and Roles](requirements/setting-up-users-and-roles.md)
-  + [Environments Provisioned](requirements/environments-provisioned.md)
+  + [Environments Provisioned](requirements/environment-provisioning.md)
 + Getting Started {#getting-started}
   + [First Time Login](getting-started/first-time-login.md)
-  + [Setting Up Your Program](getting-started/setting-up-program.md)
+  + [Program Setup](getting-started/program-setup.md)
   + Create an AEM Application Project {#create-application-project}
     + [Using the Wizard](getting-started/using-the-wizard.md)
     + [Setting Up Your Project](getting-started/setting-up-project.md)

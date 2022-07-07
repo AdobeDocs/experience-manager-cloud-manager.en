@@ -1,45 +1,35 @@
 ---
 title: First Time Login
-seo-title: First Time Login to Adobe AEM Cloud Manager
 description: Follow this page if you have set up your general configurations and you are ready to use Cloud Manager for the first time.
-seo-description: Follow this page if you have set up your general configurations and you are ready to use Adobe AEM Cloud Manager for the first time.
-uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
-contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: getting-started
-discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-feature: Getting Started
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 ---
+
 # First Time Login {#first-time-login}
 
-Once you have setup the general configurations for [!UICONTROL Cloud Manager], you are ready to use the User Interface (UI) for [!UICONTROL Cloud Manager].
+Once you have set up the general configuration for [!UICONTROL Cloud Manager], you are ready to use it.
 
 >[!NOTE]
->Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, you will see different screens while using [!UICONTROL Cloud Manager] UI.
+>
+>Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, the screens you see may vary from the illustrations.
 
 ## Logging in for the First Time {#logging-in-for-the-first-time}
 
-1. Log in to the **Adobe [!UICONTROL Experience Cloud]** and you will see the list of **Programs**.
+1. Log in to Adobe [!UICONTROL Experience Cloud] and you will see the list of programs.
 
-1. Select the program (for example, **We.Retail Global**). Once you see your program card on the landing page, select the **...** to see menu options available to you.   Select **Cloud Manager** to navigate to the Cloud Manager's **Overview** page. 
+1. Select the program.
 
-   ![](/help/assets/navigate-cm1.png)
+1. On your program's card, select the ellipsis button and then **Cloud Manager** to navigate to the Cloud Manager's **Overview** page. 
 
-1. The Cloud Manager's **Overview** page displays.
+   ![Cloud Manager option](/help/assets/navigate-cm1.png)
 
-   ![](/help/assets/FirstLogin1.png)
+1. Cloud Manager opens to the **Overview** page.
 
-1. Click **Setup Program** for setting the **Program** description and defining the Key Performance Indicators (KPIs).
+   ![Cloud Manager overview page](/help/assets/FirstLogin1.png)
 
-   >[!NOTE]
-   >
-   >Please see [Setup your Program](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) to complete the next steps.
+1. Click **Setup Program** to set up your program description and define key performance indicators (KPIs).
 
-## Video Tutorial {#video-tutorial-two}
+Please continue to the document [Program Setup](https://helpx.adobe.com/experience-manager/cloud-manager/using/program-setup.html) for the next steps in setting up your program.
 
-### Cloud Manager Activity tab {#activity-video}
+## Cloud Manager Activity {#activity}
 
-Cloud Manager provides a consolidated view into a Program's activity, listing all CI/CD Pipeline executions, both production and non-production, allowing visibility into the past and present activity, and any activity's Details can be reviewed.
-
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
+Cloud Manager provides a consolidated view into a program's activity, listing all CI/CD pipeline executions, both production and non-production, allowing visibility into the past and present activity.
