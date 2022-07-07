@@ -1,26 +1,20 @@
 ---
 title: Configuring Non-Production Pipelines
-description: Learn how to use Cloud Manager to create and configure non-production pipelines in order to deploy your code.
+description: Learn how to use Cloud Manager to create and configure non-production pipelines to deploy your code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 ---
 # Configuring Non-Production Pipelines {#configuring-non-production-pipelines}
 
-Learn how to use Cloud Manager to create and configure non-production pipelines in order to deploy your code. if you would first like a more conceptual overview of how pipelines work in Cloud Manager, please see the [CI/CD pipeline overview documentation.](ci-cd-pipeline.md)
+Learn how to use Cloud Manager to create and configure non-production pipelines to deploy your code. If you would first like a more conceptual overview of how pipelines work in Cloud Manager, please see the document [CI/CD Pipelines.](/help/overview/ci-cd-pipelines.md)
 
->[!NOTE]
->
->To learn how to configure CI/CD pipelines for Cloud Manager in AEM as a Cloud Service, see [the AEMaaCS documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html#using-cloud-manager)
+## Overview {#overview}
 
-## Overview {#understanding-the-flow}
-
-The **Deployment Manager** role is responsible for setting up the pipeline using the **Pipelines** tile in the [!UICONTROL Cloud Manager] UI.
-
-You can create two different types of pipelines.
+Using the **Pipelines** tile in [!UICONTROL Cloud Manager], the **Deployment Manager** can create two different types of pipelines.
 
 * **Production Pipelines** - A production pipelines is a purpose-built pipeline made of a series of orchestrated steps to take source code all the way into production.
 * **Non-Production Pipelines** - A non-production pipeline primarily serves to run code-quality scans or to deploy source code into a development environment.
 
-This document focuses on non-production pipelines. For details on how to configure non-production pipelines see the document [Configuring Non-Production Pipelines.](configuring-non-production-pipelines.md)
+This document focuses on non-production pipelines. For details on how to configure production pipelines see the document [Configuring Production Pipelines.](/help/using/production-pipelines.md)
 
 There are two types of non-production pipelines:
 
@@ -29,9 +23,11 @@ There are two types of non-production pipelines:
 
 >[!NOTE]
 >
->A pipeline can not be setup until its associated git repository has at least one branch and [program setup](setting-up-program.md) is complete. See [Adding and Managing Repositories](cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+>A pipeline can not be setup until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See the document [Cloud Manager Repositories](/help/managing-code/repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
-## Video Tutorial {#video-tutorial-two}
+## Video Tutorial {#video-tutorial}
+
+This video provides an overview of the pipeline creation process, which is detailed in this document.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
@@ -46,7 +42,6 @@ Once you have set up your program and have at least one environment using the Cl
    ![Add non-production pipeline](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
 1. On the **Configuration** tab of the **Add Non-Production Pipeline** dialog, select the type of pipeline you want to create, either a **Code Quality Pipeline** or a **Deployment Pipeline**.
-
    
    ![Choose pipeline type](/help/assets/configure-pipelines/add-non-production-pipeline.png)
 
@@ -76,6 +71,4 @@ Once you have set up your program and have at least one environment using the Cl
 
 ## The Next Steps {#the-next-steps}
 
-Once you have configured the pipeline, you need to deploy your code.
-
-Please see the document [Deploy your Code](deploying-code.md) for more details.
+Once you have configured the pipeline, you need to deploy your code. Please see the document [Deploy your Code](/help/using/deploying-code.md) for more details.

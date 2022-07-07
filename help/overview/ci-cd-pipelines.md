@@ -1,12 +1,12 @@
 ---
-title: CI/CD Pipeline
-description: Learn about the CI/CD pipeline, which handles deployments to staging and production environments in Cloud Manager.
+title: CI/CD Pipelines
+description: Learn about CI/CD pipelines and how they handle deployments to staging and production environments in Cloud Manager.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 ---
 
-# CI/CD Pipeline {#ci-cd-pipeline}
+# CI/CD Pipelines {#ci-cd-pipeline}
 
-Learn about the CI/CD pipeline, which handles deployments to staging and production environments in Cloud Manager.
+Learn about CI/CD pipelines and how they handle deployments to staging and production environments in Cloud Manager.
 
 ## Overview {#overview}
 

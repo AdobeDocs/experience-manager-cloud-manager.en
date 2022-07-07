@@ -14,7 +14,7 @@ role: Admin
 + Overview {#overview}
   + [Key Concepts](overview/key-concepts.md)
   + [Customer Journey](overview/customer-journey.md)
-  + [CI/CD Pipeline](overview/ci-cd-pipeline.md)
+  + [CI/CD Pipelines](overview/ci-cd-pipelines.md)
   + [Security and Privacy](overview/security-and-privacy.md)
   + [Help Resources](overview/help-resources.md)
   + [Cloud Manager FAQs](overview/faqs.md)
@@ -35,8 +35,8 @@ role: Admin
   + [Dispatcher Configurations](getting-started/dispatcher-configurations.md)
 + Using {#using}
   + CI/CD Pipelines {#pipelines}
-    + [Configuring Production Pipelines](using/configuring-production-pipelines.md)
-    + [Configuring Non-Production Pipelines](using/configuring-non-production-pipelines.md)
+    + [Configuring Production Pipelines](using/production-pipelines.md)
+    + [Configuring Non-Production Pipelines](using/non-production-pipelines.md)
     + [Managing Pipelines](using/managing-pipelines.md)
   + [Deploying Code](using/deploying-code.md)
   + [Understanding Test Results](using/understanding-test-results.md)

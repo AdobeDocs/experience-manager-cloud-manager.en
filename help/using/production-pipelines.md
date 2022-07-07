@@ -1,29 +1,18 @@
 ---
 title: Configuring Production Pipelines
-description: Learn how to use Cloud Manager to create and configure production pipelines in order to deploy your code.
-uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: using
-content-type: reference
-discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-feature: CI-CD Pipeline
+description: Learn how to use Cloud Manager to create and configure production pipelines to deploy your code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 ---
+
 # Configuring Production Pipelines {#configuring-production-pipelines}
 
-Learn how to use Cloud Manager to create and configure production pipelines in order to deploy your code. if you would first like a more conceptual overview of how pipelines work in Cloud Manager, please see the [CI/CD pipeline overview documentation.](ci-cd-pipeline.md)
+Learn how to use Cloud Manager to create and configure production pipelines to deploy your code. if you would first like a more conceptual overview of how pipelines work in Cloud Manager, please see the document [CI/CD Pipelines.](/help/overview/ci-cd-pipelines.md)
 
->[!NOTE]
->
->To learn how to configure CI/CD pipelines for Cloud Manager in AEM as a Cloud Service, see [the AEMaaCS documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html#using-cloud-manager)
+## Overview {#overview}
 
-## Overview {#understanding-the-flow}
+Using the **Pipeline Settings** tile in [!UICONTROL Cloud Manager] you can create two different types of pipelines.
 
-You configure pipelines using the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
-
-You can create two different types of pipelines.
-
-* **Production Pipelines** - A production pipelines is a purpose-built pipeline made of a series of orchestrated steps to take source code all the way into production.
+* **Production Pipelines** - A production pipelines is a purpose-built pipeline made of a series of orchestrated steps to take source code from your git repository all the way into production.
 * **Non-Production Pipelines** - A non-production pipeline primarily serves to run code-quality scans or to deploy source code into a development environment.
 
 This document focuses on production pipelines. For details on how to configure non-production pipelines see the document [Configuring Non-Production Pipelines.](configuring-non-production-pipelines.md)
@@ -36,15 +25,11 @@ The **Deployment Manager** role is responsible for setting up the pipeline. Pipe
 
 >[!NOTE]
 >
->A pipeline can not be setup until its associated git repository has at least one branch and [program setup](setting-up-program.md) is complete.
-
->[!NOTE]
->
->You can change the pipeline settings after initial set up.
+>A pipeline can not be setup until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete.
 
 ## Video Tutorial {#video-tutorial-one}
 
-Watch this video for an overview of the pipeline creation process.
+This video provides an overview of the pipeline creation process, which is detailed in this document.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
@@ -167,53 +152,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
       ![Assets testing distribution](/help/assets/configure-pipelines/add-prod6.png)
 
 1. Click **Save** to complete adding your production pipeline.
- 
-### Editing a Production Pipeline {#editing-prod-pipeline}
 
-You can edit the pipeline configurations from the **Program Overview** page. 
+## The Next Steps {#the-next-steps}
 
-Follow the steps below to edit the configured pipeline:
-
-1. Navigate to **Pipelines** card from the **Program Overview** page.
-
-1. Click on **...** from the **Pipelines** card and click on **Edit**, as shown in the figure below.
-
-   ![](/help/assets/configure-pipelines/edit-prod1.png)
-
-1. The **Edit Production Pipeline** dialog box displays.
-
-   1. The **Configuration** tab allows you to update the **Pipeline Name**, **Repository**, **Git Branch**, **Deployment Trigger**, **Important Metrics Failure Behavior**, **Deployment Options** and **Dispatcher Configurations**.
-
-      >[!NOTE]
-      >See [Adding and Managing Repositories](/help/using/cloud-manager-repositories.md) to learn how to add and manage repositories in Cloud Manager.
-
-
-   1. The **Stage Testing** tab provides you an option to re-select your options from **Sites Content Delivery/Distributed Load Weight** and **Assets Performance Testing Distribution**.
-
-1. Click on **Update** once you are done editing the pipeline.
-
-### Additional Production Pipeline Actions {#additional-prod-actions}
-
-#### Running a Production Pipeline {#run-prod}
-
-You can run the production pipeline from the Pipelines card:
-
-1. Navigate to **Pipelines** card from the **Program Overview** page.
-
-1. Click on **...** from the **Pipelines** card and click on **Run**, as shown in the figure below.
-
-   ![](/help/assets/configure-pipelines/prod-run.png)
-
-#### Deleting a Production Pipeline {#delete-prod}
-
-You can delete the production pipeline from the Pipelines card:
-
-1. Navigate to **Pipelines** card from the **Program Overview** page.
-
-1. Click on **...** from the **Pipelines** card and click on **Delete**, as shown in the figure below.
-
-   ![](/help/assets/configure-pipelines/prod-delete.png)
-
-   >[!NOTE]
-   >A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the **Delete** option from the Pipeline card.
-
+Once you have configured the pipeline, you need to deploy your code. Please see the document [Deploy your Code](/help/using/deploying-code.md) for more details.

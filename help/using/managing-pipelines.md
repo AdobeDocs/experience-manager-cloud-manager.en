@@ -1,9 +1,9 @@
 ---
 title: Managing Pipelines
 description: Learn how to manage your existing pipelines including editing, running, and deleting them.
-index: yes
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 ---
+
 # Managing Pipelines {#managing-pipelines}
 
 Learn how to manage your existing pipelines including editing, running, and deleting them.
@@ -23,8 +23,8 @@ By clicking the ellipsis button next to each pipeline you can take the following
 
 At the bottom of the list of pipelines, you have general options.
 
-* **Add** - To [add a new production pipeline](configuring-production-pipelines.md) or [add new non-production pipeline](configuring-non-production-pipelines.md)
-* **Show All** - Takes the user to the **Pipelines** screen to view all pipelines in a more detailed table.
+* **Add** - To [add a new production pipeline](/help/using/production-pipelines.md) or [add new non-production pipeline](/help/using/non-production-pipelines.md)
+* **Show All** - Takes the user to the **Pipelines** screen to view all pipelines in a more detailed table
 * **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
 * **Learn More** - Navigates to CI/CD pipeline documentation resources. 
 
@@ -49,8 +49,8 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 1. The **Edit Production Pipeline** or **Edit Non-Production Pipeline** dialog box displays, allowing you to edit the same details that you entered when creating the pipeline.
 
     * See the following pages for details on all of the fields and configuration options available for pipelines.
-      * [Configuring Production Pipelines](configuring-production-pipelines.md)
-      * [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md)
+      * [Configuring Production Pipelines](/help/using/production-pipelines.md)
+      * [Configuring Non-Production Pipelines](/help/using/configuring-non-production-pipelines.md)
 
 1. Click on **Update** once you are done editing the pipeline.
 
