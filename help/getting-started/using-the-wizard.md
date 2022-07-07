@@ -1,39 +1,38 @@
 ---
-title: Using the Wizard
+title: Using the New Project Wizard
 description: Follow this page to learn how to use the wizard to create an AEM Application Project
-feature: Getting Started
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 ---
-# Using the Wizard {#using-wizard-to-create-an-aem-application-project}
 
-When customers are on-boarded to Cloud Manager, they are provided with an empty git repository. Current Adobe Managed Services (AMS) customers (or on-premise AEM customers who are migrating to AMS) will generally already have their project code in git (or another version control system) and will import their project into the Cloud Manager git repository. New customers, however, do not have existing projects.
+# Using the New Project Wizard {#using-the-wizard}
 
-To help get new customers started, Cloud Manger is now able to create a minimal AEM project as a starting point. This process is based on the [**AEM Project Archetype**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+When you are onboarded to Cloud Manager as a new customer, you are provided with an empty git repository. To help you get started, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype) as a starting point.
 
+Follow these steps to create an AEM project using the wizard.
 
-Follow the steps below to create an AEM application project in Cloud Manager:
+1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) and select the appropriate organization.
 
-1. Once you log in to Cloud Manager and the basic program setup is complete, a special call to action card will be shown on the **Overview** screen, if the repository is empty.
+1. If you have not already, [create your program.](program-setup.md) Once the program is created, Cloud Manager will recognize that the repositories are not yet set up and a special call-to-action card is shown on the **Overview** screen.
 
-   ![](/help/assets/image2018-10-3_14-29-44.png)
+   ![Create project CTA](/help/assets/image2018-10-3_14-29-44.png)
 
-1. Click **Create to** open a dialog box, which allows the user to provide the parameters required by the AEM Project Archetype. In its default form, the dialog box asks for two values:
+1. Click **Create** to start the wizard and provide important values.
 
-    * **Title** - by default this is set to the *Program Name*
-    
-    * **New Branch Name** - by default this is *master*
+    * **Title** - This is the title of the project and is by default set to the name of the program.
+    * **New Branch Name** - This is the initial branch of your git repositories and by default will be `main`. 
 
-   ![](/help/assets/screen_shot_2018-10-08at55825am.png)
+   ![Project values](/help/assets/screen_shot_2018-10-08at55825am.png)
 
-   The dialog box has a drawer which can be opened by clicking on the handle toward the bottom of the dialog. In its expanded form, the dialog shows all of the configuration parameters for the Archetype. Many of these parameters have default values which are generated based on the **Title**.
+1. The dialog has a drawer which can be opened by clicking on the handle toward the bottom. In its expanded form, the dialog shows all of the configuration parameters for the AEM project archetype. These parameters have default values which are generated based on the **Title** you already provided and do not require modification. They are explained here for your information.
 
-   ![](/help/assets/screen_shot_2018-10-08at60032am.png)
+   ![Detailed archetype parameters](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-   >[!NOTE]
-   >
-   >For example, if the **Title** is ***We.Finance***, the Base Maven Artifact Id parameter is generated as ***com.wefinance***. These values can be changed, if desired.
-   >
-   >
-   >For example, you can change from the generated ***value com.wefinance*** to ***net.wefinance***.
+1. Click **Create** to create the starter project by using the archetype and commit to the named git branch. 
 
-1. Click **Create** in the preceding step to create the starter project by using the archetype and commit to the named git branch. Once this is done, you can set up the pipeline.
+You now have a base project! Now you can set up your pipelines.
+
+## Existing or Migrating Customers {#existing-migrating}
+
+If you are a current Adobe Managed Services (AMS) customer or an on-premise AEM customer who is migrating to, you likely already have project code in git or another version control system.
+
+In such cases you will import your project into the Cloud Manager git repository.
