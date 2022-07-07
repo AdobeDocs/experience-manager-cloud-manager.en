@@ -29,8 +29,8 @@ role: Admin
   + [Program Setup](getting-started/program-setup.md)
   + Create an AEM Application Project {#create-application-project}
     + [Using the Wizard](getting-started/using-the-wizard.md)
-    + [Setting Up Your Project](getting-started/project-setup.md)
-    + [Understanding the Build Environment](getting-started/build-environment.md)
+    + [Project Setup](getting-started/project-setup.md)
+    + [The Build Environment](getting-started/build-environment.md)
   + [Configuring Release Branches](getting-started/configuring-release-branches.md)
   + [Managing Dispatcher Configurations](getting-started/dispatcher-configurations.md)
 + Using {#using}
