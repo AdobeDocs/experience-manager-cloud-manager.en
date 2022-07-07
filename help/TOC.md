@@ -32,7 +32,7 @@ role: Admin
     + [Project Setup](getting-started/project-setup.md)
     + [The Build Environment](getting-started/build-environment.md)
   + [Configuring Branches](getting-started/configuring-branches.md)
-  + [Managing Dispatcher Configurations](getting-started/dispatcher-configurations.md)
+  + [Dispatcher Configurations](getting-started/dispatcher-configurations.md)
 + Using {#using}
   + CI/CD Pipelines {#pipelines}
     + [Configuring Production Pipelines](using/configuring-production-pipelines.md)
