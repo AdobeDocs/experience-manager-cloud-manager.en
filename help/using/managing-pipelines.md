@@ -50,7 +50,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
     * See the following pages for details on all of the fields and configuration options available for pipelines.
       * [Configuring Production Pipelines](/help/using/production-pipelines.md)
-      * [Configuring Non-Production Pipelines](/help/using/configuring-non-production-pipelines.md)
+      * [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md)
 
 1. Click on **Update** once you are done editing the pipeline.
 

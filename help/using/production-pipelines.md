@@ -15,7 +15,7 @@ Using the **Pipeline Settings** tile in [!UICONTROL Cloud Manager] you can creat
 * **Production Pipelines** - A production pipelines is a purpose-built pipeline made of a series of orchestrated steps to take source code from your git repository all the way into production.
 * **Non-Production Pipelines** - A non-production pipeline primarily serves to run code-quality scans or to deploy source code into a development environment.
 
-This document focuses on production pipelines. For details on how to configure non-production pipelines see the document [Configuring Non-Production Pipelines.](configuring-non-production-pipelines.md)
+This document focuses on production pipelines. For details on how to configure non-production pipelines see the document [Configuring Non-Production Pipelines.](/help/using/non-production-pipelines.md)
 
 The **Deployment Manager** role is responsible for setting up the pipeline. Pipeline configuration consists of:
 
