@@ -1,14 +1,10 @@
 ---
-title: Understand Your Test Results
+title: Code Quality Testing
 description:  Learn how code quality testing of pipelines works and how it can improve the quality of your deployments.
-uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: using
-discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
-feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 ---
-# Understand Your Test Results {#understand-your-test-results}
+
+# Code Quality Testing {#code-quality-testing}
 
  Learn how code quality testing of pipelines works and how it can improve the quality of your deployments.
 
@@ -16,14 +12,9 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 
 During pipeline execution, a number of metrics are captured and compared to either the key performance indicators (KPIs) defined by the business owner or to standards set by Adobe Managed Services.
 
-These are reported using three-tiered rating system as defined in the next section
+These are reported using three-tiered rating system.
 
->[!NOTE]
->
->To learn about tests supported by Cloud Manager for AEM as a Cloud Service, see the [AEM as a Cloud Service documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html).
-
-
-## Three-Tiered Ratings  {#three-tier-gates-while-running-a-pipeline}
+## Three-Tiered Ratings {#three-tiered-ratings}
 
 There are three gates in the pipeline:
 
@@ -34,28 +25,26 @@ There are three gates in the pipeline:
 For each of these gates, there is a three-tiered structure for issues identified by the gate.
 
 * **Critical** - These are issues which cause an immediate failure of the pipeline.
-* **Important** - These are issues which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure. Override of important failures are subject to a [timeout.](deploying-code.md#timeouts)
+* **Important** - These are issues which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure. Override of important failures are subject to a [timeout.](/help/using/code-deployment.md#timeouts)
 * **Info** - These are issues which are provided purely for informational purposes and have no impact on pipeline execution.
 
 >[!NOTE]
 >
->In a code quality only pipeline, important failures in the Code Quality gate cannot be overridden since the code quality testing step is the final step in the pipeline.
+>In a code quality only pipeline, important failures in the code quality gate cannot be overridden since the code quality testing step is the final step in the pipeline.
 
 ## Code Quality Testing {#code-quality-testing}
 
-This step evaluates the quality of your application code, which is the main purpose of a code quality only pipeline, and is executed immediately following the build step in all non-production and production pipelines. Please refer to the document [Configuring Non-Production Pipelines](configuring-non-production-pipelines.md) to learn more.
-
-### Understanding Code Quality Testing {#understanding-code-quality-testing}
+This step evaluates the quality of your application code, which is the main purpose of a code quality only pipeline, and is executed immediately following the build step in all non-production and production pipelines. Please refer to the document [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md) to learn more.
 
 Code quality testing scans the source code to ensure that it meets certain quality criteria. This is implemented by a combination of SonarQube analysis, content package-level examination using OakPAL, and dispatcher validation using the Dispatcher Optimization Tool.
 
 There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules.](/help/using/custom-code-quality-rules.md)
 
->[!NOTE]
+>[!TIP]
 >
->You can download the complete list of rules [using this link.](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx)
+>You can download the complete list of rules [using this link.](/help/assets/CodeQuality-rules-latest-AMS.xlsx)
 
-The results of code quality testing are delivered as **ratings**. The following table summarizes the ratings for various test criteria.
+The results of code quality testing are delivered as rating as summarized in this table.
 
 |Name|Definition|Category|Failure Threshold|
 |--- |--- |--- |--- |
@@ -78,7 +67,7 @@ The results of code quality testing are delivered as **ratings**. The following 
 
 ### Dealing with False Positives {#dealing-with-false-positives}
 
-The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is referred to as a **false positive**.
+The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is referred to as a false positive.
 
 In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common false positive is that the SonarQube rule to detect hardcoded passwords can be aggressive about how a hardcoded password is identified.
 
@@ -108,11 +97,11 @@ Then the correct solution is to remove the hardcoded password.
 
 >[!NOTE]
 >
->While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible, i.e. annotate only the specific statement or block causing the issue, it is possible to annotate at a class level.
+>While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible (i.e. annotate only the specific statement or block causing the issue), it is possible to annotate at a class level.
 
 ## Security Testing {#security-testing}
 
-[!UICONTROL Cloud Manager] runs the existing **AEM Security Heath Checks** on the staging environment following deployment and reports the status through the UI. The results are aggregated from all AEM instances in the environment.
+[!UICONTROL Cloud Manager] runs the existing AEM Security Heath Checks on the staging environment following deployment and reports the status through the UI. The results are aggregated from all AEM instances in the environment.
 
 These same health checks can be executed at any time through the Web Console or the Operations Dashboard.
 
@@ -150,7 +139,7 @@ Cloud Manager executes performance testing for AEM Sites programs. The performan
 
 #### Virtual Users {#virtual-users}
 
-The number of virtual users or containers that are spun up by Cloud Manager is driven by the KPIs (response time and pageviews/min) defined by the user with the **Business Owner** role while [creating or editing the program.](setting-up-program.md) Based on the KPIs defined, up to 10 containers that simulate actual users will be spun up. The pages that are selected for testing are split and assigned to each virtual user.
+The number of virtual users or containers that are spun up by Cloud Manager is driven by the KPIs (response time and pageviews/min) defined by the user with the **Business Owner** role while [creating or editing the program.](/help/getting-started/program-setup.md) Based on the KPIs defined, up to 10 containers that simulate actual users will be spun up. The pages that are selected for testing are split and assigned to each virtual user.
 
 #### Crawler {#crawler}
 
@@ -167,13 +156,13 @@ Pages are selected by three page sets. Cloud Manager uses the access logs from t
 
 * **Popular Live Pages** - This option is selected to make sure that the most popular pages accessed by live customers are tested. Cloud Manager will read the access log and determine the top 25 most-accessed pages by live customers to generate a list of top `Popular Live Pages`. The intersection of these that are also present on the staging environment are then crawled on the staging environment. 
 
-* **Other Live Pages** - This option is selected to make sure that the pages that fall outside the top 25 popular live pages that may not be popular, but important to test are tested. Similar to popular live pages, these are extracted from the access log and must also be present on the staging environment.
+* **Other Live Pages** - This option is selected to make sure that the pages that fall outside the top 25 popular live pages that may not be popular, but are important to test, are tested. Similar to popular live pages, these are extracted from the access log and must also be present on the staging environment.
 
-* **New Pages** - This option is selected to test new pages that may have only been deployed to the staging and not yet to production, but are must be tested. 
+* **New Pages** - This option is selected to test new pages that may have only been deployed to the staging and not yet to production, but must be tested. 
 
 ##### Distribution of Traffic Across Page Sets Selected {#distribution-of-traffic}
 
-You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration.](configuring-production-pipelines.md) The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put toward each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
+You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration.](/help/using/production-pipelines.md) The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put toward each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
 
 Let us consider this example.
 
@@ -211,7 +200,7 @@ Refer to the section [Authenticated Performance Testing](#authenticated-performa
 >
 >Both author and publish instances are monitored during the period of the test. If any metric for one instance is not obtained, that metric is reported as unknown and the corresponding step will fail.
 
-#### Optional - Authenticated Performance Testing {#authenticated-performance-testing}
+#### Authenticated Performance Testing {#authenticated-performance-testing}
 
 If necessary, AMS customers with authenticated sites can specify a username and password which Cloud Manager will use to access the website during sites performance testing.
 
@@ -225,7 +214,7 @@ To set these variables using the Cloud Manager CLI, run:
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-Please refer to the document [Patch User Pipeline Variables](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchPipelineVariables) to learn how to use the API. 
+Please refer to the [Patch User Pipeline Variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentation to learn how to use the API. 
 
 ### AEM Assets {#aem-assets}
 
@@ -249,11 +238,11 @@ For example, if a 70/30 split is used, and there are 10 assets uploaded per minu
 
 #### Testing and Reporting {#testing-and-reporting}
 
-Cloud Manager will create a folder on the author instance using the username and password as setup by the CSE in the [Onboarding Requirements](#onboaring-requirements) section. Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library.](https://github.com/adobe/toughday2) Both processing time for each asset as well as various system-level metrics are measured across the 30-minute testing duration. This feature can upload both images and PDF documents.
+Cloud Manager will create a folder on the author instance using the username and password as setup by the CSE. Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library.](https://github.com/adobe/toughday2) Both processing time for each asset as well as various system-level metrics are measured across the 30-minute testing duration. This feature can upload both images and PDF documents.
 
 >[!TIP]
 >
->Please refer to the document [Configure Production Pipelines](configuring-production-pipelines.md) to learn more. Refer to the document [Setup your Program](setting-up-program.md) to learn how to setup your program and define your KPIs.
+>Please refer to the document [Configure Production Pipelines](/help/using/production-pipelines.md) to learn more. Refer to the document [Program Setup](/help/getting-started/program-setup.md) to learn how to setup your program and define your KPIs.
 
 ### Performance Testing Results Graphs {#performance-testing-results-graphs}
 
@@ -267,27 +256,20 @@ The metric panels can be expanded to display a graph, provide a link to a downlo
 
 This functionality is available for the following metrics.
 
-* **CPU Utilization**
-  * A graph of CPU utilization during the test period
+* **CPU Utilization** - A graph of CPU utilization during the test period
 
-* **Disk I/O Wait Time**
-  * A graph of disk I/O wait time during the test period
+* **Disk I/O Wait Time** - A graph of disk I/O wait time during the test period
 
-* **Page Error Rate**
-  * A graph of page errors per minute during the test period
+* **Page Error Rate** - A graph of page errors per minute during the test period
   * A CSV file listing pages which have produced an error during the test
 
-* **Disk Bandwidth Utilization**
-  * A graph of disk bandwidth utilization during the test period
+* **Disk Bandwidth Utilization** - A graph of disk bandwidth utilization during the test period
 
-* **Network Bandwidth Utilization**
-  * A graph of network bandwidth utilization during the test period
+* **Network Bandwidth Utilization** - A graph of network bandwidth utilization during the test period
 
-* **Peak Response Time**
-  * A graph of peak response time per minute during the test period
+* **Peak Response Time** - A graph of peak response time per minute during the test period
 
-* **95th Percentile Response Time**
-  * A graph of 95th percentile response time per minute during the test period
+* **95th Percentile Response Time** - A graph of 95th percentile response time per minute during the test period
   * A CSV file listing pages whose 95th percentile response time has exceeded the defined KPI
 
 ## Content Package Scanning Optimization {#content-package-scanning-optimization}

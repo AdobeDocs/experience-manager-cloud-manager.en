@@ -39,7 +39,7 @@ role: Admin
     + [Configuring Non-Production Pipelines](using/non-production-pipelines.md)
     + [Managing Pipelines](using/managing-pipelines.md)
   + [Code Deployment](using/code-deployment.md)
-  + [Understanding Test Results](using/understanding-test-results.md)
+  + [Code Quality Testing](using/code-quality-testing.md)
   + [Managing Environments](using/managing-environments.md)
   + [Monitoring Environments](using/monitoring-environments.md)
   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
