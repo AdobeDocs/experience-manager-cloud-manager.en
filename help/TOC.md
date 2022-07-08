@@ -47,7 +47,7 @@ role: Admin
   + [Notifications](using/notifications.md)
   + [Custom Code Quality Rules](using/custom-code-quality-rules.md)
 + Managing Code {#managing-code}
-  + [Maven Project Version Handling](managing-code/activating-maven-project.md)
+  + [Maven Project Version Handling](managing-code/maven-project-version.md)
   + [Repositories](managing-code/repositories.md)
   + [Accessing Repositories](managing-code/accessing-repos.md)
   + [Integrating with git](managing-code/git-integration.md)
