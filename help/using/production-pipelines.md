@@ -53,7 +53,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
       >[!TIP]
       >
-      >See the document [Set Up Your Program](setting-up-program.md) to learn how to add and manage repositories in Cloud Manager.
+      >See the document [Program Setup](/help/getting-started/program-setup.md) to learn how to add and manage repositories in Cloud Manager.
 
       * **Git Branch** - This option defines from which branch in the selected the pipeline should retrieve the code.
       * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
@@ -113,7 +113,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
            >[!TIP]
            >
-           >Please refer to the document [Deploy your Code,](deploying-code.md) to learn how to set the deployment schedule or execute the pipeline immediately.
+           >Please refer to the document [Code Deployment,](/help/using/code-deployment.md) to learn how to set the deployment schedule or execute the pipeline immediately.
 
            * **Use CSE Oversight** - If this option is select, a CSE is engaged to actually start the deployment. When creating or editing a pipeline when this option is enabled, the **Deployment Manager** role has the following options.
 
@@ -155,4 +155,4 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
 ## The Next Steps {#the-next-steps}
 
-Once you have configured the pipeline, you need to deploy your code. Please see the document [Deploy your Code](/help/using/deploying-code.md) for more details.
+Once you have configured the pipeline, you need to deploy your code. Please see the document [Code Deployment](/help/using/code-deployment.md) for more details.

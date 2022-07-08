@@ -12,7 +12,7 @@ Learn how to manage your existing pipelines including editing, running, and dele
 
 The **Pipelines** card on the **Program Overview** page in Cloud Manager gives you an overview of all of your pipelines and their current status.
 
-![Pipelines card in Cloud Manager](/help/using/assets/configure-pipelines/pipelines-card.png)
+![Pipelines card in Cloud Manager](/help/assets/configure-pipelines/pipelines-card.png)
 
 By clicking the ellipsis button next to each pipeline you can take the following actions.
 
@@ -76,9 +76,9 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 1. You are taken to the details page of the running pipeline.
 
-![Pipeline details](/help/using/assets/configure-pipelines/pipeline-running-details.png)
+![Pipeline details](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-From here you can see the status of the various steps of the pipeline and retrieve build logs for diagnostic purposes. See the document [Deploying Your Code](deploying-code.md) for more information.
+From here you can see the status of the various steps of the pipeline and retrieve build logs for diagnostic purposes. See the document [Code Deployment](/help/using/code-deployment.md) for more information.
 
 >[!NOTE]
 >

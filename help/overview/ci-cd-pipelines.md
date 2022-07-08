@@ -35,7 +35,7 @@ This diagram illustrates what happens once a release is triggered in [!UICONTROL
 
 ### How to Set Up a CI/CD Pipeline {#how-to-setup-a-ci-cd-pipeline}
 
-To learn more about pipeline configuration, see the documents [Configuring Production Pipelines](/help/using/configuring-production-pipelines.md) and [Configuring Non-Production Pipelines.](/help/using/configuring-non-production-pipelines.md)
+To learn more about pipeline configuration, see the documents [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines.](/help/using/non-production-pipelines.md)
 
 ## Quality Gates {#quality-gates}
 
@@ -57,4 +57,4 @@ This is an example of a code scan with issues identified.
 
 ### How to Set Up Gates {#how-to-setup-gates}
 
-See the document [Configuring Production Pipelines](/help/using/configuring-production-pipelines.md) for details on setting up your code, quality, and performance gates.
+See the document [Configuring Production Pipelines](/help/using/production-pipelines.md) for details on setting up your code, quality, and performance gates.

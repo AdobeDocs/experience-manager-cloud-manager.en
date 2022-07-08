@@ -57,7 +57,7 @@ One of the key capabilities of [!UICONTROL Cloud Manager] is the ability to exer
 
 Through the [!UICONTROL Cloud Manager] UI, you can configure and kick off your CI/CD pipeline. As part of this pipeline, a thorough code scan is executed to ensure that only high-quality applications pass through to the production environment.
 
-To learn more about configuring pipeline from [!UICONTROL Cloud Manager]'s UI, see the documents [Configuring Production Pipelines](using/configuring-production-pipelines.md) and [Configuring Non-Production Pipelines.](using/configuring-non-production-pipelines.md)
+To learn more about configuring pipeline from [!UICONTROL Cloud Manager]'s UI, see the documents [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines.](/help/using/non-production-pipelines.md)
 
 ### Flexible Deployment Modes {#flexible-deployment-modes}
 
@@ -67,7 +67,7 @@ With an automatic trigger mode, code is automatically deployed to an environment
 
 Independent of the deployment trigger, quality checks are always performed as part of the CI/CD pipeline execution every time a deployment is triggered. Quality checks include, code inspection, security testing, and performance testing, all of which is delivered out of the box with no effort required from you or your partners.
 
-To learn more about deploying code and quality checks, see the document [Deploying Code.](using/deploying-code.md)
+To learn more about deploying code and quality checks, see the document [Deploying Code.](/help/using/code-deployment.md)
 
 ### Autoscaling {#autoscaling}
 

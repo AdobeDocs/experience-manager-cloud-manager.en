@@ -20,7 +20,7 @@ The release date for [!UICONTROL Cloud Manager] release 2022.7.0 is 30 June 2022
 ## What's New {#what-is-new}
 
 * Cloud Manager users can now access useful video tutorials from the landing page **Welcome** card at any time.
-* The maximum number of pages to be tested [can now be overridden by setting the MAX_PAGES environment variable.](understand-your-test-results.md#crawler)
+* The maximum number of pages to be tested [can now be overridden by setting the `MAX_PAGES` environment variable.](/help/using/code-quality-testing.md#crawler)
 
 ## Bug Fixes {#bug-fixes}
 

@@ -39,9 +39,9 @@ This is a known issue due to Cloud Manager using a different version of Java to 
 
 Yes. All code quality failures except for security ratings are non-critical metrics, so they can be bypassed as part of a deployment pipeline by expanding the items in the results UI.  
 
-A user with [Deployment Manager, Project Manager, or Business Owner](/help/using/setting-up-users-and-roles.md#role-definitions) role can override the issues, in which case the pipeline proceeds or they can accept the issues, in which case the pipeline stops with a failure.
+A user with [Deployment Manager, Project Manager, or Business Owner](/help/requirements/setting-up-users-and-roles.md#role-definitions) role can override the issues, in which case the pipeline proceeds or they can accept the issues, in which case the pipeline stops with a failure.
 
-See the documents [Three-Tier Gates while Running a Pipeline](/help/using/understanding-test-results.md#three-tier-gates-while-running-a-pipeline) and [Configuring Non-Production Pipelines](/help/using/configuring-non-production-pipelines.md#understanding-the-flow) for more details.
+See the documents [Three-Tier Gates while Running a Pipeline](/help/using/code-quality-testing.md#three-tier-gates-while-running-a-pipeline) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md#understanding-the-flow) for more details.
 
 ## Cloud Manager deployments fail at the performance test step in Adobe Managed Services environments. How do we debug this to pass the critical metrics? {#debug-critical-metrics}
 
@@ -52,9 +52,9 @@ There is no single answer to this question. But these are some important points 
 * A common metric that fails is the error rate.
   * In order for a URL to pass, the main URL must load with `200` status and in less than `20` seconds.
   * Page loads that exceed `20` seconds are marked as `504` errors.
-* If your site requires user authentication, see the document [Understand Your Test Results](/help/using/understanding-test-results.md#authenticated-performance-testing) for configuring the test to authenticate to your site.
+* If your site requires user authentication, see the document [Understand Your Test Results](/help/using/code-quality-testing.md#authenticated-performance-testing) for configuring the test to authenticate to your site.
 
-Please see the document [Understanding Test Results](help/using/understanding-test-results.md) for more information on quality checks.
+Please see the document [Understanding Test Results](/help/using/code-quality-testing.md) for more information on quality checks.
 
 ## Can I use SNAPSHOT for the version of the Maven project? {#snapshot}
 
@@ -68,7 +68,7 @@ Further details about version handling are [documented here.](https://experience
 
 ## How does package and bundle versioning work for staging and production deployments? {#staging-production}
 
-In staging and production deployments, an automatic version is generated [as documented here.](/help/managing-code/activating-maven-project.md)
+In staging and production deployments, an automatic version is generated [as documented here.](/help/managing-code/maven-project-version.md)
 
 For custom versioning in stage and production deployments, set a proper three-part maven version like `1.0.0`. Increase the version each time you deploy to production.
 

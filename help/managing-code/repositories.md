@@ -89,7 +89,7 @@ When Cloud Manager's build process executes, after the repository configured for
 $ git submodule update --init
 ```
 
-This will check out each submodule into the appropriate directory. This technique is a potential alternative to [working with multiple source Git repositories](/help/managing-code/working-with-multiple-git-repos.md) for organizations which are comfortable with using git submodules and do not want to manage an external merging process.
+This will check out each submodule into the appropriate directory. This technique is a potential alternative to [working with multiple source Git repositories](/help/managing-code/multiple-git-repos.md) for organizations which are comfortable with using git submodules and do not want to manage an external merging process.
 
 For example, let's say there are three repositories, each containing a single branch named `main`. In the "primary" repository, i.e. the one configured in the pipelines, the `main` branch has a `pom.xml` file declaring the projects contained in the other two repositories:
 

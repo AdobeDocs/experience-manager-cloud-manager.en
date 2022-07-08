@@ -14,9 +14,9 @@ Your [!UICONTROL AEM Managed Services] subscription includes a source code repos
 
 As a best practice, you should always use the Cloud Manager's git repository, which comes empty without any branches configured or sample projects. To use the Cloud Manager's git repository, you will be provided with a private access token that will enable you to use any git client to create branches, store and retrieve your code, list the commit history, etc.
 
-For more information on how to setup branches in git, see [Configuring Release Branches.](/help/getting-started/configuring-release-branches.md)
+For more information on how to setup branches in git, see [Configuring Release Branches.](/help/getting-started/configuring-branches.md)
 
-For more information on how to use the Cloud Manager's git repository with the CI/CD pipeline, please refer to the documents [Configure Production Pipelines](/help/using/configuring-production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/configuring-non-production-pipelines.md) to learn more.
+For more information on how to use the Cloud Manager's git repository with the CI/CD pipeline, please refer to the documents [Configure Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md) to learn more.
 
 ## On-Premise Repository {#on-premise-repository}
 

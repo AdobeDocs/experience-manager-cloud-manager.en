@@ -331,7 +331,7 @@ If desired, the reuse behavior can be disabled for specific pipelines by setting
 
 * Build artifacts are not reused across different programs, regardless if the commit hash is identical.
 * Build artifacts are reused within the same program even if the branch and/or pipeline is different.
-* [Maven version handling](/help/managing-code/activating-maven-project.md) replace the project version only in production pipelines. Therefore if the same commit is used on both a development deploy execution and a production pipeline execution and the development deploy pipeline is executed first, the versions will be deployed to stage and production without being changed. However, a tag will still be created in this case.
+* [Maven version handling](/help/managing-code/maven-project-version.md) replace the project version only in production pipelines. Therefore if the same commit is used on both a development deploy execution and a production pipeline execution and the development deploy pipeline is executed first, the versions will be deployed to stage and production without being changed. However, a tag will still be created in this case.
 * If the retrieval of the stored artifacts is not successful, the build step will be executed as if no artifacts had been stored.
 * Pipeline variables other than `CM_DISABLE_BUILD_REUSE` are not considered when Cloud Manager decides to reuse previously created build artifacts.
 

@@ -38,7 +38,7 @@ The **Stage deployment** step includes the following actions:
 
 * **Validation**: This step ensures that the pipeline is configured to use the currently available resources, e.g. that the configured branch exists and that the environments are available.
 * **Build &amp; Unit Testing**: This step runs a containerized build process. See the document [The Build Environment](/help/getting-started/build-environment.md) for details.
-* **Code Scanning**: This step evaluates the quality of your application code. See the document [Understanding Test Results](/help/using/understanding-test-results.md) for details on the testing process.
+* **Code Scanning**: This step evaluates the quality of your application code. See the document [Understanding Test Results](/help/using/code-quality-testing.md) for details on the testing process.
 * **Deploy to Stage**
 
 ![Stage deployment](/help/assets/Stage_Deployment1.png)
@@ -47,8 +47,8 @@ The **Stage deployment** step includes the following actions:
 
 The **Stage testing** step includes the following actions:
 
-* **Security Testing**: This step evaluates the security impact of your code on the AEM environment. See the document [Understanding Test Results](/help/using/understanding-test-results.md) for details on the testing process.
-    * **Performance Testing**: This step evaluates the performance of your code. See [Understanding  Test Results](/help/using/understanding-test-results.md) for details on the testing process.
+* **Security Testing**: This step evaluates the security impact of your code on the AEM environment. See the document [Understanding Test Results](/help/using/code-quality-testing.md) for details on the testing process.
+    * **Performance Testing**: This step evaluates the performance of your code. See [Understanding  Test Results](/help/using/code-quality-testing.md) for details on the testing process.
 
    ![Stage testing](/help/assets/Stage_Testing1.png)
 
