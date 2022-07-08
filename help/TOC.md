@@ -50,7 +50,7 @@ role: Admin
   + [Maven Project Version Handling](managing-code/maven-project-version.md)
   + [Repositories](managing-code/repositories.md)
   + [Integrating with git](managing-code/git-integration.md)
-  + [Working with Multiple git Repositories](managing-code/working-with-multiple-git-repos.md)
+  + [Working with Multiple git Repositories](managing-code/multiple-git-repos.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](product-update-wizard/overview.md)
   + [Evaluation](product-update-wizard/evaluation.md)
