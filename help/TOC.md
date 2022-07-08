@@ -42,7 +42,7 @@ role: Admin
   + [Code Quality Testing](using/code-quality-testing.md)
   + [Managing Environments](using/managing-environments.md)
   + [Monitoring Environments](using/monitoring-environments.md)
-  + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+  + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
   + [Notifications](using/notifications.md)
   + [Custom Code Quality Rules](using/custom-code-quality-rules.md)
