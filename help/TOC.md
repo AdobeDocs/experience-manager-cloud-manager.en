@@ -38,7 +38,7 @@ role: Admin
     + [Configuring Production Pipelines](using/production-pipelines.md)
     + [Configuring Non-Production Pipelines](using/non-production-pipelines.md)
     + [Managing Pipelines](using/managing-pipelines.md)
-  + [Deploying Code](using/deploying-code.md)
+  + [Code Deployment](using/code-deployment.md)
   + [Understanding Test Results](using/understanding-test-results.md)
   + [Managing Environments](using/managing-environments.md)
   + [Monitoring Environments](using/monitoring-environments.md)
