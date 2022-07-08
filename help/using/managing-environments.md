@@ -29,7 +29,7 @@ The status is the rolled-up power state across the nodes in the environment in t
 
 ![Environments tile](/help/assets/Environments-card-new.png)
 
-## Managing Environments {#managing-environments}
+## Managing Environments {#managing-environments-with-cloud-manager}
 
 On the **Environments** tile, click **Manage** to display the **Environments** screen.
 

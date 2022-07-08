@@ -32,7 +32,7 @@ For each of these gates, there is a three-tiered structure for issues identified
 >
 >In a code quality only pipeline, important failures in the code quality gate cannot be overridden since the code quality testing step is the final step in the pipeline.
 
-## Code Quality Testing {#code-quality-testing}
+## Code Quality Testing {#code-quality-testing-step}
 
 This step evaluates the quality of your application code, which is the main purpose of a code quality only pipeline, and is executed immediately following the build step in all non-production and production pipelines. Please refer to the document [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md) to learn more.
 
