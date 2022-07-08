@@ -71,4 +71,4 @@ Once you have set up your program and have at least one environment using the Cl
 
 ## The Next Steps {#the-next-steps}
 
-Once you have configured the pipeline, you need to deploy your code. Please see the document [Deploy your Code](/help/using/deploying-code.md) for more details.
+Once you have configured the pipeline, you need to deploy your code. Please see the document [Code Deployment](/help/using/code-deployment.md) for more details.

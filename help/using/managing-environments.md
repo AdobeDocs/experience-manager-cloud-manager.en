@@ -1,55 +1,57 @@
 ---
-title: Manage your Environments
-seo-title: Manage your Environments
-description: Learn about Cloud Manager environment
-seo-description: Follow this page to view the list of production and non-production environments that are used for setting up and running the CI/CD pipeline in Cloud Manager.
-uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
-contentOwner: jsyal
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: using
-discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
-feature: Environments
+title: Managing Environments
+description: Learn how to use Cloud Manager to manage your environments.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 ---
-# Manage your Environments {#manage-your-environments}
 
->[!NOTE]
->To learn about managing environments for Cloud Manager in AEM as a Cloud Service, see [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager).
+# Managing Environments {#managing-environments}
+
+Learn how to use Cloud Manager to manage your environments.
+
+## Overview Page {#overview-page}
 
 The **Overview** page of Cloud Manager includes the **Environments** tile that lists all the managed AEM environments.
 
 Each of the listed environments displays its associated status.
 
-![](/help/assets/Manage-Environ-Overview.png)
+![Overview page](/help/assets/Manage-Environ-Overview.png)
 
-## Video Tutorial {#video-tutorial}
+## Environments Tile {#environments-tile}
 
-### Cloud Manager Environment Overview {#environ-video}
+The **Environments** tile displays the production and staging environments provisioned in your program along with the status.
 
-The following video provides an overview to Cloud Manager Environments that are composed of AEM Author, AEM Publish and Dispatcher instances.
+The status is the rolled-up power state across the nodes in the environment in the following order of priority.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+* Green - All nodes are running
+* Red - One or more node is stopped.
+* Blue - One or more node is coming up.
+* Yellow - One or more node has a power state unavailable.
 
-## Accessing Environments in Cloud Manager {#accessing-environments-in-cloud-manager}
+![Environments tile](/help/assets/Environments-card-new.png)
 
-The **Environments** tile displays the Production and Stage environments provisioned in your program along with the status.
+## Managing Environments {#managing-environments}
 
-The status is the rolled-up power state across the nodes in the environment. It is green if all nodes are running, red if even one node is stopped, blue if even one node is coming up, and yellow if even one node has a power state unavailable (in this order of priority).
+On the **Environments** tile, click **Manage** to display the **Environments** screen.
 
-![](/help/assets/Environments-card-new.png)
-
-### Environments {#environments}
-
-Click **Manage** to display the **Environments** screen.
-
-The **Environments** screen displays a card each for *Production* and *Stage* environments (as applicable) in your program. The name of the environment is seen above each card. The card includes a table of nodes in the environment along with the t-shirt size of the cpu, the storage, the region, and the status.
+The **Environments** screen displays a card each for production and staging environments (as applicable) in your program. The name of the environment is seen above each card. The card includes a table of nodes in the environment along with the t-shirt size of the cpu, the storage, the region, and the status.
 
 >[!NOTE]
 >
->The **STATUS** of the node represents the power state of the VM and does not reflect the status of AEM on the server. The status can be **Running** (green circle), **Stopped** (red circle), **Coming up** (blue circle) or **Unavailable** (yellow circle).
+>The **STATUS** of the node represents the power state of the VM and does not reflect the status of AEM on the server. The status can be: 
 
-![](/help/assets/Environments-tab.png)
+* Green - Running
+* Red - Stopped
+* Blue - Coming up
+* Yellow - Unavailable
+
+![Environments tab](/help/assets/Environments-tab.png)
 
 >[!NOTE]
 >
 >If you require your environment logs they can be requested via your Customer Success Engineer.
+
+## Video Tutorial {#video-tutorial}
+
+This video provides an overview to Cloud Manager environments that are composed of AEM authoring, publishing, and Dispatcher instances.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)

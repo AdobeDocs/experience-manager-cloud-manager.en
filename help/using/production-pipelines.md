@@ -128,7 +128,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
    >[!TIP]
    >
-   >Refer to the document [Understanding Your Test Results](understand-your-test-results.md#performance-testing) for more details on the options available on the **Stage Testing** tab.
+   >Refer to the document [Code Quality Testing](/help/using/code-quality-testing.md#performance-testing) for more details on the options available on the **Stage Testing** tab.
    
    1. Under the **Sites Content Delivery/Distributed Load Weight** section, you define how sites performance testing is configured based on the weighting of page requests between the three page sets, which can be enabled or disabled.
 
