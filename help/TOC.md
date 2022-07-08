@@ -49,7 +49,6 @@ role: Admin
 + Managing Code {#managing-code}
   + [Maven Project Version Handling](managing-code/maven-project-version.md)
   + [Repositories](managing-code/repositories.md)
-  + [Accessing Repositories](managing-code/accessing-repos.md)
   + [Integrating with git](managing-code/git-integration.md)
   + [Working with Multiple git Repositories](managing-code/working-with-multiple-git-repos.md)
 + Product Update Wizard {#product-update-wizard}

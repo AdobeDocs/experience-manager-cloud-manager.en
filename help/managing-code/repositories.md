@@ -1,12 +1,43 @@
 ---
 title: Cloud Manager Repositories
-description: Learn how to create repositories for your Cloud Manager programs.
+description: Learn how to access, create, and edit repositories for your Cloud Manager programs.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 ---
 
 # Cloud Manager Repositories {#cloud-manager-repos} 
 
 Repositories are where you manage your code by using git. Learn how to create repositories for your Cloud Manager programs.
+
+## Accessing Repositories {#accessing-repos}
+
+You can access and manage your git repositories in a self-service from Cloud Manager.
+
+To access your repository, use the **Access Repo Info** button available in Cloud Manager, most prominently on the pipeline card.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
+
+1. Navigate to **Pipelines** card from the **Program Overview** page and you will see the **Access Repo Info** option to access and manage your git repository [configured with this pipeline.](/help/using/production-pipelines.md)
+
+   ![Access repo info button](/help/assets/access-repo1.png)
+
+1. If you switch to the **Non-Production** pipeline tab, the **Access Repo Info** option is available there too as [configured for the pipeline.](/help/using/non-production-pipelines.md)
+
+   ![Non-production pipelines](/help/assets/access-repo-nonprod.png)
+
+1. Click on the **Access Repo Info** button to open a dialog that presents:
+
+   * The URL to the git repository
+   * User name
+   * Password
+   * Git command to execute to clone the repository locally
+
+   ![Repository information dialog](/help/assets/access-repo-create.png)
+
+Use the provided information to clone the repository locally so you can begin local development.
+
+>[!NOTE]
+>
+>The **Access Repo Info** option is visible to users in the **Developer** or **Deployment Manager** role. 
 
 ## Adding Repositories {#add-repos}
 
