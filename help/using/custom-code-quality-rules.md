@@ -1,21 +1,12 @@
 ---
 title: Custom Code Quality Rules
-description: This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering.
-uuid: a7feb465-1982-46be-9e57-e67b59849579
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: using
-discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-feature: Code Quality Rules
+description: Learn details about the custom code quality rules executed by Cloud Manager as part of code quality testing, based on best practices from AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 ---
 
 # Custom Code Quality Rules {#custom-code-quality-rules}
 
-This page describes the custom code quality rules executed by Cloud Manager as part of [code quality testing.](understand-your-test-results.md) They are based on best practices from AEM Engineering.
-
->[!NOTE]
->
->To learn about custom code quality rules for Cloud Manager in AEM as a Cloud Service, please refer [to this documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager).
+Learn details about the custom code quality rules executed by Cloud Manager as part of [code quality testing,](/help/using/code-quality-testing.md) based on best practices from AEM Engineering.
 
 >[!NOTE]
 >
