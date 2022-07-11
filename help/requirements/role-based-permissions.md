@@ -12,7 +12,7 @@ exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 
 Role management for [!UICONTROL Cloud Manager] is done using the [Admin Console.](https://helpx.adobe.com/enterprise/using/admin-console.html) Any user of [!UICONTROL Cloud Manager] must be a member of the customer's IMS organization and have the Adobe Managed Services Product Context. Specific role memberships are provided by adding the user to a [!UICONTROL Cloud Manager] product profile in the Admin Console.
 
-To learn more about how to setup your roles see the document [Setting Up Users and Roles.](setting-up-users-and-roles.md)
+To learn more about how to setup your roles see the document [Setting Up Users and Roles.](/help/requirements/users-and-roles.md)
 
 This table lists the roles you can assign in the Admin Console.
 
@@ -53,4 +53,4 @@ Each of the roles have specific associated preconfigured permissions. This table
 |Step Read|See the step quality metrics results|x|x|x|x|x|
 |Generate Personal Access Token|Access git||x||x||
 
-To learn more about how to setup your users see the document [Setting Up Users and Roles.](setting-up-users-and-roles.md)
+To learn more about how to setup your users see the document [Setting Up Users and Roles.](/help/requirements/users-and-roles.md)
