@@ -1,10 +1,10 @@
 ---
-title: Access Rights Granted
+title: Access Rights
 description: Learn about your Adobe ID and how you use it to access Experience Cloud resources.
 exl-id: 9e51936c-9727-4b9c-a86a-2ea3aabd42cf
 ---
 
-# Access Rights Granted {#access-rights-granted}
+# Access Rights {#access-rights}
 
 Learn about your Adobe ID and how you use it to access Experience Cloud resources.
 

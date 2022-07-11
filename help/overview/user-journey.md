@@ -1,12 +1,12 @@
 ---
-title: Customer Journey
-description: This document lays out the different onboarding scenarios and explains your journey to get started with Cloud Manager.
+title: User Journey
+description: This document lays out the different onboarding scenarios and explains your getting started journey with Cloud Manager.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 ---
 
-# Customer Journey {#customer-journey}
+# User Journey {#user-journey}
 
-As an Adobe Experience Manager customer, you may:
+As an Adobe Experience Manager user, you may:
 
 * Be new to AEM.
 * Be currently using AEM 6.x.

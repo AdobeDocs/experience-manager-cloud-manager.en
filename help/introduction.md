@@ -4,7 +4,7 @@ description: Start here to get to know Cloud Manager for Adobe Managed Services 
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 ---
 
-# Introduction to [!UICONTROL Cloud Manager] for AMS{#introduction-to-cloud-manager}
+# Introduction to [!UICONTROL Cloud Manager] for AMS {#introduction-to-cloud-manager}
 
 Start here to get to know Cloud Manager for Adobe Manage Services (AMS) and how it enables organizations to self-manage Adobe Experience Manager in the cloud.
 
@@ -49,7 +49,7 @@ The user interface (UI) for [!UICONTROL Cloud Manager] enables you to easily acc
 
 You define application-specific key performance indicators (KPIs) (such as peak page views per minute and expected response time for a page load) that form the basis for measuring a successful deployment. Roles and permissions for different team members can be easily defined. The self-service interface puts control in your hands, but it also offers links to best practice resources and access to experts within Adobe who can provide the necessary guidance as needed.
 
-To explore and get started with [!UICONTROL Cloud Manager]'s UI, see the document [First Time Login.](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html)
+To explore and get started with [!UICONTROL Cloud Manager]'s UI, see the document [First Time Login.](/help/getting-started/first-time-login.md)
 
 ### CI/CD Pipeline {#ci-cd-pipeline}
 

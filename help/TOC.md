@@ -3,31 +3,31 @@ product: Adobe Experience Manager
 sub-product: Cloud Manager
 user-guide-title: Cloud Manager Documentation
 breadcrumb-title: Cloud Manager Documentation for AEM 6.x
-user-guide-description: Learn how to use Cloud Manager to self-manage Experience Manager in the cloud.
+user-guide-description: Learn how to use Cloud Manager to self-manage Adobe Experience Manager for AMS in the cloud.
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 ---
 
 # Cloud Manager Documentation {#content}
 
-+ [Introduction to Cloud Manager for AMS](introduction.md)
++ [Cloud Manager for AMS](introduction.md)
 + Overview {#overview}
   + [Key Concepts](overview/key-concepts.md)
-  + [Customer Journey](overview/customer-journey.md)
+  + [User Journey](overview/user-journey.md)
   + [CI/CD Pipelines](overview/ci-cd-pipelines.md)
   + [Security and Privacy](overview/security-and-privacy.md)
   + [Help Resources](overview/help-resources.md)
   + [Cloud Manager FAQs](overview/faqs.md)
 + What is Required {#requirements}
-  + [Access Rights Granted](requirements/access-rights-granted.md)
+  + [Access Rights](requirements/access-rights.md)
   + [Source Code Repository](requirements/source-code-repository.md)
   + [Role-Based Permissions](requirements/role-based-permissions.md)
-  + [Setting Up Users and Roles](requirements/setting-up-users-and-roles.md)
-  + [Environments Provisioned](requirements/environment-provisioning.md)
+  + [Setting Up Users and Roles](requirements/users-and-roles.md)
+  + [Environment Provisioning](requirements/environment-provisioning.md)
 + Getting Started {#getting-started}
   + [First Time Login](getting-started/first-time-login.md)
   + [Program Setup](getting-started/program-setup.md)
-  + Create an AEM Application Project {#create-application-project}
+  + AEM Project Creation {#project-creation}
     + [Using the Wizard](getting-started/using-the-wizard.md)
     + [Project Setup](getting-started/project-setup.md)
     + [The Build Environment](getting-started/build-environment.md)
