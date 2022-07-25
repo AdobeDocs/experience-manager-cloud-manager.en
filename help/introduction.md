@@ -69,6 +69,10 @@ Independent of the deployment trigger, quality checks are always performed as pa
 
 To learn more about deploying code and quality checks, see the document [Deploying Code.](/help/using/code-deployment.md)
 
+## Optional Features in Cloud Manager {#optional-features-in-cloud-manager}
+
+Cloud Manager offers additional, advanced feature which may be beneficial for your project depending on your particular environment setup and needs. If these features are of interest to you, please reach out to your CSE to discuss further.
+
 ### Autoscaling {#autoscaling}
 
 when the production environment is subject to unusually high load, [!UICONTROL Cloud Manager] detects the need for additional capacity and automatically brings additional capacity online using its autoscaling feature.
@@ -79,4 +83,44 @@ The autoscaling feature applies only to the dispatcher/publishing tier and is ex
 
 >[!NOTE]
 >
->Customers interested in exploring whether or not autoscaling is appropriate for their application should contact their CSE or Adobe representative.
+>If you are interested in exploring whether or not autoscaling is appropriate for your application, please contact your CSE or Adobe representative.
+
+### Blue/Green Deployments {#blue-green}
+
+Blue/green deployment is a technique that reduces downtime and risk by running two identical production environments called blue and green.
+
+At any time, only one of the environments is live, with the live environment serving all production traffic. In general, blue is the currently live environment and green is idle.
+
+* Blue/green deployment is an add-on to Cloud Manager CI/CD pipelines in which a second set of publish and dispatcher instances (green) are created and used for deployments. The green instances are then attached to production load balancer and the old instances (blue) are removed and terminated.
+* This implementation of blue/green treats instances as transient and every iteration of a blue/green pipeline will create a new set of publish and dispatcher servers.
+* A green load balancer will be created as part of the setup. This load balancer will never change and is what you should point your green or "test" URL to.
+* During a blue/green deployment, an exact replica of the existing publish/dispatcher tiers will be created (as read from the TDL).
+
+#### Blue/Green Deployment Flow {#flow}
+
+When blue/green deployment is enabled, the deployment flow differs from the standard Cloud Service deployment flow.
+
+|Step|Blue/Green Deployment|Standard Deployment|
+|---|---|---|
+|1|Deployment to author|Deployment to author|
+|2|Pause for testing|-|
+|3|Green infrastructure is created|-|
+|4|Deployment to green publish/dispatcher tiers|Deployment to publisher|
+|5|Pause for testing (up to 24 hours)|-|
+|6|Green infrastructure is added to the production load balancer|-|
+|7|Blue infrastructure is removed from the production load balancer-|
+|8|Blue infrastructure is terminated automatically|-|
+
+#### Implementing Blue/Green {#implementing}
+
+All AMS users who have completed horizontal scaling readiness as well as using Cloud Manager for production deployments are eligible to use blue/green deployment. If you are interested in blue/green deployment, please consider the requirements and limitations below and contact your CSE.
+
+#### Requirements and Limitations {#limitations}
+
+* Blue/green is dependent upon Advanced Deployment Configuration.
+* Blue/green is only available for publish/dispatcher pairs.
+* Preview dispatcher/publish pairs are not part of blue/green deployments.
+* Every dispatcher/publish pair is identical to other dispatcher/publish pair.
+* Blue/green is only available in the production environment.
+* Blue/green is available in AWS as well as Azure.
+* Blue/green is not available to Assets only customers.
