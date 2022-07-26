@@ -117,7 +117,6 @@ All AMS users who have completed horizontal scaling readiness as well as using C
 
 #### Requirements and Limitations {#limitations}
 
-* Blue/green is dependent upon Advanced Deployment Configuration.
 * Blue/green is only available for publish/Dispatcher pairs.
 * Preview Dispatcher/publish pairs are not part of blue/green deployments.
 * Every Dispatcher/publish pair is identical to every other Dispatcher/publish pair.
