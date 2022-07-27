@@ -113,7 +113,7 @@ When blue/green deployment is enabled, the deployment flow differs from the stan
 
 #### Implementing Blue/Green {#implementing}
 
-All AMS users who are using Cloud Manager for production deployments are eligible to use blue/green deployment. However usage of blue/green deployment requires additional validation of your environments and setup by and Adobe CSE.
+All AMS users who are using Cloud Manager for production deployments are eligible to use blue/green deployment. However usage of blue/green deployment requires additional validation of your environments and setup by an Adobe CSE.
 
 If you are interested in blue/green deployment, please consider the following requirements and limitations and contact your CSE.
 
