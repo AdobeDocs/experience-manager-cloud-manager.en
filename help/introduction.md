@@ -23,7 +23,7 @@ Start here to get to know Cloud Manager for Adobe Manage Services (AMS) and how 
 >
 >This documentation specifically describes the features and functions of Cloud Manager for Adobe Managed Services (AMS).
 >
->The equivalent documentation for AEM as a Cloud Service can be found in the [AEM as a Cloud Service documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html)
+>The equivalent documentation for AEM as a Cloud Service can be found in the [AEM as a Cloud Service documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)
  
 With Cloud Manager, your development team benefits from the following features:
 
@@ -33,7 +33,7 @@ With Cloud Manager, your development team benefits from the following features:
 
 * API connectivity to complement existing DevOps processes
 
-* Autoscaling that intelligently detects the need for increased capacity and automatically brings online additional dispatcher/publishing segments
+* Autoscaling that intelligently detects the need for increased capacity and automatically brings online additional Dispatcher/publishing segments
 
 This image illustrates the CI/CD process flow used in [!UICONTROL Cloud Manager]:
 
@@ -69,14 +69,59 @@ Independent of the deployment trigger, quality checks are always performed as pa
 
 To learn more about deploying code and quality checks, see the document [Deploying Code.](/help/using/code-deployment.md)
 
+## Optional Features in Cloud Manager {#optional-features-in-cloud-manager}
+
+Cloud Manager offers additional, advanced feature which may be beneficial for your project depending on your particular environment setup and needs. If these features are of interest to you, please reach out to your Customer Success Engineer (CSE) or Adobe representative to discuss further.
+
 ### Autoscaling {#autoscaling}
 
-when the production environment is subject to unusually high load, [!UICONTROL Cloud Manager] detects the need for additional capacity and automatically brings additional capacity online using its autoscaling feature.
+When the production environment is subject to unusually high load, [!UICONTROL Cloud Manager] detects the need for additional capacity and automatically brings additional capacity online using its autoscaling feature.
 
-In such an event, [!UICONTROL Cloud Manager] automatically triggers the autoscaling provisioning process, sends a notification of the autoscaling event, and brings additional capacity online within minutes. The additional capacity is provisioned in the production environment, in the same region(s) and matching the same system specifications as the running dispatcher/publishing nodes.
+In such an event, [!UICONTROL Cloud Manager] automatically triggers the autoscaling provisioning process, sends a notification of the autoscaling event, and brings additional capacity online within minutes. The additional capacity is provisioned in the production environment, in the same region(s) and matching the same system specifications as the running Dispatcher/publishing nodes.
 
-The autoscaling feature applies only to the dispatcher/publishing tier and is executed using a horizontal scaling method, with a minimum of one additional segment of a dispatcher/publishing pair up to a maximum of ten segments. Any additional capacity provisioned will be manually scaled-in within a period of ten business days as determined by the CSE (Customer Success Engineer). 
+The autoscaling feature applies only to the Dispatcher/publishing tier and is executed using a horizontal scaling method, with a minimum of one additional segment of a Dispatcher/publishing pair up to a maximum of ten segments. Any additional capacity provisioned will be manually scaled-in within a period of ten business days as determined by the CSE (Customer Success Engineer). 
 
 >[!NOTE]
 >
->Customers interested in exploring whether or not autoscaling is appropriate for their application should contact their CSE or Adobe representative.
+>If you are interested in exploring whether autoscaling is appropriate for your application, please contact your CSE or Adobe representative.
+
+### Blue/Green Deployments {#blue-green}
+
+Blue/green deployment is a technique that reduces downtime and risk by running two identical production environments called blue and green.
+
+At any time, only one of the environments is live, with the live environment serving all production traffic. In general, blue is the currently live environment and green is idle.
+
+* Blue/green deployment is an add-on to Cloud Manager CI/CD pipelines in which a second set of publish and Dispatcher instances (green) is created and used for deployments. The green instances are then attached to production load balancer and the old instances (blue) are removed and terminated.
+* This implementation of blue/green treats instances as transient and every iteration of a blue/green pipeline will create a new set of publish and Dispatcher servers.
+* A green load balancer will be created as part of the setup. This load balancer will never change and is what you should point your green or "test" URL to.
+* During a blue/green deployment, an exact replica of the existing publish/Dispatcher tiers will be created (as read from the TDL).
+
+#### Blue/Green Deployment Flow {#flow}
+
+When blue/green deployment is enabled, the deployment flow differs from the standard Cloud Service deployment flow.
+
+|Step|Blue/Green Deployment|Standard Deployment|
+|---|---|---|
+|1|Deployment to author|Deployment to author|
+|2|Pause for testing|-|
+|3|Green infrastructure is created|-|
+|4|Deployment to green publish/Dispatcher tiers|Deployment to publisher|
+|5|Pause for testing (up to 24 hours)|-|
+|6|Green infrastructure is added to the production load balancer|-|
+|7|Blue infrastructure is removed from the production load balancer-|
+|8|Blue infrastructure is terminated automatically|-|
+
+#### Implementing Blue/Green {#implementing}
+
+All AMS users who are using Cloud Manager for production deployments are eligible to use blue/green deployment. However usage of blue/green deployment requires additional validation of your environments and setup by an Adobe CSE.
+
+If you are interested in blue/green deployment, please consider the following requirements and limitations and contact your CSE.
+
+#### Requirements and Limitations {#limitations}
+
+* Blue/green is only available for publish/Dispatcher pairs.
+* Preview Dispatcher/publish pairs are not part of blue/green deployments.
+* Every Dispatcher/publish pair is identical to every other Dispatcher/publish pair.
+* Blue/green is only available in the production environment.
+* Blue/green is available in AWS as well as Azure.
+* Blue/green is not available to Assets only customers.
