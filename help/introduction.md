@@ -94,7 +94,7 @@ At any time, only one of the environments is live, with the live environment ser
 * Blue/green deployment is an add-on to Cloud Manager CI/CD pipelines in which a second set of publish and Dispatcher instances (green) is created and used for deployments. The green instances are then attached to production load balancer and the old instances (blue) are removed and terminated.
 * This implementation of blue/green treats instances as transient and every iteration of a blue/green pipeline will create a new set of publish and Dispatcher servers.
 * A green load balancer will be created as part of the setup. This load balancer will never change and is what you should point your green or "test" URL to.
-* During a blue/green deployment, an exact replica of the existing publish/Dispatcher tiers will be created (as read from the TDL).
+* During a blue/green deployment, an exact replica of the existing publish/Dispatcher tiers will be created.
 
 #### Blue/Green Deployment Flow {#flow}
 
@@ -105,7 +105,7 @@ When blue/green deployment is enabled, the deployment flow differs from the stan
 |1|Deployment to author|Deployment to author|
 |2|Pause for testing|-|
 |3|Green infrastructure is created|-|
-|4|Deployment to green publish/Dispatcher tiers|Deployment to publisher|
+|4|Deployment to green publish/dispatcher tiers|Deployment to publisher|
 |5|Pause for testing (up to 24 hours)|-|
 |6|Green infrastructure is added to the production load balancer|-|
 |7|Blue infrastructure is removed from the production load balancer-|
