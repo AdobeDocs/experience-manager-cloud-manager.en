@@ -24,5 +24,5 @@ The release date for [!UICONTROL Cloud Manager] release 2022.8.0 is 11 August 20
 
 ## Bug Fixes {#bug-fixes}
 
- * Certain cases of infrequent repository creation failures have been made more resilient.
- * Rare occurrences of VSTS org set up errors are now reduced due to retries introduced.
+* Certain cases of infrequent repository creation failures have been made more resilient.
+* Rare occurrences of VSTS org set up errors are now reduced due to retries introduced.
