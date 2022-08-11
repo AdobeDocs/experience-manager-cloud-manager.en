@@ -22,8 +22,7 @@ The release date for [!UICONTROL Cloud Manager] release 2022.8.0 is 11 August 20
 * Under certain scenarios, a silent re-try mechanism will help ensure that the deployment pipeline does not result in an error state.
 * [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) included in Cloud Manager was updated to version 37.
 
- ## Bug Fixes {#bug-fixes}
+## Bug Fixes {#bug-fixes}
 
  * Certain cases of infrequent repository creation failures have been made more resilient.
  * Rare occurrences of VSTS org set up errors are now reduced due to retries introduced.
- 
