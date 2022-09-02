@@ -19,4 +19,8 @@ The release date for [!UICONTROL Cloud Manager] release 2022.9.0 is 9 September 
 
 ## What's New {#what-is-new}
 
+* There is now a new card on the welcome page, customized for users that have no Cloud Manager roles other than the **user** role. This card guides them navigating to AEM environments and explains restricted program access.
+* Users without any Cloud Manager user profiles can not access program detail. They can however, navigate to authoring end points from the Cloud Manager landing page.
+* Pipeline failures related to retries were eliminated by building in greater resiliency.
+
 ## Bug Fixes {#bug-fixes}
