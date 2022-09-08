@@ -15,12 +15,16 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2022.9.0 is 9 September 2022. The next release is planned for 6 October 2022.
+The release date for [!UICONTROL Cloud Manager] release 2022.9.0 is 8 September 2022. The next release is planned for 6 October 2022.
 
 ## What's New {#what-is-new}
 
-* There is now a new card on the welcome page, customized for users that have no Cloud Manager roles other than the **user** role. This card guides them navigating to AEM environments and explains restricted program access.
-* Users without any Cloud Manager user profiles can not access program detail. They can however, navigate to authoring end points from the Cloud Manager landing page.
-* Pipeline failures related to retries were eliminated by building in greater resiliency.
+* Cloud Manager support for horizontal multi-region auto-scaling.
+* New Welcome Page card customized for users that have only a Cloud Manager User role guiding them on how to navigate to AEM environments and restricted program access.
+* Customers without any Cloud Manager role will not be able to access program details. They can however, navigate to Author end points from CM landing page.
+* Eliminate pipeline failures arising from retry failures achieved by building greater resiliency.
 
 ## Bug Fixes {#bug-fixes}
+
+* Improved customer feedback related to customer AEM app build when maven faces connectivity issues to private repos.
+* On rare occasions, when the health check system is not able to retrieve a valid health score, an auto-scale event will not be triggered.
