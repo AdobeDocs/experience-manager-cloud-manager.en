@@ -14,7 +14,7 @@ Once you have set up the general configuration for [!UICONTROL Cloud Manager], y
 
 ## Logging in for the First Time {#logging-in-for-the-first-time}
 
-1. Log in to Adobe [!UICONTROL Experience Cloud] and you will see the list of programs.
+1. Log in to Adobe [!UICONTROL Experience Cloud] and you see the list of programs.
 
 1. Select the program.
 
@@ -28,7 +28,7 @@ Once you have set up the general configuration for [!UICONTROL Cloud Manager], y
 
 1. Click **Setup Program** to set up your program description and define key performance indicators (KPIs).
 
-Please continue to the document [Program Setup](https://helpx.adobe.com/experience-manager/cloud-manager/using/program-setup.html) for the next steps in setting up your program.
+Please continue to the document [Program Setup](/help/getting-started/program-setup.md) for the next steps in setting up your program.
 
 ## Cloud Manager Activity {#activity}
 
