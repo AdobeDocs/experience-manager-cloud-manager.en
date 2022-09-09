@@ -33,3 +33,7 @@ Please continue to the document [Program Setup](/help/getting-started/program-se
 ## Cloud Manager Activity {#activity}
 
 Cloud Manager provides a consolidated view into a program's activity, listing all CI/CD pipeline executions, both production and non-production, allowing visibility into the past and present activity.
+
+>[!NOTE]
+>
+>By default a user with access to an AEM environment will also have Cloud Manager User role. This role in and of itself is insufficient to give the user access to program details view. Such a user with only Cloud Manager user role is able to navigate via the program menu options to the AEM environment author URL (if environments exist). Such users must contact their administrator if they wish to get program-level access.
