@@ -76,7 +76,7 @@ You can define the behavior of the alerts.
 * **Alerts should stay on the screen until I dismiss them** - Controls if the alerts should persist unless you actively dismiss them
 * **Duration** - Defines how long the alert should remain on the screen if you have not chosen that they should stay on the screen.
 
-## Emails {#emails}
+### Emails {#emails}
 
 Notifications are available in the web user interface across Adobe [!UICONTROL Experience Cloud] solutions. You can also opt for these notifications to be sent through email in the **Emails** section.
 
