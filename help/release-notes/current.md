@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2022.9.0
-description: These are the release notes for Cloud Manager release 2022.9.0.
+title: Release Notes for 2022.10.0
+description: These are the release notes for Cloud Manager release 2022.10.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2022.9.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2022.10.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2022.9.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2022.10.0.
 
 >[!NOTE]
 >
@@ -15,16 +15,13 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2022.9.0 is 8 September 2022. The next release is planned for 6 October 2022.
+The release date for [!UICONTROL Cloud Manager] release 2022.10.0 is 6 October 2022. The next release is planned for 3 November 2022.
 
 ## What's New {#what-is-new}
 
-* Cloud Manager support for horizontal multi-region auto-scaling.
-* New Welcome Page card customized for users that have only a Cloud Manager User role guiding them on how to navigate to AEM environments and restricted program access.
-* Customers without any Cloud Manager role will not be able to access program details. They can however, navigate to Author end points from CM landing page.
-* Eliminate pipeline failures arising from retry failures achieved by building greater resiliency.
+* The version of the [AEM project archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) used by Cloud Manager has been updated to version 36.
 
 ## Bug Fixes {#bug-fixes}
 
-* Improved customer feedback related to customer AEM app build when maven faces connectivity issues to private repos.
-* On rare occasions, when the health check system is not able to retrieve a valid health score, an auto-scale event will not be triggered.
+* The reliability of Assets performance testing was improved by adding retries under certain conditions.
+* The **Run** menu option will be disabled from the pipeline menu options along with an explanatory tooltip, if the associated environment no longer exits.
