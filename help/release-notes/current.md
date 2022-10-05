@@ -24,4 +24,4 @@ The release date for [!UICONTROL Cloud Manager] release 2022.10.0 is 6 October 2
 ## Bug Fixes {#bug-fixes}
 
 * The reliability of Assets performance testing was improved by adding retries under certain conditions.
-* The **Run** menu option will be disabled from the pipeline menu options along with an explanatory tooltip, if the associated environment no longer exits.
+* The **Run** menu option is now disabled in the pipeline menu along with an explanatory tooltip, if the associated environment no longer exits.
