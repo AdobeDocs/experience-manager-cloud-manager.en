@@ -19,7 +19,7 @@ The release date for [!UICONTROL Cloud Manager] release 2022.10.0 is 6 October 2
 
 ## What's New {#what-is-new}
 
-* The version of the [AEM project archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) used by Cloud Manager has been updated to version 36.
+* The version of the [AEM project archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) used by Cloud Manager has been updated to version 39.
 
 ## Bug Fixes {#bug-fixes}
 
