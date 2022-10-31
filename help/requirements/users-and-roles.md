@@ -42,10 +42,6 @@ This table summarizes the roles.
 
 The Admin Console is a central location for managing your Adobe entitlements across your entire organization. To learn more about the Adobe Admin Console, see the documentation for [Admin Console.](https://helpx.adobe.com/enterprise/using/admin-console.html)
 
->[!NOTE]
->
->To access the admin console and set up your team (users and roles), visit [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
-
 In order to provide the appropriate role-based permissions to [!UICONTROL Cloud Manager] users, an administrator in the customer's organization must create new product profiles under the [!UICONTROL AEM Managed Services] product context corresponding to each of the four [!UICONTROL Cloud Manager] roles:
 
 * Business Owner
@@ -55,31 +51,62 @@ In order to provide the appropriate role-based permissions to [!UICONTROL Cloud 
 
 You can create or add users/groups to these product profiles with the Admin Console.
 
-1. Log in to the Admin Console and click **New Profile** to add a new profile.
+1. Log in to the Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
 
-   ![New profile](/help/assets/admin_console_roles-1.png)
+1. Click on the **Overview** tab, click on the product you want to modify on the **Products and services** card. If it is not listed there, use the **Products** tab to locate the product and click it.
+
+   ![Admin console overview tab](/help/assets/admin-console-overview.png)
+
+1. On the **Products** tab, click the environment for which you want to add users/groups to product profiles.
+
+   ![Admin console products tab](/help/assets/admin-console-product.png)
+
+1. On the **Product Profile** tab of the product, click **New Profile** to add a new profile.
+
+   ![New profile](/help/assets/admin-console-product-profiles.png)
 
 1. Provide the information to set up a new role for [!UICONTROL Cloud Manager].
 
-   * **Profile Name**
-   * **Display Name**
-   * **Permission Group**
+   * **Profile Name** - The **Profile Name** can be anything, although to avoid confusion it is recommended to use the values in the **Recommended Profile Name** column.
+   * **Display Name** -  The **Display Name** must be the technical value defined by [!UICONTROL Cloud Manager] (see the following table).
+   * **Permission Group** - You may choose a permission group for the profile (not always available).
 
-1. Click **Done** to complete the profile creation step.
+   ![Creating a new profile](/help/assets/screen_shot_2018-05-04at171819.png)
 
-When creating product profiles, the **Display Name** must be the technical value defined by [!UICONTROL Cloud Manager] (see the following table). The **Profile Name** can be anything, although to avoid confusion it is recommended to use the values in the **Recommended Profile Name** column. To do this, when creating the Product Profile, uncheck the **Same as Profile Name** and specify the corresponding value as the **Display Name**.
+   |Role|Display Name (Required)|Recommended Profile Name|
+   |---|---|---|
+   | Business Owner |`CM_BUSINESS_OWNER_ROLE_PROFILE` |[!UICONTROL Cloud Manager] - Business Owner Role |
+   | Deployment Manager |`CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` |[!UICONTROL Cloud Manager] - Deployment Manager Role |
+   | Developer |`CM_DEVELOPER_ROLE_PROFILE` |[!UICONTROL Cloud Manager] - Developer Role |
+   | Program Manager |`CM_PROGRAM_MANAGER_ROLE_PROFILE` |[!UICONTROL Cloud Manager] - Program Manager Role |
 
-| **Role** |**Display Name (Required)** |**Recommended Profile Name** |
-|---|---|---|
-| Business Owner |`CM_BUSINESS_OWNER_ROLE_PROFILE` |[!UICONTROL Cloud Manager] - Business Owner Role |
-| Deployment Manager |`CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` |[!UICONTROL Cloud Manager] - Deployment Manager Role |
-| Developer |`CM_DEVELOPER_ROLE_PROFILE` |[!UICONTROL Cloud Manager] - Developer Role |
-| Program Manager |`CM_PROGRAM_MANAGER_ROLE_PROFILE` |[!UICONTROL Cloud Manager] - Program Manager Role |
 
-![Creating a new profile](/help/assets/screen_shot_2018-05-04at171819.png)
+1. Click **Done** to save the new profile.
 
-Once you create product profile, you can add users (or groups) to these product profiles.
+## Assign Profiles to Users or User Groups {#assign-profiles}
 
-![Editing user](/help/assets/image2018-4-9_15-19-26.png)
-   
-![User groups](/help/assets/image2018-4-9_15-16-47.png)
+Once you have created product profiles, you can assign users or user groups to them.
+
+1. Log in to the Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+
+1. In the Admin Console, choose the **Users** tab.
+
+   ![Users tab](/help/assets/admin-console-users.png)
+
+1. Click on **Users** in the left navigation panel and then click on a user to modify it.
+
+1. Click on the ellipsis button in the **Products** section and select **Edit**.
+
+   ![Edit user](/help/assets/admin-console-edit-user.png)
+
+1. In the **Edit products and user groups** dialog, click the plus button and select the profiles to assign to the user.
+
+   * If the user already is assigned to the roles, the plus button will be an edit button (a pencil), but works the same way.
+
+   ![Edit products and user groups](/help/assets/admin-console-edit-products-and-user-groups.png)
+
+1. Click **Save** to save the profiles to the user.
+
+Repeat the same steps to assign profiles to user groups, but select **User Groups** from the left navigation panel on the **Users** tab. Click on a user group and select the **Assigned Product Profiles** tab and click **Assign Product Profile** to assign profiles.
+
+![Assign profiles to group](/help/assets/admin-console-edit-user-groups.png)
