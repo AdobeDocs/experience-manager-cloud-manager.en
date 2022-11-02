@@ -19,6 +19,12 @@ The release date for [!UICONTROL Cloud Manager] release 2022.11.0 is 3 November 
 
 ## What's New {#what-is-new}
 
+* Support for horizontal multi-region auto-scaling has been added to Cloud Manager.
+* For users who only have the **Cloud Manager User** role, a new card on the welcome page has been customized to guide them through navigating to AEM environments and restricted program access.
+* Users without any Cloud Manager roles will no longer be able to access program details. Such users can, however, navigate to author end points from the Cloud Manager landing page.
+* Pipeline failures arising from retry failures have been eliminated by improving resiliency.
 
 ## Bug Fixes {#bug-fixes}
 
+* The feedback provided to the user has been improved during AEM app build when Maven faces connectivity issues to private repos.
+* Fixed the rare instances of auto-scale events triggering when the health check system was not able to retrieve a valid health score.
