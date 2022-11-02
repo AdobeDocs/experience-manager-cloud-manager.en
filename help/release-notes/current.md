@@ -17,6 +17,10 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 The release date for [!UICONTROL Cloud Manager] release 2022.11.0 is 3 November 2022. The next release is planned for 29 November 2022.
 
+## What's New {#what-is-new}
+
+* When an environment associated with a pipeline has a status which does not allow the pipeline to be executed, the run action is disabled with an explanatory tooltip.
+
 ## Bug Fixes {#bug-fixes}
 
 * Feedback during the edit production pipeline was improved to catch infrequent occurrences of one or more missing environments.
