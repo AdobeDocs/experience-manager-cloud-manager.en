@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2022.10.0
-description: These are the release notes for Cloud Manager release 2022.10.0.
+title: Release Notes for 2022.11.0
+description: These are the release notes for Cloud Manager release 2022.11.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2022.10.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2022.11.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2022.10.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2022.11.0.
 
 >[!NOTE]
 >
@@ -15,12 +15,12 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2022.10.0 is 6 October 2022. The next release is planned for 3 November 2022.
+The release date for [!UICONTROL Cloud Manager] release 2022.11.0 is 3 November 2022. The next release is planned for 29 November 2022.
 
 ## What's New {#what-is-new}
 
-* The version of the [AEM project archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) used by Cloud Manager has been updated to version 39.
+* When an environment associated with a pipeline has a status which does not allow the pipeline to be executed, the run action is disabled with an explanatory tooltip.
 
 ## Bug Fixes {#bug-fixes}
 
-* The reliability of Assets performance testing was improved by adding retries under certain conditions.
+* Feedback during the edit production pipeline was improved to catch infrequent occurrences of one or more missing environments.
