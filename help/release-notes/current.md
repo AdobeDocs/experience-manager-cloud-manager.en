@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2022.11.0
-description: These are the release notes for Cloud Manager release 2022.11.0.
+title: Release Notes for 2022.12.0
+description: These are the release notes for Cloud Manager release 2022.12.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2022.11.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2022.12.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2022.11.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2022.12.0.
 
 >[!NOTE]
 >
@@ -15,12 +15,13 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2022.11.0 is 3 November 2022. The next release is planned for 29 November 2022.
+The release date for [!UICONTROL Cloud Manager] release 2022.12.0 is 29 November 2022. The next release is planned for 19 January 2023.
 
 ## What's New {#what-is-new}
 
-* When an environment associated with a pipeline has a status which does not allow the pipeline to be executed, the run action is disabled with an explanatory tooltip.
+* Multi-region autoscaling is now available. Certain restrictions may apply.
+* Improvements to the availability and reliability of [Cloud Manager pipelines](/help/overview/ci-cd-pipelines.md) were made.
 
 ## Bug Fixes {#bug-fixes}
 
-* Feedback during the edit production pipeline was improved to catch infrequent occurrences of one or more missing environments.
+* A change was made to prevent a `PATCH /program//environment//variables` request for environments with the `FAILED` status.
