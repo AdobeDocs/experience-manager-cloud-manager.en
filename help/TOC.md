@@ -57,6 +57,7 @@ role: Admin
 + Release Notes {#release-notes}
   + [Current Release Notes](release-notes/current.md)
   + 2022 {#2022}
+    + [Release Notes for 2022.11.0](release-notes/2022/2022-11-0.md)
     + [Release Notes for 2022.10.0](release-notes/2022/2022-10-0.md)
     + [Release Notes for 2022.9.0](release-notes/2022/2022-9-0.md)
     + [Release Notes for 2022.8.0](release-notes/2022/2022-8-0.md)
