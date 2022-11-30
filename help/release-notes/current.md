@@ -20,4 +20,5 @@ The release date for [!UICONTROL Cloud Manager] release 2022.12.0 is 29 November
 ## What's New {#what-is-new}
 
 * Multi-region autoscaling is now available. Certain restrictions may apply.
+  * This change will be rolled out in a phased manner in the foru to six weeks following the 2022.12.0 release.
 * Improvements to the availability and reliability of [Cloud Manager pipelines](/help/overview/ci-cd-pipelines.md) were made.
