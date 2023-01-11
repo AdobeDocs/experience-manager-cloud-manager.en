@@ -142,7 +142,7 @@ However environment variables can not be used in `IfDefine` directives.
 
 #### OSGi Configurations {#osgi}
 
-Both regular environment variables and secrets can be used in OSGi configurations.
+Both regular environment variables and secrets can be used in [OSGi configurations.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
 
 ### Pipeline Variables {#pipeline-variables}
 
