@@ -132,7 +132,7 @@ Both regular environment variables and secrets can be used in the authoring, pre
 
 #### Dispatcher {#dispatcher}
 
-Only regular environment variables can be used on [the dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Secrets can not be used.
+Only regular environment variables can be used with [the dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Secrets can not be used.
 
 However environment variables can not be used in `IfDefine` directives.
 
