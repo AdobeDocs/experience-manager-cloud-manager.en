@@ -23,7 +23,7 @@ This table lists the roles you can assign in the Admin Console.
 | Deployment Manager |This user manages the deployment operations using [!UICONTROL Cloud Manager] to execute stage and production deployments, may approve important 3-tier failures when necessary, and has access to the git repository. |
 | Developer |This user develops and tests custom application code, primarily uses [!UICONTROL Cloud Manager] to view deployment status, and has commit access to the git repository. |
 | Customer Success Engineer |This user generally supports customer success for AMS customers and interacts with [!UICONTROL Cloud Manager] for the purpose of executing deployments which require Customer Success Engineer (CSE) oversight. |
-| Content Author |This user generally does not interact with [!UICONTROL Cloud Manager], but may use the [!UICONTROL Cloud Manager] program wwitcher (having navigated from [!UICONTROL Experience Cloud]) to access Adobe Experience Manager (AEM).|
+| Content Author | This user generally does not interact with Cloud Manager, but may use the Cloud Manager program switcher (having navigated from Experience Cloud) to access Adobe Experience Manager (AEM). |
 
 ## User Permissions {#user-permissions}
 
