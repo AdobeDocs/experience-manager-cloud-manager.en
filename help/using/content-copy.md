@@ -46,11 +46,11 @@ Before any content can be copied a content set must be defined. Once defined, co
 
 1. Tap or click the **Add Content Set** button at the top-right of the screen.
 
-   ![Content Sets](assets/content-sets.png)
+   ![Content Sets](/help/assets/content-sets.png)
 
 1. On the **Details** tab of the the wizard, provide a name and description for the content set and tap or click **Continue**.
 
-   ![Content set details](assets/add-content-set-details.png)
+   ![Content set details](/help/assets/add-content-set-details.png)
 
 1. On the **Content Paths** tab of the wizard, specify the paths of the mutable content to be included in the content set.
 
@@ -58,7 +58,7 @@ Before any content can be copied a content set must be defined. Once defined, co
    1. Tap or click the **Add Path** button to add the path to the content set.
    1. Tap or click the **Add Path** button again as necessary.
 
-   ![Add paths to content set](assets/add-content-set-paths.png)
+   ![Add paths to content set](/help/assets/add-content-set-paths.png)
 
 1. If you need to refine or restrict your content set, sub-paths can be excluded.
 
@@ -67,14 +67,14 @@ Before any content can be copied a content set must be defined. Once defined, co
    1. Tap or click **Exclude Path**.
    1. Tap or click **Add exclude sub-paths** again to add additional paths to exclude as necessary.
 
-   ![Excluding paths](assets/add-content-set-paths-excluded.png)
+   ![Excluding paths](/help/assets/add-content-set-paths-excluded.png)
 
 1. You can modify the specified paths if required.
 
    1. Tap or click the X next to excluded sub-paths to delete them.
    1. Tap or click the ellipsis button next to paths to reveal **Edit** and **Delete** options.
 
-   ![Editing path list](assets/add-content-set-excluded-paths.png)
+   ![Editing path list](/help/assets/add-content-set-excluded-paths.png)
 
 1. Tap or click **Create** to create the content set.
 
@@ -100,7 +100,7 @@ Once a content set has been created, you can use it to copy content. Follow thes
 
 1. Select an content set from the console and select **Copy Content** from the ellipsis menu.
 
-   ![Content copy](assets/copy-content.png)
+   ![Content copy](/help/assets/copy-content.png)
 
    >[!NOTE]
    >
@@ -111,9 +111,7 @@ Once a content set has been created, you can use it to copy content. Follow thes
 
 1. In the **Copy content** dialog, specify the source and destination for your content copy action.
 
-   ![Copying content](assets/copying-content.png)
-
-1. If required you can also elect to **Include Access Control Lists** in your copy process.
+   ![Copying content](/help/assets/copying-content.png)
 
 1. Tap or click **Copy**.
 
@@ -129,7 +127,7 @@ You can monitor the status of your copy processes in the **Copy Content Activity
 
 1. Navigate to the **Copy Content Activity** page from the **Environments** screen.
 
-![Content Copy Activity](assets/copy-content-activity.png)
+![Content Copy Activity](/help/assets/copy-content-activity.png)
 
 ### Content Copy Statuses {#statuses}
 
