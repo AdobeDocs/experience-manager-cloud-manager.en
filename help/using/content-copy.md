@@ -36,7 +36,7 @@ In order to use the content copy tool, certain permissions are required in both 
 
 ## Creating a Content Set {#create-content-set}
 
-Before any content can be copied a content set must be defined. Once defined, content sets can be reused to copy content. Follow these steps to create a content set.
+Before any content can be copied, a content set must be defined. Once defined, content sets can be reused to copy content. Follow these steps to create a content set.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -48,7 +48,7 @@ Before any content can be copied a content set must be defined. Once defined, co
 
    ![Content Sets](/help/assets/content-sets.png)
 
-1. On the **Details** tab of the the wizard, provide a name and description for the content set and tap or click **Continue**.
+1. On the **Details** tab of the wizard, provide a name and description for the content set and tap or click **Continue**.
 
    ![Content set details](/help/assets/add-content-set-details.png)
 
@@ -86,7 +86,7 @@ Follow similar steps as when creating a content step. Instead of tapping or clic
 
 ![Edit content set](/help/assets/edit-content-set.png)
 
-Note that when editing your content set, you may need to expand the configured paths to reveal the excluded sub-paths.
+When editing your content set, you may need to expand the configured paths to reveal the excluded sub-paths.
 
 ## Copying Content {#copy-content}
 
@@ -151,5 +151,5 @@ The content copy tool has the following limitations.
 * Up to ten paths can be specified per content set. There is no limitation on excluded paths.
 * The content copy tool should not be used as a cloning or mirroring tool because it can not track moved or deleted content on the source.
 * The content copy tool has no versioning capability and can not automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
-  * If you wish to update your destination environment with content changes only since the last content copy operation, you need to create a content set and specify the paths on the source instance where changes were made since the last content copy operation.
+  * If you wish to update your destination environment with content changes only since the last content copy operation you need to create a content set. In that set, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
