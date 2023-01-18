@@ -84,7 +84,7 @@ The content set can now be used to copy content between environments.
 
 Follow similar steps as when creating a content step. Instead of tapping or clicking **Add Content Set**, select an existing set from the console and select **Edit** from the ellipsis menu.
 
-![Edit content set](assets/edit-content-set.png)
+![Edit content set](/help/assets/edit-content-set.png)
 
 Note that when editing your content set, you may need to expand the configured paths to reveal the excluded sub-paths.
 
