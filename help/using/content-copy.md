@@ -139,18 +139,6 @@ Once you start copying content, the process can have one of the following status
 |Failed|Content copy operation failed|
 |Completed|Content copy operation completed successfully|
 
-### Cancelling a Copy Process {#cancelling}
-
-If you need to abort a content copy operation after starting it, you have the option to cancel it.
-
-To do so, on the **Copy Content Activity** page, select the **Cancel** action from the ellipsis menu of the copy process you previously started.
-
-![Cancel content copy](assets/content-copy-cancel.png)
-
->[!NOTE]
->
->When you cancel a content copy operation, it can result in a partial copy of the content in the destination environment. This can leave the destination environment in an unusable state.
-
 ## Limitations {#limitations}
 
 The content copy tool has the following limitations.
