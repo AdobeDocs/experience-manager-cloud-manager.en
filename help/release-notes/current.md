@@ -19,7 +19,9 @@ The release date for [!UICONTROL Cloud Manager] release 2023.1.0 is 19 January 2
 
 ## What's New {#what-is-new}
 
-* Usability enhancements were by updating cursor styles that distinguish between where users can take action versus the default pointer.
+* Support for [self-service content copy](/help/using/content-copy.md) will be made available via a phased roll out following this release. Certain restrictions may apply.
+* In listings of environments and pipeline executions you can now access details by clicking the individual row.
+* Usability enhancements were made by updating cursor styles that distinguish between where users can take action versus the default pointer.
 
 ## Bug Fixes {#bug-fixes}
 
