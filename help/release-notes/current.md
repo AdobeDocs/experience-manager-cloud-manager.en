@@ -18,3 +18,9 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 The release date for [!UICONTROL Cloud Manager] release 2023.1.0 is 19 January 2023. The next release is planned for 16 February 2023.
 
 ## What's New {#what-is-new}
+
+* Usability enhancements were by updating cursor styles that distinguish between where users can take action versus the default pointer.
+
+## Bug Fixes {#bug-fixes}
+
+* Cloud Manager will prevent two pipeline executions from starting at (or nearly at) the same time, thus avoiding pipeline failures.
