@@ -27,12 +27,7 @@ When copying content, the source environment is the source of truth.
 
 ## Permissions {#permissions}
 
-In order to use the content copy tool, certain permissions are required in both the source and target environments.
-
-| Content Copy Feature | In AEM Administrator Group? | In the Deployment Manager Role? |
-|---|---|---|
-| Create and modify [content sets](#create-content-set) | Yes | No |
-| Start or cancel the [content copy process](#copy-content) | Yes | Yes |
+In order to use the content copy tool, the user must be assigned to the **Deployment Manager** role in the source and target environments.
 
 ## Creating a Content Set {#create-content-set}
 
