@@ -19,12 +19,6 @@ The release date for [!UICONTROL Cloud Manager] release 2023.1.0 is 16 February 
 
 ## What's New {#what-is-new}
 
-* 
-
 ## Bug Fixes {#bug-fixes}
 
-* 
-
 ## API Changes {#api-changes}
-
-* 
