@@ -46,6 +46,7 @@ role: Admin
   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
   + [Notifications](using/notifications.md)
   + [Custom Code Quality Rules](using/custom-code-quality-rules.md)
+  + [Content Copy](using/content-copy.md)
 + Managing Code {#managing-code}
   + [Maven Project Version Handling](managing-code/maven-project-version.md)
   + [Repositories](managing-code/repositories.md)
@@ -56,7 +57,10 @@ role: Admin
   + [Evaluation](product-update-wizard/evaluation.md)
 + Release Notes {#release-notes}
   + [Current Release Notes](release-notes/current.md)
+  + 2023 {#2023}
+    + [Release Notes for 2023.1.0](release-notes/2023/2023-1-0.md)
   + 2022 {#2022}
+    + [Release Notes for 2022.12.0](release-notes/2022/2022-12-0.md)
     + [Release Notes for 2022.11.0](release-notes/2022/2022-11-0.md)
     + [Release Notes for 2022.10.0](release-notes/2022/2022-10-0.md)
     + [Release Notes for 2022.9.0](release-notes/2022/2022-9-0.md)
