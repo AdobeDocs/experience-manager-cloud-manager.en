@@ -75,6 +75,11 @@ Before any content can be copied, a content set must be defined. Once defined, c
 
 The content set can now be used to copy content between environments.
 
+   >[!NOTE]
+   >
+   >You can add upto 50 paths in a content set.
+   >There is no limitation on excluded paths.
+
 ## Editing a Content Set {#edit-content-set}
 
 Follow similar steps as when creating a content step. Instead of tapping or clicking **Add Content Set**, select an existing set from the console and select **Edit** from the ellipsis menu.
@@ -93,7 +98,7 @@ Once a content set has been created, you can use it to copy content. Follow thes
 
 1. Navigate to the **Content Sets** page from the **Environments** screen.
 
-1. Select an content set from the console and select **Copy Content** from the ellipsis menu.
+1. Select a content set from the console and select **Copy Content** from the ellipsis menu.
 
    ![Content copy](/help/assets/copy-content.png)
 
@@ -105,6 +110,8 @@ Once a content set has been created, you can use it to copy content. Follow thes
    >* The environment has a running pipeline or a copy content operation in progress.
 
 1. In the **Copy content** dialog, specify the source and destination for your content copy action.
+
+1. You can choose to delete or retain the exclude paths in target environment. Select checkbox `Do not delete exclude paths from destination` if you wish to retain the exclude paths specified in the content set. If checkbox is left unchecked, then exclude paths are deleted in target environment.   
 
    ![Copying content](/help/assets/copying-content.png)
 
@@ -143,7 +150,7 @@ The content copy tool has the following limitations.
 * Cross-program content copy is not possible.
 * Running concurrent content copy operations on the same environment is not possible.
 * Content copy can not be performed if there is any active operation running on either the destination or source environment such as a CI/CD pipeline.
-* Up to ten paths can be specified per content set. There is no limitation on excluded paths.
+* Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
 * The content copy tool should not be used as a cloning or mirroring tool because it can not track moved or deleted content on the source.
 * The content copy tool has no versioning capability and can not automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
   * If you wish to update your destination environment with content changes only since the last content copy operation you need to create a content set. In that set, specify the paths on the source instance where changes were made since the last content copy operation.
