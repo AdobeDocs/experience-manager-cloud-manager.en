@@ -621,7 +621,7 @@ Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule,]
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defines the default authoring mode within AEM. Because [the Classic UI has been deprecated since AEM 6.4,](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) an issue is now raised when the default authoring mode is configured to Classic UI.
+The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defines the default authoring mode within AEM. Because the Classic UI has been deprecated since AEM 6.4, an issue is now raised when the default authoring mode is configured to Classic UI.
 
 ### Components With Dialogs Should Have Touch UI Dialogs {#oakpal-components-dialogs}
 
