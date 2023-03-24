@@ -24,7 +24,7 @@ Follow these steps below to complete the initial Dispatcher configuration.
 
 1. Obtain the current production configuration files from your CSE.
 1. Remove hard-coded environment-specific data such as publish renderer IP and replace with variables.
-1. Define required variables in key-value pairs for each target Dispatcher and request your CSE to add them to `/etc/sysconfig/httpd` on each instance.
+1. Define required variables in key-value pairs for each target Dispatcher and add them to [variables](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#where-to-put-the-variables) folder on each instance.
 1. Test the updated configurations on your staging environment.
 1. Once tested, request your CSE to deploy to production.
 1. Commit the files to your git repository.
