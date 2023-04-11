@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2023.3.0
-description: These are the release notes for Cloud Manager release 2023.3.0.
+title: Release Notes for 2023.4.0
+description: These are the release notes for Cloud Manager release 2023.4.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2023.3.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2023.4.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.3.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.4.0.
 
 >[!NOTE]
 >
@@ -15,8 +15,13 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2023.3.0 is 16 March 2023. The next release is planned for 13 April 2023.
+The release date for [!UICONTROL Cloud Manager] release 2023.4.0 is 13 April 2023. The next release is planned for 11 May 2023.
+
+## What's New {#what-is-new}
+
+* [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) has been updated to version 41.
 
 ## Bug Fixes {#bug-fixes}
 
-* The commerce tile on the **Learn** tab of Cloud Manager now navigates the user to the correct page.
+* Blue dispatchers are no longer attached to green ELB if the [blue/green deployment](/help/introduction.md#blue-green) fails.
+* The Cloud Manager UI will provide more visible advance warnings that the SSL certificate is about to expire.

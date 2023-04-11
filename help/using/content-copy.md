@@ -81,7 +81,7 @@ The content set can now be used to copy content between environments.
 
    >[!NOTE]
    >
-   >You can add upto 50 paths in a content set.
+   >You can add up to 50 paths in a content set.
    >There is no limitation on excluded paths.
 
 ## Editing a Content Set {#edit-content-set}
