@@ -24,4 +24,3 @@ The release date for [!UICONTROL Cloud Manager] release 2023.4.0 is 13 April 202
 ## Bug Fixes {#bug-fixes}
 
 * Blue dispatchers are no longer attached to green ELB if the [blue/green deployment](/help/introduction.md#blue-green) fails.
-* The Cloud Manager UI will provide more visible advance warnings that the SSL certificate is about to expire.
