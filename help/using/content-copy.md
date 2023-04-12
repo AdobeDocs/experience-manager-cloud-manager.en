@@ -1,8 +1,8 @@
 ---
 title: The Content Copy Tool
 description: The Cloud Manager content copy tool enables users to copy mutable content on-demand from their AEM production environments to lower environments for testing purposes.
+exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 ---
-
 # The Content Copy Tool {#content-copy}
 
 The Cloud Manager content copy tool enables users to copy mutable content on-demand from their AEM production environments to lower environments for testing purposes.
