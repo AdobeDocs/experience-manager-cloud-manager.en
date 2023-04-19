@@ -14,13 +14,13 @@ Once you have set up the general configuration for [!UICONTROL Cloud Manager], y
 
 ## Logging in for the First Time {#logging-in-for-the-first-time}
 
-1. Log in to Adobe [!UICONTROL Experience Cloud] and you see the list of programs.
+1. Log into Cloud Manager at [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and you see your list of programs.
 
-1. Select the program.
+   ![Cloud Manager console](/help/assets/cloud-manager-console.png)
 
-1. On your program's card, select the ellipsis button and then **Cloud Manager** to navigate to the Cloud Manager's **Overview** page. 
+1. On your program's card, select the ellipsis button and then **Program Overview** to navigate to Cloud Manager's **Overview** page. 
 
-   ![Cloud Manager option](/help/assets/navigate-cm1.png)
+   ![Cloud Manager option](/help/assets/program-overview-option.png)
 
 1. Cloud Manager opens to the **Overview** page.
 
