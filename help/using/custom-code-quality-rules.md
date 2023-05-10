@@ -12,6 +12,10 @@ Learn details about the custom code quality rules executed by Cloud Manager as p
 >
 >The code samples provided here are for illustrative purposes only. See [SonarQube's Concepts documentation](https://docs.sonarqube.org/latest/) to learn about its concepts and quality rules.
 
+>[!NOTE]
+>
+>Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Continue reading this document for descriptions and examples of the rules.
+
 ## SonarQube Rules {#sonarqube-rules}
 
 The following section details SonarQube rules executed by Cloud Manager.
