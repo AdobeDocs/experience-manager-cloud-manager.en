@@ -25,9 +25,9 @@ When copying content, the source environment is the source of truth.
 * If content has been modified in the destination environment, it will be overwritten by content in the source, if the paths are the same.
 * If the paths are different, content from the source will be merged with the content in the destination.
 
-   >[!NOTE]
-   >
-   >Only file data store based topologies are supported.
+>[!NOTE]
+>
+>Please contact your Customer Success Engineer (CSE) to enable this feature.
 
 ## Permissions {#permissions}
 
@@ -151,7 +151,8 @@ The content copy tool has the following limitations.
 
 * A content copy can not be performed from a lower environment to a higher environment.
 * Content copy can only be performed within the same tier (i.e.author-author or publish-publish).
-* Cross-program content copy is not possible.
+* Cross-program and cross-region content copy is not possible.
+* Content copy for cloud data store based topology can only be performed when source and destination environment are on same cloud provider.
 * Running concurrent content copy operations on the same environment is not possible.
 * Content copy can not be performed if there is any active operation running on either the destination or source environment such as a CI/CD pipeline.
 * Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
@@ -159,3 +160,4 @@ The content copy tool has the following limitations.
 * The content copy tool has no versioning capability and can not automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
   * If you wish to update your destination environment with content changes only since the last content copy operation you need to create a content set. In that set, specify the paths on the source instance where changes were made since the last content copy operation.
 * Version information is not included in a content copy.
+* A content copy can not be paused or cancelled once it is initiated.
