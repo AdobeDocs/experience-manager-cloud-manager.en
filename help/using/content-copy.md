@@ -157,7 +157,5 @@ The content copy tool has the following limitations.
 * Content copy can not be performed if there is any active operation running on either the destination or source environment such as a CI/CD pipeline.
 * Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
 * The content copy tool should not be used as a cloning or mirroring tool because it can not track moved or deleted content on the source.
-* The content copy tool has no versioning capability and can not automatically detect modified content or newly created content on the source environment in a content set since the last content copy operation.
-  * If you wish to update your destination environment with content changes only since the last content copy operation you need to create a content set. In that set, specify the paths on the source instance where changes were made since the last content copy operation.
-* Version information is not included in a content copy.
 * A content copy can not be paused or cancelled once it is initiated.
+* The content copy tool copies assets along with dynamic media related metadata from higher to selected lower environment. Copied assets needs to be reprocessed using [DAM process assets workflow](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) on lower environment in order to use respective dynamic media configuration.  
