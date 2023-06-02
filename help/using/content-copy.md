@@ -158,4 +158,5 @@ The content copy tool has the following limitations.
 * Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
 * The content copy tool should not be used as a cloning or mirroring tool because it can not track moved or deleted content on the source.
 * A content copy can not be paused or cancelled once it is initiated.
-* The content copy tool copies assets along with dynamic media related metadata from higher to selected lower environment. Copied assets needs to be reprocessed using [DAM process assets workflow](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) on lower environment in order to use respective dynamic media configuration.  
+* The content copy tool copies assets along with dynamic media related metadata from the higher environment to the selected lower environment.
+  * Copied assets then need to be reprocessed using the [DAM process assets workflow](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) on the lower environment in order to use the respective dynamic media configuration.  
