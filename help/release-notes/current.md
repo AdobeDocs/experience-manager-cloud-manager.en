@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2023.5.0
-description: These are the release notes for Cloud Manager release 2023.5.0.
+title: Release Notes for 2023.6.0
+description: These are the release notes for Cloud Manager release 2023.6.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2023.5.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2023.6.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.5.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.6.0.
 
 >[!NOTE]
 >
@@ -15,8 +15,8 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2023.5.0 is 11 May 2023. The next release is planned for 8 June 2023.
+The release date for [!UICONTROL Cloud Manager] release 2023.6.0 is 8 June 2023. The next release is planned for 6 July 2023.
 
 ## What's New {#what-is-new}
 
-* [Self-service content copy](/help/using/content-copy.md) is now available from a higher environment to a lower environment via the Cloud Manager UI. Please contact your Customer Success Engineer for details.
+* When resuming a [production pipeline,](/help/using/production-pipelines.md) a confirmation dialog is now displayed at the approve step.
