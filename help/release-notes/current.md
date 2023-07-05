@@ -19,5 +19,4 @@ The release date for [!UICONTROL Cloud Manager] release 2023.7.0 is 29 June 2023
 
 ## Bug Fixes {#bug-fixes}
 
-* Cards on the Cloud Manager landing page now indicate if [enhanced security](/help/getting-started/program-setup.md) is enabled for their programs.
 * When [editing a production pipeline,](/help/using/managing-pipelines.md#editing-pipelines) if the user tries to remove an asset from the **Stage Testing** tab, an error is displayed.
