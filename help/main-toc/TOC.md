@@ -5,6 +5,7 @@ user-guide-title: Cloud Manager Documentation
 breadcrumb-title: Cloud Manager Documentation for AEM 6.x
 user-guide-description: Learn how to use Cloud Manager to self-manage Adobe Experience Manager for AMS in the cloud.
 feature-set: Experience Manager Cloud Manager, Experience Manager
+feature: Cloud Manager
 role: Admin
 ---
 
