@@ -642,21 +642,6 @@ AEM Components which have a Classic UI dialog should always have a corresponding
 
 The AEM Modernization Tools documentation provides details and tooling for how to convert components from Classic UI to Touch UI. Refer  to [The AEM Modernization Tools documentation ](https://opensource.adobe.com/aem-modernize-tools/) for more details.
 
-### Packages Should Not Mix Mutable and Immutable Content {#oakpal-packages-immutable}
-
-* **Key**: ImmutableMutableMixedPackage
-* **Type**: Code Smell/Cloud Service Compatibility
-* **Severity**: Minor
-* **Since**: Version 2020.5.0
-
-In order to be compatible with the Cloud Service deployment model, individual content packages must contain either content for the immutable areas of the repository (that is, `/apps` and `/libs`) or the mutable area (that is, everything not in `/apps` or `/libs`), but not both. For example, a package which includes both `/apps/myco/components/text and /etc/clientlibs/myco` is not compatible with Cloud Service and causes an issue to be reported.
-
-Refer to [AEM Project Structure documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) for more details.
-
->[!NOTE]
->
->The rule [Customer Packages Should Not Create or Modify Nodes Under /libs](#oakpal-customer-package) always applies.
-
 ### Reverse Replication Agents Should Not Be Used {#oakpal-reverse-replication}
 
 * **Key**: ReverseReplication
@@ -731,15 +716,6 @@ Migration from static to editable templates can be largely automated using the [
 The legacy Foundation Components (i.e. components under `/libs/foundation`) have been deprecated for several AEM releases in favor of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Usage of the legacy Foundation Components as the basis for custom components, whether by overlay or inheritance, is discouraged and should be converted to the corresponding core component.
 
 This conversion can be facilitated by the [AEM Modernization Tools.](https://opensource.adobe.com/aem-modernize-tools/)
-
-### Only Supported Run mode Names and Ordering Should Be Used {#oakpal-supported-runmodes}
-
-* **Key**: SupportedRunmode
-* **Type**: Code Smell
-* **Severity**: Minor
-* **Since**: Version 2021.2.0
-
-AEM Cloud Service enforces a strict naming policy for run mode names and a strict ordering for those run modes. The list of supported run modes can be found in the [Deploying to AEM as a Cloud Service documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes) and any deviation from this is identified as an issue.
 
 ### Custom Search Index Definition Nodes Must Be Direct Children of /oak:index {#oakpal-custom-search}
 
