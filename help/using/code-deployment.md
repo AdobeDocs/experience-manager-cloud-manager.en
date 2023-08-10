@@ -170,17 +170,21 @@ Executing a pipeline in emergency mode can also be done through the Cloud Manage
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
-## Re-Execute a Production Deployment {#re-execute-deployment}
+## Re-Executing a Production Deployment {#reexecute-deployment}
 
-Re-execution of the production deployment step is available for executions where the production deploy step has completed. The type of completion is not important. The deployment could be successful (only for AMS programs), cancelled, or unsuccessful. The primary use case is where the production deployment step failed for transient reasons. Re-execution creates a new execution using the same pipeline. This new execution consists of three steps:
+In rare cases, production deployment steps may fail for transient reasons. In such cases, re-execution of the production deployment step is supported so long as the production deployment step has completed, regardless of the type of completion (e.g. successful, cancelled or unsuccessful). Re-execution creates a new execution using the same pipeline consisting of three steps.
 
-1. **The validate step** – This is essentially the same validation that occurs during a normal pipeline execution.
-1. **The build step** – In the context of a re-execution, the build step copies artifacts and does not actually execute a new build process.
-1. **The production deployment step** – This uses the same configuration and options as the production deployment step in a normal pipeline execution.
+1. **The validate step** - This is essentially the same validation that occurs during a normal pipeline execution.
+1. **The build step** - In the context of a re-execution, the build step copies artifacts and does not actually execute a new build process.
+1. **The production deployment step** - This uses the same configuration and options as the production deployment step in a normal pipeline execution.
 
-The build step may be labeled differently in the UI to reflect that it is copying artifacts, not re-building.
+In such circumstances where a re-execution is possible, the production pipeline status page provides the **Re-execute** option next to the usual **Download build log** option.
 
-![Re-executing](/help/assets/Re-deploy.png)
+![The Re-execute option in the pipeline overview window](/help/assets/re-execute.png)
+
+>[!NOTE]
+>
+>In a re-execution, the build step is labeled in the UI to reflect that it is copying artifacts, not re-building.
 
 ### Limitations {#limitations}
 
@@ -188,15 +192,21 @@ The build step may be labeled differently in the UI to reflect that it is copyin
 * Re-execution is not available for rollback executions or push update executions.
 * If the last execution failed at any point prior to the production deployment step, re-execution is not possible.
 
-### Identifying a Re-Execute Execution {#identifying}
 
-To identify if an execution is a re-execute execution, the `trigger` field can be examined. Its value will be `RE_EXECUTE`.
+### Re-Execute API {#reexecute-api}
 
-### Triggering a Re-Execution {#triggering}
+In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions as well as identify executions that were triggered as re-executions.
 
-To trigger a re-execution, a `PUT` request needs to be made to the HAL Link `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` on the production deploy step state. If this link is present, the execution can be restarted from that step. If it is absent, the execution can not be restarted from that step. This link will only ever be present on the production deploy step
+#### Triggering a Re-Execution {#triggering}
 
-``` Javascript
+To trigger a re-execution, a `PUT` request needs to be made to the HAL Link `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` on the production deploy step state.
+
+* If this link is present, the execution can be restarted from that step.
+* If it is absent, the execution can not be restarted from that step.
+
+This link is only ever available for the production deploy step.
+
+```javascript
  {
   "_links": {
     "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
@@ -231,6 +241,10 @@ To trigger a re-execution, a `PUT` request needs to be made to the HAL Link `htt
   "status": "FINISHED"
 ```
 
-The syntax of the HAL link's `href` value is not intended to be used as a point of reference. The actual value should always be read from the HAL link and not generated.
+The syntax of the HAL link's `href` value is only an example and the actual value should always be read from the HAL link and not generated.
 
 Submitting a `PUT` request to this endpoint will result in a `201` response if successful and the response body will be the representation of the new execution. This is similar to starting a regular execution through the API.
+
+#### Identifying a Re-Execute Execution {#identifying}
+
+Re-executed executions can be identified by the value `RE_EXECUTE` in the `trigger` field.
