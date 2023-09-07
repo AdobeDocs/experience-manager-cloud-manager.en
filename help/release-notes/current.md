@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2023.8.0
-description: These are the release notes for Cloud Manager release 2023.8.0.
+title: Release Notes for 2023.9.0
+description: These are the release notes for Cloud Manager release 2023.9.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2023.8.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2023.9.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.8.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.9.0.
 
 >[!NOTE]
 >
@@ -15,18 +15,8 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2023.8.0 is 10 August 2023. The next release is planned for 7 September 2023.
+The release date for [!UICONTROL Cloud Manager] release 2023.9.0 is 7 September 2023. The next release is planned for 5 October 2023.
 
 ## What's New {#what-is-new}
 
-* Enhancements were made to improve comprehensibility and surfacing of error messages in Cloud Manager UI.
-
 ## Bug Fixes {#bug-fixes}
-
-* Infrequent cases of [content copy](/help/using/content-copy.md) processes getting stuck has been addressed.
-* An temporary testing issue was resolved for customers not using New Relic One.
-* [The custom code quality rules](/help/using/custom-code-quality-rules.md) `SupportedRunmode` and `ImmutableMutableMixedPackage` have been removed from SonarQube as they are only applicable to AEM as a Cloud Service.
-* Users will no longer encounter stuck pipelines that appear to be in running state.
-* The **Environments** menu now closes after triggering the **[Copy Content](/help/using/content-copy.md)** modal.
-* [A pipeline re-execution](/help/using/code-deployment.md#reexecute-deployment) is no longer allowed if the previous execution does not have a `commitId` set on the build phase state.
-* A more understandable message is now displayed for rare errors when a user clicks on a pipeline in the **Activity** or **Pipeline** screens.
