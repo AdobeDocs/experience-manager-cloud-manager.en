@@ -22,6 +22,6 @@ The release date for [!UICONTROL Cloud Manager] release 2023.9.0 is 14 September
 
 ## Bug Fixes {#bug-fixes}
 
-* When a program is deleted, any associated, running pipeline is also deleted, ensuring that the pipeline is not incorrectly designated as failed status.
-* Occasionally, when all steps of a pipeline execution are 'completed',  status of the pipeline is seen as "running", making it seem to be in a stuck state. It is now seen as 'Complete'.
-* For repository branches generated using code generator archetype, CI/CD pipeline fails.
+* When a program is deleted, any associated, running pipeline is now also deleted.
+* An occasional error has been fixed where all steps of a pipeline execution were marked as completed, but the status of the pipeline was still running, giving the appearance of a stuck state.
+* An error was corrected when CI/CD pipelines failed for repository branches generated the archetype.
