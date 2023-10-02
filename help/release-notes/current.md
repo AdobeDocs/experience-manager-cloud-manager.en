@@ -1,12 +1,13 @@
 ---
-title: Release Notes for 2023.9.0
-description: These are the release notes for Cloud Manager release 2023.9.0.
+title: Release Notes for 2023.10.0
+description: These are the release notes for Cloud Manager release 2023.10.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
-# Release Notes for Cloud Manager Release 2023.9.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.9.0.
+# Release Notes for Cloud Manager Release 2023.10.0 {#release-notes}
+
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.10.0.
 
 >[!NOTE]
 >
@@ -14,10 +15,6 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2023.9.0 is 14 September 2023. The next release is planned for 5 October 2023.
+The release date for [!UICONTROL Cloud Manager] release 2023.10.0 is 5 October 2023. The next release is planned for X November 2023.
 
 ## Bug Fixes {#bug-fixes}
-
-* When a program is deleted, any associated, running pipeline is now also deleted.
-* An occasional error has been fixed where all steps of a pipeline execution were marked as completed, but the status of the pipeline was still running, giving the appearance of a stuck state.
-* An error was corrected when CI/CD pipelines failed for repository branches generated the archetype.
