@@ -15,6 +15,12 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2023.10.0 is 5 October 2023. The next release is planned for X November 2023.
+The release date for [!UICONTROL Cloud Manager] release 2023.10.0 is 5 October 2023. The next release is planned for 2 November 2023.
+
+## What's New {#what-is-new}
+
+* The **Deployment Manager** role can [configure a set of content paths which will either be invalidated or flushed from the AEM Dispatcher cache when a non-production pipeline is run.](/help/using/non-production-pipelines.md)
+  * These cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed.
+  * These settings use standard AEM Dispatcher behavior.
 
 ## Bug Fixes {#bug-fixes}
