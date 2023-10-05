@@ -25,12 +25,6 @@ There are two types of non-production pipelines:
 >
 >A pipeline can not be setup until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See the document [Cloud Manager Repositories](/help/managing-code/repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
-## Video Tutorial {#video-tutorial}
-
-This video provides an overview of the pipeline creation process, which is detailed in this document.
-
->[!VIDEO](https://video.tv.adobe.com/v/26316/)
-
 ## Adding a Non-Production Pipeline {#add-non-production-pipeline}
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
@@ -67,8 +61,23 @@ Once you have set up your program and have at least one environment using the Cl
        * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
        * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
 
+   1. **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths which will either be invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
+
+      1. Under **PATH** provide a content path.
+      1. Under **TYPE**, select the action to be taken on that path.
+
+         * **Flush** - Perform a cache deletion.
+         * **Invalidate** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.
+      1. Click **Add Path** to add your specified path. You can add up to 100 paths per environment.
+
 1. Click **Save** to save your pipeline.
 
 ## The Next Steps {#the-next-steps}
 
 Once you have configured the pipeline, you need to deploy your code. Please see the document [Code Deployment](/help/using/code-deployment.md) for more details.
+
+## Video Tutorial {#video-tutorial}
+
+This video provides an overview of the pipeline creation process, which is detailed in this document.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
