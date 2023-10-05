@@ -23,5 +23,8 @@ The release date for [!UICONTROL Cloud Manager] release 2023.10.0 is 5 October 2
   * These cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed.
   * These settings use standard AEM Dispatcher behavior.
 * With the October 2023 release of Cloud Manager, Java versions are being updated via a phased roll-out.
-    * The Java versions are being updated to Oracle JDK 8u371 and Oracle JDK 11.0.20.
+    * The minor versions for Java 8 and 11 and Maven have been updated and will be rolled out in a phased manner over the next 2 months. The new version has multiple security fixes and bugfixes. The new versions are:
+    * *Maven: 3.8.8*
+    * *Java  8 version: /usr/lib/jvm/jdk1.8.0_371*
+    * *Java 11 version: /usr/lib/jvm/jdk-11.0.20*
     * [See the OpenJDK advisory](https://openjdk.org/groups/vulnerability/advisories/) for details on the security and bugfixes in these JDK updates.
