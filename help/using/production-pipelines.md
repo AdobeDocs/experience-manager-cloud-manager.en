@@ -27,12 +27,6 @@ The **Deployment Manager** role is responsible for setting up the pipeline. Pipe
 >
 >A pipeline can not be setup until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete.
 
-## Video Tutorial {#video-tutorial-one}
-
-This video provides an overview of the pipeline creation process, which is detailed in this document.
-
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
-
 ## Adding a New Production Pipeline {#adding-production-pipeline}
 
 Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and have at least one environment, you are ready to add a production pipeline.
@@ -156,3 +150,9 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 ## The Next Steps {#the-next-steps}
 
 Once you have configured the pipeline, you need to deploy your code. Please see the document [Code Deployment](/help/using/code-deployment.md) for more details.
+
+## Video Tutorial {#video-tutorial-one}
+
+This video provides an overview of the pipeline creation process, which is detailed in this document.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)

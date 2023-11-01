@@ -1,15 +1,16 @@
 ---
 title: The Content Copy Tool
-description: The Cloud Manager content copy tool enables users to copy mutable content on-demand from their AEM production environments to lower environments for testing purposes.
+description: The Cloud Manager content copy tool enables users to copy mutable content on-demand from their AMS-hosted AEM 6.x production environments to lower environments for testing purposes.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 ---
+
 # The Content Copy Tool {#content-copy}
 
-The Cloud Manager content copy tool enables users to copy mutable content on-demand from their AEM production environments to lower environments for testing purposes.
+The Cloud Manager content copy tool enables users to copy mutable content on-demand from their AMS-hosted AEM 6.x production environments to lower environments for testing purposes.
 
 ## Introduction {#introduction}
 
-Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool allows you to copy content from your production AEM environment to a staging or development environment for such testing.
+Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool allows you to copy content from your production AMS-hosted AEM 6.x environment to a staging or development environment for such testing.
 
 The content to copy is defined by a content set. A content set consists of a list of JCR paths that contain the mutable content to be copied from a source environment to a target environment within the same Cloud Manager program. The following paths are permitted in a content set.
 
