@@ -30,6 +30,6 @@ Be a part of our early adoption program and have a chance to test some upcoming 
 
 ### Custom Permissions {#custom-permissions}
 
-[Cloud Manager custom permissions](/help/implementing/cloud-manager/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
+[Cloud Manager custom permissions](/help/using/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
 
-If you are interested in testing this new feature and sharing your feedback, please send and email `Grp-CloudManager-custom-permissions@adobe.com` from your email address associated with your Adobe ID.
+If you are interested in testing this new feature and sharing your feedback, please send and email `Grp-CloudManager_ams_custompermissions@adobe.com` from your email address associated with your Adobe ID.
