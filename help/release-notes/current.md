@@ -28,6 +28,12 @@ The release date for [!UICONTROL Cloud Manager] release 2023.11.0 is 2 November 
 
 Be a part of our early adoption program and have a chance to test some upcoming features
 
+### Bring your own GitHub {#byo-github}
+
+If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
+
 ### Custom Permissions {#custom-permissions}
 
 [Cloud Manager custom permissions](/help/using/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.

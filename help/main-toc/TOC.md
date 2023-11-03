@@ -54,6 +54,7 @@ role: Admin
   + [Repositories](/help/managing-code/repositories.md)
   + [Integrating with git](/help/managing-code/git-integration.md)
   + [Working with Multiple git Repositories](/help/managing-code/multiple-git-repos.md)
+  + [Working with Your Own GitHub Repositories](/help/managing-code/byo-github.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](/help/product-update-wizard/overview.md)
   + [Evaluation](/help/product-update-wizard/evaluation.md)
