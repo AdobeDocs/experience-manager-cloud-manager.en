@@ -24,6 +24,7 @@ role: Admin
   + [Source Code Repository](/help/requirements/source-code-repository.md)
   + [Role-Based Permissions](/help/requirements/role-based-permissions.md)
   + [Setting Up Users and Roles](/help/requirements/users-and-roles.md)
+  + [Custom Permissions](/help/using/custom-permissions.md)
   + [Environment Provisioning](/help/requirements/environment-provisioning.md)
 + Getting Started {#getting-started}
   + [First Time Login](/help/getting-started/first-time-login.md)
@@ -53,12 +54,14 @@ role: Admin
   + [Repositories](/help/managing-code/repositories.md)
   + [Integrating with git](/help/managing-code/git-integration.md)
   + [Working with Multiple git Repositories](/help/managing-code/multiple-git-repos.md)
+  + [Working with Your Own GitHub Repositories](/help/managing-code/byo-github.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](/help/product-update-wizard/overview.md)
   + [Evaluation](/help/product-update-wizard/evaluation.md)
 + Release Notes {#release-notes}
   + [Current Release Notes](/help/release-notes/current.md)
   + 2023 {#2023}
+    + [Release Notes for 2023.10.0](/help/release-notes/2023/2023-10-0.md)
     + [Release Notes for 2023.9.0](/help/release-notes/2023/2023-9-0.md)
     + [Release Notes for 2023.8.0](/help/release-notes/2023/2023-8-0.md)
     + [Release Notes for 2023.7.0](/help/release-notes/2023/2023-7-0.md)

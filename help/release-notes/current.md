@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2023.10.0
-description: These are the release notes for Cloud Manager release 2023.10.0.
+title: Release Notes for 2023.11.0
+description: These are the release notes for Cloud Manager release 2023.11.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2023.10.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2023.11.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.10.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.11.0.
 
 >[!NOTE]
 >
@@ -15,16 +15,28 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2023.10.0 is 5 October 2023. The next release is planned for 2 November 2023.
+The release date for [!UICONTROL Cloud Manager] release 2023.11.0 is 14 November 2023. The next release is planned for 7 December 2023.
 
 ## What's New {#what-is-new}
 
-* The **Deployment Manager** role can [configure a set of content paths which will either be invalidated or flushed from the AEM Dispatcher cache when a non-production pipeline is run.](/help/using/non-production-pipelines.md)
-  * These cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed.
-  * These settings use standard AEM Dispatcher behavior.
-* With the October 2023 release of Cloud Manager, Java versions are being updated via a phased roll-out.
-    * The minor versions for Java 8 and 11 and Maven have been updated and will be rolled out in a phased manner over the next 2 months. The new version has multiple security fixes and bugfixes. The new versions are:
-    * *Maven: 3.8.8*
-    * *Java  8 version: /usr/lib/jvm/jdk1.8.0_371*
-    * *Java 11 version: /usr/lib/jvm/jdk-11.0.20*
-    * [See the OpenJDK advisory](https://openjdk.org/groups/vulnerability/advisories/) for details on the security and bugfixes in these JDK updates.
+* [The pipeline execution details page](/help/using/managing-pipelines.md#view-details) will now show all the steps in a pipeline execution with the ones not yet started grayed out.
+* On both **[Activity](/help/using/managing-pipelines.md#activity)** and **[Pipelines](/help/using/managing-pipelines.md#pipelines)** pages, a summary of the pipeline execution is now available when clicking on a pipeline with a running status.
+* A new **Duration** section has been added to the [pipeline details page](/help/using/managing-pipelines.md#view-details) that includes the average duration for the pipeline step based on the historical trend for that program.
+* On the pipeline execution page, the finished steps now display duration
+* The Cloud Manager [content copy tool](/help/using/content-copy.md) allows users to copy mutable content on-demand from their AMS-hosted AEM 6.x production environments to lower environments for testing purposes.
+
+## Early Adoption Program {#early-adoption}
+
+Be a part of our early adoption program and have a chance to test some upcoming features
+
+### Bring your own GitHub {#byo-github}
+
+If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
+
+### Custom Permissions {#custom-permissions}
+
+[Cloud Manager custom permissions](/help/using/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
+
+If you are interested in testing this new feature and sharing your feedback, please send and email `Grp-CloudManager_ams_custompermissions@adobe.com` from your email address associated with your Adobe ID.
