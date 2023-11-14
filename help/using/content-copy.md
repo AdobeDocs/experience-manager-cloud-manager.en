@@ -26,10 +26,6 @@ When copying content, the source environment is the source of truth.
 * If content has been modified in the destination environment, it will be overwritten by content in the source, if the paths are the same.
 * If the paths are different, content from the source will be merged with the content in the destination.
 
->[!NOTE]
->
->Please contact your Customer Success Engineer (CSE) to enable this feature.
-
 ## Permissions {#permissions}
 
 In order to use the content copy tool, the user must be assigned to the **Deployment Manager** role in the source and target environments.
