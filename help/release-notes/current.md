@@ -24,6 +24,8 @@ The release date for [!UICONTROL Cloud Manager] release 2023.11.0 is 14 November
 * A new **Duration** section has been added to the [pipeline details page](/help/using/managing-pipelines.md#view-details) that includes the average duration for the pipeline step based on the historical trend for that program.
 * On the pipeline execution page, the finished steps now display duration
 * The Cloud Manager [content copy tool](/help/using/content-copy.md) allows users to copy mutable content on-demand from their AMS-hosted AEM 6.x production environments to lower environments for testing purposes.
+* Executions that [reuse build artifacts](/help/getting-started/project-setup.md#build-artifact-reuse) will now show the link to the execution that initially built those artifacts. 
+* The option to select **Important Metric Failures** can now be configured for [code quality pipelines](/help/using/non-production-pipelines.md) as well.
 
 ## Early Adoption Program {#early-adoption}
 
