@@ -123,6 +123,11 @@ The following permissions are available for creating custom profiles.
 |Override/Reject Important Metric Failures|Allow users to override/reject important metric failures|
 |Production Deployments Schedule|Allow users to schedule a production deployment step|
 |Repository Info Access|Allow users to access repository info and generate access password|
+|Repository Create|Allow users to create new git repositories|
+|Repository Delete|Allow users to delete git repositories|
+|Repository Edit|Allow users to edit git repositories|
+|Repository Code Generate|Allow users to generate project from archetype|
+|Content Copy Manage|Allow users to manage content copy operations|
 
 ### Organization-Level Permissions {#organization-level}
 
