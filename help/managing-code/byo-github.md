@@ -2,8 +2,8 @@
 title: Working with Your Own GitHub Repositories in Cloud Manager
 description: Learn how to set up Cloud Manager to work with your own GitHub repositories.
 feature: Release Information
+exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 ---
-
 # Working with Your Own GitHub Repositories in Cloud Manager {#byo-github}
 
 By configuring Cloud Manager to work with your own GitHub repositories, you can validate your code directly within your GitHub repository through Cloud Manager, eliminating the need to consistently sync your code with the Adobe repository.

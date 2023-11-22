@@ -1,8 +1,8 @@
 ---
 title: Custom Permissions
 description: Learn how you can use custom permissions to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines and environments for Cloud Managers users.
+exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 ---
-
 # Custom Permissions {#custom-permissions}
 
 Learn how you can use custom permissions to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines and environments for Cloud Managers users.
