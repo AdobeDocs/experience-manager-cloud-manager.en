@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2023.11.0
-description: These are the release notes for Cloud Manager release 2023.11.0.
+title: Release Notes for 2023.12.0
+description: These are the release notes for Cloud Manager release 2023.12.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2023.11.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2023.12.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.11.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.12.0.
 
 >[!NOTE]
 >
@@ -15,17 +15,11 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2023.11.0 is 14 November 2023. The next release is planned for 7 December 2023.
+The release date for [!UICONTROL Cloud Manager] release 2023.12.0 is 14 December 2023. The next release is planned for 18 January 2024.
 
 ## What's New {#what-is-new}
 
-* [The pipeline execution details page](/help/using/managing-pipelines.md#view-details) will now show all the steps in a pipeline execution with the ones not yet started grayed out.
-* On both **[Activity](/help/using/managing-pipelines.md#activity)** and **[Pipelines](/help/using/managing-pipelines.md#pipelines)** pages, a summary of the pipeline execution is now available when clicking on a pipeline with a running status.
-* A new **Duration** section has been added to the [pipeline details page](/help/using/managing-pipelines.md#view-details) that includes the average duration for the pipeline step based on the historical trend for that program.
-* On the [pipeline execution page,](/help/using/managing-pipelines.md#activity-window) the finished steps now display duration
-* The Cloud Manager [content copy tool](/help/using/content-copy.md) allows users to copy mutable content on-demand from their AMS-hosted AEM 6.x production environments to lower environments for testing purposes.
-* Executions that [reuse build artifacts](/help/getting-started/project-setup.md#build-artifact-reuse) will now show the link to the execution that initially built those artifacts. 
-* The option to select **Important Metric Failures** can now be configured for [code quality pipelines](/help/using/non-production-pipelines.md) as well.
+* [Cloud Manager custom permissions](/help/using/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -36,9 +30,3 @@ Be a part of our early adoption program and have a chance to test some upcoming 
 If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches.
 
 If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
-
-### Custom Permissions {#custom-permissions}
-
-[Cloud Manager custom permissions](/help/using/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
-
-If you are interested in testing this new feature and sharing your feedback, please send and email `Grp-CloudManager_ams_custompermissions@adobe.com` from your email address associated with your Adobe ID.
