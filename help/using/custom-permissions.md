@@ -7,10 +7,6 @@ exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 
 Learn how you can use custom permissions to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines and environments for Cloud Managers users.
 
->[!NOTE]
->
->This feature is only available to [the early adopter program.](/help/release-notes/current.md#early-adoption)
-
 ## Introduction {#introduction}
 
 Cloud Manager has a set of pre-defined roles which govern access to various feature of cloud manager:
