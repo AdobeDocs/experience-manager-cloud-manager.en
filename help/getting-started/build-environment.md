@@ -14,6 +14,7 @@ Cloud Manager's build environments have following attributes.
 
 * The build environment is Linux-based, derived from Ubuntu 18.04.
 * Apache Maven 3.8.8 is installed.
+  * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP.](#https-maven)
 * The Java versions installed are Oracle JDK 8u371 and Oracle JDK 11.0.20.
   * `/usr/lib/jvm/jdk1.8.0_371`
   * `/usr/lib/jvm/jdk-11.0.20`
@@ -43,6 +44,14 @@ Cloud Manager's build environments have following attributes.
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [Creating an API Integration](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [API Permissions](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
+
+## HTTPS Maven Repositories {#https-maven}
+
+Cloud Manager [release 2023.10.0](/help/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with release 2023.12.0), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+As a result of this security enhancement, some users may face issues during the build step, particularly when downloading artifacts from Maven repositories that use insecure HTTP connections.
+
+To ensure a smooth experience with the updated version, Adobe recommends that users update their Maven repositories to use HTTPS instead of HTTP. This adjustment aligns with the industry's growing shift towards secure communication protocols and helps maintain a secure and reliable build process.
 
 ## Using a Specific Java Version {#using-java-version}
 
