@@ -12,7 +12,9 @@ Learn about the specialized build environment that Cloud Manager users to build 
 
 Cloud Manager's build environments have following attributes.
 
-* The build environment is Linux-based, derived from Ubuntu 18.04.
+* The build environment is Linux-based, derived from Ubuntu 22.04.
+* Node 12+ support.
+  * Refer to [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) for configuration options.
 * Apache Maven 3.8.8 is installed.
 * The Java versions installed are Oracle JDK 8u371 and Oracle JDK 11.0.20.
   * `/usr/lib/jvm/jdk1.8.0_371`
