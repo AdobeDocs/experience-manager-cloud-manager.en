@@ -12,7 +12,7 @@ Learn about the specialized build environment that Cloud Manager users to build 
 
 Cloud Manager's build environments have following attributes.
 
-* The build environment is Linux-based, derived from Ubuntu 18.04.
+* The build environment is Linux-based, derived from Ubuntu 22.04.
 * Apache Maven 3.8.8 is installed.
   * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP.](#https-maven)
 * The Java versions installed are Oracle JDK 8u371 and Oracle JDK 11.0.20.
@@ -33,6 +33,7 @@ Cloud Manager's build environments have following attributes.
   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is configured at a system level with a `settings.xml` file which automatically includes the public Adobe artifact repository using a profile named `adobe-public`.
   * Refer to the [Adobe public Maven repository](https://repo1.maven.org/) for more details.
+* Node.js 18 is available for [front end and full stack pipelines.](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >

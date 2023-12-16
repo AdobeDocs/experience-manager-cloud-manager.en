@@ -20,12 +20,14 @@ The release date for [!UICONTROL Cloud Manager] release 2023.12.0 is 14 December
 ## What's New {#what-is-new}
 
 * [Cloud Manager custom permissions](/help/using/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
-* The rollouts of minor versions for java 8 and 11 and updates to maven [announced and begun with the October release of Cloud Manager](/help/release-notes/2023/2023-10-0.md) have been completed.
+* The rollouts of updates to the [build environment](/help/getting-started/build-environment.md) that were [announced and begun with the October release of Cloud Manager](/help/release-notes/2023/2023-10-0.md) have been completed.
+  * Support for Node 18 was added for [front end and full stack pipelines.](/help/overview/ci-cd-pipelines.md)
   * Java 8 minor version was updated to `jdk1.8.0_371`.
   * Java 11 minor version was updated to `jdk-11.0.20`.
   * Maven was updated to version to 3.8.8
     * Maven now disables all insecure `http://*` mirrors by default.
     * [Adobe recommends](/help/getting-started/build-environment.md#https-maven) users update their Maven repositories to use HTTPS instead of HTTP.
+* The build container base image was updated to Ubuntu 22.04.
 
 ## Early Adoption Program {#early-adoption}
 
