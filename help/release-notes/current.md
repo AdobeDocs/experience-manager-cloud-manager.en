@@ -1,13 +1,13 @@
 ---
-title: Release Notes for 2023.12.0
-description: These are the release notes for Cloud Manager release 2023.12.0.
+title: Release Notes for 2024.1.0
+description: These are the release notes for Cloud Manager release 2024.1.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 ---
 
-# Release Notes for Cloud Manager Release 2023.12.0 {#release-notes}
+# Release Notes for Cloud Manager Release 2024.1.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2023.12.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] release 2024.1.0.
 
 >[!NOTE]
 >
@@ -15,19 +15,7 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2023.12.0 is 14 December 2023. The next release is planned for 18 January 2024.
-
-## What's New {#what-is-new}
-
-* [Cloud Manager custom permissions](/help/using/custom-permissions.md) allows you to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Manager users.
-* The rollouts of updates to the [build environment](/help/getting-started/build-environment.md) that were [announced and begun with the October release of Cloud Manager](/help/release-notes/2023/2023-10-0.md) have been completed.
-  * Support for Node 18 was added for [front end and full stack pipelines.](/help/overview/ci-cd-pipelines.md)
-  * Java 8 minor version was updated to `jdk1.8.0_371`.
-  * Java 11 minor version was updated to `jdk-11.0.20`.
-  * Maven was updated to version to 3.8.8
-    * Maven now disables all insecure `http://*` mirrors by default.
-    * [Adobe recommends](/help/getting-started/build-environment.md#https-maven) users update their Maven repositories to use HTTPS instead of HTTP.
-* The build container base image was updated to Ubuntu 22.04.
+The release date for [!UICONTROL Cloud Manager] release 2024.1.0 is 17 January 2024.
 
 ## Early Adoption Program {#early-adoption}
 
