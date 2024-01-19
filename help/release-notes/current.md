@@ -15,7 +15,7 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 ## Release Date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2024.1.0 is 17 January 2024.
+The release date for [!UICONTROL Cloud Manager] release 2024.1.0 is 17 January 2024. The next release is planned for 16 February 2024.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -26,3 +26,8 @@ Be a part of our early adoption program and have a chance to test some upcoming 
 If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches.
 
 If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
+
+## Bug Fixes {#bug-fixes}
+
+* An error was corrected for some corner cases where downloads failed due to how the test application interprets data, causing the total error percentage to fail the test.
+* When a build step finishes with status `FAILED` due to a `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, it is now properly described as an error due to merge conflicts with the destination branch.
