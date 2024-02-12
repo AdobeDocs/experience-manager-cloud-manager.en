@@ -13,6 +13,10 @@ By configuring Cloud Manager to work with your own GitHub repositories, you can 
 >
 >This feature is only available to [the early adopter program.](/help/release-notes/current.md#early-adoption)
 
+>[!NOTE]
+>
+>This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
+
 ## Configuration {#configuration}
 
 Configuration consists of two main steps:
