@@ -17,6 +17,10 @@ This page documents the release notes for [!UICONTROL Cloud Manager] release 202
 
 The release date for [!UICONTROL Cloud Manager] release 2024.2.0 is 16 February 2024. The next release is planned for 16 March 2024.
 
+## What's New {#what-is-new}
+
+* As part of [deployment,](|help/using/code-deployment.md) the Dispatcher cache was flushed at the **Attach Dispatcher** step. In order to allow you to test changes on each node before attaching it to the Adobe load balancer, after deploying code to a particular publisher, you can now test changes directly from the associated Dispatcher before attaching that Dispatcher to the load balancer.
+
 ## Early Adoption Program {#early-adoption}
 
 Be a part of our early adoption program and have a chance to test some upcoming features
@@ -29,5 +33,4 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ## Bug Fixes {#bug-fixes}
 
-* An error was corrected for some corner cases where downloads failed due to how the test application interprets data, causing the total error percentage to fail the test.
-* When a build step finishes with status `FAILED` due to a `BUILD_MAVEN_TRANSFER_ARTIFACT_ERROR`, it is now properly described as an error due to merge conflicts with the destination branch.
+* The JDK of the build containers has been updated to a version that solves [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
