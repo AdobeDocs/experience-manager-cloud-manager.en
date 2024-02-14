@@ -19,7 +19,7 @@ The release date for [!UICONTROL Cloud Manager] release 2024.2.0 is 16 February 
 
 ## What's New {#what-is-new}
 
-* As part of [deployment,](|help/using/code-deployment.md) the Dispatcher cache was flushed at the **Attach Dispatcher** step. In order to allow you to test changes on each node before attaching it to the Adobe load balancer, after deploying code to a particular publisher, you can now test changes directly from the associated Dispatcher before attaching that Dispatcher to the load balancer.
+* As part of [deployment,](/help/using/code-deployment.md) the Dispatcher cache was flushed at the **Attach Dispatcher** step. In order to allow you to test changes on each node before attaching it to the Adobe load balancer, after deploying code to a particular publisher, you can now test changes directly from the associated Dispatcher before attaching that Dispatcher to the load balancer.
 
 ## Early Adoption Program {#early-adoption}
 
