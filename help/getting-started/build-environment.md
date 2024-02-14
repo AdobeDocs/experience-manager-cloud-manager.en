@@ -13,12 +13,12 @@ Learn about the specialized build environment that Cloud Manager users to build 
 Cloud Manager's build environments have following attributes.
 
 * The build environment is Linux-based, derived from Ubuntu 22.04.
-* Apache Maven 3.8.8 is installed.
+* Apache Maven 3.9.4 is installed.
   * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP.](#https-maven)
-* The Java versions installed are Oracle JDK 8u371 and Oracle JDK 11.0.20.
-  * `/usr/lib/jvm/jdk1.8.0_371`
-  * `/usr/lib/jvm/jdk-11.0.20`
-* By default, the `JAVA_HOME`  environment variable is set to `/usr/lib/jvm/jdk1.8.0_371` which contains Oracle JDK 8u371. See the section [Alternate Maven Execution JDK Version](#alternate-maven) section for more details.
+* The Java versions installed are Oracle JDK 8u401 and Oracle JDK 11.0.22.
+  * `/usr/lib/jvm/jdk1.8.0_401`
+  * `/usr/lib/jvm/jdk-11.0.22`
+* By default, the `JAVA_HOME`  environment variable is set to `/usr/lib/jvm/jdk1.8.0_401` which contains Oracle JDK 8u401. See the section [Alternate Maven Execution JDK Version](#alternate-maven) section for more details.
 * There are some additional system packages installed which are necessary.
   * `bzip2`
   * `unzip`
@@ -33,7 +33,7 @@ Cloud Manager's build environments have following attributes.
   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is configured at a system level with a `settings.xml` file which automatically includes the public Adobe artifact repository using a profile named `adobe-public`.
   * Refer to the [Adobe public Maven repository](https://repo1.maven.org/) for more details.
-* Node.js 18 is available for [front end and full stack pipelines.](/help/overview/ci-cd-pipelines.md)
+* Node.js 18 is available for [front end pipelines.](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ The currently available vendor/version combinations are:
 
 It is also possible to select Oracle 8 or Oracle 11 as the JDK for the entire Maven execution. Unlike the toolchains options, this changes the JDK used for all plugins unless the toolchains configuration is also  set in which case the toolchains configuration is still applied for toolchains-aware Maven plugins. As a result, checking and enforcing the Java version using the [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) will work.
 
-To do this, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. This file can have either the content `11` or `8`. Any other value is ignored. If `11` is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.2`. If `8` is specified, Oracle 8 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_202`.
+To do this, create a file named `.cloudmanager/java-version` in the git repository branch used by the pipeline. This file can have either the content `11` or `8`. Any other value is ignored. If `11` is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.22`. If `8` is specified, Oracle 8 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Environment Variables {#environment-variables}
 
