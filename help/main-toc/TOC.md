@@ -60,6 +60,8 @@ role: Admin
   + [Evaluation](/help/product-update-wizard/evaluation.md)
 + Release Notes {#release-notes}
   + [Current Release Notes](/help/release-notes/current.md)
+  + 2024 {#2024}
+    + [Release Notes for 2024.1.0](/help/release-notes/2024/2024-1-0.md)
   + 2023 {#2023}
     + [Release Notes for 2023.12.0](/help/release-notes/2023/2023-12-0.md)
     + [Release Notes for 2023.11.0](/help/release-notes/2023/2023-11-0.md)
