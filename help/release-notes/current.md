@@ -19,8 +19,8 @@ The release date for [!UICONTROL Cloud Manager] release 2024.3.0 is 14 March 202
 
 ## What's New {#what-is-new}
 
-* As part of [deployment,](/help/using/code-deployment.md) the Dispatcher cache was flushed at the **Attach Dispatcher** step. In order to allow you to test changes on each node before attaching it to the application load balancer, after deploying code to a particular publisher, you can now test changes directly from the associated Dispatcher before attaching that Dispatcher to the load balancer.
-* [The build environment](/help/getting-started/build-environment.md) has been updated to Maven version 3.9.4 and JDK versions jdk-11.0.22 and jdk1.8.0_401.
+* You can now validate the health of servers, review logs, and more on the instances created during blue/green deployments.
+  * Details including IP/DNS (FQDN) information of the green servers is now displayed in the UI in Cloud Manager. 
 
 ## Early Adoption Program {#early-adoption}
 
@@ -34,5 +34,5 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ## Bug Fixes {#bug-fixes}
 
-* The JDK of the build containers has been updated to a version that solves [JDK-8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
-§
+* A bug was fixed when the appropriate logs were not generated during the performance test step when the error rate metric failed.
+* Improved logic within the performance test service tasked with detecting the absence of a page on the site (404) now ensures smoother, uninterrupted deployment.
