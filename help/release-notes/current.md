@@ -19,8 +19,7 @@ The release date for [!UICONTROL Cloud Manager] release 2024.3.0 is 14 March 202
 
 ## What's New {#what-is-new}
 
-* You can now validate the health of servers, review logs, and more on the instances created during blue/green deployments.
-  * Details including IP/DNS (FQDN) information of the green servers is now displayed in the UI in Cloud Manager. 
+* Details including IP/DNS (FQDN) information of green servers are now displayed in the Cloud Manager UI.
 
 ## Early Adoption Program {#early-adoption}
 
