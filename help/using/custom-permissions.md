@@ -9,14 +9,14 @@ Learn how you can use custom permissions to create new custom permission profile
 
 ## Introduction {#introduction}
 
-Cloud Manager has a set of pre-defined roles which govern access to various feature of cloud manager:
+Cloud Manager has a set of pre-defined roles which govern access to various features of cloud manager:
 
 * Business Owner
 * Program Manager
 * Deployment Manager
 * Developer
 
-Custom permissions allows users to create new custom permission profiles with configurable permissions to restrict access for Cloud Managers users to programs, pipelines and environments.
+Custom permissions allow users to create new custom permission profiles with configurable permissions to restrict access for Cloud Managers users to programs, pipelines and environments.
 
 >[!TIP]
 >
@@ -38,7 +38,7 @@ This section will detail these steps. You may find it useful to refer to the [Te
 
 ### Create a New Product Profile {#create}
 
-You first must create a new product profile before to which you can assign custom permissions.
+You must first create a new product profile before to which you can assign custom permissions.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
@@ -73,10 +73,10 @@ Now that you have a new product profile, you can assign custom permissions to it
 
 1. Tap or click on the **Edit** link of a permission to edit it.
 
-1. The **Edit Persmissions** window opens.
+1. The **Edit Permissions** window opens.
    * The permission you selected in the previous step is selected in the left column.
    * The permission items available for assignment for the permission are in the middle column labeled **Available Permission** Items.
-   * The assigned permissions items are in the right column labeled **Included Permission Items**.
+   * The assigned permission items are in the right column labeled **Included Permission Items**.
 
    ![Edit permission items](/help/assets/edit-permission-items.png)
 
@@ -84,7 +84,7 @@ Now that you have a new product profile, you can assign custom permissions to it
 
    * Tap or click the `i` icon next to a permission item to learn more about it.
 
-1. Tap or click the **Add all** button at the top of the **Available Permissions** column to add all permissions. Likewise tap or click **Remove all** to remove all the previously-selected permissions.
+1. Tap or click the **Add all** button at the top of the **Available Permissions** column to add all permissions. Likewise tap or click **Remove all** to remove all the previously selected permissions.
 
 1. Tap or click **Save** when you are finished defining the permission items for your new product profile.
 
@@ -115,14 +115,14 @@ The following permissions are available for creating custom profiles.
 |Pipeline Edit|Allow users to edit pipelines|
 |Production Deployments Approve/Reject|Allow users to approve or reject a production deployment step|
 |Pipeline Executions Cancel|Allow users to cancel pipeline executions|
-|Pipeline Executions Start|Allow users to start a new pipeline executions|
+|Pipeline Executions Start|Allow users to start new pipeline executions|
 |Override/Reject Important Metric Failures|Allow users to override/reject important metric failures|
 |Production Deployments Schedule|Allow users to schedule a production deployment step|
 |Repository Info Access|Allow users to access repository info and generate access password|
 |Repository Create|Allow users to create new git repositories|
 |Repository Delete|Allow users to delete git repositories|
 |Repository Edit|Allow users to edit git repositories|
-|Repository Code Generate|Allow users to generate project from archetype|
+|Repository Code Generate|Allow users to generate projects from archetype|
 |Content Copy Manage|Allow users to manage content copy operations|
 
 ### Organization-Level Permissions {#organization-level}
@@ -142,7 +142,7 @@ The following terms are used in creating and managing custom permissions and pre
 |Term|Description|
 |---|---|
 |Predefined Permissions|Predefined roles like **Business Owner**, **Deployment Manager**, etc. to govern various features of Cloud Manager. For details on pre-defined roles, please see the document [Role-Based Permissions.](/help/requirements/role-based-permissions.md)|
-|Custom Permissions|Cloud Manager features which allows users to create permission profiles to define roles to govern supported features of Cloud Manager|
+|Custom Permissions|Cloud Manager features which allow users to create permission profiles to define roles to govern supported features of Cloud Manager|
 |Permission Profile|Created in the admin console to manage configurable permissions which will be applicable to users who are part of the permission profile| 
 |Configurable Permission|Cloud manager permissions which can be configured in permission profile|
 |Permission Item|A program, environment or pipeline resource on which a permission can be applied|
@@ -164,7 +164,7 @@ Please keep in mind the following limitations when using custom permissions.
 * Resources like program, environment, pipeline etc. created in Cloud Manager may take up two minutes to display in Admin Console for permission configuration.
 * In rare scenarios where custom permissions service fails to respond, predefined profiles are still available and users in predefined profiles still have appropriate access.
 
-## Frequently-Asked Questions {#faq}
+## Frequently Asked Questions {#faq}
 
 ### Which permission profiles are predefined permission profiles?
 
@@ -181,7 +181,7 @@ Default product profiles and cloud manager roles continue to work the same as be
 
 ### Can I edit predefined permission profiles?
 
-No, default profiles are non-editable. You can not add or remove permissions to default permission profile. You can only add or remove users from predefined profiles.
+No, default profiles are non-editable. You cannot add or remove permissions to default permission profile. You can only add or remove users from predefined profiles.
 
 ### Should I delete predefined permission profiles since custom profiles are now available?
 
