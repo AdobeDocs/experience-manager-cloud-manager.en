@@ -73,7 +73,7 @@ Now that you have a new product profile, you can assign custom permissions to it
 
 1. Tap or click on the **Edit** link of a permission to edit it.
 
-1. The **Edit Persmissions** window opens.
+1. The **Edit Permissions** window opens.
    * The permission you selected in the previous step is selected in the left column.
    * The permission items available for assignment for the permission are in the middle column labeled **Available Permission** Items.
    * The assigned permissions items are in the right column labeled **Included Permission Items**.
