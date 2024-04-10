@@ -19,6 +19,7 @@ The content to copy is defined by a content set. A content set consists of a lis
 /conf/**
 /etc/**
 /var/workflow/models/**
+/var/commerce/**
 ```
 
 When copying content, the source environment is the source of truth.
