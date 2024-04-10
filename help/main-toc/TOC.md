@@ -61,6 +61,7 @@ role: Admin
 + Release Notes {#release-notes}
   + [Current Release Notes](/help/release-notes/current.md)
   + 2024 {#2024}
+    + [Release Notes for 2024.3.0](/help/release-notes/2024/2024-3-0.md)
     + [Release Notes for 2024.2.0](/help/release-notes/2024/2024-2-0.md)
     + [Release Notes for 2024.1.0](/help/release-notes/2024/2024-1-0.md)
   + 2023 {#2023}
