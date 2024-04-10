@@ -19,7 +19,8 @@ The release date for [!UICONTROL Cloud Manager] release 2024.4.0 is 10 April 202
 
 ## What's New {#what-is-new}
 
-* 
+* Support for staging-only and production-only pipelines has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
+* Enhanced error messages for code build issues allow easier identification of root causes and next actionable steps.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -33,4 +34,4 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ## Bug Fixes {#bug-fixes}
 
-* 
+* A bug where Cloud Manager reused artifacts with the wrong commit hash has been addressed.
