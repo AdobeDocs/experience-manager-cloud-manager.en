@@ -60,3 +60,7 @@ Each of the roles have specific associated preconfigured permissions. This table
 |Generate Personal Access Token|Access git||x||x||
 
 To learn more about how to setup your users see the document [Setting Up Users and Roles.](/help/requirements/users-and-roles.md)
+
+>[!TIP]
+>
+>Custom permission profiles with configurable permissions are also available. Please see the document [Custom Permissions](/help/using/custom-permissions.md) for more details.
