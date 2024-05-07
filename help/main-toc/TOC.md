@@ -28,6 +28,7 @@ role: Admin
   + [Environment Provisioning](/help/requirements/environment-provisioning.md)
 + Getting Started {#getting-started}
   + [First Time Login](/help/getting-started/first-time-login.md)
+  + [Navigation](/help/getting-started/navigation.md)
   + [Program Setup](/help/getting-started/program-setup.md)
   + AEM Project Creation {#project-creation}
     + [Using the Wizard](/help/getting-started/using-the-wizard.md)
