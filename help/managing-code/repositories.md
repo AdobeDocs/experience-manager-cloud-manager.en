@@ -20,11 +20,7 @@ To access your repository, use the **Access Repo Info** button available in Clou
 
    ![Access repo info button](/help/assets/access-repo1.png)
 
-1. If you switch to the **Non-Production** pipeline tab, the **Access Repo Info** option is available there too as [configured for the pipeline.](/help/using/non-production-pipelines.md)
-
-   ![Non-production pipelines](/help/assets/access-repo-nonprod.png)
-
-1. Click on the **Access Repo Info** button to open a dialog that presents:
+1. Tap or click the **Access Repo Info** button to open a dialog that presents:
 
    * The URL to the git repository
    * User name
@@ -62,8 +58,6 @@ Follow these steps to add repositories in Cloud Manager:
 1. Select **Save**.
 
 Your newly created repo will be displayed.
-
-![New repo created](/help/assets/create-repo3.png)
 
 Repositories created in Cloud Manager are available for you to select when you [create your pipelines.](/help/overview/ci-cd-pipelines.md)
 
