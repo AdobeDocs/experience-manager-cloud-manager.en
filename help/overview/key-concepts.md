@@ -10,7 +10,7 @@ Like all powerful tools, Cloud Manager encompasses many concepts and terms. This
 
 ## Application {#application}
 
-And application is the set of customizations and configurations created by a customer in order to adapt the underlying [solution](#solution) (such as AEM Sites or AEM Assets) for their specific use cases and needs. An application is a logical unit which may be composed of multiple [artifacts.](#artifact)
+An application is the set of customizations and configurations created by a customer in order to adapt the underlying [solution](#solution) (such as AEM Sites or AEM Assets) for their specific use cases and needs. An application is a logical unit which may be composed of multiple [artifacts.](#artifact)
 
 An example application is the fictional [WKND lifestyle application.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 

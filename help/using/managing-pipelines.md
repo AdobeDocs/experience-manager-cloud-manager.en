@@ -38,7 +38,7 @@ The **Pipelines** window shows a complete list of all pipelines for the selected
 
 1. Here you can see a list of all pipelines for the program as well as start and stop pipeline execution as you would in the **Pipelines Card**.
 
-If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
+Tapping or clicking the `i` icon reveals details about the last or current execution of the pipeline.
 
 ![Pipeline execution details](/help/assets/configure-pipelines/pipeline-status.png)
 
@@ -54,7 +54,7 @@ The **Activities** window shows a complete list of all pipelines executions for 
 
 1. Here you can see a list of all pipeline executions for the program including current and historical executions.
 
-If a pipeline is executing, hovering over its **Status** column will reveal details about the execution.
+Tapping or clicking the `i` icon reveals details about the execution of the selected pipeline run.
 
 ![Pipeline execution details](/help/assets/configure-pipelines/pipeline-activity.png)
 
