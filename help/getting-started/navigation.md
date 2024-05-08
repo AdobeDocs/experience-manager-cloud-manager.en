@@ -27,7 +27,7 @@ The My Programs console provides an overview of all programs to which you have a
 
 >[!TIP]
 >
->Please see the document [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) for details on programs.
+>Please see the document [Programs and Program Types](/help/getting-started/program-setup.md) for details on programs.
 
 ### Toolbars {#my-programs-toolbars}
 
@@ -95,7 +95,7 @@ Every program is represented by a card (or row in a table), providing an overvie
 * Program image (if configured)
 * Program name
 * Service type: **Experience Manager Cloud** for [AEM as a Cloud Service programs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home) or **Experience Manager** for AMS programs
-* [Program type](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): Sandbox or production
+* [Program type](/help/getting-started/program-setup.md): Sandbox or production
 * Status
 * Configured solutions
 * Creation date
@@ -176,7 +176,7 @@ Use the hamburger menu in the [Cloud Manager header](#cloud-manager-header-2) to
 
 ### Call-to-Action {#cta}
 
-The call-to-action section will give you helpful information depending on the status of your program. For a new program you may see next steps offered as well as a reminder of a go-live date, [set during program creation.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+The call-to-action section will give you helpful information depending on the status of your program. For a new program you may see next steps offered as well as a reminder of a go-live date, [set during program creation.](/help/getting-started/program-setup.md)
 
 For a live program, the status of your last deployment with links for details and starting a new deployment.
 
