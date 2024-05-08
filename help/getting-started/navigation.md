@@ -1,8 +1,8 @@
 ---
 title: Navigating the Cloud Manager UI
 description: Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
+exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 ---
-
 # Navigating the Cloud Manger UI {#navigation}
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
