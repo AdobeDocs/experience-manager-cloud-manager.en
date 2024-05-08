@@ -50,8 +50,6 @@ The **Stage testing** step includes the following actions:
 * **Security Testing**: This step evaluates the security impact of your code on the AEM environment. See the document [Understanding Test Results](/help/using/code-quality-testing.md) for details on the testing process.
     * **Performance Testing**: This step evaluates the performance of your code. See [Understanding  Test Results](/help/using/code-quality-testing.md) for details on the testing process.
 
-   ![Stage testing](/help/assets/Stage_Testing1.png)
-
 ### Production Deployment Step {#production-deployment}
 
 The **Production Deployment** step, includes the following actions:

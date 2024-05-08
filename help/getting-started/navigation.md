@@ -44,7 +44,7 @@ The first is the Cloud Manager header, which is persistent as you navigate Cloud
 1. The organization selector displays the organization you are currently signed into (in this example, Foundation Internal). Tap or click to switch to another organization if your Adobe ID is associated with multiple.
 1. Tapping or clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
 1. The help icon provides quick access to learning and support resources.
-1. The notifications icon is badged with the number of currently assigned incomplete notifications.
+1. The notifications icon is badged with the number of currently assigned incomplete [notifications.](/help/using/notifications.md)
 1. Select the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
 
 #### Program Toolbar {#program-toolbar}
