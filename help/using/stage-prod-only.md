@@ -51,7 +51,11 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 >[!NOTE]
 >
->Certain options may be grayed out if the corresponding pipelines already exist. For example, **Add Production Pipeline** will be unavailable if a standard coupled pipeline already exists.
+>Certain options may be grayed out if the corresponding pipelines already exist.
+>
+>* **Add Production Only Pipeline** will be unavailable if a stage-only pipeline does not yet exist.
+>* **Add Production Pipeline** will be unavailable if a standard coupled pipeline already exists.
+>* Only one prod-only and one stage-only pipelines are allowed per program.
 
 ### Stage-Only Pipelines {#stage-only}
 
