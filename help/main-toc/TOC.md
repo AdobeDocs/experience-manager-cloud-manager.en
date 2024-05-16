@@ -40,6 +40,7 @@ role: Admin
   + CI/CD Pipelines {#pipelines}
     + [Configuring Production Pipelines](/help/using/production-pipelines.md)
     + [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md)
+    + [Stage and Prod Only Pipelines](/help/using/stage-prod-only.md)
     + [Managing Pipelines](/help/using/managing-pipelines.md)
   + [Code Deployment](/help/using/code-deployment.md)
   + [Code Quality Testing](/help/using/code-quality-testing.md)
@@ -62,6 +63,7 @@ role: Admin
 + Release Notes {#release-notes}
   + [Current Release Notes](/help/release-notes/current.md)
   + 2024 {#2024}
+    + [Release Notes for 2024.4.0](/help/release-notes/2024/2024-4-0.md)
     + [Release Notes for 2024.3.0](/help/release-notes/2024/2024-3-0.md)
     + [Release Notes for 2024.2.0](/help/release-notes/2024/2024-2-0.md)
     + [Release Notes for 2024.1.0](/help/release-notes/2024/2024-1-0.md)
