@@ -1,8 +1,8 @@
 ---
 title: Stage-Only and Prod-Only Pipelines
 description: Learn how you can split staging and production deployments using dedicated pipelines.
+exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 ---
-
 # Stage-Only and Production-Only Pipelines {#stage-prod-only}
 
 Learn how you can split staging and production deployments using dedicated pipelines.
