@@ -8,6 +8,12 @@ exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 
 [!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the git repository. A business owner has different permissions allowing them to define the key performance indicators (KPIs) and approve deployments.
 
+>[!NOTE]
+>
+>This documentation describes role-based permissions for Cloud Manager for Adobe Managed Services (AMS).
+>
+>The equivalent documentation for AEM as a Cloud Service can be found in the document [Introduction to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) in the AEM as a Cloud Service documentation.
+
 ## User Roles {#user-roles}
 
 Role management for [!UICONTROL Cloud Manager] is done using the [Admin Console.](https://helpx.adobe.com/enterprise/using/admin-console.html) Any user of [!UICONTROL Cloud Manager] must be a member of the customer's IMS organization and have the Adobe Managed Services Product Context. Specific role memberships are provided by adding the user to a [!UICONTROL Cloud Manager] product profile in the Admin Console.
@@ -54,3 +60,7 @@ Each of the roles have specific associated preconfigured permissions. This table
 |Generate Personal Access Token|Access git||x||x||
 
 To learn more about how to setup your users see the document [Setting Up Users and Roles.](/help/requirements/users-and-roles.md)
+
+>[!TIP]
+>
+>Custom permission profiles with configurable permissions are also available. Please see the document [Custom Permissions](/help/using/custom-permissions.md) for more details.

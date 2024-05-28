@@ -26,7 +26,39 @@ At the bottom of the list of pipelines, you have general options.
 * **Add** - To [add a new production pipeline](/help/using/production-pipelines.md) or [add new non-production pipeline](/help/using/non-production-pipelines.md)
 * **Show All** - Takes the user to the **Pipelines** screen to view all pipelines in a more detailed table
 * **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
-* **Learn More** - Navigates to CI/CD pipeline documentation resources. 
+* **Learn More** - Navigates to CI/CD pipeline documentation resources.
+
+## Pipelines Window {#pipelines}
+
+The **Pipelines** window shows a complete list of all pipelines for the selected program. This is useful as it presents more comprehensive information than what is available in the [Pipeline Card.](#pipeline-card)
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. From the **Program Overview** page, tap or click on **Pipelines** tab to switch to the **Pipelines** window.
+
+1. Here you can see a list of all pipelines for the program as well as start and stop pipeline execution as you would in the **Pipelines Card**.
+
+Tapping or clicking the `i` icon reveals details about the last or current execution of the pipeline.
+
+![Pipeline execution details](/help/assets/configure-pipelines/pipeline-status.png)
+
+Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
+
+## Activity Window {#activity}
+
+The **Activities** window shows a complete list of all pipelines executions for the selected program.
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. From the **Program Overview** page, tap or click on **Activity** tab to switch to the **Activity** window.
+
+1. Here you can see a list of all pipeline executions for the program including current and historical executions.
+
+Tapping or clicking the `i` icon reveals details about the execution of the selected pipeline run.
+
+![Pipeline execution details](/help/assets/configure-pipelines/pipeline-activity.png)
+
+Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
 
 ## Running Pipelines {#running-pipelines}
 
@@ -79,6 +111,16 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 ![Pipeline details](/help/assets/configure-pipelines/pipeline-running-details.png)
 
 From here you can see the status of the various steps of the pipeline and retrieve build logs for diagnostic purposes. See the document [Code Deployment](/help/using/code-deployment.md) for more information.
+
+All the steps in a pipeline execution are displayed with the ones not yet started grayed out. Finished steps display their duration.
+
+Once a pipeline step is complete, a summary is presented.
+
+![Step summary](/help/assets/configure-pipelines/pipeline-step.png)
+
+Tap or click the **View details** link to reveal the **Duration** section. This includes the average duration for the pipeline based on the historical trend for that program.
+
+![Duration](/help/assets/configure-pipelines/duration.png)
 
 >[!NOTE]
 >

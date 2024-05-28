@@ -31,9 +31,9 @@ The status is the rolled-up power state across the nodes in the environment in t
 
 ## Managing Environments {#managing-environments-with-cloud-manager}
 
-On the **Environments** tile, click **Manage** to display the **Environments** screen.
+On the **Environments** tile, tap or click the row of any environment to display the **Environments** screen.
 
-The **Environments** screen displays a card each for production and staging environments (as applicable) in your program. The name of the environment is seen above each card. The card includes a table of nodes in the environment along with the t-shirt size of the cpu, the storage, the region, and the status.
+The **Environments** screen displays each production and staging environments in your program. The name of the environment is seen above each card. The card includes a table of nodes in the environment along with the t-shirt size of the cpu, the storage, the region, and the status.
 
 >[!NOTE]
 >

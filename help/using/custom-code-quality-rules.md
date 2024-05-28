@@ -10,7 +10,11 @@ Learn details about the custom code quality rules executed by Cloud Manager as p
 
 >[!NOTE]
 >
->The code samples provided here are for illustrative purposes only. Please see [SonarQube's Concepts documentation](https://docs.sonarqube.org/7.4/user-guide/concepts/) to learn about its concepts and quality rules.
+>The code samples provided here are for illustrative purposes only. See [SonarQube's Concepts documentation](https://docs.sonarqube.org/latest/) to learn about its concepts and quality rules.
+
+>[!NOTE]
+>
+>Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Continue reading this document for descriptions and examples of the rules.
 
 ## SonarQube Rules {#sonarqube-rules}
 
@@ -23,7 +27,7 @@ The following section details SonarQube rules executed by Cloud Manager.
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
-The methods `Thread.stop()` and `Thread.interrupt()` can produce hard-to-reproduce issues and, in some cases, security vulnerabilities. Their usage should be tightly monitored and validated. In general, message passing is a safer way to accomplish similar goals.
+The methods `Thread.stop()` and `Thread.interrupt()` can produce hard-to-reproduce issues and, sometimes, security vulnerabilities. Their usage should be tightly monitored and validated. In general, message passing is a safer way to accomplish similar goals.
 
 #### Non-Compliant Code {#non-compliant-code}
 
@@ -98,7 +102,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Severity**: Critical
 * **Since**: Version 2018.6.0
 
-When executing HTTP requests from inside an AEM application, it is critical to ensure that proper timeouts are configured in order to avoid unnecessary thread consumption. Unfortunately, the default behavior of both Java's default HTTP Client, `java.net.HttpUrlConnection`, and the commonly used Apache HTTP Components client is to never timeout, so timeouts must be explicitly set. As a best practice, these timeouts should be no more than 60 seconds.
+When executing HTTP requests from inside an AEM application, it is critical to ensure that proper timeouts are configured in order to avoid unnecessary thread consumption. Unfortunately, the default behavior of both Java&trade;'s default HTTP Client, `java.net.HttpUrlConnection`, and the commonly used Apache HTTP Components client is to never timeout, so timeouts must be explicitly set. As a best practice, these timeouts should be no more than 60 seconds.
 
 #### Non-Compliant Code {#non-compliant-code-2}
 
@@ -175,7 +179,7 @@ public void orDoThis() {
 
 `ResourceResolver` objects obtained from the `ResourceResolverFactory` consume system resources. Although there are measures in place to reclaim these resources when a `ResourceResolver` is no longer in use, it is more efficient to explicitly close any opened `ResourceResolver` objects by calling the `close()` method.
 
-One relatively common misconception is that `ResourceResolver` objects created using an existing JCR Session should not be explicitly closed or that doing so will close the underlying JCR Session. This is not the case. Regardless of how a `ResourceResolver` is opened, it should be closed when no longer used. Since `ResourceResolver` implements the `Closeable` interface, it is also possible to use the `try-with-resources` syntax instead of explicitly invoking `close()`.
+One common misconception is that `ResourceResolver` objects created using an existing JCR Session should not be explicitly closed or that doing so closed the underlying JCR Session. This is not the case. Regardless of how a `ResourceResolver` is opened, it should be closed when no longer used. Since `ResourceResolver` implements the `Closeable` interface, it is also possible to use the `try-with-resources` syntax instead of explicitly invoking `close()`.
 
 #### Non-Compliant Code {#non-compliant-code-4}
 
@@ -215,7 +219,7 @@ public void orDoThis(Session session) throws Exception {
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
-As described in the [Sling documentation](http://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths is discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
+As described in the [Sling documentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths is discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
 
 #### Non-Compliant Code {#non-compliant-code-5}
 
@@ -277,7 +281,7 @@ public void orDoThis() throws MyCustomException {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Another common pattern to avoid is to log a message and then immediately throw an exception. This generally indicates that the exception message will end up duplicated in log files.
+Another common pattern to avoid is to log a message and then immediately throw an exception. This generally indicates that the exception message ends up duplicated in log files.
 
 #### Non-Compliant Code {#non-compliant-code-7}
 
@@ -302,7 +306,7 @@ public void doThis() throws Exception {
 * **Type**: Code Smell
 * **Severity**: Minor
 
-In general, the INFO log level should be used to demarcate important actions and, by default, AEM is configured to log at the INFO level or above. GET and HEAD methods should only ever be read-only operations and thus do not constitute important actions. Logging at the INFO level in response to GET or HEAD requests is likely to create significant log noise thereby making it harder to identify useful information in log files. Logging when handling GET or HEAD requests should be either at the WARN or ERROR levels when something has gone wrong or at the DEBUG or TRACE levels if deeper troubleshooting information would be helpful.
+In general, the INFO log level should be used to demarcate important actions and, by default, AEM is configured to log at the INFO level or above. GET and HEAD methods should only ever be read-only operations and thus do not constitute important actions. Logging at the INFO level in response to GET or HEAD requests is likely to create significant log noise, making it harder to identify useful information in log files. Logging when handling GET or HEAD requests should be either at the WARN or ERROR levels when something has gone wrong or at the DEBUG or TRACE levels if deeper troubleshooting information would be helpful.
 
 >[!NOTE]
 >
@@ -331,7 +335,7 @@ public void doGet() throws Exception {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-As a best practice, log messages should provide contextual information about where in the application an exception has occurred. While context can also be determined through the use of stack traces, in general the log message is going to be easier to read and understand. As a result, when logging an exception, it is a bad practice to use the exception's message as the log message. The exception message will contain what went wrong whereas the log message should be used to tell a log reader what the application was doing when the exception happened. The exception message will still be logged. By specifying your own message the logs will just be easier to understand.
+As a best practice, log messages should provide contextual information about where in the application an exception has occurred. While context can also be determined by using stack traces, in general the log message is going to be easier to read and understand. As a result, when logging an exception, it is a bad practice to use the exception's message as the log message. The exception message contains what went wrong whereas the log message should be used to tell a log reader what the application was doing when the exception happened. The exception message is still logged. By specifying your own message, the logs are easier to understand.
 
 #### Non-Compliant Code {#non-compliant-code-9}
 
@@ -364,7 +368,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-As the name suggests, Java exceptions should always be used in exceptional circumstances. As a result, when an exception is caught, it is important to ensure that log messages are logged at the appropriate level: either WARN or ERROR. This ensures that those messages appear correctly in the logs.
+As the name suggests, Java&trade; exceptions should always be used in exceptional circumstances. As a result, when an exception is caught, it is important to ensure that log messages are logged at the appropriate level: either WARN or ERROR. This ensures that those messages appear correctly in the logs.
 
 #### Non-Compliant Code {#non-compliant-code-10}
 
@@ -397,7 +401,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Context is critical when understanding log messages. Using `Exception.printStackTrace()` causes only the stack trace to be output to the standard error stream thereby losing all context. Further, in a multi-threaded application like AEM if multiple exceptions are printed using this method in parallel, their stack traces may overlap which produces significant confusion. Exceptions should be logged through the logging framework only.
+Context is critical when understanding log messages. Using `Exception.printStackTrace()` causes only the stack trace to be output to the standard error stream, losing all context. Further, in a multi-threaded application like AEM if multiple exceptions are printed using this method in parallel, their stack traces may overlap which produces significant confusion. Exceptions should be logged through the logging framework only.
 
 #### Non-Compliant Code {#non-compliant-code-11}
 
@@ -430,7 +434,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Logging in AEM should always be done through the logging framework, SLF4J. Outputting directly to the standard output or standard error streams loses the structural and contextual information provided by the logging framework and may, in some cases, cause performance issues.
+Logging in AEM should always be done through the logging framework, SLF4J. Outputting directly to the standard output or standard error streams loses the structural and contextual information provided by the logging framework and may, sometimes, cause performance issues.
 
 #### Non-Compliant Code {#non-compliant-code-12}
 
@@ -488,9 +492,9 @@ public void doThis(Resource resource) {
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-The Sling Scheduler must not be used for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
+Do not use the Sling Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
 
-Refer to [Apache Sling Eventing and Job Handling documentation](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in a clustered environments.
+Refer to [Apache Sling Eventing and Job Handling documentation](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in clustered environments.
 
 ### AEM Deprecated APIs Should Not Be Used {#sonarqube-aem-deprecated}
 
@@ -501,9 +505,9 @@ Refer to [Apache Sling Eventing and Job Handling documentation](https://sling.ap
 
 The AEM API surface is under constant revision to identify APIs for which usage is discouraged and thus considered deprecated. 
 
-In many cases, these APIs are deprecated using the standard Java *@Deprecated* annotation and, as such, as identified by `squid:CallToDeprecatedMethod`. 
+Often, these APIs are deprecated using the standard Java&trade; *@Deprecated* annotation and, as such, as identified by `squid:CallToDeprecatedMethod`. 
 
-However, there are cases where an an API is deprecated in the context of AEM but may not be deprecated in other contexts. This rule identifies this second class.
+However, there are cases where an API is deprecated in the context of AEM but may not be deprecated in other contexts. This rule identifies this second class.
 
 ## OakPAL Content Rules {#oakpal-rules}
 
@@ -520,11 +524,11 @@ The following section details the OakPAL checks executed by Cloud Manager.
 * **Severity**: Critical
 * **Since**: Version 2018.7.0
 
-The AEM API contains Java interfaces and classes which are only meant to be used, but not implemented, by custom code. For example, the interface `com.day.cq.wcm.api.Page` is designed to be implemented by AEM only.
+The AEM API contains Java&trade; interfaces and classes which are only meant to be used, but not implemented, by custom code. For example, the interface `com.day.cq.wcm.api.Page` is implemented by AEM only.
 
 When new methods are added to these interfaces, those additional methods do not impact existing code which uses these interfaces and, as a result, the addition of new methods to these interfaces are considered to be backwards-compatible. However, if custom code implements one of these interfaces, that custom code has introduced a backwards-compatibility risk for the customer.
 
-Interfaces and classes which are only intended to be implemented by AEM are annotated with `org.osgi.annotation.versioning.ProviderType` or, in some cases, a similar legacy annotation `aQute.bnd.annotation.ProviderType`. This rule identifies the cases where such an interface is implemented or a class is extended by custom code.
+Interfaces and classes which are only intended to be implemented by AEM are annotated with `org.osgi.annotation.versioning.ProviderType` or, sometimes, a similar legacy annotation `aQute.bnd.annotation.ProviderType`. This rule identifies the cases where such an interface is implemented or a class is extended by custom code.
 
 #### Non-Compliant Code {#non-compliant-code-3}
 
@@ -543,7 +547,7 @@ public class DontDoThis implements Page {
 * **Severity**: Blocker
 * **Since**: Version 2019.6.0
 
-It has been a long-standing best practice that the `/libs` content tree in the AEM content repository should be considered read-only by customers. Modifying nodes and properties under `/libs` creates significant risk for major and minor updates. Modifications to `/libs` should only be made by Adobe through official channels.
+It has been a long-standing best practice that the `/libs` content tree in the AEM content repository should be considered read-only by customers. Modifying nodes and properties under `/libs` creates significant risk for major and minor updates. Modifications to `/libs` is only made by Adobe through official channels.
 
 ### Packages Should Not Contain Duplicate OSGi Configurations {#oakpal-package-osgi}
 
@@ -552,9 +556,9 @@ It has been a long-standing best practice that the `/libs` content tree in the A
 * **Severity**: Major
 * **Since**: Version 2019.6.0
 
-A common problem that occurs on complex projects is where the same OSGi component is configured multiple times. This creates an ambiguity as to which configuration will be operable. This rule is "runmode-aware" in that it will only identify issues where the same component is configured multiple times in the same runmode or combination of runmodes.
+A common problem that occurs on complex projects is where the same OSGi component is configured multiple times. This creates an ambiguity about which configuration is operable. This rule is "runmode-aware" in that it will only identify issues where the same component is configured multiple times in the same run mode or combination of run modes.
 
-#### Non Compliant Code {#non-compliant-code-osgi}
+#### Non-Compliant Code {#non-compliant-code-osgi}
 
 ```text
 + apps
@@ -584,9 +588,9 @@ A common problem that occurs on complex projects is where the same OSGi componen
 
 For security reasons, paths containing `/config/` and `/install/` are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. Placing other types of content under paths which contain these segments results in application behavior which unintentionally varies between administrative and non-administrative users.
 
-A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. To resolve this the offending node should be renamed to a compliant name. For the rich text editor configuration make use of the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
+A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. To resolve this, the offending node should be renamed to a compliant name. For the rich text editor configuration, use the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
 
-#### Non Compliant Code {#non-compliant-code-config-install}
+#### Non-Compliant Code {#non-compliant-code-config-install}
 
 ```text
 + cq:editConfig [cq:EditConfig]
@@ -621,7 +625,7 @@ Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule,]
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defines the default authoring mode within AEM. Because [the Classic UI has been deprecated since AEM 6.4,](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) an issue will now be raised when the default authoring mode is configured to Classic UI.
+The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defines the default authoring mode within AEM. Because the Classic UI has been deprecated since AEM 6.4, an issue is now raised when the default authoring mode is configured to Classic UI.
 
 ### Components With Dialogs Should Have Touch UI Dialogs {#oakpal-components-dialogs}
 
@@ -637,21 +641,6 @@ AEM Components which have a Classic UI dialog should always have a corresponding
 * A component with both a Classic UI dialog and a Classic UI design dialog must have both a corresponding Touch UI dialog and a corresponding Touch UI design dialog.
 
 The AEM Modernization Tools documentation provides details and tooling for how to convert components from Classic UI to Touch UI. Refer  to [The AEM Modernization Tools documentation ](https://opensource.adobe.com/aem-modernize-tools/) for more details.
-
-### Packages Should Not Mix Mutable and Immutable Content {#oakpal-packages-immutable}
-
-* **Key**: ImmutableMutableMixedPackage
-* **Type**: Code Smell/Cloud Service Compatibility
-* **Severity**: Minor
-* **Since**: Version 2020.5.0
-
-In order to be compatible with the Cloud Service deployment model, individual content packages must contain either content for the immutable areas of the repository (that is, `/apps` and `/libs`) or the mutable area (that is, everything not in `/apps` or `/libs`), but not both. For example, a package which includes both `/apps/myco/components/text and /etc/clientlibs/myco` is not compatible with Cloud Service and will cause an issue to be reported.
-
-Refer to [AEM Project Structure documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html) for more details.
-
->[!NOTE]
->
->The rule [Customer Packages Should Not Create or Modify Nodes Under /libs](#oakpal-customer-package) always applies.
 
 ### Reverse Replication Agents Should Not Be Used {#oakpal-reverse-replication}
 
@@ -673,7 +662,7 @@ Customers using reverse replication should contact Adobe for alternative solutio
 
 AEM client libraries may contain static resources like images and fonts. As described in the [Using Client-Side Libraries documentation,](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#using-preprocessors) when using proxied client libraries these static resources must  be contained in a child folder named `resources` in order to be effectively referenced on the publish instances.
 
-#### Non Compliant Code {#non-compliant-proxy-enabled}
+#### Non-Compliant Code {#non-compliant-proxy-enabled}
 
 ```text
 + apps
@@ -713,7 +702,7 @@ The migration tool in the [AEM Assets as a Cloud Service GitHub repository](http
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-While the use of static templates has historically been very common in AEM projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found in the [Page Templates - Editable documentation.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+While the use of static templates has historically been common in AEM Projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found in the [Page Templates - Editable documentation.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
 
 Migration from static to editable templates can be largely automated using the [AEM Modernization Tools.](https://opensource.adobe.com/aem-modernize-tools/)
 
@@ -727,15 +716,6 @@ Migration from static to editable templates can be largely automated using the [
 The legacy Foundation Components (i.e. components under `/libs/foundation`) have been deprecated for several AEM releases in favor of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Usage of the legacy Foundation Components as the basis for custom components, whether by overlay or inheritance, is discouraged and should be converted to the corresponding core component.
 
 This conversion can be facilitated by the [AEM Modernization Tools.](https://opensource.adobe.com/aem-modernize-tools/)
-
-### Only Supported Runmode Names and Ordering Should Be Used {#oakpal-supported-runmodes}
-
-* **Key**: SupportedRunmode
-* **Type**: Code Smell
-* **Severity**: Minor
-* **Since**: Version 2021.2.0
-
-AEM Cloud Service enforces a strict naming policy for runmode names and a strict ordering for those runmodes. The list of supported runmodes can be found in the [Deploying to AEM as a Cloud Service documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes) and any deviation from this will be identified as an issue.
 
 ### Custom Search Index Definition Nodes Must Be Direct Children of /oak:index {#oakpal-custom-search}
 
@@ -762,7 +742,7 @@ AEM Cloud Service requires that custom search index definitions (i.e. nodes of t
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-Hard-to-troubleshoot issues can occur when occur when a custom search index definition node has unordered child nodes. To avoid these, it is recommended that all descendent nodes of an `oak:QueryIndexDefinition` node be of type `nt:unstructured`.
+Hard-to-troubleshoot issues can occur when a custom search index definition node has unordered child nodes. To avoid these, it is recommended that all descendent nodes of an `oak:QueryIndexDefinition` node be of type `nt:unstructured`.
 
 ### Custom Search Index Definition Nodes Must Contain a Child Node Named indexRules that Has Children {#oakpal-custom-search-index}
 
@@ -841,10 +821,10 @@ The following section lists the Dispatcher Optimization Tool (DOT) checks execut
 
 * [Each Dispatcher farm should have a unique name](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
 
-* [The Dispatcher publish farm cache should have its ignoreUrlParams rules configured in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+* [The Dispatcher publish farm cache should have its ignoreUrlParams rules configured in an allowlist manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
 
-* [The Dispatcher publish farm filters should specify the allowed Sling selectors in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+* [The Dispatcher publish farm filters should specify the allowed Sling selectors in an allowlist manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
 
-* [The Dispatcher publish farm filters should specify the allowed Sling suffix patterns in an allow list manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+* [The Dispatcher publish farm filters should specify the allowed Sling suffix patterns in an allowlist manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
-* [The 'Require all granted' directive should not be used in a VirtualHost Directory section with a root directory-path](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
+* [Do not use the 'Require all granted' directive in a VirtualHost Directory section with a root directory-path](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)

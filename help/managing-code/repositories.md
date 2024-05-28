@@ -20,11 +20,7 @@ To access your repository, use the **Access Repo Info** button available in Clou
 
    ![Access repo info button](/help/assets/access-repo1.png)
 
-1. If you switch to the **Non-Production** pipeline tab, the **Access Repo Info** option is available there too as [configured for the pipeline.](/help/using/non-production-pipelines.md)
-
-   ![Non-production pipelines](/help/assets/access-repo-nonprod.png)
-
-1. Click on the **Access Repo Info** button to open a dialog that presents:
+1. Tap or click the **Access Repo Info** button to open a dialog that presents:
 
    * The URL to the git repository
    * User name
@@ -63,8 +59,6 @@ Follow these steps to add repositories in Cloud Manager:
 
 Your newly created repo will be displayed.
 
-![New repo created](/help/assets/create-repo3.png)
-
 Repositories created in Cloud Manager are available for you to select when you [create your pipelines.](/help/overview/ci-cd-pipelines.md)
 
 ## View and Edit Repositories {#edit-repos}
@@ -75,9 +69,19 @@ Follow these steps to edit and view repositories in Cloud Manager:
 
 1. From the **Program Overview** page, click on **Repositories** tab and navigate to the **Repositories** page. Here you can view the details of your existing repositories.
 
-1. Select the repository and click on the ellipsis button at the far right of the table to **Copy Repository URL**, **View & Update** or **Delete** your repository.
+1. Select the repository and click on the ellipsis button at the far right of the table to **Copy Repository URL** or **View & Update** your repository.
 
 ![Edit repo](/help/assets/create-repo3.png)
+
+## Deleting Repositories {#delete-repos}
+
+To delete a repository, follow the same steps [to view and edit repositories](#edit-repos) but on the **Repositories** page select **Delete** from the ellipsis button of the repository to be deleted.
+
+Note that when a repository is deleted in Cloud Manager, it is marked as deleted and is no longer accessible to the user, but it is maintained in the system for recovery purposes.
+
+If you try to create a new repository after deleting a repository with the same name you will receive the error message "An error has occurred while trying to create repository. Please contact your CSE or Adobe Support."
+
+If you receive this error message, please contact Adobe Support so they can assist in renaming the deleted repository or choose a different name for your new repository.
 
 ## Git Submodule Support {#git-submodule-support}
 

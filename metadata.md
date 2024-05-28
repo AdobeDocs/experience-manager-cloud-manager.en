@@ -3,6 +3,7 @@ solution: Experience Manager, Experience Manager Cloud Manager
 type: Documentation
 cloud: Experience Cloud
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.en
+recommendations: noDisplay
 ---
 
 # Metadata for internal use

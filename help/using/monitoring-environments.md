@@ -18,20 +18,17 @@ If a metric is over its critical threshold, it is considered to be in a critical
 
 Follow these steps to access System Monitoring.
 
-1. Log in to **Managed Services - Programs** landing page.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
 
-   ![Managed services programs](/help/assets/ProgramLanding.png)
-
-1. Click on the fourth icon on the program card.
+1. Tap or click the ellipsis button of the program you wish to monitor and select the **Show Monitoring** option.
  
    ![Settings](/help/assets/first-timea1.png)
 
-
-Alternatively you can navigate to the **System Monitoring** landing page through the **Reports** global navigation menu item within [!UICONTROL Cloud Manager].
+The **Reports** page opens to show system monitoring information.
 
 ## System Monitoring Overview {#system-monitoring-overview}
 
-The System Monitoring overview page lists the monitored environments in the program and reports on their high-level health across four separate categories:
+The **System Monitoring** section of the **Reports** page lists the monitored environments in the program and reports on their high-level health across four separate categories:
 
 * Host
 * Storage
@@ -48,13 +45,11 @@ The status in each category is a summary of individual metrics. If any metric in
 
 ## System Monitoring Detail {#system-monitoring-detail}
 
-To view the details of specific metrics, you can either click on one of the categories in the left navigation or click on one of the category indicators for a specific instance. Each detail page shows a series of graphs for the metrics within that category. You can either view the metrics for all instances in an environment or for a specific instance. You can switch between the environment and instances using the dropdown boxes in the top-right corner.
+To view the details of specific metrics, tap or click on one of the category columns of a specific instance or the category title in the left navigation. Each detail page shows a series of graphs for the metrics within that category. You can either view the metrics for all instances in an environment or for a specific instance. You can switch between the environment and instances using the dropdown boxes in the top-right corner.
 
 ![Select environment](/help/assets/System_Monitoring1.png)
 
 The navigation on the left will show the available metrics within the currently selected category for which there is data for the currently selected environment and instances.
-
-![Monitoring metrics](/help/assets/System_Monitoring2.png)
 
 An individual graph will show the status and a graph of the data over time along with the thresholds. If multiple instances are displayed, each instance's data will be on a separate series.
 
@@ -97,9 +92,9 @@ For example, if you click on the warning threshold series, you will see only the
 
 ## SLA Reporting {#sla-reporting}
 
-Customers are able to see the performance of their production AEM environment relative to their contracted service level agreement (SLA). This is available through a sub-menu on the **Reports** screen.
+You can see the performance of your production AEM environment relative to your contracted service level agreement (SLA).
 
-The following graph shows the monthly SLA attainment for 2018.
+The following graph shows the monthly SLA attainment for 2019.
 
 ![SLA 2018 graph](/help/assets/SLA-Reports-one.png)
 

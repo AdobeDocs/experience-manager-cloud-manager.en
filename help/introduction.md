@@ -109,7 +109,9 @@ When blue/green deployment is enabled, the deployment flow differs from the stan
 |5|Pause for testing (up to 24 hours)|-|
 |6|Green infrastructure is added to the production load balancer|-|
 |7|Blue infrastructure is removed from the production load balancer-|
-|8|Blue infrastructure is terminated automatically|-|
+|8|Pause for final sign-off (up to 24 hours)|-|
+|9|Blue infrastructure is terminated automatically|-|
+|10|Pipeline completes|-|
 
 #### Implementing Blue/Green {#implementing}
 
