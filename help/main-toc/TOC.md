@@ -52,17 +52,23 @@ role: Admin
   + [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md)
   + [Content Copy](/help/using/content-copy.md)
 + Managing Code {#managing-code}
+  + [Managing Repositories in Cloud Manager](/help/managing-code/managing-repositories.md)
+  + [Repository Access Information](/help/managing-code/accessing-repositories.md)
+  + [Adding Adobe Repositories](/help/managing-code/adobe-repositories.md)
+  + [Adding Private Repositories](/help/managing-code/private-repositories.md)
+  + [Git Submodule Support](/help/managing-code/git-submodules.md)
+  + [GitHub Check Configuration](/help/managing-code/github-check-config.md)
+  + [GitHub Check Annotations](/help/managing-code/github-annotations.md)
   + [Maven Project Version Handling](/help/managing-code/maven-project-version.md)
-  + [Repositories](/help/managing-code/repositories.md)
   + [Integrating with git](/help/managing-code/git-integration.md)
   + [Working with Multiple git Repositories](/help/managing-code/multiple-git-repos.md)
-  + [Working with Your Own GitHub Repositories](/help/managing-code/byo-github.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](/help/product-update-wizard/overview.md)
   + [Evaluation](/help/product-update-wizard/evaluation.md)
 + Release Notes {#release-notes}
   + [Current Release Notes](/help/release-notes/current.md)
   + 2024 {#2024}
+    + [Release Notes for 2024.5.0](/help/release-notes/2024/2024-5-0.md)
     + [Release Notes for 2024.4.0](/help/release-notes/2024/2024-4-0.md)
     + [Release Notes for 2024.3.0](/help/release-notes/2024/2024-3-0.md)
     + [Release Notes for 2024.2.0](/help/release-notes/2024/2024-2-0.md)

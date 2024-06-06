@@ -789,6 +789,74 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 
 AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named `reindex`. Indexing using this property must be updated before migration to AEM Cloud Service. See the [Content Search and Indexing documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) for more information.
 
+### Index Definition Nodes Must Not Be deployed in UI Content package {#oakpal-ui-content-package}
+
+* **Key**: IndexNotUnderUIContent
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits custom search index definitions (nodes of type `oak:QueryIndexDefinition`) from being deployed in the UI Content package.
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/release-notes/current.md)
+
+### Custom full-text Index Definition Of Type damAssetLucene Must Be Correctly Prefixed With 'damAssetLucene' {#oakpal-dam-asset-lucene}
+
+* **Key**: CustomFulltextIndexesOfTheDamAssetCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits custom full-text index definitions of type `damAssetLucene` from being prefixed with anything other than `damAssetLucene`.
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/release-notes/current.md)
+
+### Index Definition Nodes Must Not Contain Properties With Same Name {#oakpal-index-property-name}
+
+* **Key**: DuplicateNameProperty
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing properties with the same name
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/release-notes/current.md)
+
+### Customizing Of Certain OOTB Index Definitions is Prohibited {#oakpal-customizing-ootb-index}
+
+* **Key**: RestrictIndexCustomization
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits unauthorized modifications of the following OOTB indexes:
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>You are urged to address this as soon as possible since it will cause pipelines to fail starting with the [Cloud Manager August 2024 release.](/help/release-notes/current.md)
+
+### Configuration Of The Tokenizers In Analyzers Should Be Created With The Name 'tokenizer' {#oakpal-tokenizer}
+
+* **Key**: AnalyzerTokenizerConfigCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.6.0
+
+AEM Cloud Service prohibits the creation of tokenizers with incorrect names in analyzers. Tokenizers should always be defined as `tokenizer`.
+
 ## Dispatcher Optimization Tool {#dispatcher-optimization-tool-rules}
 
 The following section lists the Dispatcher Optimization Tool (DOT) checks executed by Cloud Manager. Follow the links for each check for its GitHub definition and details.
