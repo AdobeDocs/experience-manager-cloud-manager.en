@@ -29,7 +29,7 @@ pipelines:
 |---|---|---|---|
 |`shouldDeletePreviousComment`|`true` or `false`|`false`|Whether to keep only the last comment with the code scanning results on this GitHub pull request or keep all|
 |`type`|`CI_CD`|n/a|Defines behavior of a CI/CD pipeline|
-|`template.programID`|Integer|No pipeline variables are reused|Can be used to reuse the [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) that are set on one of the existing pipelines that are created automatically by each PR.|
-|`template.pipelineID`|Integer|No pipeline variables are reused|Can be used to reuse the [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) that are set on one of the existing pipelines that are created automatically by each PR.|
+|`template.programID`|Integer|No pipeline variables are reused|Can be used to reuse the [pipeline variables](/help/getting-started/build-environment.md#pipeline-variables) that are set on one of the existing pipelines that are created automatically by each PR.|
+|`template.pipelineID`|Integer|No pipeline variables are reused|Can be used to reuse the [pipeline variables](/help/getting-started/build-environment.md#pipeline-variables) that are set on one of the existing pipelines that are created automatically by each PR.|
 |`namePrefix`|String|`Full Stack Code Quality Pipeline for PR`|Used to set the name of the pipeline that is created automatically|
 |`importantMetricsFailureBehavior`|`CONTINUE` or `FAIL` or `PAUSE`|`CONTINUE`|Sets the important metric behavior of the pipeline<br>`CONTINUE` = If an important metric fails, the pipeline will move forward automatically<br>`FAIL` = The pipeline will finish with a FAILED status if an important metric fails<br>`PAUSE` = The code scanning step will receive a WAITING status when an important metric fails and must be manually resumed|

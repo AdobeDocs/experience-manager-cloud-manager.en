@@ -14,7 +14,7 @@ If you are using [private repositories](private-repositories.md) for your Cloud 
 
 ![Example of GitHub check annotations](assets/github-check-annotations.png)
 
-[Code quality](/help/implementing/cloud-manager/code-quality-testing.md) issues detected by [SonarQube](/help/implementing/cloud-manager/custom-code-quality-rules.md) are clearly listed. 
+[Code quality](/help/using/code-quality-testing.md) issues detected by [SonarQube](/help/implementing/cloud-manager/custom-code-quality-rules.md) are clearly listed. 
 
 ![Example of code issue annotation](assets/github-check-annotations-example.png)
 
@@ -28,7 +28,7 @@ All annotated lines are aggregated on the **Files Changed** tab on the GitHub pu
 
 ## Code Quality Pipelines {#code-quality-pipelines}
 
-The [code quality](/help/implementing/cloud-manager/code-quality-testing.md) results are also visible in the pipeline which is automatically triggered by Cloud Manager at the bottom of the **Checks** tab. It is also accessible from the **Details** of the check of the pull request.
+The [code quality](/help/using/code-quality-testing.md) results are also visible in the pipeline which is automatically triggered by Cloud Manager at the bottom of the **Checks** tab. It is also accessible from the **Details** of the check of the pull request.
 
 ![Example of annotations](assets/github-check-annotations-code-quality.png)
 

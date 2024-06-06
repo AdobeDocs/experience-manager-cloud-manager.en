@@ -23,7 +23,7 @@ The **Repositories** window makes it easy to add additional Adobe-managed reposi
 
    ![Add Repository dialog](assets/add-repository-wizard.png)
 
-When the wizard closes, your new repository is displayed in the table in the **Repositories** window. You can now associate a [CI/CD pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) with it or manage it within the [**Repositories** window.](managing-repositories)
+When the wizard closes, your new repository is displayed in the table in the **Repositories** window. You can now associate a [CI/CD pipeline](/help/overview/ci-cd-pipelines.md) with it or manage it within the [**Repositories** window.](managing-repositories.md)
 
 >[!TIP]
 >

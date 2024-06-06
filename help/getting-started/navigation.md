@@ -162,7 +162,7 @@ Each program has a lot of options and data associated with it. These data are ga
 * Overview - The program overview as described in the current document
 * [Activity](/help/using/managing-pipelines.md#activity) - The history of pipeline runs of the program
 * [Pipelines](/help/using/managing-pipelines.md#pipelines) - All pipelines configured for the program
-* [Repositories](/help/managing-code/repositories.md) - All repositories configured for the program
+* [Repositories](/help/managing-code/managing-repositories.md) - All repositories configured for the program
 * [Reports](/help/using/monitoring-environments.md#system-monitoring-overview) - Metrics such as SLA data
 * [Environments](/help/using/managing-environments.md) - All environments configured for the program
 * [Content Sets](/help/using/content-copy.md) - Sets of content created for copy purposes

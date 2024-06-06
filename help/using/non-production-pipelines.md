@@ -23,7 +23,7 @@ There are two types of non-production pipelines:
 
 >[!NOTE]
 >
->A pipeline can not be setup until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See the document [Cloud Manager Repositories](/help/managing-code/repositories.md) to learn how to add and manage repositories in Cloud Manager.
+>A pipeline can not be setup until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See the document [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
 ## Adding a Non-Production Pipeline {#add-non-production-pipeline}
 
