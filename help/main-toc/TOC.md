@@ -53,6 +53,7 @@ role: Admin
   + [Content Copy](/help/using/content-copy.md)
 + Managing Code {#managing-code}
   + [Managing Repositories in Cloud Manager](/help/managing-code/managing-repositories.md)
+  + [Repository Access Information](/help/managing-code/accessing-repositories.md)
   + [Adding Adobe Repositories](help/managing-code/adobe-repositories.md)
   + [Adding Private Repositories](/help/managing-code/private-repositories.md)
   + [Git Submodule Support](/help/managing-code/git-submodules.md)

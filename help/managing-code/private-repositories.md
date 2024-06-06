@@ -1,17 +1,17 @@
 ---
-title: Working with Your Own GitHub Repositories in Cloud Manager
-description: Learn how to set up Cloud Manager to work with your own GitHub repositories.
+title: Adding Private Repositories in Cloud Manager
+description: Learn how to set up Cloud Manager to work with your own private GitHub repositories.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 ---
 
-# Working with Your Own GitHub Repositories in Cloud Manager {#byo-github}
+# Adding Private Repositories in Cloud Manager {#private-repositories}
 
-By configuring Cloud Manager to work with your own GitHub repositories, you can validate your code directly within your GitHub repository through Cloud Manager, eliminating the need to consistently sync your code with the Adobe repository.
+Learn how to set up Cloud Manager to work with your own private GitHub repositories.
 
->[!NOTE]
->
->This feature is only available to [the early adopter program.](/help/release-notes/current.md#early-adoption)
+## Overview {#overview}
+
+By configuring Cloud Manager to work with your own private GitHub repositories, you can validate your code directly within your GitHub repository through Cloud Manager, eliminating the need to consistently sync your code with the Adobe repository.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Configuration consists of two main steps:
 
 >[!TIP]
 >
->For details about managing repositories in Cloud Manager, please see the document [Cloud Manager Repositories.](/help/managing-code/repositories.md)
+>For details about managing repositories in Cloud Manager, please see the document [Cloud Manager Repositories.](/help/managing-code/managing-repositories.md)
 
 ### Private Repository Ownership Validation {#validate-ownership}
 
@@ -82,7 +82,7 @@ Note that the **Type** column easily identifies Adobe-provided repositories (**A
 
 If you need to return to the repository at a later date in order to complete the validation, on the **Repositories** page, tap or click the ellipsis button in the row representing the GitHub repository you just added and select **Ownership Validation** from the drop-down menu.
 
-## Using Your Own GitHub Repositories with Cloud Manager {#using}
+## Using Private Repositories with Cloud Manager {#using}
 
 After the GitHub repository is validated in Cloud Manager the integration is completed and you can use the repository with Cloud Manager.
 
@@ -97,6 +97,22 @@ After the GitHub repository is validated in Cloud Manager the integration is com
     ![GitHub code quality checks](/help/assets/repositories/github-code-quality.png)
 
 When the pull request is closed or merged, the full stack code quality pipeline created is automatically deleted.
+
+>[!TIP]
+>
+>See the document [GitHub Check Annotations](github-annotations.md) for details on the information provided via GitHub when pull request checks are run.
+
+>[!TIP]
+>
+>You can control the pipelines that are created automatically to validate each pull request to a private repository. Please see the document [GitHub Check Configuration for Private Repositories](github-check-config.md) for more information.
+
+## Associating Private Repositories with Pipelines {#pipelines}
+
+Validated private repositories can be associated with [full-stack and frontend pipelines.](/help/overview/ci-cd-pipelines.md)
+
+>[!NOTE]
+>
+>Web tier and config pipelines are not supported with private repositories.
 
 ## Limitations {#limitations}
 
