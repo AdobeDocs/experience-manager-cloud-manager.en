@@ -18,84 +18,77 @@ Repositories created in Cloud Manager will also be available for you to select w
 
 There is a single primary repository or a branch for any given pipeline. With [git submodule support,](git-submodules.md) many secondary branches can be included at build time.
 
+## Repositories Window {#repositories-window}
 
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
+1. From the **Program Overview** page, select the **Repositories** tab to switch to the **Repositories** page.
 
+1. The **Repositories** window displays all repositories associated with your program.
 
+   ![Repositories window](assets/repositories.png)
 
+The **Repositories** window provides details about the repositories:
 
-## Accessing Repositories {#accessing-repos}
+* The type of repository
+  * **Adobe** indicates Adobe-managed repositories
+  * **Private** indicates GitHub repositories that you manage
+* When it was created
+* Pipelines that are associated with the repository
 
-You can access and manage your git repositories in a self-service from Cloud Manager.
+You can select the repository in the window and click the ellipsis button to take action on the selected repository.
 
-To access your repository, use the **Access Repo Info** button available in Cloud Manager, most prominently on the pipeline card.
+* **[Check Branches / Create Project](#check-branches)** (only available for Adobe repositories)
+* **[Copy Repository URL](#copy-url)**
+* **[View &amp; Update](#view-update)**
+* **[Delete](#delete)**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
+![Repository actions](assets/repository-actions.png)
 
-1. Navigate to **Pipelines** card from the **Program Overview** page and you will see the **Access Repo Info** option to access and manage your git repository [configured with this pipeline.](/help/using/production-pipelines.md)
+## Adding Repositories {#adding-repositories}
 
-   ![Access repo info button](/help/assets/access-repo1.png)
+Tap or click the **Add Repository** button in the **Repositories** window to start the **Add Repository** wizard.
 
-1. Tap or click the **Access Repo Info** button to open a dialog that presents:
+![Add repository wizard](assets/add-repository-wizard.png)
 
-   * The URL to the git repository
-   * User name
-   * Password
-   * Git command to execute to clone the repository locally
+Cloud Manager supports both repositories managed by Adobe (**Adobe Repository**) as well as your own self-managed repositories (**Private Repository**). The required fields differ depending on the type of repository you choose to add. See the following documents for more details.
 
-   ![Repository information dialog](/help/assets/access-repo-create.png)
-
-Use the provided information to clone the repository locally so you can begin local development.
+* [Adding Adobe Repositories in Cloud Manager](adobe-repositories.md)
+* [Adding Private Repositories in Cloud Manager](private-repositories.md)
 
 >[!NOTE]
 >
->The **Access Repo Info** option is visible to users in the **Developer** or **Deployment Manager** role. 
+>* A user must have the role **Deployment Manager** or **Business Owner** to be able to add a repository.
+>* There is a limit of 300 repositories across all programs in any given company or IMS organization.
 
-## Adding Repositories {#add-repos}
+## Access Repo Info {#repo-info}
 
-Follow these steps to add repositories in Cloud Manager:
+When viewing your repositories in the **Repositories** window, you can view the details on how to access the Adobe-managed repositories programmatically by tapping or clicking the **Access Repo Info** button in the toolbar.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
+![Repository information](assets/access-repo-info.png)
 
-1. From the **Program Overview** page, click on **Repositories** tab and navigate to the **Repositories** page.
+The **Repository Info** window opens with the details. For more information on accessing repository information, please see the document [Accessing Repository Information.](accessing-repositories.md)
 
-1. Click on **Add Repository** to launch the wizard.
+## Check Branches {#check-branches}
 
-   >[!NOTE]
-   >
-   >You must have the **Deployment Manager** or **Business Owner** role to add a repository.
+## Copy Repository URL {#copy-url}
 
-   ![Add repository](/help/assets/create-repo2.png)
-  
-1. Enter the name and description as requested and click on **Save**.
+The **Copy Repository URL** action copies the URL of the repository selected in the **Repositories** window to the clipboard to be used elsewhere.
 
-   ![Details of repo](/help/assets/repo-1.png)
+## View &amp; Update {#view-update}
 
-1. Select **Save**.
+The **View &amp; Update** action opens the **Update Repository** dialog. Using it you can view the **Name** and **Repository URL preview** as well as update the **Description** of the repository.
 
-Your newly created repo will be displayed.
+![View and update repository information](assets/update-repository.png)
 
-Repositories created in Cloud Manager are available for you to select when you [create your pipelines.](/help/overview/ci-cd-pipelines.md)
+## Delete {#delete}
 
-## View and Edit Repositories {#edit-repos}
+The **Delete** action removes the repository from your project. A repository can not be deleted if it is associated with a pipeline.
 
-Follow these steps to edit and view repositories in Cloud Manager:
-
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
-
-1. From the **Program Overview** page, click on **Repositories** tab and navigate to the **Repositories** page. Here you can view the details of your existing repositories.
-
-1. Select the repository and click on the ellipsis button at the far right of the table to **Copy Repository URL** or **View & Update** your repository.
-
-![Edit repo](/help/assets/create-repo3.png)
-
-## Deleting Repositories {#delete-repos}
-
-To delete a repository, follow the same steps [to view and edit repositories](#edit-repos) but on the **Repositories** page select **Delete** from the ellipsis button of the repository to be deleted.
+![Delete](assets/delete.png)
 
 Note that when a repository is deleted in Cloud Manager, it is marked as deleted and is no longer accessible to the user, but it is maintained in the system for recovery purposes.
 
-If you try to create a new repository after deleting a repository with the same name you will receive the error message "An error has occurred while trying to create repository. Please contact your CSE or Adobe Support."
+If you try to create a new repository after deleting a repository with the same name you will receive the error message `An error has occurred while trying to create repository. Please contact your CSE or Adobe Support.`
 
 If you receive this error message, please contact Adobe Support so they can assist in renaming the deleted repository or choose a different name for your new repository.
-
