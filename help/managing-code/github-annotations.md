@@ -34,4 +34,4 @@ The [code quality](/help/implementing/cloud-manager/code-quality-testing.md) res
 
 ![Example of annotations](assets/github-check-annotations-code-quality-2.png)
 
-You can also visualize the issues in the form of a CSV. This can be retrieved by [viewing the details of the pipeline execution in Cloud Manager.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)
+You can also visualize the issues in the form of a CSV. This can be retrieved by [viewing the details of the pipeline execution in Cloud Manager.](/help/using/managing-pipelines.md)

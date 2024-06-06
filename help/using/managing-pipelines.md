@@ -90,6 +90,10 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 >
 >You can not edit a running pipeline.
 
+>[!NOTE]
+>
+>Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/managing-code/private-repositories.md) for details and the full list of limitations.
+
 ## Deleting Pipelines {#deleting-pipelines}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
@@ -121,6 +125,15 @@ Once a pipeline step is complete, a summary is presented.
 Tap or click the **View details** link to reveal the **Duration** section. This includes the average duration for the pipeline based on the historical trend for that program.
 
 ![Duration](/help/assets/configure-pipelines/duration.png)
+
+If your pipeline contained a **Code Scanning** step, which raised issues, you can tap or click the **Download Details** button to view a list of [code quality tests](/help/using/code-quality-testing.md) that did not pass.
+
+![Code quality issues](assets/managing-pipelines-code-quality-issues.png)
+
+A **Project File Location** column is available in the CSV file to indicate the location of the offending code. This column is the project-relative path, whereas the **File Location** column is Maven-generated.
+
+![Project code scan issue details](assets/managing-pipelines-code-quality-details.png)
+
 
 >[!NOTE]
 >
