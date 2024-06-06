@@ -14,7 +14,7 @@ If you are using [private repositories](private-repositories.md) for your Cloud 
 
 ![Example of GitHub check annotations](assets/github-check-annotations.png)
 
-[Code quality](/help/using/code-quality-testing.md) issues detected by [SonarQube](/help/implementing/cloud-manager/custom-code-quality-rules.md) are clearly listed. 
+[Code quality](/help/using/code-quality-testing.md) issues detected by [SonarQube](/help/using/custom-code-quality-rules.md) are clearly listed. 
 
 ![Example of code issue annotation](assets/github-check-annotations-example.png)
 
