@@ -116,10 +116,12 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 ## Limitations {#limitations}
 
-Please keep the following limitations in mind as you use your own GitHub repositories with Cloud Manager.
+Certain limitations apply when using private repositories with Cloud Manager.
 
-* You can't use the GitHub repositories as the direct repository source for the pipelines you manage.
-  * This functionality is planned.
-* You can't pause the pull request validation using the GitHub check from cloud manager.
+* You can not use private repositories as the direct repository source for the pipelines you manage.
+* You can not pause the pull request validation using the GitHub check from Cloud Manager.
   * If the GitHub repository is validated in Cloud Manager, Cloud Manager will always try to validate the pull requests created for that repository.
-If the Adobe GitHub app is removed from your GitHb organization, this will remove the pull requests validation feature for all repositories.
+* If the Adobe GitHub app is removed from your GitHb organization, this will remove the pull requests validation feature for all repositories.
+* No git tag will be created and pushed when using private repositories on production full stack pipelines.
+* Pipelines using private repositories and the on-commit build trigger are not started automatically when a new commit is pushed into the selected branch.
+* [Artifact reuse functionality](/help/getting-started/project-setup.md#build-artifact-reuse) does not apply to private repositories.
