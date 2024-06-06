@@ -1,11 +1,11 @@
 ---
 title: GitHub Check Configuration for Private Repositories
-description: Learn how control the pipelines that are created automatically to validate each pull request to a private repository.
+description: Learn how to control the pipelines that are created automatically to validate each pull request to a private repository.
 ---
 
 # GitHub Check Configuration for Private Repositories {#github-check-config}
 
-Learn how control the pipelines that are created automatically to validate each pull request to a private repository.
+Learn how to control the pipelines that are created automatically to validate each pull request to a private repository.
 
 ## Configuration of GitHub Checks {#configuration}
 
@@ -27,7 +27,7 @@ pipelines:
 
 |Parameter|Possible Values|Default|Description|
 |---|---|---|---|
-|`shouldDeletePreviousComment`|`true` or `false`|`false`|Whether to keep only the last comment with the code scanning results on his github pull request or keep all|
+|`shouldDeletePreviousComment`|`true` or `false`|`false`|Whether to keep only the last comment with the code scanning results on this GitHub pull request or keep all|
 |`type`|`CI_CD`|n/a|Defines behavior of a CI/CD pipeline|
 |`template.programID`|Integer|No pipeline variables are reused|Can be used to reuse the [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) that are set on one of the existing pipelines that are created automatically by each PR.|
 |`template.pipelineID`|Integer|No pipeline variables are reused|Can be used to reuse the [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) that are set on one of the existing pipelines that are created automatically by each PR.|

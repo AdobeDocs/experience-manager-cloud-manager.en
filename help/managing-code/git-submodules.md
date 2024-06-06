@@ -3,7 +3,7 @@ title: Git Submodule Support
 description: Learn how you can use Git submodules to merge the content of multiple branches across git repositories at build time.
 ---
 
-# Git Submodule Support {#git-submodule-support}
+# Git Submodule Support for Adobe Repositories {#git-submodule-support}
 
 Git submodules can be used to merge the content of multiple branches across git repositories at build time. 
 
@@ -58,7 +58,7 @@ This results in a `.gitmodules` file that looks like this:
 
 More information on git submodules can be found in the [Git reference manual](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-### Limitations {#limitations}
+## Limitations {#limitations}
 
 When using git submodules, please be aware:
 
