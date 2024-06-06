@@ -22,6 +22,9 @@ The release date for [!UICONTROL Cloud Manager] release 2024.6.0 is 6 June 2024.
 * You can now [use your own GitHub repositories](/help/managing-code/private-repositories.md) as sources for both full-stack and frontend pipelines.
   * Additionally, you can take advantage of GitHub repositories with [git submodules,](/help/managing-code/git-submodules.md) providing you with enhanced control over the auto-generated pipelines used for pull request validation and allowing you to define behaviors for crucial metrics during the code scanning phase.
   * [You also have the choice](/help/managing-code/github-check-config.md) to preserve the report history on GitHub, name the pipeline, and set pipeline variables to suit your needs.
+* New OakPal rules were added to the [Cloud Manager Code Quality scan.](/help/using/custom-code-quality-rules.md)
+  * Every new rule added as of June 2024 is a non-breaking change.
+  * You are urged to address these as soon as possible since these new rules will cause pipelines to fail starting with the Cloud Manager August 2024 release.
 
 ## Early Adoption Program {#early-adoption}
 
