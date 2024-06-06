@@ -52,11 +52,13 @@ role: Admin
   + [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md)
   + [Content Copy](/help/using/content-copy.md)
 + Managing Code {#managing-code}
+  + [Managing Repositories in Cloud Manager](/help/managing-code/managing-repositories.md)
+  + [Adding Adobe Repositories](help/managing-code/adobe-repositories.md)
+  + [Adding Private Repositories](/help/managing-code/private-repositories.md)
+  + [Git Submodule Support](/help/managing-code/git-submodules.md)
   + [Maven Project Version Handling](/help/managing-code/maven-project-version.md)
-  + [Repositories](/help/managing-code/repositories.md)
   + [Integrating with git](/help/managing-code/git-integration.md)
   + [Working with Multiple git Repositories](/help/managing-code/multiple-git-repos.md)
-  + [Working with Your Own GitHub Repositories](/help/managing-code/byo-github.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](/help/product-update-wizard/overview.md)
   + [Evaluation](/help/product-update-wizard/evaluation.md)

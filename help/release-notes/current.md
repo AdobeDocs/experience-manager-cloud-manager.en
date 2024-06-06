@@ -19,7 +19,9 @@ The release date for [!UICONTROL Cloud Manager] release 2024.6.0 is 6 June 2024.
 
 ## What's New {#what-is-new}
 
-* 
+* You can now [use your own GitHub repositories](/help/managing-code/private-repositories.md) as sources for both full-stack and frontend pipelines.
+  * Additionally, you can take advantage of GitHub repositories with [git submodules,](/help/implementing/cloud-manager/managing-code/git-submodules.md) providing you with enhanced control over the auto-generated pipelines used for pull request validation and allowing you to define behaviors for crucial metrics during the code scanning phase.
+  * [You also have the choice](/help/implementing/cloud-manager/managing-code/github-check-config.md) to preserve the report history on GitHub, name the pipeline, and set pipeline variables to suit your needs.
 
 ## Early Adoption Program {#early-adoption}
 
@@ -30,13 +32,3 @@ Be a part of our early adoption program and have a chance to test some upcoming 
 Support for [staging-only and production-only pipelines](/help/using/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
 
 If you are interested in testing this new feature and sharing your feedback, please send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. 
-
-### Bring your own GitHub {#byo-github}
-
-If you use GitHub to manage your repositories, [you can now validate code directly within your GitHub repositories through Cloud Manager.](/help/managing-code/byo-github.md) This integration eliminates the need to consistently sync code with the Adobe repository and allows you to verify pull requests before merging them into the main branches. This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
-
-If you are interested in testing this new feature and sharing your feedback, please send an email to `Grp-CloudManager_BYOG@adobe.com` from your email address associated with your Adobe ID.
-
-## Bug Fixes {#bug-fixes}
-
-* 

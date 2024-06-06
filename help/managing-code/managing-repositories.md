@@ -1,12 +1,28 @@
 ---
-title: Cloud Manager Repositories
-description: Learn how to access, create, and edit repositories for your Cloud Manager programs.
+title: Managing Repositories in Cloud Manager
+description: Learn how to create, view, and edit your git repositories in Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 ---
 
 # Cloud Manager Repositories {#cloud-manager-repos} 
 
-Repositories are where you manage your code by using git. Learn how to create repositories for your Cloud Manager programs.
+Learn how to create, view, and edit your git repositories in Cloud Manager.
+
+## Overview {#overview}
+
+Repositories are used to store and manage your project's code using Git. Every program you create in Cloud Manager has an Adobe-managed repository created for it.
+
+You can choose to create additional Adobe-manage repositories and also add your own private repositories. All repositories associated with your program can be viewed in the **Repositories** window.
+
+Repositories created in Cloud Manager will also be available for you to select when adding or editing pipelines. See [CI-CD Pipelines](/help/overview/ci-cd-pipelines.md) to learn more.
+
+There is a single primary repository or a branch for any given pipeline. With [git submodule support,](git-submodules.md) many secondary branches can be included at build time.
+
+
+
+
+
+
 
 ## Accessing Repositories {#accessing-repos}
 
@@ -83,69 +99,3 @@ If you try to create a new repository after deleting a repository with the same 
 
 If you receive this error message, please contact Adobe Support so they can assist in renaming the deleted repository or choose a different name for your new repository.
 
-## Git Submodule Support {#git-submodule-support}
-
-Git submodules can be used to merge the content of multiple branches across git repositories at build time. 
-
-When Cloud Manager's build process executes, after the repository configured for the pipeline is cloned and the configured branch is checked out, if the branch contains a `.gitmodules` file in the root directory, the command is executed.
-
-```
-$ git submodule update --init
-```
-
-This will check out each submodule into the appropriate directory. This technique is a potential alternative to [working with multiple source Git repositories](/help/managing-code/multiple-git-repos.md) for organizations which are comfortable with using git submodules and do not want to manage an external merging process.
-
-For example, let's say there are three repositories, each containing a single branch named `main`. In the "primary" repository, i.e. the one configured in the pipelines, the `main` branch has a `pom.xml` file declaring the projects contained in the other two repositories:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-   
-    <groupId>customer.group.id</groupId>
-    <artifactId>customer-reactor</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-   
-    <modules>
-        <module>project-a</module>
-        <module>project-b</module>
-    </modules>
-   
-</project>
-```
-
-You would then add submodules for the other two repositories:
-
-```shell
-$ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
-$ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
-```
-
-This results in a `.gitmodules` file that looks like this:
-
-```text
-[submodule "project-a"]
-    path = project-a
-    url = https://git.cloudmanager.adobe.com/ProgramName/projectA/
-    branch = main
-[submodule "project-b"]
-    path = project-b
-    url = https://git.cloudmanager.adobe.com/ProgramName/projectB/
-    branch = main
-```
-
-More information on git submodules can be found in the [Git reference manual](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
-
-### Limitations {#limitations}
-
-When using git submodules, please be aware:
-
-* The git URL must be exactly in the syntax described above.
-* For security reasons, do not embed credentials in these URLs.
-* Only submodules at the root of the branch are supported.
-* Git submodules references are stored to specific git commits.
-  * As a result, when changes to the submodule repository are made, the commit referenced needs to be updated, for example, by using `git submodule update --remote`.
-* Unless otherwise necessary, it is highly recommended to use "shallow" submodules.
-  * To do this, run `git config -f .gitmodules submodule.<submodule path>.shallow true` for each submodule.
