@@ -118,7 +118,6 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 Certain limitations apply when using private repositories with Cloud Manager.
 
-* You can not use private repositories as the direct repository source for the pipelines you manage.
 * You can not pause the pull request validation using the GitHub check from Cloud Manager.
   * If the GitHub repository is validated in Cloud Manager, Cloud Manager will always try to validate the pull requests created for that repository.
 * If the Adobe GitHub app is removed from your GitHb organization, this will remove the pull requests validation feature for all repositories.

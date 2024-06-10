@@ -26,7 +26,7 @@ Stage-only and prod-only pipelines offer solutions to these use-cases by providi
 * **Prod-Only Deployment Pipelines** deploy only to a production environment with the option to select an execution successfully finished and validated on stage and deploy its artifacts on prod.  
   * Prod-only pipelines will reuse the artifacts from the stage deployments, skipping the building phase.
 
-Neither stage-only nor prod-only pipelines will be executed while a full-stack production pipeline is running and vice-versa.
+Neither stage-only nor prod-only pipelines will be executed while a full-stack production pipeline is running and vice-versa. If both the stage-only and the full-stack production pipeline have the **On Git Changes** trigger configured and are pointing to the same branch and repository, only the stage-only pipeline is automatically started. Prod-only pipelines are not started **On Git Changes** since they are not directly linked to a repository.
 
 These dedicated pipelines offer more flexibility, but please note the following details of operation and recommendations.
 

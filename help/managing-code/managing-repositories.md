@@ -32,7 +32,7 @@ The **Repositories** window provides details about the repositories:
 
 * The type of repository
   * **Adobe** indicates Adobe-managed repositories
-  * **Private** indicates GitHub repositories that you manage
+  * **GitHub** indicates private GitHub repositories that you manage
 * When it was created
 * Pipelines that are associated with the repository
 
@@ -70,6 +70,13 @@ When viewing your repositories in the **Repositories** window, you can view the 
 The **Repository Info** window opens with the details. For more information on accessing repository information, please see the document [Accessing Repository Information.](accessing-repositories.md)
 
 ## Check Branches {#check-branches}
+
+The **Check Branches / Create Project** action performs two functions depending on the state of the repository.
+
+* If the repository is newly-created, the action creates a sample project based on [the AEM project archetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+* If the repository already has had the sample project created, it checks the state of the repository and its branches and reports back if the sample project already exists.
+
+![Check branches action](assets/check-branches.png)
 
 ## Copy Repository URL {#copy-url}
 
