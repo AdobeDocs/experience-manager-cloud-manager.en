@@ -1,8 +1,8 @@
 ---
 title: GitHub Check Configuration for Private Repositories
 description: Learn how to control the pipelines that are created automatically to validate each pull request to a private repository.
+exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
 ---
-
 # GitHub Check Configuration for Private Repositories {#github-check-config}
 
 Learn how to control the pipelines that are created automatically to validate each pull request to a private repository.

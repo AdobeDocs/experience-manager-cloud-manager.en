@@ -1,8 +1,8 @@
 ---
 title: Git Submodule Support
 description: Learn how you can use Git submodules to merge the content of multiple branches across git repositories at build time.
+exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
 ---
-
 # Git Submodule Support for Adobe Repositories {#git-submodule-support}
 
 Git submodules can be used to merge the content of multiple branches across git repositories at build time. 

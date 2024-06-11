@@ -1,8 +1,8 @@
 ---
 title: Repository Access Information
 description: Learn how to access and manage your Adobe-managed git repositories using the self-service git account management from Cloud Manager.
+exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
 ---
-
 # Repository Access Information {#accessing-repos}
 
 Learn how to access and manage your Adobe-managed git repositories using the self-service git account management from Cloud Manager.
