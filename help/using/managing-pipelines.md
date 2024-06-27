@@ -90,10 +90,6 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 >
 >You can not edit a running pipeline.
 
->[!NOTE]
->
->Web tier and config pipelines are not supported with private repositories. Please see the document [Adding Private Repositories in Cloud Manager](/help/managing-code/private-repositories.md) for details and the full list of limitations.
-
 ## Deleting Pipelines {#deleting-pipelines}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
