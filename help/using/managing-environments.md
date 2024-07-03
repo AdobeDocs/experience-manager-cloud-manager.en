@@ -48,6 +48,10 @@ The **Environments** screen displays each production and staging environments in
 
 >[!NOTE]
 >
+>Environment details such as name can not be changed once they are provisioned.
+
+>[!NOTE]
+>
 >If you require your environment logs they can be requested via your Customer Success Engineer.
 
 ## Video Tutorial {#video-tutorial}
