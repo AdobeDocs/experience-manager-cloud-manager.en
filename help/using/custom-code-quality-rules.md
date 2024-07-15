@@ -857,6 +857,15 @@ AEM Cloud Service prohibits unauthorized modifications of the following OOTB ind
 
 AEM Cloud Service prohibits the creation of tokenizers with incorrect names in analyzers. Tokenizers should always be defined as `tokenizer`.
 
+### Configuration Of Indexing Definitions Should Not Contain Spaces {#oakpal-indexing-definitions-spaces}
+
+* **Key**: PathSpacesCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.7.0
+
+AEM Cloud Service prohibits creation of indexing definitions which contain properties with spaces.
+
 ## Dispatcher Optimization Tool {#dispatcher-optimization-tool-rules}
 
 The following section lists the Dispatcher Optimization Tool (DOT) checks executed by Cloud Manager. Follow the links for each check for its GitHub definition and details.
