@@ -19,6 +19,10 @@ The release date for [!UICONTROL Cloud Manager] release 2024.7.0 is 18 July 2024
 
 ## What's New {#what-is-new}
 
+* The [production pipeline](/help/using/production-pipelines.md#adding-production-pipeline) and [non-production pipeline](/help/using/non-production-pipelines.md#adding-non-production-pipeline) trigger **On Git Changes** to start the pipeline on a commit is now available for [private repositories.](/help/managing-code/private-repositories.md)
+* A pre-production pipeline is only triggerable manually and can not be configured as **On Git Changes**.
+* For production-only pipelines, the list of promotable executions includes those that have the artifact version greater than the artifact version deployed on the production environment.
+
 ## Early Adoption Program {#early-adoption}
 
 Be a part of our early adoption program and have a chance to test some upcoming features
@@ -28,5 +32,3 @@ Be a part of our early adoption program and have a chance to test some upcoming 
 Support for [staging-only and production-only pipelines](/help/using/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
 
 If you are interested in testing this new feature and sharing your feedback, please send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. 
-
-## Bug Fixes {#bug-fixes}
