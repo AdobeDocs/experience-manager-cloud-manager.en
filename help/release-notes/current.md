@@ -22,6 +22,8 @@ The release date for [!UICONTROL Cloud Manager] release 2024.7.0 is 18 July 2024
 * The [production pipeline](/help/using/production-pipelines.md#adding-production-pipeline) and [non-production pipeline](/help/using/non-production-pipelines.md#adding-non-production-pipeline) trigger **On Git Changes** to start the pipeline on a commit is now available for [private repositories.](/help/managing-code/private-repositories.md)
 * A pre-production pipeline is only triggerable manually and can not be configured as **On Git Changes**.
 * For production-only pipelines, the list of promotable executions includes those that have the artifact version greater than the artifact version deployed on the production environment.
+* [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) has been updated to [version 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+
 
 ## Early Adoption Program {#early-adoption}
 
