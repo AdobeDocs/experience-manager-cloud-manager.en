@@ -1,36 +1,43 @@
 ---
-title: Release Notes for 2024.7.0
-description: These are the release notes for Cloud Manager release 2024.7.0.
+title: Release Notes for Cloud Manager 2024.8.0
+description: Learn about the release notes for Cloud Manager 2024.8.0.
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+
 ---
 
-# Release Notes for Cloud Manager Release 2024.7.0 {#release-notes}
+# Release notes for Cloud Manager 2024.8.0 {#release-notes}
 
-This page documents the release notes for [!UICONTROL Cloud Manager] release 2024.7.0.
+This page documents the release notes for [!UICONTROL Cloud Manager] 2024.8.0.
 
 >[!NOTE]
 >
->For the latest release notes for Cloud Manager in AEM as a Cloud Service, refer to [Cloud Manager in AEM as a Cloud Service's current release notes.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
+>For the latest release notes for Cloud Manager in AEM as a Cloud Service, refer to [Cloud Manager in AEM as a Cloud Service's current release notes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current).
 
-## Release Date {#release-date}
+## Release date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] release 2024.7.0 is 18 July 2024. The next release is planned for 8 August 2024.
+The release date for [!UICONTROL Cloud Manager] 2024.8.0 is July 18, 2024. The next release is planned for August 8, 2024.
 
-## What's New {#what-is-new}
+## What's new {#what-is-new}
 
-* The [production pipeline](/help/using/production-pipelines.md#adding-production-pipeline) and [non-production pipeline](/help/using/non-production-pipelines.md#adding-non-production-pipeline) trigger **On Git Changes** to start the pipeline on a commit is now available for [private repositories.](/help/managing-code/private-repositories.md)
-* A pre-production pipeline is only triggerable manually and can not be configured as **On Git Changes**.
-* For production-only pipelines, the list of promotable executions includes those that have the artifact version greater than the artifact version deployed on the production environment.
-* [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) has been updated to [version 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+* The `sonar-maven-plugin` is now upgraded to work with Java 17 to Java 21. The plug-in is used to integrate SonarQube, a tool for continuous inspection of code quality, into the build process. <!-- CMGR-58634 -->
+* A documentation update was made to the current list of [Copy Content tool limitations](/help/using/content-copy.md#limitations). See the last four bullets in the list. <!-- CQDOC-21876 -->
+* If the `authorizeEmergencyExecutionMode` flag is set to true, you can start a classic production pipeline in *emergency mode*, skipping stage testing. You can now enable this *emergency mode* from directly in the user interface for stage and pre-production pipelines. <!-- CMGR-58091 -->
 
 
-## Early Adoption Program {#early-adoption}
+## Early adoption program {#early-adoption}
 
-Be a part of our early adoption program and have a chance to test some upcoming features
+Be a part of Adobe's early adoption program and have a chance to test some upcoming features.
 
-### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
+### Staging-only and production-only pipelines {#staging-production-only-pipelines}
 
-Support for [staging-only and production-only pipelines](/help/using/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
+Adobe is excited to announce the introduction of support for [staging-only and production-only pipelines](/help/using/stage-prod-only.md). This new feature lets you divide full-stack production deployment pipelines into smaller, more specialized deployments.
 
-If you are interested in testing this new feature and sharing your feedback, please send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. 
+If you would like to test this feature and provide feedback, email `Grp-cloudmanager_splitpipelines@adobe.com` using the email address associated with your Adobe ID.
+
+
+## Bug fixes
+
+* In rare cases, the pipeline step was found to be running even after the pipeline was deleted. <!-- CMGR-58614 -->
+* In rare instances, when customers tried to re-run the pipeline multiple times, only the first attempt functioned correctly.
+* You create a full stack pipeline with the schedule step enabled, then start the deployment and proceed to the schedule step. After selecting any date, then waiting a few seconds, the **[!UICONTROL Now]** option was getting selected automatically, and the date was resetting to the default value. <!-- CMGR-58318 -->
+* In rare cases, performing a [copy content ](/help/using/content-copy.md#copy-content) task incorrectly displayed an *In progress* status even though it failed. <!-- CMGR-58297 -->
