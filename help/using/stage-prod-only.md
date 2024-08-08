@@ -87,7 +87,11 @@ A stage-only pipeline runs in nearly the same way as standard coupled pipelines.
 
 ![Stage-only pipeline run](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-The **Promote Build** button only appears if you are on the latest successful stage-only pipeline execution. Once tapped or clicked, it will ask you to confirm the run of the prod-only pipeline or to create a prod-only pipeline if one does not already exist.
+Clicking **Promote Build** prompts you to confirm the run of the stage-only pipeline by clicking **Normal Mode**, or skip security tests and performance tests by clicking **Emergency Mode**.
+
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
+
+Or, you are prompted to create a prod-only pipelinecreate one if it does not already exist.
 
 ### Prod-Only Pipelines {#prod-only-run}
 
