@@ -18,10 +18,7 @@ The release date for [!UICONTROL Cloud Manager] 2024.8.0 is August 8, 2024. The 
 
 ## What's new {#what-is-new}
 
-* For stage-only and production-only pipelines available as part of the early adopter program, you can now execute them in emergency mode, skipping stage testing.
-
-* If the `authorizeEmergencyExecutionMode` flag is set to true, you can start a classic production pipeline in *Emergency Mode*, skipping stage testing. You can now select this *Emergency Mode* from directly in the user interface for stage-only and pre-production pipelines. See [Stage-Only Pipelines](/help/using/stage-prod-only.md#stage-only-run) <!-- CMGR-58091 -->
-
+* For stage-only and production-only pipelines (available as part of the [early adopter program](#staging-production-only-pipelines)), you can now execute them in [emergency mode,](/help/using/stage-prod-only.md#emergency-mode) skipping stage testing.
 
 ## Early adoption program {#early-adoption}
 
@@ -33,10 +30,9 @@ Adobe is excited to announce the introduction of support for [staging-only and p
 
 If you would like to test this feature and provide feedback, email `Grp-cloudmanager_splitpipelines@adobe.com` using the email address associated with your Adobe ID.
 
-
 ## Bug fixes
 
-* In rare cases, the pipeline step was found to be running even after the pipeline was deleted. <!-- CMGR-58614 -->
-* In rare instances, when customers tried to re-run the pipeline multiple times, only the first attempt functioned correctly.
-* You create a full stack pipeline with the schedule step enabled, then start the deployment and proceed to the schedule step. After selecting any date, then waiting a few seconds, the **[!UICONTROL Now]** option was getting selected automatically, and the date was resetting to the default value. <!-- CMGR-58318 -->
-* In rare cases, performing a [copy content ](/help/using/content-copy.md#copy-content) task incorrectly displayed an *In progress* status even though it failed. <!-- CMGR-58297 -->
+* A rare issue was corrected where pipeline steps were found to be running after the pipeline was deleted.
+* Re-running the pipeline now works on the first attempt, correcting a rare issue where a rerun had to be started multiple times.
+* Scheduled deployment steps for full-stack pipelines now respect the selected scheduled date and do not revert to **Now**.
+* The statuses of failed copy content tasks are now properly reflected and no longer incorrectly show an `In Progress` status in rare circumstances.
