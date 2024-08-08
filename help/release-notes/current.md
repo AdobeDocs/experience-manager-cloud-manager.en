@@ -2,7 +2,6 @@
 title: Release Notes for Cloud Manager 2024.8.0
 description: Learn about the release notes for Cloud Manager 2024.8.0.
 feature: Release Information
-
 ---
 
 # Release notes for Cloud Manager 2024.8.0 {#release-notes}
@@ -19,8 +18,8 @@ The release date for [!UICONTROL Cloud Manager] 2024.8.0 is August 8, 2024. The 
 
 ## What's new {#what-is-new}
 
-* The `sonar-maven-plugin` is now upgraded to work with Java 17 to Java 21. The plug-in is used to integrate SonarQube, a tool for continuous inspection of code quality, into the build process. <!-- CMGR-58634 -->
-* A documentation update was made to the current list of [Copy Content tool limitations](/help/using/content-copy.md#limitations). See the last four bullets in the list. <!-- CQDOC-21876 -->
+* For stage-only and production-only pipelines available as part of the early adopter program, you can now execute them in emergency mode, skipping stage testing.
+
 * If the `authorizeEmergencyExecutionMode` flag is set to true, you can start a classic production pipeline in *Emergency Mode*, skipping stage testing. You can now select this *Emergency Mode* from directly in the user interface for stage-only and pre-production pipelines. See [Stage-Only Pipelines](/help/using/stage-prod-only.md#stage-only-run) <!-- CMGR-58091 -->
 
 

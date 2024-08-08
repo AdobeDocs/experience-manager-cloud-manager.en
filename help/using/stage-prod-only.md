@@ -77,9 +77,19 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 ## Running Prod-Only and Stage-Only Pipelines {#running}
 
-Prod-only and stage-only pipelines are run in the same way as [all other pipelines are run.](/help/using/managing-pipelines.md#running-pipelines) Please see that documentation for details.
+Prod-only and stage-only pipelines are run in largely the same way as [all other pipelines are run.](/help/using/managing-pipelines.md#running-pipelines) Please see that documentation for details. However there are two new features of these pipelines.
 
-In addition, a prod-only pipeline run can be triggered directly from the execution details of a stage-only pipeline.
+* Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to allow skipping testing.
+* Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline.](#stage-only-run)
+
+### Emergency Mode {#emergency-mode}
+
+Whenever you start production-only and staging-online pipelines you are prompted to confirm the start as well as how it will start.
+
+* **Normal Mode** is a standard run and includes stage testing steps.
+* **Emergency Mode** skips stage testing steps.
+
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
 
 ### Stage-Only Pipelines {#stage-only-run}
 
@@ -87,11 +97,9 @@ A stage-only pipeline runs in nearly the same way as standard coupled pipelines.
 
 ![Stage-only pipeline run](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Clicking **Promote Build** prompts you to confirm the run of the stage-only pipeline by clicking **Normal Mode**, or skip security tests and performance tests by clicking **Emergency Mode**.
+Clicking **Promote Build** prompts you to confirm the run of the related stage-only pipeline either normally or in [emergency mode.](#emergency-mode)
 
-![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
-
-Or, you are prompted to create a prod-only pipelinecreate one if it does not already exist.
+If a prod-only pipeline does not exist, you will be prompted to create one.
 
 ### Prod-Only Pipelines {#prod-only-run}
 
