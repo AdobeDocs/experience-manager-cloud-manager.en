@@ -14,7 +14,7 @@ This page documents the release notes for [!UICONTROL Cloud Manager] 2024.8.0.
 
 ## Release date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] 2024.8.0 is August 12, 2024. The next release is planned for September 14, 2024.
+The release date for [!UICONTROL Cloud Manager] 2024.8.0 is August 13, 2024. The next release is planned for September 14, 2024.
 
 ## What's new {#what-is-new}
 
