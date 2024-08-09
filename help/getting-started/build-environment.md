@@ -14,7 +14,7 @@ Cloud Manager's build environments have following attributes.
 
 * The build environment is Linux-based, derived from Ubuntu 22.04.
 * Apache Maven 3.9.4 is installed.
-  * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP.](#https-maven)
+  * Adobe recommends users [update their Maven repositories to use HTTPS instead of HTTP](#https-maven).
 * The Java versions installed are Oracle JDK 8u401 and Oracle JDK 11.0.22.
   * `/usr/lib/jvm/jdk1.8.0_401`
   * `/usr/lib/jvm/jdk-11.0.22`
@@ -25,15 +25,15 @@ Cloud Manager's build environments have following attributes.
   * `libpng`
   * `imagemagick`
   * `graphicsmagick`
-* Other packages may be installed at build time as described in the section [Installing Additional System Packages.](#installing-additional-system-packages)
+* Other packages may be installed at build time as described in the section [Installing Additional System Packages](#installing-additional-system-packages).
 * Every build is done on a pristine environment. The build container does not keep any state between executions.
 * Maven is always run with these three commands: 
   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven is configured at a system level with a `settings.xml` file which automatically includes the public Adobe artifact repository using a profile named `adobe-public`.
-  * Refer to the [Adobe public Maven repository](https://repo1.maven.org/) for more details.
-* Node.js 18 is available for [front end pipelines.](/help/overview/ci-cd-pipelines.md)
+  * See the [Adobe public Maven repository](https://repo1.maven.org/) for more details.
+* Node.js 18 is available for [front end pipelines](/help/overview/ci-cd-pipelines.md).
 
 >[!NOTE]
 >
@@ -41,14 +41,15 @@ Cloud Manager's build environments have following attributes.
 
 >[!TIP]
 >
->Refer to the following additional resources to learn how to use Cloud Manager APIs:
+>See the following additional resources to learn how to use Cloud Manager APIs:
+>
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [Creating an API Integration](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [API Permissions](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 
 ## HTTPS Maven Repositories {#https-maven}
 
-Cloud Manager [release 2023.10.0](/help/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with release 2023.12.0), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md) began a rolling update to the build environment (completing with 2023.12.0 release), which included an update to Maven 3.8.8. A significant change introduced in Maven 3.8.1 was a security enhancement aimed at mitigating potential vulnerabilities. Specifically, Maven now disables all insecure `http://*` mirrors by default, as outlined in the [Maven release notes](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291).
 
 As a result of this security enhancement, some users may face issues during the build step, particularly when downloading artifacts from Maven repositories that use insecure HTTP connections.
 
@@ -106,7 +107,7 @@ The currently available vendor/version combinations are:
 
 >[!NOTE]
 >
->Starting April 2022, Oracle JDK will be the default JDK for the development and operation of AEM applications. Cloud Manager’s build process will automatically switch to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. Please refer to [the April release notes](/help/release-notes/2022/2022-4-0.md) for further details.
+>Starting April 2022, Oracle JDK will be the default JDK for the development and operation of AEM applications. Cloud Manager's build process will automatically switch to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details.
 
 ### Alternate Maven Execution JDK Version {#alternate-maven}
 
@@ -144,7 +145,7 @@ Both regular environment variables and secrets can be used in the authoring, pre
 
 #### Dispatcher {#dispatcher}
 
-Only regular environment variables can be used with [the dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Secrets can not be used.
+Only regular environment variables can be used with [the dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html). Secrets can not be used.
 
 However environment variables can not be used in `IfDefine` directives.
 
@@ -154,7 +155,7 @@ However environment variables can not be used in `IfDefine` directives.
 
 #### OSGi Configurations {#osgi}
 
-Both regular environment variables and secrets can be used in [OSGi configurations.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
+Both regular environment variables and secrets can be used in [OSGi configurations](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html).
 
 ### Pipeline Variables {#pipeline-variables}
 

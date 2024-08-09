@@ -104,7 +104,7 @@ And if you wanted to output a simple message only when the build is run outside 
 
 ## Password-Protected Maven Repository Support {#password-protected-maven-repositories}
 
-Artifacts from a password-protected Maven repository should only be used very cautiously as code deployed through this mechanism is not run through all of the quality rules implemented in Cloud Manager's quality gates. It is advised to also deploy the Java sources as well as the whole project source code alongside with the binary.
+Artifacts from a password-protected Maven repository should only be used very cautiously as code deployed through this mechanism is not run through all of the quality rules implemented in Cloud Manager's quality gates. It is advised to also deploy the Java sources and the whole project source code alongside with the binary.
 
 >[!TIP]
 >
@@ -337,4 +337,4 @@ If desired, the reuse behavior can be disabled for specific pipelines by setting
 
 ## Develop your Code Based on Best Practices {#develop-your-code-based-on-best-practices}
 
-Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html)
+Adobe Engineering and Consulting teams have developed a [comprehensive set of best practices for AEM developers](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html).

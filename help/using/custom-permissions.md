@@ -20,17 +20,17 @@ Custom permissions allow users to create new custom permission profiles with con
 
 >[!TIP]
 >
->For details on pre-defined roles, please see the document [Role-Based Permissions.](/help/requirements/role-based-permissions.md)
+>For details on pre-defined roles, see [Role-Based Permissions](/help/requirements/role-based-permissions.md).
 
 ## Using Custom Permissions {#using}
 
 To create and use your own custom permissions requires three steps:
 
-1. [Create a new product profile.](#create)
-1. [Assign custom permissions to the new product profile.](#assign-permissions)
-1. [Assign users to the new product profile.](#assign-users)
+1. [Create a new product profile](#create).
+1. [Assign custom permissions to the new product profile](#assign-permissions).
+1. [Assign users to the new product profile](#assign-users).
 
-This section will detail these steps. You may find it useful to refer to the [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
+This section will detail these steps. You may find it useful to see the [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ You must first create a new product profile before to which you can assign custo
 
 1. Select the product **AEM Managed Services**.
 
-1. Search for and instance with name matching the pattern `*-cloud-manager` and tap or click to manage users and permissions.
+1. Search for and instance with name matching the pattern `*-cloud-manager` and click to manage users and permissions.
 
-1. You are redirected to the **Products** tab of the Admin Console, where you can manage users and permissions for cloud manager. In the Admin Console, tap or click the **New Profile** button.
+1. You are redirected to the **Products** tab of the Admin Console, where you can manage users and permissions for cloud manager. In the Admin Console, click the **New Profile** button.
 
   ![New Profile button](/help/assets/admin-console-new-profile.png)
 
@@ -57,7 +57,7 @@ You must first create a new product profile before to which you can assign custo
    * **Description** - An informative description of the profile explaining its purpose (optional)
    * **Notify users by email** - When selected, users will be notified by email when they are added or removed from this profile. 
 
-1. Tap or click **Save** when complete.
+1. Click **Save** when complete.
 
 The new product profile is saved and is visible in the list of product profiles in the Admin Console.
 
@@ -65,13 +65,13 @@ The new product profile is saved and is visible in the list of product profiles 
 
 Now that you have a new product profile, you can assign custom permissions to it.
 
-1. In the Admin Console, tap or click the name of the [new product profile you just created.](#create)
+1. In the Admin Console, click the name of the [new product profile you just created](#create).
 
 1. In the window that opens, select the **Permissions** tab to view a list of editable permissions.
 
    ![Editable permissions](/help/assets/permissions-tab.png)
 
-1. Tap or click on the **Edit** link of a permission to edit it.
+1. Click on the **Edit** link of a permission to edit it.
 
 1. The **Edit Permissions** window opens.
    * The permission you selected in the previous step is selected in the left column.
@@ -80,13 +80,13 @@ Now that you have a new product profile, you can assign custom permissions to it
 
    ![Edit permission items](/help/assets/edit-permission-items.png)
 
-1. Tap or click the plus (`+`) icon next to the permission item to add it to the column **Included Permission Items**.
+1. Click the plus (`+`) icon next to the permission item to add it to the column **Included Permission Items**.
 
-   * Tap or click the `i` icon next to a permission item to learn more about it.
+   * Click the `i` icon next to a permission item to learn more about it.
 
-1. Tap or click the **Add all** button at the top of the **Available Permissions** column to add all permissions. Likewise tap or click **Remove all** to remove all the previously selected permissions.
+1. Click the **Add all** button at the top of the **Available Permissions** column to add all permissions. Likewise click **Remove all** to remove all the previously selected permissions.
 
-1. Tap or click **Save** when you are finished defining the permission items for your new product profile.
+1. Click **Save** when you are finished defining the permission items for your new product profile.
 
 Your new product profile is now saved with its custom permissions.
 
@@ -94,13 +94,13 @@ Your new product profile is now saved with its custom permissions.
 
 You can now assign users to the new product profile you created with custom permissions.
 
-1. In the Admin Console, tap or click the name of the [new product profile to which you just assigned custom permissions.](#assign-permissions)
+1. In the Admin Console, click the name of the [new product profile to which you just assigned custom permissions](#assign-permissions).
 
 1. In the window that opens, select the **Users** tab.
 
-1. Tap or click the **Add Users** button and assign users to your new product profile with custom permissions.
+1. Click the **Add Users** button and assign users to your new product profile with custom permissions.
 
-Please see the section **Add users and user groups to a product profile** of the document [Manage product profiles for enterprise users](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) for more details on how to use the Admin Console.
+See the section **Add users and user groups to a product profile** of the document [Manage product profiles for enterprise users](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) for more details on how to use the Admin Console.
 
 ## Configurable Permissions {#configurable-permissions}
 
@@ -133,7 +133,7 @@ The following permissions are organization-level permissions:
 
 * **Repository Info Access** This tenant/organization level permission allows users to generate username, password and repository URL for access and contributing to customer project.
   * Username and password for repository access will be common across all the repos in the org, however repository URL will be unique to each program.
-  * Please see the document [Source Code Repository](/help/requirements/source-code-repository.md) for more information.
+  * See [Source Code Repository](/help/requirements/source-code-repository.md) for more information.
 
 ## Terms {#terms}
 
@@ -141,7 +141,7 @@ The following terms are used in creating and managing custom permissions and pre
 
 |Term|Description|
 |---|---|
-|Predefined Permissions|Predefined roles like **Business Owner**, **Deployment Manager**, etc. to govern various features of Cloud Manager. For details on pre-defined roles, please see the document [Role-Based Permissions.](/help/requirements/role-based-permissions.md)|
+|Predefined Permissions|Predefined roles like **Business Owner**, **Deployment Manager**, etc. to govern various features of Cloud Manager. For details on pre-defined roles, see [Role-Based Permissions](/help/requirements/role-based-permissions.md).|
 |Custom Permissions|Cloud Manager features which allow users to create permission profiles to define roles to govern supported features of Cloud Manager|
 |Permission Profile|Created in the admin console to manage configurable permissions which will be applicable to users who are part of the permission profile| 
 |Configurable Permission|Cloud manager permissions which can be configured in permission profile|
@@ -158,7 +158,7 @@ Permission items refer to the scope where permission will be applied. Typically 
 
 ## Limitations {#limitations}
 
-Please keep in mind the following limitations when using custom permissions.
+Keep in mind the following limitations when using custom permissions:
 
 * A [limited set of permissions is available](#configurable-permissions) for creating custom profiles.
 * Resources like program, environment, pipeline etc. created in Cloud Manager may take up two minutes to display in Admin Console for permission configuration.
@@ -173,7 +173,7 @@ Please keep in mind the following limitations when using custom permissions.
 * Deployment Manager
 * Developer
 
-For details on pre-defined roles, please see the document [Role-Based Permissions.](/help/requirements/role-based-permissions.md)
+For details on pre-defined roles, see [Role-Based Permissions](/help/requirements/role-based-permissions.md).
 
 ### What happens to predefined permission profiles with introduction to custom profiles?
 

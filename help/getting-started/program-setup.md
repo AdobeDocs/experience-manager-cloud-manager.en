@@ -64,7 +64,7 @@ You can edit programs after they are set up. Follow these steps to edit a progra
 
 Note that the changes are saved immediately to Cloud Manager, but will not be reflected in your environments until the next pipeline run.
 
-If you have have not yet created a pipeline see the documents [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines.](/help/using/non-production-pipelines.md)
+If you have have not yet created a pipeline see the documents [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
 
 ## Switching Between Programs {#swithing-programs}
 
@@ -80,7 +80,7 @@ Sites KPIs are measured on tests run on the staging environment. Typically, thes
 
 For example, a user expecting an average of 1000 page views per minute in their production environment and has four dispatcher/publishing servers in production should scale this to 250 page views per minute. This assumes that their staging environment consists of only a single dispatcher/publish server pair.
 
-Assets performance testing is done by uploading assets repeatedly during a 30 minute test period and measuring the processing time for each asset as well as various system-level metrics.
+Assets performance testing is done by uploading assets repeatedly during a 30 minute test period and measuring the processing time for each asset and various system-level metrics.
 
 You may have a content delivery network (CDN) such as Akamai or CloudFront in front of your production environment. Since [!UICONTROL Cloud Manager] tests against the staging environment directly, the KPI should reflect only the traffic expected to pass through the CDN, that is, the cache misses. Typically this will be a relatively small subset of the total production traffic.
 

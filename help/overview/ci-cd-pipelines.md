@@ -35,7 +35,7 @@ This diagram illustrates what happens once a release is triggered in [!UICONTROL
 
 ### How to Set Up a CI/CD Pipeline {#how-to-setup-a-ci-cd-pipeline}
 
-To learn more about pipeline configuration, see the documents [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines.](/help/using/non-production-pipelines.md)
+To learn more about pipeline configuration, see the documents [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
 
 ## Quality Gates {#quality-gates}
 

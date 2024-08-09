@@ -5,7 +5,7 @@ exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 ---
 # Configuring Non-Production Pipelines {#configuring-non-production-pipelines}
 
-Learn how to use Cloud Manager to create and configure non-production pipelines to deploy your code. If you would first like a more conceptual overview of how pipelines work in Cloud Manager, please see the document [CI/CD Pipelines.](/help/overview/ci-cd-pipelines.md)
+Learn how to use Cloud Manager to create and configure non-production pipelines to deploy your code. If you would first like a more conceptual overview of how pipelines work in Cloud Manager, see [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md).
 
 ## Overview {#overview}
 
@@ -14,7 +14,7 @@ Using the **Pipelines** tile in [!UICONTROL Cloud Manager], the **Deployment Man
 * **Production Pipelines** - A production pipelines is a purpose-built pipeline made of a series of orchestrated steps to take source code all the way into production.
 * **Non-Production Pipelines** - A non-production pipeline primarily serves to run code-quality scans or to deploy source code into a development environment.
 
-This document focuses on non-production pipelines. For details on how to configure production pipelines see the document [Configuring Production Pipelines.](/help/using/production-pipelines.md)
+This document focuses on non-production pipelines. For details on how to configure production pipelines see the document [Configuring Production Pipelines](/help/using/production-pipelines.md).
 
 There are two types of non-production pipelines:
 
@@ -74,7 +74,7 @@ Once you have set up your program and have at least one environment using the Cl
 
 ## The Next Steps {#the-next-steps}
 
-Once you have configured the pipeline, you need to deploy your code. Please see the document [Code Deployment](/help/using/code-deployment.md) for more details.
+Once you have configured the pipeline, you need to deploy your code. See [Code Deployment](/help/using/code-deployment.md) for more details.
 
 ## Video Tutorial {#video-tutorial}
 

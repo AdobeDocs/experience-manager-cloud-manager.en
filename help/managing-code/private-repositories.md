@@ -26,7 +26,7 @@ Configuration consists of two main steps:
 
 ### Add Repository {#add-repo}
 
-1. In Cloud Manager, from the **Program Overview** page, tap or click on **Repositories** tab to switch to the **Repositories** page and click on **Add Repository**.
+1. In Cloud Manager, from the **Program Overview** page, click the **Repositories** tab to switch to the **Repositories** page and click **Add Repository**.
 
 1. In the **Add Repository** dialog, select **Private Repository** as the repository type.
 
@@ -38,11 +38,11 @@ Configuration consists of two main steps:
 
    ![Add own repository](/help/assets/repositories/add-own-github.png)
 
-1. Tap or click **Save**.
+1. Click **Save**.
 
 >[!TIP]
 >
->For details about managing repositories in Cloud Manager, please see the document [Cloud Manager Repositories.](/help/managing-code/managing-repositories.md)
+>For details about managing repositories in Cloud Manager, see the document [Cloud Manager Repositories](/help/managing-code/managing-repositories.md).
 
 ### Private Repository Ownership Validation {#validate-ownership}
 
@@ -54,11 +54,11 @@ Cloud Manager now knows about your GitHub repository, but it still needs access 
 
 1. Cloud Manager uses a GitHub app to securely interact with your repository.
    * An owner of your GitHub organization must install the app located at `https://github.com/apps/cloud-manager-for-aem` and grant access to the repository.
-   * Please refer to GitHub's documentation for details on how this is done.
+   * See GitHub's documentation for details on how this is done.
 
-1. To enhance security, you must create a secret file in the default branch of your repository. Tap or click **Generate**.
+1. To enhance security, you must create a secret file in the default branch of your repository. Click **Generate**.
 
-1. Confirm the generation of the secret file by tapping or clicking **Confirm**.
+1. Confirm the generation of the secret file by clicking **Confirm**.
 
     ![Confirm secret generation](/help/assets/repositories/confirm-generation.png)
 
@@ -70,7 +70,7 @@ Cloud Manager now knows about your GitHub repository, but it still needs access 
 
 1. Create a new file in the default branch of your GitHub repo called `.well-known/adobe/cloud-manager-challenge` and paste the secret file content into that file and save.
 
-1. Once the app is installed and the secret file exists in the repository, you can tap or click **Validate** in the **Private Repository Ownership Validation** dialog.
+1. Once the app is installed and the secret file exists in the repository, you can click **Validate** in the **Private Repository Ownership Validation** dialog.
 
 The app can be installed and secret file can be created in any order. However both steps must be completed before you can validate.
 
@@ -80,7 +80,7 @@ Until validation, the repository will be listed with a red icon, indicating that
 
 Note that the **Type** column easily identifies Adobe-provided repositories (**Adobe**) and your own GitHub repositories (**GitHub**).
 
-If you need to return to the repository at a later date in order to complete the validation, on the **Repositories** page, tap or click the ellipsis button in the row representing the GitHub repository you just added and select **Ownership Validation** from the drop-down menu.
+If you need to return to the repository at a later date in order to complete the validation, on the **Repositories** page, click the ellipsis button in the row representing the GitHub repository you just added and select **Ownership Validation** from the drop-down menu.
 
 ## Using Private Repositories with Cloud Manager {#using}
 
@@ -104,11 +104,11 @@ When the pull request is closed or merged, the full stack code quality pipeline 
 
 >[!TIP]
 >
->You can control the pipelines that are created automatically to validate each pull request to a private repository. Please see the document [GitHub Check Configuration for Private Repositories](github-check-config.md) for more information.
+>You can control the pipelines that are created automatically to validate each pull request to a private repository. See [GitHub Check Configuration for Private Repositories](github-check-config.md) for more information.
 
 ## Associating Private Repositories with Pipelines {#pipelines}
 
-Validated private repositories can be associated with [full-stack pipelines.](/help/overview/ci-cd-pipelines.md)
+Validated private repositories can be associated with [full-stack pipelines](/help/overview/ci-cd-pipelines.md).
 
 ## Limitations {#limitations}
 

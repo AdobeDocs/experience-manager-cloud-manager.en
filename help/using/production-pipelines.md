@@ -6,7 +6,7 @@ exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 
 # Configuring Production Pipelines {#configuring-production-pipelines}
 
-Learn how to use Cloud Manager to create and configure production pipelines to deploy your code. if you would first like a more conceptual overview of how pipelines work in Cloud Manager, please see the document [CI/CD Pipelines.](/help/overview/ci-cd-pipelines.md)
+Learn how to use Cloud Manager to create and configure production pipelines to deploy your code. if you would first like a more conceptual overview of how pipelines work in Cloud Manager, see [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md).
 
 ## Overview {#overview}
 
@@ -15,7 +15,7 @@ Using the **Pipeline Settings** tile in [!UICONTROL Cloud Manager] you can creat
 * **Production Pipelines** - A production pipelines is a purpose-built pipeline made of a series of orchestrated steps to take source code from your git repository all the way into production.
 * **Non-Production Pipelines** - A non-production pipeline primarily serves to run code-quality scans or to deploy source code into a development environment.
 
-This document focuses on production pipelines. For details on how to configure non-production pipelines see the document [Configuring Non-Production Pipelines.](/help/using/non-production-pipelines.md)
+This document focuses on production pipelines. For details on how to configure non-production pipelines see the document [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
 
 The **Deployment Manager** role is responsible for setting up the pipeline. Pipeline configuration consists of:
 
@@ -33,7 +33,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on **+Add** and select **Add Production Pipeline**.
+1. Navigate to the **Pipelines** card from the **Program Overview** page, then click **+Add** and select **Add Production Pipeline**.
 
    ![Add a production pipeline](/help/assets/configure-pipelines/add-prod1.png)
 
@@ -107,7 +107,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
            >[!TIP]
            >
-           >Please refer to the document [Code Deployment,](/help/using/code-deployment.md) to learn how to set the deployment schedule or execute the pipeline immediately.
+           >See [Code Deployment](/help/using/code-deployment.md) to learn how to set the deployment schedule or execute the pipeline immediately.
 
            * **Use CSE Oversight** - If this option is select, a CSE is engaged to actually start the deployment. When creating or editing a pipeline when this option is enabled, the **Deployment Manager** role has the following options.
 
@@ -122,7 +122,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
    >[!TIP]
    >
-   >Refer to the document [Code Quality Testing](/help/using/code-quality-testing.md#performance-testing) for more details on the options available on the **Stage Testing** tab.
+   >See [Code Quality Testing](/help/using/code-quality-testing.md#performance-testing) for more details on the options available on the **Stage Testing** tab.
    
    1. Under the **Sites Content Delivery/Distributed Load Weight** section, you define how sites performance testing is configured based on the weighting of page requests between the three page sets, which can be enabled or disabled.
 
@@ -132,7 +132,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
       ![Sites load weight](/help/assets/configure-pipelines/add-prod5.png)
 
-   1. Under the **Assets Performance Testing Distribution** section, you define the test distribution of images and PDFs as well as define your own test assets.
+   1. Under the **Assets Performance Testing Distribution** section, you define the test distribution of images and PDFs and define your own test assets.
 
       * **Images** - Adjust the slider to adjust the test split between images and PDFs.
       * **PDFs** - Adjust the slider to adjust the test split between images and PDFs.
@@ -149,7 +149,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
 ## The Next Steps {#the-next-steps}
 
-Once you have configured the pipeline, you need to deploy your code. Please see the document [Code Deployment](/help/using/code-deployment.md) for more details.
+Once you have configured the pipeline, you need to deploy your code. See [Code Deployment](/help/using/code-deployment.md) for more details.
 
 ## Video Tutorial {#video-tutorial-one}
 

@@ -12,7 +12,7 @@ Learn how Maven handles project versioning in Cloud Manager.
 
 For staging and production deployments, Cloud Manager generates a unique, incrementing version. 
 
-This version is seen on the pipeline execution details page as well as the activity page. When a build is run, the Maven project is updated to use this version and a tag is created in the git repository with that version as its name. 
+This version is seen on the pipeline execution details page and the activity page. When a build is run, the Maven project is updated to use this version and a tag is created in the git repository with that version as its name. 
 
 If the original project version meets certain criteria, the updated Maven project version will merge both the original project version and the Cloud Manager generated version. The tag, however, always uses the generated version. For this merging to occur, the original project version must be formed with exactly three version segments, for example, `1.0.0` or `1.2.3`, but not `1.0` or `1`, and the original version must not end in `-SNAPSHOT`. 
 

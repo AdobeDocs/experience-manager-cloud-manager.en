@@ -12,7 +12,7 @@ Follow these steps to create an AEM project using the wizard.
 
 1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) and select the appropriate organization.
 
-1. If you have not already, [create your program.](program-setup.md) Once the program is created, Cloud Manager will recognize that the repositories are not yet set up and a special call-to-action card is shown on the **Overview** screen.
+1. If you have not already, [create your program](program-setup.md). When the program is created, Cloud Manager recognizes that the repositories are not yet set up and a special call-to-action card is shown on the **Overview** screen.
 
    ![Create project CTA](/help/assets/image2018-10-3_14-29-44.png)
 

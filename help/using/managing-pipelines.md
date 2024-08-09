@@ -30,19 +30,19 @@ At the bottom of the list of pipelines, you have general options.
 
 ## Pipelines Window {#pipelines}
 
-The **Pipelines** window shows a complete list of all pipelines for the selected program. This is useful as it presents more comprehensive information than what is available in the [Pipeline Card.](#pipeline-card)
+The **Pipelines** window shows a complete list of all pipelines for the selected program. This is useful as it presents more comprehensive information than what is available in the [Pipeline Card](#pipeline-card).
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, tap or click on **Pipelines** tab to switch to the **Pipelines** window.
+1. From the **Program Overview** page, click the **Pipelines** tab to switch to the **Pipelines** window.
 
-1. Here you can see a list of all pipelines for the program as well as start and stop pipeline execution as you would in the **Pipelines Card**.
+1. Here you can see a list of all pipelines for the program and start and stop pipeline execution as you would in the **Pipelines Card**.
 
-Tapping or clicking the `i` icon reveals details about the last or current execution of the pipeline.
+Clicking the `i` icon reveals details about the last or current execution of the pipeline.
 
 ![Pipeline execution details](/help/assets/configure-pipelines/pipeline-status.png)
 
-Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
+Clicking **View details** takes you to the [details of the pipeline execution](#view-details).
 
 ## Activity Window {#activity}
 
@@ -50,25 +50,25 @@ The **Activities** window shows a complete list of all pipelines executions for 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, tap or click on **Activity** tab to switch to the **Activity** window.
+1. From the **Program Overview** page, click the **Activity** tab to switch to the **Activity** window.
 
 1. Here you can see a list of all pipeline executions for the program including current and historical executions.
 
-Tapping or clicking the `i` icon reveals details about the execution of the selected pipeline run.
+Clicking the `i` icon reveals details about the execution of the selected pipeline run.
 
 ![Pipeline execution details](/help/assets/configure-pipelines/pipeline-activity.png)
 
-Tapping or clicking **View details** will take you to the [details of the pipeline execution.](#view-details)
+Clicking **View details** takes you to the [details of the pipeline execution](#view-details).
 
 ## Running Pipelines {#running-pipelines}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you run select **Run** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you run select **Run** from the menu.
 
 1. The pipeline run begins and is indicated by the **Status** column. 
 
-You can see the details of the run by clicking the ellipsis button again and selecting **[View details.](#view-details)**
+You can see the details of the run by clicking the ellipsis button again and selecting **[View details](#view-details)**.
 
 Depending on the type of pipeline, you may be able to cancel the run by clicking the ellipsis button again and selecting **Cancel**.
 
@@ -76,7 +76,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you want to edit and then select **Edit** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you want to edit and then select **Edit** from the menu.
 
 1. The **Edit Production Pipeline** or **Edit Non-Production Pipeline** dialog box displays, allowing you to edit the same details that you entered when creating the pipeline.
 
@@ -94,7 +94,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you run select **Delete** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you run select **Delete** from the menu.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click on the ellipsis button next to the pipeline you run select **View details** from the menu.
+1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you run select **View details** from the menu.
 
 1. You are taken to the details page of the running pipeline.
 
@@ -118,11 +118,11 @@ Once a pipeline step is complete, a summary is presented.
 
 ![Step summary](/help/assets/configure-pipelines/pipeline-step.png)
 
-Tap or click the **View details** link to reveal the **Duration** section. This includes the average duration for the pipeline based on the historical trend for that program.
+Click the **View details** link to reveal the **Duration** section. This includes the average duration for the pipeline based on the historical trend for that program.
 
 ![Duration](/help/assets/configure-pipelines/duration.png)
 
-If your pipeline contained a **Code Scanning** step, which raised issues, you can tap or click the **Download Details** button to view a list of [code quality tests](/help/using/code-quality-testing.md) that did not pass.
+If your pipeline contained a **Code Scanning** step, which raised issues, you can click the **Download Details** button to view a list of [code quality tests](/help/using/code-quality-testing.md) that did not pass.
 
 ![Code quality issues](assets/managing-pipelines-code-quality-issues.png)
 

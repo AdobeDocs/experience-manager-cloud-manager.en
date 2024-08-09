@@ -6,7 +6,7 @@ exl-id: 7d118225-5826-434e-8869-01ee186e0754
 
 # Custom Code Quality Rules {#custom-code-quality-rules}
 
-Learn details about the custom code quality rules executed by Cloud Manager as part of [code quality testing,](/help/using/code-quality-testing.md) based on best practices from AEM Engineering.
+Learn details about the custom code quality rules executed by Cloud Manager as part of [code quality testing](/help/using/code-quality-testing.md), based on best practices from AEM Engineering.
 
 >[!NOTE]
 >
@@ -14,7 +14,7 @@ Learn details about the custom code quality rules executed by Cloud Manager as p
 
 >[!NOTE]
 >
->Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Continue reading this document for descriptions and examples of the rules.
+>Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Continue reading this document for descriptions and examples of the rules.
 
 ## SonarQube Rules {#sonarqube-rules}
 
@@ -494,7 +494,7 @@ public void doThis(Resource resource) {
 
 Do not use the Sling Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
 
-Refer to [Apache Sling Eventing and Job Handling documentation](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in clustered environments.
+See [Apache Sling Eventing and Job Handling documentation](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in clustered environments.
 
 ### AEM deprecated APIs should not be use {#sonarqube-aem-deprecated}
 
@@ -649,7 +649,7 @@ The AEM Modernization Tools documentation provides details and tooling for how t
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-Support for reverse replication is not available in Cloud Service deployments, as described in [Release Notes: Removal of Replication Agents.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents)
+Support for reverse replication is not available in Cloud Service deployments, as described in [Release Notes: Removal of Replication Agents](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents).
 
 Customers using reverse replication should contact Adobe for alternative solutions.
 
@@ -660,7 +660,7 @@ Customers using reverse replication should contact Adobe for alternative solutio
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-AEM client libraries may contain static resources like images and fonts. As described in the [Using Client-Side Libraries documentation,](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors) when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
+AEM client libraries may contain static resources like images and fonts. As described in the [Using Client-Side Libraries documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
 
 #### Non-compliant code {#non-compliant-proxy-enabled}
 
@@ -702,9 +702,9 @@ The migration tool in the [AEM Assets as a Cloud Service GitHub repository](http
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-While the use of static templates has historically been common in AEM Projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found in the [Page Templates - Editable documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable)
+While the use of static templates has historically been common in AEM Projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found in the [Page Templates - Editable documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
 
-Migration from static to editable templates can be largely automated using the [AEM Modernization Tools.](https://opensource.adobe.com/aem-modernize-tools/)
+Migration from static to editable templates can be largely automated using the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### Usage of legacy foundation components is discouraged {#oakpal-usage-legacy}
 
@@ -713,7 +713,7 @@ Migration from static to editable templates can be largely automated using the [
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-The legacy Foundation Components (that is, components under `/libs/foundation`) have been deprecated for several AEM releases in favor of the [Core Components.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) Usage of the legacy Foundation Components as the basis for custom components, whether by overlay or inheritance, is discouraged and should be converted to the corresponding core component.
+The legacy Foundation Components (that is, components under `/libs/foundation`) have been deprecated for several AEM releases in favor of the [Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction). Usage of the legacy Foundation Components as the basis for custom components, whether by overlay or inheritance, is discouraged and should be converted to the corresponding core component.
 
 [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/) can facilitate this conversion. 
 
@@ -724,7 +724,7 @@ The legacy Foundation Components (that is, components under `/libs/foundation`) 
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-AEM Cloud Service requires that custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) be direct child nodes of `/oak:index`. Indexes in other locations must be moved to be compatible with AEM Cloud Service. More information on search indexes can be found in the [Content Search and Indexing documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing)
+AEM Cloud Service requires that custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) be direct child nodes of `/oak:index`. Indexes in other locations must be moved to be compatible with AEM Cloud Service. More information on search indexes can be found in the [Content Search and Indexing documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing).
 
 ### Custom search index definition nodes must have a compatVersion of 2 {#oakpal-custom-search-compatVersion}
 
@@ -733,7 +733,7 @@ AEM Cloud Service requires that custom search index definitions (that is, nodes 
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-AEM Cloud Service requires that custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) must have the `compatVersion` property set to `2`. AEM Cloud Service does not support any other value. More information on search indexes can be found in the [Content Search and Indexing documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing)
+AEM Cloud Service requires that custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) must have the `compatVersion` property set to `2`. AEM Cloud Service does not support any other value. More information on search indexes can be found in the [Content Search and Indexing documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing).
 
 ### Descendent nodes of custom search index definition nodes must be of type `nt:unstructured` {#oakpal-descendent-nodes}
 
@@ -751,7 +751,7 @@ Hard-to-troubleshoot issues can occur when a custom search index definition node
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-A properly defined custom search index definition node must include a child node named `indexRules` and this node must have at least one child. More information can be found in the [Oak documentation.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+A properly defined custom search index definition node must include a child node named `indexRules` and this node must have at least one child. More information can be found in the [Oak documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 ### Custom search index definition nodes must follow naming conventions {#oakpal-custom-search-definitions}
 
