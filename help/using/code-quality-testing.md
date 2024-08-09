@@ -1,6 +1,6 @@
 ---
 title: Code Quality Testing
-description:  Learn how code quality testing of pipelines works and how it can improve the quality of your deployments.
+description: Learn how code quality testing of pipelines works and how it can improve the quality of your deployments.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 ---
 
@@ -10,9 +10,9 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 
 ## Introduction {#introduction}
 
-During pipeline execution, a number of metrics are captured and compared to either the key performance indicators (KPIs) defined by the business owner or to standards set by Adobe Managed Services.
+During pipeline execution, the software captures a number of metrics. These metrics are then compared to the Key Performance Indicators (KPIs) defined by the business owner. Or, they are compared to standards set by Adobe Managed Services.
 
-These are reported using three-tiered rating system.
+These results are reported using a three-tiered rating system.
 
 ## Three-Tiered Ratings {#three-tiered-ratings}
 
@@ -24,9 +24,9 @@ There are three gates in the pipeline:
 
 For each of these gates, there is a three-tiered structure for issues identified by the gate.
 
-* **Critical** - These are issues which cause an immediate failure of the pipeline.
-* **Important** - These are issues which cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues, in which case the pipeline proceeds, or they can accept the issues, in which case the pipeline stops with a failure. Override of important failures are subject to a [timeout.](/help/using/code-deployment.md#timeouts)
-* **Info** - These are issues which are provided purely for informational purposes and have no impact on pipeline execution.
+* **Critical** - Issues that cause an immediate failure of the pipeline.
+* **Important** - Issues that cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues. If they do, the pipeline proceeds as intended. Alternatively, they can accept the issues, causing the pipeline to stop with a failure. Override of important failures are subject to a [timeout](/help/using/code-deployment.md#timeouts).
+* **Info** - Issues that are provided purely for informational purposes and have no impact on pipeline execution.
 
 >[!NOTE]
 >
@@ -34,11 +34,13 @@ For each of these gates, there is a three-tiered structure for issues identified
 
 ## Code Quality Testing {#code-quality-testing-step}
 
-This step evaluates the quality of your application code, which is the main purpose of a code quality only pipeline, and is executed immediately following the build step in all non-production and production pipelines. Please refer to the document [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md) to learn more.
+This testing step evaluates the quality of your application code, which is the main purpose of a code quality-only pipeline. It is executed immediately following the build step in all non-production and production pipelines. To learn more, go to [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
 
-Code quality testing scans the source code to ensure that it meets certain quality criteria. This is implemented by a combination of SonarQube analysis, content package-level examination using OakPAL, and dispatcher validation using the Dispatcher Optimization Tool.
+Code quality testing scans the source code to ensure that it meets certain quality criteria.
 
-There are over 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules.](/help/using/custom-code-quality-rules.md)
+The software implements it using a combination of SonarQube analysis, content package-level examination with OakPAL, and Dispatcher validation with the Dispatcher Optimization Tool.
+
+There are more than 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules.](/help/using/custom-code-quality-rules.md)
 
 >[!TIP]
 >
@@ -59,7 +61,7 @@ The results of code quality testing are delivered as rating as summarized in thi
 
 >[!NOTE]
 >
->Refer to [SonarQube's metric definitions](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) for more detailed information.
+>For more detailed information, [SonarQube's metric definitions](https://docs.sonarsource.com/sonarqube/latest/user-guide/code-metrics/metrics-definition/).
 
 >[!NOTE]
 >
@@ -67,7 +69,7 @@ The results of code quality testing are delivered as rating as summarized in thi
 
 ### Dealing with False Positives {#dealing-with-false-positives}
 
-The quality scanning process is not perfect and will sometimes incorrectly identify issues which are not actually problematic. This is referred to as a false positive.
+The quality scanning process is not perfect and sometimes incorrectly identifies issues that are not actually problematic. This scenario is known as a false positive.
 
 In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common false positive is that the SonarQube rule to detect hardcoded passwords can be aggressive about how a hardcoded password is identified.
 
@@ -78,7 +80,7 @@ The following code is fairly common in an AEM project, which has code to connect
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube will then raise a blocker vulnerability. But after reviewing the code, you recognize that this is not a vulnerability and can annotate the code with the appropriate rule ID.
+SonarQube then raises a blocker vulnerability. But after reviewing the code, you recognize that this issue is not a vulnerability and can annotate the code with the appropriate rule ID.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -86,7 +88,7 @@ SonarQube will then raise a blocker vulnerability. But after reviewing the code,
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-However, if the code was actually this:
+However, if the code was actually the following:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -97,7 +99,7 @@ Then the correct solution is to remove the hardcoded password.
 
 >[!NOTE]
 >
->While it is a best practice to make the `@SuppressWarnings` annotation as specific as possible (i.e. annotate only the specific statement or block causing the issue), it is possible to annotate at a class level.
+>It is a best practice to make the `@SuppressWarnings` annotation as specific as possible. That is, annotate only the specific statement or block causing the issue. However, it is possible to annotate at a class level. Doing so allows for broader suppression of warnings.
 
 ## Security Testing {#security-testing}
 
@@ -105,28 +107,28 @@ Then the correct solution is to remove the hardcoded password.
 
 These same health checks can be executed at any time through the Web Console or the Operations Dashboard.
 
-If any of the instances reports a failure for a given health check, the entire environment fails that health check. As with code quality and performance testing, these health checks are organized into categories and reported using the three-tiered gating system. The only distinction is that there is no threshold in the case of security testing. All the health checks are pass or fail.
+If any of the instances reports a failure for a given health check, the entire environment fails that health check. As with code quality and performance testing, these health checks are organized into categories and reported using the three-tiered gating system. The only distinction is that there is no threshold if there is security testing. All the health checks are pass or fail.
 
 The following table lists the health checks.
 
 |Name|Health Check Implementation|Category|
 |---|---|---|
-| Deserialization firewall Attach API Readiness is in an acceptable state. | [Deserialization Firewall Attach API Readiness](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) |Critical |
-| Deserialization firewall is functional. | [Deserialization Firewall Functional](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) |Critical |
-| Deserialization firewall is loaded. | [Deserialization Firewall Loaded](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html#security) |Critical |
-| `AuthorizableNodeName` implementation does not expose authorizable ID in the node name/path. | [Authorizable Node Name Generation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#security) |Critical |
-| Default passwords have been changed. | [Default Login Accounts](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#users-and-groups-in-aem) |Critical |
+| Deserialization firewall Attach API Readiness is in an acceptable state. | [Deserialization Firewall Attach API Readiness](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) |Critical |
+| Deserialization firewall is functional. | [Deserialization Firewall Functional](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) |Critical |
+| Deserialization firewall is loaded. | [Deserialization Firewall Loaded](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) |Critical |
+| `AuthorizableNodeName` implementation does not expose authorizable ID in the node name/path. | [Authorizable Node Name Generation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security-checklist#security) |Critical |
+| Default passwords have been changed. | [Default Login Accounts](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) |Critical |
 | Sling default GET servlet is protected from DOS attacks. | Sling Get Servlet |Critical |
-| The Sling Java Script handler is configured appropriately. | Sling Java Script Handler |Critical |
+| The Sling JavaScript handler is configured appropriately. | Sling JavaScript Handler |Critical |
 | The Sling JSP Script handler is configured appropriately. | Sling JSP Script Handler |Critical |
 | SSL is configured correctly. | SSL Configuration |Critical |
 | No obviously insecure user profile policies are found. | User Profile Default Access |Critical |
-| The Sling Referrer filter is configured in order to prevent CSRF attacks. | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html#security) |Important |
+| The Sling Referrer filter is configured to prevent CSRF attacks. | [Sling Referrer Filter](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security-checklist#security) |Important |
 | The Adobe Granite HTML Library Manager is configured appropriately. | CQ HTML Library Manager Config |Important |
 | CRXDE Support bundle is disabled. | CRXDE Support |Important |
 | Sling DavEx bundle and servlet are disabled. | DavEx Health Check |Important |
 | Sample content is not installed. | Example Content Packages |Important |
-| Both the WCM Request Filter and the WCM Debug Filter are disabled. | [WCM Filters Configuration](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html#configuring) |Important |
+| Both the WCM Request Filter and the WCM Debug Filter are disabled. | [WCM Filters Configuration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) |Important |
 | Sling WebDAV bundle and servlet are configured appropriately. | WebDAV Health Check |Important |
 | The web server is configured to prevent clickjacking. | Web Server Configuration |Important |
 | Replication is not using the `admin` user. | Replication and Transport Users |Info |
@@ -139,11 +141,13 @@ Cloud Manager executes performance testing for AEM Sites programs. The performan
 
 #### Virtual Users {#virtual-users}
 
-The number of virtual users or containers that are spun up by Cloud Manager is driven by the KPIs (response time and pageviews/min) defined by the user with the **Business Owner** role while [creating or editing the program.](/help/getting-started/program-setup.md) Based on the KPIs defined, up to 10 containers that simulate actual users will be spun up. The pages that are selected for testing are split and assigned to each virtual user.
+Cloud Manager spins up virtual users or containers based on KPIs (response time and pageviews/min) set by the **Business Owner** role. These KPIs are set while [creating or editing the program](/help/getting-started/program-setup.md).
+
+Based on the KPIs defined, up to ten containers that simulate actual users are spun up. The pages that are selected for testing are split and assigned to each virtual user.
 
 #### Crawler {#crawler}
 
-Prior to the start of the 30 minute test period, Cloud Manager will crawl the staging environment using a set of one or more seed URLs configured by the Customer Success Engineer. Starting from these URLs, the HTML of each page is inspected and links are traversed in a breadth-first fashion.
+Prior to the start of the 30 minute test period, Cloud Manager crawls the staging environment using a set of one or more seed URLs configured by the Customer Success Engineer. Starting from these URLs, the HTML of each page is inspected and links are traversed in a breadth-first fashion.
 
 * This crawling process is by default limited to a maximum of 5000 pages.
 * The maximum number of pages to be tested can be overwritten by setting the [pipeline variable](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`.
@@ -152,33 +156,33 @@ Prior to the start of the 30 minute test period, Cloud Manager will crawl the st
 
 #### Page Sets for Testing {#page-sets}
 
-Pages are selected by three page sets. Cloud Manager uses the access logs from the AEM instances across production and staging environments to determine the following buckets.
+Three page sets select the pages. Cloud Manager uses the access logs from the AEM instances across production and staging environments to determine the following buckets.
 
-* **Popular Live Pages** - This option is selected to make sure that the most popular pages accessed by live customers are tested. Cloud Manager will read the access log and determine the top 25 most-accessed pages by live customers to generate a list of top `Popular Live Pages`. The intersection of these that are also present on the staging environment are then crawled on the staging environment. 
+* **Popular Live Pages** - Ensures that the most popular pages accessed by live customers are tested. Cloud Manager reads the access log and determines the top 25 most-accessed pages by live customers to generate a list of top `Popular Live Pages`. The intersection of these pages that are also present in the staging environment are then crawled in the staging environment. 
 
-* **Other Live Pages** - This option is selected to make sure that the pages that fall outside the top 25 popular live pages that may not be popular, but are important to test, are tested. Similar to popular live pages, these are extracted from the access log and must also be present on the staging environment.
+* **Other Live Pages** - Ensures that the pages that fall outside the top 25 popular live pages that may not be popular, but are important to test, are tested. Similar to popular live pages, they are extracted from the access log and must also be present in the staging environment.
 
-* **New Pages** - This option is selected to test new pages that may have only been deployed to the staging and not yet to production, but must be tested. 
+* **New Pages** - Tests new pages that may have only been deployed to the staging and not yet to production, but must be tested. 
 
 ##### Distribution of Traffic Across Page Sets Selected {#distribution-of-traffic}
 
-You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration.](/help/using/production-pipelines.md) The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put toward each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
+You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration.](/help/using/production-pipelines.md) The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put into each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
 
 Let us consider this example.
 
 * There is a 50/50 split between the popular live pages and new pages sets.
 * Other live pages are not used.
 * The new pages set contains 3000 pages.
-* The page views per minute KPI is set to 200. 
+* The KPI *page views per minute* are set to 200. 
 
 Over the 30 minute test period:
 
-* Each of the 25 pages in the popular live pages set will be hit 120 times: `((200 * 0.5) / 25) * 30 = 120`
-* Each of the 3000 pages in the new pages set will be hit once: `((200 * 0.5) / 3000) * 30 = 1`
+* Each of the 25 pages in the popular live pages set is hit 120 times: `((200 * 0.5) / 25) * 30 = 120`
+* Each of the 3000 pages in the new pages set is hit once: `((200 * 0.5) / 3000) * 30 = 1`
  
 #### Testing and Reporting {#testing-reporting}
 
-Cloud Manager executes performance testing for AEM Sites programs by requesting pages as an unauthenticated user by default on the staging publish server for a 30 minute test period. It measures the virtual user-generated metrics (response time, error rate, views per minute, etc.) for each page as well as various system-level metrics (CPU, memory, networking data) for all instances.
+Cloud Manager executes performance testing for AEM Sites programs by requesting pages as an unauthenticated user by default on the staging publish server for a 30 minute test period. It measures the virtual user-generated metrics (response time, error rate, views per minute, and so on) for each page as well as various system-level metrics (CPU, memory, networking data) for all instances.
 
 The following table summarizes the performance test matrix using the three-tiered gating system.
 
@@ -198,15 +202,15 @@ Refer to the section [Authenticated Performance Testing](#authenticated-performa
 
 >[!NOTE]
 >
->Both author and publish instances are monitored during the period of the test. If any metric for one instance is not obtained, that metric is reported as unknown and the corresponding step will fail.
+>Both author and publish instances are monitored during the test. If any metric for one instance is not obtained, that metric is reported as unknown and the corresponding step fails.
 
 #### Authenticated Performance Testing {#authenticated-performance-testing}
 
-If necessary, AMS customers with authenticated sites can specify a username and password which Cloud Manager will use to access the website during sites performance testing.
+If necessary, AMS customers with authenticated sites can specify a username and password which Cloud Manager uses to access the website during sites performance testing.
 
 The username and password are specified as pipeline variables with the names `CM_PERF_TEST_BASIC_USERNAME` and `CM_PERF_TEST_BASIC_PASSWORD`.
 
-The username should be stored in a `string` variable and the password should be stored in a `secretString` variable. If both of these are specified, every request from the performance test crawler and the test virtual users will contain these credentials as HTTP Basic authentication.
+The username is stored in a `string` variable and the password is stored in a `secretString` variable. If both of these variables are specified, every request from the performance test crawler and the test virtual users contains these credentials as HTTP Basic authentication.
 
 To set these variables using the Cloud Manager CLI, run:
 
@@ -214,35 +218,37 @@ To set these variables using the Cloud Manager CLI, run:
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-Please refer to the [Patch User Pipeline Variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentation to learn how to use the API. 
+See [Patch User Pipeline Variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentation to learn how to use the API. 
 
 ### AEM Assets {#aem-assets}
 
-Cloud Manager executes performance testing for AEM Assets programs by uploading assets repeatedly for a 30 minute test period. 
+Cloud Manager runs performance testing for AEM Assets programs by repeatedly uploading assets for 30 minutes. 
 
 #### Onboarding Requirement {#onboarding-requirement}
 
-For Assets performance testing, your Customer Success Engineer will create a `cloudmanager` user and password during the onboarding of the author to staging environment. The performance test steps require a user called `cloudmanager` and the associated password set up by your CSE. This should neither be removed from the author instance nor its permissions changed. Doing so will likely fail the Assets performance testing.
+For Assets performance testing, your Customer Success Engineer creates a `cloudmanager` user and password during the onboarding of the author to staging environment. The performance test steps require a user called `cloudmanager` and the associated password set up by your CSE. 
+
+This method should remain in the author instance with its permissions unchanged. Altering or removing it can cause Assets performance testing to fail.
 
 #### Images and Assets for Testing {#assets-for-testing}
 
-Customers can upload their own assets for testing. This can be done from the **Pipeline Setup** or **Edit** screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files.
+Customers can upload their own assets for testing. This process can be done from the **Pipeline Setup** or **Edit** screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files.
 
-If no images are uploaded, Cloud Manager will use a default image and PDF documents for testing.
+If no images are uploaded, Cloud Manager uses a default image and PDF documents for testing.
 
 #### Distribution of Assets for Testing {#distribution-of-assets}
 
 The distribution of how many assets of each type are uploaded per minute is set in the **Pipeline Setup** or **Edit** screen.
 
-For example, if a 70/30 split is used, and there are 10 assets uploaded per minute, 7 images and 3 documents will be uploaded per minute.
+For example, if a 70/30 split is used, and there are 10 assets uploaded per minute, 7 images and 3 documents are uploaded per minute.
 
 #### Testing and Reporting {#testing-and-reporting}
 
-Cloud Manager will create a folder on the author instance using the username and password as setup by the CSE. Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library.](https://github.com/adobe/toughday2) Both processing time for each asset as well as various system-level metrics are measured across the 30-minute testing duration. This feature can upload both images and PDF documents.
+Cloud Manager creates a folder on the author instance using the username and password that the CSE setup. Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library.](https://github.com/adobe/toughday2) Both processing time for each asset as well as various system-level metrics are measured across the 30-minute testing duration. This feature can upload both images and PDF documents.
 
 >[!TIP]
 >
->Please refer to the document [Configure Production Pipelines](/help/using/production-pipelines.md) to learn more. Refer to the document [Program Setup](/help/getting-started/program-setup.md) to learn how to setup your program and define your KPIs.
+>See [Configure Production Pipelines](/help/using/production-pipelines.md) to learn more. See [Program Setup](/help/getting-started/program-setup.md) to learn how to set up your program and define your KPIs.
 
 ### Performance Testing Results Graphs {#performance-testing-results-graphs}
 
@@ -261,7 +267,7 @@ This functionality is available for the following metrics.
 * **Disk I/O Wait Time** - A graph of disk I/O wait time during the test period
 
 * **Page Error Rate** - A graph of page errors per minute during the test period
-  * A CSV file listing pages which have produced an error during the test
+  * A CSV file listing pages that have produced an error during the test
 
 * **Disk Bandwidth Utilization** - A graph of disk bandwidth utilization during the test period
 
@@ -274,13 +280,15 @@ This functionality is available for the following metrics.
 
 ## Content Package Scanning Optimization {#content-package-scanning-optimization}
 
-As part of the quality analysis process, Cloud Manager performs analysis of the content packages produced by the Maven build. Cloud Manager offers optimizations to accelerate this process, which are effective when certain packaging constraints are observed. Most significant is the optimization performed for projects that output a single content package, generally referred to as an "all" package, which contains a number of other content packages produced by the build, which are marked as skipped. When Cloud Manager detects this scenario, rather than unpack the "all" package, the individual content packages are scanned directly and sorted based on dependencies. For example, consider the following build output.
+As part of the quality analysis process, Cloud Manager performs analysis of the content packages produced by the Maven build. Cloud Manager offers optimizations to accelerate this process, which is effective when certain packaging constraints are observed. 
+
+The key optimization is for projects outputting a single 'all' package, containing other content packages produced by the build, which are marked as skipped. When Cloud Manager detects this scenario, rather than unpack the "all" package, the individual content packages are scanned directly and sorted based on dependencies. For example, consider the following build output.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-If the only items inside `myco-all-1.0.0-SNAPSHOT.zip` are the two skipped content packages, then the two embedded packages will be scanned in lieu of the "all" content package.
+If the only items inside `myco-all-1.0.0-SNAPSHOT.zip` are the two skipped content packages, then the two embedded packages are scanned in lieu of the "all" content package.
 
 For projects that produce dozens of embedded packages, this optimization has been shown to save upwards of 10 minutes per pipeline execution.
 
@@ -288,5 +296,5 @@ A special case can occur when the "all" content package contains a combination o
 
 >[!NOTE]
 >
->* This optimization does not impact the packages which are deployed to AEM.
->* Because the matching between the embedded content packages and the skipped content packages is based on file names, this optimization cannot be performed if multiple skipped content packages have exactly the same file name or if the file name is changed while embedding.
+>* This optimization does not impact the packages that are deployed to AEM.
+>* Matching between embedded and skipped content packages is based on file names. This optimization fails if multiple skipped content packages share the same file name or if the file name changes during embedding.
