@@ -10,7 +10,7 @@ Learn how Cloud Manager notifies you of important events.
 
 ## Notifications in Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] sends you notifications when a production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment, as well as when the **Go-Live Approval** and **Scheduled** steps are reached. These notifications are sent through the [!UICONTROL Experience Cloud] notification system.
+[!UICONTROL Cloud Manager] sends you notifications when a production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment, and when the **Go-Live Approval** and **Scheduled** steps are reached. These notifications are sent through the [!UICONTROL Experience Cloud] notification system.
 
 >[!NOTE]
 >

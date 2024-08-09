@@ -19,7 +19,7 @@ The report serves as an assessment of the development effort that is involved in
 
 >[!NOTE]
 >
->To learn more about pattern detector, refer to the document [Assessing the Upgrade Complexity with the Pattern Detector.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=en)
+>To learn more about pattern detector, see [Assessing the Upgrade Complexity with the Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=en).
 
 ## Running the Evaluation {#running}
 
@@ -27,7 +27,7 @@ The pattern detector can run on any environment. However, in order to increase d
 
 Follow these steps to generate the evaluation report.
 
-1. Start the wizard as described in the document [Product Update Wizard.](/help/product-update-wizard/overview.md)
+1. Start the wizard as described in the document [Product Update Wizard](/help/product-update-wizard/overview.md).
 
 1. Click on **[!UICONTROL Run Evaluation]**.
 
@@ -35,7 +35,7 @@ Follow these steps to generate the evaluation report.
 
 1. The wizard informs you of the status of your action. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
-1. Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy.
+1. Once the report is generated, you can click **[!UICONTROL Download report]** to save a copy.
 
    ![Report created](/help/assets/Evaluation-1.png)
 

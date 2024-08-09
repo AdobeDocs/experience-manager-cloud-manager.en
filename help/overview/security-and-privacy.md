@@ -12,7 +12,7 @@ Learn about the security and privacy of your code and artifact assets in Cloud M
 
 [!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. 
 
-To learn about the possible roles you can assign in the Admin Console and user role permissions, refer to the document [Role-Based Permissions.](/help/requirements/role-based-permissions.md)
+To learn about the possible roles you can assign in the Admin Console and user role permissions, see [Role-Based Permissions](/help/requirements/role-based-permissions.md).
 
 ## Resource Isolation {#resource-isolation}
 

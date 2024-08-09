@@ -40,7 +40,7 @@ This table summarizes the roles.
 
 [!UICONTROL Cloud Manager] roles are managed from the Admin Console. Specific role memberships are provided by adding the user to a [!UICONTROL Cloud Manager] product profile.
 
-The Admin Console is a central location for managing your Adobe entitlements across your entire organization. To learn more about the Adobe Admin Console, see the documentation for [Admin Console.](https://helpx.adobe.com/enterprise/using/admin-console.html)
+The Admin Console is a central location for managing your Adobe entitlements across your entire organization. To learn more about the Adobe Admin Console, see the documentation for [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
 In order to provide the appropriate role-based permissions to [!UICONTROL Cloud Manager] users, an administrator in the customer's organization must create new product profiles under the [!UICONTROL AEM Managed Services] product context corresponding to each of the four [!UICONTROL Cloud Manager] roles:
 
@@ -51,9 +51,9 @@ In order to provide the appropriate role-based permissions to [!UICONTROL Cloud 
 
 You can create or add users/groups to these product profiles with the Admin Console.
 
-1. Log in to the Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Log in to the Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
-1. Click on the **Overview** tab, click on the product you want to modify on the **Products and services** card. If it is not listed there, use the **Products** tab to locate the product and click it.
+1. Click on the **Overview** tab, click the product you want to modify on the **Products and services** card. If it is not listed there, use the **Products** tab to locate the product and click it.
 
    ![Admin console overview tab](/help/assets/admin-console-overview.png)
 
@@ -87,26 +87,26 @@ You can create or add users/groups to these product profiles with the Admin Cons
 
 Once you have created product profiles, you can assign users or user groups to them.
 
-1. Log in to the Admin Console at [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Log in to the Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. In the Admin Console, choose the **Users** tab.
 
    ![Users tab](/help/assets/admin-console-users.png)
 
-1. Click on **Users** in the left navigation panel and then click on a user to modify it.
+1. Click **Users** in the left navigation panel and then click a user to modify it.
 
-1. Click on the ellipsis button in the **Products** section and select **Edit**.
+1. Click the ellipsis button in the **Products** section and select **Edit**.
 
    ![Edit user](/help/assets/admin-console-edit-user.png)
 
-1. In the **Edit products and user groups** dialog, click the plus button and select the profiles to assign to the user.
+1. In the **Edit products and user groups** dialog box, click the plus button and select the profiles to assign to the user.
 
-   * If the user already is assigned to the roles, the plus button will be an edit button (a pencil), but works the same way.
+   * If the user already is assigned to the roles, the plus button is an edit button (a pencil), but works the same way.
 
    ![Edit products and user groups](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. Click **Save** to save the profiles to the user.
 
-Repeat the same steps to assign profiles to user groups, but select **User Groups** from the left navigation panel on the **Users** tab. Click on a user group and select the **Assigned Product Profiles** tab and click **Assign Product Profile** to assign profiles.
+Repeat the same steps to assign profiles to user groups, but select **User Groups** from the left navigation panel on the **Users** tab. Click a user group and select the **Assigned Product Profiles** tab and click **Assign Product Profile** to assign profiles.
 
 ![Assign profiles to group](/help/assets/admin-console-edit-user-groups.png)

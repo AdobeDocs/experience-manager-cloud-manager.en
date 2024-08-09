@@ -103,16 +103,16 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
 1. Each AEM artifact is deployed to each AEM instance via Package Manager APIs, with package dependencies determining the deployment order.
 
-   * To learn more about how you can use packages to install new functionality, transfer content between instances, and back up repository content, please refer to the document [Package Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html)
+   * To learn more about how you can use packages to install new functionality, transfer content between instances, and back up repository content, See [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html).
 
    >[!NOTE]
    >
-   >All AEM artifacts are deployed to both the author and the publishers. Run modes should be leveraged when node-specific configurations are required. To learn more about how the run-modes allow you to tune your AEM instance for a specific purpose, please refer to the [Run Modes section of the document Deploying to AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes)
+   >All AEM artifacts are deployed to both the author and the publishers. Run modes should be leveraged when node-specific configurations are required. To learn more about how the run-modes allow you to tune your AEM instance for a specific purpose, See the [Run Modes section of the document Deploying to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes).
 
 1. The dispatcher artifact is deployed to each dispatcher as follows:
 
    1. Current configurations are backed up and copied to a temporary location.
-   1. All configurations are deleted except the immutable files. Refer to the document [Dispatcher Configurations](/help/getting-started/dispatcher-configurations.md) for more details. This clears the directories to ensure no orphaned files are left behind.
+   1. All configurations are deleted except the immutable files. See [Dispatcher Configurations](/help/getting-started/dispatcher-configurations.md) for more details. This clears the directories to ensure no orphaned files are left behind.
    1. The artifact is extracted to the `httpd` directory. Immutable files are not overwritten. Any changes you make to immutable files in your git repository will be ignored at the time of deployment. These files are core to the AMS dispatcher framework and can not be changed.
    1. Apache performs a configuration test. If no errors are found, the service is reloaded. If an error occurs, the configurations are restored from backup, the service is reloaded, and the error is reported back to Cloud Manager.
    1. Each path specified in the pipeline configuration is invalidated or flushed from the dispatcher cache.
@@ -194,7 +194,7 @@ In such circumstances where a re-execution is possible, the production pipeline 
 
 ### Re-Execute API {#reexecute-api}
 
-In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions as well as identify executions that were triggered as re-executions.
+In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions and identify executions that were triggered as re-executions.
 
 #### Triggering a Re-Execution {#triggering}
 

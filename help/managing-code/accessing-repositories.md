@@ -17,7 +17,7 @@ Cloud Manager makes it easy to retrieve your repository access information for A
 
    ![Access Repo Info button on Environments card](assets/pipelines-card.png)
 
-1. Tap or click the **Access Repo Info** button to open the **Repository Info** dialog and view:
+1. Click the **Access Repo Info** button to open the **Repository Info** dialog and view:
 
    * The git username.
    * The git password.
@@ -26,9 +26,9 @@ Cloud Manager makes it easy to retrieve your repository access information for A
 
    ![Repository Info window](assets/access-repo-info.png)
 
-1. To access the password, a new password must be generated. To do so, tap or click the **Generate password** button.
+1. To access the password, a new password must be generated. To do so, click the **Generate password** button.
 
-1. Confirm password generation in the **Are you sure...** dialog by tapping or clicking **Generate password**.
+1. Confirm password generation in the **Are you sure...** dialog box by clicking **Generate password**.
 
    ![Confirm password generation](assets/confirm-password-generation.png)
 
@@ -49,10 +49,10 @@ Using these credentials, you can clone a local copy of the repository, make chan
 
 ## Accessing Repository Information from the Repositories Window {#repositories-window}
 
-An **Access Repo Info** button is also available in the toolbar of the [**Repositories** window.](managing-repositories.md) it displays the same information about accessing Adobe-managed repositories.
+An **Access Repo Info** button is also available in the toolbar of the [**Repositories** window](managing-repositories.md) it displays the same information about accessing Adobe-managed repositories.
 
 ## Revoking an Access Password {#revoke-password}
 
-You can revoke an access password at any time. To do so, please [create a support ticket for this request.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)
+You can revoke an access password at any time. To do so, [create a support ticket for this request](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support).
 
 The ticket will be treated with high priority and should be revoked within one day.

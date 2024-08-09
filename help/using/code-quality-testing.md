@@ -40,11 +40,11 @@ Code quality testing scans the source code to ensure that it meets certain quali
 
 The software implements it using a combination of SonarQube analysis, content package-level examination with OakPAL, and Dispatcher validation with the Dispatcher Optimization Tool.
 
-There are more than 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules.](/help/using/custom-code-quality-rules.md)
+There are more than 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
 
 >[!TIP]
 >
->You can download the complete list of rules [using this link.](/help/assets/CodeQuality-rules-latest-AMS.xlsx)
+>You can download the complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 The results of code quality testing are delivered as rating as summarized in this table.
 
@@ -56,7 +56,7 @@ The results of code quality testing are delivered as rating as summarized in thi
 |Coverage|Defined by a mix of unit test line coverage and condition coverage using the formula: <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = Conditions that have been evaluated as `true` at least once while running unit tests</li><li>`CF` = Conditions that have been evaluated as `false` at least once while running unit tests</li><li>`LC` = Covered lines = lines_to_cover - uncovered_lines</li><li>`B` = total number of conditions</li><li>`EL` = total number of executable lines (lines_to_cover)</li></ul>|Important|&lt; 50%|
 |Skipped Unit Tests|Number of skipped unit tests|Info|> 1|
 |Open Issues|Overall issue types - Vulnerabilities, Bugs, and Code Smells|Info|&gt; 0|
-|Duplicated Lines|Defined as the number of lines involved in duplicated blocks. A block of code is considered duplicated under the following conditions.<br>Non-Java Projects:<ul><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread over at least: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li></ul>Java Projects:<ul></li><li> There should be at least 10 successive and duplicated statements regardless of the number of tokens and lines.</li></ul>Differences in indentation as well as in string literals are ignored when detecting duplicates.|Info|&gt; 1%|
+|Duplicated Lines|Defined as the number of lines involved in duplicated blocks. A block of code is considered duplicated under the following conditions.<br>Non-Java Projects:<ul><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread over at least: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li></ul>Java Projects:<ul></li><li> There should be at least 10 successive and duplicated statements regardless of the number of tokens and lines.</li></ul>Differences in indentation and in string literals are ignored when detecting duplicates.|Info|&gt; 1%|
 |Cloud Service Compatibility|Number of identified Cloud Service Compatibility issues|Info|> 0|
 
 >[!NOTE]
@@ -65,7 +65,7 @@ The results of code quality testing are delivered as rating as summarized in thi
 
 >[!NOTE]
 >
->To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], please refer to the document [Custom Code Quality Rules.](custom-code-quality-rules.md)
+>To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], See [Custom Code Quality Rules](custom-code-quality-rules.md).
 
 ### Dealing with False Positives {#dealing-with-false-positives}
 
@@ -166,7 +166,7 @@ Three page sets select the pages. Cloud Manager uses the access logs from the AE
 
 ##### Distribution of Traffic Across Page Sets Selected {#distribution-of-traffic}
 
-You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration.](/help/using/production-pipelines.md) The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put into each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
+You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration](/help/using/production-pipelines.md). The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put into each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
 
 Let us consider this example.
 
@@ -182,7 +182,7 @@ Over the 30 minute test period:
  
 #### Testing and Reporting {#testing-reporting}
 
-Cloud Manager executes performance testing for AEM Sites programs by requesting pages as an unauthenticated user by default on the staging publish server for a 30 minute test period. It measures the virtual user-generated metrics (response time, error rate, views per minute, and so on) for each page as well as various system-level metrics (CPU, memory, networking data) for all instances.
+Cloud Manager executes performance testing for AEM Sites programs by requesting pages as an unauthenticated user by default on the staging publish server for a 30 minute test period. It measures the virtual user-generated metrics (response time, error rate, views per minute, and so on) for each page and various system-level metrics (CPU, memory, networking data) for all instances.
 
 The following table summarizes the performance test matrix using the three-tiered gating system.
 
@@ -198,7 +198,7 @@ The following table summarizes the performance test matrix using the three-tiere
 | Network Bandwidth Utilization |Important |>= 90% |
 | Requests Per Minute |Info |>= 6000 |
 
-Refer to the section [Authenticated Performance Testing](#authenticated-performance-testing) for more details on using basic authentication for performance testing for Sites and Assets.
+See [Authenticated Performance Testing](#authenticated-performance-testing) for more details on using basic authentication for performance testing for Sites and Assets.
 
 >[!NOTE]
 >
@@ -244,7 +244,7 @@ For example, if a 70/30 split is used, and there are 10 assets uploaded per minu
 
 #### Testing and Reporting {#testing-and-reporting}
 
-Cloud Manager creates a folder on the author instance using the username and password that the CSE setup. Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library.](https://github.com/adobe/toughday2) Both processing time for each asset as well as various system-level metrics are measured across the 30-minute testing duration. This feature can upload both images and PDF documents.
+Cloud Manager creates a folder on the author instance using the username and password that the CSE setup. Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library](https://github.com/adobe/toughday2). Both processing time for each asset and various system-level metrics are measured across the 30-minute testing duration. This feature can upload both images and PDF documents.
 
 >[!TIP]
 >
@@ -292,7 +292,7 @@ If the only items inside `myco-all-1.0.0-SNAPSHOT.zip` are the two skipped conte
 
 For projects that produce dozens of embedded packages, this optimization has been shown to save upwards of 10 minutes per pipeline execution.
 
-A special case can occur when the "all" content package contains a combination of skipped content packages and OSGi bundles. For example, if `myco-all-1.0.0-SNAPSHOT.zip` contained the two embedded packages previously mentioned as well as one or more OSGi bundles, then a new, minimal content package is constructed with only the OSGi bundles. This package is always named `cloudmanager-synthetic-jar-package` and the contained bundles are placed in `/apps/cloudmanager-synthetic-installer/install`.
+A special case can occur when the "all" content package contains a combination of skipped content packages and OSGi bundles. For example, if `myco-all-1.0.0-SNAPSHOT.zip` contained the two embedded packages previously mentioned and one or more OSGi bundles, then a new, minimal content package is constructed with only the OSGi bundles. This package is always named `cloudmanager-synthetic-jar-package` and the contained bundles are placed in `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

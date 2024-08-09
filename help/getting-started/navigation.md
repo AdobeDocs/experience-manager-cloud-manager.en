@@ -25,15 +25,15 @@ The My Programs console provides an overview of all programs to which you have a
 1. Tabs that allow you to toggle the current view of your programs.
    * **Home** view (default) that selects the **My Programs** view with an overview of all programs
    * **License** that accesses the License Dashboard. The license dashboard only applies to AEM as a Cloud Service programs, not AMS programs.
-     * To determine the type of service your program has (AMS or AEMaaCS), please see the [Program Cards section](#program-cards) of this document.
-   * Note that the tabs default to closed and can be revealed using the hamburger menu in the [Cloud Manager header.](#cloud-manager-header)
+     * To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.
+   * Note that the tabs default to closed and can be revealed using the hamburger menu in the [Cloud Manager header](#cloud-manager-header).
 1. [Call-to-Actions and Statistics](#cta-statistics) for an overview of your recent activity
 1. [**My Programs** section](#my-programs-section) with an overview of all your programs
 1. [Quick links](#quick-links) to easily access related resources
 
 >[!TIP]
 >
->Please see the document [Programs and Program Types](/help/getting-started/program-setup.md) for details on programs.
+>See [Programs and Program Types](/help/getting-started/program-setup.md) for details on programs.
 
 ### Toolbars {#my-programs-toolbars}
 
@@ -47,13 +47,13 @@ The first is the Cloud Manager header, which is persistent as you navigate Cloud
 
 1. The hamburger menu giving access to tabs that can take you to specific parts of a in individual program or switch between the License Dashboard and the **[My Programs](#my-programs-console)** console depending on context.
    * The license dashboard only applies to AEM as a Cloud Service programs, not AMS programs.
-   * To determine the type of service your program has (AMS or AEMaaCS), please see the [Program Cards section](#program-cards) of this document.
+   * To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.
 1. The Cloud Manager button will take you back to the My Programs console of Cloud Manager no matter where you are in Cloud Manager.
-1. Tap or click the Feedback button to provide feedback to Adobe about Cloud Manager.
-1. The organization selector displays the organization you are currently signed into (in this example, Foundation Internal). Tap or click to switch to another organization if your Adobe ID is associated with multiple.
-1. Tapping or clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
+1. Click the Feedback button to provide feedback to Adobe about Cloud Manager.
+1. The organization selector displays the organization you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple.
+1. Clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
 1. The help icon provides quick access to learning and support resources.
-1. The notifications icon is badged with the number of currently assigned incomplete [notifications.](/help/using/notifications.md)
+1. The notifications icon is badged with the number of currently assigned incomplete [notifications](/help/using/notifications.md)
 1. Select the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
 
 #### Program Toolbar {#program-toolbar}
@@ -79,7 +79,7 @@ Or if you are just beginning the setup of your org, there might be tips on next 
 
 ### My Programs Section {#my-programs-section}
 
-The main content of the My Programs console is the **My Programs** section that lists your programs as individual cards. Tap or click on a card to access the **Program Overview** page of the program for details about the program.
+The main content of the My Programs console is the **My Programs** section that lists your programs as individual cards. Click on a card to access the **Program Overview** page of the program for details about the program.
 
 >[!NOTE]
 >
@@ -131,13 +131,13 @@ The quick links section give you access to commonly-used, related resources.
 
 ## Program Overview Window {#program-overview}
 
-Once you select a program in the [**My Programs** console,](#my-programs-console) you are taken to the Program Overview.
+Once you select a program in the [**My Programs** console](#my-programs-console), you are taken to the Program Overview.
 
 ![Program overview](assets/program-overview.png)
 
 The program overview gives you access to all details of a Cloud Manager program. Like the My Programs console, it is made of several parts.
 
-1. [Toolbars](#program-overview-toolbar) to quickly jump back to the My Programs console as well as navigate the program
+1. [Toolbars](#program-overview-toolbar) to quickly jump back to the My Programs console and navigate the program
 1. [Tabs](#program-tabs) to switch between different aspects of the program
 1. A [call-to-action](#cta) based on the last actions of the program
 1. An [overview of the environments](#environments) of the program
@@ -146,7 +146,7 @@ The program overview gives you access to all details of a Cloud Manager program.
 
 ### Toolbars {#program-overview-toolbar}
 
-The toolbars for the program overview are very similar to those of the [My Programs console.](#my-programs-toolbars) Only the differences are illustrated here.
+The toolbars for the program overview are very similar to those of the [My Programs console](#my-programs-toolbars). Only the differences are illustrated here.
 
 #### Cloud Manager Header {#cloud-manager-header-2}
 
@@ -154,7 +154,7 @@ The Cloud Manager header has a hamburger menu that automatically opens to show t
 
 ![Cloud Manager hamburger menu](assets/cloud-manager-hamburger.png)
 
-Tap or click the hamburger menu icon to hide the tabs.
+Click the hamburger menu icon to hide the tabs.
 
 #### Program Toolbar {#program-toolbar-2}
 
@@ -184,7 +184,7 @@ Use the hamburger menu in the [Cloud Manager header](#cloud-manager-header-2) to
 
 ### Call-to-Action {#cta}
 
-The call-to-action section will give you helpful information depending on the status of your program. For a new program you may see next steps offered as well as a reminder of a go-live date, [set during program creation.](/help/getting-started/program-setup.md)
+The call-to-action section will give you helpful information depending on the status of your program. For a new program you may see next steps offered and a reminder of a go-live date, [set during program creation](/help/getting-started/program-setup.md).
 
 For a live program, the status of your last deployment with links for details and starting a new deployment.
 
@@ -192,19 +192,19 @@ For a live program, the status of your last deployment with links for details an
 
 ### Environments Card {#environments}
 
-The **Environments** card gives you an overview of your environments as well as links for quick actions.
+The **Environments** card gives you an overview of your environments and links for quick actions.
 
 The **Environments** card only lists three environments. Click **Show All** to see all environments of the program.
 
-Please see the document [Managing Environments](/help/using/managing-environments.md) for details on how to manage your environments.
+See [Managing Environments](/help/using/managing-environments.md) for details on how to manage your environments.
 
 ### Pipelines Card {#pipelines}
 
-The **Pipelines** card gives you an overview of your pipelines as well as links for quick actions.
+The **Pipelines** card gives you an overview of your pipelines and links for quick actions.
 
 The **Pipelines** card only lists three pipelines. Click **Show All** to see all pipelines of the program.
 
-Please see the document [Managing Pipelines](/help/using/managing-pipelines.md) for details on how to manage your pipelines.
+See [Managing Pipelines](/help/using/managing-pipelines.md) for details on how to manage your pipelines.
 
 ### Useful Resources {#useful-resources}
 

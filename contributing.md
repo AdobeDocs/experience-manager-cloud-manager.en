@@ -2,7 +2,7 @@
 
 Thank you for choosing to contribute to Adobe Experience Manager Screens documentation! Adobe welcomes content contributions from the entire reader community and from fellow Adobe employees.
 
-This file describes how you can contribute as well as points out the guidelines to follow when making your contributions.
+This file describes how you can contribute and points out the guidelines to follow when making your contributions.
 
 ## Adobe Open Source Code of Conduct
 
@@ -23,7 +23,7 @@ Which method you choose depends on how comfortable you are editing the documenta
 
 >[!NOTE]
 >
->Contributions that you submit are covered by the [Adobe terms of use.](https://www.adobe.com/legal/terms.html)
+>Contributions that you submit are covered by the [Adobe terms of use](https://www.adobe.com/legal/terms.html).
 
 ### Create an Issue {#create-an-issue}
 

@@ -60,7 +60,7 @@ More information on git submodules can be found in the [Git reference manual](ht
 
 ## Limitations {#limitations}
 
-When using git submodules, please be aware:
+When using git submodules, be aware of the following:
 
 * The git URL must be exactly in the syntax described above.
 * For security reasons, do not embed credentials in these URLs.

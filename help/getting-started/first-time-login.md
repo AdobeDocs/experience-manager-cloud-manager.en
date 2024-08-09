@@ -18,15 +18,15 @@ Once you have set up the general configuration for [!UICONTROL Cloud Manager], y
 
    ![Cloud Manager console](/help/assets/cloud-manager-console.png)
 
-1. Tap or click your program's card to navigate to Cloud Manager's **Overview** page. 
+1. Click your program's card to navigate to Cloud Manager's **Overview** page. 
 
 1. Cloud Manager opens to the **Overview** page.
 
    ![Cloud Manager overview page](/help/assets/program-overview-page.png)
 
-1. If your program is not yet set up, tap or click **Setup Program** in the [call-to-action](/help/getting-started/navigation.md#cta) to set up your program description and define key performance indicators (KPIs). If your program is already set up, the CTA may offer additional next steps.
+1. If your program is not yet set up, click **Setup Program** in the [call-to-action](/help/getting-started/navigation.md#cta) to set up your program description and define key performance indicators (KPIs). If your program is already set up, the CTA may offer additional next steps.
 
-Please continue to the document [Program Setup](/help/getting-started/program-setup.md) for the next steps in setting up your program.
+You can continue to the document [Program Setup](/help/getting-started/program-setup.md) for the next steps in setting up your program.
 
 ## Cloud Manager Activity {#activity}
 
@@ -34,7 +34,7 @@ Cloud Manager provides a consolidated view into a program's activity, listing al
 
 >[!TIP]
 >
->For details on how to use the Cloud Manager UI, please see the document [Navigating the Cloud Manager UI.](/help/getting-started/navigation.md)
+>For details on how to use the Cloud Manager UI, See the document [Navigating the Cloud Manager UI](/help/getting-started/navigation.md).
 
 >[!NOTE]
 >
