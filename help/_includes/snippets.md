@@ -1,6 +1,6 @@
 # Snippets (#snippets)
 
-## Copy Content Known-Issues {#copy-content-known-issues}
+## Content Copy Known-Issues {#content-copy-known-issues}
 
 You should be aware of the following known issue when using the [content copy functionality.](help/using/content-copy.md)
 
