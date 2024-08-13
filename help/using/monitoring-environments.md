@@ -20,7 +20,7 @@ Follow these steps to access System Monitoring.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
 
-1. Tap or click the ellipsis button of the program you wish to monitor and select the **Show Monitoring** option.
+1. Click the ellipsis button of the program you wish to monitor and select the **Show Monitoring** option.
  
    ![Settings](/help/assets/first-timea1.png)
 
@@ -45,7 +45,7 @@ The status in each category is a summary of individual metrics. If any metric in
 
 ## System Monitoring Detail {#system-monitoring-detail}
 
-To view the details of specific metrics, tap or click on one of the category columns of a specific instance or the category title in the left navigation. Each detail page shows a series of graphs for the metrics within that category. You can either view the metrics for all instances in an environment or for a specific instance. You can switch between the environment and instances using the dropdown boxes in the top-right corner.
+To view the details of specific metrics, click one of the category columns of a specific instance or the category title in the left navigation. Each detail page shows a series of graphs for the metrics within that category. You can either view the metrics for all instances in an environment or for a specific instance. You can switch between the environment and instances using the dropdown boxes in the top-right corner.
 
 ![Select environment](/help/assets/System_Monitoring1.png)
 
@@ -56,7 +56,7 @@ An individual graph will show the status and a graph of the data over time along
 ![Metrics graph](/help/assets/Monitoring_Graphs1.png)
 
 Individual series can be hidden on a graph by clicking on the series in the legend. 
-For example, if you click on the warning threshold series, you will see only the critical threshold.
+For example, if you click the warning threshold series, you will see only the critical threshold.
 
 ![Modify graph](/help/assets/Monitoring_Graphs2.png)
 

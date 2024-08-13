@@ -18,7 +18,7 @@ If you are using [private repositories](private-repositories.md) for your Cloud 
 
 ![Example of code issue annotation](assets/github-check-annotations-example.png)
 
-The exact line of code with the issue is provided and you can click on it to show the relevant code. These annotations are provided for all code issues, not just those changed in the pull request.
+The exact line of code with the issue is provided and you can click it to show the relevant code. These annotations are provided for all code issues, not just those changed in the pull request.
 
 ![Example of code issue annotation](assets/github-check-annotations-example-code.png)
 
@@ -34,4 +34,4 @@ The [code quality](/help/using/code-quality-testing.md) results are also visible
 
 ![Example of annotations](assets/github-check-annotations-code-quality-2.png)
 
-You can also visualize the issues in the form of a CSV. This can be retrieved by [viewing the details of the pipeline execution in Cloud Manager.](/help/using/managing-pipelines.md)
+You can also visualize the issues in the form of a CSV. This can be retrieved by [viewing the details of the pipeline execution in Cloud Manager](/help/using/managing-pipelines.md).

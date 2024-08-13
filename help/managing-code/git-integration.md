@@ -24,7 +24,7 @@ This video series assumes a basic knowledge of git and source control management
 
 The steps and naming conventions outlined in this video series represent some best practices for working with a customer-managed git repository and Cloud Manager. It is expected that the conventions and workflows depicted would be adapted for individual development teams.
 
-For a complete overview of Cloud Manager, please review the document [Introduction to Cloud Manager.](/help/introduction.md)
+For a complete overview of Cloud Manager, see [Introduction to Cloud Manager](/help/introduction.md).
 
 ## Initial Sync {#initial-sync}
 
@@ -34,7 +34,7 @@ First steps for synchronizing a customer-managed git repository with Cloud Manag
 
 ## Basic Branching Strategy {#branching-strategy}
 
-Set up a basic branching strategy in order to take advantage of Cloud Manager's [production](/help/using/production-pipelines.md) and [non-production pipelines.](/help/using/non-production-pipelines.md)
+Set up a basic branching strategy in order to take advantage of Cloud Manager's [production](/help/using/production-pipelines.md) and [non-production pipelines](/help/using/non-production-pipelines.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 

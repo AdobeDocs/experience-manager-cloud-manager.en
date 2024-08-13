@@ -41,39 +41,39 @@ Before any content can be copied, a content set must be defined. Once defined, c
 
 1. Navigate to the **Content Sets** page from the **Environments** screen.
 
-1. Tap or click the **Add Content Set** button at the top-right of the screen.
+1. Click the **Add Content Set** button at the top-right of the screen.
 
    ![Content Sets](/help/assets/content-sets.png)
 
-1. On the **Details** tab of the wizard, provide a name and description for the content set and tap or click **Continue**.
+1. On the **Details** tab of the wizard, provide a name and description for the content set and click **Continue**.
 
    ![Content set details](/help/assets/add-content-set-details.png)
 
 1. On the **Content Paths** tab of the wizard, specify the paths of the mutable content to be included in the content set.
 
    1. Enter the path in the **Add Include Path** field.
-   1. Tap or click the **Add Path** button to add the path to the content set.
-   1. Tap or click the **Add Path** button again as necessary.
+   1. Click the **Add Path** button to add the path to the content set.
+   1. Click the **Add Path** button again as necessary.
 
    ![Add paths to content set](/help/assets/add-content-set-paths.png)
 
 1. If you need to refine or restrict your content set, sub-paths can be excluded.
 
-   1. In the list of included paths, tap or click the **Add exclude sub-paths** icon next to the path you need to restrict.
+   1. In the list of included paths, click the **Add exclude sub-paths** icon next to the path you need to restrict.
    1. Enter the sub-path to exclude beneath the selected path.
-   1. Tap or click **Exclude Path**.
-   1. Tap or click **Add exclude sub-paths** again to add additional paths to exclude as necessary.
+   1. Click **Exclude Path**.
+   1. Click **Add exclude sub-paths** again to add additional paths to exclude as necessary.
 
    ![Excluding paths](/help/assets/add-content-set-paths-excluded.png)
 
 1. You can modify the specified paths if required.
 
-   1. Tap or click the X next to excluded sub-paths to delete them.
-   1. Tap or click the ellipsis button next to paths to reveal **Edit** and **Delete** options.
+   1. Click the X next to excluded sub-paths to delete them.
+   1. Click the ellipsis button next to paths to reveal **Edit** and **Delete** options.
 
    ![Editing path list](/help/assets/add-content-set-excluded-paths.png)
 
-1. Tap or click **Create** to create the content set.
+1. Click **Create** to create the content set.
 
 The content set can now be used to copy content between environments.
 
@@ -84,7 +84,7 @@ The content set can now be used to copy content between environments.
 
 ## Editing a Content Set {#edit-content-set}
 
-Follow similar steps as when creating a content step. Instead of tapping or clicking **Add Content Set**, select an existing set from the console and select **Edit** from the ellipsis menu.
+Follow similar steps as when creating a content step. Instead of clicking **Add Content Set**, select an existing set from the console and select **Edit** from the ellipsis menu.
 
 ![Edit content set](/help/assets/edit-content-set.png)
 
@@ -120,7 +120,7 @@ Once a content set has been created, you can use it to copy content. Follow thes
 
    ![Copying content](/help/assets/copying-content.png)
 
-1. Tap or click **Copy**.
+1. Click **Copy**.
 
 The copy process starts. The status of the copy process is reflected in the console for the selected content set.
 

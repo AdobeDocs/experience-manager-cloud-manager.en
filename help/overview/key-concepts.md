@@ -10,9 +10,9 @@ Like all powerful tools, Cloud Manager encompasses many concepts and terms. This
 
 ## Application {#application}
 
-An application is the set of customizations and configurations created by a customer in order to adapt the underlying [solution](#solution) (such as AEM Sites or AEM Assets) for their specific use cases and needs. An application is a logical unit which may be composed of multiple [artifacts.](#artifact)
+An application is the set of customizations and configurations created by a customer in order to adapt the underlying [solution](#solution) (such as AEM Sites or AEM Assets) for their specific use cases and needs. An application is a logical unit which may be composed of multiple [artifacts](#artifact).
 
-An example application is the fictional [WKND lifestyle application.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+An example application is the fictional [WKND lifestyle application](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 ## Artifact {#artifact}
 
@@ -24,15 +24,15 @@ An artifact repository is a storage location where customer-specific [artifacts]
 
 ## Environment {#environment}
 
-An environment is a single cluster of virtual machines within a [program.](#program) For AEM, this is composed of an authoring instance (optionally with an additional cold standby authoring instance), zero or more publishing instances, one or more dispatcher instances, and a load balancer.
+An environment is a single cluster of virtual machines within a [program](#program). For AEM, this is composed of an authoring instance (optionally with an additional cold standby authoring instance), zero or more publishing instances, one or more dispatcher instances, and a load balancer.
 
 ## git Repository {#git-repository}
 
-A git repository is a location where customer-specific source code is stored and is accessible [using git.](https://git-scm.com)
+A git repository is a location where customer-specific source code is stored and is accessible [using git](https://git-scm.com).
 
 ## Instance {#instance}
 
-An instance is a specific virtual server running the AEM [solution.](#solution) Instances represent a single logical unit from a deployment perspective.
+An instance is a specific virtual server running the AEM [solution](#solution). Instances represent a single logical unit from a deployment perspective.
 
 ## Organization {#organization}
 
@@ -56,4 +56,4 @@ A solution is one of the Adobe [!UICONTROL Experience Cloud] solutions. For exam
 
 ## Step {#step}
 
-A step is a configured instruction set that accomplishes some unit of work as a building block of a [pipeline.](#pipeline)
+A step is a configured instruction set that accomplishes some unit of work as a building block of a [pipeline](#pipeline).

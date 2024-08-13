@@ -23,7 +23,7 @@ Start here to get to know Cloud Manager for Adobe Manage Services (AMS) and how 
 >
 >This documentation specifically describes the features and functions of Cloud Manager for Adobe Managed Services (AMS).
 >
->The equivalent documentation for AEM as a Cloud Service can be found in the [AEM as a Cloud Service documentation.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)
+>The equivalent documentation for AEM as a Cloud Service can be found in the [AEM as a Cloud Service documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html).
  
 With Cloud Manager, your development team benefits from the following features:
 
@@ -49,7 +49,7 @@ The user interface (UI) for [!UICONTROL Cloud Manager] enables you to easily acc
 
 You define application-specific key performance indicators (KPIs) (such as peak page views per minute and expected response time for a page load) that form the basis for measuring a successful deployment. Roles and permissions for different team members can be easily defined. The self-service interface puts control in your hands, but it also offers links to best practice resources and access to experts within Adobe who can provide the necessary guidance as needed.
 
-To explore and get started with [!UICONTROL Cloud Manager]'s UI, see the document [First Time Login.](/help/getting-started/first-time-login.md)
+To explore and get started with [!UICONTROL Cloud Manager]'s UI, see the document [First Time Login](/help/getting-started/first-time-login.md).
 
 ### CI/CD Pipeline {#ci-cd-pipeline}
 
@@ -57,7 +57,7 @@ One of the key capabilities of [!UICONTROL Cloud Manager] is the ability to exer
 
 Through the [!UICONTROL Cloud Manager] UI, you can configure and kick off your CI/CD pipeline. As part of this pipeline, a thorough code scan is executed to ensure that only high-quality applications pass through to the production environment.
 
-To learn more about configuring pipeline from [!UICONTROL Cloud Manager]'s UI, see the documents [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines.](/help/using/non-production-pipelines.md)
+To learn more about configuring pipeline from [!UICONTROL Cloud Manager]'s UI, see the documents [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
 
 ### Flexible Deployment Modes {#flexible-deployment-modes}
 
@@ -67,11 +67,11 @@ With an automatic trigger mode, code is automatically deployed to an environment
 
 Independent of the deployment trigger, quality checks are always performed as part of the CI/CD pipeline execution every time a deployment is triggered. Quality checks include, code inspection, security testing, and performance testing, all of which is delivered out of the box with no effort required from you or your partners.
 
-To learn more about deploying code and quality checks, see the document [Deploying Code.](/help/using/code-deployment.md)
+To learn more about deploying code and quality checks, see the document [Deploying Code](/help/using/code-deployment.md).
 
 ## Optional Features in Cloud Manager {#optional-features-in-cloud-manager}
 
-Cloud Manager offers additional, advanced feature which may be beneficial for your project depending on your particular environment setup and needs. If these features are of interest to you, please reach out to your Customer Success Engineer (CSE) or Adobe representative to discuss further.
+Cloud Manager offers additional, advanced feature which may be beneficial for your project depending on your particular environment setup and needs. If these features are of interest to you, reach out to your Customer Success Engineer (CSE) or Adobe representative to discuss further.
 
 ### Autoscaling {#autoscaling}
 
@@ -83,7 +83,7 @@ The autoscaling feature applies only to the Dispatcher/publishing tier and is ex
 
 >[!NOTE]
 >
->If you are interested in exploring whether autoscaling is appropriate for your application, please contact your CSE or Adobe representative.
+>If you are interested in exploring whether autoscaling is appropriate for your application, contact your CSE or Adobe representative.
 
 ### Blue/Green Deployments {#blue-green}
 
@@ -117,7 +117,7 @@ When blue/green deployment is enabled, the deployment flow differs from the stan
 
 All AMS users who are using Cloud Manager for production deployments are eligible to use blue/green deployment. However usage of blue/green deployment requires additional validation of your environments and setup by an Adobe CSE.
 
-If you are interested in blue/green deployment, please consider the following requirements and limitations and contact your CSE.
+If you are interested in blue/green deployment, consider the following requirements and limitations and contact your CSE.
 
 #### Requirements and Limitations {#limitations}
 
@@ -125,5 +125,5 @@ If you are interested in blue/green deployment, please consider the following re
 * Preview Dispatcher/publish pairs are not part of blue/green deployments.
 * Every Dispatcher/publish pair is identical to every other Dispatcher/publish pair.
 * Blue/green is only available in the production environment.
-* Blue/green is available in AWS as well as Azure.
+* Blue/green is available in AWS and Azure.
 * Blue/green is not available to Assets only customers.

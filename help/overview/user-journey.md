@@ -40,7 +40,7 @@ As you perform the upgrade, you will be onboarded to Cloud Manager and provided 
 
 Your existing AEM project will also need to conform to the recommended best practices, as you will start using [!UICONTROL Cloud Manager] for deploying new code changes to your AEM environments.
 
-To get additional information on the benefits of upgrading to AEM 6.5, see the document [Upgrading to AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
+To get additional information on the benefits of upgrading to AEM 6.5, see the document [Upgrading to AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html).
 
 ## Accessing [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
@@ -50,7 +50,7 @@ After logging in [!UICONTROL Cloud Manager] for the first time, you will have ac
 
 To get started with [!UICONTROL Cloud Manager], see the document [First Time Login](/help/getting-started/first-time-login.md).
 
-For additional information about AEM, see the document [Deploying and Maintaining.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)
+For additional information about AEM, see the document [Deploying and Maintaining](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
 
 ## Getting Started with [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 

@@ -12,8 +12,8 @@ This document provides answers to the most frequently-asked questions about Clou
 
 Yes. You will need to add the `maven-toolchains-plugin` with the correct settings for Java 11.
 
-* This process is documented [here.](/help/getting-started/using-the-wizard.md)
-* For an example, see the [wknd sample project code.](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)
+* This process is documented [here](/help/getting-started/using-the-wizard.md).
+* For an example, see the [wknd sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## My build fails with an error about maven-scr-plugin after switching from Java 8 to Java 11. What can I do? {#maven-src-plugin}
 
@@ -23,7 +23,7 @@ Your AEM Cloud Manager build may fail when attempting to switch the build from J
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-For instructions on how to remove this plugin, [see here.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
+For instructions on how to remove this plugin, [see here](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## My build fails with an error about RequireJavaVersion after switching from Java 8 to Java 11. What can I do? {#requirejavaversion}
 
@@ -54,7 +54,7 @@ There is no single answer to this question. But these are some important points 
   * Page loads that exceed `20` seconds are marked as `504` errors.
 * If your site requires user authentication, see the document [Understand Your Test Results](/help/using/code-quality-testing.md#authenticated-performance-testing) for configuring the test to authenticate to your site.
 
-Please see the document [Understanding Test Results](/help/using/code-quality-testing.md) for more information on quality checks.
+See [Understanding Test Results](/help/using/code-quality-testing.md) for more information on quality checks.
 
 ## Can I use SNAPSHOT for the version of the Maven project? {#snapshot}
 
@@ -64,11 +64,11 @@ This allows subsequent deployment to still be installed when the version did not
 
 You can also set the version to `-SNAPSHOT` for stage and production builds or deployments. Cloud Manager automatically sets a proper version number and creates a tag for you in git. This tag can be referred to later, if required.
 
-Further details about version handling are [documented here.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html)
+Further details about version handling are [documented here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html).
 
 ## How does package and bundle versioning work for staging and production deployments? {#staging-production}
 
-In staging and production deployments, an automatic version is generated [as documented here.](/help/managing-code/maven-project-version.md)
+In staging and production deployments, an automatic version is generated [as documented here](/help/managing-code/maven-project-version.md).
 
 For custom versioning in stage and production deployments, set a proper three-part maven version like `1.0.0`. Increase the version each time you deploy to production.
 

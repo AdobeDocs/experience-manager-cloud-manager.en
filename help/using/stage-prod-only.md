@@ -9,7 +9,7 @@ Learn how you can split staging and production deployments using dedicated pipel
 
 >[!NOTE]
 >
->This feature is only available to [the early adopter program.](/help/release-notes/current.md#early-adoption)
+>This feature is only available to [the early adopter program](/help/release-notes/current.md#early-adoption).
 
 ## Overview {#overview}
 
@@ -28,7 +28,7 @@ Stage-only and prod-only pipelines offer solutions to these use-cases by providi
 
 Neither stage-only nor prod-only pipelines will be executed while a full-stack production pipeline is running and vice-versa. If both the stage-only and the full-stack production pipeline have the **On Git Changes** trigger configured and are pointing to the same branch and repository, only the stage-only pipeline is automatically started. Prod-only pipelines are not started **On Git Changes** since they are not directly linked to a repository.
 
-These dedicated pipelines offer more flexibility, but please note the following details of operation and recommendations.
+These dedicated pipelines offer more flexibility, but you should note the following details of operation and recommendations.
 
 >[!NOTE]
 >
@@ -40,9 +40,9 @@ These dedicated pipelines offer more flexibility, but please note the following 
 
 ## Pipeline Creation {#pipeline-creation}
 
-Prod-only and stage-only pipelines are created in a similar fashion to the standard coupled [production pipelines](/help/using/production-pipelines.md) and [non-production pipelines.](/help/using/non-production-pipelines.md) Please see those documents for details.
+Prod-only and stage-only pipelines are created in a similar fashion to the standard coupled [production pipelines](/help/using/production-pipelines.md) and [non-production pipelines](/help/using/non-production-pipelines.md). See those documents for details.
 
-1. In the **Pipelines** window, tap or click **Add Pipeline**.
+1. In the **Pipelines** window, click **Add Pipeline**.
 
    * Select **Add Non-Production Pipeline** to create a stage-only pipeline.
    * Select **Add Production Only Pipeline** to create a prod-only pipeline.
@@ -53,25 +53,25 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 >
 >Certain options may be grayed out if the corresponding pipelines already exist.
 >
->* **Add Production Only Pipeline** will be unavailable if a stage-only pipeline does not yet exist.
->* **Add Production Pipeline** will be unavailable if a standard coupled pipeline already exists.
+>* **Add Production Only Pipeline** is unavailable if a stage-only pipeline does not yet exist.
+>* **Add Production Pipeline** is unavailable if a standard coupled pipeline already exists.
 >* Only one prod-only and one stage-only pipelines are allowed per program.
 
 ### Stage-Only Pipelines {#stage-only}
 
-1. Once you select the **Add Non-Production Pipeline** option, the **Add Non-Production Pipeline** dialog opens.
-1. To create a stage-only pipeline, select the stage environment in the **Eligible Deployment Environments** field for your pipeline. Complete the remaining fields and tap or click **Continue**.
+1. Once you select the **Add Non-Production Pipeline** option, the **Add Non-Production Pipeline** dialog box opens.
+1. To create a stage-only pipeline, select the stage environment in the **Eligible Deployment Environments** field for your pipeline. Complete the remaining fields and click **Continue**.
 
    ![Creating a stage-only pipeline](/help/assets/configure-pipelines/stage-only.png)
 
-1. On the **Stage Testing** tab, you can then define testing that should be performed on the staging environment. Tap or click **Save** to save your new pipeline.
+1. On the **Stage Testing** tab, you can then define testing that should be performed on the staging environment. Click **Save** to save your new pipeline.
 
    ![Test parameters for a stage-only pipeline](/help/assets/configure-pipelines/stage-only-test.png)
 
 ### Prod-Only Pipelines {#prod-only}
 
 1. Once you select the **Add Production Only Pipeline** option, the **Add Production Only Pipeline** dialog opens.
-1. Provide a **Pipeline Name**. The remaining options and functionality of the dialog work the same as those in the standard coupled pipeline creation dialog. Tap or click **Save** to save the pipeline.
+1. Provide a **Pipeline Name**. The remaining options and functionality of the dialog work the same as those in the standard coupled pipeline creation dialog. Click **Save** to save the pipeline.
 
    ![Creating a production-only pipeline](/help/assets/configure-pipelines/prod-only-pipeline.png)
 

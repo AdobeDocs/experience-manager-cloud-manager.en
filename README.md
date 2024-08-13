@@ -2,7 +2,7 @@
 
 This repository is for Adobe Experience Manager Cloud Manager documentation.
 
-Your contributions to the documentation are welcome. Please see the following resources:
+Your contributions to the documentation are welcome. See the following resources:
 
 * [contributing.md](contributing.md) For an overview of how to contribute to the documentation.
 * [guidelines.md](guidelines.md) For an overview on what is expected in contributions and how to compose your documentation contributions.
