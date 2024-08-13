@@ -111,7 +111,8 @@ Once a content set has been created, you can use it to copy content. Follow thes
    >* The user does not have the appropriate permissions.
    >* The environment has a running pipeline or a copy content operation in progress.
 
-1. In the **Copy content** dialog, specify the source and destination for your content copy action.
+1. In the **Copy content** dialog, specify the source and destination environments for your content copy action.
+   * The regions of the target environment must be the same as or a subset of the source environment's regions.
 
 1. You can choose to delete or retain the exclude paths in destination environment. Select checkbox `Do not delete exclude paths from destination` if you wish to retain the exclude paths specified in the content set. If checkbox is left unchecked, then exclude paths are deleted in target environment.   
 
@@ -161,3 +162,9 @@ The content copy tool has the following limitations.
 * The content copy tool copies assets along with dynamic media related metadata from the higher environment to the selected lower environment.
   * Copied assets then need to be reprocessed using the [DAM process assets workflow](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) on the lower environment in order to use the respective dynamic media configuration.
 * Content copy process will be substantially faster when version history is not copied.
+* [Dynamic Media configurations with assets sizes greater than 2 GB enabled](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) are not supported.
+* The regions of the target environment must be the same as or a subset of the source environment's regions.
+
+## Known Issues {#known-issues}
+
+{{content-copy-known-issues}}

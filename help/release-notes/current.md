@@ -36,3 +36,7 @@ If you would like to test this feature and provide feedback, email `Grp-cloudman
 * Re-running the pipeline now works on the first attempt, correcting a rare issue where a rerun had to be started multiple times.
 * Scheduled deployment steps for full-stack pipelines now respect the selected scheduled date and do not revert to **Now**.
 * The statuses of failed copy content tasks are now properly reflected and no longer incorrectly show an `In Progress` status in rare circumstances.
+
+## Known Issues {#known-issues}
+
+{{content-copy-known-issues}}
