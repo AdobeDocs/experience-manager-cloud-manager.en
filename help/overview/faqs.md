@@ -23,7 +23,7 @@ Your AEM Cloud Manager build may fail when attempting to switch the build from J
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-For instructions on how to remove this plugin, [see here](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+For instructions on how to remove this plug-in, [see here](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## My build fails with an error about RequireJavaVersion after switching from Java 8 to Java 11. What can I do? {#requirejavaversion}
 

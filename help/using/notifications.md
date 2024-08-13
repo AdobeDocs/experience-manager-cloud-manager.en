@@ -30,17 +30,17 @@ The **Announcements** tab includes Adobe product announcements. Announcements co
 
 ![Notifications sidebar](/help/assets/notificaitons-announcements.png)
 
-Click on a notification or announcement to view its details. Notifications linked to activities such as pipeline deployments take you to the detail of that activity such as the pipeline execution window.
+Click a notification or announcement to view its details. Notifications linked to activities such as pipeline deployments take you to the detail of that activity such as the pipeline execution window.
 
-Click on the **View all** option at the bottom of the panel to view all announcements in your inbox.
+Click **View all** option at the bottom of the panel to view all announcements in your inbox.
 
-Click on the **Mark all as read** option at the bottom of the panel to mark all unread notifications as read and clear the bell icon badging.
+Click **Mark all as read** option at the bottom of the panel to mark all unread notifications as read and clear the bell icon badging.
 
-## Notification Configuration {#configuration}
+## Notification configuration {#configuration}
 
 You can customize how you receive notifications and what notifications you receive.
 
-Click on the gear icon at the top of the notifications sidebar.
+Click the gear icon at the top of the notifications sidebar.
 
 ![Notification settings icon](/help/assets/notifications-configuration.png)
 
@@ -52,7 +52,7 @@ Subscriptions define for which products you receive notifications and which noti
 
 ![Notification subscriptions](/help/assets/notifications-subscriptions.png)
 
-By default, you will receive all notifications for all products. Click on **Customize** next to a product to define the types of notifications you receive for that product.
+By default, you will receive all notifications for all products. Click **Customize** next to a product to define the types of notifications you receive for that product.
 
 ![Notification subscription customization](/help/assets/notifications-subscriptions-customize.png)
 

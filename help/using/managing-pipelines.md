@@ -1,14 +1,14 @@
 ---
-title: Managing Pipelines
+title: Manage Pipelines
 description: Learn how to manage your existing pipelines including editing, running, and deleting them.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 ---
 
-# Managing Pipelines {#managing-pipelines}
+# Manage pipelines {#managing-pipelines}
 
 Learn how to manage your existing pipelines including editing, running, and deleting them.
 
-## Pipeline Card {#pipeline-card}
+## Pipeline card {#pipeline-card}
 
 The **Pipelines** card on the **Program Overview** page in Cloud Manager gives you an overview of all of your pipelines and their current status.
 
@@ -28,7 +28,7 @@ At the bottom of the list of pipelines, you have general options.
 * **Access Repo Info** - Displays the information necessary to access the Cloud Manager git repository
 * **Learn More** - Navigates to CI/CD pipeline documentation resources.
 
-## Pipelines Window {#pipelines}
+## Pipelines window {#pipelines}
 
 The **Pipelines** window shows a complete list of all pipelines for the selected program. This is useful as it presents more comprehensive information than what is available in the [Pipeline Card](#pipeline-card).
 
@@ -44,7 +44,7 @@ Clicking the `i` icon reveals details about the last or current execution of the
 
 Clicking **View details** takes you to the [details of the pipeline execution](#view-details).
 
-## Activity Window {#activity}
+## Activity window {#activity}
 
 The **Activities** window shows a complete list of all pipelines executions for the selected program.
 
@@ -60,7 +60,7 @@ Clicking the `i` icon reveals details about the execution of the selected pipeli
 
 Clicking **View details** takes you to the [details of the pipeline execution](#view-details).
 
-## Running Pipelines {#running-pipelines}
+## Ruu pipelines {#running-pipelines}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -72,7 +72,7 @@ You can see the details of the run by clicking the ellipsis button again and sel
 
 Depending on the type of pipeline, you may be able to cancel the run by clicking the ellipsis button again and selecting **Cancel**.
 
-## Editing Pipelines {#editing-pipelines}
+## Edit pipelines {#editing-pipelines}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -84,13 +84,13 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
       * [Configuring Production Pipelines](/help/using/production-pipelines.md)
       * [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md)
 
-1. Click on **Update** once you are done editing the pipeline.
+1. Click **Update** once you are done editing the pipeline.
 
 >[!NOTE]
 >
 >You can not edit a running pipeline.
 
-## Deleting Pipelines {#deleting-pipelines}
+## Delete pipelines {#deleting-pipelines}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -100,7 +100,7 @@ Depending on the type of pipeline, you may be able to cancel the run by clicking
 >
 >You can not delete a running pipeline.
 
-## View Details {#view-details}
+## View details {#view-details}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -114,7 +114,7 @@ From here you can see the status of the various steps of the pipeline and retrie
 
 All the steps in a pipeline execution are displayed with the ones not yet started grayed out. Finished steps display their duration.
 
-Once a pipeline step is complete, a summary is presented.
+When a pipeline step is complete, a summary is presented.
 
 ![Step summary](/help/assets/configure-pipelines/pipeline-step.png)
 
