@@ -1,9 +1,9 @@
 ---
-title: Configuring Non-Production Pipelines
+title: Configure Non-Production Pipelines
 description: Learn how to use Cloud Manager to create and configure non-production pipelines to deploy your code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 ---
-# Configuring Non-Production Pipelines {#configuring-non-production-pipelines}
+# Configure non-production pipelines {#configuring-non-production-pipelines}
 
 Learn how to use Cloud Manager to create and configure non-production pipelines to deploy your code. If you would first like a more conceptual overview of how pipelines work in Cloud Manager, see [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md).
 
@@ -25,13 +25,13 @@ There are two types of non-production pipelines:
 >
 >A pipeline can not be setup until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See the document [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
-## Adding a Non-Production Pipeline {#add-non-production-pipeline}
+## Add a non-production pipeline {#add-non-production-pipeline}
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
 
-1. Access the Pipelines card from the Cloud Manager home screen. Click on **Add** and select **Add Non-Production Pipeline**.
+1. Access the Pipelines card from the Cloud Manager home screen. Click **Add**, then select **Add Non-Production Pipeline**.
 
    ![Add non-production pipeline](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
@@ -55,7 +55,7 @@ Once you have set up your program and have at least one environment using the Cl
       * **Manual** - Use this option to manually start the pipeline.
       * **On Git Changes** - This options starts the pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.
 
-    1. For deployment pipelines, under **Important Metric Failures Behavior**, define the behavior of the pipeline when an important failure is encountered in any of the quality gates.
+   1. For deployment pipelines, under **Important Metric Failures Behavior**, define the behavior of the pipeline when an important failure is encountered in any of the quality gates.
 
        * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
        * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
@@ -72,11 +72,11 @@ Once you have set up your program and have at least one environment using the Cl
 
 1. Click **Save** to save your pipeline.
 
-## The Next Steps {#the-next-steps}
+## The next steps {#the-next-steps}
 
 Once you have configured the pipeline, you need to deploy your code. See [Code Deployment](/help/using/code-deployment.md) for more details.
 
-## Video Tutorial {#video-tutorial}
+## Video tutorial {#video-tutorial}
 
 This video provides an overview of the pipeline creation process, which is detailed in this document.
 

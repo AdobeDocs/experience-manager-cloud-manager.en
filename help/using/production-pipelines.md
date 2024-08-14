@@ -1,10 +1,10 @@
 ---
-title: Configuring Production Pipelines
+title: Configure Production Pipelines
 description: Learn how to use Cloud Manager to create and configure production pipelines to deploy your code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 ---
 
-# Configuring Production Pipelines {#configuring-production-pipelines}
+# Configure production pipelines {#configuring-production-pipelines}
 
 Learn how to use Cloud Manager to create and configure production pipelines to deploy your code. if you would first like a more conceptual overview of how pipelines work in Cloud Manager, see [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md).
 
@@ -27,7 +27,7 @@ The **Deployment Manager** role is responsible for setting up the pipeline. Pipe
 >
 >A pipeline can not be setup until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete.
 
-## Adding a New Production Pipeline {#adding-production-pipeline}
+## Add a new production pipeline {#adding-production-pipeline}
 
 Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and have at least one environment, you are ready to add a production pipeline.
 
@@ -81,8 +81,8 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
          * **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths which will either be invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
         
-           1.  Under **PATH** provide a content path.
-           1.  Under **TYPE**, select the action to be taken on that path.
+           1. Under **PATH** provide a content path.
+           1. Under **TYPE**, select the action to be taken on that path.
            
                * **Flush** - Perform a cache deletion.
                * **Invalidate** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.
@@ -118,7 +118,7 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
          * **Dispatcher Configuration** - Define the dispatcher configuration for your production environment. The options are the same as those for the staging environment.
    
-1. Click on **Continue** to advance to the **Stage Testing** tab where you can configure AEM Sites and AEM Assets Performance Testing, depending on which products you have licensed.
+1. Click **Continue** to advance to the **Stage Testing** tab where you can configure AEM Sites and AEM Assets Performance Testing, depending on which products you have licensed.
 
    >[!TIP]
    >
@@ -147,11 +147,11 @@ Once you have used the [!UICONTROL Cloud Manager] UI to set up your program and 
 
 1. Click **Save** to complete adding your production pipeline.
 
-## The Next Steps {#the-next-steps}
+## The next steps {#the-next-steps}
 
 Once you have configured the pipeline, you need to deploy your code. See [Code Deployment](/help/using/code-deployment.md) for more details.
 
-## Video Tutorial {#video-tutorial-one}
+## Video tutorial {#video-tutorial-one}
 
 This video provides an overview of the pipeline creation process, which is detailed in this document.
 
