@@ -3,7 +3,7 @@ title: Stage-Only and Prod-Only Pipelines
 description: Learn how you can split staging and production deployments using dedicated pipelines.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 ---
-# Stage-Only and Production-Only Pipelines {#stage-prod-only}
+# Stage-only and production-only pipelines {#stage-prod-only}
 
 Learn how you can split staging and production deployments using dedicated pipelines.
 
@@ -15,8 +15,8 @@ Learn how you can split staging and production deployments using dedicated pipel
 
 Staging and production environments are tightly coupled. By default, deployments to them are linked to a singular pipeline. That is a deployment pipeline deploys to both the staging and production environments in that program. While this coupling is normally suitable, there are certain use cases where disadvantages are present:
 
-* If you wish to deploy to stage-only, you can only do this by rejecting the **Promote to Prod** step in the pipeline. However the execution will be marked as cancelled.
-* If you wish to deploy the latest code in a staging environment to production, you need to redeploy the entire pipeline including the staging deployment even though no code was changed there. 
+* If you want to deploy to stage-only, you can only do this by rejecting the **Promote to Prod** step in the pipeline. However the execution will be marked as cancelled.
+* If you want to deploy the latest code in a staging environment to production, you need to redeploy the entire pipeline including the staging deployment even though no code was changed there. 
 * Since environments can not be updated during deployments, if you want to pause and test in the staging environment for multiple days before promoting to production, the production environment can not be updated. This makes non-dependent tasks such as updating [environment variables](/help/getting-started/build-environment.md#environment-variables) impossible.
 
 Stage-only and prod-only pipelines offer solutions to these use-cases by providing dedicated deployment options.
@@ -38,7 +38,7 @@ These dedicated pipelines offer more flexibility, but you should note the follow
 >* Adobe recommends to stop using the standard coupled production pipeline once you start using the prod-only and stage-only pipelines.
 >* If you still decide to run both the standard coupled pipelines and stage/prod-only pipelines, keep in mind the reuse of artifacts to avoid code rollbacks.
 
-## Pipeline Creation {#pipeline-creation}
+## Pipeline creation {#pipeline-creation}
 
 Prod-only and stage-only pipelines are created in a similar fashion to the standard coupled [production pipelines](/help/using/production-pipelines.md) and [non-production pipelines](/help/using/non-production-pipelines.md). See those documents for details.
 
@@ -57,7 +57,7 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 >* **Add Production Pipeline** is unavailable if a standard coupled pipeline already exists.
 >* Only one prod-only and one stage-only pipelines are allowed per program.
 
-### Stage-Only Pipelines {#stage-only}
+### Stage-only pipelines {#stage-only}
 
 1. Once you select the **Add Non-Production Pipeline** option, the **Add Non-Production Pipeline** dialog box opens.
 1. To create a stage-only pipeline, select the stage environment in the **Eligible Deployment Environments** field for your pipeline. Complete the remaining fields and click **Continue**.
@@ -68,14 +68,14 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
    ![Test parameters for a stage-only pipeline](/help/assets/configure-pipelines/stage-only-test.png)
 
-### Prod-Only Pipelines {#prod-only}
+### Prod-only pipelines {#prod-only}
 
 1. Once you select the **Add Production Only Pipeline** option, the **Add Production Only Pipeline** dialog opens.
 1. Provide a **Pipeline Name**. The remaining options and functionality of the dialog work the same as those in the standard coupled pipeline creation dialog. Click **Save** to save the pipeline.
 
    ![Creating a production-only pipeline](/help/assets/configure-pipelines/prod-only-pipeline.png)
 
-## Running Prod-Only and Stage-Only Pipelines {#running}
+## Run prod-only and stage-only pipelines {#running}
 
 Prod-only and stage-only pipelines are run in largely the same way as [all other pipelines are run.](/help/using/managing-pipelines.md#running-pipelines) Please see that documentation for details. However there are two new features of these pipelines.
 
@@ -91,7 +91,7 @@ Whenever you start production-only and staging-online pipelines you are prompted
 
 ![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
 
-### Stage-Only Pipelines {#stage-only-run}
+### Stage-only pipelines {#stage-only-run}
 
 A stage-only pipeline runs in nearly the same way as standard coupled pipelines. However at the end of the run, after the testing steps, a **Promote Build** button allows you to start a prod-only pipeline execution that uses the artifacts deployed on stage by this execution and deploys them on production.
 
@@ -101,7 +101,7 @@ Clicking **Promote Build** prompts you to confirm the run of the related stage-o
 
 If a prod-only pipeline does not exist, you will be prompted to create one.
 
-### Prod-Only Pipelines {#prod-only-run}
+### Prod-only pipelines {#prod-only-run}
 
 For prod-only pipelines it is important to identify the source artifacts that are to be deployed to production. These details can be found in the **Artifact Preparation** step. You can navigate to those executions for further details and logs.
 

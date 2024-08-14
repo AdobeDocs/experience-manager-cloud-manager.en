@@ -4,7 +4,7 @@ description: Follow this page if you have set up your general configurations and
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 ---
 
-# First Time Login {#first-time-login}
+# First time login {#first-time-login}
 
 Once you have set up the general configuration for [!UICONTROL Cloud Manager], you are ready to use it.
 
@@ -12,7 +12,7 @@ Once you have set up the general configuration for [!UICONTROL Cloud Manager], y
 >
 >Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, the screens you see may vary from the illustrations.
 
-## Logging in for the First Time {#logging-in-for-the-first-time}
+## Logging in for the first time {#logging-in-for-the-first-time}
 
 1. Log into Cloud Manager at [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and you see your list of programs.
 
@@ -28,7 +28,7 @@ Once you have set up the general configuration for [!UICONTROL Cloud Manager], y
 
 You can continue to the document [Program Setup](/help/getting-started/program-setup.md) for the next steps in setting up your program.
 
-## Cloud Manager Activity {#activity}
+## Cloud Manager activity {#activity}
 
 Cloud Manager provides a consolidated view into a program's activity, listing all CI/CD pipeline executions, both production and non-production, allowing visibility into the past and present activity.
 
@@ -38,4 +38,4 @@ Cloud Manager provides a consolidated view into a program's activity, listing al
 
 >[!NOTE]
 >
->By default a user with access to an AEM environment will also have Cloud Manager User role. This role in and of itself is insufficient to give the user access to program details view. Such a user with only Cloud Manager user role is able to navigate via the program menu options to the AEM environment author URL (if environments exist). Such users must contact their administrator if they wish to get program-level access.
+>By default a user with access to an AEM environment will also have Cloud Manager User role. This role in and of itself is insufficient to give the user access to program details view. Such a user with only Cloud Manager user role is able to navigate via the program menu options to the AEM environment author URL (if environments exist). Such users must contact their administrator if they want to get program-level access.

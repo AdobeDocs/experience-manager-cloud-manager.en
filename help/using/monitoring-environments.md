@@ -1,32 +1,30 @@
 ---
-title: Monitoring Environments
+title: Monitor Environments
 description: Learn how to monitor your environments in Cloud Manager.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 ---
 
-# Monitoring Environments {#monitoring-environments}
+# Monitor environments {#monitoring-environments}
 
 Learn how to monitor your environments in Cloud Manager.
 
-## Metric Thresholds {#thresholds}
+## Metric thresholds {#thresholds}
 
 System Monitoring in [!UICONTROL Cloud Manager] is done by observing the individual instances within an environment and tracking a variety of metrics for each instance. Each metric has two defined thresholds: a warning threshold and a critical threshold. 
 
 If a metric is over its critical threshold, it is considered to be in a critical state. If a metric is over its warning threshold (but below its critical threshold), it is considered to be in a warning state. The thresholds are set by Adobe Managed Services and can be visualized in [!UICONTROL Cloud Manager]. In most cases, thresholds are consistent between customers, but there are cases where Adobe Managed Services will modify thresholds to match specific customer requirements. Questions about the thresholds should be directed to your Customer Success Engineer (CSE).
 
-## Accessing System Monitoring {#accessing-system-monitoring}
-
-Follow these steps to access System Monitoring.
+## Access system monitoring {#accessing-system-monitoring}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
 
-1. Click the ellipsis button of the program you wish to monitor and select the **Show Monitoring** option.
+1. Click the ellipsis button of the program you want to monitor and select the **Show Monitoring** option.
  
    ![Settings](/help/assets/first-timea1.png)
 
 The **Reports** page opens to show system monitoring information.
 
-## System Monitoring Overview {#system-monitoring-overview}
+## System monitoring overview {#system-monitoring-overview}
 
 The **System Monitoring** section of the **Reports** page lists the monitored environments in the program and reports on their high-level health across four separate categories:
 
@@ -43,7 +41,7 @@ The status in each category is a summary of individual metrics. If any metric in
 >
 >By default when navigating to this page, the production environment instances are visible, but other environments can be viewed as well.
 
-## System Monitoring Detail {#system-monitoring-detail}
+## System monitoring detail {#system-monitoring-detail}
 
 To view the details of specific metrics, click one of the category columns of a specific instance or the category title in the left navigation. Each detail page shows a series of graphs for the metrics within that category. You can either view the metrics for all instances in an environment or for a specific instance. You can switch between the environment and instances using the dropdown boxes in the top-right corner.
 
@@ -60,7 +58,7 @@ For example, if you click the warning threshold series, you will see only the cr
 
 ![Modify graph](/help/assets/Monitoring_Graphs2.png)
 
-### Metric Definitions {#metric-definitions}
+### Metric definitions {#metric-definitions}
 
 #### Host {#host}
 
@@ -90,7 +88,7 @@ For example, if you click the warning threshold series, you will see only the cr
   * There are separate metrics for each replication agent.
 * **Dispatcher Flush**: The number of items currently in the dispatcher flush queue
 
-## SLA Reporting {#sla-reporting}
+## SLA reporting {#sla-reporting}
 
 You can see the performance of your production AEM environment relative to your contracted service level agreement (SLA).
 
@@ -106,16 +104,16 @@ The **Event Analysis** section under this graph shows the set of incidents which
 
 ![Event analysis](/help/assets/sla-reporting3.png)
 
-## SLA Metrics {#sla-metrics}
+## SLA metrics {#sla-metrics}
 
-* **Author Contract**: This is the SLA defined in your contract with Adobe Managed Services for the author tier.
-* **AMS Author SLA**: This is the measured uptime of the production author tier factoring incidents caused by Adobe or our vendors.
-* **Author SLA**: This is the measured uptime of the author tier ignoring scheduled downtime such as maintenance windows.
-* **End User Contract**: This is the SLA defined in your contract with Adobe Managed Services for the publish tier.
-* **AMS End User SLA**: This is the measured uptime of the production publish tier factoring incidents caused by Adobe or our vendors.
-* **End User SLA**: This is the measured uptime of the publish tier ignoring scheduled downtime such as maintenance windows.
+* **Author Contract**: The SLA defined in your contract with Adobe Managed Services for the author tier.
+* **AMS Author SLA**: The measured uptime of the production author tier factoring incidents caused by Adobe or our vendors.
+* **Author SLA**: The measured uptime of the author tier ignoring scheduled downtime such as maintenance windows.
+* **End User Contract**: The SLA defined in your contract with Adobe Managed Services for the publish tier.
+* **AMS End User SLA**: The measured uptime of the production publish tier factoring incidents caused by Adobe or our vendors.
+* **End User SLA**: The measured uptime of the publish tier ignoring scheduled downtime such as maintenance windows.
 
-## Video Tutorial {#video-tutorial}
+## Video tutorial {#video-tutorial}
 
 This video provides and overview of using the charts produced by Cloud Manager Reports for a view into your program environments.
 
