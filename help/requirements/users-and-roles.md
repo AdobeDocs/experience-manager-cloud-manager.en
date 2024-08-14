@@ -29,8 +29,6 @@ This table summarizes the roles.
 |Program Manager|This user uses [!UICONTROL Cloud Manager] to perform team setup, review status, view KPIs, and can approve important 3-tier failures when necessary.|
 |Deployment Manager|This user manages deployment operations and uses [!UICONTROL Cloud Manager] to execute staging/production deployments, edit CI/CD pipelines, approve important 3-tier failures when necessary, and can access the git repository.|
 |Developer|This user develops and tests custom application code and primarily uses [!UICONTROL Cloud Manager] to view deployment status and can access the git repository for code commits.|
-|Customer Success Engineer|This user generally supports customer success for AMS customers and interacts with [!UICONTROL Cloud Manager] for the purpose of executing deployments which require CSE oversight.|
-|Content Author|This user generally does not interact with [!UICONTROL Cloud Manager] but may use the [!UICONTROL Cloud Manager] program switcher to access AEM.|
 
 >[!NOTE]
 >
