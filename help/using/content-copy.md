@@ -111,7 +111,7 @@ Once a content set has been created, you can use it to copy content. Follow thes
    >* The user does not have the appropriate permissions.
    >* The environment has a running pipeline or a copy content operation in progress.
 
-1. In the **Copy content** dialog, specify the source and destination environments for your content copy action.
+1. In the **Copy content** dialog box, specify the source and destination environments for your content copy action.
    * The regions of the target environment must be the same as or a subset of the source environment's regions.
 
 1. You can choose to delete or retain the exclude paths in destination environment. Select checkbox `Do not delete exclude paths from destination` if you wish to retain the exclude paths specified in the content set. If checkbox is left unchecked, then exclude paths are deleted in target environment.   
