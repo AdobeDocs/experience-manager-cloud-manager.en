@@ -60,14 +60,14 @@ role: Admin
   + [GitHub Check Configuration](/help/managing-code/github-check-config.md)
   + [GitHub Check Annotations](/help/managing-code/github-annotations.md)
   + [Maven Project Version Handling](/help/managing-code/maven-project-version.md)
-  + [Integrating with git](/help/managing-code/git-integration.md)
-  + [Working with Multiple git Repositories](/help/managing-code/multiple-git-repos.md)
+  + [Integrating with Git](/help/managing-code/git-integration.md)
+  + [Working with Multiple Git Repositories](/help/managing-code/multiple-git-repos.md)
 + Product Update Wizard {#product-update-wizard}
   + [Overview](/help/product-update-wizard/overview.md)
   + [Evaluation](/help/product-update-wizard/evaluation.md)
 + Release Notes {#release-notes}
   + [Current Release Notes](/help/release-notes/current.md)
-  + 2024 {#2024}
+  + 2024 {#rn-2024}
     + [Release Notes for 2024.7.0](/help/release-notes/2024/2024-7-0.md)
     + [Release Notes for 2024.6.0](/help/release-notes/2024/2024-6-0.md)
     + [Release Notes for 2024.5.0](/help/release-notes/2024/2024-5-0.md)
@@ -75,7 +75,7 @@ role: Admin
     + [Release Notes for 2024.3.0](/help/release-notes/2024/2024-3-0.md)
     + [Release Notes for 2024.2.0](/help/release-notes/2024/2024-2-0.md)
     + [Release Notes for 2024.1.0](/help/release-notes/2024/2024-1-0.md)
-  + 2023 {#2023}
+  + 2023 {#rn-2023}
     + [Release Notes for 2023.12.0](/help/release-notes/2023/2023-12-0.md)
     + [Release Notes for 2023.11.0](/help/release-notes/2023/2023-11-0.md)
     + [Release Notes for 2023.10.0](/help/release-notes/2023/2023-10-0.md)
@@ -88,7 +88,7 @@ role: Admin
     + [Release Notes for 2023.3.0](/help/release-notes/2023/2023-3-0.md)
     + [Release Notes for 2023.2.0](/help/release-notes/2023/2023-2-0.md)
     + [Release Notes for 2023.1.0](/help/release-notes/2023/2023-1-0.md)
-  + 2022 {#2022}
+  + 2022 {#rn-2022}
     + [Release Notes for 2022.12.0](/help/release-notes/2022/2022-12-0.md)
     + [Release Notes for 2022.11.0](/help/release-notes/2022/2022-11-0.md)
     + [Release Notes for 2022.10.0](/help/release-notes/2022/2022-10-0.md)
@@ -101,7 +101,7 @@ role: Admin
     + [Release Notes for 2022.3.0](/help/release-notes/2022/2022-3-0.md)
     + [Release Notes for 2022.2.0](/help/release-notes/2022/2022-2-0.md)
     + [Release Notes for 2022.1.0](/help/release-notes/2022/2022-1-0.md)
-  + 2021 {#2021}
+  + 2021 {#rn-2021}
     + [Release Notes for 2021.12.0](/help/release-notes/2021/2021-12-0.md)
     + [Release Notes for 2021.11.0](/help/release-notes/2021/2021-11-0.md)
     + [Release Notes for 2021.10.0](/help/release-notes/2021/2021-10-0.md)
@@ -113,7 +113,7 @@ role: Admin
     + [Release Notes for 2021.4.0](/help/release-notes/2021/2021-4-0.md)
     + [Release Notes for 2021.3.0](/help/release-notes/2021/2021-3-0.md)
     + [Release Notes for 2021.2.0](/help/release-notes/2021/2021-2-0.md)
-  + 2020 {#2020}
+  + 2020 {#rn-2020}
     + [Release Notes for 2020.12.0](/help/release-notes/2020/2020-12-0.md)
     + [Release Notes for 2020.11.0](/help/release-notes/2020/2020-11-0.md)
     + [Release Notes for 2020.10.0](/help/release-notes/2020/2020-10-0.md)
@@ -126,7 +126,7 @@ role: Admin
     + [Release Notes for 2020.3.0](/help/release-notes/2020/2020-3-0.md)
     + [Release Notes for 2020.2.0](/help/release-notes/2020/2020-2-0.md)
     + [Release Notes for 2020.1.0](/help/release-notes/2020/2020-1-0.md)
-  + 2019 {#2019}
+  + 2019 {#rn-2019}
     + [Release Notes for 2019.12.0](/help/release-notes/2019/2019-12-0.md)
     + [Release Notes for 2019.11.0](/help/release-notes/2019/2019-11-0.md)
     + [Release Notes for 2019.10.0](/help/release-notes/2019/2019-10-0.md)
@@ -139,7 +139,7 @@ role: Admin
     + [Release Notes for 2019.3.0](/help/release-notes/2019/2019-3-0.md)
     + [Release Notes for 2019.2.0](/help/release-notes/2019/2019-2-0.md)
     + [Release Notes for 2019.1.0](/help/release-notes/2019/2019-1-0.md)
-  + 2018 {#2018}
+  + 2018 {#rn-2018}
     + [Release Notes for 2018.9.0](/help/release-notes/2018/2018-9-0.md)
     + [Release Notes for 2018.8.0](/help/release-notes/2018/2018-8-0.md)
     + [Release Notes for 2018.7.0](/help/release-notes/2018/2018-7-0.md)

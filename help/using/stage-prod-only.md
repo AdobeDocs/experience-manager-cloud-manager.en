@@ -59,32 +59,36 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 ### Stage-only pipelines {#stage-only}
 
-1. Once you select the **Add Non-Production Pipeline** option, the **Add Non-Production Pipeline** dialog box opens.
-1. To create a stage-only pipeline, select the stage environment in the **Eligible Deployment Environments** field for your pipeline. Complete the remaining fields and click **Continue**.
+1. After you select the **Add Non-Production Pipeline** option, the **Add Non-Production Pipeline** dialog box opens.
+1. To create a stage-only pipeline, select the stage environment in the **Eligible Deployment Environments** field for your pipeline.
+1. Complete the remaining fields.
+1. Click **Continue**.
 
    ![Creating a stage-only pipeline](/help/assets/configure-pipelines/stage-only.png)
 
-1. On the **Stage Testing** tab, you can then define the testing that should be performed in the staging environment. Click **Save** to save your new pipeline.
+1. On the **Stage Testing** tab, define the testing to perform in the staging environment. 
+1. Click **Save**.
 
    ![Test parameters for a stage-only pipeline](/help/assets/configure-pipelines/stage-only-test.png)
 
 ### Prod-only pipelines {#prod-only}
 
-1. Once you select the **Add Production Only Pipeline** option, the **Add Production Only Pipeline** dialog box opens.
-1. Provide a **Pipeline Name**. The remaining options and functionality of the dialog box work the same as those options found in the standard coupled pipeline creation dialog box. Click **Save** to save the pipeline.
+1. After you select the **Add Production Only Pipeline** option, the **Add Production Only Pipeline** dialog box opens.
+1. In the **Pipeline Name** field, type the name you want. The remaining options and functionality of the dialog box work the same as those options found in the standard coupled pipeline creation dialog box. 
+1. In the lower-right corner of the dialog box, click **Save**.
 
    ![Creating a production-only pipeline](/help/assets/configure-pipelines/prod-only-pipeline.png)
 
 ## Run prod-only and stage-only pipelines {#running}
 
-Prod-only and stage-only pipelines are run in largely the same way as [all other pipelines are run.](/help/using/managing-pipelines.md#running-pipelines) Please see that documentation for details. However there are two new features of these pipelines.
+Prod-only and stage-only pipelines are run in largely the same way as [all other pipelines are run](/help/using/managing-pipelines.md#running-pipelines). See that documentation for details. However, there are two new features of these pipelines.
 
-* Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to allow skipping testing.
-* Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline.](#stage-only-run)
+* Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
+* Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
 ### Emergency Mode {#emergency-mode}
 
-Whenever you start production-only and staging-online pipelines you are prompted to confirm the start as well as how it will start.
+When starting production-only and staging-online pipelines, you are prompted to confirm the start and how it starts.
 
 * **Normal Mode** is a standard run and includes stage testing steps.
 * **Emergency Mode** skips stage testing steps.
@@ -97,12 +101,12 @@ A stage-only pipeline runs in nearly the same way as standard coupled pipelines.
 
 ![Stage-only pipeline run](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Clicking **Promote Build** prompts you to confirm the run of the related stage-only pipeline either normally or in [emergency mode.](#emergency-mode)
+Clicking **Promote Build** prompts you to confirm the run of the related stage-only pipeline either normally or in [emergency mode](#emergency-mode).
 
-If a prod-only pipeline does not exist, you will be prompted to create one.
+If a prod-only pipeline does not exist, you are prompted to create one.
 
 ### Prod-only pipelines {#prod-only-run}
 
-For prod-only pipelines, it is important to identify the source artifacts that are to be deployed to production. These details can be found in the **Artifact Preparation** step. You can navigate to those executions for further details and logs.
+For prod-only pipelines, be sure you identify the source artifacts that you want deployed to production. These details are found in the **Artifact Preparation** step. You can navigate to those executions for more details and logs.
 
 ![Artifact details](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
