@@ -77,9 +77,19 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 ## Run prod-only and stage-only pipelines {#running}
 
-Prod-only and stage-only pipelines are run in the same way as [all other pipelines are run](/help/using/managing-pipelines.md#running-pipelines). See that documentation for details.
+Prod-only and stage-only pipelines are run in largely the same way as [all other pipelines are run.](/help/using/managing-pipelines.md#running-pipelines) Please see that documentation for details. However there are two new features of these pipelines.
 
-In addition, a prod-only pipeline run can be triggered directly from the execution details of a stage-only pipeline.
+* Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to allow skipping testing.
+* Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline.](#stage-only-run)
+
+### Emergency Mode {#emergency-mode}
+
+Whenever you start production-only and staging-online pipelines you are prompted to confirm the start as well as how it will start.
+
+* **Normal Mode** is a standard run and includes stage testing steps.
+* **Emergency Mode** skips stage testing steps.
+
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
 
 ### Stage-only pipelines {#stage-only-run}
 
@@ -87,7 +97,9 @@ A stage-only pipeline runs in nearly the same way as standard coupled pipelines.
 
 ![Stage-only pipeline run](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-The **Promote Build** button only appears if you are on the latest successful stage-only pipeline execution. Once clicked, it asks you to confirm the run of the prod-only pipeline or to create a prod-only pipeline if one does not already exist.
+Clicking **Promote Build** prompts you to confirm the run of the related stage-only pipeline either normally or in [emergency mode.](#emergency-mode)
+
+If a prod-only pipeline does not exist, you will be prompted to create one.
 
 ### Prod-only pipelines {#prod-only-run}
 
