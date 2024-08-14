@@ -4,31 +4,31 @@ description: Like all powerful tools, Cloud Manager encompasses many concepts an
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 ---
 
-# Key Concepts {#key-concepts}
+# Key concepts {#key-concepts}
 
 Like all powerful tools, Cloud Manager encompasses many concepts and terms. This document summarizes some of the most important for you as you get started using Cloud Manager.
 
 ## Application {#application}
 
-An application is the set of customizations and configurations created by a customer in order to adapt the underlying [solution](#solution) (such as AEM Sites or AEM Assets) for their specific use cases and needs. An application is a logical unit which may be composed of multiple [artifacts](#artifact).
+An application is the set of customizations and configurations created by a customer to adapt the underlying [solution](#solution) (such as AEM Sites or AEM Assets) for their specific use cases and needs. An application is a logical unit that may be composed of multiple [artifacts](#artifact).
 
-An example application is the fictional [WKND lifestyle application](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+An example application is the fictional [WKND lifestyle application](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview).
 
 ## Artifact {#artifact}
 
-An artifact is a deployable unit and is the result of some build process which transforms source code into a single unit. For example a .zip file containing the source code.
+An artifact is a deployable unit and is the result of some build process that transforms source code into a single unit. For example, a .zip file containing the source code.
 
-## Artifact Repository {#artifact-repository}
+## Artifact repository {#artifact-repository}
 
 An artifact repository is a storage location where customer-specific [artifacts](#artifact) are saved and secured.
 
 ## Environment {#environment}
 
-An environment is a single cluster of virtual machines within a [program](#program). For AEM, this is composed of an authoring instance (optionally with an additional cold standby authoring instance), zero or more publishing instances, one or more dispatcher instances, and a load balancer.
+An environment is a single cluster of virtual machines within a [program](#program). For AEM, this environment is composed of an authoring instance (optionally with an additional cold standby authoring instance), zero or more publishing instances, one or more Dispatcher instances, and a load balancer.
 
-## git Repository {#git-repository}
+## Git repository {#git-repository}
 
-A git repository is a location where customer-specific source code is stored and is accessible [using git](https://git-scm.com).
+A Git repository is a location where customer-specific source code is stored and is accessible [using Git](https://git-scm.com).
 
 ## Instance {#instance}
 
@@ -40,7 +40,7 @@ An organization is an Adobe construct representing an enterprise customer. One c
 
 ## Pipeline {#pipeline}
 
-A pipeline is a set of deployment steps which are executed in sequence.
+A pipeline is a set of deployment steps that are run or "executed" in sequence.
 
 ## Product {#product}
 

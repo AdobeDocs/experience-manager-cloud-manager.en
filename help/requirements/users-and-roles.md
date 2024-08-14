@@ -4,7 +4,7 @@ description: Learn how to use the Admin Console to add users and roles and creat
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 ---
 
-# Add Users and Roles {#add-users-and-roles}
+# Add users and roles {#add-users-and-roles}
 
 Many features in [!UICONTROL Cloud Manager] require specific permissions to use. For example, only certain users are allowed to set the key performance indicators (KPIs) for a program. These permissions are logically grouped into roles.
 
@@ -19,7 +19,7 @@ Many features in [!UICONTROL Cloud Manager] require specific permissions to use.
 >
 >To use [!UICONTROL Cloud Manager], you must have an Adobe ID and the Adobe Managed Services Product Context.
 
-## Role Definitions {#role-definitions}
+## Role definitions {#role-definitions}
 
 This table summarizes the roles.
 
@@ -36,7 +36,7 @@ This table summarizes the roles.
 >
 >The Developer persona in the Admin Console is unrelated to the Developer role in [!UICONTROL Cloud Manager].
 
-## Using Admin Console to Create a Profile {#using-admin-console-to-create-a-profile}
+## Using admin console to create a profile {#using-admin-console-to-create-a-profile}
 
 [!UICONTROL Cloud Manager] roles are managed from the Admin Console. Specific role memberships are provided by adding the user to a [!UICONTROL Cloud Manager] product profile.
 
@@ -53,7 +53,7 @@ You can create or add users/groups to these product profiles with the Admin Cons
 
 1. Log in to the Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
-1. Click on the **Overview** tab, click the product you want to modify on the **Products and services** card. If it is not listed there, use the **Products** tab to locate the product and click it.
+1. Click the **Overview** tab, click the product you want to modify on the **Products and services** card. If it is not listed there, use the **Products** tab to locate the product and click it.
 
    ![Admin console overview tab](/help/assets/admin-console-overview.png)
 
@@ -83,7 +83,7 @@ You can create or add users/groups to these product profiles with the Admin Cons
 
 1. Click **Done** to save the new profile.
 
-## Assign Profiles to Users or User Groups {#assign-profiles}
+## Assign profiles to users or user groups {#assign-profiles}
 
 Once you have created product profiles, you can assign users or user groups to them.
 
