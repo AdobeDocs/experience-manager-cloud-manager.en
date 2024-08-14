@@ -159,11 +159,10 @@ The content copy tool has the following limitations.
 * Running concurrent content copy operations in the same environment is not possible.
 * Content copy cannot be performed if there is any active operation running on either the destination or source environment such as a CI/CD pipeline.
 * Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
-* The content copy tool should not be used as a cloning or mirroring tool because it can not track moved or deleted content on the source.
-* A content copy can not be paused or cancelled once it is initiated.
-* The content copy tool copies assets along with dynamic media related metadata from the higher environment to the selected lower environment.
-  * Copied assets then need to be reprocessed using the [DAM process assets workflow](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) on the lower environment in order to use the respective dynamic media configuration.
-* Content copy process will be substantially faster when version history is not copied.
+* The content copy tool should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
+* A content copy cannot be paused or canceled once it is initiated.
+* The content copy tool copies assets and Dynamic Media metadata from the higher environment to the selected lower environment. Copied assets then need to be reprocessed using the [DAM process assets workflow](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) on the lower environment to use the respective Dynamic Media configuration.
+* The content copy process is substantially faster when version history is not copied.
 * [Dynamic Media configurations with assets sizes greater than 2 GB enabled](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) are not supported.
 * When version history is not copied, the content copy process is substantially faster.
 * The regions of the target environment must be the same as or a subset of the source environment's regions.
