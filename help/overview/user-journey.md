@@ -26,7 +26,7 @@ The onboarding process differs depending on if you are new to AMS or are an exis
 
 As a new customer, you will be onboarded to [!UICONTROL Cloud Manager] as part of the onboarding process to Adobe Managed Services.
 
-As part of the onboarding process, you will receive a welcome email that includes:
+As part of the onboarding process, you receive a welcome email that includes:
 
 * The URL to access [!UICONTROL Cloud Manager]
 * Instructions to login to [!UICONTROL Experience Cloud] 
