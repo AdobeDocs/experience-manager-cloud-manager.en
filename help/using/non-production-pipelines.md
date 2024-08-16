@@ -18,12 +18,12 @@ This document focuses on non-production pipelines. For details on how to configu
 
 There are two types of non-production pipelines:
 
-* **Code Quality Pipelines** - These run code quality scans on the code in a git branch and executes the build and code quality steps.
-* **Deployment Pipelines** - In addition to executing the build and code quality steps like the code quality pipelines, these pipelines deploy the code to a non-production environment.
+* **Code Quality Pipelines** - These run code quality scans on the code in a Git branch and executes the build and code quality steps.
+* **Deployment Pipelines** - Along with performing the build and code quality steps like the code quality pipelines, these pipelines also deploy the code to a non-production environment.
 
 >[!NOTE]
 >
->A pipeline can not be setup until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See the document [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+>A pipeline cannot be set up until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
 ## Add a non-production pipeline {#add-non-production-pipeline}
 
@@ -45,36 +45,37 @@ Once you have set up your program and have at least one environment using the Cl
 
 1. Provide the repository where the pipeline should retrieve the code.
 
-   * **Repository** - This options defines from which git repo the pipeline should retrieve the code.
-   * **Git Branch** - his option defines from which branch in the selected the pipeline should retrieve the code.
+   * **Repository** - Defines from which git repo that the pipeline should retrieve the code.
+   * **Git Branch** - Defines from which branch in Git that the selected pipeline should retrieve the code.
 
 1. Define your deployment options.
 
    1. Under **Deployment Trigger**, define what event activates the pipeline.
 
-      * **Manual** - Use this option to manually start the pipeline.
-      * **On Git Changes** - This options starts the pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.
+      * **Manual** - Lets you manually start the pipeline.
+      * **On Git Changes** - Starts the pipeline when commits are added to the configured Git branch. With this option, you can still start the pipeline manually, as required.
 
    1. For deployment pipelines, under **Important Metric Failures Behavior**, define the behavior of the pipeline when an important failure is encountered in any of the quality gates.
 
-       * **Ask every time** - This is the default setting and requires manual intervention on any important failure.
-       * **Fail Immediately** - If selected, the pipeline will be cancelled whenever an important failure occurs. This is essentially emulating a user manually rejecting each failure.
-       * **Continue Immediately** - If selected, the pipeline will proceed automatically whenever an important failure occurs. This is essentially emulating a user manually approving each failure.
+       * **Ask every time** - The default setting and requires manual intervention on any important failure.
+       * **Fail Immediately** - The pipeline is canceled whenever an important failure occurs. It is essentially emulating a user manually rejecting each failure.
+       * **Continue Immediately** - The pipeline proceeds automatically whenever an important failure occurs. It is essentially emulating a user manually approving each failure.
 
-   1. **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths which will either be invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions will be performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
+   1. **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
 
       1. Under **PATH** provide a content path.
       1. Under **TYPE**, select the action to be taken on that path.
 
          * **Flush** - Perform a cache deletion.
          * **Invalidate** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.
+         
       1. Click **Add Path** to add your specified path. You can add up to 100 paths per environment.
 
-1. Click **Save** to save your pipeline.
+1. Click **Save**.
 
 ## The next steps {#the-next-steps}
 
-Once you have configured the pipeline, you need to deploy your code. See [Code Deployment](/help/using/code-deployment.md) for more details.
+After you configure the pipeline, you can deploy your code. See [Code Deployment](/help/using/code-deployment.md) for more details.
 
 ## Video tutorial {#video-tutorial}
 
