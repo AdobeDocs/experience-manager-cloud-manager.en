@@ -22,7 +22,7 @@ The release date for [!UICONTROL Cloud Manager] 2024.8.0 is August 14, 2024. The
 
 ## Early adoption program {#early-adoption}
 
-Be a part of Adobe's early adoption program and have a chance to test some upcoming features.
+Be a part of Cloud Manager's early adoption program and have a chance to test some upcoming features.
 
 ### Staging-only and production-only pipelines {#staging-production-only-pipelines}
 
