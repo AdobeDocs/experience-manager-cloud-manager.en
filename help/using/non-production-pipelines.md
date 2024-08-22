@@ -23,7 +23,7 @@ There are two types of non-production pipelines:
 
 >[!NOTE]
 >
->A pipeline cannot be set up until its associated git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+>A pipeline cannot be set up until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
 ## Add a non-production pipeline {#add-non-production-pipeline}
 
@@ -45,7 +45,7 @@ Once you have set up your program and have at least one environment using the Cl
 
 1. Provide the repository where the pipeline should retrieve the code.
 
-   * **Repository** - Defines from which git repo that the pipeline should retrieve the code.
+   * **Repository** - Defines from which Git repo that the pipeline should retrieve the code.
    * **Git Branch** - Defines from which branch in Git that the selected pipeline should retrieve the code.
 
 1. Define your deployment options.

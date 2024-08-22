@@ -1,6 +1,6 @@
 ---
 title: Add Users and Roles
-description: Learn how to use the Admin Console to add users and roles and create profiles.
+description: Learn how to use the Admin Console to add users and roles, and create profiles.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 ---
 
@@ -8,7 +8,7 @@ exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 
 Many features in [!UICONTROL Cloud Manager] require specific permissions to use. For example, only certain users are allowed to set the key performance indicators (KPIs) for a program. These permissions are logically grouped into roles.
 
-[!UICONTROL Cloud Manager] currently defines four roles for users which govern the availability of specific features:
+[!UICONTROL Cloud Manager] currently defines four roles for users, which govern the availability of specific features:
 
 * Business Owner
 * Program Manager
@@ -21,39 +21,39 @@ Many features in [!UICONTROL Cloud Manager] require specific permissions to use.
 
 ## Role definitions {#role-definitions}
 
-This table summarizes the roles.
+The following table summarizes the roles in Cloud Manager.
 
-|[!UICONTROL Cloud Manager] Role|Description|
-|--- |--- |
-|Business Owner|This user is responsible for defining KPIs, approving production deployments, and overriding important 3-tier failures when necessary.|
-|Program Manager|This user uses [!UICONTROL Cloud Manager] to perform team setup, review status, view KPIs, and can approve important 3-tier failures when necessary.|
-|Deployment Manager|This user manages deployment operations and uses [!UICONTROL Cloud Manager] to execute staging/production deployments, edit CI/CD pipelines, approve important 3-tier failures when necessary, and can access the git repository.|
-|Developer|This user develops and tests custom application code and primarily uses [!UICONTROL Cloud Manager] to view deployment status and can access the git repository for code commits.|
-|Customer Success Engineer|This user generally supports customer success for AMS customers and interacts with [!UICONTROL Cloud Manager] for the purpose of executing deployments which require CSE oversight.|
-|Content Author|This user generally does not interact with [!UICONTROL Cloud Manager] but may use the [!UICONTROL Cloud Manager] program switcher to access AEM.|
+|[!UICONTROL Cloud Manager] role | Description |
+| --- | --- |
+| Business Owner | Responsible for defining KPIs, approving production deployments, and overriding important 3-tier failures when necessary. |
+| Program Manager | They use [!UICONTROL Cloud Manager] to perform team setup, review status, view KPIs, and can approve important 3-tier failures when necessary. |
+| Deployment Manager | Manages deployment operations and uses [!UICONTROL Cloud Manager] to execute staging and production deployments, edit CI/CD pipelines, and approve critical 3-tier failures when necessary. They also have access to the Git repository. |
+| Developer | Develops and tests custom application code and primarily uses [!UICONTROL Cloud Manager] to view deployment status and can access the Git repository for code commits. |
+| Customer Success Engineer | The CSE generally supports customer success for AMS customers. They interact with [!UICONTROL Cloud Manager] for the purpose of executing deployments that require CSE oversight. |
+| Content Author | They generally do not interact with [!UICONTROL Cloud Manager] but may use the [!UICONTROL Cloud Manager] program switcher to access AEM. |
 
 >[!NOTE]
 >
 >The Developer persona in the Admin Console is unrelated to the Developer role in [!UICONTROL Cloud Manager].
 
-## Using admin console to create a profile {#using-admin-console-to-create-a-profile}
+## Create a profile using the Admin Console {#using-admin-console-to-create-a-profile}
 
 [!UICONTROL Cloud Manager] roles are managed from the Admin Console. Specific role memberships are provided by adding the user to a [!UICONTROL Cloud Manager] product profile.
 
-The Admin Console is a central location for managing your Adobe entitlements across your entire organization. To learn more about the Adobe Admin Console, see the documentation for [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
+The Admin Console is a central location for managing your Adobe entitlements across your entire organization. To learn more about the Adobe Admin Console, see [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html).
 
-In order to provide the appropriate role-based permissions to [!UICONTROL Cloud Manager] users, an administrator in the customer's organization must create new product profiles under the [!UICONTROL AEM Managed Services] product context corresponding to each of the four [!UICONTROL Cloud Manager] roles:
+An administrator must create new product profiles under the [!UICONTROL AEM Managed Services] Product Context to assign role-based permissions for [!UICONTROL Cloud Manager] users, corresponding to each of the four [!UICONTROL Cloud Manager] roles.
 
 * Business Owner
 * Deployment Manager
 * Developer
 * Program Manager
 
-You can create or add users/groups to these product profiles with the Admin Console.
+You can create or add users or groups to these product profiles with the Admin Console.
 
 1. Log in to the Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
-1. Click the **Overview** tab, click the product you want to modify on the **Products and services** card. If it is not listed there, use the **Products** tab to locate the product and click it.
+1. Click the **Overview** tab, then click the product you want to edit on the **Products and Services** card. If it is not listed there, use the **Products** tab to locate the product and click it.
 
    ![Admin console overview tab](/help/assets/admin-console-overview.png)
 

@@ -6,7 +6,7 @@ exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 
 # Use the New Project wizard {#using-the-wizard}
 
-When you were onboarded to Cloud Manager as a new customer, you were provided with an empty git repository. To help you get started, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) as a starting point.
+When you were onboarded to Cloud Manager as a new customer, you were provided with an empty Git repository. To help you get started, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) as a starting point.
 
 Follow these steps to create an AEM project using the wizard.
 
@@ -27,7 +27,7 @@ Follow these steps to create an AEM project using the wizard.
 
    ![Detailed archetype parameters](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. Click **Create** to create the starter project by using the archetype and commit to the named git branch. 
+1. Click **Create** to create the starter project by using the archetype and commit to the named Git branch. 
 
 You now have a base project. It is time to set up your pipelines.
 

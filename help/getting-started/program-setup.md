@@ -62,7 +62,7 @@ You can edit programs after they are set up. Follow these steps to edit a progra
 
 1. Click **Update** to save your changes.
 
-Note that the changes are saved immediately to Cloud Manager, but will not be reflected in your environments until the next pipeline run.
+The changes are saved immediately to Cloud Manager, but are not reflected in your environments until the next pipeline run.
 
 If you have not yet created a pipeline, see [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
 

@@ -56,7 +56,7 @@ Each of the roles has specific, associated preconfigured permissions. The follow
 | Pipeline Modify Managed Deployment | Allows editing of the CSE oversight option | | x | | | |
 | Pipeline Delete | Allows pipeline deletion | | x | | | |
 | Step Read | See the step quality metrics results | x | x | x | x | x |
-| Generate Personal Access Token | Access git | | x | | x | |
+| Generate Personal Access Token | Access Git | | x | | x | |
 
 To learn more about how to set up your users, see [Setting Up Users and Roles](/help/requirements/users-and-roles.md).
 

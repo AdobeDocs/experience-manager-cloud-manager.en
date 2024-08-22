@@ -102,7 +102,7 @@ After you have used the [!UICONTROL Cloud Manager] UI to set up your program and
          * **Deployment Options** - You can define the parameters controlling the production deployment.
 
            * **Use Go Live Approval** - A user with the **Business Owner**, **Project Manager**, or **Deployment Manager** role by way of the [!UICONTROL Cloud Manager] UI must manually approve a deployment.
-           * **Scheduled** - Halts the pipeline before production deployment to allow it to be scheduled. If this option is selected, the pipeline will halt after deployment to the staging environment and prompt the user for the action to take.
+           * **Scheduled** - Halts the pipeline before production deployment to allow it to be scheduled. If this option is selected, the pipeline halts after deployment to the staging environment and prompt the user for the action to take.
              * **`Now`** - Deploys to production immediately, effectively completing the pipeline.
              * **Date** - Lets the user schedule a time when the deployment should be completed.
              * **Stop Execution** - Aborts deployment to production.

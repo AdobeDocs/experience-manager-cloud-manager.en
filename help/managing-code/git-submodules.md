@@ -60,9 +60,9 @@ See the [Git reference manual](https://git-scm.com/book/en/v2/Git-Tools-Submodul
 
 ## Limitations {#limitations}
 
-When using git submodules, be aware of the following:
+When using Git submodules, be aware of the following:
 
-* The git URL must be exactly in the syntax described above.
+* The Git URL must be exactly in the syntax described above.
 * For security reasons, do not embed credentials in these URLs.
 * Only submodules at the root of the branch are supported.
 * Git submodule references are stored to specific Git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated. For example, by using `git submodule update --remote`.
@@ -81,8 +81,8 @@ However, after setting up your `pom.xml` file and running the `git submodule` co
 
 ### Limitations and recommendations {#limitations-recommendations-private-repos}
 
-When using git submodules with private repositories, be aware of the following limitations.
+When using Git submodules with private repositories, be aware of the following limitations.
 
-* The git URLs for the submodules can either be in the HTTPS or SSH format, but they must link to a Github.com repository. Adding an Adobe repository submodule to a GitHub aggregator repository or vice versa does not work.
+* The Git URLs for the submodules can either be in the HTTPS or SSH format, but they must link to a Github.com repository. Adding an Adobe repository submodule to a GitHub aggregator repository or vice versa does not work.
 * The GitHub submodules must be accessible to the Adobe GitHub App.
-* [The limitations of using git submodules with Adobe-managed repositories](#limitations-recommendations) also apply.
+* [The limitations of using Git submodules with Adobe-managed repositories](#limitations-recommendations) also apply.

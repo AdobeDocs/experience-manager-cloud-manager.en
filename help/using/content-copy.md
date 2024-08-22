@@ -92,7 +92,7 @@ Follow similar steps as when creating a content step. Instead of clicking **Add 
 
 When editing your content set, you may need to expand the configured paths to reveal the excluded sub-paths.
 
-## Copying content {#copy-content}
+## Copy content {#copy-content}
 
 Once a content set has been created, you can use it to copy content. Follow these steps to copy content.
 
@@ -167,6 +167,6 @@ The content copy tool has the following limitations.
 * When version history is not copied, the content copy process is substantially faster.
 * The regions of the target environment must be the same as or a subset of the source environment's regions.
 
-## Known Issues {#known-issues}
+## Known issues {#known-issues}
 
 {{content-copy-known-issues}}

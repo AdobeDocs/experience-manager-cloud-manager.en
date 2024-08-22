@@ -46,7 +46,7 @@ To get additional information on the benefits of upgrading to AEM 6.5, see [Upgr
 
 Log into the [!UICONTROL Experience Cloud] landing page using your Adobe Identity Management credentials. From there, select AEM from the solution switcher to access [!UICONTROL Cloud Manager] and your AEM environments.
 
-After logging in to [!UICONTROL Cloud Manager] for the first time, you will have access to your AEM environments directly from the [!UICONTROL Cloud Manager] UI. At this point, you are ready to explore all the possibilities of [!UICONTROL Cloud Manager] and prepare your first code branch to be deployed to your stage and production environments.
+After logging in to [!UICONTROL Cloud Manager] for the first time, you have access to your AEM environments directly from the [!UICONTROL Cloud Manager] UI. At this point, you are ready to explore all the possibilities of [!UICONTROL Cloud Manager] and prepare your first code branch to be deployed to your stage and production environments.
 
 To get started with [!UICONTROL Cloud Manager], see [First Time Login](/help/getting-started/first-time-login.md).
 

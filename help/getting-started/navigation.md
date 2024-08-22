@@ -4,11 +4,11 @@ description: Learn how the Cloud Manager UI is organized and how to navigate to 
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 ---
 
-# Navigating the Cloud Manger UI {#navigation}
+# Navigate the Cloud Manger UI {#navigation}
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 
-The Cloud manage UI is primarily composed of two graphical interfaces:
+The Cloud Manager UI is primarily composed of two graphical interfaces:
 
 * [The My Programs console](#my-programs-console) is where you can view and manage all of your programs.
 * [The Program Overview window](#program-overview) is where you can see the detail of and manage an individual program.
