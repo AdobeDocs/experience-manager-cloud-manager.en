@@ -4,11 +4,11 @@ description: Learn how to deploy your code and what happens in Cloud Manager whe
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 ---
 
-# Code Deployment {#code-deployment}
+# Code deployment {#code-deployment}
 
 Learn how to deploy your code and what happens in Cloud Manager when you do.
 
-## Deploying Code with Cloud Manager {#deploying-code-with-cloud-manager}
+## Deploy code with Cloud Manager {#deploying-code-with-cloud-manager}
 
 Once you have configured your production pipeline, including the necessary repository and environments, you are ready to deploy your code.
 
@@ -28,11 +28,11 @@ The build process starts the code deployment process including the following ste
 
 You can review the steps from various deployment processes by viewing logs, or reviewing results for the testing criteria.
 
-## Deployment Steps {#deployment-steps}
+## Deployment steps {#deployment-steps}
 
 A number of actions occur during each step of the deployment, which is described in this section. See [Deployment Process Details](#deployment-process) for technical details of how the code itself is deployed behind-the-scenes.
 
-### Stage Deployment Step {#stage-deployment}
+### Stage deployment step {#stage-deployment}
 
 The **Stage deployment** step includes the following actions:
 
@@ -43,14 +43,14 @@ The **Stage deployment** step includes the following actions:
 
 ![Stage deployment](/help/assets/Stage_Deployment1.png)
 
-### Stage Testing Step {#stage-testing}
+### Stage testing step {#stage-testing}
 
 The **Stage testing** step includes the following actions:
 
 * **Security Testing**: This step evaluates the security impact of your code on the AEM environment. See the document [Understanding Test Results](/help/using/code-quality-testing.md) for details on the testing process.
     * **Performance Testing**: This step evaluates the performance of your code. See [Understanding Test Results](/help/using/code-quality-testing.md) for details on the testing process.
 
-### Production Deployment Step {#production-deployment}
+### Production deployment step {#production-deployment}
 
 The **Production Deployment** step includes the following actions:
 
@@ -84,7 +84,7 @@ The following steps time out if left waiting for user feedback:
 |Schedule Production Deployment|14 days|
 |Managed Production Deployment|14 days|
 
-## Deployment Process Details {#deployment-process}
+## Deployment process details {#deployment-process}
 
 Cloud Manager uploads all target/*.zip files produced by the build process to a storage location. These artifacts are retrieved from this location during the deploy phases of the pipeline.
 
@@ -127,7 +127,7 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
    >
    >You can skip load balancer changes in development and staging Deployments. That is, for development environment, detach, and attach steps in both non-production pipelines, and for staging environment the production pipeline.
 
-### Deployment to Production Phase {#deployment-production-phase}
+### Deployment to production phase {#deployment-production-phase}
 
 The process for deploying to production topologies differs slightly to minimize impact to AEM site visitors. 
 
@@ -143,7 +143,7 @@ Production deployments generally follow the same steps as above, but in a rollin
 
 This process continues until the deployment has reached all publishers and dispatchers in the topology.
 
-## Emergency Pipeline Execution Mode {#emergency-pipeline}
+## Emergency pipeline execution mode {#emergency-pipeline}
 
 In critical situations, Adobe Managed Services customers might need to deploy code changes to their stage and production environments immediately. This ability lets them bypass the full Cloud Manager test cycle.
 
@@ -153,7 +153,7 @@ To address these situations, the Cloud Manager production pipeline may be execut
 >
 >The emergency pipeline execution mode feature is activated on a program-by-program basis. The activation is done by Customer Success Engineers.
 
-### Using Emergency Pipeline Execution Mode {#using-emergency-pipeline}
+### Use emergency pipeline execution mode {#using-emergency-pipeline}
 
 When you start a production pipeline execution, you can choose between normal or emergency mode from a dialog box. This option is available if the emergency pipeline execution mode feature is activated for the program. This choice is available once the feature is enabled.
 
@@ -169,7 +169,7 @@ Executing a pipeline in emergency mode can also be done through the Cloud Manage
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
-## Re-Executing a Production Deployment {#reexecute-deployment}
+## Re-executing a production deployment {#reexecute-deployment}
 
 In rare cases, production deployment steps may fail for transient reasons. In these cases, you can re-execute the production deployment step as long as it was completed, regardless of whether it was successful, canceled, or unsuccessful. Re-execution is supported by using the same pipeline that consists of the following three steps: 
 
@@ -192,11 +192,11 @@ In such circumstances where a re-execution is possible, the production pipeline 
 * If the last execution failed at any point prior to the production deployment step, re-execution is not possible.
 
 
-### Re-Execute API {#reexecute-api}
+### Re-execute API {#reexecute-api}
 
 In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions and identify executions that were triggered as re-executions.
 
-#### Triggering a Re-Execution {#triggering}
+#### Trigger a re-execution {#triggering}
 
 To trigger a re-execution, a `PUT` request needs to be made to the HAL Link `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute` on the production deploy step state.
 
@@ -244,6 +244,6 @@ The syntax of the HAL link's `href` value is only an example and the actual valu
 
 Submitting a `PUT` request to this endpoint results in a `201` response if successful. The response body is the representation of the new execution. This functionality is similar to starting a regular execution through the API.
 
-#### Identifying a Re-Execute Execution {#identifying}
+#### Identify a re-executed execution {#identifying}
 
 The system identifies re-executed executions by the value `RE_EXECUTE` in the trigger field.

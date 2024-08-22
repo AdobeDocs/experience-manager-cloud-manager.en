@@ -1,12 +1,12 @@
 ---
 title: Source Code Repository
-description: Learn about the git repository that is provisioned for each program you have in Cloud Manager.
+description: Learn about the Git repository that is provisioned for each program you have in Cloud Manager.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
 ---
 
 # Source code repository {#source-code-repository}
 
-Learn about the git repository that is provisioned for each program you have in Cloud Manager.
+Learn about the Git repository that is provisioned for each program you have in Cloud Manager.
 
 ## Cloud Manager repository {#cloud-manager-repository}
 
@@ -16,7 +16,7 @@ As a best practice, you should always use the Cloud Manager's Git repository, wh
 
 For more information on how to set up branches in Git, see [Configuring Release Branches](/help/getting-started/configuring-branches.md).
 
-For more information on how to use the Cloud Manager's git repository with the CI/CD pipeline, See [Configure Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md) to learn more.
+For more information on how to use the Cloud Manager's Git repository with the CI/CD pipeline, See [Configure Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md) to learn more.
 
 ## On-premise repository {#on-premise-repository}
 

@@ -1,11 +1,11 @@
 ---
 title: Repository Access Information
-description: Learn how to access and manage your Adobe-managed git repositories using the self-service git account management from Cloud Manager.
+description: Learn how to access and manage your Adobe-managed Git repositories using the self-service Git account management from Cloud Manager.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
 ---
 # Repository access information {#accessing-repos}
 
-Learn how to access and manage your Adobe-managed git repositories using the self-service git account management in Cloud Manager.
+Learn how to access and manage your Adobe-managed Git repositories using the self-service Git account management in Cloud Manager.
 
 ## Access repository information from the Overview page {#overview-page}
 
@@ -20,7 +20,7 @@ Learn how to access and manage your Adobe-managed git repositories using the sel
    * The Git username.
    * The Git password.
    * The URL to the Cloud Manager Git repository.
-   * Prebuilt git commands to add a remote to your Git repo quickly and push code.
+   * Prebuilt Git commands to add a remote to your Git repo quickly and push code.
 
    ![Repository Info window](assets/access-repo-info.png)
 

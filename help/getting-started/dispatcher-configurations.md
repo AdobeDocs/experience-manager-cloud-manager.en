@@ -8,7 +8,7 @@ exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 
 Learn how to deploy Dispatcher configuration files using Cloud Manager
 
-## Deploying Dispatcher configurations with Cloud Manager {#deploying-dispatcher-configurations}
+## Deploy Dispatcher configurations with Cloud Manager {#deploying-dispatcher-configurations}
 
 Cloud Manager is able to deploy web server and Dispatcher configuration files assuming they are stored in the Git repository alongside normal AEM content packages.
 

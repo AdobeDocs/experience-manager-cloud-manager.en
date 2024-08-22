@@ -56,11 +56,11 @@ See [Understanding Test Results](/help/using/code-quality-testing.md) for more i
 
 ## Can I use SNAPSHOT for the version of the Maven project? {#snapshot}
 
-Yes. For developer deployments, the git branch `pom.xml` files must contain `-SNAPSHOT` at the end of the `<version>` value.
+Yes. For developer deployments, the Git branch `pom.xml` files must contain `-SNAPSHOT` at the end of the `<version>` value.
 
 Doing so lets subsequent deployments still be installed when the version did not change. In developer deployments, no automatic version is added or generated for the maven build.
 
-You can also set the version to `-SNAPSHOT` for stage and production builds or deployments. Cloud Manager automatically sets a proper version number and creates a tag for you in git. This tag can be referred to later, if required.
+You can also set the version to `-SNAPSHOT` for stage and production builds or deployments. Cloud Manager automatically sets a proper version number and creates a tag for you in Git. This tag can be referred to later, if required.
 
 Further details about version handling are [documented here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
 
@@ -70,11 +70,11 @@ In staging and production deployments, an automatic version is generated [as doc
 
 For custom versioning in stage and production deployments, set a proper three-part maven version like `1.0.0`. Increase the version each time you deploy to production.
 
-Cloud Manager automatically adds its version to stage and production builds and creates a git branch. No special configuration is required. If you do not set a maven version as described previously, the deployment still succeeds and a version is automatically set.
+Cloud Manager automatically adds its version to stage and production builds and creates a Git branch. No special configuration is required. If you do not set a maven version as described previously, the deployment still succeeds and a version is automatically set.
 
 ## My maven build fails for Cloud Manager deployments but it builds locally without errors. What is wrong? {#maven-build-fail}
 
-See this [git resource](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) for more details.
+See this [Git resource](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) for more details.
 
 ## I am unable to set a variable using an aio command. What can I do? {#set-variable} 
 

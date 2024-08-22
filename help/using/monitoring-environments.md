@@ -54,7 +54,7 @@ To view the details of specific metrics, click one of the category columns of a 
 
 The navigation on the left shows the available metrics within the currently selected category for which there is data for the currently selected environment and instances.
 
-An individual graph will show the status and a graph of the data over time along with the thresholds. If multiple instances are displayed, each instance's data are in a separate series.
+An individual graph shows the status and a graph of the data over time along with the thresholds. If multiple instances are displayed, each instance's data are in a separate series.
 
 ![Metrics graph](/help/assets/Monitoring_Graphs1.png)
 

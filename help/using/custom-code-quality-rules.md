@@ -4,7 +4,7 @@ description: Discover the specifics of the custom code quality rules executed by
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 ---
 
-# Custom Code Quality Rules {#custom-code-quality-rules}
+# Custom code quality rules {#custom-code-quality-rules}
 
 Learn details about the custom code quality rules executed by Cloud Manager as part of [code quality testing](/help/using/code-quality-testing.md), based on best practices from AEM Engineering.
 
@@ -16,7 +16,7 @@ Learn details about the custom code quality rules executed by Cloud Manager as p
 >
 >Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Continue reading this document for descriptions and examples of the rules.
 
-## SonarQube Rules {#sonarqube-rules}
+## SonarQube rules {#sonarqube-rules}
 
 The following section details SonarQube rules executed by Cloud Manager.
 

@@ -4,7 +4,7 @@ description: Learn how code quality testing of pipelines works and how it can im
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 ---
 
-# Code Quality Testing {#code-quality-testing}
+# Code Quality testing {#code-quality-testing}
 
  Learn how code quality testing of pipelines works and how it can improve the quality of your deployments.
 
@@ -14,7 +14,7 @@ During pipeline execution, the software captures a number of metrics. These metr
 
 These results are reported using a three-tiered rating system.
 
-## Three-Tiered Ratings {#three-tiered-ratings}
+## Three-tiered ratings {#three-tiered-ratings}
 
 There are three gates in the pipeline:
 
@@ -32,7 +32,7 @@ For each of these gates, there is a three-tiered structure for issues identified
 >
 >In a code quality only pipeline, important failures in the code quality gate cannot be overridden since the code quality testing step is the final step in the pipeline.
 
-## Code Quality Testing {#code-quality-testing-step}
+## Code Quality testing {#code-quality-testing-step}
 
 This testing step evaluates the quality of your application code, which is the main purpose of a code quality-only pipeline. It is executed immediately following the build step in all non-production and production pipelines. To learn more, go to [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
 
@@ -67,7 +67,7 @@ The results of code quality testing are delivered as rating as summarized in thi
 >
 >To learn more about the custom code quality rules executed by [!UICONTROL Cloud Manager], See [Custom Code Quality Rules](custom-code-quality-rules.md).
 
-### Dealing with False Positives {#dealing-with-false-positives}
+### Dealing with false positives {#dealing-with-false-positives}
 
 The quality scanning process is not perfect and sometimes incorrectly identifies issues that are not actually problematic. This scenario is known as a false positive.
 
@@ -101,7 +101,7 @@ Then the correct solution is to remove the hardcoded password.
 >
 >It is a best practice to make the `@SuppressWarnings` annotation as specific as possible. That is, annotate only the specific statement or block causing the issue. However, it is possible to annotate at a class level. Doing so allows for broader suppression of warnings.
 
-## Security Testing {#security-testing}
+## Security testing {#security-testing}
 
 [!UICONTROL Cloud Manager] runs the existing AEM Security Heath Checks on the staging environment following deployment and reports the status through the UI. The results are aggregated from all AEM instances in the environment.
 
@@ -133,13 +133,13 @@ The following table lists the health checks.
 | The web server is configured to prevent clickjacking. | Web Server Configuration |Important |
 | Replication is not using the `admin` user. | Replication and Transport Users |Info |
 
-## Performance Testing {#performance-testing}
+## Performance testing {#performance-testing}
 
 ### AEM Sites {#aem-sites}
 
 Cloud Manager executes performance testing for AEM Sites programs. The performance test is run for approximately 30 mins by spinning up virtual users (containers) that simulate actual users to access pages in staging environments to simulate traffic. These pages are found using a crawler.
 
-#### Virtual Users {#virtual-users}
+#### Virtual users {#virtual-users}
 
 Cloud Manager spins up virtual users or containers based on KPIs (response time and pageviews/min) set by the **Business Owner** role. These KPIs are set while [creating or editing the program](/help/getting-started/program-setup.md).
 
@@ -154,7 +154,7 @@ Prior to the start of the 30 minute test period, Cloud Manager crawls the stagin
   * Allowed values are `2000` - `7000`.
 * Requests from the crawler have a fixed timeout of 10 seconds.
 
-#### Page Sets for Testing {#page-sets}
+#### Page sets for testing {#page-sets}
 
 Three page sets select the pages. Cloud Manager uses the access logs from the AEM instances across production and staging environments to determine the following buckets.
 
@@ -164,7 +164,7 @@ Three page sets select the pages. Cloud Manager uses the access logs from the AE
 
 * **New Pages** - Tests new pages that may have only been deployed to the staging and not yet to production, but must be tested. 
 
-##### Distribution of Traffic Across Page Sets Selected {#distribution-of-traffic}
+##### Distribution of traffic across page sets selected {#distribution-of-traffic}
 
 You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration](/help/using/production-pipelines.md). The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put into each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
 
@@ -180,7 +180,7 @@ Over the 30 minute test period:
 * Each of the 25 pages in the popular live pages set is hit 120 times: `((200 * 0.5) / 25) * 30 = 120`
 * Each of the 3000 pages in the new pages set is hit once: `((200 * 0.5) / 3000) * 30 = 1`
  
-#### Testing and Reporting {#testing-reporting}
+#### Test and report {#testing-reporting}
 
 Cloud Manager executes performance testing for AEM Sites programs by requesting pages as an unauthenticated user by default on the staging publish server for a 30 minute test period. It measures the virtual user-generated metrics (response time, error rate, views per minute, and so on) for each page and various system-level metrics (CPU, memory, networking data) for all instances.
 
@@ -198,13 +198,13 @@ The following table summarizes the performance test matrix using the three-tiere
 | Network Bandwidth Utilization |Important |>= 90% |
 | Requests Per Minute |Info |>= 6000 |
 
-See [Authenticated Performance Testing](#authenticated-performance-testing) for more details on using basic authentication for performance testing for Sites and Assets.
+See [Authenticated performance testing](#authenticated-performance-testing) for more details on using basic authentication for performance testing for Sites and Assets.
 
 >[!NOTE]
 >
 >Both author and publish instances are monitored during the test. If any metric for one instance is not obtained, that metric is reported as unknown and the corresponding step fails.
 
-#### Authenticated Performance Testing {#authenticated-performance-testing}
+#### Authenticated performance testing {#authenticated-performance-testing}
 
 If necessary, AMS customers with authenticated sites can specify a username and password which Cloud Manager uses to access the website during sites performance testing.
 
@@ -218,41 +218,41 @@ To set these variables using the Cloud Manager CLI, run:
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-See [Patch User Pipeline Variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentation to learn how to use the API. 
+See [Patch user pipeline variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentation to learn how to use the API. 
 
 ### AEM Assets {#aem-assets}
 
 Cloud Manager runs performance testing for AEM Assets programs by repeatedly uploading assets for 30 minutes. 
 
-#### Onboarding Requirement {#onboarding-requirement}
+#### Onboarding requirement {#onboarding-requirement}
 
 For Assets performance testing, your Customer Success Engineer creates a `cloudmanager` user and password during the onboarding of the author to staging environment. The performance test steps require a user called `cloudmanager` and the associated password set up by your CSE. 
 
 This method should remain in the author instance with its permissions unchanged. Altering or removing it can cause Assets performance testing to fail.
 
-#### Images and Assets for Testing {#assets-for-testing}
+#### Images and Assets for testing {#assets-for-testing}
 
 Customers can upload their own assets for testing. This process can be done from the **Pipeline Setup** or **Edit** screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files.
 
 If no images are uploaded, Cloud Manager uses a default image and PDF documents for testing.
 
-#### Distribution of Assets for Testing {#distribution-of-assets}
+#### Distribution of Assets for testing {#distribution-of-assets}
 
 The distribution of how many assets of each type are uploaded per minute is set in the **Pipeline Setup** or **Edit** screen.
 
 For example, if a 70/30 split is used, and there are 10 assets uploaded per minute, 7 images and 3 documents are uploaded per minute.
 
-#### Testing and Reporting {#testing-and-reporting}
+#### Test and report {#testing-and-reporting}
 
 Cloud Manager creates a folder on the author instance using the username and password that the CSE setup. Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library](https://github.com/adobe/toughday2). Both processing time for each asset and various system-level metrics are measured across the 30-minute testing duration. This feature can upload both images and PDF documents.
 
 >[!TIP]
 >
->See [Configure Production Pipelines](/help/using/production-pipelines.md) to learn more. See [Program Setup](/help/getting-started/program-setup.md) to learn how to set up your program and define your KPIs.
+>See [Configure production pipelines](/help/using/production-pipelines.md) to learn more. See [Program Setup](/help/getting-started/program-setup.md) to learn how to set up your program and define your KPIs.
 
-### Performance Testing Results Graphs {#performance-testing-results-graphs}
+### Performance testing results graphs {#performance-testing-results-graphs}
 
-A number of metrics are available in the **Performance Test dialog**
+A number of metrics are available in the **Performance Test dialog box**.
 
 ![List of metrics](/help/assets/understand_test-results-screen1.png)  
 
@@ -278,7 +278,7 @@ This functionality is available for the following metrics.
 * **95th Percentile Response Time** - A graph of 95th percentile response time per minute during the test period
   * A CSV file listing pages whose 95th percentile response time has exceeded the defined KPI
 
-## Content Package Scanning Optimization {#content-package-scanning-optimization}
+## Content package scanning optimization {#content-package-scanning-optimization}
 
 As part of the quality analysis process, Cloud Manager performs analysis of the content packages produced by the Maven build. Cloud Manager offers optimizations to accelerate this process, which is effective when certain packaging constraints are observed. 
 

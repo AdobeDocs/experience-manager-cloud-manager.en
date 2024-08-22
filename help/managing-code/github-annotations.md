@@ -1,16 +1,16 @@
 ---
 title: GitHub Check Annotations
-description: Learn how GitHub checks annotate PRs for your private repositories to provide you will helpful feedback.
+description: Learn how GitHub checks annotate PRs for your private repositories to provide you with helpful feedback.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 ---
 
-# GitHub Check Annotations {#github-annotations}
+# GitHub check nnnotations {#github-annotations}
 
-Learn how GitHub checks annotate PRs for your private repositories to provide you will helpful feedback.
+Learn how GitHub checks annotate PRs for your private repositories to provide you with helpful feedback.
 
 ## Overview {#overview}
 
-If you are using [private repositories](private-repositories.md) for your Cloud Manager program, checks in GitHub are automatically run for every pull request. These are annotated with useful information to help you understand any issues with your code as soon as possible.
+If you use [private repositories](private-repositories.md) for your Cloud Manager program, checks in GitHub are automatically run for every pull request. These checks are annotated with useful information to help you understand any issues with your code as soon as possible.
 
 ![Example of GitHub check annotations](assets/github-check-annotations.png)
 
@@ -18,7 +18,7 @@ If you are using [private repositories](private-repositories.md) for your Cloud 
 
 ![Example of code issue annotation](assets/github-check-annotations-example.png)
 
-The exact line of code with the issue is provided and you can click it to show the relevant code. These annotations are provided for all code issues, not just those changed in the pull request.
+The exact line of code with the issue is provided and you can click it to show the relevant code. These annotations are provided for all code issues, not just those issues changed in the pull request.
 
 ![Example of code issue annotation](assets/github-check-annotations-example-code.png)
 
@@ -26,12 +26,12 @@ All annotated lines are aggregated on the **Files Changed** tab on the GitHub pu
 
 ![Example of annotations on files changed tab](assets/github-check-annotations-files-changed.png)
 
-## Code Quality Pipelines {#code-quality-pipelines}
+## Code Quality pipelines {#code-quality-pipelines}
 
-The [code quality](/help/using/code-quality-testing.md) results are also visible in the pipeline which is automatically triggered by Cloud Manager at the bottom of the **Checks** tab. It is also accessible from the **Details** of the check of the pull request.
+The [Code Quality](/help/using/code-quality-testing.md) results are also visible in the pipeline, which Cloud Manager triggers automatically at the bottom of the **Checks** tab. It is also accessible from the **Details** of the check of the pull request.
 
 ![Example of annotations](assets/github-check-annotations-code-quality.png)
 
 ![Example of annotations](assets/github-check-annotations-code-quality-2.png)
 
-You can also visualize the issues in the form of a CSV. This can be retrieved by [viewing the details of the pipeline execution in Cloud Manager](/help/using/managing-pipelines.md).
+You can also visualize the issues in the form of a CSV. This method can be retrieved by [viewing the details of the pipeline execution in Cloud Manager](/help/using/managing-pipelines.md).

@@ -10,7 +10,7 @@ Learn how Cloud Manager notifies you of important events.
 
 ## Notifications in Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] sends you notifications when a production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment, and when the **Go-Live Approval** and **Scheduled** steps are reached. These notifications are sent through the [!UICONTROL Experience Cloud] notification system.
+[!UICONTROL Cloud Manager] sends you notifications when a production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment. And, when the **Go-Live Approval** and **Scheduled** steps are reached. These notifications are sent through the [!UICONTROL Experience Cloud] notification system.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Click the gear icon at the top of the notifications sidebar.
 
 ![Notification settings icon](/help/assets/notifications-configuration.png)
 
-This opens the **Experience Cloud preferences** window, where you can define your notification subscriptions and how you receive your notifications.
+The **Experience Cloud preferences** window is opened where you can define your notification subscriptions and how you receive your notifications.
 
 ### Subscriptions {#subscriptions}
 
@@ -52,17 +52,17 @@ Subscriptions define for which products you receive notifications and which noti
 
 ![Notification subscriptions](/help/assets/notifications-subscriptions.png)
 
-By default, you will receive all notifications for all products. Click **Customize** next to a product to define the types of notifications you receive for that product.
+By default, you receive all notifications for all products. Click **Customize** next to a product to define the types of notifications you receive for that product.
 
 ![Notification subscription customization](/help/assets/notifications-subscriptions-customize.png)
 
 ### Priority {#priority}
 
-Priority alerts will be marked with a **HIGH** tag and can be configured to be exclusively received as alerts. In the **Priority** section, you can define which categories qualify as priority notifications.
+Priority alerts are marked with a **HIGH** tag. You can configure them to be received exclusively as alerts. In the **Priority** section, you can define which categories qualify as priority notifications.
 
 ![Notification priority](/help/assets/notifications-priority.png)
 
-Use the drop-down to add to the list of categories that qualify as priority. Click the X next to the category names to remove them.
+Use the drop-down to add to the list of categories that qualify as priority. Click the `X` next to the category names to remove them.
 
 ### Alerts {#alerts}
 
@@ -88,4 +88,4 @@ By default no emails are sent. You can choose to receive emails as:
 * Daily
 * Weekly
 
-When **Instant notifications** is chosen, emails are sent immediately for every notification. For **Daily digest** and **Weekly digest** you can choose when your daily digest is sent and on which day and when your weekly digest is sent.
+When **Instant notifications** are chosen, emails are sent immediately for every notification. For **Daily digest** and **Weekly digest** you can choose when your daily digest is sent and on which day and when your weekly digest is sent.

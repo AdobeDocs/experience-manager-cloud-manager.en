@@ -13,7 +13,7 @@ Learn how to set up your project so you can manage and deploy it with Cloud Mana
 Existing AEM Projects must adhere to some basic rules so they can be built and deployed successfully with Cloud Manager.
 
 * Projects must be built using Apache Maven.
-* There must be a `pom.xml` file in the root of the git repository.
+* There must be a `pom.xml` file in the root of the Git repository.
   * This `pom.xml` file can refer to as many sub-modules (which in turn may have other sub-modules) as necessary.
   * You can add references to additional Maven artifact repositories in your `pom.xml` files.
   * Access to [password-protected artifact repositories](#password-protected-maven-repositories) is supported when configured. However, access to network-protected artifact repositories is not supported.
@@ -110,7 +110,7 @@ Artifacts from a password-protected Maven repository should be used cautiously b
 >
 >Artifacts from password-protected Maven repositories should only be used in rare cases and for code not tied to AEM.
 
-To use a password-protected Maven repository from Cloud Manager, specify the password (and optionally, the username) as a secret [Pipeline Variable](/help/getting-started/build-environment.md#pipeline-variables) and then reference that secret inside a file named `.cloudmanager/maven/settings.xml` in the git repository. This file follows the [Maven Settings File](https://maven.apache.org/settings.html) schema.
+To use a password-protected Maven repository from Cloud Manager, specify the password (and optionally, the username) as a secret [Pipeline Variable](/help/getting-started/build-environment.md#pipeline-variables) and then reference that secret inside a file named `.cloudmanager/maven/settings.xml` in the Git repository. This file follows the [Maven Settings File](https://maven.apache.org/settings.html) schema.
 
 When the Cloud Manager build process starts, the `<servers>` element in this file is merged into the default `settings.xml` file provided by Cloud Manager. Custom servers should not use server IDs that start with `adobe` and `cloud-manager`. Such IDs are considered reserved. Cloud Manager mirrors only those server IDs that match one of the specified prefixes or the default ID `central`.
 
@@ -269,7 +269,7 @@ With the `content-package-maven-plugin`, it is similar:
 
 ## Build Artifact reuse {#build-artifact-reuse}
 
-In many cases, the same code is deployed to multiple AEM environments. Where possible, Cloud Manager avoids rebuilding the code base when it detects that the same git commit is used in multiple full-stack pipeline executions.
+In many cases, the same code is deployed to multiple AEM environments. Where possible, Cloud Manager avoids rebuilding the code base when it detects that the same Git commit is used in multiple full-stack pipeline executions.
 
 When an execution is started, the current HEAD commit for the branch pipeline is extracted. The commit hash is visible in the UI and by way of the API. When the build step completes successfully, the resulting artifacts are stored based on that commit hash and may be reused in subsequent pipeline executions.
 

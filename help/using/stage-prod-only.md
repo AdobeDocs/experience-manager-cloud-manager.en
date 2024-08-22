@@ -22,7 +22,7 @@ Staging and production environments are tightly coupled. By default, deployments
 Stage-only and prod-only pipelines offer solutions to these use-cases by providing dedicated deployment options.
 
 * **Stage-Only Deployment Pipelines:** Deploys only to a staging environment with the execution finishing once the deployment and tests are done. A stage-only pipeline behaves identically to the standard coupled full stack prod pipeline but without the production deployment steps (approval, schedule, deploy).
-* **Prod-Only Deployment Pipelines:** Deploys only to production by selecting a stage execution that was successful. Then deploying its artifacts to production. Prod-only pipelines reuse stage deployment artifacts, bypassing the build phase.
+* **Production-Only Deployment Pipelines:** Deploys only to production by selecting a stage execution that was successful. Then deploying its artifacts to production. Prod-only pipelines reuse stage deployment artifacts, bypassing the build phase.
 
 Stage-only and prod-only pipelines are not executed while a full-stack production pipeline is in progress, and vice versa. If both the stage-only and the full-stack production pipeline have the **On Git Changes** trigger configured and are pointing to the same branch and repository, only the stage-only pipeline is automatically started. Prod-only pipelines do not start **`On Git Changes`** because they are not directly linked to a repository.
 

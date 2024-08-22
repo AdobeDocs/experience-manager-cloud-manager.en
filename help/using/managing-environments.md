@@ -1,14 +1,14 @@
 ---
-title: Managing Environments
+title: Manage Environments
 description: Learn how to use Cloud Manager to manage your environments.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 ---
 
-# Managing Environments {#managing-environments}
+# Manage Environments {#managing-environments}
 
 Learn how to use Cloud Manager to manage your environments.
 
-## Overview Page {#overview-page}
+## Overview page {#overview-page}
 
 The **Overview** page of Cloud Manager includes the **Environments** tile that lists all the managed AEM environments.
 
@@ -16,7 +16,7 @@ Each of the listed environments displays its associated status.
 
 ![Overview page](/help/assets/Manage-Environ-Overview.png)
 
-## Environments Tile {#environments-tile}
+## Environments tile {#environments-tile}
 
 The **Environments** tile displays the production and staging environments provisioned in your program along with the status.
 
@@ -29,7 +29,7 @@ The status is the rolled-up power state across the nodes in the environment in t
 
 ![Environments tile](/help/assets/Environments-card-new.png)
 
-## Managing Environments {#managing-environments-with-cloud-manager}
+## Manage environments {#managing-environments-with-cloud-manager}
 
 On the **Environments** tile, click the row of any environment to display the **Environments** screen.
 
@@ -48,14 +48,14 @@ The **Environments** screen displays each production and staging environments in
 
 >[!NOTE]
 >
->Environment details such as name can not be changed once they are provisioned.
+>Environment details such as a name cannot be changed once they are provisioned.
 
 >[!NOTE]
 >
->If you require your environment logs they can be requested via your Customer Success Engineer.
+>If you require your environment logs, they can be requested by way of your Customer Success Engineer.
 
-## Video Tutorial {#video-tutorial}
+## Video tutorial {#video-tutorial}
 
 This video provides an overview to Cloud Manager environments that are composed of AEM authoring, publishing, and Dispatcher instances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/) (3 minutes, 1 second)
