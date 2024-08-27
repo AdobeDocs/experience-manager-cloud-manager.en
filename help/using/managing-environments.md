@@ -52,7 +52,7 @@ The **Environments** screen displays each production and staging environments in
 
 >[!NOTE]
 >
->If you require your environment logs, they can be requested by way of your Customer Success Engineer.
+>Request your environment logs through your Customer Success Engineer.
 
 ## Video tutorial {#video-tutorial}
 

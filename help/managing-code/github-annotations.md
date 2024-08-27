@@ -4,7 +4,7 @@ description: Learn how GitHub checks annotate PRs for your private repositories 
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 ---
 
-# GitHub check nnnotations {#github-annotations}
+# GitHub check annotations {#github-annotations}
 
 Learn how GitHub checks annotate PRs for your private repositories to provide you with helpful feedback.
 
