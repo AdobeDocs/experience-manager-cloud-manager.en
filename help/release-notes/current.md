@@ -2,8 +2,8 @@
 title: Release Notes for Cloud Manager 2024.8.0
 description: Learn about the release notes for Cloud Manager 2024.8.0.
 feature: Release Information
+exl-id: 2bacf0d9-176e-4b6b-8438-9c433ea68894
 ---
-
 # Release notes for Cloud Manager 2024.8.0 {#release-notes}
 
 This page documents the release notes for [!UICONTROL Cloud Manager] 2024.8.0.
