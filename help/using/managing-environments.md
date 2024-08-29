@@ -58,4 +58,6 @@ The **Environments** screen displays each production and staging environments in
 
 This video provides an overview to Cloud Manager environments that are composed of AEM authoring, publishing, and Dispatcher instances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/) (3 minutes, 1 second)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)
+
+*(3 minutes, 1 second)*
