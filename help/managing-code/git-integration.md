@@ -10,7 +10,7 @@ Adobe Cloud Manager comes provisioned with a single Git repository that is used 
 
 ## Git integration overview
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/) (3 minutes, 11 seconds)
+>[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
 This video series explores several use cases regarding integrating a customer-managed Git repository with Cloud Manager.
 
@@ -30,31 +30,31 @@ For a complete overview of Cloud Manager, see [Introduction to Cloud Manager](/h
 
 First steps for synchronizing a customer-managed Git repository with Cloud Manager's Git repository.
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12) (8 minutes)
+>[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
 ## Basic branching strategy {#branching-strategy}
 
 Set up a basic branching strategy to take advantage of Cloud Manager's [production](/help/using/production-pipelines.md) and [non-production pipelines](/help/using/non-production-pipelines.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12) (3 minutes, 48 seconds)
+>[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
 ## Feature branch development {#feature-development}
 
 Use a feature branch to isolate code changes in a customer-managed Git repository and synchronize with Cloud Manager's Git repository to use a non-production pipeline for code quality and validation testing.
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12) (9 minutes)
+>[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
 ## Production deployment {#production-deployment}
 
 Prepare code for a production release in a customer-managed Git repository and synchronize with Cloud Manager's Git repository to deploy to staging and production environments.
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12) (6 minutes, 6 seconds)
+>[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
 ## Synchronize release tags {#sync-tags}
 
 You can synchronize release tags from a Cloud Manager Git repository into a customer-managed Git repository. This ability provides visibility into what code has been deployed to both staging and production environments.
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12) (2 minutes, 57 seconds)
+>[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
 ## Additional resources {#additional-resources}
 
