@@ -1,6 +1,6 @@
 ---
 title: Use the New Project Wizard
-description: Follow this page to learn how to use the wizard to create an AEM Application Project
+description: Follow this page to learn how to use the wizard to create an AEM Application Project.
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 ---
 
