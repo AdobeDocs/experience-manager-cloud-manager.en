@@ -14,29 +14,30 @@ This page documents the release notes for [!UICONTROL Cloud Manager] 2024.9.0.
 
 ## Release date {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] 2024.9.0 is September 12, 2024. The next release is planned for October 4, 2024.
+No notable bugs or features for the September release of Cloud Manager.
+
+The next release is planned for October 3, 2024.
+
 
 ## What's new {#what-is-new}
 
-
-<!-- DO ANY EARLY ADOPTER FEATURES THAT ARE NOT GA YET, GET LEFT IN HERE?
-* For stage-only and production-only pipelines (available as part of the [early adopter program](#staging-production-only-pipelines)), you can now execute them in [emergency mode](/help/using/stage-prod-only.md#emergency-mode), skipping stage testing. -->
+* For stage-only and production-only pipelines (available as part of the [early adopter program](#staging-production-only-pipelines)), you can now execute them in [emergency mode](/help/using/stage-prod-only.md#emergency-mode), skipping stage testing.
 
 ## Early adoption program {#early-adoption}
 
 Be a part of Cloud Manager's early adoption program and have a chance to test some upcoming features.
 
-<!-- DO ANY EARLY ADOPTER FEATURES THAT ARE NOT GA YET, GET LEFT IN HERE?
+
 ### Staging-only and production-only pipelines {#staging-production-only-pipelines}
 
 Adobe is excited to announce the introduction of support for [staging-only and production-only pipelines](/help/using/stage-prod-only.md). This new feature lets you divide full-stack production deployment pipelines into smaller, more specialized deployments.
 
-If you would like to test this feature and provide feedback, email `Grp-cloudmanager_splitpipelines@adobe.com` using the email address associated with your Adobe ID. -->
+If you would like to test this feature and provide feedback, email `Grp-cloudmanager_splitpipelines@adobe.com` using the email address associated with your Adobe ID.
 
-## Bug fixes
+<!-- ## Bug fixes
 
 * text
 
 ## Known Issues {#known-issues}
 
-{{content-copy-known-issues}} <!-- LEAVE IN???>
+{{content-copy-known-issues}} LEAVE IN??? -->

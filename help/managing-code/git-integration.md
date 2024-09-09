@@ -50,7 +50,7 @@ Prepare code for a production release in a customer-managed Git repository and s
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12) (6 minutes, 6 seconds)
 
-## Synchronizing release tags {#sync-tags}
+## Synchronize release tags {#sync-tags}
 
 You can synchronize release tags from a Cloud Manager Git repository into a customer-managed Git repository. This ability provides visibility into what code has been deployed to both staging and production environments.
 
