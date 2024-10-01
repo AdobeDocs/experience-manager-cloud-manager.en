@@ -2,8 +2,7 @@
 title: Manage Repositories in Cloud Manager
 description: Learn how to view, add, and delete your Git repositories in Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+
 ---
 
 # Manage repositories in Cloud Manager {#cloud-manager-repos} 
