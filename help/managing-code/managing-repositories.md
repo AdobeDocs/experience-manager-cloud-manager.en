@@ -1,103 +1,100 @@
 ---
-title: Managing Repositories in Cloud Manager
-description: Learn how to create, view, and edit your Git repositories in Cloud Manager.
+title: Manage Repositories in Cloud Manager
+description: Learn how to view, add, and delete your Git repositories in Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
+
 ---
 
-# Cloud Manager repositories {#cloud-manager-repos} 
+# Manage repositories in Cloud Manager {#cloud-manager-repos} 
 
-Learn how to create, view, and edit your Git repositories in Cloud Manager.
+Learn how to view, add, and delete a Git repository in Cloud Manager.
 
 ## Overview {#overview}
 
-Repositories are used to store and manage your project's code using Git. Every program you create in Cloud Manager has an Adobe-managed repository created for it.
+Repositories in Cloud Manager are used to store and manage your project's code using Git. For every *program* you add, an Adobe-managed repository is automatically created. 
 
-You can choose to create additional Adobe-managed repositories and also add your own private repositories. All repositories associated with your program can be viewed in the **Repositories** window.
+In addition, you have the option to create more Adobe-managed repositories or add your own private repositories. All repositories linked to your program can be viewed on the **Repositories** page.
 
-Repositories created in Cloud Manager are also available for you to select when adding or editing pipelines. See [CI-CD Pipelines](/help/overview/ci-cd-pipelines.md) to learn more.
+Repositories created within Cloud Manager can also be selected when adding or editing pipelines. For more information on configuring pipelines, see [CI-CD Pipelines](/help/overview/ci-cd-pipelines.md).
 
-There is a single primary repository or a branch for any given pipeline. With [Git submodule support](git-submodules.md), many secondary branches can be included at build time.
+Each pipeline is linked to a primary repository or branch. However, with [Git submodule support](/help/managing-code/git-submodules.md), multiple secondary branches can be included during the build process.
 
-## Repositories window {#repositories-window}
+## View the Repositories page {#repositories-window}
+
+On the **Repositories** page, you can view details about the selected repository. This information includes the type of repository in use. If the repository is marked as **Adobe**, it indicates that it is an Adobe-managed repository. If it is labeled as **GitHub**, it refers to a private GitHub repository that you manage. Additionally, the page provides details such as when the repository was created and the pipelines associated with it.
+
+To take action on a selected repository, you can click on the repository and use ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open a drop-down menu. For Adobe-managed repositories, you can **[Check Branches / Create Project](#check-branches)**. 
+
+![Repository actions](assets/repository-actions.png)
+*Drop-down menu on the Repositories page.*
+
+Other available actions on the drop-down menu include **[Copy Repository URL](#copy-url)**, **[View & Update](#view-update)**, and **[Delete](#delete)** the repository.
+
+**To view the Repositories page:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, select the **Repositories** tab to switch to the **Repositories** page.
+1. From the **Program Overview** page, on the side menu, click ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg ) **Repositories**.
 
-1. The **Repositories** window displays all repositories associated with your program.
+1. The **Repositories** page displays all repositories associated with your selected program.
 
-   ![Repositories window](assets/repositories.png)
+   ![Repositories page](assets/repositories.png)
+   *The Repositories page in Cloud Manager.*
 
-The **Repositories** window provides details about the repositories:
 
-* The type of repository.
-  * **Adobe** indicates Adobe-managed repositories
-  * **GitHub** indicates private GitHub repositories that you manage
-* When it was created
-* Pipelines that are associated with the repository
+## Add a repository {#adding-repositories}
 
-You can select the repository in the window and click the ellipsis button to take action on the selected repository.
+A user must have the role **Deployment Manager** or **Business Owner** to add a repository.
 
-* **[Check Branches / Create Project](#check-branches)** (only available for Adobe repositories)
-* **[Copy Repository URL](#copy-url)**
-* **[View &amp; Update](#view-update)**
-* **[Delete](#delete)**
+On the **Repositories** page, near the upper-right corner, click **Add Repository**
 
-![Repository actions](assets/repository-actions.png)
+![Add repository dialog box.](assets/repository-add.png)
+*Add Repository dialog box.*
 
-## Add repositories {#adding-repositories}
+Cloud Manager supports two types of repositories: Adobe-managed repositories (**Adobe Repository**) and self-managed repositories (**Private Repository**). The required fields for setup vary depending on the type of repository you choose to add. For more information, see the following:
 
-Click the **Add Repository** button in the **Repositories** window to start the **Add Repository** wizard.
+* [Add Adobe repositories in Cloud Manager](/help/managing-code/adobe-repositories.md)
+* [Add private repositories in Cloud Manager](/help/managing-code/private-repositories.md)
 
-![Add repository wizard](assets/add-repository-wizard.png)
+There is a limit of 300 repositories across all programs in any given company or IMS organization.
 
-Cloud Manager supports both repositories managed by Adobe (**Adobe Repository**) and your own self-managed repositories (**Private Repository**). The required fields differ depending on the type of repository that you choose to add.
-
-See [Adding Adobe Repositories in Cloud Manager](adobe-repositories.md).
-See [Adding Private Repositories in Cloud Manager](private-repositories.md).
-
->[!NOTE]
->
->A user must have the role **Deployment Manager** or **Business Owner** to be able to add a repository.
->
->There is a limit of 300 repositories across all programs in any given company or IMS organization.
-
-## Access repo info {#repo-info}
+## Access repository information {#repo-info}
 
 When viewing your repositories in the **Repositories** window, you can view the details on how to access the Adobe-managed repositories programmatically by clicking the **Access Repo Info** button on the toolbar.
 
-![Repository information](assets/access-repo-info.png)
+![Repository information](assets/repository-access-repo-info2.png)
 
-The **Repository Info** window opens with the details. For more information on accessing repository information, see [Accessing Repository Information](accessing-repositories.md).
+The **Repository Info** window opens with the details. For more information on accessing repository information, see [Accessing Repository Information](/help/managing-code/accessing-repositories.md).
 
-## Check branches {#check-branches}
+## Check branches / Create Project {#check-branches}
 
-The **Check Branches / Create Project** action performs two functions depending on the state of the repository.
+In **AEM Cloud Manager**, the **Check Branches / Create Project** action serves two purposes, depending on the current state of the repository.
 
-If the repository is newly created, the action creates a sample project based on [the AEM project archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
+* If the repository is newly created, this action generates a sample project using [the AEM project archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
+* If the sample project is already created in the repository, the action checks the status of the repository and its branches, providing feedback on whether the sample project already exists.
 
-If the repository already has had the sample project created, it checks the state of the repository and its branches and reports back if the sample project already exists.
-
-![Check branches action](assets/check-branches.png)
+   ![Check branches action](assets/check-branches.png)
 
 ## Copy repository URL {#copy-url}
 
-The **Copy Repository URL** action copies the URL of the repository selected in the **Repositories** window to the clipboard to be used elsewhere.
+The **Copy Repository URL** action copies the URL of the repository selected in the **Repositories** page to the clipboard to be used elsewhere.
 
-## View and Update {#view-update}
+## View &amp; Update a repository {#view-update}
 
-The **View &amp; Update** action opens the **Update Repository** dialog. Using it you can view the **Name** and **Repository URL preview** and update the **Description** of the repository.
+The **View & Update** action opens the **Update Repository** dialog box, where you can view the repository's **Name** and **Repository URL preview**. Additionally, it lets you update the **Description** of the repository.
 
-![View and update repository information](assets/update-repository.png)
+![View and update repository information](assets/repository-view-update.png)
 
-## Delete {#delete}
+## Delete a repository {#delete}
 
 The **Delete** action removes the repository from your project. A repository cannot be deleted if it is associated with a pipeline.
 
-![Delete](assets/delete.png)
+![Deleting a repository](assets/delete.png)
 
 When a repository is deleted in Cloud Manager, it is marked as deleted; it is no longer accessible to the user. However, it is maintained in the system for recovery purposes.
 
-If you try to create a new repository after deleting a repository with the same name, you receive the error message `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
+If you try to create a new repository after deleting a repository with the same name, you receive the following error message:
 
-If you receive this error message, contact Adobe Support so they can assist in renaming the deleted repository or choose a different name for your new repository.
+`An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
+
+If you receive this error message, contact Adobe Support. They can assist you in renaming the deleted repository or choosing a different name for the new repository.
