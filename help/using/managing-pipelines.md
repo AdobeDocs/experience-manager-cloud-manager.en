@@ -1,12 +1,12 @@
 ---
 title: Manage Pipelines
-description: Learn how to manage your existing pipelines including editing, running, and deleting them.
+description: Learn how to manage your existing pipelines including running, editing, and deleting them.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 ---
 
 # Manage pipelines {#managing-pipelines}
 
-Learn how to manage your existing pipelines including editing, running, and deleting them.
+Learn how to manage your existing pipelines including running, editing, and deleting them.
 
 ## Pipeline card {#pipeline-card}
 
@@ -28,13 +28,13 @@ At the bottom of the list of pipelines, you have the following general options.
 * **Access Repo Info** - Displays the information necessary to access the Cloud Manager Git repository.
 * **Learn More** - Navigates to CI/CD pipeline documentation resources.
 
-## Pipelines window {#pipelines}
+## Pipelines page {#pipelines}
 
-The **Pipelines** window shows a complete list of all pipelines for the selected program. This list is useful because it presents more comprehensive information than what is available in the [Pipelines card](#pipeline-card).
+The **Pipelines** page shows a complete list of all pipelines for the selected program. This list is useful because it presents more comprehensive information than what is available in the [Pipelines card](#pipeline-card).
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, click the **Pipelines** tab to switch to the **Pipelines** window.
+1. From the **Program Overview** page, click the **Pipelines** tab to switch to the **Pipelines** page.
 
 1. Here you can see a list of all pipelines for the program and start and stop pipeline execution as you would in the **Pipelines Card**.
 
@@ -44,13 +44,13 @@ Clicking the `i` icon reveals details about the last or current execution of the
 
 Clicking **View details** takes you to the [details of the pipeline execution](#view-details).
 
-## Activity window {#activity}
+## Activity page {#activity}
 
-The **Activities** window shows a complete list of all pipelines executions for the selected program.
+The **Activities** page shows a complete list of all pipelines executions for the selected program.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Program Overview** page, click the **Activity** tab to switch to the **Activity** window.
+1. From the **Program Overview** page, click the **Activity** tab to switch to the **Activity** page.
 
 1. Here you can see a list of all pipeline executions for the program including current and historical executions.
 
