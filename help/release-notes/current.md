@@ -16,7 +16,7 @@ This page documents the release notes for [!UICONTROL Cloud Manager] 2024.10.0.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-The next release is planned for November 14, 2024.
+The release date for [!UICONTROL Cloud Manager] 2024.10.0 is October 3, 2024. The next release is planned for November 14, 2024.
 
 
 ## What's new {#what-is-new}
@@ -29,7 +29,7 @@ Be a part of Cloud Manager's early adoption program and have a chance to test up
 
 ### Bring Your Own Git - now with extensions for Bitbucket, GitLab, and GitHub Enterprise Server
 
-After enabling you to directly use your GitHub-hosted repositories in Cloud Manager, you can now also onboard your Bitbucket, GitLab, or self-hosted GitHub repositories and [link them to your pipelines](/help/managing-code/private-repositories.md#pipelines). This integration eliminates the need to sync code consistently with the Adobe repository. For now, the pull requests code quality checks that come out-of-the box for GitHub-hosted repositories are not yet available for other Git vendors, but an update to cover that functionality is planned.
+Following the introduction of direct support for GitHub-hosted repositories in Cloud Manager, you can now also onboard repositories from Bitbucket, GitLab, or self-hosted GitHub and [link them to your pipelines](/help/managing-code/private-repositories.md#pipelines). This integration removes the need for constant code synchronization with the Adobe repository. Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG.com) from your email address associated with your Adobe ID.
 
