@@ -17,7 +17,7 @@ In addition, you have the option to create more Adobe-managed repositories or ad
 
 Repositories created within Cloud Manager can also be selected when adding or editing pipelines. For more information on configuring pipelines, see [CI-CD Pipelines](/help/overview/ci-cd-pipelines.md).
 
-Each pipeline is linked to a primary repository or branch. However, with [Git submodule support](help/managing-code/git-submodules.md), multiple secondary branches can be included during the build process.
+Each pipeline is linked to a primary repository or branch. However, with [Git submodule support](/help/managing-code/git-submodules.md), multiple secondary branches can be included during the build process.
 
 ## View the Repositories page {#repositories-window}
 
