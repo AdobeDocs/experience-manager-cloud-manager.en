@@ -31,7 +31,7 @@ Be a part of Cloud Manager's early adoption program and have a chance to test up
 
 Following the introduction of direct support for GitHub-hosted repositories in Cloud Manager, you can now also onboard repositories from Bitbucket, GitLab, or self-hosted GitHub and [link them to your pipelines](/help/managing-code/private-repositories.md#pipelines). This integration removes the need for constant code synchronization with the Adobe repository. Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG.com) from your email address associated with your Adobe ID.
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID.
 
 ### Staging-only and production-only pipelines {#staging-production-only-pipelines}
 
