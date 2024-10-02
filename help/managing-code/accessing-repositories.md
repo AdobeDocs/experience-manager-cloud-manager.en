@@ -13,10 +13,10 @@ Cloud Manager makes it easy to retrieve your repository access information for A
 
 The **Repository Info** dialog box lets you see the following access information for Adobe-managed repositories:
 
-   * The Git username.
-   * The Git password.
-   * The URL to the Cloud Manager Git repository.
-   * Prebuilt Git commands to add a remote to your Git repo quickly and push code.
+* The Git username.
+* The Git password.
+* The URL to the Cloud Manager Git repository.
+* Prebuilt Git commands to add a remote to your Git repo quickly and push code.
 
    ![Repository Info window](assets/repository-info.png)
 
