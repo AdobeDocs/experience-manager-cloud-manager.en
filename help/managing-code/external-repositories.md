@@ -10,7 +10,7 @@ Learn how to add an external repository into Cloud Manager. Cloud Manager suppor
 
 >[!NOTE]
 >
->This feature is only available to [the early adopter program](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
+>This feature is only available to [the early adopter program](/help/release-notes/current.md#early-adoption).
 
 ## Configure an external repository
 
@@ -25,7 +25,8 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program to which you want to link an external repository.
+1. On the **[My Programs](/help/getting-started/navigation.md#my-programs-console) console, select the program to which you want to link an external repository.
+
 
 1. In the side menu, under **Services**, select ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Repositories**.
 
@@ -87,14 +88,10 @@ After validation, the external repository is ready to use and link to a pipeline
 
 >[!TIP]
 >
->For details about managing repositories in Cloud Manager, see [Cloud Manager Repositories](/hhelp/managing-code/managing-repositories.md).
+>For details about managing repositories in Cloud Manager, see [Cloud Manager Repositories](/help/managing-code/managing-repositories.md).
 
 
 ## Limitations
 
 * External repositories cannot be linked to Configuration pipelines.
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started.
-
-
-
-
