@@ -1,10 +1,10 @@
 ---
-title: Configure Production Pipelines
+title: Add a Production Pipeline
 description: Learn how to use Cloud Manager to create and configure production pipelines to deploy your code.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 ---
 
-# Configure production pipelines {#configuring-production-pipelines}
+# Add a production pipeline {#configuring-production-pipelines}
 
 Learn how to use Cloud Manager to create and configure production pipelines to deploy your code. If you would first like a more conceptual overview of how pipelines work in Cloud Manager, see [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md).
 
