@@ -39,24 +39,25 @@ Each of the roles has specific, associated preconfigured permissions. The follow
 | --- | --- | --- | --- | --- | --- | --- |
 | Read the Application | Read program KPIs | x | x | x | x | x |
 | Write Application | Program set up or edit | x | | | | |
-| Add Program | Add new program | x | | | | |
+| Add Program | Add new program | x |  |  |  |  |
 | Read Environment | See environment details | x | x | x | x | x |
 | Create Execution | Start pipeline | x | x | x | | |
 | Read Execution | See execution status | x | x | x | x | x |
 | Resume Execution | Ability to resume execution when paused | x | x | x | | x |
 | Execution Approve Deploy to Production | Provide go-live approval | x | x | x | | |
 | Execution Schedule Deploy to Production | Schedule production deployment | x | x | x | | x |
-| Execution Deploy to Production | Deploy application to production when paused for CSE oversight | | | | | x |
-| Execution Cancel | Cancel current execution | | | x | | |
-| Execution Override Quality Gate Failures | Approve important quality gate failures | x | x | x | | |
-| Pipeline Create | Set up / edit pipeline | | x | | | |
+| Execution Deploy to Production | Deploy application to production when paused for CSE oversight |  |  |  |  | x |
+| Execution Cancel | Cancel current execution |  |  | x |  |  |
+| Execution Override Quality Gate Failures | Approve important quality gate failures | x | x | x |  |  |
+| Pipeline Create | Set up / edit pipeline |  | x |  |  |  |
 | Pipeline Read | See pipeline details | x | x | x | x | x |
-| Pipeline Write | Set up / edit pipeline | | x | | | |
-| Pipeline Modify Approval | Allows editing the Business Owner option | | x | | | |
-| Pipeline Modify Managed Deployment | Allows editing of the CSE oversight option | | x | | | |
-| Pipeline Delete | Allows pipeline deletion | | x | | | |
+| Pipeline Write | Set up / edit pipeline |  | x |  |  |  |
+| Pipeline Modify Approval | Allows editing the Business Owner option |  | x |  |  |  |
+| Pipeline Modify Managed Deployment | Allows editing of the CSE oversight option |  | x |  |  |  |
+| Pipeline Delete | Allows pipeline deletion |  | x |  |  |  |
 | Step Read | See the step quality metrics results | x | x | x | x | x |
-| Generate Personal Access Token | Access Git | | x | | x | |
+| Generate Personal Access Token | Access Git |  | x |  | x |  |
+
 <!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 
 To learn more about how to set up your users, see [Setting Up Users and Roles](/help/requirements/users-and-roles.md).
