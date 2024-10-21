@@ -37,7 +37,7 @@ Each of the roles has specific, associated preconfigured permissions. The follow
 
 |Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|CSE|
 | --- | --- | --- | --- | --- | --- | --- |
-|Read the Application | Read program KPIs | x | x | x | x | x |
+| Read the Application | Read program KPIs | x | x | x | x | x |
 | Write Application | Program set up or edit | x | | | | |
 | Add Program | Add new program | x | | | | |
 | Read Environment | See environment details | x | x | x | x | x |
@@ -57,6 +57,7 @@ Each of the roles has specific, associated preconfigured permissions. The follow
 | Pipeline Delete | Allows pipeline deletion | | x | | | |
 | Step Read | See the step quality metrics results | x | x | x | x | x |
 | Generate Personal Access Token | Access Git | | x | | x | |
+<!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 
 To learn more about how to set up your users, see [Setting Up Users and Roles](/help/requirements/users-and-roles.md).
 
