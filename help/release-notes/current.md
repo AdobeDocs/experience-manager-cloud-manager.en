@@ -10,7 +10,7 @@ Learn about the release of [!UICONTROL Cloud Manager] 2024.11.0.
 
 >[!NOTE]
 >
->See the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>See the [current release notes for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 
 ## Release dates {#release-date}
