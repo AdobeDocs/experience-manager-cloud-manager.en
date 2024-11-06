@@ -12,22 +12,17 @@ Learn about the release of [!UICONTROL Cloud Manager] 2024.11.0.
 >
 >See the [current release notes for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
-
 ## Release dates {#release-date}
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-Release date for [!UICONTROL Cloud Manager] 2024.10.0 is November 7, 2024. 
+Release date for [!UICONTROL Cloud Manager] 2024.11.0 is November 7, 2024. 
 
 The next planned release is December 5, 2024.
 
-
-
 ## What's new {#what-is-new}
 
-* (AMS): If pages are redirected to another domain during performance testing, test results for that page are ignored as it does not reflect reality. <!-- (CMGR-5637) -->
-
-
+* When pages redirect to another domain during performance testing, the test results for those pages are excluded, as they do not accurately represent the actual performance. <!-- (CMGR-5637) -->
 
 ## Early adoption program {#early-adoption}
 
@@ -57,9 +52,8 @@ If you would like to test this feature and provide feedback, email [Grp-cloudman
 
 ## Bug fixes
 
-* (AMS): A small number of copy content activities was running indefinitely and appeared to be in a stuck state, likely caused due to a misconfigured Ingress IP. <!-- (CMGR-62739) -->
-* (AMS & CS): A recent update addressed an issue in SonarQube where hardcoded passwords were not detected in certain cases. The fix now includes an expanded pattern check, and aligns with default detection standards in SonarQube. <!-- CMGR-62682 -->
-
+* A bug in AEM Cloud Manager that caused a "403" error during status updates for content copy operations is now resolved. This issue, attributed to a misconfigured ingress IP address, prevented status propagation and led to some content copy activities appearing stuck and running indefinitely, requiring manual cancellation. The fix now ensures proper status reporting and smoother execution of content copy tasks. <!-- (CMGR-62739) -->
+* A recent update addressed an issue in SonarQube where hardcoded passwords were not detected in certain cases. The fix now includes an expanded pattern check, and aligns with default detection standards in SonarQube. <!-- CMGR-62682 -->
 
 <!-- Known Issues {#known-issues}
 
