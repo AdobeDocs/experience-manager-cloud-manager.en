@@ -2,7 +2,7 @@
 title: Release Notes for Cloud Manager 2024.11.0
 description: Learn about the release of Cloud Manager 2024.11.0.
 feature: Release Information
-
+exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
 ---
 # Release notes for Cloud Manager 2024.11.0 {#release-notes}
 
