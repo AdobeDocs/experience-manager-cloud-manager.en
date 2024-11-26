@@ -866,6 +866,15 @@ AEM Cloud Service prohibits the creation of tokenizers with incorrect names in a
 
 AEM Cloud Service prohibits the creation of indexing definitions that contain properties with spaces.
 
+### Configuration of indexing definitions should not contain haystack0 property {#oakpal-indexing-haystack0-property}
+
+* **Key**: HayStackPropertyCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2024.12.0
+
+AEM Cloud Service prohibits the creation of indexing definitions that contain haystack properties.
+
 ## Dispatcher optimization tool {#dispatcher-optimization-tool-rules}
 
 The following section lists the Dispatcher Optimization Tool (DOT) checks executed by Cloud Manager. Follow the links for each check for its GitHub definition and details.
