@@ -22,9 +22,9 @@ The release date for [!UICONTROL Cloud Manager] 2024.12.0 is December 5, 2024.
 
 The next planned release is January 23, 2025.
 
-## What's new {#what-is-new}
+<!-- ## What's new {#what-is-new} -->
 
-* The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. <!-- CMGR-45683 -->
+<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
 
 ## Early adoption program {#early-adoption}
 
