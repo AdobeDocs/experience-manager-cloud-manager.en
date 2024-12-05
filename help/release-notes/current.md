@@ -20,7 +20,7 @@ Learn about the release of [!UICONTROL Cloud Manager] 2024.12.0 on Adobe Managed
 
 The release date for [!UICONTROL Cloud Manager] 2024.12.0 is December 5, 2024. 
 
-The next planned release is January 2024.
+The next planned release is January 23, 2025.
 
 ## What's new {#what-is-new}
 
