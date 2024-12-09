@@ -1,16 +1,16 @@
 ---
 title: Content Copy for Environment Consistency
-description: The Cloud Manager content copy tool lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.
+description: Content Copy in Cloud Manager lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 ---
 
-# Content copy for environment consistency {#content-copy}
+# Content Copy for environment consistency {#content-copy}
 
-The Cloud Manager content copy tool lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.
+Content Copy in Cloud Manager lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.
 
 ## About Content Copy {#introduction}
 
-Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool lets you copy content from your production AMS-hosted AEM 6.x environment to staging or development environments. This workflow supports various testing scenarios.
+Current, real data is valuable for testing, validation, and user-acceptance purposes. Content Copy lets you copy content from your production AMS-hosted AEM 6.x environment to staging or development environments. This workflow supports various testing scenarios.
 
 A content set defines the content to copy. A content set includes a list of JCR paths with the mutable content to be copied. The content moves from a source environment to a target environment. All done within the same Cloud Manager program. 
 
@@ -31,7 +31,7 @@ When copying content, the source environment is the source of truth.
 
 ## Permissions {#permissions}
 
-To use the content copy tool, the user must be assigned to the **Deployment Manager** role in the source and target environments.
+To use the Content Copy feature, the user must be assigned to the **Deployment Manager** role in the source and target environments.
 
 ## Create a content set {#create-content-set}
 
@@ -49,7 +49,7 @@ Before any content can be copied, a content set must be defined. Once defined, c
 
    ![Content Sets](/help/assets/content-sets.png)
 
-1. In the **Add Content Set** dialog box, on the **Details** tab, in the **Name** and **Description** fields, type a name and optional description for the content set, then click **Continue**.
+1. In the **`Add Content Set`** dialog box, on the **Details** tab, in the **Name** and **Description** fields, type a name and optional description for the content set, then click **Continue**.
 
    ![Content set details](/help/assets/add-content-set-details.png)
 
@@ -161,7 +161,7 @@ You can monitor the status of your copy processes in the **Copy Content Activity
 
 ## Limitations {#limitations}
 
-The content copy tool has the following limitations:
+Content Copy has the following limitations:
 
 * A content copy cannot be performed from a lower environment to a higher environment.
 * Content copy can only be performed within the same tier. That is, author-author or publish-publish.
@@ -170,9 +170,9 @@ The content copy tool has the following limitations:
 * Running concurrent content copy operations in the same environment is not possible.
 * Content copy cannot be performed if there is any active operation running on either the destination or source environment such as a CI/CD pipeline.
 * Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
-* The content copy tool should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
+* Content Copy should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
 * A content copy cannot be paused or canceled once it is initiated.
-* The content copy tool copies assets and Dynamic Media metadata from the higher environment to the selected lower environment. Copied assets then need to be reprocessed using the [DAM process assets workflow](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) on the lower environment to use the respective Dynamic Media configuration.
+* Content Copy copies assets and Dynamic Media metadata from the higher environment to the selected lower environment. Copied assets then need to be reprocessed using the [DAM process assets workflow](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) on the lower environment to use the respective Dynamic Media configuration.
 * The content copy process is substantially faster when version history is not copied.
 * [Dynamic Media configurations with assets sizes greater than 2 GB enabled](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) are not supported.
 * When version history is not copied, the content copy process is substantially faster.
