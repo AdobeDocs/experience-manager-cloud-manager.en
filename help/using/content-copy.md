@@ -79,9 +79,7 @@ Before any content can be copied, a content set must be defined. Once defined, c
 
    ![Editing path list](/help/assets/add-content-set-excluded-paths.png)
 
-1. Click **Create**.
-
-You can now use the content set to copy content between environments.
+1. Click **Create**. You can now use the content set to copy content between environments.
 
 ## Edit or delete a content set {#edit-content-set}
 
@@ -126,21 +124,23 @@ An environment may be unavailable for selection if any of the following conditio
    * Regions in a destination environment must be a subset of regions in a source environment.
    * Compatibility issues are checked before running a content copy action. When you select the **Destination** environment, the system automatically validates the source and destination environments. If validation fails, the process stops, and an error message is displayed in the dialog box that explains the reason for the failure.
 
+      ![Copying content](/help/assets/copying-content.png)
+
 1. (Optional) Do any one of the following:
 
-   1. To *retain* the excluded paths in the destination Environment, check **`Do not delete exclude paths from destination`**. This setting keeps the excluded paths specified in the content set intact.
-   1. To *remove* the excluded paths in the destination Environment, uncheck **`Do not delete exclude paths from destination`**. This setting deletes the excluded paths specified in the content set.
-   1. To copy the version history of paths from the source environment to the destination environment, check **Copy Versions**.
+   1. To *retain* the excluded paths in the destination environment, check **`Do not delete exclude paths from destination`**. This setting keeps the excluded paths specified in the content set intact.
+   1. To *remove* the excluded paths in the destination environment, uncheck **`Do not delete exclude paths from destination`**. This setting deletes the excluded paths specified in the content set.
+   1. To copy the version history of paths from the source environment to the destination environment, check **Copy Versions**. The content copy process is substantially faster when version history is *not* copied.
 
-         ![Copying content](/help/assets/copying-content.png)
+
 
 1. Click **Copy**. The status of the copy process is reflected in the console for the selected content set.
 
-## Monitor the status of content copy activity {#copy-activity}
+## Monitor Content Copy status {#copy-activity}
 
 You can monitor the status of your copy processes in the **Copy Content Activity** page.
 
-**To monitor the status of content copy activity:**
+**To monitor Content Copy status:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -150,7 +150,7 @@ You can monitor the status of your copy processes in the **Copy Content Activity
 
    ![Content Copy Activity](/help/assets/copy-content-activity.png)
 
-      A copy content process can have one of the following statuses:
+      A Content Copy process can have one of the following statuses:
 
    | Status | Description |
    | --- | --- |
@@ -159,9 +159,7 @@ You can monitor the status of your copy processes in the **Copy Content Activity
    | Failed | Content copy operation failed. |
 
 
-## Limitations {#limitations}
-
-Content Copy has the following limitations:
+## Limitations of Content Copy {#limitations}
 
 * A content copy cannot be performed from a lower environment to a higher environment.
 * Content copy can only be performed within the same tier. That is, author-author or publish-publish.
@@ -169,13 +167,10 @@ Content Copy has the following limitations:
 * Content copy for cloud data store based topology can only be performed when the source and destination environment are on the same cloud provider and in the same region.
 * Running concurrent content copy operations in the same environment is not possible.
 * Content copy cannot be performed if there is any active operation running on either the destination or source environment such as a CI/CD pipeline.
-* Up to fifty paths can be specified per content set. There is no limitation on excluded paths.
-* Content Copy should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
+* Content copy should not be used as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
 * A content copy cannot be paused or canceled once it is initiated.
-* Content Copy copies assets and Dynamic Media metadata from the higher environment to the selected lower environment. Copied assets then need to be reprocessed using the [DAM process assets workflow](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) on the lower environment to use the respective Dynamic Media configuration.
-* The content copy process is substantially faster when version history is not copied.
+* Content copy duplicates assets and Dynamic Media metadata from the higher environment to the selected lower environment. Copied assets then need to be reprocessed using the [DAM process assets workflow](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) on the lower environment to use the respective Dynamic Media configuration.
 * [Dynamic Media configurations with assets sizes greater than 2 GB enabled](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) are not supported.
-* When version history is not copied, the content copy process is substantially faster.
 * The regions of the target environment must be the same as or a subset of the source environment's regions.
 
 ## Known issues {#known-issues}
