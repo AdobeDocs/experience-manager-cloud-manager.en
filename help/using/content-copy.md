@@ -1,14 +1,14 @@
 ---
-title: The Content Copy Tool
+title: Content Copy for Environment Consistency
 description: The Cloud Manager content copy tool lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 ---
 
-# The content copy tool {#content-copy}
+# Content copy for environment consistency {#content-copy}
 
 The Cloud Manager content copy tool lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.
 
-## About Content Copy tool{#introduction}
+## About Content Copy {#introduction}
 
 Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool lets you copy content from your production AMS-hosted AEM 6.x environment to staging or development environments. This workflow supports various testing scenarios.
 
