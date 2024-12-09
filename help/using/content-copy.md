@@ -1,14 +1,14 @@
 ---
 title: The Content Copy Tool
-description: The Cloud Manager content copy tool lets users copy mutable content on-demand from AMS-hosted AEM 6.x production environments to lower environments for testing.
+description: The Cloud Manager content copy tool lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 ---
 
 # The content copy tool {#content-copy}
 
-The Cloud Manager content copy tool lets users copy mutable content on-demand from AMS-hosted AEM 6.x production environments to lower environments for testing.
+The Cloud Manager content copy tool lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.
 
-## Introduction {#introduction}
+## About Content Copy tool{#introduction}
 
 Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool lets you copy content from your production AMS-hosted AEM 6.x environment to staging or development environments. This workflow supports various testing scenarios.
 
@@ -33,124 +33,135 @@ When copying content, the source environment is the source of truth.
 
 To use the content copy tool, the user must be assigned to the **Deployment Manager** role in the source and target environments.
 
-## Creating a content set {#create-content-set}
+## Create a content set {#create-content-set}
 
 Before any content can be copied, a content set must be defined. Once defined, content sets can be reused to copy content. Follow these steps to create a content set.
 
+**To create a content set:**
+
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Overview** page, navigate to the **Environments** screen.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to open the left side menu.
 
-1. From the **Environments** screen, navigate to the **Content Sets** page.
+1. From the left side menu, under **Services** page, click ![Box icon ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Content Sets**.
 
-1. Near the top-right of the screen, click **Add Content Set**.
+1. Near the upper-right corner of the page, click **Add Content Set**.
 
    ![Content Sets](/help/assets/content-sets.png)
 
-1. On the **Details** tab of the wizard, provide a name and description for the content set and click **Continue**.
+1. In the **Add Content Set** dialog box, on the **Details** tab, in the **Name** and **Description** fields, type a name and optional description for the content set, then click **Continue**.
 
    ![Content set details](/help/assets/add-content-set-details.png)
 
-1. On the **Content Paths** tab of the wizard, specify the paths of the mutable content to be included in the content set.
+1. On the **Content Paths** tab, in the **Path** text field, specify a path to the content that can be changed and should be included in the content set. 
 
-   1. Enter the path in the **Add Include Path** field.
-   1. Click **Add Path** to add the path to the content set.
-   1. Click **Add Path** again as necessary.
+   Only paths that start with `/content`, `/conf`, `/etc`, `/var/workflow/models`, or `/var/commerce` are eligible for inclusion.
+
+1. Click **![Folder add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) Add Path** to add (or include) the path to the content set.
+
+1. (Optional) If necessary, add addition paths (up to 50) as necessary by repeating the previous two steps. Otherwise, continue to the next step.
 
    ![Add paths to content set](/help/assets/add-content-set-paths.png)
 
-1. If you need to refine or restrict your content set, sub-paths can be excluded.
+1. (Optional) To narrow down your content set, you can optionally specify sub-paths within an included content path that should be excluded.
 
-   1. In the list of included paths, click the **Add exclude sub-paths** icon next to the path you need to restrict.
-   1. Enter the sub-path to exclude from the selected path.
-   1. Click **Exclude Path**.
-   1. Again, click **Add exclude sub-paths** to add additional paths to exclude as necessary.
+   1. To the right of an included content path that you want to restrict, click ![Folder delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg).
+   1. In the text field, type a relative path to the root path seen in the dialog box.
+   1. Click  ![Folder delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) **Exclude Path**.
+   1. If necessary, repeat steps i. to iii. above to add more exclude paths; there is no limitation. Otherwise, continue to the next step.
 
    ![Excluding paths](/help/assets/add-content-set-paths-excluded.png)
 
-1. You can modify the specified paths if required.
+1. (Optional) Do any of the following:
 
-   1. Click the `X` next to the excluded sub-paths to delete them.
-   1. Click the ellipsis button next to the paths to reveal the **Edit** and **Delete** options.
+   1. Click ![Cross size 500 icon](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) to the right of an excluded sub-path to delete it.
+   1. Click ![More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg) to the right of an included content path, then click **Edit** or **Delete**.
 
    ![Editing path list](/help/assets/add-content-set-excluded-paths.png)
 
-1. Click **Create** to create the content set.
+1. Click **Create**.
 
-The content set can now be used to copy content between environments.
+You can now use the content set to copy content between environments.
 
-   >[!NOTE]
-   >
-   >You can add up to 50 paths in a content set.
-   >There is no limitation on excluded paths.
+## Edit or delete a content set {#edit-content-set}
 
-## Editing a content set {#edit-content-set}
+When you edit a content set, you may need to expand the configured paths to reveal the excluded sub-paths.
 
-Follow similar steps as when creating a content step. Instead of clicking **Add Content Set**, select an existing set from the console and select **Edit** from the ellipsis menu.
-
-![Edit content set](/help/assets/edit-content-set.png)
-
-When editing your content set, you may need to expand the configured paths to reveal the excluded sub-paths.
-
-## Copy content {#copy-content}
-
-Once a content set has been created, you can use it to copy content. Follow these steps to copy content.
+**To edit or delete a content set:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Overview** page, navigate to the **Environments** screen.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to open the left side menu.
 
-1. From the **Environments** screen, navigate to the **Content Sets** page.
+1. From the left side menu, under **Services**, click ![Box icon ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Content Sets**.
 
-1. Select a content set from the console and select **Copy Content** from the ellipsis menu.
+1. In the table on the **Content Sets** page, click ![More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg) to the right of an included content path, then click **Edit** or **Delete**.
+
+![Edit content set](/help/assets/edit-content-set.png)
+
+
+## Copy content {#copy-content}
+
+After a content set is created, you can use it to copy content.
+
+An environment may be unavailable for selection if any of the following conditions apply:
+
+* The user lacks the required permissions.
+* A pipeline or content copy operation is currently running in the environment.
+
+**To copy content:**
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to open the left side menu.
+
+1. From the left side menu, under **Services**, click ![Box icon ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **Content Sets**.
+
+1. In the table on the **Content Sets** page, to the right of an included content path that you want to copy, click ![More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then click **Copy Content**.
 
    ![Content copy](/help/assets/copy-content.png)
 
-   >[!NOTE]
-   >
-   >An environment may not be selectable if:
-   >
-   >* The user does not have the appropriate permissions.
-   >* The environment has a running pipeline or a copy content operation in progress.
+1. In the **Copy content** dialog box, select the **Source** environment and the **Destination** environment for your content copy action.
 
-1. In the **Copy content** dialog box, specify the source and destination environments for your content copy action.
-   * The regions of the target environment must be the same as or a subset of the source environment's regions.
+   * Regions in a destination environment must be a subset of regions in a source environment.
+   * Compatibility issues are checked before running a content copy action. When you select the **Destination** environment, the system automatically validates the source and destination environments. If validation fails, the process stops, and an error message is displayed in the dialog box that explains the reason for the failure.
 
-1. You can choose to delete or retain the exclude paths in the destination environment. Select the checkbox `Do not delete exclude paths from destination` to retain `exclude paths` that are specified in the content set. If the checkbox is unchecked, then exclude paths are deleted in the target environment.   
+1. (Optional) Do any one of the following:
 
-1. You can choose to copy the version history of paths being copied from source to destination environment. Select checkbox `Copy Versions` if you want to copy all version histories.
+   1. To *retain* the excluded paths in the destination Environment, check **`Do not delete exclude paths from destination`**. This setting keeps the excluded paths specified in the content set intact.
+   1. To *remove* the excluded paths in the destination Environment, uncheck **`Do not delete exclude paths from destination`**. This setting deletes the excluded paths specified in the content set.
+   1. To copy the version history of paths from the source environment to the destination environment, check **Copy Versions**.
 
-   ![Copying content](/help/assets/copying-content.png)
+         ![Copying content](/help/assets/copying-content.png)
 
-1. Click **Copy**.
+1. Click **Copy**. The status of the copy process is reflected in the console for the selected content set.
 
-The copy process starts. The status of the copy process is reflected in the console for the selected content set.
-
-## Content copy activity {#copy-activity}
+## Monitor the status of content copy activity {#copy-activity}
 
 You can monitor the status of your copy processes in the **Copy Content Activity** page.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), then select the appropriate organization and program.
+**To monitor the status of content copy activity:**
 
-1. From the **Overview** page, navigate to the **Environments** screen.
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. From the **Environments** screen, navigate to the **Copy Content Activity** page.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to open the left side menu.
 
-![Content Copy Activity](/help/assets/copy-content-activity.png)
+1. From the left side menu, under **Services**, click ![History icon ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **Copy Content Activity**.
 
-### Content copy statuses {#statuses}
+   ![Content Copy Activity](/help/assets/copy-content-activity.png)
 
-Once you start copying content, the process can have one of the following statuses.
+      A copy content process can have one of the following statuses:
 
-|Status|Description|
-|---|---|
-|In progress|Content copy operation is ongoing|
-|Failed|Content copy operation failed|
-|Completed|Content copy operation completed successfully|
+   | Status | Description |
+   | --- | --- |
+   | In progress | Content copy operation is ongoing. |
+   | Completed | Content copy operation completed successfully. |
+   | Failed | Content copy operation failed. |
+
 
 ## Limitations {#limitations}
 
-The content copy tool has the following limitations.
+The content copy tool has the following limitations:
 
 * A content copy cannot be performed from a lower environment to a higher environment.
 * Content copy can only be performed within the same tier. That is, author-author or publish-publish.
