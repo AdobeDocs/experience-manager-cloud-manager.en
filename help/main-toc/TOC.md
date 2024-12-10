@@ -50,7 +50,7 @@ role: Admin
   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
   + [Notifications](/help/using/notifications.md)
   + [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md)
-  + [Content Copy](/help/using/content-copy.md)
+  + [Content Copy for Environment Consistency](/help/using/content-copy.md)
 + Manage Code {#managing-code}
   + [Manage Repositories in Cloud Manager](/help/managing-code/managing-repositories.md)
   + [Repository Access Information](/help/managing-code/accessing-repositories.md)
@@ -69,6 +69,7 @@ role: Admin
 + Release Notes {#release-notes}
   + [Current](/help/release-notes/current.md)
   + 2024 {#rn-2024}
+    + [2024.11.0](/help/release-notes/2024/2024-11-0.md)
     + [2024.10.0](/help/release-notes/2024/2024-10-0.md)
     + [2024.9.0](/help/release-notes/2024/2024-9-0.md)
     + [2024.8.0](/help/release-notes/2024/2024-8-0.md)
