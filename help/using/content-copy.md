@@ -29,7 +29,7 @@ When copying content, the source environment is the source of truth.
 * If you edit content in the destination environment, the source content overwrites it if the paths match.
 * If the paths are different, content from the source is merged with the content in the destination.
 
-## Permissions {#permissions}
+### Permissions {#permissions}
 
 To use the Content Copy feature, the user must be assigned to the **Deployment Manager** role in the source and target environments.
 
@@ -136,11 +136,11 @@ An environment may be unavailable for selection if any of the following conditio
 
 1. Click **Copy**. The status of the copy process is reflected in the console for the selected content set.
 
-## Monitor Content Copy status {#copy-activity}
+## Check the status of a content copy {#copy-activity}
 
 You can monitor the status of your copy processes in the **Copy Content Activity** page.
 
-**To monitor Content Copy status:**
+**To check the status of a content copy:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -173,6 +173,6 @@ You can monitor the status of your copy processes in the **Copy Content Activity
 * [Dynamic Media configurations with assets sizes greater than 2 GB enabled](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) are not supported.
 * The regions of the target environment must be the same as or a subset of the source environment's regions.
 
-## Known issues {#known-issues}
+## Known issues of Content Copy {#known-issues}
 
 {{content-copy-known-issues}}
