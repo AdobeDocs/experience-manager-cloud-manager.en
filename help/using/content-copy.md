@@ -26,8 +26,9 @@ The following paths are permitted in a content set:
 
 When copying content, the source environment is the source of truth.
 
-* If you edit content in the destination environment, the source content overwrites it if the paths match.
-* If the paths are different, content from the source is merged with the content in the destination.
+If you edit content in the destination environment, the source content overwrites it if the paths match.
+
+If the paths are different, content from the source is merged with the content in the destination.
 
 ### Permissions {#permissions}
 
@@ -97,7 +98,6 @@ When you edit a content set, you may need to expand the configured paths to reve
 
 ![Edit content set](/help/assets/edit-content-set.png)
 
-
 ## Copy content {#copy-content}
 
 After a content set is created, you can use it to copy content.
@@ -132,8 +132,6 @@ An environment may be unavailable for selection if any of the following conditio
    1. To *remove* the excluded paths in the destination environment, uncheck **`Do not delete exclude paths from destination`**. This setting deletes the excluded paths specified in the content set.
    1. To copy the version history of paths from the source environment to the destination environment, check **Copy Versions**. The content copy process is substantially faster when version history is *not* copied.
 
-
-
 1. Click **Copy**. The status of the copy process is reflected in the console for the selected content set.
 
 ## Check the status of a content copy {#copy-activity}
@@ -150,14 +148,13 @@ You can monitor the status of your copy processes in the **Copy Content Activity
 
    ![Content Copy Activity](/help/assets/copy-content-activity.png)
 
-      A Content Copy process can have one of the following statuses:
+      A content copy process can have one of the following statuses:
 
    | Status | Description |
    | --- | --- |
-   | In progress | Content copy operation is ongoing. |
-   | Completed | Content copy operation completed successfully. |
-   | Failed | Content copy operation failed. |
-
+   | In progress | Content copy process is ongoing. |
+   | Completed | Content copy process completed successfully. |
+   | Failed | Content copy process failed. |
 
 ## Limitations of Content Copy {#limitations}
 
