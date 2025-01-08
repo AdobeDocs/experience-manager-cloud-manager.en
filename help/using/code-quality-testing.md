@@ -42,26 +42,28 @@ The software implements it using a combination of SonarQube analysis, content pa
 
 There are more than 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
 
->[!TIP]
+>[!IMPORTANT]
 >
->You can download the complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+>You can download the current complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+>
+>Starting Thursday, February 13, 2025 (Cloud Manager 2025.2.0), Cloud Manager Code Quality is using an updated SonarQube 9.9 version and an updated list of rules that you can [download here](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx). 
 
 The results of code quality testing are delivered as rating as summarized in this table.
 
-|Name|Definition|Category|Failure Threshold|
-|--- |--- |--- |--- |
-|Security Rating|A = No vulnerabilities<br/>B = At least 1 minor vulnerability<br/>C = At least 1 major vulnerability<br/>D = At least 1 critical vulnerability<br/>E = At least 1 blocker vulnerability|Critical|&lt; B|
-|Reliability Rating|A = No bugs<br/>B = At least 1 minor bug <br/>C = At least 1 major bug<br/>D = At least 1 critical bug<br/>E = At least 1 blocker bug|Important|&lt; C|
-|Maintainability Rating|Defined by the outstanding remediation cost for code smells as a percentage of the time that has already gone into the application<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul>|Important|&lt; A|
-|Coverage|Defined by a mix of unit test line coverage and condition coverage using the formula: <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = Conditions that have been evaluated as `true` at least once while running unit tests</li><li>`CF` = Conditions that have been evaluated as `false` at least once while running unit tests</li><li>`LC` = Covered lines = lines_to_cover - uncovered_lines</li><li>`B` = total number of conditions</li><li>`EL` = total number of executable lines (lines_to_cover)</li></ul>|Important|&lt; 50%|
-|Skipped Unit Tests|Number of skipped unit tests|Info|> 1|
-|Open Issues|Overall issue types - Vulnerabilities, Bugs, and Code Smells|Info|&gt; 0|
-|Duplicated Lines|Defined as the number of lines involved in duplicated blocks. A block of code is considered duplicated under the following conditions.<br>Non-Java Projects:<ul><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread over at least: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li></ul>Java Projects:<ul></li><li> There should be at least 10 successive and duplicated statements regardless of the number of tokens and lines.</li></ul>Differences in indentation and in string literals are ignored when detecting duplicates.|Info|&gt; 1%|
-|Cloud Service Compatibility|Number of identified Cloud Service Compatibility issues|Info|> 0|
+| Name | Definition | Category | Failure Threshold |
+| --- | --- | --- | --- |
+| Security Rating | A = No vulnerabilities<br/>B = At least 1 minor vulnerability<br/>C = At least 1 major vulnerability<br/>D = At least 1 critical vulnerability<br/>E = At least 1 blocker vulnerability | Critical | &lt; B |
+| Reliability Rating | A = No bugs<br/>B = At least 1 minor bug <br/>C = At least 1 major bug<br/>D = At least 1 critical bug<br/>E = At least 1 blocker bug | Important | &lt; C |
+| Maintainability Rating | Defined by the outstanding remediation cost for code smells as a percentage of the time that has already gone into the application<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | Important | &lt; A |
+| Coverage | Defined by a mix of unit test line coverage and condition coverage using the formula: <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = Conditions that have been evaluated as `true` at least once while running unit tests</li><li>`CF` = Conditions that have been evaluated as `false` at least once while running unit tests</li><li>`LC` = Covered lines = lines_to_cover - uncovered_lines</li><li>`B` = total number of conditions</li><li>`EL` = total number of executable lines (lines_to_cover)</li></ul> | Important | &lt; 50% |
+| Skipped Unit Tests | Number of skipped unit tests | Info | > 1 |
+| Open Issues | Overall issue types - Vulnerabilities, Bugs, and Code Smells | Info | &gt; 0 |
+| Duplicated Lines | Defined as the number of lines involved in duplicated blocks. A block of code is considered duplicated under the following conditions.<br>Non-Java Projects:<ul><li>There should be at least 100 successive and duplicated tokens.</li><li>Those tokens should be spread over at least: </li><li>30 lines of code for COBOL </li><li>20 lines of code for ABAP </li><li>10 lines of code for other languages</li></ul>Java Projects:<ul></li><li> There should be at least 10 successive and duplicated statements regardless of the number of tokens and lines.</li></ul>Differences in indentation and in string literals are ignored when detecting duplicates. | Info | &gt; 1% |
+| Cloud Service Compatibility | Number of identified Cloud Service Compatibility issues | Info |> 0 |
 
 >[!NOTE]
 >
->For more detailed information, [SonarQube's metric definitions](https://docs.sonarsource.com/sonarqube/latest/user-guide/code-metrics/metrics-definition/).
+>For more detailed information, [SonarQube's metric definitions](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).
 
 >[!NOTE]
 >
