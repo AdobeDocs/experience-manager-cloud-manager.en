@@ -42,9 +42,9 @@ The software implements it using a combination of SonarQube analysis, content pa
 
 There are more than 100 rules combining generic Java rules and AEM-specific rules. Some of the AEM-specific rules are created based on best practices from AEM Engineering and are referred to as [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md).
 
+You can download the current complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+
 >[!IMPORTANT]
->
->You can download the current complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 >
 >Starting Thursday, February 13, 2025 (Cloud Manager 2025.2.0), Cloud Manager Code Quality is using an updated SonarQube 9.9 version and an updated list of rules that you can [download here](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx). 
 
