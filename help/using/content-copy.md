@@ -58,7 +58,7 @@ Before any content can be copied, a content set must be defined. Once defined, c
 
    Only paths that start with `/content`, `/conf`, `/etc`, `/var/workflow/models`, or `/var/commerce` are eligible for inclusion.
 
-1. Click **![Folder add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) Add Path** to add (or include) the path to the content set.
+1. Click ![Folder add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **Add Path** to add (or include) the path to the content set.
 
 1. (Optional) If necessary, add addition paths (up to 50) as necessary by repeating the previous two steps. Otherwise, continue to the next step.
 
