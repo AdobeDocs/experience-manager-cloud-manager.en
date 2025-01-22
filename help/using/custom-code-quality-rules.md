@@ -10,11 +10,13 @@ Learn details about the custom code quality rules executed by Cloud Manager as p
 
 >[!NOTE]
 >
->The code samples provided here are for illustrative purposes only. See [SonarQube's Concepts documentation](https://docs.sonarsource.com/sonarqube/latest/) to learn about its concepts and quality rules.
+>The code samples provided here are for illustrative purposes only. See [SonarQube's Concepts documentation](https://docs.sonarsource.com/sonarqube-server/latest/) to learn about its concepts and quality rules.
 
->[!NOTE]
+Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Continue reading this document for descriptions and examples of the rules.
+
+>[!IMPORTANT]
 >
->Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Continue reading this document for descriptions and examples of the rules.
+>Starting Thursday, February 13, 2025 (Cloud Manager 2025.2.0), Cloud Manager Code Quality is using an updated SonarQube 9.9 version and an updated list of rules that you can [download here](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
 
 ## SonarQube rules {#sonarqube-rules}
 
@@ -173,7 +175,7 @@ public void orDoThis() {
 ### The objects `ResourceResolver` should always be closed {#resourceresolver-objects-should-always-be-closed}
 
 * **Key**: CQRules:CQBP-72
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
@@ -215,7 +217,7 @@ public void orDoThis(Session session) throws Exception {
 ### Do not use sling servlet paths to register servlets {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **Key**: CQRules:CQBP-75
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
@@ -235,7 +237,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### Caught exceptions should be logged or thrown, not both {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **Key**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -277,7 +279,7 @@ public void orDoThis() throws MyCustomException {
 ### Avoid log statements immediately followed by throw statements {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **Key**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -303,7 +305,7 @@ public void doThis() throws Exception {
 ### Avoid logging at INFO when handling GET or HEAD requests {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **Key**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 
 In general, the INFO log level should be used to demarcate important actions and, by default, AEM is configured to log at the INFO level or above. GET and HEAD methods should only ever be read-only operations and thus do not constitute important actions. Logging at the INFO level in response to GET or HEAD requests is likely to create significant log noise, making it harder to identify useful information in log files. When handling GET or HEAD requests, logging should be at the WARN or ERROR levels if something has gone wrong. For deeper troubleshooting information, logging should be at the DEBUG or TRACE levels.
@@ -331,7 +333,7 @@ public void doGet() throws Exception {
 ### Do not use `Exception.getMessage()` as the first parameter of a logging statement {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **Key**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -364,7 +366,7 @@ public void doThis() {
 ### Logging in catch blocks should be at the WARN or ERROR level {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **Key**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -397,7 +399,7 @@ public void doThis() {
 ### Do not print stack traces to the console {#do-not-print-stack-traces-to-the-console}
 
 * **Key**: CQRules:CQBP-44---ExceptionPrintStackTrace
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -430,7 +432,7 @@ public void doThis() {
 ### Do not output to standard output or standard error {#do-not-output-to-standard-output-or-standard-error}
 
 * **Key**: CQRules:CQBP-44—LogLevelConsolePrinters
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -463,7 +465,7 @@ public void doThis() {
 ### Avoid hardcoded `/apps` and `/libs` paths {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Key**: CQRules:CQBP-71
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
@@ -488,7 +490,7 @@ public void doThis(Resource resource) {
 ### Sling scheduler should not be used {#sonarqube-sling-scheduler}
 
 * **Key**: CQRules:AMSCORE-554
-* **Type**: Code Smell / Cloud Service Compatibility
+* **Type**: `Code Smell` / Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -499,7 +501,7 @@ See [Apache Sling Eventing and Job Handling documentation](https://sling.apache.
 ### AEM deprecated APIs should not be use {#sonarqube-aem-deprecated}
 
 * **Key**: AMSCORE-553
-* **Type**: Code Smell / Cloud Service Compatibility
+* **Type**: `Code Smell` / Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -621,7 +623,7 @@ Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule](
 ### The default authoring mode should not be Classic UI {#oakpal-default-authoring}
 
 * **Key**: ClassicUIAuthoringMode
-* **Type**: Code Smell /Cloud Service Compatibility
+* **Type**: `Code Smell` / Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -630,7 +632,7 @@ The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` def
 ### Components with dialog boxes should have touch UI dialog boxes {#oakpal-components-dialogs}
 
 * **Key**: ComponentWithOnlyClassicUIDialog
-* **Type**: Code Smell / Cloud Service Compatibility
+* **Type**: `Code Smell` / Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -645,7 +647,7 @@ The AEM Modernization Tools documentation provides details and tooling for how t
 ### Reverse replication agents should not be used {#oakpal-reverse-replication}
 
 * **Key**: ReverseReplication
-* **Type**: Code Smell / Cloud Service Compatibility
+* **Type**: `Code Smell` / Cloud Service Compatibility
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
@@ -687,7 +689,7 @@ AEM client libraries may contain static resources like images and fonts. As desc
 ### Usage of Cloud Service incompatible workflow processes {#oakpal-usage-cloud-service}
 
 * **Key**: CloudServiceIncompatibleWorkflowProcess
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Blocker
 * **Since**: Version 2021.2.0
 
@@ -698,7 +700,7 @@ The migration tool in the [AEM Assets as a Cloud Service GitHub repository](http
 ### Usage of static templates is discouraged in favor of editable templates {#oakpal-static-template}
 
 * **Key**: StaticTemplateUsage
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -709,7 +711,7 @@ Migration from static to editable templates can be largely automated using the [
 ### Usage of legacy foundation components is discouraged {#oakpal-usage-legacy}
 
 * **Key**: LegacyFoundationComponentUsage
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -720,7 +722,7 @@ The legacy Foundation Components (that is, components under `/libs/foundation`) 
 ### Custom search index definition nodes must be direct children of `/oak:index` {#oakpal-custom-search}
 
 * **Key**: OakIndexLocation
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -729,7 +731,7 @@ AEM Cloud Service requires that custom search index definitions (that is, nodes 
 ### Custom search index definition nodes must have a compatVersion of 2 {#oakpal-custom-search-compatVersion}
 
 * **Key**: IndexCompatVersion
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -738,7 +740,7 @@ AEM Cloud Service requires that custom search index definitions (that is, nodes 
 ### Descendent nodes of custom search index definition nodes must be of type `nt:unstructured` {#oakpal-descendent-nodes}
 
 * **Key**: IndexDescendantNodeType
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -747,7 +749,7 @@ Hard-to-troubleshoot issues can occur when a custom search index definition node
 ### Custom search index definition nodes must contain a child node named `indexRules` that has children {#oakpal-custom-search-index}
 
 * **Key**: IndexRulesNode
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -756,7 +758,7 @@ A properly defined custom search index definition node must include a child node
 ### Custom search index definition nodes must follow naming conventions {#oakpal-custom-search-definitions}
 
 * **Key**: IndexName
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -765,7 +767,7 @@ AEM Cloud Service requires that custom search index definitions (that is, nodes 
 ### Custom search index definition nodes must use the index type lucene {#oakpal-index-type-lucene}
 
 * **Key**: IndexType
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -774,7 +776,7 @@ AEM Cloud Service requires that custom search index definitions (that is, nodes 
 ### Custom search index definition nodes must not contain a property named `seed` {#oakpal-property-name-seed}
 
 * **Key**: IndexSeedProperty
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
@@ -783,7 +785,7 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 ### Custom search index definition nodes must not contain a property named `reindex` {#oakpal-reindex-property}
 
 * **Key**: IndexReindexProperty
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
