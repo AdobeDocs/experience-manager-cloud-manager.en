@@ -26,7 +26,7 @@ The next planned release is Thursday, February 13, 2025.
 
 **Code quality rules:** Cloud Manager Code Quality step will start using SonarQube Server 9.9 with Cloud Manager 2025.2.0 release, scheduled for Thursday, February 13, 2025. 
 
-To prepare, updated SonarQube rules are now available at [Code Quality Rules](/help/using/code-quality-testingmd#code-quality-testing-step).
+To prepare, updated SonarQube rules are now available at [Code Quality Rules](/help/using/code-quality-testing.md#code-quality-testing-step).
 
 You can "early check" the new rules by setting the following pipeline text variable (see screenshot below): 
 
