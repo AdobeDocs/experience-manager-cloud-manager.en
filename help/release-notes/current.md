@@ -2,7 +2,7 @@
 title: Release Notes for Cloud Manager 2025.1.0
 description: Learn about the release of Cloud Manager 2025.1.0 on Adobe Managed Services.
 feature: Release Information
-exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
+exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
 ---
 # Release notes for Cloud Manager 2025.1.0 on Adobe Managed Services {#release-notes}
 
@@ -24,7 +24,7 @@ The next planned release is Thursday, February 13, 2025.
 
 ## What's new {#what-is-new}
 
-**Code quality rules:** Cloud Manager Code Quality step will start using SonarQube Server 9.9 with Cloud Manager 2025.2.0 release, scheduled for Thursday, February 13, 2025. 
+**Code Quality Rules - Sonar Cube Upgrade:** Cloud Manager Code Quality step will start using SonarQube Server 9.9 with Cloud Manager 2025.2.0 release, scheduled for Thursday, February 13, 2025. 
 
 To prepare, updated SonarQube rules are now available at [Code Quality Rules](/help/using/code-quality-testing.md#code-quality-testing-step).
 
