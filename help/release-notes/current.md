@@ -3,6 +3,7 @@ title: Release Notes for Cloud Manager 2025.1.0
 description: Learn about the release of Cloud Manager 2025.1.0 on Adobe Managed Services.
 feature: Release Information
 
+
 ---
 # Release notes for Cloud Manager 2025.1.0 on Adobe Managed Services {#release-notes}
 
