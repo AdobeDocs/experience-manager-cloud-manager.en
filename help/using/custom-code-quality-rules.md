@@ -877,6 +877,15 @@ AEM Cloud Service prohibits the creation of indexing definitions that contain pr
 
 AEM Cloud Service prohibits the creation of indexing definitions that contain haystack properties.
 
+### Configuration of indexing definitions should not contain the property: async-previous with value [async,nrt] {#oakpal-indexing-async-previous-property}
+
+* **Key**: IndexAsyncPreviousCheck
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2025.2.0
+
+AEM Cloud Service prohibits the creation of indexing definitions that contain haystack properties.
+
 ## Dispatcher optimization tool {#dispatcher-optimization-tool-rules}
 
 The following section lists the Dispatcher Optimization Tool (DOT) checks executed by Cloud Manager. Follow the links for each check for its GitHub definition and details.
