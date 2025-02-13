@@ -33,7 +33,7 @@ The next planned release is Thursday, March 13, 2025.
 
 * **Java 17 and Java 21 build environment support**
 
-    Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions.
+    Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/getting-started/build-environment.md) for configuration steps, including updating your Maven project description, and certain library versions.
 
     >[!NOTE]
     >For Cloud Service environments, when the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
