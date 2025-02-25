@@ -879,10 +879,10 @@ AEM Cloud Service prohibits the creation of indexing definitions that contain ha
 
 ### Configuration of indexing definitions should not contain the async-previous and temp-async properties {#oakpal-indexing-async-previous-property}
 
-* **Key**: IndexAsyncPreviousCheck
+* **Key**: IndexUnsupportedAsyncPropertiesCheck
 * **Type**: Improvement
 * **Severity**: Minor
-* **Since**: Version 2025.2.0
+* **Since**: Version 2025.3.0
 
 AEM Cloud Service prohibits the creation of indexing definitions that contain async-previous, temp-async, temp-fulltext-async, temp-elastic-async properties.
 
