@@ -893,7 +893,7 @@ AEM Cloud Service prohibits the creation of indexing definitions with unsupporte
 * **Severity**: Minor
 * **Since**: Version 2025.3.0
 
-AEM Cloud Service prohibits replacement mode for forbidden paths.
+AEM Cloud Service prohibits the creation of indexing definitions that contain same tag in multiple indexes.
 
 ### Configuration of indexing definitions should not contain mode replacement for forbidden paths {#oakpal-xml-mode-analysis}
 
@@ -901,6 +901,9 @@ AEM Cloud Service prohibits replacement mode for forbidden paths.
 * **Type**: Improvement
 * **Severity**: Major
 * **Since**: Version 2025.4.0
+
+The use of the "replacement" mode in file vault is not allowed for paths below /content; it should not be used for paths below /etc and /var.
+The mode "replace" will replace all already existing content in the repository with the one provided in the content package and packages triggering this action should not be part of packages deployed via CloudManager.
 
 ## Dispatcher optimization tool {#dispatcher-optimization-tool-rules}
 
