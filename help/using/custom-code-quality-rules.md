@@ -886,6 +886,22 @@ AEM Cloud Service prohibits the creation of indexing definitions that contain ha
 
 AEM Cloud Service prohibits the creation of indexing definitions with unsupported async properties.
 
+### Configuration of indexing definitions should not have same tag in multiple indexes {#oakpal-indexing-same-tag-multiple-indexes}
+
+* **Key**: SameTagInMultipleIndexes
+* **Type**: Improvement
+* **Severity**: Minor
+* **Since**: Version 2025.3.0
+
+AEM Cloud Service prohibits replacement mode for forbidden paths.
+
+### Configuration of indexing definitions should not contain mode replacement for forbidden paths {#oakpal-xml-mode-analysis}
+
+* **Key**: FilterXmlModeAnalysis
+* **Type**: Improvement
+* **Severity**: Major
+* **Since**: Version 2025.4.0
+
 ## Dispatcher optimization tool {#dispatcher-optimization-tool-rules}
 
 The following section lists the Dispatcher Optimization Tool (DOT) checks executed by Cloud Manager. Follow the links for each check for its GitHub definition and details.
