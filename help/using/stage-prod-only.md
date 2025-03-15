@@ -9,7 +9,7 @@ Learn how you can split staging and production deployments using dedicated pipel
 
 >[!NOTE]
 >
->This feature is only available to [the early adopter program](/help/release-notes/help/release-notes/2024/2024-8-0.md).
+>This feature is only available to [the early adopter program](/help/release-notes/2024/2024-8-0.md).
 
 ## Overview {#overview}
 
