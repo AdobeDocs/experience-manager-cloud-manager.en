@@ -22,7 +22,7 @@ Adobe Managed Services sets the thresholds, which you can view in [!UICONTROL Cl
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
 
-1. Click the ellipsis button of the program that you want to monitor.
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) of the program that you want to monitor.
 1. In the menu, under the **Manage** heading, click **Show Monitoring** to open the **Reports** page that shows system monitoring information.
  
    ![Settings](/help/assets/first-timea1.png)

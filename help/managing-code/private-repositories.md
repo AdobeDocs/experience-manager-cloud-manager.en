@@ -84,8 +84,7 @@ Until validation, the repository is listed with a red icon, indicating that it i
 
 Note that the **Type** column easily identifies Adobe-provided repositories (**Adobe**) and your own GitHub repositories (**GitHub**).
 
-To return to the repository later and complete the validation, go to the **Repositories** page. Click the ellipsis button next to the GitHub repository that you added and select **Ownership Validation** from the drop-down menu.
-
+To return to the repository later and complete the validation, go to the **Repositories** page. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the GitHub repository that you added, then click **Ownership Validation**.
 
 
 ## Use private repositories with Cloud Manager {#using}
