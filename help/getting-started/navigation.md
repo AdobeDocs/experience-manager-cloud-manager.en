@@ -46,11 +46,11 @@ The first is the Cloud Manager header. The header is persistent as you navigate 
 
 ![The Experience Cloud header](assets/experience-cloud-header.png)
 
-1. The hamburger icon on the left side of the header is a drop-down menu that provides access to tabs for specific parts of an individual program. Depending on the context, it also lets you switch between the License Dashboard and the **[My Programs](#my-programs-console)** console.
+1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is a drop-down menu that provides access to tabs for specific parts of an individual program. Depending on the context, it also lets you switch between the License Dashboard and the **[My Programs](#my-programs-console)** console.
    * The License Dashboard only applies to AEM as a Cloud Service programs, not AMS programs.
    * To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.
 1. The Cloud Manager button takes you back to the My Programs console of Cloud Manager no matter where you are in Cloud Manager.
-1. Click the Feedback button to provide feedback to Adobe about Cloud Manager.
+1. Click **Feedback** to provide feedback to Adobe about Cloud Manager.
 1. The organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple.
 1. Clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
 1. The Help icon provides quick access to learning and support resources.
@@ -117,7 +117,7 @@ The information icon also gives quick access to additional information about the
 
 ![Information](assets/information-view.png)
 
-The ellipsis icon gives you access to additional actions you can take on the program.
+The ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) gives you access to additional actions you can take on the program.
 
 ![Ellipsis button for programs](assets/program-ellipsis.png)
 

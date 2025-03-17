@@ -84,8 +84,7 @@ Until validation, the repository is listed with a red icon, indicating that it i
 
 Note that the **Type** column easily identifies Adobe-provided repositories (**Adobe**) and your own GitHub repositories (**GitHub**).
 
-To return to the repository later and complete the validation, go to the **Repositories** page. Click the ellipsis button next to the GitHub repository that you added and select **Ownership Validation** from the drop-down menu.
-
+To return to the repository later and complete the validation, go to the **Repositories** page. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the GitHub repository that you added, then click **Ownership Validation**.
 
 
 ## Use private repositories with Cloud Manager {#using}
@@ -100,7 +99,7 @@ After the GitHub repository is validated in Cloud Manager, the integration is co
 
 1. For each pull request, a [full stack code quality pipeline](/help/using/managing-pipelines.md) is created automatically. This pipeline is started at each pull request update.
 
-1. The GitHub check remains in a running state until the code quality checks are complete. The code quality results are then propagated to the GitHub check.
+1. The GitHub check remains in a running state until the code quality checks are completed. The code quality results are then propagated to the GitHub check.
 
     ![GitHub code quality checks](/help/assets/repositories/github-code-quality.png)
 

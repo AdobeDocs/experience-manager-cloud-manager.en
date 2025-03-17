@@ -40,7 +40,6 @@ Customers can check for service pack updates on the **Program Overview** page un
 
 ![Check for updates menu option](/help/release-notes/assets/check-for-updates-1.png)
 
-
 ![Update Service Pack dialog box](/help/release-notes/assets/check-for-updates-2.png)
 
 The installation and upgrade process can be tracked on the **Activity** page. 
@@ -50,6 +49,8 @@ Once the process is complete, customers must **approve the execution** for the s
 ![Approve service page update](/help/release-notes/assets/check-for-updates-3.png)
 
 If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
+
+See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
 
 
 <!-- ## Bug fixes {#bug-fixes}
