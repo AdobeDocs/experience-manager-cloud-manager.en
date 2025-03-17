@@ -10,7 +10,7 @@ Learn how you can initiate service pack updates for Development environments thr
 
 >[!NOTE]
 >
->This feature is only available to [the early adopter program](/help/release-notes/help/release-notes/2024/current.md).
+>This feature is only available to [the early adopter program](/help/release-notes/current.md).
 
 ## Overview {#service-pack-updates-overview}
 
