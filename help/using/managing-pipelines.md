@@ -70,7 +70,7 @@ Click **View details** to review [details of the pipeline execution](#view-detai
 
     You can see the details of the run by clicking ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **[View details](#view-details)**.
 
-    Depending on the type of pipeline, you may be able to cancel the run by clicking click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **Cancel**.
+    Depending on the type of pipeline, you may be able to cancel the run by clicking ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **Cancel**.
 
 ## Edit pipelines {#editing-pipelines}
 
@@ -80,7 +80,9 @@ You cannot edit a pipeline that is running.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you want to edit, then click **Edit**.
+1. From the **Program Overview** page, navigate to the **Pipelines** card.
+
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you want to edit, then click **Edit**.
 
 1. In the **Edit Production Pipeline** or **Edit Non-Production Pipeline** dialog box, you can edit the same details that you entered during pipeline creation.
 
@@ -96,7 +98,9 @@ You cannot delete a running pipeline.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline you run, then click **Delete**.
+1. From the **Program Overview** page, navigate to the **Pipelines** card.
+
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you run, then click **Delete**.
 
 
 ## View pipeline details {#view-details}
@@ -107,7 +111,9 @@ You can only view details of a pipeline that is running or has been run at least
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline you run, then \click **View details**.
+1. From the **Program Overview** page, navigate to the **Pipelines** card.
+
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you run, then click **View details**.
 
 1. You are taken to the details page of the running pipeline.
 

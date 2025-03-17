@@ -99,7 +99,7 @@ After the GitHub repository is validated in Cloud Manager, the integration is co
 
 1. For each pull request, a [full stack code quality pipeline](/help/using/managing-pipelines.md) is created automatically. This pipeline is started at each pull request update.
 
-1. The GitHub check remains in a running state until the code quality checks are complete. The code quality results are then propagated to the GitHub check.
+1. The GitHub check remains in a running state until the code quality checks are completed. The code quality results are then propagated to the GitHub check.
 
     ![GitHub code quality checks](/help/assets/repositories/github-code-quality.png)
 
