@@ -46,6 +46,7 @@ role: Admin
   + [Code Quality Testing](/help/using/code-quality-testing.md)
   + [Manage Environments](/help/using/managing-environments.md)
   + [Monitor Environments](/help/using/monitoring-environments.md)
+  + [Service Pack Updates for Development Environments (Early Adopter)](/help/product-update-wizard/service-packs-environments.md)
   + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
   + [Notifications](/help/using/notifications.md)
