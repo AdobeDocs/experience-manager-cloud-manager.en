@@ -81,7 +81,7 @@ With Cloud Manager you can run multiple pipelines simultaneously, improving depl
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. From the left side menu, click ![Workflow icon ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
 1. In the table on the **Pipeline** page, select the checkboxes next to the pipelines you want to run.
-    If necessary, click ![Filter icon, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** to sort pipelines by environment, or deployed code type, or both.
+    If necessary, click ![Filter icon, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** to sort pipelines by name, or environment, or deployed code type, or a combination of all three.
 1. Near the upper-right corner of the page, click **Run selected (x)**.  
 1. In the **Run selected pipelines (x)** dialog box, click **Run (x)**.
 
