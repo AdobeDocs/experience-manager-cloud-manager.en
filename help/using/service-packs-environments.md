@@ -1,8 +1,7 @@
 ---
 title: Service Pack Updates for Development Environments - Early Adopter
-description: Learn how you can now initiate service pack updates for Development environments through the Cloud Manager user interface. 
-
-
+description: Learn how you can now initiate service pack updates for Development environments through the Cloud Manager user interface.
+exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
 ---
 # Service pack updates for Development environments (Early Adopter) {#stage-prod-only}
 
@@ -87,5 +86,3 @@ Once the installation completes, your approval&mdash;or rejection&mdash;is requi
     The service pack installation is canceled, and no changes are applied.
 
     ![Rejection of the service pack](/help/using/assets/service-pack-reject.png)
-
-    
