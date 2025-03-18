@@ -1,6 +1,8 @@
 ---
 title: Service Pack Updates for Development Environments - Early Adopter
 description: Learn how you can now initiate service pack updates for Development environments through the Cloud Manager user interface.
+hide: yes
+hidefromtoc: yes
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
 ---
 # Service pack updates for Development environments (Early Adopter) {#stage-prod-only}
