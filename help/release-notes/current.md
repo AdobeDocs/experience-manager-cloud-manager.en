@@ -26,8 +26,10 @@ The next planned release is Thursday, April 10, 2025.
 
     ![Run selected pipelines dialog box](/help/release-notes/assets/run-selected-pipelines.png)
 
+    See also [Run multiple pipelines](/help/using/managing-pipelines.md#run-multiple-pipelines)
 
- 
+
+<!--
 ## Early adoption program {#early-adoption}
 
 Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
@@ -51,6 +53,7 @@ Once the process is complete, customers must **approve the execution** for the s
 If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
 
 See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
+-->
 
 
 
