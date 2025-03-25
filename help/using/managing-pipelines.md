@@ -14,7 +14,7 @@ The **Pipelines** card on the **Program Overview** page in Cloud Manager gives y
 
 ![Pipelines card in Cloud Manager](/help/assets/configure-pipelines/pipelines-card.png)
 
-By clicking the ellipsis button next to each pipeline, you can take the following actions:
+By clicking ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to each pipeline, you can take the following actions:
 
 * [Run the pipeline](#running-pipelines).
 * [Edit the pipeline](#editing-pipelines).
@@ -60,49 +60,77 @@ Clicking the `i` icon reveals details about the execution of the selected pipeli
 
 Click **View details** to review [details of the pipeline execution](#view-details).
 
-## Run pipelines {#running-pipelines}
+## Run a pipeline {#run-one-pipeline}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. Navigate to the **Pipelines** card from the **Program Overview** page.
-1. Click the ellipsis button next to the pipeline that you run, then from the menu, select **Run**.
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you run, then click **Run**.
 
     The Status column indicates when the pipeline run begins.
 
-    You can see the details of the run by clicking the ellipsis button again and selecting **[View details](#view-details)**.
+    You can see the details of the run by clicking ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **[View details](#view-details)**.
 
-    Depending on the type of pipeline, you may be able to cancel the run by clicking the ellipsis button again and selecting **Cancel**.
+    Depending on the type of pipeline, you may be able to cancel the run by clicking ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **Cancel**.
+
+## Run multiple pipelines {#run-multiple-pipelines}
+
+With Cloud Manager you can run multiple pipelines simultaneously, improving deployment efficiency for Adobe Managed Services (AMS) customers. The **Run selected** feature lets you select multiple pipelines and trigger them to run at once. It reduces the manual effort of having to run pipelines individually and optimizes build and deployment workflows.  
+
+**To run multiple pipelines:** 
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. From the left side menu, click ![Workflow icon ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
+1. In the table on the **Pipeline** page, select the checkboxes next to the pipelines you want to run.
+    If necessary, click ![Filter icon, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** to sort pipelines by name, or environment, or deployed code type, or a combination of all three.
+1. Near the upper-right corner of the page, click **Run selected (x)**.  
+1. In the **Run selected pipelines (x)** dialog box, click **Run (x)**.
+
+    The **Run** button reflects the number of pipelines that can proceed. For example, you may have select four pipelines but one is already running. Or, an environment linked to a selected pipeline no longer exists. In such cases, the system adjusts accordingly. The button updates to "Run (3)" to indicate that three pipelines can proceed.
+
+1. Pipelines begin running, and their status is updated in the **Pipelines** list.  
 
 ## Edit pipelines {#editing-pipelines}
 
+You cannot edit a pipeline that is running.
+
+**To edit pipelines:**
+
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline that you want to edit, then from the menu, select **Edit**.
+1. From the **Program Overview** page, navigate to the **Pipelines** card.
 
-1. The **Edit Production Pipeline** or **Edit Non-Production Pipeline** dialog box appears. You can edit the same details that you entered during pipeline creation.
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you want to edit, then click **Edit**.
+
+1. In the **Edit Production Pipeline** or **Edit Non-Production Pipeline** dialog box, you can edit the same details that you entered during pipeline creation.
 
     See [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md) for details on the fields and configuration options available for pipelines.
 
-1. Click **Update** when you are done.
-
->[!NOTE]
->
->You cannot edit a running pipeline.
+1. When you are done, click **Update**.
 
 ## Delete pipelines {#deleting-pipelines}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+You cannot delete a running pipeline.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you run, then from the menu, select **Delete**.
-
->[!NOTE]
->
->You cannot delete a running pipeline.
-
-## View details {#view-details}
+**To delete pipelines:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
-1. Navigate to the **Pipelines** card from the **Program Overview** page and click the ellipsis button next to the pipeline you run, then from the menu, select **View details**.
+1. From the **Program Overview** page, navigate to the **Pipelines** card.
+
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you run, then click **Delete**.
+
+
+## View pipeline details {#view-details}
+
+You can only view details of a pipeline that is running or has been run at least once.
+
+**To view pipeline details:**
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+
+1. From the **Program Overview** page, navigate to the **Pipelines** card.
+
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the pipeline that you run, then click **View details**.
 
 1. You are taken to the details page of the running pipeline.
 
@@ -120,15 +148,10 @@ Click the **View details** link to reveal the **Duration** section. This section
 
 ![Duration](/help/assets/configure-pipelines/duration.png)
 
-If your pipeline contained a **Code Scanning** step, which raised issues, you can click the **Download Details** button to view a list of [code quality tests](/help/using/code-quality-testing.md) that did not pass.
+If your pipeline contained a **Code Scanning** step, which raised issues, you can click **Download Details** to view a list of [code quality tests](/help/using/code-quality-testing.md) that did not pass.
 
 ![Code quality issues](assets/managing-pipelines-code-quality-issues.png)
 
 A **Project File Location** column is available in the CSV file to indicate the location of the offending code. This column is the project-relative path, whereas the **File Location** column is Maven-generated.
 
 ![Project code scan issue details](assets/managing-pipelines-code-quality-details.png)
-
-
->[!NOTE]
->
->You can only view details of a pipeline that is running or has been run at least once.

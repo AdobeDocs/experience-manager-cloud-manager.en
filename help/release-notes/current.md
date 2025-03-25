@@ -1,70 +1,64 @@
 ---
-title: Release Notes for Cloud Manager 2025.2.0
-description: Learn about the release of Cloud Manager 2025.2.0 on Adobe Managed Services.
+title: Release Notes for Cloud Manager 2025.3.0
+description: Learn about the release of Cloud Manager 2025.3.0 on Adobe Managed Services.
 feature: Release Information
-exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 ---
-# Release notes for Cloud Manager 2025.2.0 on Adobe Managed Services {#release-notes}
+# Release notes for Cloud Manager 2025.3.0 on Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.02.0+Release -->
 
-Learn about the release of [!UICONTROL Cloud Manager] 2025.2.0 on Adobe Managed Services.
+Learn about the release of [!UICONTROL Cloud Manager] 2025.3.0 on Adobe Managed Services.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Release dates {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] 2025.2.0 is Thursday, February 13, 2025. 
+The release date for [!UICONTROL Cloud Manager] 2025.3.0 is Thursday, March 13, 2025. 
 
-The next planned release is Thursday, March 13, 2025.
+The next planned release is Thursday, April 10, 2025.
 
 ## What's new {#what-is-new}
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+* **Run multiple pipelines**
 
-* **Upgraded SonarQube**
+    The ability to run multiple pipelines simultaneously has been introduced on the Pipelines page. Users must select at least one pipeline but no more than ten. Near the upper-right corner on the Pipelines page, click **Run selected (x)**. A modal dialog box appears that lists any pipelines that cannot be started. Click **Run** to initiate all valid pipelines.
 
-    Starting Thursday, February 13, 2025, the Cloud Manager code quality step now uses SonarQube 9.9.5.90363.
+    ![Run selected pipelines dialog box](/help/release-notes/assets/run-selected-pipelines.png)
 
-    The updated rules, available for AMS at [this link](/help/using/code-quality-testing.md#code-quality-testing-step), determine security scores and code quality for Cloud Manager pipelines.
+    See also [Run multiple pipelines](/help/using/managing-pipelines.md#run-multiple-pipelines)
 
-* SonarQube 9.9 is now the default code quality scanning engine for all customers.
 
-* **Java 17 and Java 21 build environment support**
 
-    Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/getting-started/build-environment.md) for configuration steps, including updating your Maven project description, and certain library versions.
+<!--
 
-    >[!NOTE]
-    >For Cloud Service environments, when the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
-
-* **Content Copy validations extended**
-
-    Content copy validation rules have been updated. With this release, users can no longer trigger a content copy if there are active pipeline executions in either the source or destination environment. Users must wait until all ongoing pipeline executions are complete before initiating a content copy.
-
-<!-- 
 ## Early adoption program {#early-adoption}
 
 Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
 
-### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+### Self-service Service Pack updates for AMS Cloud Manager customers 
 
-The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+As part of the early adopters program, Adobe Managed Services Cloud Manager customers can now perform self-service service pack updates through the **Cloud Manager** user interface. This feature is currently available *only for development environments* and includes limited error reporting for failures.  
 
-Pipelines using external repositories (excluding GitHub-hosted ones) and the **Deployment Trigger** set to **On Git Changes** now start automatically.
+Customers can check for service pack updates on the **Program Overview** page under the **Environments** section (**three-dot menu**).
 
-See [Add external repositories in Cloud Manager](/help/managing-code/external-repositories.md).
+![Check for updates menu option](/help/release-notes/assets/check-for-updates-1.png)
 
-![Add Repository dialog box](/help/release-notes/assets/repositories-add-release-notes.png)
+![Update Service Pack dialog box](/help/release-notes/assets/check-for-updates-2.png)
 
->[!NOTE]
->
->Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
+The installation and upgrade process can be tracked on the **Activity** page. 
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
+Once the process is complete, customers must **approve the execution** for the service pack upgrade to finalize successfully.
+
+![Approve service page update](/help/release-notes/assets/check-for-updates-3.png)
+
+If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
+
+See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
 
 
-<!-- ## Bug fixes {#bug-fixes}
+
+## Bug fixes {#bug-fixes}
 
 * A
 

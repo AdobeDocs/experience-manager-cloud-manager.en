@@ -95,18 +95,18 @@ Once you have created product profiles, you can assign users or user groups to t
 
 1. Click **Users** in the left navigation panel and then click a user to modify it.
 
-1. Click the ellipsis button in the **Products** section and select **Edit**.
+1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in the **Products** section and click **Edit**.
 
    ![Edit user](/help/assets/admin-console-edit-user.png)
 
-1. In the **Edit products and user groups** dialog box, click the plus button and select the profiles to assign to the user.
+1. In the **Edit products and user groups** dialog box, click ![Add icon, plus sign](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) and select the profiles to assign to the user.
 
-   * If the user already is assigned to the roles, the plus button is an edit button (a pencil), but works the same way.
+   * If the user already is assigned to the roles, the ![Add icon, plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) button is an edit button (a pencil), but works the same way.
 
    ![Edit products and user groups](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. Click **Save** to save the profiles to the user.
 
-Repeat the same steps to assign profiles to user groups, but select **User Groups** from the left navigation panel on the **Users** tab. Click a user group and select the **Assigned Product Profiles** tab and click **Assign Product Profile** to assign profiles.
+Repeat the same steps to assign profiles to user groups, but select **User Groups** from the left navigation panel on the **Users** tab. Click a user group and select the **Assigned Product Profiles** click **Assign Product Profile** to assign profiles.
 
 ![Assign profiles to group](/help/assets/admin-console-edit-user-groups.png)
