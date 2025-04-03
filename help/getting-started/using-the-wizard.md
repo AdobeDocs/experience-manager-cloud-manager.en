@@ -4,9 +4,9 @@ description: Follow this page to learn how to use the wizard to create an AEM Ap
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 ---
 
-# Use the New Project wizard {#using-the-wizard}
+# Use the new project wizard {#using-the-wizard}
 
-When you were onboarded to Cloud Manager as a new customer, you were provided with an empty Git repository. To help you get started, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) as a starting point.
+When you onboarded to Cloud Manager as a new customer, you were provided with an empty Git repository. To help you get started, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) as a starting point.
 
 Follow these steps to create an AEM project using the wizard.
 
