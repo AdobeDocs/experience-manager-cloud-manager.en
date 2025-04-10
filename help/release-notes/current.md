@@ -1,41 +1,61 @@
 ---
-title: Release Notes for Cloud Manager 2025.3.0
-description: Learn about the release of Cloud Manager 2025.3.0 on Adobe Managed Services.
+title: Release Notes for Cloud Manager 2025.4.0
+description: Learn about the release of Cloud Manager 2025.4.0 on Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 ---
-# Release notes for Cloud Manager 2025.3.0 on Adobe Managed Services {#release-notes}
+# Release notes for Cloud Manager 2025.4.0 on Adobe Managed Services {#release-notes}
 
-<!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.02.0+Release -->
+<!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Learn about the release of [!UICONTROL Cloud Manager] 2025.3.0 on Adobe Managed Services.
+Learn about the release of [!UICONTROL Cloud Manager] 2025.4.0 on Adobe Managed Services.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Release dates {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] 2025.3.0 is Thursday, March 13, 2025. 
+The release date for [!UICONTROL Cloud Manager] 2025.4.0 is Thursday, April 10, 2025. 
 
-The next planned release is Thursday, April 10, 2025.
+The next planned release is Thursday, May 8, 2025.
 
+<!--
 ## What's new {#what-is-new}
 
-* **Run multiple pipelines**
+* 
+-->
 
-    The ability to run multiple pipelines simultaneously has been introduced on the Pipelines page. Users must select at least one pipeline but no more than ten. Near the upper-right corner on the Pipelines page, click **Run selected (x)**. A modal dialog box appears that lists any pipelines that cannot be started. Click **Run** to initiate all valid pipelines.
 
-    ![Run selected pipelines dialog box](/help/release-notes/assets/run-selected-pipelines.png)
+## Early adoption program {#early-adoption}
 
-    See also [Run multiple pipelines](/help/using/managing-pipelines.md#run-multiple-pipelines)
+Participate in Cloud Manager's Early Adoption Program to get exclusive access to upcoming features before their general release.
+
+The following early adoption opportunities are currently available:
+
+### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+
+The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+
+Pipelines using external repositories (excluding GitHub-hosted ones) and the **Deployment Trigger** set to **On Git Changes** now start automatically.
+
+See [Add external repositories in Cloud Manager](/help/managing-code/external-repositories.md).
+
+![Add Repository dialog box](/help/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
+
+### Staging-only and production-only pipelines {#staging-production-only-pipelines}
+
+Adobe announces the introduction of support for [staging-only and production-only pipelines](/help/using/stage-prod-only.md). This new feature lets you divide full-stack production deployment pipelines into smaller, more specialized deployments.
+
+If you would like to test this feature and provide feedback, email [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) from your email address associated with your Adobe ID.
 
 
 
 <!--
-
-## Early adoption program {#early-adoption}
-
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
-
 ### Self-service Service Pack updates for AMS Cloud Manager customers 
 
 As part of the early adopters program, Adobe Managed Services Cloud Manager customers can now perform self-service service pack updates through the **Cloud Manager** user interface. This feature is currently available *only for development environments* and includes limited error reporting for failures.  
@@ -55,6 +75,7 @@ Once the process is complete, customers must **approve the execution** for the s
 If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
 
 See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
+-->
 
 
 
