@@ -33,7 +33,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **My Programs** console, select the program to which you want to link an external repository.
+1. On the **[My Programs](/help/getting-started/navigation.md#my-programs-console)** console, select the program to which you want to link an external repository.
 
 1. In the side menu, under **Program**, click ![Folder outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositories**.
 
@@ -115,7 +115,7 @@ For all other external repositories that are onboarded with an access token, suc
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **My Programs** console, select the program to which you want to configure a webhook for an external Git repository.
+1. On the **[My Programs](/help/getting-started/navigation.md#my-programs-console)** console, select the program to which you want to configure a webhook for an external Git repository.
 
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
 
