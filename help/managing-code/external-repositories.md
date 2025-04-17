@@ -9,7 +9,7 @@ Learn how to add an external repository into Cloud Manager. Cloud Manager suppor
 
 >[!NOTE]
 >
->The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git](/help/release-notes/current.md#gitlab-bitbucket).
 
 ## Configure an external repository
 
@@ -33,7 +33,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program to which you want to link an external repository.
+1. On the **My Programs** console, select the program to which you want to link an external repository.
 
 1. In the side menu, under **Program**, click ![Folder outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositories**.
 
@@ -80,7 +80,7 @@ After validation, the external repository is ready to use and link to a pipeline
 
 1. Add or edit a pipeline:
     * [Add a production pipeline](/help/using/production-pipelines.md#adding-production-pipeline)
-    * [Add a non-production pipelines](/hhelp/using/non-production-pipelines.md#add-non-production-pipeline)
+    * [Add a non-production pipelines](/help/using/non-production-pipelines.md#add-non-production-pipeline)
     * [Edit a pipeline](/help/using/managing-pipelines.md#editing-pipelines)
 
     ![Pipeline's source code repository and Git branch](/help/managing-code/assets/pipeline-repo-gitbranch.png)
