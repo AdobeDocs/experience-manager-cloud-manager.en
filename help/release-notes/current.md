@@ -29,7 +29,7 @@ The next planned release is Thursday, May 8, 2025.
 
 Participate in Cloud Manager's Early Adoption Program to get exclusive access to upcoming features before their general release.
 
-The following early adoption opportunities are currently available:
+The following early adoption opportunity is currently available:
 
 ### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
 
