@@ -1,6 +1,7 @@
 ---
 title: Stage-Only and Prod-Only Pipelines
 description: Learn how you can split staging and production deployments using dedicated pipelines.
+badge: label="Early Adopter" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 ---
 # Stage-only and production-only pipelines {#stage-prod-only}
@@ -9,7 +10,7 @@ Learn how you can split staging and production deployments using dedicated pipel
 
 >[!NOTE]
 >
->This feature is only available to [the early adopter program](/help/release-notes/current.md#early-adoption).
+>This feature is only available to [the early adopter program](/help/release-notes/current.md#staging-production-only-pipelines).
 
 ## Overview {#overview}
 
@@ -110,3 +111,4 @@ If a prod-only pipeline does not exist, you are prompted to create one.
 For prod-only pipelines, be sure you identify the source artifacts that you want deployed to production. These details are found in the **Artifact Preparation** step. You can navigate to those executions for more details and logs.
 
 ![Artifact details](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
+
