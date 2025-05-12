@@ -16,7 +16,11 @@ See also the [current release notes for Adobe Experience Manager as a Cloud Serv
 
 The release date for [!UICONTROL Cloud Manager] 2025.5.0 is Thursday, May 8, 2025. 
 
+There are no significant new features or bug fixes in the May Cloud Manager release.
+
 The next planned release is Thursday, June 5, 2025.
+
+<!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 <!--
 ## What's new {#what-is-new}
