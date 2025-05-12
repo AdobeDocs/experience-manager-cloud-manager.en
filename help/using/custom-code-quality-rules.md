@@ -795,7 +795,7 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 
 * **Key**: IndexNotUnderUIContent
 * **Type**: Improvement
-* **Severity**: Minor
+* **Severity**: Major
 * **Since**: Version 2024.6.0
 
 AEM Cloud Service prohibits custom search index definitions (nodes of type `oak:QueryIndexDefinition`) from being deployed in the UI Content package.
@@ -808,7 +808,7 @@ AEM Cloud Service prohibits custom search index definitions (nodes of type `oak:
 
 * **Key**: CustomFulltextIndexesOfTheDamAssetCheck
 * **Type**: Improvement
-* **Severity**: Minor
+* **Severity**: Major
 * **Since**: Version 2024.6.0
 
 AEM Cloud Service prohibits custom full-text index definitions of type `damAssetLucene` from being prefixed with anything other than `damAssetLucene`.
@@ -821,7 +821,7 @@ AEM Cloud Service prohibits custom full-text index definitions of type `damAsset
 
 * **Key**: DuplicateNameProperty
 * **Type**: Improvement
-* **Severity**: Minor
+* **Severity**: Major
 * **Since**: Version 2024.6.0
 
 AEM Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing properties with the same name
@@ -834,7 +834,7 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 
 * **Key**: RestrictIndexCustomization
 * **Type**: Improvement
-* **Severity**: Minor
+* **Severity**: Major
 * **Since**: Version 2024.6.0
 
 AEM Cloud Service prohibits unauthorized modifications of the following OOTB indexes:
