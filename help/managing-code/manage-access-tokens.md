@@ -1,8 +1,6 @@
 ---
 title: Manage Access Tokens in Cloud Manager
 description: Learn how to view, edit, and delete access tokens used for Bring Your Own Git in AEM Cloud Manager such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps, including guidance on managing tokens that are in use.
-feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
 badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" 
 
 ---
