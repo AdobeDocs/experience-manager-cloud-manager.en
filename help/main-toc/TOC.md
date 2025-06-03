@@ -58,7 +58,7 @@ role: Admin
   + [Add an Adobe Repository](/help/managing-code/adobe-repositories.md)
   + [Add a Private Repository](/help/managing-code/private-repositories.md)
   + [Add an External Repository (Early Adopter)](/help/managing-code/external-repositories.md)
-    + [Manage Access Tokens (Early Adopter)](/help/managing-code/manage-access-tokens.md)
+  + [Manage Access Tokens (Early Adopter)](/help/managing-code/manage-access-tokens.md)
   + [Git Submodule Support](/help/managing-code/git-submodules.md)
   + [GitHub Check Configuration](/help/managing-code/github-check-config.md)
   + [GitHub Check Annotations](/help/managing-code/github-annotations.md)
