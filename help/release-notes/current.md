@@ -35,7 +35,7 @@ Participate in Cloud Manager's Early Adoption Program to get exclusive access to
 
 The following early adoption opportunities are currently available:
 
-### Manage Access Tokens{#manage-access-tokens}
+### Manage Access Tokens{#access-tokens}
 
 Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
 
