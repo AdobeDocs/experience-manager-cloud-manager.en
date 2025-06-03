@@ -9,7 +9,7 @@ badge: label="Early Adopter" type="Positive" url="/help/release-notes/current.md
 
 Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
 
-See also [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md)
+See also [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md).
 
 >[!NOTE]
 >
