@@ -35,6 +35,14 @@ Participate in Cloud Manager's Early Adoption Program to get exclusive access to
 
 The following early adoption opportunities are currently available:
 
+### Manage Access Tokens{#manage-access-tokens}
+
+Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
+
+See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
+
+If you are interested in testing this new feature and sharing your feedback, send an email to from your email address associated with your Adobe ID.
+
 ### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
 
 The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
