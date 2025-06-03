@@ -58,6 +58,7 @@ role: Admin
   + [Add an Adobe Repository](/help/managing-code/adobe-repositories.md)
   + [Add a Private Repository](/help/managing-code/private-repositories.md)
   + [Add an External Repository (Early Adopter)](/help/managing-code/external-repositories.md)
+    + [Manage Access Tokens (Early Adopter)](/help/managing-code/manage-access-tokens.md)
   + [Git Submodule Support](/help/managing-code/git-submodules.md)
   + [GitHub Check Configuration](/help/managing-code/github-check-config.md)
   + [GitHub Check Annotations](/help/managing-code/github-annotations.md)
@@ -70,6 +71,7 @@ role: Admin
 + Release Notes {#release-notes}
   + [Current](/help/release-notes/current.md)
   + 2025 {#rn-2025}
+    + [2025.5.0](/help/release-notes/2025/2025-5-0.md)
     + [2025.4.0](/help/release-notes/2025/2025-4-0.md)
     + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
     + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
