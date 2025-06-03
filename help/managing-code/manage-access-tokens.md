@@ -13,12 +13,12 @@ See also [Add External Repositories in Cloud Manager](/help/managing-code/extern
 
 >[!NOTE]
 >
->The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Manage Access Tokens](/help/managing-code/manage-access-tokens.md#manage-access-tokens).
 
 ## View access tokens {#view-access-tokens}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program whose Bring Your Own Git access token you want to manage.
+1. On the **[My Programs](/help/getting-started/navigation.md#my-programs-console)** console, select the program whose Bring Your Own Git access token you want to manage.
 1. In the side menu, under **Program**, click ![Folder outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositories**.
 1. Near the upper-right corner of the page, click **Manage Access Tokens**.
 
