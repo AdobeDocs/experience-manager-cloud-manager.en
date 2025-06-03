@@ -31,7 +31,7 @@ The next planned release is Thursday, July 10, 2025.
 
     ![Pipelines marked as favorites](/help/release-notes/assets/pipeline-favorites.png)
 
-    See [Mark pipeline favorites](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
+    See [Mark pipeline favorites](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
 ## Early adoption program {#early-adoption}
