@@ -1,6 +1,6 @@
 ---
 title: Manage Access Tokens in Cloud Manager
-description: Learn how to view, edit, and delete access tokens used for Bring Your Own Git in AEM Cloud Manager.
+description: Learn how to view, edit, and delete access tokens used for Bring Your Own Git in Cloud Manager on Adobe Managed Services.
 badge: label="Early Adopter" type="Positive" url="/help/release-notes/current.md#access-tokens" 
 
 ---
