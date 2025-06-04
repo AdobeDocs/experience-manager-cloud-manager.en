@@ -46,7 +46,7 @@ Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and d
 
 See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
-If you are interested in testing this new feature and sharing your feedback, send an email to from your email address associated with your Adobe ID.
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
 
 ### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
 
