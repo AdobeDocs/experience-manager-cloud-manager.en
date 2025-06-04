@@ -16,7 +16,7 @@ See also the [current release notes for Adobe Experience Manager as a Cloud Serv
 
 The release date for [!UICONTROL Cloud Manager] 2025.6.0 is Thursday, June 5, 2025. 
 
-There are no significant new features or bug fixes in the May Cloud Manager release.
+<!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 The next planned release is Thursday, July 10, 2025.
 
@@ -27,9 +27,9 @@ The next planned release is Thursday, July 10, 2025.
 
 * **(UI) Pipeline favorites**
 
-    In this release, Cloud Manager introduces the ability to pin favorite pipelines, allowing you to mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This enhancement makes frequently accessed pipelines easier to find and run. <!-- CMGR-68293 -->
+    In this release, Cloud Manager introduces the ability to pin favorite pipelines, letting you mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This enhancement makes frequently accessed pipelines easier to find and run. <!-- CMGR-68293 -->
 
-    ![Pipelines marked as favorites](/help/release-notes/assets/pipeline-favorites.png)
+    ![Pipelines marked as favorites](/help/release-notes/assets/pipeline-favorites.png) *Two pipelines marked as favorites.*
 
     See [Mark pipeline favorites](/help/using/managing-pipelines.md#pipeline-favorites).
 
@@ -71,11 +71,11 @@ Adobe announces the introduction of support for [staging-only and production-onl
 If you would like to test this feature and provide feedback, email [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) from your email address associated with your Adobe ID.
 
 
+## Bug fix {#bug-fixes}
+
+* AEM Cloud Manager now correctly maps Maven build failures caused by 409 errors (conflicts) when fetching customer artifacts to a customer-caused failure. This change improves error messaging by distinguishing between internal errors and issues related to customer environment setup. <!-- CMGR-66673 -->
+
 <!--
-## Bug fixes {#bug-fixes}
-
-* A
-
 Known Issues {#known-issues}
 
 * A -->

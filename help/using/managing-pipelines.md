@@ -44,25 +44,17 @@ Clicking the `i` icon reveals details about the last or current execution of the
 
 Clicking **View details** takes you to the [details of the pipeline execution](#view-details).
 
-
-
-
-
-
-
-
-
 ### Mark pipeline favorites{#pipeline-favorites}
 
 You can mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This ability makes frequently accessed pipelines easier to find and run.
-
-Favorited pipelines are marked with a ![Star icon for a favorite pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg). 
 
 **To mark pipeline favorites:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 1. From the **Program Overview** page, click ![Pipeline tab - Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines** tab.
 1. On the **Pipelines** page, to the left of a pipeline name and type, click ![Star outline icon for unfavorited pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) to add it to your favorites list.
+    Alternatively, click ![Star icon for a favorite pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) to remove the pipeline from your favorites list.
+
 
 ## Activity page {#activity}
 
