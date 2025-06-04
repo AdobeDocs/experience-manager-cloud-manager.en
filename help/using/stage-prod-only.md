@@ -1,16 +1,11 @@
 ---
-title: Stage-Only and Prod-Only Pipelines
+title: Split Stage-Only and Production-Only Pipelines
 description: Learn how you can split staging and production deployments using dedicated pipelines.
-badge: label="Early Adopter" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 ---
-# Stage-only and production-only pipelines {#stage-prod-only}
+# Split stage-only and production-only pipelines {#stage-prod-only}
 
 Learn how you can split staging and production deployments using dedicated pipelines.
-
->[!NOTE]
->
->This feature is only available to [the early adopter program](/help/release-notes/current.md#staging-production-only-pipelines).
 
 ## Overview {#overview}
 

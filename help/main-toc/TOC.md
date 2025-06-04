@@ -40,7 +40,7 @@ role: Admin
   + CI/CD Pipelines {#pipelines}
     + [Configure a Production Pipeline](/help/using/production-pipelines.md)
     + [Configure a Non-Production Pipeline](/help/using/non-production-pipelines.md)
-    + [Split Stage and Prod Only Pipelines (Early Adopter)](/help/using/stage-prod-only.md)
+    + [Split Stage and Production Only Pipelines](/help/using/stage-prod-only.md)
     + [Manage Pipelines](/help/using/managing-pipelines.md)
   + [Code Deployment](/help/using/code-deployment.md)
   + [Code Quality Testing](/help/using/code-quality-testing.md)

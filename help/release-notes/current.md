@@ -25,6 +25,12 @@ The next planned release is Thursday, July 10, 2025.
 
 ## What's new {#what-is-new}
 
+* **(UI) Staging-only and production-only pipelines**
+
+    Cloud Manager now supports staging-only and production-only pipelines. This feature lets you split full-stack production deployments into smaller, purpose-specific pipelines. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+
+    See [Stage-Only and Prod-Only Pipelines](/help/using/stage-prod-only.md).
+
 * **(UI) Pipeline favorites**
 
     In this release, Cloud Manager introduces the ability to pin favorite pipelines, letting you mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This enhancement makes frequently accessed pipelines easier to find and run. <!-- CMGR-68293 -->
@@ -40,6 +46,7 @@ Participate in Cloud Manager's Early Adoption Program to get exclusive access to
 
 The following early adoption opportunities are currently available:
 
+
 ### Manage Access Tokens{#access-tokens}
 
 Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
@@ -47,6 +54,7 @@ Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and d
 See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
+
 
 ### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
 
@@ -63,12 +71,6 @@ See [Add external repositories in Cloud Manager](/help/managing-code/external-re
 >Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
-
-### Staging-only and production-only pipelines {#staging-production-only-pipelines}
-
-Adobe announces the introduction of support for [staging-only and production-only pipelines](/help/using/stage-prod-only.md). This new feature lets you divide full-stack production deployment pipelines into smaller, more specialized deployments.
-
-If you would like to test this feature and provide feedback, email [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) from your email address associated with your Adobe ID.
 
 
 ## Bug fix {#bug-fixes}
