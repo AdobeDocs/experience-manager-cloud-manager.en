@@ -29,6 +29,8 @@ The next planned release is Thursday, July 10, 2025.
 
     Cloud Manager now supports staging-only and production-only pipelines. This feature lets you split full-stack production deployments into smaller, purpose-specific pipelines. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
 
+    ![Add non-production pipeline dialog box with Full Stack Code radio button selected and Stage environment selected](/help/release-notes/assets/add-non-production-pipeline.png)
+
     See [Stage-Only and Prod-Only Pipelines](/help/using/stage-prod-only.md).
 
 * **(UI) Pipeline favorites**
