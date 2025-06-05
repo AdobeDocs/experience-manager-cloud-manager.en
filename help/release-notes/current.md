@@ -25,7 +25,7 @@ The next planned release is Thursday, July 10, 2025.
 
 ## What's new {#what-is-new}
 
-* **(UI) Staging-only and production-only pipelines**
+* **Staging-only and production-only pipelines**
 
     Cloud Manager now supports staging-only and production-only pipelines. This feature lets you split full-stack production deployments into smaller, purpose-specific pipelines. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
 
@@ -33,7 +33,7 @@ The next planned release is Thursday, July 10, 2025.
 
     See [Stage-Only and Prod-Only Pipelines](/help/using/stage-prod-only.md).
 
-* **(UI) Pipeline favorites**
+* **Pipeline favorites**
 
     In this release, Cloud Manager introduces the ability to pin favorite pipelines, letting you mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This enhancement makes frequently accessed pipelines easier to find and run. <!-- CMGR-68293 -->
 
