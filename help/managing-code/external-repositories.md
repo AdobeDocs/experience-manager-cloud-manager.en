@@ -1,7 +1,7 @@
 ---
 title: Add External Repositories in Cloud Manager
 description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
-badge: label="Early Adopter" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
+badge: label="Private beta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
 ---
 # Add external repositories in Cloud Manager {#external-repositories}
@@ -10,7 +10,7 @@ Learn how to add an external repository into Cloud Manager. Cloud Manager suppor
 
 >[!NOTE]
 >
->The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git](/help/release-notes/current.md#gitlab-bitbucket).
+>The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/release-notes/current.md#gitlab-bitbucket).
 
 ## Configure an external repository
 
@@ -73,7 +73,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
     >[!NOTE]
     >
-    >The feature **Add new Access Token** is currently in the Early Adopters phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
+    >The feature **Add new Access Token** is currently in the private beta phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
 
 1. Click **Validate**.
 
