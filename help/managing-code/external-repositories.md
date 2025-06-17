@@ -140,9 +140,15 @@ For all other external repositories that are onboarded with an access token, suc
     1. Next to the **Webhook Secret** token/key field, click **Generate**, then click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
     Paste the secret in a plain text file. The copied secret is required for your Git vendor's Webhook settings.
 1. Click **Close**. 
-1. Navigate to your Git vendor solution (GitHub Enterpriser, GitLab, or Bitbucket).
+1. Navigate to your Git vendor solution (GitHub Enterprise, GitLab, or Bitbucket).
 
     All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the table.
+
+>[!BEGINTABS]
+
+>[!TAB GitHub Enterprise]
+
+### GitHub Enterprise
 
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
@@ -153,11 +159,43 @@ For all other external repositories that are onboarded with an access token, suc
 1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
 1. Configure the webhook to send the required events that Cloud Manager expects.
 
-    | Repository | Required webhook events |
-    | --- | --- |
-    | GitHub Enterprise | These events allow Cloud Manager to respond to GitHub activity, such as pull request validation, push-based triggers for pipelines, or Edge Delivery Services code sync.<br>Make sure that the webhook is set up to trigger on the following required webhook events:<ul><li>Pull requests<li>Pushes<li>Issue comments</li></li></li></ul></ul></ul> |
-    | GitLab | These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> | 
-    | Bitbucket | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
+    | Required webhook events |
+    | --- |
+    | These events allow Cloud Manager to respond to GitHub activity, such as pull request validation, push-based triggers for pipelines, or Edge Delivery Services code sync.<br>Make sure that the webhook is set up to trigger on the following required webhook events:<ul><li>Pull requests<li>Pushes<li>Issue comments</li></li></li></ul></ul></ul> |
+
+>[!TAB GitLab]
+
+1. Locate the solution's **Webhook** Settings section.
+1. Paste the Webhook URL that you copied earlier into the URL text field.
+    1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
+
+        To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) for full details.
+    
+1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
+1. Configure the webhook to send the required events that Cloud Manager expects.
+
+    | Required webhook events |
+    | --- |
+    | These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> | 
+
+>[!TAB Bitbucket]
+
+### Bitbucket
+
+1. Locate the solution's **Webhook** Settings section.
+1. Paste the Webhook URL that you copied earlier into the URL text field.
+    1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
+
+        To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) for full details.
+    
+1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
+1. Configure the webhook to send the required events that Cloud Manager expects.
+
+    | Required webhook events |
+    | --- |
+    | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
+
+>[!ENDTABS]
 
 ### Validation of pull requests with webhooks
 
