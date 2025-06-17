@@ -45,14 +45,14 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 1. In the **Add Repository** dialog box, select **Private Repository** to link an external Git repository to your program.
  
-   ![Add own repository](/help/managing-code/assets/repositories-private-repo-type.png)
+   ![Add own repository](/help/managing-code/assets/repository-add-private-dialogbox2.png)
 
 1. In each respective field, provide the following details about your repository: 
 
     | Field | Description |
     | --- | --- |
     | **Repository Name** | Required. An expressive name for your new repository. | 
-    | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
+    | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
     | **Select Repository Type** | Required. Select the repository type that you are using:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` (cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.)</li></ul>If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you. |
     | **Description** | Optional. A detailed description of the repository. |
 
@@ -61,20 +61,56 @@ Configuration of an external repository in Cloud Manager consists of three steps
 1. In the **Private Repository Ownership Validation** dialog box, provide an access token to validate ownership of the external repository so you can access it.
 
     ![Selecting an existing access token for a repository](/help/managing-code/assets/repositories-exisiting-access-token.png)
-    *Selecting an existing access token for a Bitbucket repository.*
+    *Selecting an existing access token for a Bitbucket repository (for illustration only).*
 
-    | Token type | Description |
-    | --- | --- |
-    | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-    | **Add new Access Token** |**Repository type: GitHub Enterprise**<br><ul><li> In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Required permissions for the GitHub Enterprise Personal Access Token (PAT)<br>These permissions ensure that Cloud Manager can validate pull requests, manage commit status checks, and access necessary repo details.<br>When you generate the PAT in GitHub Enterprise, make sure it includes the following repository permissions:<ul><li>Pull request (read and write)<li>Commit statuses (read and write)<li>Repository metadata (read-only)</li></li></ul></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
-    | | **Repository type: GitLab**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Required permissions for the GitLab Personal Access Token (PAT)<br>These scopes allow Cloud Manager to access repository data and user information as needed for validation and webhook integration.<br>When you generate the PAT in GitLab, make sure it includes the following token scopes:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. | 
-    | |**Repository type: Bitbucket**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Personal Access Token (PAT)<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Bitbucket, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+>[!BEGINTABS]
 
-    See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
+>[!TAB GitHub Enterprise]
 
-    >[!NOTE]
-    >
-    >The feature **Add new Access Token** is currently in the private beta phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
+**GitHub Enterprise**
+
+| Token type | Description |
+| --- | --- |
+| **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
+| **Add new Access Token** |<ul><li> In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Required permissions for the GitHub Enterprise Personal Access Token (PAT)<br>These permissions ensure that Cloud Manager can validate pull requests, manage commit status checks, and access necessary repo details.<br>When you generate the PAT in GitHub Enterprise, make sure it includes the following repository permissions:<ul><li>Pull request (read and write)<li>Commit statuses (read and write)<li>Repository metadata (read-only)</li></li></ul></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+
+See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
+
+>[!NOTE]
+>
+>The feature **Add new Access Token** is currently in the private beta phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
+
+>[!TAB GitLab]
+
+**GitLab**
+
+| Token type | Description |
+| --- | --- |
+| **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Required permissions for the GitLab Personal Access Token (PAT)<br>These scopes allow Cloud Manager to access repository data and user information as needed for validation and webhook integration.<br>When you generate the PAT in GitLab, make sure it includes the following token scopes:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+
+See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
+
+>[!NOTE]
+>
+>The feature **Add new Access Token** is currently in the private beta phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
+
+>[!TAB Bitbucket]
+
+**Bitbucket**
+
+| Token type | Description |
+| --- | --- |
+| **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Personal Access Token (PAT)<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Bitbucket, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+
+See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
+
+>[!NOTE]
+>
+>The feature **Add new Access Token** is currently in the private beta phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
+
+>[!ENDTABS]
 
 1. Click **Validate**.
 
@@ -148,7 +184,7 @@ For all other external repositories that are onboarded with an access token, suc
 
 >[!TAB GitHub Enterprise]
 
-### GitHub Enterprise
+**GitHub Enterprise**
 
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
@@ -165,6 +201,8 @@ For all other external repositories that are onboarded with an access token, suc
 
 >[!TAB GitLab]
 
+**GitLab**
+
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
     1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
@@ -180,7 +218,7 @@ For all other external repositories that are onboarded with an access token, suc
 
 >[!TAB Bitbucket]
 
-### Bitbucket
+**Bitbucket**
 
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
@@ -203,42 +241,51 @@ After webhooks are correctly configured, Cloud Manager automatically triggers pi
 
 The following behaviors apply:
 
-* **GitHub Enterprise**
+>[!BEGINTABS]
 
-    When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
+>[!TAB GitHub Enterprise]
 
-    ![Commit status to indicate PR validation process on GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
+**GitHub Enterprise**
 
-* **Bitbucket**
+When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
 
-    When code quality validation is running:
+![Commit status to indicate PR validation process on GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
-    ![Status while code quality validation is running](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+>[!TAB GitLab]
 
-    Uses commit status for tracking PR validation progress. In the following case, the screenshot shows what happens when a code quality validation fails due to a customer issue. A comment is added with detailed error information, and a commit check is created, which shows the failure (visible on the right):
+**GitLab**
 
-    ![Pull request validation status for Bitbucket](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+GitLab interactions rely solely on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
 
-* **GitLab**
+When code quality validation is running:
 
-    GitLab interactions rely solely on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
+![When code quality validation is running](/help/managing-code/assets/repository-webhook-gitlab1.png)
 
-    When code quality validation is running:
+When cold quality validation is finished:
 
-    ![When code quality validation is running](/help/managing-code/assets/repository-webhook-gitlab1.png)
+![When cold quality validation is finished](/help/managing-code/assets/repository-webhook-gitlab2.png)
 
-    When cold quality validation is finished:
+When code quality validation fails with an error:
 
-    ![When cold quality validation is finished](/help/managing-code/assets/repository-webhook-gitlab2.png)
+![When code quality validation fails with an error](/help/managing-code/assets/repository-webhook-gitlab3.png)
 
-    When code quality validation fails with an error:
+When the code quality validation fails due to customer issues:
 
-    ![When code quality validation fails with an error](/help/managing-code/assets/repository-webhook-gitlab3.png)
+![When the code quality validation fails due to customer issues](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
-    When the code quality validation fails due to customer issues:
+>[!TAB Bitbucket]
 
-    ![When the code quality validation fails due to customer issues](/help/managing-code/assets/repository-webhook-gitlab4.png)
+**Bitbucket**
 
+When code quality validation is running:
+
+![Status while code quality validation is running](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+
+Uses commit status for tracking PR validation progress. In the following case, the screenshot shows what happens when a code quality validation fails due to a customer issue. A comment is added with detailed error information, and a commit check is created, which shows the failure (visible on the right):
+
+![Pull request validation status for Bitbucket](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+
+>[!ENDTABS]
 
 ## Troubleshoot webhook issues
 
