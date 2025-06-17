@@ -87,7 +87,7 @@ See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 | Token type | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-| **Add new Access Token** |**Repository type: GitLab**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Required permissions for the GitLab Personal Access Token (PAT)<br>These scopes allow Cloud Manager to access repository data and user information as needed for validation and webhook integration.<br>When you generate the PAT in GitLab, make sure it includes the following token scopes:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Required permissions for the GitLab Personal Access Token (PAT)<br>These scopes allow Cloud Manager to access repository data and user information as needed for validation and webhook integration.<br>When you generate the PAT in GitLab, make sure it includes the following token scopes:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
 See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
@@ -95,14 +95,14 @@ See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 >
 >The feature **Add new Access Token** is currently in the private beta phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
 
->[!TAB GitLab]
+>[!TAB Bitbucket]
 
-**GitLab**
+**Bitbucket**
 
 | Token type | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-| **Add new Access Token** |**Repository type: Bitbucket**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Personal Access Token (PAT)<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Bitbucket, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Personal Access Token (PAT)<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Bitbucket, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
 See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
