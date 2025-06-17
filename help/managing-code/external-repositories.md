@@ -195,6 +195,8 @@ For all other external repositories that are onboarded with an access token, suc
     | --- |
     | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
 
+>[!ENDTABS]
+
 ### Validation of pull requests with webhooks
 
 After webhooks are correctly configured, Cloud Manager automatically triggers pipeline executions or PR validation checks for your repository. 
