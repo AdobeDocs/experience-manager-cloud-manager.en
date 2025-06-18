@@ -164,7 +164,7 @@ For all other external repositories that are onboarded with an access token, suc
 1. Click **Close**. 
 1. Navigate to your Git vendor solution (GitHub Enterprise, GitLab, or Bitbucket).
 
-    All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the table.
+    All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the tabbed table.
 
 >[!BEGINTABS]
 
@@ -219,7 +219,7 @@ For all other external repositories that are onboarded with an access token, suc
 
 After webhooks are correctly configured, Cloud Manager automatically triggers pipeline executions or PR validation checks for your repository. 
 
-The following behaviors apply:
+Based on the external repository you are using, the following behaviors apply:
 
 >[!BEGINTABS]
 
