@@ -105,7 +105,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
     See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 
 ## Link a validated external repository to a pipeline {#validate-ext-repo}
