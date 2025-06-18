@@ -67,8 +67,6 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 | Token type | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
@@ -82,8 +80,6 @@ See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB GitLab]
 
-**GitLab**
-
 | Token type | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
@@ -96,8 +92,6 @@ See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 >The feature **Add new Access Token** is currently in the private beta phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
 
 >[!TAB Bitbucket]
-
-**Bitbucket**
 
 | Token type | Description |
 | --- | --- |
@@ -184,8 +178,6 @@ For all other external repositories that are onboarded with an access token, suc
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
     1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
@@ -201,8 +193,6 @@ For all other external repositories that are onboarded with an access token, suc
 
 >[!TAB GitLab]
 
-**GitLab**
-
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
     1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
@@ -217,8 +207,6 @@ For all other external repositories that are onboarded with an access token, suc
     | These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> | 
 
 >[!TAB Bitbucket]
-
-**Bitbucket**
 
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
@@ -245,15 +233,11 @@ The following behaviors apply:
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
 
 ![Commit status to indicate PR validation process on GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 >[!TAB GitLab]
-
-**GitLab**
 
 GitLab interactions rely solely on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
 
@@ -274,8 +258,6 @@ When the code quality validation fails due to customer issues:
 ![When the code quality validation fails due to customer issues](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
 >[!TAB Bitbucket]
-
-**Bitbucket**
 
 When code quality validation is running:
 
