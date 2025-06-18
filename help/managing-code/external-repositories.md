@@ -63,9 +63,9 @@ Configuration of an external repository in Cloud Manager consists of three steps
     ![Selecting an existing access token for a repository](/help/managing-code/assets/repositories-exisiting-access-token.png)
     *Selecting an existing access token for a Bitbucket repository (for illustration only).*
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB GitHub Enterprise]
+>[!TAB GitHub Enterprise]
 
     | Token type | Description |
     | --- | --- |
@@ -78,7 +78,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
     See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
-    >[!TAB GitLab]
+>[!TAB GitLab]
 
     | Token type | Description |
     | --- | --- |
@@ -92,7 +92,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
     See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
 
-    >[!TAB Bitbucket]
+>[!TAB Bitbucket]
 
     | Token type | Description |
     | --- | --- |
