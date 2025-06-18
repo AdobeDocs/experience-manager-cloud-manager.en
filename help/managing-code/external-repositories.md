@@ -58,7 +58,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 1. Select **Save** to add the repository.
 
-    Now you provide an access token to validate ownership of the external repository.
+    Now, provide an access token to validate ownership of the external repository.
 
 1. In the **Private Repository Ownership Validation** dialog box, provide an access token to validate ownership of the external repository so you can access it, then click **Validate**.
 
@@ -176,9 +176,7 @@ For all other external repositories that are onboarded with an access token, suc
         To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) for full details.
     
 1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
-1. Configure the webhook to send the required events that Cloud Manager expects.
-
-    Based on the vendor solution you are using, use the following table to help you set the required webhook events.
+1. Configure the webhook to send the events that Cloud Manager requires. Use the following table to determine the correct events for your Git provider.
 
 >[!BEGINTABS]
 
@@ -205,9 +203,10 @@ For all other external repositories that are onboarded with an access token, suc
 
 ### Validation of pull requests with webhooks
 
-After webhooks are correctly configured, Cloud Manager automatically triggers pipeline executions or PR validation checks for your repository. 
+After webhooks are correctly configured, Cloud Manager automatically triggers pipeline executions or pull request (PR) validation checks for your repository. 
 
-Based on the vendor solution you are using, the following behaviors apply:
+The behavior varies depending on the Git provider that you use, as outlined below.
+
 
 >[!BEGINTABS]
 
