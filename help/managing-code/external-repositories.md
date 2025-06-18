@@ -58,6 +58,8 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 1. Select **Save** to add the repository.
 
+    Now, provide an access token to validate ownership of the external repository.
+
 1. In the **Private Repository Ownership Validation** dialog box, provide an access token to validate ownership of the external repository so you can access it, then click **Validate**.
 
     ![Selecting an existing access token for a repository](/help/managing-code/assets/repositories-exisiting-access-token.png)
@@ -123,6 +125,7 @@ See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 >
 >For details about managing repositories in Cloud Manager, see [Cloud Manager Repositories](/help/managing-code/managing-repositories.md).
 
+
 ## Configure a webhook for an external repository {#configure-webhook}
 
 Cloud Manager lets you configure webhooks for external Git repositories that you have added. See [Add an external repository](#add-ext-repo). These webhooks permit Cloud Manager to receive events that are related to different actions within your Git vendor solution.
@@ -149,7 +152,7 @@ For all other external repositories that are onboarded with an access token, suc
 
 1. On the **Repositories** page, using the **Type** column to guide you in your selection, locate the repository you want, then click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to it.
 
-   ![Config Webhook option on drop-down menu for a selected repository](/help/managing-code/assets/repository-config-webhook.png)
+    ![Config Webhook option on drop-down menu for a selected repository](/help/managing-code/assets/repository-config-webhook.png)
 
 1. From the drop-down menu, click **Config Webhook**.
 
@@ -166,10 +169,6 @@ For all other external repositories that are onboarded with an access token, suc
 
     All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the tabbed table.
 
->[!BEGINTABS]
-
->[!TAB GitHub Enterprise]
-
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
     1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
@@ -177,7 +176,11 @@ For all other external repositories that are onboarded with an access token, suc
         To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) for full details.
     
 1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
-1. Configure the webhook to send the required events that Cloud Manager expects.
+1. Configure the webhook to send the events that Cloud Manager requires. Use the following table to determine the correct events for your Git provider.
+
+>[!BEGINTABS]
+
+>[!TAB GitHub Enterprise]
 
     | Required webhook events |
     | --- |
@@ -185,29 +188,11 @@ For all other external repositories that are onboarded with an access token, suc
 
 >[!TAB GitLab]
 
-1. Locate the solution's **Webhook** Settings section.
-1. Paste the Webhook URL that you copied earlier into the URL text field.
-    1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
-
-        To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) for full details.
-    
-1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
-1. Configure the webhook to send the required events that Cloud Manager expects.
-
     | Required webhook events |
     | --- |
     | These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> | 
 
 >[!TAB Bitbucket]
-
-1. Locate the solution's **Webhook** Settings section.
-1. Paste the Webhook URL that you copied earlier into the URL text field.
-    1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
-
-        To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) for full details.
-    
-1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
-1. Configure the webhook to send the required events that Cloud Manager expects.
 
     | Required webhook events |
     | --- |
@@ -215,11 +200,13 @@ For all other external repositories that are onboarded with an access token, suc
 
 >[!ENDTABS]
 
+
 ### Validation of pull requests with webhooks
 
-After webhooks are correctly configured, Cloud Manager automatically triggers pipeline executions or PR validation checks for your repository. 
+After webhooks are correctly configured, Cloud Manager automatically triggers pipeline executions or pull request (PR) validation checks for your repository. 
 
-Based on the external repository you are using, the following behaviors apply:
+The behavior varies depending on the Git provider that you use, as outlined below.
+
 
 >[!BEGINTABS]
 
