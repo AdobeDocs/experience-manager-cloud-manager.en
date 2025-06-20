@@ -68,7 +68,7 @@ To <url>
 
 ## Additional branches {#additional-branches}
 
-A single `main` branch may suffice for very simple projects, but in most cases, a more complex branching strategy is required. Many customers follow a process where day-to-day development activities are performed on a branch called `develop`. The develop branch is then merged into the `main` branch when it is time for a deployment.
+A single `main` branch may suffice for very simple projects, but in most cases, a more complex branching strategy is required. Many customers follow a process where day-to-day development activities are performed on a branch called `develop`. The `develop` branch is then merged into the `main` branch when it is time for a deployment.
 
 >[!TIP]
 >

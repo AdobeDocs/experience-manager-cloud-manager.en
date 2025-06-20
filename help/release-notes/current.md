@@ -67,7 +67,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 #### Manage Access Tokens{#access-tokens}
 
-Use the **Manage Access Tokens** feature, in conjunction with BYOG, to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
+Use **Manage Access Tokens** with BYOG, to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
 
 See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 

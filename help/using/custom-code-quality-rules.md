@@ -221,7 +221,7 @@ public void orDoThis(Session session) throws Exception {
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
-As described in the [Sling documentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths are discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
+As described in [Sling documentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html), binding servlets by paths are discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
 
 #### Non-compliant code {#non-compliant-code-5}
 
@@ -469,7 +469,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Paths starting with `/libs` and `/apps` should generally not be hardcoded. These paths are typically stored relative to the Sling search path, which defaults to `/libs,/apps`. Using the absolute path may introduce subtle defects that would only appear later in the project lifecycle.
+Paths starting with `/libs` and `/apps` should generally not be hardcoded. These paths are typically stored relative to the `Sling` search path, which defaults to `/libs,/apps`. Using the absolute path may introduce subtle defects that would only appear later in the project lifecycle.
 
 #### Non-compliant code {#non-compliant-code-13}
 
@@ -494,7 +494,7 @@ public void doThis(Resource resource) {
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-Do not use the Sling Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
+Do not use Sling Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
 
 See [Apache Sling Eventing and Job Handling documentation](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in clustered environments.
 
@@ -886,14 +886,14 @@ AEM Cloud Service prohibits the creation of indexing definitions that contain ha
 
 AEM Cloud Service prohibits the creation of indexing definitions with unsupported async properties.
 
-### Configuration of indexing definitions should not have same tag in multiple indexes {#oakpal-indexing-same-tag-multiple-indexes}
+### Configuration of indexing definitions should not have the same tag in multiple indexes {#oakpal-indexing-same-tag-multiple-indexes}
 
 * **Key**: SameTagInMultipleIndexes
 * **Type**: Improvement
 * **Severity**: Minor
 * **Since**: Version 2025.3.0
 
-AEM Cloud Service prohibits the creation of indexing definitions that contain same tag in multiple indexes.
+AEM Cloud Service prohibits the creation of indexing definitions that contain the same tag in multiple indexes.
 
 ### Configuration of indexing definitions should not contain mode replacement for forbidden paths {#oakpal-xml-mode-analysis}
 
@@ -902,8 +902,7 @@ AEM Cloud Service prohibits the creation of indexing definitions that contain sa
 * **Severity**: Major
 * **Since**: Version 2025.4.0
 
-The use of the "replacement" mode in file vault is not allowed for paths below /content; it should not be used for paths below /etc and /var.
-The mode "replace" will replace all already existing content in the repository with the one provided in the content package and packages triggering this action should not be part of packages deployed via CloudManager.
+The use of the "replacement" mode in file vault is not allowed for paths below `/content`; it should not be used for paths below `/etc` and `/var.`. The "replace" mode overwrites existing repository content with content that comes from the package. Packages that trigger this action should not be included in those packages deployed through Cloud Manager.
 
 ## Dispatcher optimization tool {#dispatcher-optimization-tool-rules}
 

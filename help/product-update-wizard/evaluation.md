@@ -7,15 +7,14 @@ exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 
 # Evaluation phase {#evaluation}
 
-The first phase in the Product Update wizard is the **[!UICONTROL Evaluation]** phase, which assesses the upgrade complexity with the pattern detector directly within the wizard. At the end of this step, you can access the evaluation report.
+The first phase of the Product Update wizard is the **[!UICONTROL Evaluation]** phase. It runs the pattern detector within the wizard to assess upgrade complexity. At the end of this step, you can view the evaluation report.
 
-The generated report lets you check the author instance for upgrade eligibility by detecting the following patterns that:
+The report checks the author instance for upgrade readiness by detecting patterns for the following:
 
-* Break certain rules related to areas impacted or overwritten by the upgrade.
+* Rule violations in areas impacted or overwritten by the upgrade.
+* It uses AEM 6.x features or APIs that are not backwards compatible and may break after the upgrade.
 
-* Use an AEM 6.x feature or an API that is not backwards compatible with the new version of AEM and can potentially break after an upgrade.
-
-The report serves as an assessment of the development effort that is involved in upgrading to Adobe Experience Manager (AEM) 6.5.
+This report helps estimate the development effort required to upgrade to Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
 >
@@ -39,4 +38,4 @@ The pattern detector can run in any environment. However, to increase the detect
 
    ![Report created](/help/assets/Evaluation-1.png)
 
-The current release of the Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
+The current Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.

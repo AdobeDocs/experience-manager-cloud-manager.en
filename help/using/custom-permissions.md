@@ -104,24 +104,24 @@ See **Add users and user groups to a product profile** of the document [Manage p
 
 The following permissions are available for creating custom profiles.
 
-|Permission|Description|
-|---|---|
-|Program Access|Allow users to access programs|
-|Program Edit|Allow users to edit programs|
-|Pipeline Create|Allow users to create new pipelines|
-|Pipeline Delete|Allow users to delete pipelines|
-|Pipeline Edit|Allow users to edit pipelines|
-|Production Deployments Approve/Reject|Allow users to approve or reject a production deployment step|
-|Pipeline Executions Cancel|Allow users to cancel pipeline executions|
-|Pipeline Executions Start|Allow users to start new pipeline executions|
-|Override/Reject Important Metric Failures|Allow users to override/reject important metric failures|
-|Production Deployments Schedule|Allow users to schedule a production deployment step|
-|Repository Info Access|Allow users to access repository information and generate an access password|
-|Repository Create|Allow users to create new Git repositories|
-|Repository Delete|Allow users to delete Git repositories|
-|Repository Edit|Allow users to edit Git repositories|
-|Repository Code Generate|Allow users to generate projects from archetype|
-|Content Copy Manage|Allow users to manage content copy operations|
+| Permission | Description |
+| --- | --- |
+| `Program Access` | Allow users to access programs |
+| `Program Edit` | Allow users to edit programs |
+| `Pipeline Create` | Allow users to create new pipelines |
+| `Pipeline Delete` | Allow users to delete pipelines |
+| `Pipeline Edit` | Allow users to edit pipelines |
+| `Production Deployments Approve/Reject` | Allow users to approve or reject a production deployment step |
+| `Pipeline Executions Cancel` | Allow users to cancel pipeline executions |
+| `Pipeline Executions Start` | Allow users to start new pipeline executions |
+| `Override/Reject Important Metric Failures` | Allow users to override/reject important metric failures |
+| `Production Deployments Schedule` | Allow users to schedule a production deployment step |
+| `Repository Info Access` | Allow users to access repository information and generate an access password |
+| `Repository Create` | Allow users to create new Git repositories |
+| `Repository Delete` | Allow users to delete Git repositories |
+| `Repository Edit` | Allow users to edit Git repositories |
+| `Repository Code Generate` | Allow users to generate projects from archetype |
+| `Content Copy Manage` | Allow users to manage content copy operations |
 
 ### Organization-level permissions {#organization-level}
 
@@ -135,22 +135,22 @@ See the [Source Code Repository](/help/requirements/source-code-repository.md) f
 
 The following terms are used in creating and managing custom permissions and pre-defined roles.
 
-|Term|Description|
-|---|---|
-|Predefined Permissions|Predefined roles like **Business Owner**, **Deployment Manager**, and so on. to govern various features of Cloud Manager. For details on pre-defined roles, see [Role-Based Permissions](/help/requirements/role-based-permissions.md).|
-|Custom Permissions|Cloud Manager features that allow users to create permission profiles to define roles to govern supported features of Cloud Manager|
-|Permission Profile|Created in the Admin Console to manage configurable permissions that are applicable to users who are part of the permission profile| 
-|Configurable Permission|Cloud Manager permissions can be configured in the permission profile|
-|Permission Item|A program, environment or pipeline resource on which a permission can be applied|
+| Term | Description |
+| --- | --- |
+| Predefined Permissions | Predefined roles like **Business Owner**, **Deployment Manager**, and so on. to govern various features of Cloud Manager. For details on pre-defined roles, see [Role-Based Permissions](/help/requirements/role-based-permissions.md). |
+| Custom Permissions | Cloud Manager features that allow users to create permission profiles to define roles to govern supported features of Cloud Manager |
+| Permission Profile | Created in the Admin Console to manage configurable permissions that are applicable to users who are part of the permission profile | 
+| Configurable Permission | Cloud Manager permissions can be configured in the permission profile |
+| Permission Item | A program, environment or pipeline resource on which a permission can be applied |
 
 Permission items refer to the scope where permissions are applied. Typically, it is one of the following.
 
-|Permission Item Type|Example|Description|
-|---|---|---|
-|Organization|organization:companyA|All applicable resources of an organization. A resource could be a program, environment, or pipeline. If the user adds an organization for any permission, then all new resources in that organization also have that permission.|
-|Program|Program A|All applicable resources of a program|
-|Environment|Program A : environment|Applicable in a specific environment|
-|Pipeline|Program A : Pipeline|Applicable on a specific pipeline|
+| Permission Item Type | Example | Description |
+| --- | --- | --- |
+| Organization | organization:companyA | All applicable resources of an organization. A resource could be a program, environment, or pipeline. If the user adds an organization for any permission, then all new resources in that organization also have that permission. |
+| Program | Program A | All applicable resources of a program. |
+| Environment | Program A : environment | Applicable in a specific environment.|
+| Pipeline | Program A : Pipeline | Applicable on a specific pipeline.|
 
 ## Limitations {#limitations}
 
