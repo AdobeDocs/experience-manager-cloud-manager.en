@@ -128,6 +128,6 @@ Certain limitations apply when using private repositories with Cloud Manager.
 * Web tier and config pipelines are not supported with private repositories.
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
 * If the Adobe GitHub app is removed from your GitHb organization, this action removes the pull requests validation feature for all repositories.
-* Pipelines using private repositories and the on-commit build trigger are not started automatically when a new commit is pushed into the selected branch.
+* Pipelines using private repositories and the on-committed build trigger are not started automatically when a new commit is pushed into the selected branch.
 * [Artifact reuse functionality](/help/getting-started/project-setup.md#build-artifact-reuse) does not apply to private repositories.
 * You cannot pause the pull request validation using the GitHub check from Cloud Manager. If the GitHub repository is validated in Cloud Manager, Cloud Manager tries to validate the pull requests created for that repository.

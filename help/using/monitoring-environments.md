@@ -23,7 +23,7 @@ Adobe Managed Services sets the thresholds, which you can view in [!UICONTROL Cl
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
 
 1. Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) of the program that you want to monitor.
-1. In the menu, under the **Manage** heading, click **Show Monitoring** to open the **Reports** page that shows system monitoring information.
+1. In the menu, under **Manage**, click **Show Monitoring** to open the **Reports** page that shows system monitoring information.
  
    ![Settings](/help/assets/first-timea1.png)
 
@@ -67,28 +67,28 @@ For example, if you click the warning threshold series, you see only the critica
 
 #### Host {#host}
 
-* **Load Per Core**: The number of processes that the CPU is executing. Or, the number of queued processes that are in a waiting state averaged over a one (load1), five (load5), and fifteen (load15) minute period.
-* **Process Count**: The number of processes currently open.
-* **User Count**: The number of users with an active shell session.
-* **Memory Usage**: The percentage of system memory currently allocated.
-* **JVM Memory**: The size (in megabytes) of the allocated Java heap.
-* **Old Generation Space**: The percentage of JVM old generation memory currently allocated.
+* **`Load Per Core`**: The number of processes that the CPU is executing. Or, the number of queued processes that are in a waiting state averaged over a one (load1), five (load5), and fifteen (load15) minute period.
+* **P`rocess Count`**: The number of processes currently open.
+* **`User Count`**: The number of users with an active shell session.
+* **`Memory Usage`**: The percentage of system memory currently allocated.
+* **`JVM Memory`**: The size (in megabytes) of the allocated Java heap.
+* **`Old Generation Space`**: The percentage of JVM old generation memory currently allocated.
 
 #### Network {#network}
 
-* **CQ Port Check**: The response time in seconds to access the AEM or Dispatcher port. There are different metrics for author, publish, and Dispatcher.
+* **`CQ Port Check`**: The response time in seconds to access the AEM or Dispatcher port. There are different metrics for author, publish, and Dispatcher.
 
 #### Storage {#storage}
 
-* **Disk Space**: The used disk space (in megabytes) for each mount point on the host. There are different metrics for each mount point. At a minimum, there are metrics for `/` and `/mnt`, but additional mount point metrics may be available depending on the specific instance configuration.
-* **Folder Size**
-* **AEM Segment Store**: The used disk space (in gigabytes) for the AEM Segment Store.
+* **`Disk Space`**: The used disk space (in megabytes) for each mount point on the host. There are different metrics for each mount point. At a minimum, there are metrics for `/` and `/mnt`, but additional mount point metrics may be available depending on the specific instance configuration.
+* **`Folder Size`**
+* **`AEM Segment Store`**: The used disk space (in gigabytes) for the AEM Segment Store.
 
 #### Application {#application}
 
-* **Replication Agent**: The time (in seconds) for a test replication event
+* **`Replication Agent`**: The time (in seconds) for a test replication event
   * There are separate metrics for each replication agent.
-* **Dispatcher Flush**: The number of items currently in the Dispatcher flush queue
+* **`Dispatcher Flush`**: The number of items currently in the Dispatcher flush queue
 
 ## SLA reporting {#sla-reporting}
 
@@ -108,12 +108,12 @@ The **Event Analysis** section under this graph shows the set of incidents that 
 
 ## SLA metrics {#sla-metrics}
 
-* **Author Contract**: The SLA defined in your contract with Adobe Managed Services for the author tier.
-* **AMS Author SLA**: The measured uptime of the production author tier, factoring incidents caused by vendors or by Adobe.
-* **Author SLA**: The measured uptime of the author tier ignoring scheduled downtime such as maintenance windows.
-* **End User Contract**: The SLA defined in your contract with Adobe Managed Services for the publish tier.
-* **AMS End User SLA**: The measured uptimes of the production publish tier, factoring incidents caused by vendors or by Adobe.
-* **End User SLA**: The measured uptime of the publish tier ignoring scheduled downtime such as maintenance windows.
+* **`Author Contract`**: The SLA defined in your contract with Adobe Managed Services for the author tier.
+* **`AMS Author SLA`**: The measured uptime of the production author tier, factoring incidents caused by vendors or by Adobe.
+* **`Author SLA`**: The measured uptime of the author tier ignoring scheduled downtime such as maintenance windows.
+* **`End User Contract`**: The SLA defined in your contract with Adobe Managed Services for the publish tier.
+* **`AMS End User SLA`**: The measured uptimes of the production publishing tier, factoring incidents caused by vendors or by Adobe.
+* **`End User SLA`**: The measured uptime of the publishing tier ignoring scheduled downtime such as maintenance windows.
 
 ## Video tutorial {#video-tutorial}
 
