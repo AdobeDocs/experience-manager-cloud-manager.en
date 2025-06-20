@@ -23,7 +23,7 @@ role: Admin
   + [Access Rights](/help/requirements/access-rights.md)
   + [Source Code Repository](/help/requirements/source-code-repository.md)
   + [Role-Based Permissions](/help/requirements/role-based-permissions.md)
-  + [Set Up Users and Roles](/help/requirements/users-and-roles.md)
+  + [Add Users and Roles](/help/requirements/users-and-roles.md)
   + [Custom Permissions](/help/using/custom-permissions.md)
   + [Environment Provisioning](/help/requirements/environment-provisioning.md)
 + Get Started {#getting-started}

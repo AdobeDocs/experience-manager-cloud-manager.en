@@ -36,7 +36,7 @@ The following table summarizes the roles in Cloud Manager.
 >
 >The Developer persona in the Admin Console is unrelated to the Developer role in [!UICONTROL Cloud Manager].
 
-## Create a profile using the Admin Console {#using-admin-console-to-create-a-profile}
+## Create a product profile using the Admin Console {#using-admin-console-to-create-a-profile}
 
 [!UICONTROL Cloud Manager] roles are managed from the Admin Console. Specific role memberships are provided by adding the user to a [!UICONTROL Cloud Manager] product profile.
 
@@ -49,7 +49,13 @@ An administrator must create new product profiles under the [!UICONTROL AEM Mana
 * Developer
 * Program Manager
 
-You can create or add users or groups to these product profiles with the Admin Console.
+Create or add users or groups to these product profiles with the Admin Console.
+
+>[!IMPORTANT]
+>
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile.
+
+**To create a product profile using the Admin Console:**
 
 1. Log in to the Admin Console at [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
@@ -70,6 +76,10 @@ You can create or add users or groups to these product profiles with the Admin C
    * **Profile Name** - The **Profile Name** can be anything, although to avoid confusion it is recommended to use the values in the **Recommended Profile Name** column.
    * **Display Name** -  The **Display Name** must be the technical value defined by [!UICONTROL Cloud Manager] (see the following table).
    * **Permission Group** - You may choose a permission group for the profile (not always available).
+
+      >[!IMPORTANT]
+      >
+      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile.
 
    ![Creating a new profile](/help/assets/screen_shot_2018-05-04at171819.png)
 
