@@ -34,7 +34,7 @@ Follow these steps to set up the program and define KPIs.
 
    ![Defining KPIs](/help/assets/Setup_Program-KPIs.png)
 
-1. On the **Provisioning** tab, you can define the on-demand scaling options for your environments if autoscaling is enabled for your program. 
+1. On the **Provisioning** tab, you can define the On-demand scaling options for your environments if autoscaling is enabled for your program. 
 
    Autoscaling is applicable to the production environment only and may not be available for all customer programs.
 
@@ -78,7 +78,7 @@ Use the action bar to switch to another program, edit the current program, or ad
 
 Sites KPIs are measured on tests run in the staging environment. Typically, these KPIs are scaled down to fit the capabilities of the staging environment.
 
-For example, a user expecting an average of 1000 page views per minute in their production environment, and has four Dispatcher/publishing servers in production, should scale this scenario to 250 page views per minute. This scenario assumes that their staging environment consists of only a single dispatcher/publish server pair.
+For example, a user expecting an average of 1000 page views per minute in their production environment, and has four Dispatcher/publishing servers in production, should scale this scenario to 250 page views per minute. This scenario assumes that their staging environment consists of only a single Dispatcher/publish server pair.
 
 Assets performance testing involves repeatedly uploading assets over a 30-minute period. The processing time for each asset and various system-level metrics are measured throughout the test.
 

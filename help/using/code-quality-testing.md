@@ -120,18 +120,18 @@ The following table lists the health checks.
 | Deserialization firewall is loaded. | [Deserialization Firewall Loaded](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) |Critical |
 | `AuthorizableNodeName` implementation does not expose authorizable ID in the node name/path. | [Authorizable Node Name Generation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security-checklist#security) |Critical |
 | Default passwords have been changed. | [Default Login Accounts](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) |Critical |
-| Sling default GET servlet is protected from DOS attacks. | Sling Get Servlet |Critical |
-| The Sling JavaScript handler is configured appropriately. | Sling JavaScript Handler |Critical |
-| The Sling JSP Script handler is configured appropriately. | Sling JSP Script Handler |Critical |
+| `Sling` default GET servlet is protected from DOS attacks. | `Sling Get` servlet |Critical |
+| The `Sling` JavaScript handler is configured appropriately. | `Sling` JavaScript Handler |Critical |
+| The `Sling` JSP Script handler is configured appropriately. | `Sling` JSP Script Handler |Critical |
 | SSL is configured correctly. | SSL Configuration |Critical |
 | No obviously insecure user profile policies are found. | User Profile Default Access |Critical |
-| The Sling Referrer filter is configured to prevent CSRF attacks. | [Sling Referrer Filter](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security-checklist#security) |Important |
+| The `Sling` Referrer filter is configured to prevent CSRF attacks. | [Sling Referrer Filter](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security-checklist#security) |Important |
 | The Adobe Granite HTML Library Manager is configured appropriately. | CQ HTML Library Manager Config |Important |
 | CRXDE Support bundle is disabled. | CRXDE Support |Important |
-| Sling DavEx bundle and servlet are disabled. | DavEx Health Check |Important |
+| `Sling` DavEx bundle and servlet are disabled. | DavEx Health Check |Important |
 | Sample content is not installed. | Example Content Packages |Important |
 | Both the WCM Request Filter and the WCM Debug Filter are disabled. | [WCM Filters Configuration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) |Important |
-| Sling WebDAV bundle and servlet are configured appropriately. | WebDAV Health Check |Important |
+| `Sling` WebDAV bundle and servlet are configured appropriately. | WebDAV Health Check |Important |
 | The web server is configured to prevent clickjacking. | Web Server Configuration |Important |
 | Replication is not using the `admin` user. | Replication and Transport Users |Info |
 

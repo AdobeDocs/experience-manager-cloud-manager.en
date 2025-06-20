@@ -5,7 +5,7 @@ exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 ---
 # Split stage-only and production-only pipelines {#stage-prod-only}
 
-Learn how you can split staging and production deployments using dedicated pipelines.
+You can split staging and production deployments using dedicated pipelines.
 
 ## Overview {#overview}
 
@@ -69,7 +69,7 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 ### Prod-only pipelines {#prod-only}
 
-1. After you select the **Add Production Only Pipeline** option, the **Add Production Only Pipeline** dialog box opens.
+1. After you click **Add Production Only Pipeline**, its associated dialog box opens.
 1. In the **Pipeline Name** field, type the name you want. The remaining options and functionality of the dialog box work the same as those options found in the standard coupled pipeline creation dialog box. 
 1. In the lower-right corner of the dialog box, click **Save**.
 

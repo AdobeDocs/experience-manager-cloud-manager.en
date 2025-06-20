@@ -68,7 +68,7 @@ The **Repository Info** window opens with the details. For more information on a
 
 ## Check branches / Create Project {#check-branches}
 
-In **AEM Cloud Manager**, the **Check Branches / Create Project** action serves two purposes, depending on the current state of the repository.
+In **AEM Cloud Manager**, **Check Branches / Create Project** serves two purposes, depending on the current state of the repository.
 
 * If the repository is newly created, this action generates a sample project using [the AEM project archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
 * If the sample project is already created in the repository, the action checks the status of the repository and its branches, providing feedback on whether the sample project already exists.

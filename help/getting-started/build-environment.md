@@ -27,7 +27,7 @@ Cloud Manager's build environments have the following attributes.
   * `graphicsmagick`
 * Other packages may be installed at build time as described in the section [Installing Additional System Packages](#installing-additional-system-packages).
 * Every build is done in a pristine environment. The build container does not keep any state between executions.
-* Maven is always run with these three commands: 
+* Maven is run with these three commands: 
   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
@@ -112,7 +112,7 @@ The currently available vendor/version combinations are:
 
 It is also possible to select Oracle 8 or Oracle 11 as the JDK for the entire Maven execution. Unlike the toolchains options, this changes the JDK used for all plug-ins unless the toolchains configuration is also set, in which case the toolchains configuration is still applied for toolchains-aware Maven plug-ins. As a result, checking and enforcing the Java version using the [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) works.
 
-To do this process, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. This file can have either the content `11` or `8`. Any other value is ignored. If `11` is specified, Oracle 11 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk-11.0.22`. If `8` is specified, Oracle 8 is used and the `JAVA_HOME` environment variable is set to `/usr/lib/jvm/jdk1.8.0_401`.
+To do this process, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. This file can have either the content `11` or `8`. Any other value is ignored. If `11` is specified, the system uses Oracle 11 and sets the `JAVA_HOME` environment variable to `/usr/lib/jvm/jdk-11.0.22`. If `8` is specified, the system uses Oracle 8 and sets the `JAVA_HOME` environment variable to `/usr/lib/jvm/jdk1.8.0_401`.
 
 ## Environment variables {#environment-variables}
 
