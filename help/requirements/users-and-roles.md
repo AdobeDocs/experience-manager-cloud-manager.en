@@ -51,9 +51,10 @@ An administrator must create new product profiles under the [!UICONTROL AEM Mana
 
 Create or add users or groups to these product profiles with the Admin Console.
 
+<!-- CQDOC-22790
 >[!IMPORTANT]
 >
->Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile.
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
 **To create a product profile using the Admin Console:**
 
@@ -77,9 +78,10 @@ Create or add users or groups to these product profiles with the Admin Console.
    * **Display Name** -  The **Display Name** must be the technical value defined by [!UICONTROL Cloud Manager] (see the following table).
    * **Permission Group** - You may choose a permission group for the profile (not always available).
 
+<!-- CQDOC-22790
       >[!IMPORTANT]
       >
-      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile.
+      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
    ![Creating a new profile](/help/assets/screen_shot_2018-05-04at171819.png)
 
