@@ -34,6 +34,9 @@ Cloud Manager's build environments have the following attributes.
 * Maven is configured at a system level with a `settings.xml` file, which automatically includes the public Adobe artifact repository using a profile named `adobe-public`. See the [Adobe public Maven repository](https://repo1.maven.org/) for more details.
 * Node.js 18 is available for [front end pipelines](/help/overview/ci-cd-pipelines.md).
 
+>[!IMPORTANT]
+>Maven toolchains support was removed as of Cloud Manager 2025.06.0. JDK selection is now supported only through `.cloudmanager/java-version`. For more information, see [Using a specific Java version](#using-java-version).
+
 >[!NOTE]
 >
 >Although Cloud Manager does not define a specific version of the `jacoco-maven-plugin`, the version used must be at least `0.7.5.201505241946`.
@@ -56,11 +59,19 @@ To ensure a smooth experience with the updated version, Adobe recommends that us
 
 ## Using a specific Java version {#using-java-version}
 
-By default, projects built by the Cloud Manager build process use the Oracle 8 JDK. Customers wishing to use an alternate JDK have two options.
+By default, projects built by the Cloud Manager build process use the Oracle 8 JDK. Customers wanting to use an alternate JDK can select an alternate JDK version for the entire Maven execution process.
 
-* [Maven Toolchains](#maven-toolchains) 
-* [Selecting an alternate JDK version for the entire Maven execution process](#alternate-maven)
+>[!IMPORTANT]
+>
+>Maven Toolchains are no longer supported in Cloud Manager 2025.06.0. Be aware that pipelines containing a maven-toolchains-plugin configuration are going to fail with `Cannot find matching toolchain definitions.` Use the `.cloudmanager/java-version` file to select JDK 11, 17, or 21 instead.
+>
+>Migration guidance:
+>
+>1. Remove toolchains: delete any <plugin>org.apache.maven.plugins:maven-toolchains-plugin</plugin> entry and any `toolchains.xml` committed to your source control.
+>1. Pick a JDK with `.cloudmanager/java-version`: explain the file contents (21, 17, or 11) as described in [Alternate Maven execution JDK version](#alternate-maven).
+>1. Clean cache / pipeline: Adobe recommends clearing the Cloud Manager build cache or triggering a fresh pipeline run.
 
+<!--DEPRECATED 
 ### Maven Toolchains {#maven-toolchains}
 
 The [Maven Toolchains plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) lets projects select a specific JDK (or toolchain) to use in the context of toolchains-aware Maven plug-ins. This process is done in the project's `pom.xml` file by specifying a vendor and version value. A sample section in the `pom.xml` file is the following:
@@ -106,7 +117,7 @@ The currently available vendor/version combinations are:
 
 >[!NOTE]
 >
->Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details.
+>Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details. -->
 
 ### Alternate Maven execution JDK version {#alternate-maven}
 
