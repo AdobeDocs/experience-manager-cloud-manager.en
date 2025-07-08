@@ -65,11 +65,12 @@ By default, projects built by the Cloud Manager build process use the Oracle 8 J
 >
 >Maven Toolchains are no longer supported in Cloud Manager 2025.06.0. Be aware that pipelines containing a maven-toolchains-plugin configuration are going to fail with `Cannot find matching toolchain definitions.` Use the `.cloudmanager/java-version` file to select JDK 11, 17, or 21 instead.
 >
->Migration guidance:
+>**Migration guidance:**
 >
->1. Remove toolchains: delete any <plugin>org.apache.maven.plugins:maven-toolchains-plugin</plugin> entry and any `toolchains.xml` committed to your source control.
->1. Pick a JDK with `.cloudmanager/java-version`: explain the file contents (21, 17, or 11) as described in [Alternate Maven execution JDK version](#alternate-maven).
->1. Clean cache / pipeline: Adobe recommends clearing the Cloud Manager build cache or triggering a fresh pipeline run.
+>1. Remove toolchains by deleting any `org.apache.maven.plugins:maven-toolchains-plugin` entry and any `toolchains.xml` committed to your source control.
+>1. Pick a JDK with `.cloudmanager/java-version`(21, 17, or 11) as described in [Alternate Maven execution JDK version](#alternate-maven).
+>1. Adobe recommends clearing the Cloud Manager build cache or triggering a fresh pipeline run.
+>
 
 <!--DEPRECATED 
 ### Maven Toolchains {#maven-toolchains}
