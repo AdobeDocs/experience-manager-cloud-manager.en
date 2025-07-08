@@ -122,7 +122,7 @@ The currently available vendor/version combinations are:
 
 ### Alternate Maven execution JDK version {#alternate-maven}
 
-It is also possible to select Oracle 8 or Oracle 11 as the JDK for the entire Maven execution. Unlike the toolchains options, this changes the JDK used for all plug-ins unless the toolchains configuration is also set, in which case the toolchains configuration is still applied for toolchains-aware Maven plug-ins. As a result, checking and enforcing the Java version using the [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) works.
+It is possible to select Oracle 8 or Oracle 11 as the JDK for the entire Maven execution. This approach changes the JDK used for all plug-ins. As a result, checking and enforcing the Java version using the [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) works.
 
 To do this process, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. This file can have either the content `11` or `8`. Any other value is ignored. If `11` is specified, the system uses Oracle 11 and sets the `JAVA_HOME` environment variable to `/usr/lib/jvm/jdk-11.0.22`. If `8` is specified, the system uses Oracle 8 and sets the `JAVA_HOME` environment variable to `/usr/lib/jvm/jdk1.8.0_401`.
 
