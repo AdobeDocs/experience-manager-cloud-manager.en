@@ -42,9 +42,9 @@ The next planned release is Thursday, August 7, 2025.
     See [Mark pipeline favorites](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
-## Early adopter program {#beta-program}
+## Alpha/Beta programs {#beta-program}
 
-Participate in Cloud Manager's alpha and beta programs to get exclusive early access to upcoming features before their general release.
+Participate in Cloud Manager's alpha and beta programs to get exclusive access to upcoming features before their general release.
 
 The following opportunities are currently available:
 
