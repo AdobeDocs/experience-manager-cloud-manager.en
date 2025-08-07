@@ -51,7 +51,37 @@ Participate in Cloud Manager's Beta programs to get exclusive access to upcoming
 The following opportunities are currently available:
 
 
-### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
+
+<!-- BOTH CS & AMS -->
+
+Customers can now onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
+
+* For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
+* For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
+
+Support for additional pipeline types and pull request validation through code quality pipelines is coming soon.
+
+See [Add external repositories in Cloud Manager](/help/managing-code/external-repositories.md).
+
+![Add Repository dialog box](/help/release-notes/assets/azure-repo.png)
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. 
+
+#### Manage Access Tokens{#manage-access-tokens}
+
+Use **Manage Access Tokens** in Cloud Manager to view, rename, and delete access tokens associated with external BYOG repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
+
+See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID.
+
+
+
+
+
+
+
 
 The **Bring Your Own Git** (BYOG) feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
 
