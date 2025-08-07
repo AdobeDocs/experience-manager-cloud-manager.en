@@ -1,14 +1,13 @@
 ---
 title: Manage Access Tokens in Cloud Manager
 description: Learn how to view, edit, and delete access tokens used for Bring Your Own Git in Cloud Manager on Adobe Managed Services.
-badge: label="Private beta" type="Positive" url="/help/release-notes/current.md#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
 ---
 # Manage access tokens for external repositories {#manage-access-tokens}
 
 Cloud Manager uses access tokens to manage repositories hosted on external Git platforms. Previously, if a token expired, the associated repository had to be re-onboarded to remain operational.
 
-Now, the **Manage Access Tokens** feature lets you manage tokens more efficiently. You can view, rename, or remove tokens connected to supported external Git providers, including GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
+Now, **Manage Access Tokens** lets you manage tokens more efficiently. You can view, rename, or remove tokens connected to supported external Git providers, including GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
 
 See also [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md).
 
@@ -49,4 +48,4 @@ See also [Add External Repositories in Cloud Manager](/help/managing-code/extern
  
     The icon is disabled (![Delete outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)) for tokens that are currently in use.
 
-1. In the **Delete Access Token** dialog box, click **Delete** to remove the token permanently.
+1. In **Delete Access Token**, click **Delete** to remove the token permanently.
