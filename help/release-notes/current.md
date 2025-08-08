@@ -76,12 +76,6 @@ See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID.
 
-#### Manage Access Tokens{#access-tokens}
-
-Use **Manage Access Tokens** with BYOG, to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
-
-See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
-
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 
