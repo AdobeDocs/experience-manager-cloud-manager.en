@@ -25,7 +25,11 @@ The next planned release is Thursday, September 4, 2025.
 
 ## What's new {#what-is-new}
 
+* **Adobe Experience Hub coming soon**
 
+    Beginning August 19, 2025 Adobe begins a phased rollout of the new Experience Hub to all Adobe Experience Manager users. 
+    
+    Experience Hub is a unified starting point that delivers personalized, contextual experiences to help users achieve goals faster. The rollout concludes by August 26, 2025 making it available to all users. The new Experience Hub is accessible directly at [experience.adobe.com](https://experience.adobe.com/). To learn more, see [Adobe Experience Hub](/help/experience-hub.md).
 
 * **Staging-only and production-only pipelines**
 
