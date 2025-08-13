@@ -82,7 +82,7 @@ See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
 ## Bug fixes {#bug-fixes}
 
-There are no significant bug fixes in the July Cloud Manager release.
+There are no significant bug fixes in the August Cloud Manager release.
 
 <!--
 Known Issues {#known-issues}
