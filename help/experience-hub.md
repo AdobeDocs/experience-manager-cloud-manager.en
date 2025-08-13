@@ -3,7 +3,7 @@ title: About Experience Hub
 description: Learn about the Adobe Experience Hub page.
 hide: yes
 hidefromtoc: yes
-
+exl-id: adc8996f-671a-4018-a195-1212ea662284
 ---
 # About Experience Hub {#aem-experience-hub}
 
@@ -59,6 +59,3 @@ The navigation elements include Assets Browse, which loads the repository of the
 If no production AEM Cloud Service environments are available, the options appear dimmed (unavailable) for the user.
 
 ![Experience Hub no production environments](/help/assets/experience-hub-no-prod-environs.png)
-
-
-
