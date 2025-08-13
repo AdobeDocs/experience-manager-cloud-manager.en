@@ -12,6 +12,7 @@ role: Admin
 # Cloud Manager Documentation {#content}
 
 + [Cloud Manager for AMS](/help/introduction.md)
++ [Experience Hub](/help/experience-hub.md)
 + Overview {#overview}
   + [Key Concepts](/help/overview/key-concepts.md)
   + [User Journey](/help/overview/user-journey.md)
