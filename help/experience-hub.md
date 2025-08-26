@@ -1,17 +1,17 @@
 ---
 title: About Experience Hub
 description: Learn about the Adobe Experience Hub page.
-hide: yes
-hidefromtoc: yes
+hide: no
+hidefromtoc: no
 exl-id: adc8996f-671a-4018-a195-1212ea662284
 ---
 # About Experience Hub {#aem-experience-hub}
 
 Experience Hub introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, Experience Hub lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, Experience Hub ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-Watch a quick tour of the reimagined AEM Experience Hub workspace (1 minutes, 27 seconds).
+Watch a quick tour of the reimagined AEM Experience Hub workspace (2 minutes, 19 seconds).
 
->[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470957?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -22,8 +22,8 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
     ![Adobe Experience Cloud home page](/help/assets/experience-cloud-experiencemanager.png)
 
-1. In the **Quick access** grouping, click **Experience Manager**.
-1. On the **Tell us what you want to do** page, click the option you want so Adobe can tailor your experience. 
+1. In the **Quick access** grouping, click [**Experience Manager**](https://experience.adobe.com).
+1. The first time you access it, on the **Tell us what you want to do** page, click the option you want so Adobe can tailor your experience. 
 
     You can change this preference at any anytime.
 
@@ -38,9 +38,17 @@ The Adobe Experience Manager page has been refreshed with enhanced navigation an
 * Extension Manager
 * Brand Portal
 
-These solutions are now moved to the main navigation under **Tools**. Additionally, new navigation elements for **Sites** and **Assets** provide quick access to key Adobe Experience Manager features such as Assets, Collections, Sites, and Content Fragments. These features are available for the primary production environment that you have access to.
+>[!IMPORTANT]
+>
+>The widgets, tools, and artifacts shown depend on the user persona, entitlements, and AEM deployment type (AEM as a Cloud Service or Managed Services 6.5/6.5 LTS).
+
+These solutions are now moved to the main navigation under **Tools** or **Services**. Additionally, new navigation elements provide quick access to key Adobe Experience Manager features specific for the solutions that are enabled such as Assets, Sites, Forms, Content Fragments, Launches and many more.
 
 ![Experience Hub environments](/help/assets/experience-hub-author-environments.png)
+
+These features are available for the primary production environment that you have access to or you can select a specific environment to target in case you have access to multiple AEM instances.
+
+![Prod and stage environments](/help/assets/experience-hub-prod-stage.png)
 
 Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
 
@@ -50,12 +58,21 @@ Widgets can also be resized and repositioned on the page to suit your needs and 
 
 ![Experience Hub widgets](/help/assets/experience-hub-widgets.png)
 
-The **Authoring Environments** section displays all AEM environments accessible to you, while the **Recents** section provides a list of recently visited pages tracked within the AEM systems.
+The **Authoring Environments** section displays all AEM environments accessible to you, with specific shortcuts for the solutions and pages available for them also letting you pin specific environments that you want displayed at the top of the list.
 
-The navigation elements include Assets Browse, which loads the repository of the production environment accessible to the user.
+The **Recents** section, seen in the image below, lists pages you recently visited in AEM. Depending on your tenant's licensing, the widget may include items such as Program, Pipeline Execution, Assets, Page Editor, and Form Editor.
 
-![Experience Hub navigation elements](/help/assets/experience-hub-navigation.png)
+**Quick shortcuts** near the upper-left corner of the page provide a configurable list of shortcuts to help you start daily tasks. The list is customizable, and each action targets the selected AEM environment.
 
-If no production AEM Cloud Service environments are available, the options appear dimmed (unavailable) for the user.
+![Authoring environments](/help/assets/experience-hub-recents.png)
+
+![Experience Hub Quick Shortcuts](/help/assets/experience-hub-quick-shortcuts.png)
+
+If no production AEM Cloud Service or Managed Services environments exist, the selection options appear dimmed and unavailable.
 
 ![Experience Hub no production environments](/help/assets/experience-hub-no-prod-environs.png)
+
+<!--
+## AI Assistant in AEM 6.5
+
+For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md). -->
