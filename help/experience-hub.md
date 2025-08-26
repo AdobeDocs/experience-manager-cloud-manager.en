@@ -64,7 +64,7 @@ The **Recents** section, seen in the image below, lists pages you recently visit
 
 **Quick shortcuts** near the upper-left corner of the page provide a configurable list of shortcuts to help you start daily tasks. The list is customizable, and each action targets the selected AEM environment.
 
-![Authoring environments](/hhelp/assets/experience-hub-recents.png)
+![Authoring environments](/help/assets/experience-hub-recents.png)
 
 ![Experience Hub Quick Shortcuts](/help/assets/experience-hub-quick-shortcuts.png)
 
