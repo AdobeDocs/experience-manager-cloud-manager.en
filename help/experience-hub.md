@@ -1,8 +1,9 @@
 ---
 title: About Experience Hub
 description: Learn about the Adobe Experience Hub page.
-hide: no
-hidefromtoc: no
+hide: yes
+hidefromtoc: yes
+index: no
 exl-id: adc8996f-671a-4018-a195-1212ea662284
 ---
 # About Experience Hub {#aem-experience-hub}
