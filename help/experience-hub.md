@@ -72,6 +72,7 @@ If no production AEM Cloud Service or Managed Services environments exist, the s
 
 ![Experience Hub no production environments](/help/assets/experience-hub-no-prod-environs.png)
 
-## AI Assistant in AEM
+<!--
+## AI Assistant in AEM 6.5
 
-For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md).
+For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md). -->
