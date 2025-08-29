@@ -14,6 +14,12 @@ After you have set up the general configuration for [!UICONTROL Cloud Manager], 
 
 ## Log in for the first time {#logging-in-for-the-first-time}
 
+1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com/experiencemanager). To learn more, see [About Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. In the left side panel, click **Cloud Manager**.
+
+   ![Cloud Manager in left side panel in Experience Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
+   
+<!-- 
 1. Log into Cloud Manager at [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and you see your list of programs.
 
    ![Cloud Manager console](/help/assets/cloud-manager-console.png)
@@ -22,7 +28,8 @@ After you have set up the general configuration for [!UICONTROL Cloud Manager], 
 
 1. Cloud Manager opens to the **Overview** page.
 
-   ![Cloud Manager overview page](/help/assets/program-overview-page.png)
+   ![Cloud Manager overview page](/help/assets/program-overview-page.png) -->
+
 
 1. If your program is not yet set up, click **Setup Program** in the [call-to-action](/help/getting-started/navigation.md#cta) to set up your program description and define key performance indicators (KPIs). If your program is already set up, the CTA may offer additional next steps.
 
