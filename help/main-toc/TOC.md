@@ -12,7 +12,7 @@ role: Admin
 # Cloud Manager Documentation {#content}
 
 + [Cloud Manager for AMS](/help/introduction.md)
-+ [Experience Hub](/help/experience-hub.md)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Overview {#overview}
   + [Key Concepts](/help/overview/key-concepts.md)
   + [User Journey](/help/overview/user-journey.md)
