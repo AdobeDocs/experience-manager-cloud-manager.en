@@ -48,7 +48,7 @@ The first is the Cloud Manager header. The header is persistent as you navigate 
 | 4 | Feedback icon | Click to provide feedback to Adobe about Cloud Manager. | 
 | 5 | AI Assistant icon | Offers a conversational interface designed to streamline finding answers to your AEM-related queries. See [AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
 | 6 | ![Help icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg)  | Click to provide quick access to learning and support resources. |
-| 7 | ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | Click to view the number of currently assigned incomplete [notifications](/help/using/notifications.md)
+| 7 | ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | Click to view the number of currently assigned incomplete [notifications](/help/using/notifications.md) |
 | 8 | ![Apps icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)  | Click to quickly move between the AEM Home page and AEM solutions |
 | 9 | App icon | Click to access your **Account Settings** and **Program Settings**, or to sign out. |
 
