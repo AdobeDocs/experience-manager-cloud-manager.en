@@ -38,20 +38,19 @@ There are two toolbars on top of each other.
 
 The first is the Cloud Manager header. The header is persistent as you navigate Cloud Manager. It is an anchor that gives you access to settings and information that apply across Cloud Manager programs.
 
-![The Experience Cloud header](/help/getting-started/assets/cloud-manager-header.png)
+![The Experience Cloud header](/help/getting-started/assets/cloud-manager-header-toolbar.png)
 
-|   | Area | Description |
-| --- | --- | --- |
-| 1 | ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | A drop-down menu that provides access to tabs for specific parts of an individual program.<br>To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.|
-| 2 | Adobe Cloud Manager | Click to open the **My Programs** console of Cloud Manager, no matter where you are in Cloud Manager. |
-| 3 | Selected organization | The organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple organizations. | 
-| 4 | Feedback icon | Click to provide feedback to Adobe about Cloud Manager. | 
-| 5 | AI Assistant icon | Offers a conversational interface designed to streamline finding answers to your AEM-related queries. See [AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
-| 6 | ![Help icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg)  | Click to provide quick access to learning and support resources. |
-| 7 | ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | Click to view the number of currently assigned incomplete [notifications](/help/using/notifications.md) |
-| 8 | ![Apps icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)  | Click to quickly move between the AEM Home page and AEM solutions |
-| 9 | App icon | Click to access your **Account Settings** and **Program Settings**, or to sign out. |
-
+| Area | Description |
+| --- | --- |
+| ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | A drop-down menu that provides access to tabs for specific parts of an individual program.<br>To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.|
+| ![Adobe red and white icon](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Click to open the **My Programs** console of Cloud Manager, no matter where you are in Cloud Manager. |
+| *`Name of selected organization`* | The organization selector displays the organization that you are currently signed into (in this example, *Foundation Internal*). Click to switch to another organization if your Adobe ID is associated with multiple organizations. | 
+| ![Feedback icon](/help/getting-started/assets/AppComment.svg) Feedback | Click to provide feedback to Adobe about Cloud Manager. | 
+| ![AI Assistant icon](/help/getting-started/assets/AIChat.svg) | The AI Assistant offers a conversational interface designed to streamline finding answers to your AEM-related queries. See [AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| ![Help icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg)  | Click to provide quick access to learning and support resources. |
+| ![White bell icon](/help/getting-started/assets/Bell.svg) | Click to view the number of currently assigned incomplete [notifications](/help/using/notifications.md) |
+| ![Apps icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)  | Click to quickly move between the AEM Home page and AEM solutions |
+| *`Dynamic Account icon`* | Click your user picture to access your **Account Settings** and **Program Settings**, or to sign out.<br>If you chose not to add a user picture, an icon is randomly assigned (as seen in the toolbar image above). |
 
 <!--
 1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
@@ -74,8 +73,8 @@ The program toolbar provides links to switch between Cloud Manager programs and 
 |   | Area | Description |
 | --- | --- | --- |
 | 1 | My Programs | Click to open a drop-down list where you can choose to add a program, select other existing programs, or return to the Experience Manager Home page. |
-| 2 | Getting Started | Click to access the [onboarding documentation journey](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview) to get you up-and-running with Cloud Manager.<br>The onboarding journey is designed for Cloud Manager on Adobe Experience Manager as a Cloud Service (AEMaaCS), and not for Cloud Manager on Adobe Managed Services (AMS). However, many concepts are the same. |
-| 3 | Dynamic action button | The action button offers context-appropriate actions such as adding a program, adding a domain, or adding an SSL certificate. |
+| 2 | ![Info icon](/help/getting-started/assets/Info.svg) Getting Started | Click to access the [onboarding documentation journey](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview) to get you up-and-running with Cloud Manager.<br>The onboarding journey is designed for Cloud Manager on Adobe Experience Manager as a Cloud Service (AEMaaCS), and not for Cloud Manager on Adobe Managed Services (AMS). However, many concepts are the same. |
+| 3 | *`Dynamic action button`* | The action button offers context-appropriate actions you can click such as **Add Program** (seen in example above), or add a domain. |
 
 ### Call-to-actions and statistics {#cta-statistics}
 
@@ -95,7 +94,7 @@ Depending on your privileges, you may not be able to select certain programs.
 
 You can use the following sort options to find the program you want quickly:
 
-![Sorting options](assets/my-programs-sorting.png)
+![Sorting options](/help/getting-started/assets/cloud-manager-my-programs-sorting.png)
 
 * Sort by:
   * Date Created
@@ -108,25 +107,26 @@ You can use the following sort options to find the program you want quickly:
 
 A card or row in a table represents every program, providing an overview of the program and quick links to take action.
 
-![Program card](assets/program-card.png)
+![Program card](/help/getting-started/assets/cloud-manager-program-card.png)
 
 * Program image (if configured)
-* Program name
+* Program name (in the above example, *WKND Magazine*)
 * Service type:
   * **Experience Manager** for AMS programs
   * **Experience Manager Cloud** for [AEM as a Cloud Service programs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
-* Status
+* Status (in the above example, *Ready*)
 * Configured solutions
 * Creation date
 
-The information icon also gives quick access to additional information about the program (useful in list view).
+Click ![Info icon](/help/getting-started/assets/Info.svg) to get quick access to additional information about the program (useful in list view).
 
-![Information](assets/information-view.png)
+![Information pop-up in Cloud Manager AMS](/help/getting-started/assets/cloud-manager-information-view.png)
 
-The ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) gives you access to additional actions you can take on the program.
+Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) gives you access to additional actions you can take on the program.
 
-![Ellipsis button for programs](assets/program-ellipsis.png)
+![Ellipsis button for programs](/help/getting-started/assets/cloud-manager-program-ellipsis.png)
 
+* Experience Manager Home
 * Navigate to a particular [environment](/help/using/managing-environments.md) of the program
 * Open the [program overview](#program-overview)
 * [Edit the program](/help/getting-started/program-setup.md)
@@ -140,16 +140,15 @@ The quick links section gives you access to helpful, related resources.
 
 Selecting a program in the [**My Programs** console](#my-programs-console) takes you to the **Program Overview** page.
 
-![Program overview](assets/program-overview.png)
+![Program overview](/help/getting-started/assets/cloud-manager-program-overview.png)
 
-The Program Overview gives you access to all details of a Cloud Manager program. Like the My Programs console, it is made of several parts.
+**Program Overview** gives you access to all the details of a Cloud Manager program. Like **My Programs**, it is made up of several parts.
 
 1. [Toolbars](#program-overview-toolbar) to jump back to the **My Programs** console quickly and navigate the program.
-1. [Tabs](#program-tabs) to switch between different aspects of the program.
+1. [Tabs area](#program-tabs) to switch between different aspects of the program.
 1. A [call-to-action](#cta) based on the last actions of the program.
-1. An [overview of the environments](#environments) of the program.
-1. An [overview of the pipelines](#pipelines) of the program.
-1. Links to [useful resources](#useful-resources).
+1. Associated [Environments](#environments) of the program.
+1. Associated [Pipelines](#pipelines) of the program.
 
 ### Toolbars {#program-overview-toolbar}
 
