@@ -61,7 +61,7 @@ role: Admin
   + [Add an External Repository (private beta)](/help/managing-code/external-repositories.md)
   + [Manage Access Tokens (private beta)](/help/managing-code/manage-access-tokens.md)
   + [Git Submodule Support](/help/managing-code/git-submodules.md)
-  + [GitHub Check Configuration](/help/managing-code/github-check-config.md)
+  + [Pull Request Checks for Private Repositories](/help/managing-code/github-check-config.md)
   + [GitHub Check Annotations](/help/managing-code/github-annotations.md)
   + [Maven Project Version Handling](/help/managing-code/maven-project-version.md)
   + [Integrate with Git](/help/managing-code/git-integration.md)

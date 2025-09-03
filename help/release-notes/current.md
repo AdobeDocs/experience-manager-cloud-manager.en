@@ -25,7 +25,18 @@ The next planned release is Thursday, October 2, 2025.
 
 ## What's new {#what-is-new}
 
+* **Config pipelines with private respositories**
 
+    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab.
+
+* **Support now added for Azure DevOps private repositories** 
+
+    Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+
+* **Supoort now added for Azure DevOps private repositories** 
+
+    Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 * **Adobe Experience Hub now available**
 
@@ -33,7 +44,7 @@ The next planned release is Thursday, October 2, 2025.
 
 * **Staging-only and production-only pipelines**
 
-    Cloud Manager now supports staging-only and production-only pipelines. This feature lets you split full-stack production deployments into smaller, purpose-specific pipelines. <!-- This feature went into GA from Private beta in the June 5, 2025 CM release -->
+    Cloud Manager now supports staging-only and production-only pipelines. This feature lets you split full-stack production deployments into smaller, purpose-specific pipelines. <!-- This feature went into GA from Private beta in the June 5, 2025 CM release --
 
     ![Add non-production pipeline dialog box with Full Stack Code radio button selected and Stage environment selected](/help/release-notes/assets/add-non-production-pipeline.png)
 

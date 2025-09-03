@@ -120,12 +120,11 @@ When the pull request is closed or merged, the full stack code quality pipeline 
 Validated private repositories can be associated with [full-stack and frontend pipelines](/help/overview/ci-cd-pipelines.md).
 
 
-
+\
 ## Limitations {#limitations}
 
 Certain limitations apply when using private repositories with Cloud Manager.
 
-* Web tier and config pipelines are not supported with private repositories.
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
 * If the Adobe GitHub app is removed from your GitHb organization, this action removes the pull requests validation feature for all repositories.
 * Pipelines using private repositories and the on-committed build trigger are not started automatically when a new commit is pushed into the selected branch.
