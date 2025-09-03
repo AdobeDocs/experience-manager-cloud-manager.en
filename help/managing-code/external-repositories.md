@@ -9,14 +9,15 @@ exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
 
 Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 
-Customers can now also onboard their Azure DevOps (Beta) Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
+Customers can now also onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
 
 * For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
 * For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
 
+<!--
 >[!NOTE]
 >
->The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/release-notes/current.md).
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/release-notes/current.md). -->
 
 ## Configure an external repository
 
@@ -113,7 +114,7 @@ After validation, the external repository is ready to use and link to a pipeline
 
 See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -229,7 +230,7 @@ For all other external repositories that are onboarded with an access token &nda
 | --- |
 | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
