@@ -63,7 +63,7 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
    ![Creating a stage-only pipeline](/help/assets/configure-pipelines/stage-only.png)
 
 1. On the **Stage Testing** tab, define the testing to perform in the staging environment. 
-1. Click **Save**.
+1. Click **Save**. 
 
    ![Test parameters for a stage-only pipeline](/help/assets/configure-pipelines/stage-only-test.png)
 

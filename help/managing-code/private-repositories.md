@@ -120,7 +120,7 @@ When the pull request is closed or merged, the full stack code quality pipeline 
 Validated private repositories can be associated with [full-stack and frontend pipelines](/help/overview/ci-cd-pipelines.md).
 
 
-\
+
 ## Limitations {#limitations}
 
 Certain limitations apply when using private repositories with Cloud Manager.
@@ -130,3 +130,4 @@ Certain limitations apply when using private repositories with Cloud Manager.
 * Pipelines using private repositories and the on-committed build trigger are not started automatically when a new commit is pushed into the selected branch.
 * [Artifact reuse functionality](/help/getting-started/project-setup.md#build-artifact-reuse) does not apply to private repositories.
 * You cannot pause the pull request validation using the GitHub check from Cloud Manager. If the GitHub repository is validated in Cloud Manager, Cloud Manager tries to validate the pull requests created for that repository.
+* If your GitHub organization enforces IP restrictions, open a support case to obtain the list of IP addresses that must be allowed.
