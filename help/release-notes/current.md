@@ -31,12 +31,12 @@ The next planned release is Thursday, October 2, 2025.
 
 * **Support now added for Azure DevOps private repositories** 
 
-    Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+    Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md).
 
 
 * **Supoort now added for Azure DevOps private repositories** 
 
-    Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+    Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md).
 
 * **Adobe Experience Hub now available**
 
