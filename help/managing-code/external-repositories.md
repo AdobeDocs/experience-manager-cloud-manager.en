@@ -9,14 +9,15 @@ exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
 
 Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 
-Customers can now also onboard their Azure DevOps (Beta) Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
+Customers can now also onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
 
 * For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
 * For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
 
+<!--
 >[!NOTE]
 >
->The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/release-notes/current.md).
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/release-notes/current.md). -->
 
 ## Configure an external repository
 
@@ -59,7 +60,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
     | --- | --- |
     | **Repository Name** | Required. An expressive name for your new repository. | 
     | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
-    | **Select Repository Type** | Required. Select the repository type that you are using:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` (cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.)</li></ul>If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you.</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
+    | **Select Repository Type** | Required. Select the repository type that you are using:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` (cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.)</li><li>**Azure DevOps** (`dev.azure.com`)</ul>If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you.</li> </ul> |
     | **Description** | Optional. A detailed description of the repository. |
 
 1. Select **Save** to add the repository.
@@ -113,14 +114,14 @@ After validation, the external repository is ready to use and link to a pipeline
 
 See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Access token option | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Azure DevOps documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Required permissions for the Azure DevOps Personal Access Token (PAT).<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Azure DevOps, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)</li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Azure DevOps documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Required permissions for the Azure DevOps Personal Access Token (PAT).<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Azure DevOps, make sure it includes the following required app password permissions:<ul><li>Code (Read)</li><li>Code (Status)</li><li>Pull Request Threads (Read & write)</li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
 After validation, the external repository is ready to use and link to a pipeline.
 
@@ -229,13 +230,13 @@ For all other external repositories that are onboarded with an access token &nda
 | --- |
 | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Required webhook events and authentication |
 | --- |
-| These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Repository: Push</li></ul>Set authentication:<br>1. In the **Basic authentication username** field, type `cloudmanager`.<br>2. In the **Basic authentication password** field, type the Webhook Secret generated from the Cloud Manager user interface.  |
+| These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Code Pushed</li><li>Pull request commented on</li><li>Pull request created</li><li>Pull request updated</li></ul>Set authentication:<br>1. In the **Basic authentication username** field, type `cloudmanager`.<br>2. In the **Basic authentication password** field, type the Webhook Secret generated from the Cloud Manager user interface.  |
 
 >[!ENDTABS]
 
@@ -290,6 +291,29 @@ When code quality validation is running:
 Uses commit status for tracking PR validation progress. In the following case, the screenshot shows what happens when a code quality validation fails due to a customer issue. A comment is added with detailed error information, and a commit check is created, which shows the failure (visible on the right):
 
 ![Pull request validation status for Bitbucket](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+
+>[!TAB Azure DevOps]
+
+Azure DevOps tracks pull request validation through status checks. When Cloud Manager runs pull request validation, it adds status checks that appear in the Azure DevOps pull request interface.
+
+During code quality validation, a status check shows that the process is in progress:
+
+![Azure DevOps validation of pull requests with webhooks-1](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
+
+When code quality validation is complete, the status check updates to reflect the results:
+
+![Azure DevOps validation of pull requests with webhooks-2](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+
+If validation fails, detailed error information is provided in the status check details. You can click on the status check to view the full validation results in Cloud Manager.
+
+![Azure DevOps validation of pull requests with webhooks-3](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
+
+For pull request comments and feedback, Cloud Manager adds comments directly to the pull request in Azure DevOps with validation details and any necessary actions required.
+
+![Azure DevOps validation of pull requests with webhooks-4](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
+
+
+>[!ENDTABS]
 
 >[!ENDTABS]
 
