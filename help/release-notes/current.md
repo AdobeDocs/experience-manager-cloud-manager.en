@@ -25,30 +25,13 @@ The next planned release is Thursday, October 2, 2025.
 
 ## What's new {#what-is-new}
 
-* **Config pipelines with private respositories**
-
-    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab.
-
-* **Support now added for Azure DevOps private repositories** 
-
-    Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md).
-
-
 * **Supoort now added for Azure DevOps private repositories** 
 
     Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md).
 
-* **Adobe Experience Hub now available**
+* **Pull request checks for private respositories**
 
-    Experience Hub is a unified starting point that delivers personalized, contextual experiences to help users achieve goals faster. The rollout concludes by August 26, 2025 making it available to all users. The new Experience Hub is accessible directly at [experience.adobe.com](https://experience.adobe.com/). To learn more, see [Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub).
-
-* **Staging-only and production-only pipelines**
-
-    Cloud Manager now supports staging-only and production-only pipelines. This feature lets you split full-stack production deployments into smaller, purpose-specific pipelines. <!-- This feature went into GA from Private beta in the June 5, 2025 CM release --
-
-    ![Add non-production pipeline dialog box with Full Stack Code radio button selected and Stage environment selected](/help/release-notes/assets/add-non-production-pipeline.png)
-
-    See [Stage-Only and Prod-Only Pipelines](/help/using/stage-prod-only.md).
+    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab. See ![Pull Request Checks for Private Repositories](/help/managing-code/github-check-config.md).
 
 ## Beta programs {#beta-program}
 
