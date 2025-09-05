@@ -315,8 +315,6 @@ For pull request comments and feedback, Cloud Manager adds comments directly to 
 
 >[!ENDTABS]
 
->[!ENDTABS]
-
 ## Troubleshoot webhook issues
 
 * Ensure that the Webhook URL includes a valid API key.
