@@ -28,26 +28,23 @@ Start here to get to know Cloud Manager for AMS (Adobe Managed Services) and how
 With Cloud Manager, your development team benefits from the following features:
 
 * Continuous integration/continuous delivery (CI/CD) of code to reduce time to market from months/weeks to days/hours.
-
 * Code inspection, performance testing, and security validation based on best practices before pushing to production to minimize production disruptions.
-
 * API connectivity to complement existing DevOps processes.
-
 * Autoscaling that intelligently detects the need for increased capacity and automatically brings online additional Dispatcher/publishing segments.
 
 ![CI/CD flow](/help/assets/screen_shot_2018-05-12at73843pm.png)The CI/CD process flow used in [!UICONTROL Cloud Manager]. 
 
 ## Key features in [!UICONTROL Cloud Manager] {#key-features-in-cloud-manager}
 
-The following is a deeper dive into selected key features of Cloud Manager.
+The following sections highlight key Cloud Manager features.
 
 ### Self-service interface {#self-service-interface}
 
-The user interface (UI) for [!UICONTROL Cloud Manager] enables you to access and manage the cloud environment easily and the CI/CD pipeline easily for your Adobe Experience Manager applications.
+To explore and get started with [!UICONTROL Cloud Manager]'s UI, see [First Time Login](/help/getting-started/first-time-login.md).
+
+The user interface (UI) for [!UICONTROL Cloud Manager] lets you access and manage the cloud environment easily and the CI/CD pipeline easily for your Adobe Experience Manager applications.
 
 You define application-specific key performance indicators (KPIs) like peak page views per minute or expected page load response time. These KPIs serve as the foundation for measuring deployment success. Roles and permissions for different team members can be easily defined. The self-service interface gives you full control. It also provides links to best practice resources and access to Adobe experts for guidance when needed.
-
-To explore and get started with [!UICONTROL Cloud Manager]'s UI, see [First Time Login](/help/getting-started/first-time-login.md).
 
 ### CI/CD pipeline {#ci-cd-pipeline}
 
@@ -98,18 +95,18 @@ At any time, only one of the environments is live, with the live environment ser
 
 When blue/green deployment is enabled, the deployment flow differs from the standard Cloud Service deployment flow.
 
-|Step|Blue/Green Deployment|Standard Deployment|
-|---|---|---|
-|1|Deployment to author|Deployment to author|
-|2|Pause for testing|-|
-|3|Green infrastructure is created|-|
-|4|Deployment to green publish/dispatcher tiers|Deployment to publisher|
-|5|Pause for testing (up to 24 hours)|-|
-|6|Green infrastructure is added to the production load balancer|-|
-|7|Blue infrastructure is removed from the production load balancer-|
-|8|Pause for final sign-off (up to 24 hours)|-|
-|9|Blue infrastructure is terminated automatically|-|
-|10|Pipeline completes|-|
+| Step | Blue/Green Deployment | Standard Deployment |
+| --- | --- | --- |
+| 1 | Deployment to author | Deployment to author |
+| 2 | Pause for testing | - |
+| 3 | Green infrastructure is created | - |
+| 4 | Deployment to green Publish/Dispatcher tiers | Deployment to publisher |
+| 5 | Pause for testing (up to 24 hours) | - |
+| 6 | Green infrastructure is added to the production load balancer | - |
+| 7 | Blue infrastructure is removed from the production load balancer | - |
+| 8 | Pause for final sign-off (up to 24 hours) | - |
+| 9 | Blue infrastructure is terminated automatically | - |
+| 10 | Pipeline completes | - |
 
 #### Implementing blue/green {#implementing}
 
