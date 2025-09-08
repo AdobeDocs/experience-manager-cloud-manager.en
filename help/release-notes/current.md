@@ -25,13 +25,13 @@ The next planned release is Thursday, October 2, 2025.
 
 ## What's new {#what-is-new}
 
-* **Support now added for Azure DevOps private repositories** 
+* **Support now added for Azure DevOps (private repositories)** 
 
     Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md).
 
-* **Pull request checks for private repositories**
+* **Bring Your Own Git (BYOG) support extended to config pipelines (private repositories)**
 
-    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab. See ![Pull Request Checks for Private Repositories](/help/managing-code/github-check-config.md).
+    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab. This support accelerates the development cycle further. See ![Pull Request Checks for Private Repositories](/help/managing-code/github-check-config.md).
 
 ## Beta programs {#beta-program}
 
