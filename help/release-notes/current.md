@@ -24,10 +24,7 @@ The next planned release is Thursday, November 6, 2025.
 
 ## What's new {#what-is-new}
 
-
-
-
-
+There are no significant new features in the October Cloud Manager release.
 
 
 ## Beta programs {#beta-program}
