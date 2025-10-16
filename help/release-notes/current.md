@@ -47,7 +47,16 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 A new build model compiles only changed modules (rather than the entire repo) using module-level caching to shorten build times. It applies to code-quality, full-stack, and stage-only pipelines.
 
-Interested in the beta? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID. 
+![Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build](/help/release-notes/assets/non-production-pipeline-edit.png) *Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build.*
+
+In the **Add/Edit Pipeline** dialog box, under the **Source Code** tab, a new **Build Strategy** section lets you choose one of the following build options:
+
+* **Full Build** — builds all modules in the repository on every run.
+* **Smart Build** — builds only modules that changed since the last commit, which shortens overall build time.
+
+You control which pipelines use **Smart build**. During the beta, this option appears only for **Code Quality** and **Dev Deployment** pipelines.
+
+Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
