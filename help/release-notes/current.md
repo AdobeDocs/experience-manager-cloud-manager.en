@@ -48,7 +48,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 A new build model compiles only changed modules (rather than the entire repo) using module-level caching to shorten build times. It applies to code-quality, full-stack, and stage-only pipelines.
 
 ![Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build](/help/release-notes/assets/non-production-pipeline-edit.png)
-*Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build.*
+*Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build.* 
 
 In the **Add/Edit Pipeline** dialog box, under the **Source Code** tab, a new **Build Strategy** section lets you choose one of the following build options:
 
