@@ -24,7 +24,7 @@ The **My Programs** console provides an overview of all programs to which you ha
 |   | Area | Description |
 | --- | --- | --- |
 | 1 | [Toolbars](#toolbars-my-programs-toolbars) | Use for organization selection, alerts, and account settings. |
-| 2 | Left side panel tab | Various tabs that let you toggle the current view of your programs, including the following:<br><ul><li>**Experience Manager** opens the home page for your various AEM solutions</li><li>**All Programs** that displays all available programs.</li><li>**License** opens the License Dashboard. The License Dashboard only applies to *AEM as a Cloud Service programs* (AEMaaCS), not to Adobe Managed Services programs such as AEM 6.5 and AEM 6.5 LTS. To determine the type of service your program has (AEMaaCS or AMS), see the [Program Cards section](#program-cards) of this article. The tabs default to closed and can be revealed using the ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) drop-down menu, located on the left side of the [Cloud Manager header](#cloud-manager-header).</li></ol> |
+| 2 | Left side panel tab | Various tabs that let you toggle the current view of your programs, including the following:<br><ul><li>**Experience Manager** opens the home page for your various AEM solutions</li><li>**All Programs** that display all available programs.</li><li>**License** opens the License Dashboard. The License Dashboard only applies to *AEM as a Cloud Service programs* (AEMaaCS), not to Adobe Managed Services programs such as AEM 6.5 and AEM 6.5 LTS. To determine the type of service your program has (AEMaaCS or AMS), see the [Program Cards section](#program-cards) of this article. The tabs default to closed and can be revealed using the ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) drop-down menu, located on the left side of the [Cloud Manager header](#cloud-manager-header).</li></ol> |
 | 3 | [My Programs](#my-programs-section) | Lists all available programs that you can select.<br>See [Programs and Program Types](/help/getting-started/program-setup.md) for details on programs. |
 | 4 | [Call-to-actions and statistics](#cta-statistics) | Gives an overview of your recent activity. |
 | 5 | [Quick links](#quick-links) | Quick access to related resources. |
@@ -46,10 +46,10 @@ The first is the Cloud Manager header. The header is persistent as you navigate 
 | ![Adobe red and white icon](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Click to open the **My Programs** console of Cloud Manager, no matter where you are in Cloud Manager. |
 | *`Name of selected organization`* | The organization selector displays the organization that you are currently signed into (in this example, *Foundation Internal*). Click to switch to another organization if your Adobe ID is associated with multiple organizations. | 
 | ![Feedback icon](/help/getting-started/assets/AppComment.svg) Feedback | Click to provide feedback to Adobe about Cloud Manager. | 
-| ![AI Assistant icon](/help/getting-started/assets/AIChat.svg) | The AI Assistant offers a conversational interface designed to streamline finding answers to your AEM-related queries. See [AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| ![AI Assistant icon](/help/getting-started/assets/AIChat.svg) | The AI Assistant offers a conversational interface designed to streamline finding answers to your AEM-related queries. See [AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
 | ![Help icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg)  | Click to provide quick access to learning and support resources. |
 | ![White bell icon](/help/getting-started/assets/Bell.svg) | Click to view the number of currently assigned incomplete [notifications](/help/using/notifications.md) |
-| ![Apps icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)  | Click to quickly move between the AEM Home page and AEM solutions |
+| ![Apps icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)  | Click to move quickly between the AEM Home page and AEM solutions |
 | *`Dynamic Account icon`* | Click your user picture to access your **Account Settings** and **Program Settings**, or to sign out.<br>If you chose not to add a user picture, an icon is randomly assigned (as seen in the toolbar image above). |
 
 <!--
@@ -74,7 +74,7 @@ The program toolbar provides links to switch between Cloud Manager programs and 
 | --- | --- | --- |
 | 1 | My Programs | Click to open a drop-down list where you can choose to add a program, select other existing programs, or return to the Experience Manager Home page. |
 | 2 | ![Info icon](/help/getting-started/assets/Info.svg) Getting Started | Click to access the [onboarding documentation journey](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview) to get you up-and-running with Cloud Manager.<br>The onboarding journey is designed for Cloud Manager on Adobe Experience Manager as a Cloud Service (AEMaaCS), and not for Cloud Manager on Adobe Managed Services (AMS). However, many concepts are the same. |
-| 3 | *`Dynamic action button`* | The action button offers context-appropriate actions you can click such as **Add Program** (seen in example above), or add a domain. |
+| 3 | *`Dynamic action button`* | The action button offers context-appropriate actions that you can click such as **Add Program** (seen in the example above), or add a domain. |
 
 ### Call-to-actions and statistics {#cta-statistics}
 

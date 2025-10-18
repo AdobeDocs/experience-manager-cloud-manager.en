@@ -114,7 +114,7 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
    1. Current configurations are backed up and copied to a temporary location.
    1. All configurations are deleted except the immutable files. See [Dispatcher Configurations](/help/getting-started/dispatcher-configurations.md) for more details. This approach clears the directories to ensure that no orphaned files are left behind.
    1. The artifact is extracted to the `httpd` directory. Immutable files are not overwritten. Any changes you make to immutable files in your Git repository are ignored at the time of deployment. These files are core to the AMS Dispatcher framework and cannot be changed.
-   1. Apache performs a configuration test. If no errors are found, the service is reloaded. If an error occurs, the configurations are restored from backup, the service is reloaded, and the error is reported back to Cloud Manager.
+   1. Apache performs a configuration test. If no errors are found, the service is reloaded. If errors are found, configurations are restored from backup, the service is reloaded, and the error is reported back to Cloud Manager.
    1. Each path specified in the pipeline configuration is invalidated or flushed from the Dispatcher cache.
    
    >[!NOTE]
