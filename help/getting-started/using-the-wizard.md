@@ -6,7 +6,7 @@ exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 
 # Use the new project wizard {#using-the-wizard}
 
-When you onboarded to Cloud Manager as a new customer, you were provided with an empty Git repository. To help you get started, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) as a starting point.
+When you are onboarded to Cloud Manager as a new customer, you are provided with an empty Git repository. To help you get started, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) as a starting point.
 
 Follow these steps to create an AEM project using the wizard.
 
@@ -33,6 +33,6 @@ You now have a base project. It is time to set up your pipelines.
 
 ## Existing or migrating customers {#existing-migrating}
 
-If you are a current Adobe Managed Services (AMS) customer or an on-premise AEM customer who is migrating to, you likely already have project code in Git or another version control system.
+If you are a current Adobe Managed Services (AMS) customer or an on-premise AEM customer who is migrating, you are likely to have project code already in Git or another version control system.
 
 In such cases, you can import your project into the Cloud Manager Git repository.
