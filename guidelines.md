@@ -16,17 +16,17 @@ While Adobe welcomes contributions to its documentation, any contribution to the
 
 Contributions that do not meet these standards may be rejected.
 
-### Standard use cases are documented at Adobe.
+### Standard use cases are documented at Adobe
 
 AEM documentation covers standard use cases. Use cases beyond the scope of standard installation and usage of the product are not part of AEM documentation.
 
-### Adobe does not generally document bugs or their workarounds.
+### Adobe does not generally document bugs or their workarounds
 
 AEM documentation covers standard use cases. For this reason, bugs, effects caused by bugs, and workarounds for bugs are not documented.
 
 Exceptions to this rule apply to the release notes where known issues can be listed with possible solutions that Product Management approves.
 
-### Documentation contributions are not for answering technical questions.
+### Documentation contributions are not for answering technical questions
 
 Any ideas you have to improve AEM documentation are welcome as contributions. However, any comments, issues, and pull requests are intended as *contributions* only. They are not to answer your questions about how to use AEM, implement your AEM project, or solve technical problems.
 
@@ -34,7 +34,7 @@ You can report any questions about AEM usage or technical errors. Use the normal
 
 ***AEM documentation contributions are not a replacement for Adobe Customer Care*** and any such contributions seeking answers to support-related questions are rejected.
 
-### Contributions must clearly reference affected documentation pages.
+### Contributions must clearly reference affected documentation pages
 
 If you create an issue to suggest improvements to the documentation, you must include links to the pages affected. If you create an issue by using the **Edit this page** link on a documentation page, the issue is created with a link to the page automatically.
 
