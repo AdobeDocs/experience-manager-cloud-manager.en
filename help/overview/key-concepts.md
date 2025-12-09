@@ -36,7 +36,7 @@ An instance is a specific virtual server running the AEM [solution](#solution). 
 
 ## Organization {#organization}
 
-An organization is an Adobe construct representing an enterprise customer. One company may have multiple organizations depending on how they were provisioned in Adobe's Identity Management System (IMS).
+An organization is an Adobe construct representing an enterprise customer. One company may have multiple organizations depending on how they are provisioned in Adobe's Identity Management System (IMS).
 
 ## Pipeline {#pipeline}
 
