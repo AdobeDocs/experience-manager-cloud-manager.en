@@ -10,7 +10,7 @@ Learn how GitHub checks annotate PRs for your private repositories to provide yo
 
 ## Overview {#overview}
 
-If you use [private repositories](private-repositories.md) for your Cloud Manager program, checks in GitHub are automatically run for every pull request. These checks are annotated with useful information to help you understand any issues with your code as soon as possible.
+If you use [private repositories](private-repositories.md) for your Cloud Manager program, checks in GitHub run automatically for every pull request. These checks are annotated with useful information to help you understand any issues with your code as soon as possible.
 
 ![Example of GitHub check annotations](assets/github-check-annotations.png)
 

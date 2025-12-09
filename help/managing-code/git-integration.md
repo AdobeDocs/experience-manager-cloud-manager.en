@@ -59,6 +59,6 @@ You can synchronize release tags from a Cloud Manager Git repository into a cust
 ## Additional resources {#additional-resources}
 
 * [Cloud Manager Introduction](/help/introduction.md)
-* [GitHub Resources](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
+* [GitHub Resources](https://docs.github.com/en/get-started/git-basics/set-up-git)
 * [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
