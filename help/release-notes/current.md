@@ -18,7 +18,7 @@ The release date for [!UICONTROL Cloud Manager] 2025.12.0 is Thursday, December 
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-The next planned release is Thursday, January 22, 2025.
+The next planned release is Thursday, January 22, 2026.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
