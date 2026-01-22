@@ -31,7 +31,7 @@ The next planned release is Thursday, February 5, 2026.
     ![View/Edit variables option on the drop-down menu for a selected pipeline](/help/release-notes/assets/view-edit-variables-option.png) 
     *View/Edit variables option on the drop-down menu for a selected pipeline.* 
 
-    ![Variables Configuration dialog box](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Variables Configuration dialog box.
+    ![Variables Configuration dialog box](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Variables Configuration dialog box.*
 
 * **Improved stability, performance, and reliability**
 
