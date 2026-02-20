@@ -72,32 +72,6 @@ Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
-
-### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
-
-<!-- BOTH CS & AMS -->
-
-Customers can now onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
-
-* For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
-* For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
-
-Support for additional pipeline types and pull request validation through code quality pipelines is coming soon.
-
-See [Add external repositories in Cloud Manager](/help/managing-code/external-repositories.md).
-
-![Add Repository dialog box](/help/release-notes/assets/azure-repo.png)
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. 
-
-#### Manage access tokens{#manage-access-tokens}
-
-Use **Manage Access Tokens** in Cloud Manager to view, rename, and delete access tokens associated with external BYOG repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
-
-See [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. --> 
-
 ## Bug fixes {#bug-fixes}
 
 There are no significant bug fixes in the January 2026 Cloud Manager on AMS release. 
