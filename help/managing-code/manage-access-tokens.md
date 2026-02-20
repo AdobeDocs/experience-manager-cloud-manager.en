@@ -11,9 +11,11 @@ Now, **Manage Access Tokens** lets you manage tokens more efficiently. You can v
 
 See also [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md).
 
+<!--
 >[!NOTE]
 >
 >The features described in this article are only available through the private beta program. For more details and to sign up for  the private beta, see [Manage Access Tokens](/help/release-notes/current.md#access-tokens).
+-->
 
 ## View access tokens {#view-access-tokens}
 
