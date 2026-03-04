@@ -71,6 +71,9 @@ role: Admin
   + [Evaluation](/help/product-update-wizard/evaluation.md)
 + Release Notes {#release-notes}
   + [Current](/help/release-notes/current.md)
+  + 2026 {#rn-2026}
+    + [2026.2.0](/help/release-notes/2026/2026-2-0.md)
+    + [2026.1.0](/help/release-notes/2026/2026-1-0.md)
   + 2025 {#rn-2025}
     + [2025.12.0](/help/release-notes/2025/2025-12-0.md)
     + [2025.11.0](/help/release-notes/2025/2025-11-0.md)
