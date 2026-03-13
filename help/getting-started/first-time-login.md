@@ -28,7 +28,8 @@ After you have set up the general configuration for [!UICONTROL Cloud Manager], 
 
 1. Cloud Manager opens to the **Overview** page.
 
-   ![Cloud Manager overview page](/help/assets/program-overview-page.png) -->
+   ![Cloud Manager overview page](/help/assets/program-overview-page.png
+-->
 
 
 1. If your program is not yet set up, click **Setup Program** in the [call-to-action](/help/getting-started/navigation.md#cta) to set up your program description and define key performance indicators (KPIs). If your program is already set up, the CTA may offer additional next steps.

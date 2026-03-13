@@ -44,8 +44,8 @@ The first is the Cloud Manager header. The header is persistent as you navigate 
 | --- | --- |
 | ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | A drop-down menu that provides access to tabs for specific parts of an individual program.<br>To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.|
 | ![Adobe red and white icon](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Click to open the **My Programs** console of Cloud Manager, no matter where you are in Cloud Manager. |
-| *`Name of selected organization`* | The organization selector displays the organization that you are currently signed into (in this example, *Foundation Internal*). Click to switch to another organization if your Adobe ID is associated with multiple organizations. | 
-| ![Feedback icon](/help/getting-started/assets/AppComment.svg) Feedback | Click to provide feedback to Adobe about Cloud Manager. | 
+| *`Name of selected organization`* | The organization selector displays the organization that you are currently signed into (in this example, *Foundation Internal*). Click to switch to another organization if your Adobe ID is associated with multiple organizations. |
+| ![Feedback icon](/help/getting-started/assets/AppComment.svg) Feedback | Click to provide feedback to Adobe about Cloud Manager. |
 | ![AI Assistant icon](/help/getting-started/assets/AIChat.svg) | The AI Assistant offers a conversational interface designed to streamline finding answers to your AEM-related queries. See [AI Assistant](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
 | ![Help icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg)  | Click to provide quick access to learning and support resources. |
 | ![White bell icon](/help/getting-started/assets/Bell.svg) | Click to view the number of currently assigned incomplete [notifications](/help/using/notifications.md) |
@@ -62,7 +62,8 @@ The first is the Cloud Manager header. The header is persistent as you navigate 
 1. Clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
 1. The Help icon provides quick access to learning and support resources.
 1. The notifications icon is badged with the number of currently assigned incomplete [notifications](/help/using/notifications.md)
-1. Select the icon representing your user to access your user settings. If you do not select a user picture, an icon is randomly assigned. -->
+1. Select the icon representing your user to access your user settings. If you do not select a user picture, an icon is randomly assigned. 
+-->
 
 #### Program toolbar {#program-toolbar}
 

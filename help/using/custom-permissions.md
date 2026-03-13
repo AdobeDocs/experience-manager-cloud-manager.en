@@ -139,7 +139,7 @@ The following terms are used in creating and managing custom permissions and pre
 | --- | --- |
 | Predefined Permissions | Predefined roles like **Business Owner**, **Deployment Manager**, and so on. to govern various features of Cloud Manager. For details on pre-defined roles, see [Role-Based Permissions](/help/requirements/role-based-permissions.md). |
 | Custom Permissions | Cloud Manager features that allow users to create permission profiles to define roles to govern supported features of Cloud Manager |
-| Permission Profile | Created in the Admin Console to manage configurable permissions that are applicable to users who are part of the permission profile | 
+| Permission Profile | Created in the Admin Console to manage configurable permissions that are applicable to users who are part of the permission profile |
 | Configurable Permission | Cloud Manager permissions can be configured in the permission profile |
 | Permission Item | A program, environment or pipeline resource on which a permission can be applied |
 

@@ -22,8 +22,10 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 1. [Add an external repository](#add-external-repo) to a selected program.
 1. [Link a validated external repository to a pipeline](#validate-ext-repo).
-<!-- 1. Provide an access token to the external repository.
-1. Validate ownership of the private GitHub repository. -->
+<!--
+1. Provide an access token to the external repository.
+1. Validate ownership of the private GitHub repository.
+-->
 1. [Configure a webhook](#configure-webhook) to an external repository.
 
 
@@ -33,8 +35,10 @@ Configuration of an external repository in Cloud Manager consists of three steps
 >
 >External repositories cannot be linked to Configuration pipelines.
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+<!--
+THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started.
+-->
 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
@@ -55,7 +59,7 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
     | Field | Description |
     | --- | --- |
-    | **Repository Name** | Required. An expressive name for your new repository. | 
+    | **Repository Name** | Required. An expressive name for your new repository. |
     | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
     | **Select Repository Type** | Required. Select the repository type that you are using:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` (cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.)</li><li>**Azure DevOps** (`dev.azure.com`)</ul>If the repository URL path above includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you.</li> </ul> |
     | **Description** | Optional. A detailed description of the repository. |
@@ -73,7 +77,9 @@ Configuration of an external repository in Cloud Manager consists of three steps
 
 >[!TAB GitHub Enterprise]
 
-<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+<!--
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github 
+-->
 
 | Access token option | Description |
 | --- | --- |
@@ -86,7 +92,9 @@ See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB GitLab]
 
-<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
+<!--
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab 
+-->
 
 | Access token option | Description |
 | --- | --- |
@@ -100,7 +108,9 @@ See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB Bitbucket]
 
-<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+<!--
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket 
+-->
 
 | Access token option | Description |
 | --- | --- |
@@ -113,7 +123,9 @@ See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB Azure DevOps]
 
-<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
+<!--
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops
+-->
 
 | Access token option | Description |
 | --- | --- |
@@ -217,7 +229,7 @@ For all other external repositories that are onboarded with an access token &nda
 
 | Required webhook events |
 | --- |
-| These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> | 
+| These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> |
 
 >[!TAB Bitbucket]
 
