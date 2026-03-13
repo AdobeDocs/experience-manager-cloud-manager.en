@@ -25,8 +25,8 @@ If the original version meets these criteria, then the generated version is appe
 | Version | Version in `pom.xml` | Comment |
 | --- | --- | --- |
 | `1.0.0` |  `1.0.0.2019_0926_121356_0000020490` |  Properly formed original version |
-| `1.0.0-SNAPSHOT` |  `2019.926.121356.0000020490`  |  Snapshot version, overwritten | 
-| `1` |  `2019.926.121356.0000020490` |  Incomplete version, overwritten | 
+| `1.0.0-SNAPSHOT` |  `2019.926.121356.0000020490`  |  Snapshot version, overwritten |
+| `1` |  `2019.926.121356.0000020490` |  Incomplete version, overwritten |
 
 >[!NOTE]
 >
