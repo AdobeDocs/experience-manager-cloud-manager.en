@@ -99,7 +99,7 @@ Once you have set up your program and have at least one environment using the Cl
    |   | **Git Branch** | Select the branch in the chosen repository that Cloud Manager uses for the deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list. |
    |   | **Code Location** | Enter the path in the selected repository that contains the web tier configuration to deploy. The default location is the repository root (`/`). | 
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 1. Click **Save**.
 
