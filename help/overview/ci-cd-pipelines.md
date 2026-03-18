@@ -33,6 +33,15 @@ The following diagram illustrates what happens when a release is triggered in [!
 | 9. [!UICONTROL Cloud Manager] gets artifacts(s) to deploy | [!UICONTROL Cloud Manager] pulls the stored release artifacts. |
 | 10. Deploy artifacts to production | The release artifacts are deployed to the production environment. |
 
+### Faster builds using Smart Build {#use=smart-build}
+
+Cloud Manager now uses an optimized build strategy called **Smart Build**, which uses module-level caching to speed up the build process. During each build, only modules that have changed are rebuilt, while unchanged modules are reused from the cache.
+
+Smart Build is available for Code Quality and Dev Full Stack deployment pipelines only.
+
+See [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline) and [About using Smart Build in a non-production pipeline](/help/using/non-production-pipelines.md#about-smart-build).
+
+
 ### How to set up a CI/CD pipeline {#how-to-setup-a-ci-cd-pipeline}
 
 To learn more about pipeline configuration, see the documents [Configuring Production Pipelines](/help/using/production-pipelines.md) and [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
