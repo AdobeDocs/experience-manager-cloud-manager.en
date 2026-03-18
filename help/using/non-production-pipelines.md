@@ -125,7 +125,7 @@ Smart Build is not always ideal when you have the following:
 * Your build relies heavily on plugins that perform operations outside Maven’s dependency graph.
 * You require full rebuild validation on every execution.
 
-#### Understand build performance
+### Understand build performance{#smart-build-performance}
 
 The performance gain from using Smart Build depends on several factors including the following:
 
@@ -135,7 +135,7 @@ The performance gain from using Smart Build depends on several factors including
 
 Generally, projects with many independent modules typically see the greatest improvement.
 
-#### Per-module cache opt-out
+### Per-module cache opt-out{#smart-build-cache-optout}
 
 Smart Build provides fine-grained control that lets you disable caching for specific modules. This ability is useful when certain modules:
 
@@ -143,7 +143,7 @@ Smart Build provides fine-grained control that lets you disable caching for spec
 * Perform file operations not tracked by Maven dependencies.
 * Produce inconsistent results when cached.
 
-#### Disable caching for a module
+### Disable caching for a module{#smart-build-disable-caching}
 
 You can add the following property to the affected module’s `pom.xml`:
 
@@ -155,7 +155,7 @@ You can add the following property to the affected module’s `pom.xml`:
 
 This syntax forces the module to rebuild on every pipeline execution while other modules continue to benefit from caching.
 
-#### Limitations and considerations when using Smart Build
+### Limitations and considerations when using Smart Build{#smart-build-limitations}
 
 Keep the following in mind when you use Smart Build:
 
@@ -166,7 +166,7 @@ Keep the following in mind when you use Smart Build:
 
 If you encounter unexpected build behavior, consider disabling caching for specific modules or temporarily switching your build strategy to **Full Build**.
 
-#### Troubleshooting Smart Build issues
+### Troubleshooting Smart Build issues{#smart-build-troubleshoot}
 
    | Issue | Suggested solutions |
    | --- | --- |
