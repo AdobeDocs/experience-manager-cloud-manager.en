@@ -42,9 +42,9 @@ Once you have set up your program and have at least one environment using the Cl
    
    ![Choose pipeline type](/help/using/assets/add-non-production-pipeline-cm-ams.png)
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB Code Quality Pipeline - Configuration tab]
+>[!TAB Code Quality Pipeline - Configuration tab]
 
    | Section | Option | Description |
    | --- | --- | --- |
@@ -54,7 +54,7 @@ Once you have set up your program and have at least one environment using the Cl
    |  | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - This behavior is the default setting and requires manual intervention on any important failure.<li>**Fail immediately** - If selected, the pipeline is canceled whenever an important failure occurs. It is essentially emulating a user manually rejecting each failure.<li>**Continue immediately** - If selected, the pipeline procedes automatically whenever an important failure occurs. It is essentially emulating a user manually approving each failure.</li></ul> |
    |  | **Approve after Stage Deployment** check box  | Visible only when editing a non-production pipeline.<br>Select this option to require approval after deployment to the stage environment before the pipeline can continue. If this option is not selected, the pipeline continues based on the configured behavior. |
 
-   >[!TAB Deployment Pipeline - Configuration tab]
+>[!TAB Deployment Pipeline - Configuration tab]
 
    | Section | Option | Description |
    | --- | --- | --- |
@@ -68,14 +68,14 @@ Once you have set up your program and have at least one environment using the Cl
    |  | **Dispatcher Configuration** | The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure `Dispatcher`, do the following:<ul><li>Under **PATH**, provide a content path that you want the pipeline to flush or invalidate.<li>Under **TYPE**, select the action to be taken on that path.<ul><li>**Flush** - Perform a cache deletion on the specified path.</li><li>**Invalidate** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.</li><li>Click **Add Path** to add your specified path. You can add up to 100 paths per environment.</li></ul> |
    | **Pipeline** | **Experience Audit** check box | Select this option to include an Experience Audit step in the pipeline. When enabled, the pipeline includes the Experience Audit step after the Source Code tab. |
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 1. In the lower-right corner of the **Add Non-Production Pipeline** dialog box, click **Continue**.
 1. Select the type of code the pipeline is configured to build and deploy.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB Source Code tab - Full Stack Code]
+>[!TAB Source Code tab - Full Stack Code]
 
    Deploys the complete AEM application, including application code and, by default, web tier configuration.
 
@@ -87,7 +87,7 @@ Once you have set up your program and have at least one environment using the Cl
    |   | **Ignore Web Tier Configuration** check box | Select this option to skip deployment of web tier configuration in a Full Stack code pipeline. Leave the option unselected to deploy web tier configuration together with the pipeline’s code.|
    | **Pipeline** | **Experience Audit** check box | Select this option to include an Experience Audit step in the pipeline. When enabled, the pipeline includes the Experience Audit step after the Source Code tab. |
 
-   >[!TAB Source Code - Web Tier Config]
+>[!TAB Source Code - Web Tier Config]
 
    Deploys only web tier configuration, such as Dispatcher properties used to store, process, and deliver web pages to the client. When you select **Web Tier Config**, Cloud Manager creates a pipeline dedicated to web tier configuration deployment.
 
