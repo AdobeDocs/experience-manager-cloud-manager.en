@@ -103,7 +103,7 @@ Once you have set up your program and have at least one environment using the Cl
 
 1. Click **Save**.
 
-### About using Smart Build in a non-production pipeline{#about-smart-build}
+## About using Smart Build in a non-production pipeline{#about-smart-build}
 
 **Smart Build** in Cloud Manager is an optimized build strategy for non-production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
 
