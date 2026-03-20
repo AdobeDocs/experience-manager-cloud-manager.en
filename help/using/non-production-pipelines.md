@@ -25,7 +25,7 @@ There are two types of non-production pipelines:
 >
 >A pipeline cannot be set up until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
-## Add a non-production pipeline {#add-non-production-pipeline}
+## Add a new non-production pipeline {#add-non-production-pipeline}
 
 After you have set up a program and have at least one environment using the Cloud Manager UI, you can add non-production pipelines to test the quality of your code before deploying to production environments.
 
@@ -51,7 +51,7 @@ After you have set up a program and have at least one environment using the Clou
    | **Pipeline Configuration** | **Non-production Pipeline Name** | Provide a description for your pipeline in the **Non-Production Pipeline Name** field. |
    |  | **Testing**  | Visible only when editing a non-production pipeline.<br>The UI shows the testing categories that the pipeline runs as part of code quality validation.<ul><li>**Static Code Testing** - Analyzes the code for quality and correctness issues.<li>**Load/Performance Testing** - Evaluates performance-related behavior as part of pipeline testing.<li>**Security Testing** - Checks the code and pipeline output for security-related issues. |
    | **Deployment Options** | **Deployment Trigger** | <ul><li>**Manual** - Lets you manually start the pipeline.<li>**On Git Changes** - Starts the pipeline when commits are added to the configured Git branch. With this option, you can still start the pipeline manually, as required. |
-   |  | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - This behavior is the default setting and requires manual intervention on any important failure.<li>**Fail immediately** - If selected, the pipeline is canceled whenever an important failure occurs. It is essentially emulating a user manually rejecting each failure.<li>**Continue immediately** - If selected, the pipeline procedes automatically whenever an important failure occurs. It is essentially emulating a user manually approving each failure.</li></ul> |
+   |  | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - This behavior is the default setting and requires manual intervention on any important failure.<li>**Fail immediately** - If selected, the pipeline is canceled whenever an important failure occurs. It essentially emulates a user manually rejecting each failure.<li>**Continue immediately** - If selected, the pipeline procedes automatically whenever an important failure occurs. It essentially emulates a user manually approving each failure.</li></ul> |
    |  | **Approve after Stage Deployment** check box  | Visible only when editing a non-production pipeline.<br>Select this option to require approval after deployment to the stage environment before the pipeline can continue. If this option is not selected, the pipeline continues based on the configured behavior. |
 
 >[!TAB Deployment Pipeline - Configuration tab]
