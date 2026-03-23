@@ -27,7 +27,7 @@ There are two types of non-production pipelines:
 
 ## Add a new non-production pipeline {#add-non-production-pipeline}
 
-After you have set up a program and have at least one environment using the Cloud Manager UI, you can add non-production pipelines to test the quality of your code before deploying to production environments.
+After you set up a program and at least one environment in the Cloud Manager UI, you can add non-production pipelines. Use these pipelines to test your code quality before you deploy to production environments.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
 
