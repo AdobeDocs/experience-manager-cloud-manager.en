@@ -133,7 +133,7 @@ The performance gain from using Smart Build depends on several factors including
 * The frequency and scope of code changes.
 * The distribution of dependencies across modules.
 
-Generally, projects with many independent modules typically see the greatest improvement.
+Generally, projects with many independent modules can see the greatest improvement.
 
 ### Per-module cache opt-out{#smart-build-cache-optout}
 
