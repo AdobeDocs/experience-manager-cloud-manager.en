@@ -62,7 +62,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ### Faster builds with module caching {#quick-build-cm-pipelines}
 
-A new build model compiles only changed modules (rather than the entire repo) using module-level caching to shorten build times. It applies to code-quality, full-stack, and stage-only pipelines.
+A new build model compiles only changed modules (rather than the entire repo) using module-level caching to shorten build times. It applies to Code Quality and Full Stack pipelines.
 
 ![Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build](/help/release-notes/assets/non-production-pipeline-edit.png)
 *Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build.* 
@@ -72,7 +72,9 @@ In the **Add/Edit Pipeline** dialog box, under the **Source Code** tab, a new **
 * **Full Build** — builds all modules in the repository on every run.
 * **Smart Build** — builds only modules that changed since the last commit, which shortens overall build time.
 
-You control which pipelines use **Smart build**. During the beta, this option appears only for **Code Quality** and **Dev Deployment** pipelines.
+See [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline) and [About using Smart Build in a non-production pipeline](/help/using/non-production-pipelines.md#about-smart-build).
+
+You control which pipelines use **Smart build**. During the beta, this option appears only for **Code Quality** and **Dev Full Stack Code Deployment** pipelines.
 
 Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
 
