@@ -11,7 +11,7 @@ Learn how to use Cloud Manager to create and configure non-production pipelines 
 
 Using the **Pipelines** tile in [!UICONTROL Cloud Manager], the **Deployment Manager** can create two different types of pipelines.
 
-* **Production Pipelines** - A production pipelines is a purpose-built pipeline made of a series of orchestrated steps to take source code all the way into production.
+* **Production Pipelines** - A production pipeline is a purpose-built pipeline made of a series of orchestrated steps to take source code all the way into production.
 * **Non-Production Pipelines** - A non-production pipeline primarily serves to run code-quality scans or to deploy source code into a development environment.
 
 This document focuses on non-production pipelines. For details on how to configure production pipelines see the document [Configuring Production Pipelines](/help/using/production-pipelines.md).
