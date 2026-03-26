@@ -23,7 +23,7 @@ There are two types of non-production pipelines:
 
 >[!NOTE]
 >
->A pipeline cannot be set up until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+>You cannot set up a pipeline until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
 ## Add a new non-production pipeline {#add-non-production-pipeline}
 
@@ -31,7 +31,7 @@ After you set up a program and at least one environment in the Cloud Manager UI,
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) and select the appropriate organization and program.
 
-1. Access the Pipelines card from the Cloud Manager home screen. Click **Add**, then select **Add Non-Production Pipeline**.
+1. From the Cloud Manager home screen, open the Pipelines card and click **Add**, then select **Add Non-Production Pipeline**.
 
    ![Add non-production pipeline](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
@@ -48,7 +48,7 @@ After you set up a program and at least one environment in the Cloud Manager UI,
 
    | Section | Option | Description |
    | --- | --- | --- |
-   | **Pipeline Configuration** | **Non-production Pipeline Name** | Provide a description for your pipeline in the **Non-Production Pipeline Name** field. |
+   | **Pipeline Configuration** | **Non-production Pipeline Name** | Enter a description for your pipeline in the **Non-Production Pipeline Name** field. |
    |  | **Testing**  | Visible only when editing a non-production pipeline.<br>The UI shows the testing categories that the pipeline runs as part of code quality validation.<ul><li>**Static Code Testing** - Analyzes the code for quality and correctness issues.<li>**Load/Performance Testing** - Evaluates performance-related behavior as part of pipeline testing.<li>**Security Testing** - Checks the code and pipeline output for security-related issues. |
    | **Deployment Options** | **Deployment Trigger** | <ul><li>**Manual** - Lets you manually start the pipeline.<li>**On Git Changes** - Starts the pipeline when commits are added to the configured Git branch. With this option, you can still start the pipeline manually, as required. |
    |  | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - This behavior is the default setting and requires manual intervention on any important failure.<li>**Fail immediately** - If selected, the pipeline is canceled whenever an important failure occurs. It essentially emulates a user manually rejecting each failure.<li>**Continue immediately** - If selected, the pipeline procedes automatically whenever an important failure occurs. It essentially emulates a user manually approving each failure.</li></ul> |
@@ -58,14 +58,14 @@ After you set up a program and at least one environment in the Cloud Manager UI,
 
    | Section | Option | Description |
    | --- | --- | --- |
-   | **Pipeline Configuration** | **Non-production Pipeline Name** | Provide a description for your pipeline in the **Non-Production Pipeline Name** field. |
+   | **Pipeline Configuration** | **Non-production Pipeline Name** | Enter a description for your pipeline in the **Non-Production Pipeline Name** field. |
    |   | **Eligible Deployment Environment** | If your pipeline is a deployment pipeline, you must select which environments where Cloud Manager deploys the code.  |
    |   | **Testing** | Visible only when editing a non-production pipeline.<br>The UI shows the testing categories that the pipeline runs as part of code quality validation.<ul><li>**Static Code Testing** - Analyzes the code for quality and correctness issues.<li>**Load/Performance Testing** - Evaluates performance-related behavior as part of pipeline testing.<li>**Security Testing** - Checks the code and pipeline output for security-related issues.</li></ul>  |
    | **Deployment Options** | **Deployment Trigger** | <ul><li>**Manual** - Lets you manually start the pipeline.<li>**On Git Changes** - Starts the pipeline when commits are added to the configured Git branch. With this option, you can still start the pipeline manually, as required. |
    |   | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - The default setting and prompts the user to decide how to proceed when an important metric fails.<li>**Fail Immediately** - The pipeline is canceled whenever an important metric fails. It is essentially emulating a user manually rejecting each failure.<li>**Continue Immediately** - The pipeline proceeds automatically whenever an important metric fails. It is essentially emulating a user manually approving each failure.</li></ul> |
    |  | **Approve after Stage Deployment** check box | Visible only when editing a non-production pipeline.<br>Select this option to require approval after deployment to the stage environment before the pipeline can continue. If this option is not selected, the pipeline continues based on the configured behavior. |
    |  | **Skip Load Balancer changes** check box  | Select this option to prevent the pipeline from making load balancer changes during deployment. |
-   |  | **Dispatcher Configuration** | The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure `Dispatcher`, do the following:<ul><li>Under **PATH**, provide a content path that you want the pipeline to flush or invalidate.<li>Under **TYPE**, select the action to be taken on that path.<ul><li>**Flush** - Perform a cache deletion on the specified path.</li><li>**Invalidate** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.</li><li>Click **Add Path** to add your specified path. You can add up to 100 paths per environment.</li></ul> |
+   |  | **Dispatcher Configuration** | The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. Cloud Manager runs these cache actions as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure `Dispatcher`, do the following:<ul><li>Under **PATH**, provide a content path that you want the pipeline to flush or invalidate.<li>Under **TYPE**, select the action to be taken on that path.<ul><li>**Flush** - Perform a cache deletion on the specified path.</li><li>**Invalidate** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.</li><li>Click **Add Path** to add your specified path. You can add up to 100 paths per environment.</li></ul> |
    | **Pipeline** | **Experience Audit** check box | Select this option to include an Experience Audit step in the pipeline. When enabled, the pipeline includes the Experience Audit step after the Source Code tab. |
 
 >[!ENDTABS]
@@ -181,10 +181,10 @@ See [Add a non-production pipeline](#add-non-production-pipeline) the enable Sma
 <!-- 
 1. If you chose to add a **Deployment Pipeline**, select the target deployment environment from the **Eligible Deployment Environments** dropdown.
 
-1. Provide the repository where the pipeline should retrieve the code.
+1. Enter the repository where the pipeline should retrieve the code.
 
-   * **Repository** - Defines from which Git repo that the pipeline should retrieve the code.
-   * **Git Branch** - Defines from which branch in Git that the selected pipeline should retrieve the code.
+   * **Repository** - Select the Git repository that the pipeline retrieves code from.
+   * **Git Branch** - Select the branch in the Git repository that the selected pipeline retrieves code from.
 
 1. Define your deployment options.
 
@@ -196,10 +196,10 @@ See [Add a non-production pipeline](#add-non-production-pipeline) the enable Sma
    1. For deployment pipelines, under **Important Metric Failures Behavior**, define the behavior of the pipeline when an important failure is encountered in any of the quality gates.
 
        * **Ask every time** - The default setting and requires manual intervention on any important failure.
-       * **Fail Immediately** - The pipeline is canceled whenever an important failure occurs. It is essentially emulating a user manually rejecting each failure.
+       * **Fail Immediately** - Cloud Manager cancels the pipeline whenever an important failure occurs. It is essentially emulating a user manually rejecting each failure.
        * **Continue Immediately** - The pipeline proceeds automatically whenever an important failure occurs. It is essentially emulating a user manually approving each failure.
 
-   1. **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
+   1. **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths that Cloud Manager invalidates or flushes from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
 
       1. Under **PATH** provide a content path.
       1. Under **TYPE**, select the action to be taken on that path.
