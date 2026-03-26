@@ -59,7 +59,7 @@ After you set up a program and at least one environment in the Cloud Manager UI,
    | Section | Option | Description |
    | --- | --- | --- |
    | **Pipeline Configuration** | **Non-production Pipeline Name** | Provide a description for your pipeline in the **Non-Production Pipeline Name** field. |
-   |   | **Eligible Deployment Environment** | If your pipeline is a deployment pipeline, you must select which environments where Cloud Manager deploys the code.  | 
+   |   | **Eligible Deployment Environment** | If your pipeline is a deployment pipeline, you must select which environments where Cloud Manager deploys the code.  |
    |   | **Testing** | Visible only when editing a non-production pipeline.<br>The UI shows the testing categories that the pipeline runs as part of code quality validation.<ul><li>**Static Code Testing** - Analyzes the code for quality and correctness issues.<li>**Load/Performance Testing** - Evaluates performance-related behavior as part of pipeline testing.<li>**Security Testing** - Checks the code and pipeline output for security-related issues.</li></ul>  |
    | **Deployment Options** | **Deployment Trigger** | <ul><li>**Manual** - Lets you manually start the pipeline.<li>**On Git Changes** - Starts the pipeline when commits are added to the configured Git branch. With this option, you can still start the pipeline manually, as required. |
    |   | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - The default setting and prompts the user to decide how to proceed when an important metric fails.<li>**Fail Immediately** - The pipeline is canceled whenever an important metric fails. It is essentially emulating a user manually rejecting each failure.<li>**Continue Immediately** - The pipeline proceeds automatically whenever an important metric fails. It is essentially emulating a user manually approving each failure.</li></ul> |
@@ -84,7 +84,7 @@ After you set up a program and at least one environment in the Cloud Manager UI,
    | **Source code** | **Repository** | From the drop-down list, choose the Git repository that the pipeline uses as its source. Cloud Manager builds code from the repository that you choose here. |
    |   | **Git Branch** | From the drop-down list, choose which branch in the selected repository the pipeline should build from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list. |
    |   | **Build Strategy** | <ul><li>**Full Build** - Builds all modules in the repository every time<li>BETA **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build).</li></ol>**Important**: Smart Build is available only for Code Quality pipelines and Dev Full Stack Code deployment pipelines. |
-   |   | **Ignore Web Tier Configuration** check box | Select this option to skip deployment of web tier configuration in a Full Stack code pipeline. Leave the option unselected to deploy web tier configuration together with the pipeline’s code.|
+   |   | **Ignore Web Tier Configuration** check box | Select this option to skip deployment of web tier configuration in a Full Stack code pipeline. Leave the option unselected to deploy web tier configuration together with the pipeline's code.|
    | **Pipeline** | **Experience Audit** check box | Select this option to include an Experience Audit step in the pipeline. When enabled, the pipeline includes the Experience Audit step after the Source Code tab. |
 
 >[!TAB Source Code - Web Tier Config]
@@ -97,7 +97,7 @@ After you set up a program and at least one environment in the Cloud Manager UI,
    | --- | --- | --- |
    | **Source code** | **Repository** | From the drop-down list, select the Git repository that contains the web tier configuration. |
    |   | **Git Branch** | Select the branch in the chosen repository that Cloud Manager uses for the deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list. |
-   |   | **Code Location** | Enter the path in the selected repository that contains the web tier configuration to deploy. The default location is the repository root (`/`). | 
+   |   | **Code Location** | Enter the path in the selected repository that contains the web tier configuration to deploy. The default location is the repository root (`/`). |
 
 >[!ENDTABS]
 
@@ -122,7 +122,7 @@ Smart Build is recommended when you have the following:
 * Full builds are taking significant time.
 
 Smart Build is not always ideal when you have the following:
-* Your build relies heavily on plugins that perform operations outside Maven’s dependency graph.
+* Your build relies heavily on plugins that perform operations outside Maven's dependency graph.
 * You require full rebuild validation on every execution.
 
 ### Understand build performance{#smart-build-performance}
@@ -145,7 +145,7 @@ Smart Build provides fine-grained control that lets you disable caching for spec
 
 ### Disable caching for a module{#smart-build-disable-caching}
 
-You can add the following property to the affected module’s `pom.xml`:
+You can add the following property to the affected module's `pom.xml`:
 
 ```xml
 <properties>
