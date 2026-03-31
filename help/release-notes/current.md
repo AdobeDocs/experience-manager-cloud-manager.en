@@ -23,12 +23,13 @@ The next planned release is Thursday, May 7, 2026.
 
 ## What's new {#what-is-new}
 
-* **Support for UI extensibility in AEM Experience Hub**
-    Support for UI Extensions in [AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) is now enabled, letting developers extend the interface with custom functionality and widgets built using Adobe App Builder. 
+* **Support for user interface extensibility in AEM Experience Hub.**
+
+    Support for user interface extensions in [AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) is now enabled, letting developers extend the interface with custom functionality and widgets built using Adobe App Builder. 
 
     To learn more, see [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
-* **Configuration pipelines now support managed secrets**
+* **Configuration pipelines now support managed secrets.**
 
     Users can now add and manage secrets directly in Cloud Manager configuration pipelines. These secrets securely override values in the pipeline configuration spec and support flexible, environment-specific deployments.
 
@@ -37,7 +38,7 @@ The next planned release is Thursday, May 7, 2026.
 
     ![Variables Configuration dialog box](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Variables Configuration dialog box.*
 
-* **Improved stability, performance, and reliability**
+* **Improved stability, performance, and reliability.**
 
     This release includes optimization and maintenance updates that improved the stability, performance, and reliability of Cloud Manager.
 
