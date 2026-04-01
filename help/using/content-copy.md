@@ -2,8 +2,22 @@
 title: Content Copy for Environment Consistency
 description: Content Copy in Cloud Manager lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
+TQID: https://experienceleague.adobe.com/ffcf9UNSOp7oIpDZdtLcoFWp-Ww-A1XV3kCDmKqJLSw
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
 ---
-
 # Content Copy for environment consistency {#content-copy}
 
 Content Copy in Cloud Manager lets users copy mutable content On-demand from Adobe Managed Services-hosted Adobe Experience Manager 6.x production environments to lower environments for testing.

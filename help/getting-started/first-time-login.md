@@ -2,8 +2,19 @@
 title: First Time Login
 description: Follow this page if you have set up your general configurations and you are ready to use Cloud Manager for the first time.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
+TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # First time login {#first-time-login}
 
 After you have set up the general configuration for [!UICONTROL Cloud Manager], you are ready to use it.

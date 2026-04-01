@@ -2,8 +2,16 @@
 title: Set Up Your Project
 description: Learn how to set up your project so you can manage and deploy it with Cloud Manager.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
+TQID: https://experienceleague.adobe.com/OhaZ2-x6p1b6aF0xHwr2G-RNTYPd15pqHVxKVwv-GDM
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # Set up your project {#setting-up-your-project}
 
 Learn how to set up your project so you can manage and deploy it with Cloud Manager.

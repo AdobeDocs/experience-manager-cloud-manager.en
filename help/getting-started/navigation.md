@@ -2,8 +2,19 @@
 title: Navigating the Cloud Manager UI
 description: Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
+TQID: https://experienceleague.adobe.com/qTv4G7eSJahDusX68iNXzcw64Aq8xxP6SRAtn-SB0t4
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # Navigate the Cloud Manager UI {#navigation}
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.

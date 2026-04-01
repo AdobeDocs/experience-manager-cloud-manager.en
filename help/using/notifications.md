@@ -2,8 +2,16 @@
 title: Notifications
 description: Learn how Cloud Manager notifies you of important events.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
+TQID: https://experienceleague.adobe.com/WBAHeIAH1XL6oVy342wLaUAoAHkUoN1AbcAl2Erkte4
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # Notifications {#notifications}
 
 Learn how Cloud Manager notifies you of important events.
