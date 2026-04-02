@@ -1,14 +1,14 @@
 ---
 title: Release Notes for Cloud Manager 2026.4.0
-description: Learn about the release of Cloud Manager 2026.4.0 on Adobe Managed Services.
+description: Learn about the release of Cloud Manager 2026.4.0 in Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 ---
-# Release notes for Cloud Manager 2026.4.0 on Adobe Managed Services {#release-notes}
+# Release notes for Cloud Manager 2026.4.0 in Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Learn about the release of [!UICONTROL Cloud Manager] 2026.4.0 on Adobe Managed Services.
+Learn about the release of [!UICONTROL Cloud Manager] 2026.4.0 in Adobe Managed Services.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
