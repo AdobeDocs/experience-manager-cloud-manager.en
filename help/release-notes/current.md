@@ -4,6 +4,9 @@ description: Learn about the release of Cloud Manager 2026.4.0 in Adobe Managed 
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 ---
+
+<!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
+
 # Release notes for Cloud Manager 2026.4.0 in Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
