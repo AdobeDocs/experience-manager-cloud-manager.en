@@ -70,7 +70,7 @@ role: Admin
   + [Overview](/help/product-update-wizard/overview.md)
   + [Evaluation](/help/product-update-wizard/evaluation.md)
 + Release Notes {#release-notes}
-  + [Current](../release-notes/current.md)
+  + [Current](/help/release-notes/current.md)
   + 2026 {#rn-2026}
     + [2026.3.0](/help/release-notes/2026/2020-3-0.md)
     + [2026.2.0](/help/release-notes/2026/2026-2-0.md)
