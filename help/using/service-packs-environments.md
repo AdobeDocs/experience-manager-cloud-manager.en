@@ -1,7 +1,7 @@
 ---
 title: Service Pack Updates for Development Environments - private beta
 description: Learn how you can now initiate service pack updates for Development environments through the Cloud Manager user interface.
-hide: yes
+hide: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
 ---
 # Service pack updates for Development environments (private beta) {#stage-prod-only}
