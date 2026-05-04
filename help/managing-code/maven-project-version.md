@@ -2,8 +2,16 @@
 title: Maven Project Version Handling
 description: Learn how Maven handles project versioning in Cloud Manager.
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
+TQID: https://experienceleague.adobe.com/bJu9-2gYrKZW78jEpaKbXiJ9b5NZEGdjICFjC4J0Dyg
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # Maven project version handling {#project-version}
 
 Learn how Maven handles project versioning in Cloud Manager.

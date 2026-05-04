@@ -2,6 +2,15 @@
 title: Manage Access Tokens in Cloud Manager
 description: Learn how to view, edit, and delete access tokens used for Bring Your Own Git in Cloud Manager on Adobe Managed Services.
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
+TQID: https://experienceleague.adobe.com/o-kW-Wuj-afgXomU0kErSwYsNZziQFkpvtxvU0PQj3M
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Manage access tokens for external repositories {#manage-access-tokens}
 

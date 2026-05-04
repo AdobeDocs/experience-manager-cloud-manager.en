@@ -2,8 +2,22 @@
 title: Environment Provisioning
 description: Learn how your environments are provisioned as part of the Cloud Manager onboarding process.
 exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
+TQID: https://experienceleague.adobe.com/xLjZdRZeCiqF0KxHQ1nBI4IBBsh4BDTqETv79lrypR0
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
-
 # Environment provisioning {#environments-provisioning}
 
 Learn how your environments are provisioned as part of the Cloud Manager onboarding process.

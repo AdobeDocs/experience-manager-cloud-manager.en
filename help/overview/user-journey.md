@@ -2,8 +2,19 @@
 title: User Journey
 description: Learn about the different onboarding scenarios and getting started with Cloud Manager.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
+TQID: https://experienceleague.adobe.com/EnNaMZzu5bLUD3Jjsp6ovqFvoFM30ju4FOQJfmySLEk
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # User journey {#user-journey}
 
 As an AEM (Adobe Experience Manager) user, you likely fit one of the following scenarios:

@@ -2,9 +2,16 @@
 title: Manage Repositories in Cloud Manager
 description: Learn how to view, add, and delete your Git repositories in Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-
+TQID: https://experienceleague.adobe.com/rAFg0r8OX5drJ9fN5DyjoO3Hl6U-J4kkwTDVWtCOJ-8
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # Manage repositories in Cloud Manager {#cloud-manager-repos} 
 
 Learn how to view, add, and delete a Git repository in Cloud Manager.

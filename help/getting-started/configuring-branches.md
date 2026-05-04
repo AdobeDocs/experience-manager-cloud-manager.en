@@ -2,8 +2,19 @@
 title: Configuring Branches
 description: Learn how to set up your first branch in Git and how it is used by the CI/CD pipeline to deploy your application code.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
+TQID: https://experienceleague.adobe.com/Mxmx725a6m7J9UtwkI5o3tJGzZ7O3c3Bgv-fF393sZg
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
-
 # Configure branches {#configuring-branches}
 
 Learn how to set up your first branch in Git and how it is used by the CI/CD pipeline to deploy your application code.

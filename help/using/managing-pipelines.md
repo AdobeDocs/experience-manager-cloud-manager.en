@@ -2,8 +2,16 @@
 title: Manage Pipelines
 description: Learn how to manage your existing pipelines including running, editing, and deleting them.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
+TQID: https://experienceleague.adobe.com/5SdiydpBmjwCLtzujtle4gW1JyRRvR2qNFN3fdN5A0w
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # Manage pipelines {#managing-pipelines}
 
 Learn how to manage your existing pipelines including running, editing, and deleting them.

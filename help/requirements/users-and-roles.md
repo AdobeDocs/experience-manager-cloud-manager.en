@@ -2,8 +2,19 @@
 title: Add Users and Roles
 description: Learn how to use the Admin Console to add users and roles, and create profiles.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
+TQID: https://experienceleague.adobe.com/95vfyk6-SMg7GFaCVWkiaaGObo603DJqvExEgPFrwqw
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
-
 # Add users and roles {#add-users-and-roles}
 
 Many features in [!UICONTROL Cloud Manager] require specific permissions to use. For example, only certain users are allowed to set the key performance indicators (KPIs) for a program. These permissions are logically grouped into roles.

@@ -2,8 +2,19 @@
 title: Cloud Manager FAQs
 description: Learn about answers to the most frequently asked questions about Cloud Manager for AMS customers.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
+TQID: https://experienceleague.adobe.com/aBIiazPCm-krE6rew6k-HSl-Uvc79eagMzM7uYciWdc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
-
 # Cloud Manager FAQs {#cloud-manager-faqs}
 
 This document provides answers to the most frequently asked questions about Cloud Manager for AMS customers.

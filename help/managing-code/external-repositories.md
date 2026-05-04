@@ -2,6 +2,18 @@
 title: Add External Repositories in Cloud Manager
 description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps repositories.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
+TQID: https://experienceleague.adobe.com/uLIqzfR3sTBSMHCewIQPPADP9opdLQoT2PNQy5YZTKo
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
 ---
 # Add external repositories in Cloud Manager {#external-repositories}
 
