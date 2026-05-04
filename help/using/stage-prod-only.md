@@ -2,6 +2,18 @@
 title: Split Stage-Only and Production-Only Pipelines
 description: Learn how you can split staging and production deployments using dedicated pipelines.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
+TQID: https://experienceleague.adobe.com/whq-Hkwp3mjTr0iftoKZHKdsi0xaKtVXazXjUENoaLk
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Split stage-only and production-only pipelines {#stage-prod-only}
 

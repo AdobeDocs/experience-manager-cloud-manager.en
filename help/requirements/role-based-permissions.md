@@ -2,8 +2,19 @@
 title: Role-Based Permissions
 description: Learn about Cloud Manager's pre-configured role-based permissions to manage access to your cloud resources.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
+TQID: https://experienceleague.adobe.com/JXI9QGaexNJga8o80oLNo7allavc1x021DWmef-AkTc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
-
 # Role-based permissions {#role-based-permissions}
 
 [!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the Git repository. A business owner has different permissions allowing them to define the key performance indicators (KPIs) and approve deployments.

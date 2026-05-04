@@ -2,6 +2,18 @@
 title: Git Submodule Support
 description: Learn how you can use Git submodules to merge the content of multiple branches across Git repositories at build time.
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
+TQID: https://experienceleague.adobe.com/W9-oYHPdxHPJgwKxguEEkRgf3JDo8iHQRnnsSPYbHCI
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Git submodule support for Adobe repositories {#git-submodule-support}
 

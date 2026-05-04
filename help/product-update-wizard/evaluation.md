@@ -3,8 +3,19 @@ title: Evaluation Phase
 seo-title: Evaluation Phase
 description: Learn how the Product Update wizard's evaluation phase assesses the upgrade complexity with the pattern detector.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
+TQID: https://experienceleague.adobe.com/dj-Wnq9FagNI3mzzVHcUH-sOufzb02D0juHqhtgpon0
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # Evaluation phase {#evaluation}
 
 The first phase of the Product Update wizard is the **[!UICONTROL Evaluation]** phase. It runs the pattern detector within the wizard to assess upgrade complexity. At the end of this step, you can view the evaluation report.

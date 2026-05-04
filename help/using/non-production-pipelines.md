@@ -2,6 +2,15 @@
 title: Add a Non-Production Pipeline
 description: Learn how to use Cloud Manager to create and configure non-production pipelines to deploy your code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
+TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Add a non-production pipeline {#configuring-non-production-pipelines}
 
