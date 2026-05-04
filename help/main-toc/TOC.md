@@ -47,7 +47,7 @@ role: Admin
   + [Code Quality Testing](/help/using/code-quality-testing.md)
   + [Manage Environments](/help/using/managing-environments.md)
   + [Monitor Environments](/help/using/monitoring-environments.md)
-  + [Service Pack Updates for Development Environments (private beta)](/help/using/service-packs-environments.md)
+  + {hide-from-toc} [Service Pack Updates for Development Environments (private beta)](/help/using/service-packs-environments.md)
   + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
   + [Notifications](/help/using/notifications.md)
@@ -72,7 +72,7 @@ role: Admin
 + Release Notes {#release-notes}
   + [Current](/help/release-notes/current.md)
   + 2026 {#rn-2026}
-    + [2026.3.0](/help/release-notes/2026/2020-3-0.md)
+    + [2026.3.0](/help/release-notes/2026/2026-3-0.md)
     + [2026.2.0](/help/release-notes/2026/2026-2-0.md)
     + [2026.1.0](/help/release-notes/2026/2026-1-0.md)
   + 2025 {#rn-2025}

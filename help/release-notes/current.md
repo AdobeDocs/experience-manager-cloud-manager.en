@@ -1,6 +1,6 @@
 ---
 title: Release Notes for Cloud Manager 2026.4.0
-description: Learn about the release of Cloud Manager 2026.4.0 on Adobe Managed Services.
+description: Learn about the release of Cloud Manager 2026.4.0 in Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
@@ -16,11 +16,14 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
 ---
-# Release notes for Cloud Manager 2026.4.0 on Adobe Managed Services {#release-notes}
+
+# Release notes for Cloud Manager 2026.4.0 in Adobe Managed Services {#release-notes}
+
+<!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Learn about the release of [!UICONTROL Cloud Manager] 2026.4.0 on Adobe Managed Services.
+Learn about the release of [!UICONTROL Cloud Manager] 2026.4.0 in Adobe Managed Services.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
