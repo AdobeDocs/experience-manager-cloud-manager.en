@@ -2,8 +2,16 @@
 title: Use the New Project Wizard
 description: Follow this page to learn how to use the wizard to create an AEM Application Project.
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
+TQID: https://experienceleague.adobe.com/zoiHL1lNC2XN-T9g0dh3pQyL4Yw3uYgFpHs8d6hkj3M
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # Use the new project wizard {#using-the-wizard}
 
 When you are onboarded to Cloud Manager as a new customer, you are provided with an empty Git repository. To help you get started, Cloud Manger offers a wizard to create a minimal AEM project based on the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) as a starting point.

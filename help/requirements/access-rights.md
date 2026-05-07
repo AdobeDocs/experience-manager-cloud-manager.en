@@ -2,8 +2,16 @@
 title: Access Rights
 description: Learn about your Adobe ID and how you use it to access Experience Cloud resources.
 exl-id: 9e51936c-9727-4b9c-a86a-2ea3aabd42cf
+TQID: https://experienceleague.adobe.com/AXVuaXvakfwND8JAL-X-DvwDWyhrpanht6r01jWSoMw
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-
 # Access rights {#access-rights}
 
 Learn about your Adobe ID and how you use it to access Experience Cloud resources.

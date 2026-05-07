@@ -2,6 +2,15 @@
 title: Pull Request Checks for Private Repositories
 description: Learn how to control the pipelines that are created automatically to validate each pull request to a private repository.
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
+TQID: https://experienceleague.adobe.com/duceoXUt2SqWI0ZXzyuqZtszLfJkWr53G5O5ze4nxTY
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Pull request checks for private repositories {#github-check-config}
 
