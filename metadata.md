@@ -1,5 +1,10 @@
 ---
 solution: Experience Manager, Experience Manager Cloud Manager
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    label: "Experience Manager"
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    label: "Experience Manager Cloud Manager"
 landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
 type: Documentation
