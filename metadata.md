@@ -5,6 +5,7 @@ product_v2:
     internal-label: "Experience Manager"
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
     internal-label: "Experience Manager Cloud Manager"
+usetq: true
 landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
 type: Documentation
