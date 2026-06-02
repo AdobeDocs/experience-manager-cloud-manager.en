@@ -1,6 +1,6 @@
 ---
-title: Release Notes for Cloud Manager 2026.5.0
-description: Learn about the release of Cloud Manager 2026.5.0 in Adobe Managed Services.
+title: Release Notes for Cloud Manager 2026.6.0
+description: Learn about the release of Cloud Manager 2026.6.0 in Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
@@ -17,28 +17,28 @@ topic_v2:
     internal-label: Optimization
 ---
 
-# Release notes for Cloud Manager 2026.5.0 in Adobe Managed Services {#release-notes}
+# Release notes for Cloud Manager 2026.6.0 in Adobe Managed Services {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Learn about the release of [!UICONTROL Cloud Manager] 2026.5.0 in Adobe Managed Services.
+Learn about the release of [!UICONTROL Cloud Manager] 2026.6.0 in Adobe Managed Services.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Release dates {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] 2026.5.0 is Thursday, May 7, 2026. 
+The release date for [!UICONTROL Cloud Manager] 2026.6.0 is Thursday, June 4, 2026. 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-The next planned release is Thursday, June 4, 2026.
+The next planned release is Thursday, July 9, 2026.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## What's new {#what-is-new}
 
-There are no significant new features in the May 2026 Cloud Manager on AMS release.
+There are no significant new features in the June 2026 Cloud Manager on AMS release.
 
 ## Beta programs {#beta-program}
 
@@ -46,7 +46,7 @@ Participate in Cloud Manager's beta programs to get exclusive access to upcoming
 
 >[!IMPORTANT]
 >
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk and do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 The following beta program opportunities are currently available:
 
@@ -78,7 +78,7 @@ To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quic
 
 ## Bug fixes {#bug-fixes}
 
-There are no significant bug fixes in the May 2026 Cloud Manager on AMS release. 
+There are no significant bug fixes in the June 2026 Cloud Manager on AMS release. 
 
 <!--
 Known Issues {#known-issues}
