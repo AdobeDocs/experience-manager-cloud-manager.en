@@ -54,6 +54,63 @@ The following diagram illustrates what happens when a release is triggered in [!
 | 9. [!UICONTROL Cloud Manager] gets artifacts(s) to deploy | [!UICONTROL Cloud Manager] pulls the stored release artifacts. |
 | 10. Deploy artifacts to production | The release artifacts are deployed to the production environment. |
 
+### Code sources {#code-sources}
+
+Pipelines can also differ by the type of code they deploy, in addition to production and non-production.
+
+* **[Full stack pipelines](#full-stack-pipeline)** - Deploy the complete AEM application code along with HTTPD/Dispatcher configurations.
+* **[Web tier config pipelines](#web-tier-config-pipelines)** - Deploy HTTPD/Dispatcher configurations only.
+
+### Full stack pipelines {#full-stack-pipeline}
+
+Full-stack pipelines deploy the complete AEM application code to the AEM runtime, and by default, also deploy web tier configurations.
+
+The following restrictions apply.
+
+* A user must be logged in with the **Deployment Manager** role to configure or run pipelines.
+* At any time, there can only be one full-stack pipeline per environment.
+
+The following describes how the full-stack pipeline interacts with a [web tier config pipeline](#web-tier-config-pipelines).
+
+* The full-stack pipeline for an environment ignores the Dispatcher configuration if the corresponding web tier config pipeline exists.
+* If the corresponding web tier config pipeline for the environment does not exist, the user can configure the full-stack pipeline to include or ignore the Dispatcher configuration.
+
+Full-stack pipelines can be code quality pipelines or deployment.
+
+#### Configure full-stack pipelines {#configure-full-stack}
+
+See [Add a production pipeline](/help/using/production-pipelines.md#full-stack-code).
+See [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+
+### Web tier config pipelines {#web-tier-config-pipelines}
+
+Web tier config pipelines allow exclusive deployment of HTTPD/Dispatcher configuration to the AEM runtime, decoupling it from other code changes. It is a streamlined pipeline that provides users who want to deploy only Dispatcher configuration changes, an accelerated means to do so in only a few minutes.
+
+>[!TIP]
+>
+>Web tier config pipelines let you store your web config in the same or a different source location as the full stack pipeline, depending on what best suits your project structure.
+
+The following restrictions apply.
+
+* A user must be logged in with the **Deployment Manager** role to configure or run pipelines.
+* At any time, there can only be one web tier config pipeline per environment.
+* The user cannot configure a web tier config pipeline when its corresponding full-stack pipeline is running.
+
+The following describes how the web tier config pipeline interacts with the [full stack pipeline](#full-stack-pipeline).
+
+* If a web tier config pipeline is not set up for an environment, the user can choose to include or ignore the Dispatcher configuration while configuring the full-stack pipeline.
+* Once a web tier config pipeline is configured for an environment, its corresponding full-stack pipeline (if one exists) ignores the Dispatcher configuration during execution and deployment.
+* After a web tier config pipeline is deleted, its corresponding full-stack pipeline (if one exists) is reset to deploy Dispatcher configurations during its execution.
+
+>[!NOTE]
+>
+>For AMS programs with blue-green deployment enabled, web tier updates use rolling deployment by default. Use a full stack pipeline if you need blue-green deployment for web tier changes.
+
+#### Configure web tier pipelines {#configure-web-tier}
+
+See [Add a production pipeline](/help/using/production-pipelines.md#web-tier-config).
+See [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+
 ### Faster builds using Smart Build {#use=smart-build}
 
 Cloud Manager now uses an optimized build strategy called **Smart Build**, which uses module-level caching to speed up the build process. During each build, only modules that have changed are rebuilt, while unchanged modules are reused from the cache.

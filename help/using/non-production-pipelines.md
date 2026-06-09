@@ -88,6 +88,10 @@ After you set up a program and at least one environment in the Cloud Manager UI,
 
    Deploys the complete AEM application, including application code and, by default, web tier configuration.
 
+   >[!NOTE]
+   >
+   >If a full-stack code pipeline already exists for the selected environment, this selection is disabled.
+
    | Section | Option | Description |
    | --- | --- | --- |
    | **Source code** | **Repository** | From the drop-down list, choose the Git repository that the pipeline uses as its source. Cloud Manager builds code from the repository that you choose here. |
@@ -102,11 +106,19 @@ After you set up a program and at least one environment in the Cloud Manager UI,
 
    If a full stack pipeline already exists, Cloud Manager displays a notice that creating a web tier configuration pipeline causes the existing full stack pipeline to ignore web tier configuration. After you create the web tier configuration pipeline, Cloud Manager manages web tier configuration deployments through that pipeline instead of the full stack pipeline.
 
+   >[!NOTE]
+   >
+   >If a web-tier config pipeline already exists for the selected environment, this selection is disabled. At any time, there can only be one web tier config pipeline per environment.
+
    | Section | Option | Description |
    | --- | --- | --- |
    | **Source code** | **Repository** | From the drop-down list, select the Git repository that contains the web tier configuration. |
    |   | **Git Branch** | Select the branch in the chosen repository that Cloud Manager uses for the deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list. |
    |   | **Code Location** | Enter the path in the selected repository that contains the web tier configuration to deploy. The default location is the repository root (`/`). |
+
+   >[!NOTE]
+   >
+   >If Code Location does not point to the dispatcher code location, additional application code could be pulled into the artifact package and deployed to the dispatcher, causing Apache to fail on restart and the pipeline to fail. Make sure to set the correct path to the dispatcher files in the repository.
 
 >[!ENDTABS]
 
