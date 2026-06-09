@@ -48,24 +48,11 @@ After you have used the [!UICONTROL Cloud Manager] UI to set up your program and
 
 1. Click **+Add**, then select **Add Production Pipeline**.
 
-   ![Add a production pipeline](/help/assets/configure-pipelines/add-prod1.png)
+   ![Add a production pipeline](/help/assets/configure-pipelines/add-prod7.png)
 
 1. The **Add Production Pipeline** dialog box opens to the **Configuration** tab where a number of options for your pipeline must be defined. These options are grouped into collapsible sections and are described in the following steps.
 
    1. Provide a descriptive name for your pipeline in the **Pipeline Name** field.
-
-   1. Under the **Source Code** section, you define where the pipeline retrieves the code it processes.
-
-      * **Repository** - Defines which Git repo the pipeline should retrieve the code.
-
-      >[!TIP]
-      >
-      >See the document [Program Setup](/help/getting-started/program-setup.md) to learn how to add and manage repositories in Cloud Manager.
-
-      * **Git Branch** - Defines from which branch in the selected pipeline should retrieve the code.
-      * **Code Location** - Defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
-
-      ![Define repos for the pipeline](/help/assets/configure-pipelines/add-prod2.png)
 
    1. Under the **Environments** section, you define what triggers a deployment and how it should be rolled out per environment.
 
@@ -131,7 +118,16 @@ After you have used the [!UICONTROL Cloud Manager] UI to set up your program and
 
          * **Dispatcher Configuration** - Define the Dispatcher configuration for your production environment. The options are the same as the options for the staging environment.
    
-1. Click **Continue** to advance to the **Stage Testing** tab where you can configure AEM Sites and AEM Assets Performance Testing, depending on which products you have licensed.
+1. Click **Continue** to advance to the **Source Code** tab where you select the type of code to deploy and configure the source repository.
+
+   1. Under **Select code to deploy**, choose the deployment type:
+
+      * **[Full Stack Code](#full-stack-code)** - Code for your complete AEM application.
+      * **[Web Tier Config](#web-tier-config)** - Dispatcher properties to store, process and deliver web pages to the client.
+
+      See [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md#code-sources) for more information about these deployment types. The remaining steps to complete the pipeline configuration depend on the type you selected. Follow the links above to jump to the relevant section of this document.
+
+1. Click **Continue** to advance to the **Stage Testing** tab where you can configure AEM Sites and AEM Assets Performance Testing, depending on which products you have licensed. {#stage-testing}
 
    >[!TIP]
    >
@@ -143,7 +139,7 @@ After you have used the [!UICONTROL Cloud Manager] UI to set up your program and
       * **Other Live Pages**
       * **New Pages**
 
-      ![Sites load weight](/help/assets/configure-pipelines/add-prod5.png)
+      ![Sites load weight](/help/assets/configure-pipelines/add-prod8.png)
 
    1. Under the **Assets Performance Testing Distribution** section, you define the test distribution of images and PDFs and define your own test assets.
 
@@ -159,6 +155,57 @@ After you have used the [!UICONTROL Cloud Manager] UI to set up your program and
       ![Assets testing distribution](/help/assets/configure-pipelines/add-prod6.png)
 
 1. Click **Save** to complete adding your production pipeline.
+
+### Full Stack Code {#full-stack-code}
+
+A full-stack code pipeline deploys back-end and front-end code builds along with HTTPD/Dispatcher configuration.
+
+>[!NOTE]
+>
+>If a full-stack production pipeline already exists, this selection is disabled.
+
+**To configure a full stack code production pipeline:**
+
+1. On the **Source Code** tab, define the following options.
+
+   * **Repository** - Defines which Git repo the pipeline should retrieve the code.
+
+   >[!TIP]
+   >
+   >See the document [Program Setup](/help/getting-started/program-setup.md) to learn how to add and manage repositories in Cloud Manager.
+
+   * **Git Branch** - Defines from which branch the pipeline should retrieve the code.
+   * **Ignore Web Tier Configuration** - When checked, the pipeline does not deploy your web tier configuration. If a web tier config pipeline already exists for the same environment, this check box is automatically selected and disabled because the web tier configuration is managed by that pipeline instead. When no web tier config pipeline exists, you can select or clear this option to control whether the full stack pipeline deploys the Dispatcher configuration.
+
+   ![Full stack code source](/help/assets/configure-pipelines/add-prod-fullstack-source.png)
+
+1. Click **Continue** to advance to the **Stage Testing** tab. See [Stage Testing](#stage-testing) for details.
+
+### Web Tier Config {#web-tier-config}
+
+A web tier config pipeline deploys only HTTPD/Dispatcher configuration. See [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md#deployment-types) for more details about this pipeline type.
+
+>[!NOTE]
+>
+>If a web-tier config production pipeline already exists, this selection is disabled.
+
+If you create a web tier config pipeline for an environment with an existing full-stack pipeline, the web tier configuration in the full-stack pipeline is ignored. This change affects only the web tier configuration in that environment.
+
+**To configure a web tier config production pipeline:**
+
+1. On the **Source Code** tab, define the following options.
+
+   * **Repository** - From the drop-down list, select the Git repository that contains the web tier configuration.
+   * **Git Branch** - Select the branch in the chosen repository that Cloud Manager uses for the deployment.
+   * **Code Location** - Enter the path in the selected repository that contains the web tier configuration to deploy. The default location is the repository root (`/`).
+
+   >[!NOTE]
+   >
+   >If Code Location does not point to the dispatcher code location, additional application code could be pulled into the artifact package and deployed to the dispatcher, causing Apache to fail on restart and the pipeline to fail. Make sure to set the correct path to the dispatcher files in the repository.
+
+   ![Web tier config source](/help/assets/configure-pipelines/add-prod-webtier-source.png)
+
+1. Click **Continue** to advance to the **Stage Testing** tab. See [Stage Testing](#stage-testing) for details.
 
 ## The next steps {#the-next-steps}
 
