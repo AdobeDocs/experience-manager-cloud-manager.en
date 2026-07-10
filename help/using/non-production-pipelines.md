@@ -34,7 +34,7 @@ There are two types of non-production pipelines:
 >
 >You cannot set up a pipeline until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
-## Add a new non-production pipeline {#add-non-production-pipeline}
+## Add a non-production pipeline {#add-non-production-pipeline}
 
 After you set up a program and at least one environment in the Cloud Manager UI, you can add non-production pipelines. Use these pipelines to test your code quality before you deploy to production environments.
 
@@ -96,7 +96,7 @@ After you set up a program and at least one environment in the Cloud Manager UI,
    | --- | --- | --- |
    | **Source code** | **Repository** | From the drop-down list, choose the Git repository that the pipeline uses as its source. Cloud Manager builds code from the repository that you choose here. |
    |   | **Git Branch** | From the drop-down list, choose which branch in the selected repository the pipeline should build from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list. |
-   |   | **Build Strategy** | <ul><li>**Full Build** - Builds all modules in the repository every time<li>BETA **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build).</li></ol>**Important**: Smart Build is available only for Code Quality pipelines and Dev Full Stack Code deployment pipelines. |
+   |   | **Build Strategy** | <ul><li>**Full Build** - Builds all modules in the repository every time<li>**Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build).</li></ol> |
    |   | **Ignore Web Tier Configuration** check box | Select this option to skip deployment of web tier configuration in a Full Stack code pipeline. Leave the option unselected to deploy web tier configuration together with the pipeline's code.|
    | **Pipeline** | **Experience Audit** check box | Select this option to include an Experience Audit step in the pipeline. When enabled, the pipeline includes the Experience Audit step after the Source Code tab. |
 
@@ -124,25 +124,28 @@ After you set up a program and at least one environment in the Cloud Manager UI,
 
 1. Click **Save**.
 
-## About using Smart Build in a non-production pipeline{#about-smart-build}
+## About using Smart Build in your non-production pipeline{#about-smart-build}
 
 **Smart Build** in Cloud Manager is an optimized build strategy for non-production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
 
-Smart Build is currently available only for the following:
+Smart Build is currently available for the following:
 
 * Code Quality pipelines.
-* Dev full-stack deployment pipelines.
+* Development, Stage, and non-production full-stack deployment pipelines.
+
 
 >[!NOTE]
 >
 >The first run after enabling Smart Build behaves like a Full Build because the cache is empty.
 
 Smart Build is recommended when you have the following:
+
 * You are actively developing and committing frequent incremental changes.
 * Your project contains multiple Maven modules.
 * Full builds are taking significant time.
 
 Smart Build is not always ideal when you have the following:
+
 * Your build relies heavily on plugins that perform operations outside Maven's dependency graph.
 * You require full rebuild validation on every execution.
 

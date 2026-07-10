@@ -115,7 +115,7 @@ See [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-
 
 Cloud Manager now uses an optimized build strategy called **Smart Build**, which uses module-level caching to speed up the build process. During each build, only modules that have changed are rebuilt, while unchanged modules are reused from the cache.
 
-Smart Build is available for Code Quality and Dev Full Stack deployment pipelines only.
+Smart Build is available for Code Quality and Full Stack deployment pipelines (Development, Stage, Production).
 
 See [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline) and [About using Smart Build in a non-production pipeline](/help/using/non-production-pipelines.md#about-smart-build).
 

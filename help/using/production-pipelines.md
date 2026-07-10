@@ -38,7 +38,7 @@ The **Deployment Manager** role is responsible for setting up the pipeline. Pipe
 >
 >A pipeline cannot be set up until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete.
 
-## Add a new production pipeline {#adding-production-pipeline}
+## Add a production pipeline {#adding-production-pipeline}
 
 After you have used the [!UICONTROL Cloud Manager] UI to set up your program and have at least one environment, you are ready to add a production pipeline.
 
@@ -206,6 +206,83 @@ If you create a web tier config pipeline for an environment with an existing ful
    ![Web tier config source](/help/assets/configure-pipelines/add-prod-webtier-source.png)
 
 1. Click **Continue** to advance to the **Stage Testing** tab. See [Stage Testing](#stage-testing) for details.
+
+
+## About using Smart Build in a production pipeline{#about-smart-build}
+
+**Smart Build** in Cloud Manager is an optimized build strategy for production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
+
+Smart Build is currently available for the following:
+
+* Code Quality pipelines.
+* Development, Stage, and Production full-stack deployment pipelines.
+
+>[!NOTE]
+>
+>The first run after enabling Smart Build behaves like a Full Build because the cache is empty.
+
+Smart Build is recommended when you have the following:
+
+* You are actively developing and committing frequent incremental changes.
+* Your project contains multiple Maven modules.
+* Full builds are taking significant time.
+
+Smart Build is not always ideal when you have the following:
+
+* Your build relies heavily on plugins that perform operations outside Maven's dependency graph.
+* You require full rebuild validation on every execution.
+
+### Understand build performance{#smart-build-performance}
+
+The performance gain from using Smart Build depends on several factors including the following:
+
+* The number of modules in the project.
+* The frequency and scope of code changes.
+* The distribution of dependencies across modules.
+
+Generally, projects with many independent modules can see the greatest improvement.
+
+### Per-module cache opt-out{#smart-build-cache-optout}
+
+Smart Build provides fine-grained control that lets you disable caching for specific modules. This ability is useful when certain modules:
+
+* Use plug-ins, such as `exec-maven-plugin` or `maven-antrun-plugin`.
+* Perform file operations not tracked by Maven dependencies.
+* Produce inconsistent results when cached.
+
+### Disable caching for a module{#smart-build-disable-caching}
+
+You can add the following property to the affected module's `pom.xml`:
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+This syntax forces the module to rebuild on every pipeline execution while other modules continue to benefit from caching.
+
+### Limitations and considerations when using Smart Build{#smart-build-limitations}
+
+Keep the following in mind when you use Smart Build:
+
+* Smart Build relies on Maven dependency analysis.
+* Changes outside the dependency graph may not trigger rebuilds.
+* Some plug-ins may not be fully compatible with caching.
+* You can switch back to **Full Build** at any time by editing the non-production pipeline.
+
+If you encounter unexpected build behavior, consider disabling caching for specific modules or temporarily switching your build strategy to **Full Build**.
+
+### Troubleshooting Smart Build issues{#smart-build-troubleshoot}
+
+   | Issue | Suggested solutions |
+   | --- | --- |
+   | Build results are inconsistent | &bull; Disable caching for affected modules.<br>&bull; Verify plug-in behavior (especially `exec`/`antrun` plug-ins).   |
+   | No performance improvement | &bull; Ensure that multiple runs have occurred (cache warm-up).<br>&bull; Check if most modules are changing frequently.  |
+   | Unexpected artifacts or missing changes | &bull; Review whether changes are outside Maven dependency tracking.<br>&bull; Use **Full Build** for verification. |
+
+See [Add a production pipeline](#adding-production-pipeline) the enable Smart Build.
+
 
 ## The next steps {#the-next-steps}
 
