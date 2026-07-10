@@ -45,35 +45,8 @@ The next planned release is Thursday, August 6, 2026.
 
     For more information, see the following:
 
-    * [About using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) and [About using Smart Build in a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build-non-production-pipeline)
-    * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#configuring-non-production-pipelines).
-
-
-
-
-
-
-
-
-
-
-### Faster builds with module caching {#quick-build-cm-pipelines}
-
-A new build model compiles only changed modules (rather than the entire repo) using module-level caching to shorten build times. It applies to Code Quality and Full Stack pipelines.
-
-![Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build](/help/release-notes/assets/non-production-pipeline-edit.png)
-*Edit Non-Production Pipeline dialog box showing the two Build Strategy options which are Full Build and Smart Build.* 
-
-In the **Add/Edit Pipeline** dialog box, under the **Source Code** tab, a new **Build Strategy** section lets you choose one of the following build options:
-
-* **Full Build** — builds all modules in the repository on every run.
-* **Smart Build** — builds only modules that changed since the last commit, which shortens overall build time.
-
-See [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline) and [About using Smart Build in a non-production pipeline](/help/using/non-production-pipelines.md#about-smart-build).
-
-You control which pipelines use **Smart Build**. During the beta, this option appears only for **Code Quality** and **Dev Full Stack Code Deployment** pipelines.
-
-To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
+    * [About using Smart Build in a production pipeline](/help/using/production-pipelines.md#about-smart-build) and [About using Smart Build in a non-production pipeline](/help/using/non-production-pipelines.md#about-smart-build) 
+    * [Add a production pipeline](/help/using/production-pipelines.md##adding-production-pipeline) and [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ## Beta programs {#beta-program}
 

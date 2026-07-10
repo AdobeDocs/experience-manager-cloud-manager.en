@@ -38,7 +38,7 @@ The **Deployment Manager** role is responsible for setting up the pipeline. Pipe
 >
 >A pipeline cannot be set up until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete.
 
-## Add a new production pipeline {#adding-production-pipeline}
+## Add a production pipeline {#adding-production-pipeline}
 
 After you have used the [!UICONTROL Cloud Manager] UI to set up your program and have at least one environment, you are ready to add a production pipeline.
 
@@ -208,7 +208,7 @@ If you create a web tier config pipeline for an environment with an existing ful
 1. Click **Continue** to advance to the **Stage Testing** tab. See [Stage Testing](#stage-testing) for details.
 
 
-## About using Smart Build in your production pipeline{#about-smart-build}
+## About using Smart Build in a production pipeline{#about-smart-build}
 
 **Smart Build** in Cloud Manager is an optimized build strategy for production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
 
