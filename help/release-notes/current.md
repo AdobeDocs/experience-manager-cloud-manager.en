@@ -69,7 +69,7 @@ To join the Beta, contact your Adobe Customer Success Engineer to learn more.
 
 ## Bug fixes {#bug-fixes}
 
-There are no significant bug fixes in the June 2026 Cloud Manager on AMS release. 
+There are no significant bug fixes in the July 2026 Cloud Manager on AMS release. 
 
 <!--
 Known Issues {#known-issues}
