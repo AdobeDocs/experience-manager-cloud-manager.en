@@ -45,7 +45,7 @@ Cloud Manager's build environments have the following attributes.
   * `imagemagick`
   * `graphicsmagick`
 * Other packages are installed at build time as described in the section [Installing Additional System Packages](#installing-additional-system-packages).
-* Every build is done in a new environment. The build container does not retain data between executions.
+* Every build is done in a new environment. The build container does not persist data between executions.
 * Maven is run with these three commands: 
   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -74,7 +74,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md) began a rolling
 
 Some users encounter issues during the build step when downloading artifacts from Maven repositories that use insecure HTTP connections.
 
-To ensure a smooth experience with the updated version, Adobe recommends that users update their Maven repositories to use HTTPS instead of HTTP. This adjustment supports the industry's transition towards secure communication protocols and maintains a secure and reliable build process.
+To ensure a smooth experience with the updated version, Adobe recommends that users update their Maven repositories to use HTTPS instead of HTTP. This adjustment supports the industry transition towards secure communication protocols and maintains a secure and reliable build process.
 
 ## Using a specific Java version {#using-java-version}
 

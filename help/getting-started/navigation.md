@@ -22,7 +22,7 @@ Learn how the Cloud Manager UI is organized and how to navigate to manage your p
 The Cloud Manager UI is primarily composed of two graphical interfaces:
 
 * [The My Programs console](#my-programs-console) is where you can view and manage all of your programs.
-* [The Program Overview window](#program-overview) is where you can see the detail of and manage an individual program.
+* [The Program Overview window](#program-overview) is where you can see the details of and manage an individual program.
 
 ## My Programs console {#my-programs-console}
 
@@ -30,7 +30,7 @@ When you log into Cloud Manager at [experience.adobe.com](https://experience.ado
 
 ![My Programs console](/help/getting-started/assets/cloud-manager-my-programs-console.png)
 
-The **My Programs** console provides an overview of all programs to which you have access in the selected organization. It is made up of several parts.
+The **My Programs** console provides an overview of all programs to which you have access in the selected organization. It consists of several parts.
 
 |   | Area | Description |
 | --- | --- | --- |
@@ -43,11 +43,11 @@ The **My Programs** console provides an overview of all programs to which you ha
 
 ### Toolbars {#my-programs-toolbars}
 
-There are two toolbars on top of each other. 
+There are two toolbars. 
 
 #### Cloud Manager header {#cloud-manager-header}
 
-The first is the Cloud Manager header. The header is persistent as you navigate Cloud Manager. It is an anchor that gives you access to settings and information that apply across Cloud Manager programs.
+The first is the Cloud Manager header. The header is always visible while you use Cloud Manager. It is a central location that provides access to settings and information that apply to all Cloud Manager programs.
 
 ![The Experience Cloud header](/help/getting-started/assets/cloud-manager-header-toolbar.png)
 
@@ -78,7 +78,7 @@ The first is the Cloud Manager header. The header is persistent as you navigate 
 
 #### Program toolbar {#program-toolbar}
 
-The program toolbar provides links to switch between Cloud Manager programs and actions appropriate to the context.
+The program toolbar provides links to switch between Cloud Manager programs and actions relevant to the context.
 
 ![Cloud Manager program toolbar](/help/getting-started/assets/cloud-manager-programs-toolbar.png)
 
@@ -90,19 +90,19 @@ The program toolbar provides links to switch between Cloud Manager programs and 
 
 ### Call-to-actions and statistics {#cta-statistics}
 
-The call-to-action and statistics section provides aggregate data for your organization, for example, if you have successfully set up your programs, statistics of your activities over the past 90 days might show, including:
+The call-to-action and statistics section provides aggregate data for your organization. For example, if you have successfully configured your programs, statistics of your activities over the past 90 days are shown, including the following:
 
 * Number of [deployments](/help/using/code-deployment.md)
 * Number of [code quality issues](/help/using/code-quality-testing.md) identified
 * Number of builds
 
-Or if you are just beginning the setup of your org, there might be tips on next steps or documentation resources.
+If you are beginning the setup of your organization, there is guidance on next steps or documentation resources.
 
 ### My Programs {#my-programs-section}
 
 The main content of the My Programs console is the **My Programs** section that lists your programs as individual cards. Click a card to access the **Program Overview** page of the program for details about the program.
 
-Depending on your privileges, you may not be able to select certain programs.
+Depending on your privileges, you might be unable to select certain programs.
 
 You can use the following sort options to find the program you want quickly:
 
@@ -112,12 +112,12 @@ You can use the following sort options to find the program you want quickly:
   * Date Created
   * Program Name
   * Status
-* ![Sort order down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![Sort order up icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) Sort programs down or up, respectively.
+* ![Sort order down icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![Sort order up icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) Sort programs up or down, respectively.
 * ![Classic grid view icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![Text bulleted icon or list](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg) View programs in grid form or list form, respectively.
 
 #### Program cards {#program-cards}
 
-A card or row in a table represents every program, providing an overview of the program and quick links to take action.
+A card or row in a table represents each program, providing an overview of the program and quick links to take action.
 
 ![Program card](/help/getting-started/assets/cloud-manager-program-card.png)
 
@@ -134,7 +134,7 @@ Click ![Info icon](/help/getting-started/assets/Info.svg) to get quick access to
 
 ![Information pop-up in Cloud Manager AMS](/help/getting-started/assets/cloud-manager-information-view.png)
 
-Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) gives you access to additional actions you can take on the program.
+Clicking ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) provides access to additional actions you can take on the program.
 
 ![Ellipsis button for programs](/help/getting-started/assets/cloud-manager-program-ellipsis.png)
 
@@ -146,7 +146,7 @@ Click ![More icon, ellipsis](https://spectrum.adobe.com/static/icons/workflow_18
 
 ### Quick links {#quick-links}
 
-The quick links section gives you access to helpful, related resources.
+The quick links section provides access to helpful, related resources.
 
 ## Program Overview window {#program-overview}
 
@@ -154,9 +154,9 @@ Selecting a program in the [**My Programs** console](#my-programs-console) takes
 
 ![Program overview](/help/getting-started/assets/cloud-manager-program-overview.png)
 
-**Program Overview** gives you access to all the details of a Cloud Manager program. Like **My Programs**, it is made up of several parts.
+**Program Overview** provides access to all the details of a Cloud Manager program. Like **My Programs**, it consists of several parts.
 
-1. [Toolbars](#program-overview-toolbar) to jump back to the **My Programs** console quickly and navigate the program.
+1. [Toolbars](#program-overview-toolbar) to return to the **My Programs** console quickly and navigate the program.
 1. [Tabs area](#program-tabs) to switch between different aspects of the program.
 1. A [call-to-action](#cta) based on the last actions of the program.
 1. Associated [Environments](#environments) of the program.
@@ -168,21 +168,21 @@ The toolbars for the Program Overview are similar to the toolbars of the [My Pro
 
 #### Cloud Manager header {#cloud-manager-header-2}
 
-The Cloud Manager header has a ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) drop-down menu that automatically opens to show the navigable tabs of the Program Overview.
+The Cloud Manager header has a ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) drop-down menu that automatically opens to show the navigable tabs of the Program Overview.
 
-Click ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to hide the tabs.
+Click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to hide the tabs.
 
 #### Program toolbar {#program-toolbar-2}
 
-The program toolbar still gives you access to switch to other programs quickly, but additionally gives access to context-appropriate actions such as adding and editing the program.
+The program toolbar still provides access to switch to other programs quickly, but additionally provides access to context-appropriate actions such as adding and editing the program.
 
 ![Program toolbar](assets/cloud-manager-program-toolbar.png)
 
-Additionally, if you hide the tabs using ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), the toolbar can still show the tab that you are currently on.
+Additionally, if you hide the tabs using ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg), the toolbar can still show the tab that you are currently on.
 
 ### Program tabs {#program-tabs}
 
-Each program has numerous options and data associated with it. These data are gathered into tabs to make navigating the program simpler. The tabs give you access to:
+Each program has numerous options and data associated with it. This data is organized into tabs to simplify program navigation. The tabs give access to the following:
 
 * Overview - The program overview as described in the current document
 * [Activity](/help/using/managing-pipelines.md#activity) - The history of pipeline runs of the program
@@ -196,13 +196,13 @@ Each program has numerous options and data associated with it. These data are ga
 
 By default, when you open a program you arrive on the **Overview** tab. The current tab is highlighted. Select another tab to show its details.
 
-Use ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in the [Cloud Manager header](#cloud-manager-header-2) to hide the tabs.
+To hide the tabs, use ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in the [Cloud Manager header](#cloud-manager-header-2).
 
 ### Call-to-action {#cta}
 
-The call-to-action section gives you helpful information depending on the status of your program. For a new program, you may see next steps offered and a reminder of a go-live date, [set during program creation](/help/getting-started/program-setup.md).
+The call-to-action section gives you helpful information depending on the status of your program. For a new program, you see next steps offered and a reminder of a go-live date, [set during program creation](/help/getting-started/program-setup.md).
 
-For a live program, the status of your last deployment with links for details and starting a new deployment.
+For a live program, the status of your last deployment is shown, with links for details and starting a new deployment.
 
 ![Call-to-action](assets/info-banner.png)
 

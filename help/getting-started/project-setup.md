@@ -22,23 +22,23 @@ Existing AEM Projects must adhere to some basic rules so they can be built and d
 
 * Projects must be built using Apache Maven.
 * There must be a `pom.xml` file in the root of the Git repository.
-  * This `pom.xml` file can refer to as many sub-modules (which in turn may have other sub-modules) as necessary.
+  * This `pom.xml` file can refer to as many sub-modules (which in turn have other sub-modules) as needed.
   * You can add references to additional Maven artifact repositories in your `pom.xml` files.
   * Access to [password-protected artifact repositories](#password-protected-maven-repositories) is supported when configured. However, access to network-protected artifact repositories is not supported.
-* Deployable content packages are discovered by scanning for content package .zip files contained in a directory named `target`.
-  * Any number of sub-modules may produce content packages.
-* Deployable Dispatcher artifacts are discovered by scanning for `zip` files contained subdirectories of `target` named `conf` and `conf.d`.
+* Cloud Manager discovers deployable content packages by scanning for content package .zip files contained in a directory named `target`.
+  * Any number of sub-modules produce content packages.
+* Cloud Manager discovers deployable Dispatcher artifacts by scanning for `zip` files contained in subdirectories of `target` named `conf` and `conf.d`.
 * If there is more than one content package, the ordering of package deployments is not guaranteed. 
- * Should a specific order be needed, content package dependencies can be used to define the order.
-* Packages may be [skipped](#skipping-content-packages) from deployment.
+  * Should a specific order be needed, content package dependencies can be used to define the order.
+* Packages can be [skipped](#skipping-content-packages) from deployment.
 
 ## Activate Maven profiles in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
-In some limited cases, you may need to vary your build process slightly when running inside Cloud Manager as opposed to when it runs on developer workstations. For these cases, [Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) can be used to define how the build should be different in different environments, including Cloud Manager.
+In some limited cases, modify your build process slightly when running inside Cloud Manager. This differs from when it runs on developer workstations. For these cases, [Maven Profiles](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) define how the build differs in different environments, including Cloud Manager.
 
-Activation of a Maven Profile inside the Cloud Manager build environment should be done by looking for `CM_BUILD` [environment variable](/help/getting-started/build-environment.md#environment-variables). Conversely, a profile intended to be used only outside of the Cloud Manager build environment should be done by looking for the absence of this variable.
+Activation of a Maven Profile inside the Cloud Manager build environment should be done by looking for the `CM_BUILD` [environment variable](/help/getting-started/build-environment.md#environment-variables). Conversely, a profile intended to be used only outside of the Cloud Manager build environment should be activated by looking for the absence of this variable.
 
-For example, if you wanted to output a simple message only when the build is run inside Cloud Manager, you would do the following:
+For example, if you want to output a simple message only when the build runs inside Cloud Manager, do the following:
 
 ```xml
         <profile>
@@ -76,7 +76,7 @@ For example, if you wanted to output a simple message only when the build is run
 >
 >To test this profile on a developer workstation, you can either enable it on the command line (with `-PcmBuild`) or in your Integrated Development Environment (IDE).
 
-And if you wanted to output a simple message only when the build is run outside of Cloud Manager, you would do the following:
+And if you want to output a simple message only when the build runs outside of Cloud Manager, do the following:
 
 ```xml
         <profile>
@@ -112,19 +112,19 @@ And if you wanted to output a simple message only when the build is run outside 
 
 ## Password-protected Maven repository support {#password-protected-maven-repositories}
 
-Artifacts from a password-protected Maven repository should be used cautiously because code deployed this way isn't fully subjected to the quality checks enforced by Cloud Manager's quality gates. Adobe also advises that you also deploy the Java sources and the whole project source code alongside with the binary.
+Artifacts from a password-protected Maven repository should be used with caution because code deployed this way is not fully subject to the quality checks enforced by Cloud Manager's quality standards. Adobe also advises that you deploy the Java sources and the whole project source code alongside the binary.
 
 >[!TIP]
 >
->Artifacts from password-protected Maven repositories should only be used in rare cases and for code not tied to AEM.
+>Artifacts from password-protected Maven repositories should only be used in infrequent cases and for code not tied to AEM.
 
 To use a password-protected Maven repository from Cloud Manager, specify the password (and optionally, the username) as a secret [Pipeline Variable](/help/getting-started/build-environment.md#pipeline-variables) and then reference that secret inside a file named `.cloudmanager/maven/settings.xml` in the Git repository. This file follows the [Maven Settings File](https://maven.apache.org/settings.html) schema.
 
-When the Cloud Manager build process starts, the `<servers>` element in this file is merged into the default `settings.xml` file provided by Cloud Manager. Custom servers should not use server IDs that start with `adobe` and `cloud-manager`. Such IDs are considered reserved. Cloud Manager mirrors only those server IDs that match one of the specified prefixes or the default ID `central`.
+When the Cloud Manager build process starts, the `<servers>` element in this file is merged into the default `settings.xml` file provided by Cloud Manager. Custom servers use server IDs that do not start with `adobe` or `cloud-manager`. Such IDs are considered reserved. Cloud Manager mirrors only those server IDs that match one of the specified prefixes or the default ID `central`.
 
-With this file in place, the server ID would be referenced from inside a `<repository>` and/or `<pluginRepository>` element inside the `pom.xml` file. Generally, these `<repository>` and/or `<pluginRepository>` elements would be contained inside a [Cloud Manager-specific profile](#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
+With this file in place, the server ID is referenced from inside a `<repository>` and/or `<pluginRepository>` element inside the `pom.xml` file. These `<repository>` and/or `<pluginRepository>` elements are contained inside a [Cloud Manager-specific profile](#activating-maven-profiles-in-cloud-manager), although that is not strictly necessary.
 
-As an example, suppose that the repository is at `https://repository.myco.com/maven2`, the username Cloud Manager should use is `cloudmanager` and the password is `secretword`.
+For example, suppose that the repository is at `https://repository.myco.com/maven2`, the username Cloud Manager uses is `cloudmanager`, and the password is `secretword`.
 
 First, set the password as a secret on the pipeline:
 
@@ -193,7 +193,7 @@ And finally reference the server id inside the `pom.xml` file:
 
 ### Deploy sources {#deploying-sources}
 
-It is a good practice to deploy the Java sources alongside with the binary to a Maven repository. 
+It is a good practice to deploy the Java sources alongside the binary to a Maven repository. 
  
 Configure the `maven-source-plugin` in your project:
 
@@ -214,7 +214,7 @@ Configure the `maven-source-plugin` in your project:
 
 ### Deploy project sources {#deploying-project-sources}
 
-It is good practice to deploy the whole project source alongside with the binary to a Maven repository. Doing so allows rebuilding the exact artifact. 
+It is a good practice to deploy the whole project source code alongside the binary to a Maven repository. Doing so allows rebuilding the exact artifact. 
  
 Configure the `maven-assembly-plugin` in your project:
 
@@ -241,9 +241,9 @@ Configure the `maven-assembly-plugin` in your project:
 
 ## Skip content packages {#skipping-content-packages}
 
-In Cloud Manager, builds may produce any number of content packages. For a variety of reasons, it may be desirable to produce a content package but not deploy it. For example, this approach can be useful when you build content packages solely for testing or when another step in the build process repackages them. That is, as a sub-package of another package.
+In Cloud Manager, builds can produce any number of content packages. For a variety of reasons, it can be desirable to produce a content package but not deploy it. For example, this approach can be useful when you build content packages solely for testing or when another step in the build process repackages them. That is, as a sub-package of another package.
 
-To accommodate these scenarios, Cloud Manager looks for a property named `cloudManagerTarget` in the properties of built content packages. If this property is set to `none`, the package is skipped and not deployed. The mechanism to set this property depends on the way the build is producing the content package. For example, with the `filevault-maven-plugin` you would configure the plug-in like this:
+To accommodate these scenarios, Cloud Manager looks for a property named `cloudManagerTarget` in the properties of built content packages. If this property is set to `none`, the package is skipped and not deployed. The mechanism to set this property depends on the way the build is producing the content package. For example, with the `filevault-maven-plugin`, configure the plug-in like the following:
 
 ```xml
         <plugin>
@@ -279,7 +279,7 @@ With the `content-package-maven-plugin`, it is similar:
 
 In many cases, the same code is deployed to multiple AEM environments. Where possible, Cloud Manager avoids rebuilding the code base when it detects that the same Git commit is used in multiple full-stack pipeline executions.
 
-When an execution is started, the current HEAD commit for the branch pipeline is extracted. The commit hash is visible in the UI and by way of the API. When the build step completes successfully, the resulting artifacts are stored based on that commit hash and may be reused in subsequent pipeline executions.
+When an execution is started, the current HEAD commit for the branch pipeline is extracted. The commit hash is visible in the UI and by way of the API. When the build step completes successfully, the resulting artifacts are stored based on that commit hash and can be reused in subsequent pipeline executions.
 
 Packages are reused across pipelines if they are in the same program. When looking for packages that can be reused, AEM disregards branches and reuses artifacts across branches.
 
@@ -330,13 +330,13 @@ If desired, the reuse behavior can be disabled for specific pipelines by setting
 1. The pipeline is re-executed without changing code. Although there are stored artifacts associated with `becdddb`, they are not reused due to the `CM_DISABLE_BUILD_REUSE` variable.
 1. The code is changed and the pipeline is executed. The HEAD commit is now `f6ac5e6`. The execution is successful and the resulting artifacts are stored.
 1. The `CM_DISABLE_BUILD_REUSE` variable is deleted.
-1. The pipeline is re-executed without changing the code. Because there are stored artifacts associated with `f6ac5e6`, those artifacts are reused.
+1. The pipeline is re-executed without changing code. Because there are stored artifacts associated with `f6ac5e6`, those artifacts are reused.
 
 ### Caveats {#caveats}
 
-* Build artifacts are not reused across different programs, regardless if the commit hash is identical.
+* Build artifacts are not reused across different programs, regardless of whether the commit hash is identical.
 * Build artifacts are reused within the same program even if the branch and/or pipeline is different.
-* [Maven version handling](/help/managing-code/maven-project-version.md) replace the project version only in production pipelines. If the same commit is used for both development and production pipelines, and the development pipeline runs first, the versions deploy to stage and production unchanged. However, a tag is still created in this case.
+* [Maven version handling](/help/managing-code/maven-project-version.md) replaces the project version only in production pipelines. If the same commit is used for both development and production pipelines, and the development pipeline runs first, the versions are deployed to staging and production unchanged. However, a tag is still created in this case.
 * If the retrieval of the stored artifacts is not successful, the build step is executed as if no artifacts were stored.
 * Pipeline variables other than `CM_DISABLE_BUILD_REUSE` are not considered when Cloud Manager decides to reuse previously created build artifacts.
 

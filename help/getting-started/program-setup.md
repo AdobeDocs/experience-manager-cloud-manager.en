@@ -17,11 +17,9 @@ role_v2:
 ---
 # Program setup {#program-setup}
 
-After onboarding, the business owner sets up the program by adding a description and defining key performance indicators (KPIs). These KPIs are then used for performance testing.
+After onboarding, the business lead sets up the program by adding a description and defining key performance indicators (KPIs). These KPIs are then used for performance testing.
 
 ## Program setup with [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
-
-Follow these steps to set up the program and define KPIs.
 
 1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) and select the appropriate organization.
 
@@ -47,17 +45,19 @@ Follow these steps to set up the program and define KPIs.
 
 1. On the **Provisioning** tab, you can define the On-demand scaling options for your environments if autoscaling is enabled for your program. 
 
-   Autoscaling is applicable to the production environment only and may not be available for all customer programs.
+   Autoscaling is applicable to the production environment only and is unavailable for some customer programs.
 
    ![Provisioning options](/help/assets/Setup_Program-Provisioning.png)
 
 1. Click **Save**.
 
-Your program is created. It may take several minutes for resources to be provisioned before the program is ready for use.
+Your program is created. It takes several minutes for resources to be provisioned before the program is ready for use.
 
 ## Edit a program {#editing-program}
 
-You can edit programs after they are set up. Follow these steps to edit a program.
+You can edit programs after they are set up.
+
+**To edit a program:**
 
 1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) and select the appropriate organization.
 
@@ -87,13 +87,13 @@ Use the action bar to switch to another program, edit the current program, or ad
 
 ## KPIs {#kpis}
 
-Sites KPIs are measured on tests run in the staging environment. Typically, these KPIs are scaled down to fit the capabilities of the staging environment.
+Sites KPIs are measured on tests run in the staging environment. Typically, these KPIs are adjusted to match the capabilities of the staging environment.
 
-For example, a user expecting an average of 1000 page views per minute in their production environment, and has four Dispatcher/publishing servers in production, should scale this scenario to 250 page views per minute. This scenario assumes that their staging environment consists of only a single Dispatcher/publish server pair.
+For example, a user expecting an average of 1000 page views per minute in their production environment, and who has four Dispatcher/publishing servers in production, reduces this scenario to 250 page views per minute. This scenario assumes that their staging environment consists of only a single Dispatcher/publish server pair.
 
 Assets performance testing involves repeatedly uploading assets over a 30-minute period. The processing time for each asset and various system-level metrics are measured throughout the test.
 
-You may have a content delivery network (CDN) such as Akamai or CloudFront in front of your production environment. Because [!UICONTROL Cloud Manager] tests against the staging environment directly, the KPI should reflect only the traffic expected to pass through the CDN. That is, the cache misses. Typically, this experience is a relatively small subset of the total production traffic.
+You have a content delivery network (CDN) such as Akamai or CloudFront configured for your production environment. Because [!UICONTROL Cloud Manager] tests against the staging environment directly, the KPI reflects only the traffic expected to pass through the CDN. That is, the cache misses. Typically, this traffic is a relatively small subset of the total production traffic.
 
 ## Video overview {#video}
 
