@@ -17,11 +17,11 @@ topic_v2:
 ---
 # Configure branches {#configuring-branches}
 
-Learn how to set up your first branch in Git and how it is used by the CI/CD pipeline to deploy your application code.
+Learn how to set up your first branch in Git and how the CI/CD pipeline uses it to deploy your application code.
 
 ## Set up your first branch in Git {#setting-up-your-first-branch-in-git}
 
-A single, initially empty, Git repository [is provisioned](/help/requirements/environment-provisioning.md) for each program onboarded in Cloud Manager. This repository can contain as many branches as your development process requires, but there must be at least one branch that is used by the CI/CD pipeline to deploy application code to stage and production. The best practice is to use `main` as the name of this branch. Conveniently, this approach is the default behavior of Git clients when setting up new projects.
+A single, initially empty, Git repository [is provisioned](/help/requirements/environment-provisioning.md) for each program onboarded in Cloud Manager. This repository can contain as many branches as your development process requires, but the CI/CD pipeline must use at least one branch to deploy application code to stage and production. The best practice is to use `main` as the name of this branch. This approach is the default behavior of Git clients when setting up new projects.
 
 For example, when setting up a new project, you run a set of commands similar to the following.
 
@@ -55,7 +55,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->It is not a requirement to use the command-line client. There are a variety of graphical Git clients available either as standalone applications or as part of an integrated development environment (IDE) such as Eclipse or IntelliJ. As long as the client application supports Git using HTTPS, it should be compatible with [!UICONTROL Cloud Manager].
+>It is not a requirement to use the command-line client. There are a variety of graphical Git clients available either as standalone applications or as part of an integrated development environment (IDE) such as Eclipse or IntelliJ. As long as the client application supports Git using HTTPS, it is compatible with [!UICONTROL Cloud Manager].
 
 ## Push your first branch {#pushing-your-first-branch}
 
@@ -75,12 +75,12 @@ To <url>
 
 >[!NOTE]
 >
->The specific URL, along with your credentials, is provided by your Adobe CSE (Customer Success Engineer) during [!UICONTROL Cloud Manager] onboarding.
+>Your Adobe CSE (Customer Success Engineer) provides the specific URL, along with your credentials, during [!UICONTROL Cloud Manager] onboarding.
 
 ## Additional branches {#additional-branches}
 
-A single `main` branch may suffice for very simple projects, but in most cases, a more complex branching strategy is required. Many customers follow a process where day-to-day development activities are performed on a branch called `develop`. The `develop` branch is then merged into the `main` branch when it is time for a deployment.
+A `main` branch is sufficient for simple projects, but a more complex branching strategy is recommended. Many customers follow a process where routine development activities are performed on a branch called `develop`. The `develop` branch is then merged into the `main` branch when it is time for a deployment.
 
 >[!TIP]
 >
->To view common Git commands, see the [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet).
+>To view common Git commands, see the [Git Reference Guide](https://training.github.com/downloads/github-git-cheat-sheet/).
