@@ -17,15 +17,15 @@ role_v2:
 ---
 # First time login {#first-time-login}
 
-After you have set up the general configuration for [!UICONTROL Cloud Manager], you are ready to use it.
+After you have completed the general configuration for [!UICONTROL Cloud Manager], you are ready to use it.
 
 >[!NOTE]
 >
->Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, the screens you see may vary from the illustrations.
+>Depending on the roles assigned in [!UICONTROL Cloud Manager] and the state of the application, the screens you see vary from those in the illustrations.
 
 ## Log in for the first time {#logging-in-for-the-first-time}
 
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com/experiencemanager). To learn more, see [About Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com/experiencemanager). To learn more, see [About Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. In the left side panel, click **Cloud Manager**.
 
    ![Cloud Manager in left side panel in Experience Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
@@ -43,13 +43,13 @@ After you have set up the general configuration for [!UICONTROL Cloud Manager], 
 -->
 
 
-1. If your program is not yet set up, click **Setup Program** in the [call-to-action](/help/getting-started/navigation.md#cta) to set up your program description and define key performance indicators (KPIs). If your program is already set up, the CTA may offer additional next steps.
+1. If your program is not yet configured, click **Setup Program** in the [call-to-action](/help/getting-started/navigation.md#cta) to configure your program description and define key performance indicators (KPIs). If your program is already configured, the CTA offers additional next steps.
 
-You can continue to the document [Program Setup](/help/getting-started/program-setup.md) for the next steps in setting up your program.
+You can continue to the document [Program Setup](/help/getting-started/program-setup.md) for the next steps in configuring your program.
 
 ## Cloud Manager activity {#activity}
 
-Cloud Manager provides a consolidated view into a program's activity. It lists all CI/CD pipeline executions, both production and non-production. Such functionality gives you visibility into past and present activity.
+Cloud Manager provides a consolidated view of a program's activity. It lists all CI/CD pipeline executions, both production and non-production. This functionality provides information about historical and current activity.
 
 >[!TIP]
 >
@@ -57,4 +57,4 @@ Cloud Manager provides a consolidated view into a program's activity. It lists a
 
 >[!NOTE]
 >
->By default, a user with access to an AEM environment also has the Cloud Manager User role. This role is insufficient to give the user access to program details view. Such a user with only the Cloud Manager User role is able to navigate by way of the program menu options to the AEM environment author URL (if environments exist). Such users must contact their administrator if they want to get program-level access.
+>By default, a user with access to an AEM environment also has the Cloud Manager User role. This role does not grant the user access to the program details view. A user with only the Cloud Manager User role can navigate using the program menu options to the AEM environment author URL (if environments exist). These users must contact their administrators if they want to get program-level access.
