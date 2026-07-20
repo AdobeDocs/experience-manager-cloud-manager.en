@@ -18,14 +18,14 @@ Learn how to access and manage your Adobe-managed Git repositories using the sel
 
 ## Access repository information from the Overview page {#overview-page}
 
-Cloud Manager makes it easy to retrieve your repository access information for Adobe-managed repositories using **Access Repo Info** from the **Pipelines** card.  
+With Cloud Manager, you can retrieve your repository access information for Adobe-managed repositories using **Access Repo Info** from the **Pipelines** card.  
 
 The **Repository Info** dialog box lets you see the following access information for Adobe-managed repositories:
 
 * The Git username.
 * The Git password.
 * The URL to the Cloud Manager Git repository.
-* Prebuilt Git commands to add a remote to your Git repo quickly and push code.
+* Prebuilt Git commands to add a remote to your Git repository and push code.
 
    ![Repository Info window](assets/repository-info.png)
 
@@ -41,7 +41,7 @@ The **Access Repo Info** feature is visible to users with **Developer** or **Dep
 
    ![Access Repo Info on Pipelilnes card](/help/managing-code/assets/pipelines-card2.png)
 
-1. To access the password, a new password must be generated. In the **Repository Info** dialog box, select **Generate password**.
+1. To access the password, you must generate a new password. In the **Repository Info** dialog box, select **Generate password**.
 
 1. In the confirmation dialog box, select **Generate password**.
 
@@ -49,11 +49,11 @@ The **Access Repo Info** feature is visible to users with **Developer** or **Dep
 
    * Generating a password invalidates the previous password.
    * Cloud Manager does not save the password. It is your responsibility to save the password securely.
-   * Because Cloud Manager does not save the password, if you lose the password, you must regenerate a new one.
+   * Because Cloud Manager does not save the password, if you lose the password, you must generate a new one.
 
    ![Copy password in Repository Info dialog box](/help/managing-code/assets/repository-copy-password.png)
 
-Using these credentials, you can clone a local copy of the repository, make changes in that local repository, and when ready commit any code changes back to the remote code repository in Cloud Manager.
+Using these credentials, you can clone a local copy of the repository, make changes in that local repository, and when ready submit any code changes back to the remote code repository in Cloud Manager.
 
 ## Access repository information from the Repositories window {#repositories-window}
 
@@ -63,4 +63,4 @@ The **Access Repo Info** feature is also available from the [**Repositories** pa
 
 You can revoke an access password at any time. 
 
-To do so, [create a support ticket for this request](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support). The ticket is treated with high priority and is usually revoked within one day.
+To do so, [create a support ticket for this request](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support). The ticket is assigned high priority and is usually resolved within one day.
