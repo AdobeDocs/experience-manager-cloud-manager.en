@@ -19,7 +19,7 @@ topic_v2:
 
 Git submodules can be used to merge the content of multiple branches across Git repositories at build time. 
 
-When Cloud Manager's build process runs, it first clones the pipeline's repository and checks out the configured branch. If the branch contains a `.gitmodules` file in the root directory, the command is then executed.
+When Cloud Manager's build process runs, it first clones the pipeline's repository and checks out the configured branch. If the branch contains a `.gitmodules` file in the root directory, the command is run.
 
 ```
 $ git submodule update --init
@@ -75,9 +75,9 @@ See the [Git reference manual](https://git-scm.com/book/en/v2/Git-Tools-Submodul
 When using Git submodules, be aware of the following:
 
 * The Git URL must be exactly in the syntax described above.
-* For security reasons, do not embed credentials in these URLs.
+* For security reasons, do not include credentials in these URLs.
 * Only submodules at the root of the branch are supported.
-* Git submodule references are stored to specific Git commits. As a result, when changes to the submodule repository are made, the commit referenced needs to be updated. For example, by using `git submodule update --remote`.
+* Git submodule references are stored to specific Git commits. As a result, when changes to the submodule repository are made, you need to update the referenced commit. For example, by using `git submodule update --remote`.
 * Unless otherwise necessary, Adobe recommends that you use "shallow" submodules by running `git config -f .gitmodules submodule.<submodule path>.shallow true` for each submodule.
 
 
@@ -85,7 +85,7 @@ When using Git submodules, be aware of the following:
 
 Support for Git submodules when using [private repositories](private-repositories.md) is largely the same as when using Adobe repositories.
 
-However, after setting up your `pom.xml` file and running the `git submodule` commands, you must add a `.gitmodules` file to the root directory of the aggregator repository for Cloud Manager to detect the submodule setup.
+However, for Cloud Manager to detect the submodule setup, you must add a `.gitmodules` file to the root directory of the aggregator repository after setting up your `pom.xml` file and running the `git submodule` commands.
 
 ![.gitmodules file](assets/gitmodules.png)
 
