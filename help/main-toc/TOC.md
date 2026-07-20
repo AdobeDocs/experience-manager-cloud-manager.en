@@ -48,7 +48,7 @@ role: Admin
   + [Manage Environments](/help/using/managing-environments.md)
   + [Monitor Environments](/help/using/monitoring-environments.md)
   + {hide-from-toc} [Service Pack Updates for Development Environments (private beta)](/help/using/service-packs-environments.md)
-  + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+  + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api)
   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
   + [Notifications](/help/using/notifications.md)
   + [Custom Code Quality Rules](/help/using/custom-code-quality-rules.md)
