@@ -14,7 +14,7 @@ role_v2:
 ---
 # Git integration with Adobe Cloud Manager
 
-Adobe Cloud Manager comes provisioned with a single Git repository that is used to deploy code using Cloud Manager's CI/CD pipelines. You can use Cloud Manager's Git repository out-of-the-box or you also have the option of integrating an on-premise or customer-managed Git repository with Cloud Manager.
+Adobe Cloud Manager comes provisioned with a single Git repository that is used to deploy code using Cloud Manager's CI/CD pipelines. You can use Cloud Manager's Git repository as provided, or you have the option of integrating an on-premises or customer-managed Git repository with Cloud Manager.
 
 ## Git integration overview
 
@@ -28,9 +28,9 @@ This video series explores several use cases regarding integrating a customer-ma
 * [Production Deployment](#production-deployment)
 * [Synchronizing Release Tags](#sync-tags)
 
-This video series assumes a basic knowledge of Git and source control management. See the [additional resources below](#additional-resources) for more details on Git.
+This video series requires a basic knowledge of Git and source control management. See the [additional resources below](#additional-resources) for more details on Git.
 
-The steps and naming conventions outlined in this video series represent some best practices for working with a customer-managed Git repository and Cloud Manager. It is expected that the conventions and workflows depicted would be adapted for individual development teams.
+The steps and naming conventions outlined in this video series represent some best practices for working with a customer-managed Git repository and Cloud Manager. The conventions and workflows depicted are adapted for individual development teams.
 
 For a complete overview of Cloud Manager, see [Introduction to Cloud Manager](/help/introduction.md).
 
@@ -42,7 +42,7 @@ First steps for synchronizing a customer-managed Git repository with Cloud Manag
 
 ## Basic branching strategy {#branching-strategy}
 
-Set up a basic branching strategy to take advantage of Cloud Manager's [production](/help/using/production-pipelines.md) and [non-production pipelines](/help/using/non-production-pipelines.md).
+Configure a basic branching strategy to use Cloud Manager's [production](/help/using/production-pipelines.md) and [non-production pipelines](/help/using/non-production-pipelines.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
