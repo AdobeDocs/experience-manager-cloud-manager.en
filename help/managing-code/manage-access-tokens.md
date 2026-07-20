@@ -16,13 +16,13 @@ role_v2:
 
 Cloud Manager uses access tokens to manage repositories hosted on external Git platforms. Previously, if a token expired, the associated repository had to be re-onboarded to remain operational.
 
-Now, **Manage Access Tokens** lets you manage tokens more efficiently. You can view, rename, or remove tokens connected to supported external Git providers, including GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
+Now, **Manage Access Tokens** lets you manage tokens more efficiently. You can manage tokens for supported Git providers: GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
 
 See also [Add External Repositories in Cloud Manager](/help/managing-code/external-repositories.md).
 
 ## View access tokens {#view-access-tokens}
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+1. Log in to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 1. On the **[My Programs](/help/getting-started/navigation.md#my-programs-console)** console, select the program whose Bring Your Own Git access token you want to manage.
 1. In the side menu, under **Program**, click ![Folder outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositories**.
 1. Near the upper-right corner of the page, click **Manage Access Tokens**.
