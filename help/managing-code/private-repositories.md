@@ -43,11 +43,11 @@ Configuration consists of two main steps:
 
 1. In the **Add Repository** dialog box, select **Private Repository** as the repository type.
 
-1. Provide the details of your repository
+1. Provide the following details of your repository:
 
-   * **Repository Name** - An expressive name
-   * **Repository URL** - The URL of the repository, which must end in `.git`
-   * **Description** (optional) - A longer description of the repository as necessary
+   * **Repository Name** - A descriptive name.
+   * **Repository URL** - The URL of the repository, which must end in `.git`.
+   * **Description** (optional) - A longer description of the repository as necessary.
 
    ![Add own repository](/help/assets/repositories/add-own-github.png)
 
@@ -61,7 +61,7 @@ Configuration consists of two main steps:
 
 ### Validate ownership of a private repository {#validate-ownership}
 
-Cloud Manager now knows about your GitHub repository, but it still needs access to it. To grant access, you need to install the Adobe GitHub app and verify that you own the specified repository.
+Cloud Manager is now configured with your GitHub repository, but it still requires authorization to access it. To grant access, you need to install the Adobe GitHub app and verify that you own the specified repository.
 
 1. After adding your own repository, the **Private Repository Ownership Validation** dialog box is displayed.
 
@@ -69,7 +69,7 @@ Cloud Manager now knows about your GitHub repository, but it still needs access 
 
 1. Cloud Manager uses a GitHub app to interact with your repository securely.
 
-   An owner of your GitHub organization must install the app located at `https://github.com/apps/cloud-manager-for-aem` and grant access to the repository. See GitHub's documentation for details.
+   An owner of your GitHub organization must install the app located at `https://github.com/apps/cloud-manager-for-aem` and provide access to the repository. See GitHub's documentation for details.
 
 1. To enhance security, create a secret file in the default branch of your repository. Click **Generate**.
 
@@ -79,11 +79,11 @@ Cloud Manager now knows about your GitHub repository, but it still needs access 
 
 1. Back in the **Private Repository Ownership Validation** dialog box, Cloud Manager has generated the content in the **Secret file content** field. Copy the content from that field.
 
-    The contents of the secret file is only shown once. If you do not copy the content before closing this window, you must regenerate the secret.
+    The contents of the secret file are only shown once. If you do not copy the content before closing this window, you must regenerate the secret.
 
     ![Copy secret file content](/help/assets/repositories/new-secret.png)
 
-1. Create a new file in the default branch of your GitHub repo called `.well-known/adobe/cloud-manager-challenge` and paste the secret file content into that file and save.
+1. Create a new file in the default branch of your GitHub repo called `.well-known/adobe/cloud-manager-challenge`, paste the secret file content into that file, and save.
 
 1. After the app is installed and the secret file exists in the repository, you can click **Validate** in the **Private Repository Ownership Validation** dialog.
 
@@ -137,7 +137,7 @@ Validated private repositories can be associated with [full-stack and frontend p
 Certain limitations apply when using private repositories with Cloud Manager.
 
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
-* If the Adobe GitHub app is removed from your GitHb organization, this action removes the pull requests validation feature for all repositories.
+* If the Adobe GitHub app is removed from your GitHub organization, this action removes the pull request validation feature for all repositories.
 * Pipelines using private repositories and the on-committed build trigger are not started automatically when a new commit is pushed into the selected branch.
 * [Artifact reuse functionality](/help/getting-started/project-setup.md#build-artifact-reuse) does not apply to private repositories.
 * You cannot pause the pull request validation using the GitHub check from Cloud Manager. If the GitHub repository is validated in Cloud Manager, Cloud Manager tries to validate the pull requests created for that repository.
