@@ -78,9 +78,9 @@ THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/C
 
 1. Select **Save** to add the repository.
 
-    Now, provide an access token to validate ownership of the external repository.
+    To validate ownership of the external repository, provide an access token.
 
-1. In the **Private Repository Ownership Validation** dialog box, provide an access token to validate ownership of the external repository so you can access it, then click **Validate**.
+1. To validate ownership of the external repository so you can access it, provide an access token in the **Private Repository Ownership Validation** dialog box, then click **Validate**.
 
     ![Selecting an existing access token for a repository](/help/managing-code/assets/repositories-exisiting-access-token.png)
     *Selecting an existing access token for a Bitbucket repository (for illustration only).*
@@ -155,7 +155,7 @@ See also [Manage Access Tokens](/help/managing-code/manage-access-tokens.md).
 
 1. Add or edit a pipeline:
     * [Add a production pipeline](/help/using/production-pipelines.md#adding-production-pipeline)
-    * [Add a non-production pipelines](/help/using/non-production-pipelines.md#add-non-production-pipeline)
+    * [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline)
     * [Edit a pipeline](/help/using/managing-pipelines.md#editing-pipelines)
 
     ![Pipeline's source code repository and Git branch](/help/managing-code/assets/pipeline-repo-gitbranch.png)
@@ -193,7 +193,7 @@ For all other external repositories that are onboarded with an access token &nda
 
 1. On the **[My Programs](/help/getting-started/navigation.md#my-programs-console)** console, select the program to which you want to configure a webhook for an external Git repository.
 
-1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
+1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to display the left side menu.
 
 1. In the left side menu, Under the **Program** heading, click ![Folder outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositories**.
 
@@ -220,10 +220,10 @@ For all other external repositories that are onboarded with an access token &nda
 1. Paste the Webhook URL that you copied earlier into the URL text field.
     1. Replace the `api_key` query parameter in the Webhook URL with your own real API key.
 
-        To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) for full details.
+        To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration) for full details.
     
 1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
-1. Configure the webhook to send the events that Cloud Manager requires. Use the following table to determine the correct events for your Git provider.
+1. To send the events that Cloud Manager requires, configure the webhook. Use the following table to determine the correct events for your Git provider.
 
 >[!BEGINTABS]
 
@@ -275,7 +275,7 @@ The behavior varies depending on the Git provider that you use, as outlined belo
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
+When the check is created, it appears like the following screenshot. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
 
 ![Commit status to indicate PR validation process on GitHub Enterprise](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
@@ -283,15 +283,15 @@ When the check is created, it appears like the following screenshot below. The k
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
-GitLab interactions rely solely on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
+GitLab interactions rely on comments alone. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
 
 When code quality validation is running:
 
 ![When code quality validation is running](/help/managing-code/assets/repository-webhook-gitlab1.png)
 
-When cold quality validation is finished:
+When code quality validation is finished:
 
-![When cold quality validation is finished](/help/managing-code/assets/repository-webhook-gitlab2.png)
+![When code quality validation is finished](/help/managing-code/assets/repository-webhook-gitlab2.png)
 
 When code quality validation fails with an error:
 
