@@ -20,7 +20,7 @@ Learn how to control the pipelines that are created automatically to validate ea
 
 ## Configuration of private repository checks {#configuration}
 
-When using [private repositories](private-repositories.md#using), a [full stack code quality pipeline](/help/overview/ci-cd-pipelines.md) is created automatically. This pipeline is started at each pull request update. 
+When using [private repositories](private-repositories.md#using), a [full stack code quality pipeline](/help/overview/ci-cd-pipelines.md) is created automatically. This pipeline is started on each pull request update. 
 
 You can control these checks by creating a `.cloudmanager/pr_pipelines.yml` file in the default branch of the private repository.
 
