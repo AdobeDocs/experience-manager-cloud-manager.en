@@ -17,7 +17,7 @@ topic_v2:
 ---
 # Role-based permissions {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] has pre-configured roles with appropriate permissions. For example, a developer develops code and has the permission to push the code to the Git repository. A business owner has different permissions allowing them to define the key performance indicators (KPIs) and approve deployments.
+[!UICONTROL Cloud Manager] includes pre-configured roles with appropriate permissions. For example, software developers write code and have the permission to push the code to the Git repository. Business leads have different permissions allowing them to define the key performance indicators (KPIs) and approve deployments.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ topic_v2:
 
 ## User roles {#user-roles}
 
-Role management for [!UICONTROL Cloud Manager] is done using the [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Any user of [!UICONTROL Cloud Manager] must be a member of the customer's IMS organization and have the Adobe Managed Services Product Context. Specific role memberships are provided by adding the user to a [!UICONTROL Cloud Manager] product profile in the Admin Console.
+Role management for [!UICONTROL Cloud Manager] is done using the [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html). Any user of [!UICONTROL Cloud Manager] must be a member of the customer's IMS organization and have the Adobe Managed Services Product Context. You provide specific role memberships by adding the user to a [!UICONTROL Cloud Manager] product profile in the Admin Console.
 
 To learn more about how to set up your roles, see [Setting Up Users and Roles](/help/requirements/users-and-roles.md).
 
@@ -44,7 +44,7 @@ The following table lists the roles that you can assign in the Admin Console.
 
 ## User permissions {#user-permissions}
 
-Each of the roles has specific, associated preconfigured permissions. The following table lists the permissions available and the roles who can execute them.
+Each of the roles has specific, associated preconfigured permissions. The following table lists the permissions available and the roles that can execute them.
 
 |Permission|Description|Business Owner|Deployment Manager|Program Manager|Developer|CSE|
 | --- | --- | --- | --- | --- | --- | --- |
