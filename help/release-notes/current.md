@@ -46,15 +46,15 @@ The next planned release is Thursday, August 6, 2026.
     For more information, see the following:
 
     * [About using Smart Build in a production pipeline](/help/using/production-pipelines.md#about-smart-build) and [About using Smart Build in a non-production pipeline](/help/using/non-production-pipelines.md#about-smart-build) 
-    * [Add a production pipeline](/help/using/production-pipelines.md##adding-production-pipeline) and [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline).
+    * [Add a production pipeline](/help/using/production-pipelines.md#adding-production-pipeline) and [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-non-production-pipeline).
 
 ## Beta programs {#beta-program}
 
-Participate in Cloud Manager's beta programs to get exclusive access to upcoming features before their general release.
+To get exclusive access to upcoming features before their general release, participate in Cloud Manager's beta programs.
 
 >[!IMPORTANT]
 >
->Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk and should not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk. Do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 The following beta program opportunities are currently available:
 
