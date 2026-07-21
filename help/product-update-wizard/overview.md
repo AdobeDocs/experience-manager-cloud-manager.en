@@ -17,7 +17,7 @@ topic_v2:
 ---
 # Product Update wizard {#product-update-wizard}
 
-The Product Update wizard is a guided, step-by-step upgrade experience to the latest version of Adobe Experience Manager 6.5 using Cloud Manager. It streamlines the end-to-end process and ensures adherence to AEM best practices using Cloud Manager's CI/CD framework and built-in automated testing.
+The Product Update wizard is a guided, sequential upgrade experience to the latest version of Adobe Experience Manager 6.5 using Cloud Manager. It streamlines the end-to-end process and ensures adherence to AEM best practices using Cloud Manager's CI/CD framework and built-in automated testing.
 
 The wizard includes five phases that guide you during an AEM product update:
 
@@ -27,13 +27,13 @@ The wizard includes five phases that guide you during an AEM product update:
 * Validation
 * Completion
 
-## Using the wizard {#using}
+## Use of the wizard {#using}
 
-Customers onboarded to Cloud Manager and eligible to upgrade to AEM 6.5 can leverage the Product Update wizard. Contact your Customer Success Engineer (CSE) for more details.
+Customers onboarded to Cloud Manager and eligible to upgrade to AEM 6.5 can leverage the Product Update wizard. Contact your Customer Success representative for more details.
 
-1. You receive a push notification by way of Cloud Manager informing you that AEM 6.5 is available for your program.
+1. You receive a push notification through Cloud Manager informing you that AEM 6.5 is available for your program.
 
-1. An **[!UICONTROL AEM 6.5 Update]** card displays on the overview screen of [!UICONTROL Cloud Manager]. This card helps track which phase of the update process you are currently in and informs you as to what the next step to be taken is. 
+1. An **[!UICONTROL AEM 6.5 Update]** card displays on the overview screen of [!UICONTROL Cloud Manager]. This card tracks your current phase in the update process and informs you of the next required step. 
 
    ![Update wizard card](/help/assets/Start-Update.png)
 
