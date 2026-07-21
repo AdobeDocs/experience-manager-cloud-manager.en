@@ -18,12 +18,12 @@ Learn about your Adobe ID and how you use it to access Experience Cloud resource
 
 ## User identity types {#user-identity-types}
 
-As part of the on-boarding process, Adobe creates an organization identifier for your company in the Adobe Identity Management System (IMS). IMS is where all your users and their permissions are managed. Each user, who needs to be a member of this organization, and is granted access to any of the [!UICONTROL Experience Cloud] services, must have their own Adobe ID. 
+As part of the onboarding process, Adobe creates an organization identifier for your company in the Adobe Identity Management System (IMS). IMS is where all your users and their permissions are managed. Each user who needs to be a member of this organization and is granted access to any of the [!UICONTROL Experience Cloud] services must have an Adobe ID. 
 
-To get started with an Adobe ID, See [Manage Adobe Identity Types](https://helpx.adobe.com/enterprise/using/identity.html) for detailed instructions on how to obtain an Adobe ID using one of the identity types available.
+For information about an Adobe ID, see [Manage Adobe Identity Types](https://helpx.adobe.com/business/enterprise/set-up-your-organization/identity.html) for detailed instructions on how to obtain an Adobe ID using one of the identity types available.
 
 ### Users and roles {#users-and-roles}
 
-After Adobe has created an organization for your company, your designated system administrator is added as the first member to this organization. By default, the system administrator receives administrator permissions. They are also assigned the [!UICONTROL AEM Managed Services] product and one or more [!UICONTROL Cloud Manager] product profiles. See [Add Users and Roles](/help/requirements/users-and-roles.md) to learn more about how to configure and manage your team users using the Admin Console.
+After Adobe has created an organization for your company, your designated system administrator is added as the first member to this organization. By default, the system administrator receives administrator permissions. The system administrator is also assigned the [!UICONTROL AEM Managed Services] product and one or more [!UICONTROL Cloud Manager] product profiles. See [Add Users and Roles](/help/requirements/users-and-roles.md) for information on how to configure and manage your team using the Admin Console.
 
-With these rights granted, your administrator is now set up with a single sign-on using an Adobe ID to access the [!UICONTROL Experience Cloud] services, login to your AEM cloud environments, and use [!UICONTROL Cloud Manager].
+With these rights granted, your administrator is now configured for single sign-on using an Adobe ID to access the [!UICONTROL Experience Cloud] services, log in to your AEM cloud environments, and use [!UICONTROL Cloud Manager].
