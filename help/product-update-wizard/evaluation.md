@@ -23,7 +23,7 @@ The first phase of the Product Update wizard is the **[!UICONTROL Evaluation]** 
 The report checks the author instance for upgrade readiness by detecting patterns for the following:
 
 * Rule violations in areas impacted or overwritten by the upgrade.
-* It uses AEM 6.x features or APIs that are not backwards compatible and may break after the upgrade.
+* It detects AEM 6.x features or APIs that are not backward-compatible and can fail after the upgrade.
 
 This report helps estimate the development effort required to upgrade to Adobe Experience Manager (AEM) 6.5.
 
@@ -33,7 +33,7 @@ This report helps estimate the development effort required to upgrade to Adobe E
 
 ## Run the evaluation report {#running}
 
-The pattern detector can run in any environment. However, to increase the detection rate and avoid any slowdowns on business critical instances, Cloud Manager runs it on the staging environment of the author instance.
+The pattern detector can run in any environment. However, to increase the detection rate and avoid any performance impact on critical instances, Cloud Manager runs it on the staging environment of the author instance.
 
 **To run the evaluation report:**
 
@@ -43,10 +43,10 @@ The pattern detector can run in any environment. However, to increase the detect
 
    ![Run evaluation](/help/assets/Run-Evaluation.png)
 
-1. The wizard informs you of the status of your action. Notice **In progress** or **completed** as applicable when the evaluation report is being generated.
+1. The wizard informs you of the status of your action. Note **In progress** or **Completed**, as applicable, while the evaluation report is being generated.
 
 1. After the report is generated, you can click **[!UICONTROL Download report]** to save a copy.
 
    ![Report created](/help/assets/Evaluation-1.png)
 
-The current Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
+The current Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases, namely **Remediation**, **Execution**, **Validation**, and **Completion**, are coming soon.
