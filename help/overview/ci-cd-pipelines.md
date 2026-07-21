@@ -56,7 +56,7 @@ The following diagram illustrates what happens when a release is triggered in [!
 
 ### Code sources {#code-sources}
 
-Pipelines can also differ by the type of code they deploy, in addition to production and non-production.
+Pipelines can also differ by the type of code they deploy, besides production and non-production.
 
 * **[Full stack pipelines](#full-stack-pipeline)** - Deploy the complete AEM application code along with HTTPD/Dispatcher configurations.
 * **[Web tier config pipelines](#web-tier-config-pipelines)** - Deploy HTTPD/Dispatcher configurations only.
@@ -73,7 +73,7 @@ The following restrictions apply.
 The following describes how the full-stack pipeline interacts with a [web tier config pipeline](#web-tier-config-pipelines).
 
 * The full-stack pipeline for an environment ignores the Dispatcher configuration if the corresponding web tier config pipeline exists.
-* If the corresponding web tier config pipeline for the environment does not exist, the user can configure the full-stack pipeline to include or ignore the Dispatcher configuration.
+* If the corresponding web tier config pipeline for the environment does not exist, the user can include or ignore the Dispatcher configuration when configuring the full-stack pipeline.
 
 Full-stack pipelines can be code quality pipelines or deployment.
 
@@ -84,7 +84,7 @@ See [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-
 
 ### Web tier config pipelines {#web-tier-config-pipelines}
 
-Web tier config pipelines allow exclusive deployment of HTTPD/Dispatcher configuration to the AEM runtime, decoupling it from other code changes. It is a streamlined pipeline that provides users who want to deploy only Dispatcher configuration changes, an accelerated means to do so in only a few minutes.
+Web tier config pipelines allow exclusive deployment of HTTPD/Dispatcher configuration to the AEM runtime, decoupling it from other code changes. It is a streamlined pipeline that provides users who want to deploy only Dispatcher configuration changes an efficient means to do so quickly.
 
 >[!TIP]
 >
@@ -113,7 +113,7 @@ See [Add a non-production pipeline](/help/using/non-production-pipelines.md#add-
 
 ### Faster builds using Smart Build {#use=smart-build}
 
-Cloud Manager now uses an optimized build strategy called **Smart Build**, which uses module-level caching to speed up the build process. During each build, only modules that have changed are rebuilt, while unchanged modules are reused from the cache.
+Cloud Manager now uses an optimized build strategy called **Smart Build**, which uses module-level caching to accelerate the build process. During each build, only modules that have changed are rebuilt, while unchanged modules are reused from the cache.
 
 Smart Build is available for Code Quality and Full Stack deployment pipelines (Development, Stage, Production).
 
@@ -135,7 +135,7 @@ The CI/CD pipeline provides quality gates, or acceptance criteria, which must be
 For each of these gates, there are three levels of issues that can be identified:
 
 * **Critical** - Critical issues identified by the gate cause an immediate failure of the pipeline.
-* **Important** - Important issues identified by the gate cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can override the issues, allowing the pipeline to proceed. Alternatively, they can accept the issues, causing the pipeline to stop with a failure.
+* **Important** - Important issues identified by the gate cause the pipeline to enter a paused state. A deployment manager, project manager, or business lead can override the issues, allowing the pipeline to proceed. Alternatively, they can accept the issues, causing the pipeline to stop with a failure.
 * **Information** - Information issues identified by the gate are provided purely for informational purposes and have no impact on the pipeline execution.
 
 The following is an example of a code scan with issues identified.
