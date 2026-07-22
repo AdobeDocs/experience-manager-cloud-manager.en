@@ -14,25 +14,25 @@ role_v2:
 ---
 # Add a non-production pipeline {#configuring-non-production-pipelines}
 
-Learn how to use Cloud Manager to create and configure non-production pipelines to deploy your code. If you would first like a more conceptual overview of how pipelines work in Cloud Manager, see [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md).
+Learn how to use Cloud Manager to create and configure non-production pipelines to deploy your code. For a more conceptual overview of how pipelines work in Cloud Manager, see [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md).
 
 ## Overview {#overview}
 
 Using the **Pipelines** tile in [!UICONTROL Cloud Manager], the **Deployment Manager** can create two different types of pipelines.
 
-* **Production Pipelines** - A production pipeline is a purpose-built pipeline made of a series of orchestrated steps to take source code all the way into production.
+* **Production Pipelines** - A production pipeline is a purpose-built pipeline made of a series of orchestrated steps to deploy source code into production.
 * **Non-Production Pipelines** - A non-production pipeline primarily serves to run code-quality scans or to deploy source code into a development environment.
 
 This document focuses on non-production pipelines. For details on how to configure production pipelines see the document [Configuring Production Pipelines](/help/using/production-pipelines.md).
 
 There are two types of non-production pipelines:
 
-* **Code Quality Pipelines** - These run code quality scans on the code in a Git branch and executes the build and code quality steps.
+* **Code Quality Pipelines** - These run code quality scans on the code in a Git branch and execute the build and code quality steps.
 * **Deployment Pipelines** - Along with performing the build and code quality steps like the code quality pipelines, these pipelines also deploy the code to a non-production environment.
 
 >[!NOTE]
 >
->You cannot set up a pipeline until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. See [Cloud Manager Repositories](/help/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
+>You cannot set up a pipeline until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete. To learn how to add and manage repositories in Cloud Manager, see [Cloud Manager Repositories](/help/managing-code/managing-repositories.md).
 
 ## Add a non-production pipeline {#add-non-production-pipeline}
 
@@ -124,7 +124,7 @@ After you set up a program and at least one environment in the Cloud Manager UI,
 
 1. Click **Save**.
 
-## About using Smart Build in your non-production pipeline{#about-smart-build}
+## Use Smart Build in your non-production pipeline{#about-smart-build}
 
 **Smart Build** in Cloud Manager is an optimized build strategy for non-production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
 
@@ -157,7 +157,7 @@ The performance gain from using Smart Build depends on several factors including
 * The frequency and scope of code changes.
 * The distribution of dependencies across modules.
 
-Generally, projects with many independent modules can see the greatest improvement.
+Projects with many independent modules can see the greatest improvement.
 
 ### Per-module cache opt-out{#smart-build-cache-optout}
 
@@ -184,13 +184,13 @@ This syntax forces the module to rebuild on every pipeline execution while other
 Keep the following in mind when you use Smart Build:
 
 * Smart Build relies on Maven dependency analysis.
-* Changes outside the dependency graph may not trigger rebuilds.
-* Some plug-ins may not be fully compatible with caching.
+* Changes outside the dependency graph do not trigger rebuilds.
+* Some plug-ins are not fully compatible with caching.
 * You can switch back to **Full Build** at any time by editing the non-production pipeline.
 
 If you encounter unexpected build behavior, consider disabling caching for specific modules or temporarily switching your build strategy to **Full Build**.
 
-### Troubleshooting Smart Build issues{#smart-build-troubleshoot}
+### Resolve Smart Build issues{#smart-build-troubleshoot}
 
    | Issue | Suggested solutions |
    | --- | --- |
@@ -198,7 +198,7 @@ If you encounter unexpected build behavior, consider disabling caching for speci
    | No performance improvement | &bull; Ensure that multiple runs have occurred (cache warm-up).<br>&bull; Check if most modules are changing frequently.  |
    | Unexpected artifacts or missing changes | &bull; Review whether changes are outside Maven dependency tracking.<br>&bull; Use **Full Build** for verification. |
 
-See [Add a non-production pipeline](#add-non-production-pipeline) the enable Smart Build.
+See [Add a non-production pipeline](#add-non-production-pipeline) to enable Smart Build.
 
 
 
