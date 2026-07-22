@@ -32,7 +32,7 @@ If a metric is over its warning threshold (but below its critical threshold), it
 
 If a metric is over its critical threshold, it is considered to be in a critical state. 
 
-Adobe Managed Services sets the thresholds, which you can view in [!UICONTROL Cloud Manager]. In most cases, thresholds are consistent between customers, but there are cases where Adobe Managed Services edits thresholds to match specific customer requirements. Direct any questions that you have about the thresholds to your Customer Success Engineer (CSE).
+Adobe Managed Services sets the thresholds, which you can view in [!UICONTROL Cloud Manager]. Typically, thresholds are consistent between customers, but there are cases where Adobe Managed Services edits thresholds to match specific customer requirements. Direct any questions that you have about the thresholds to your Customer Success Engineer (CSE).
 
 ## Access system monitoring {#accessing-system-monitoring}
 
@@ -54,7 +54,7 @@ The **System Monitoring** section of the **Reports** page lists the monitored en
 * Network
 * Application
 
-The status in each category is a summary of individual metrics. If any metric in a category is in the critical state, the entire category is in a critical state for the purpose of the overview page. The same summarization can be viewed at an environment level and at an instance level. 
+The status in each category is a summary of individual metrics. If any metric in a category reaches a critical state, the entire category is critical on the overview page. The same summarization can be viewed at an environment or instance level. 
 
 ![System Monitoring oveview](/help/assets/System-Monitoring-Reports.png)
 
@@ -70,11 +70,11 @@ To view the details of specific metrics, click one of the category columns of a 
 
 The navigation on the left shows the available metrics within the currently selected category for which there is data for the currently selected environment and instances.
 
-An individual graph shows the status and a graph of the data over time along with the thresholds. If multiple instances are displayed, each instance's data are in a separate series.
+An individual graph shows the status and a graph of the data over time along with the thresholds. If multiple instances are displayed, each instance's data are shown in a separate series.
 
 ![Metrics graph](/help/assets/Monitoring_Graphs1.png)
 
-Individual series can be hidden on a graph by clicking on the series in the legend. 
+Individual series can be removed from view on a graph by clicking on the series in the legend. 
 For example, if you click the warning threshold series, you see only the critical threshold.
 
 ![Modify graph](/help/assets/Monitoring_Graphs2.png)
@@ -84,7 +84,7 @@ For example, if you click the warning threshold series, you see only the critica
 #### Host {#host}
 
 * **`Load Per Core`**: The number of processes that the CPU is executing. Or, the number of queued processes that are in a waiting state averaged over a one (load1), five (load5), and fifteen (load15) minute period.
-* **P`rocess Count`**: The number of processes currently open.
+* **`Process Count`**: The number of processes currently open.
 * **`User Count`**: The number of users with an active shell session.
 * **`Memory Usage`**: The percentage of system memory currently allocated.
 * **`JVM Memory`**: The size (in megabytes) of the allocated Java heap.
@@ -96,7 +96,7 @@ For example, if you click the warning threshold series, you see only the critica
 
 #### Storage {#storage}
 
-* **`Disk Space`**: The used disk space (in megabytes) for each mount point on the host. There are different metrics for each mount point. At a minimum, there are metrics for `/` and `/mnt`, but additional mount point metrics may be available depending on the specific instance configuration.
+* **`Disk Space`**: The used disk space (in megabytes) for each mount point on the host. There are different metrics for each mount point. At a minimum, there are metrics for `/` and `/mnt`, but additional mount point metrics are available depending on the specific instance configuration.
 * **`Folder Size`**
 * **`AEM Segment Store`**: The used disk space (in gigabytes) for the AEM Segment Store.
 
@@ -114,7 +114,7 @@ The following graph shows the monthly SLA attainment for 2019.
 
 ![SLA 2018 graph](/help/assets/SLA-Reports-one.png)
 
-As with the system monitoring graphs, rolling over a data point shows the specific values for that month.
+As with the system monitoring graphs, hovering over a data point shows the specific values for that month.
 
 ![Data point rollover](/help/assets/SLA-Reports-two.png)
 
@@ -125,14 +125,14 @@ The **Event Analysis** section under this graph shows the set of incidents that 
 ## SLA metrics {#sla-metrics}
 
 * **`Author Contract`**: The SLA defined in your contract with Adobe Managed Services for the author tier.
-* **`AMS Author SLA`**: The measured uptime of the production author tier, factoring incidents caused by vendors or by Adobe.
+* **`AMS Author SLA`**: The measured uptime of the production author tier, factoring incidents caused by vendors or Adobe.
 * **`Author SLA`**: The measured uptime of the author tier ignoring scheduled downtime such as maintenance windows.
 * **`End User Contract`**: The SLA defined in your contract with Adobe Managed Services for the publish tier.
-* **`AMS End User SLA`**: The measured uptimes of the production publishing tier, factoring incidents caused by vendors or by Adobe.
+* **`AMS End User SLA`**: The measured uptime of the production publishing tier, factoring incidents caused by vendors or Adobe.
 * **`End User SLA`**: The measured uptime of the publishing tier ignoring scheduled downtime such as maintenance windows.
 
 ## Video tutorial {#video-tutorial}
 
-This video provides and overview of using the charts produced by Cloud Manager Reports for a view into your program environments.
+This video provides an overview of using the charts produced by Cloud Manager Reports to monitor your program environments.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)
