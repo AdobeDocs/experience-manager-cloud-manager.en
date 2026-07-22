@@ -28,7 +28,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
 ---
-# Code Quality testing {#code-quality-testing}
+# Code quality testing {#code-quality-testing}
 
  Learn how code quality testing of pipelines works and how it can improve the quality of your deployments.
 
@@ -49,14 +49,14 @@ There are three gates in the pipeline:
 For each of these gates, there is a three-tiered structure for issues identified by the gate.
 
 * **Critical** - Issues that cause an immediate failure of the pipeline.
-* **Important** - Issues that cause the pipeline to enter a paused state. A deployment manager, project manager, or business owner can either override the issues. If they do, the pipeline proceeds as intended. Alternatively, they can accept the issues, causing the pipeline to stop with a failure. Override of important failures are subject to a [timeout](/help/using/code-deployment.md#timeouts).
+* **Important** - Issues that cause the pipeline to enter a paused state. A deployment lead, project lead, or business owner can override the issues. If they do, the pipeline proceeds as intended. Alternatively, they can accept the issues, causing the pipeline to stop with a failure. Overrides of important failures are subject to a [timeout](/help/using/code-deployment.md#timeouts).
 * **Info** - Issues that are provided purely for informational purposes and have no impact on pipeline execution.
 
 >[!NOTE]
 >
 >In a code quality only pipeline, important failures in the code quality gate cannot be overridden since the code quality testing step is the final step in the pipeline.
 
-## Code Quality testing {#code-quality-testing-step}
+## Code quality testing {#code-quality-testing-step}
 
 This testing step evaluates the quality of your application code, which is the main purpose of a code quality-only pipeline. It is executed immediately following the build step in all non-production and production pipelines. To learn more, go to [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
 
@@ -72,7 +72,7 @@ You can download the current complete list of rules [using this link](/help/asse
 >
 >Starting Thursday, February 13, 2025 (Cloud Manager 2025.2.0), Cloud Manager Code Quality is using an updated SonarQube 9.9 version and an updated list of rules that you can [download here](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx). 
 
-The results of code quality testing are delivered as rating as summarized in this table.
+The results of code quality testing are delivered as a rating as summarized in the following table:
 
 | Name | Definition | Category | Failure Threshold |
 | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ The results of code quality testing are delivered as rating as summarized in thi
 
 >[!NOTE]
 >
->For more detailed information, [SonarQube's metric definitions](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).
+>For more detailed information, [SonarQube's metric definitions](https://docs.sonarsource.com/sonarqube-server/user-guide/code-metrics/metrics-definition).
 
 >[!NOTE]
 >
@@ -95,9 +95,9 @@ The results of code quality testing are delivered as rating as summarized in thi
 
 ### Dealing with false positives {#dealing-with-false-positives}
 
-The quality scanning process is not perfect and sometimes incorrectly identifies issues that are not actually problematic. This scenario is known as a false positive.
+The quality scanning process is not perfect and incorrectly identifies issues that are not problematic. This scenario is known as a false positive.
 
-In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common false positive is that the SonarQube rule to detect hardcoded passwords can be aggressive about how a hardcoded password is identified.
+In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. For example, one common false positive is that the SonarQube rule to detect hardcoded passwords can be overly sensitive about how a hardcoded password is detected.
 
 The following code is fairly common in an AEM project, which has code to connect to some external service.
 
@@ -114,7 +114,7 @@ SonarQube then raises a blocker vulnerability. But after reviewing the code, you
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-However, if the code was actually the following:
+However, if the code was the following:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -133,7 +133,7 @@ Then the correct solution is to remove the hardcoded password.
 
 These same health checks can be executed at any time through the Web Console or the Operations Dashboard.
 
-If any of the instances reports a failure for a given health check, the entire environment fails that health check. As with code quality and performance testing, these health checks are organized into categories and reported using the three-tiered gating system. The only distinction is that there is no threshold if there is security testing. All the health checks are pass or fail.
+If any of the instances report a failure for a given health check, the entire environment fails that health check. As with code quality and performance testing, these health checks are organized into categories and reported using the three-tiered gating system. The only distinction is that there is no threshold for security testing. All the health checks are pass or fail.
 
 The following table lists the health checks.
 
@@ -163,13 +163,13 @@ The following table lists the health checks.
 
 ### AEM Sites {#aem-sites}
 
-Cloud Manager executes performance testing for AEM Sites programs. The performance test is run for approximately 30 mins by spinning up virtual users (containers) that simulate actual users to access pages in staging environments to simulate traffic. These pages are found using a crawler.
+Cloud Manager executes performance testing for AEM Sites programs. The performance test is run for 30 mins by creating virtual users (containers) that simulate actual users to access pages in staging environments to simulate traffic. These pages are found using a crawler.
 
 #### Virtual users {#virtual-users}
 
-Cloud Manager spins up virtual users or containers based on KPIs (response time and pageviews/min) set by the **Business Owner** role. These KPIs are set while [creating or editing the program](/help/getting-started/program-setup.md).
+Cloud Manager creates virtual users or containers based on KPIs (response time and pageviews/min) set by the **Business Owner** role. These KPIs are set while [creating or editing the program](/help/getting-started/program-setup.md).
 
-Based on the KPIs defined, up to ten containers that simulate actual users are spun up. The pages that are selected for testing are split and assigned to each virtual user.
+Based on the KPIs defined, up to ten containers that simulate actual users are created. The pages that are selected for testing are split and assigned to each virtual user.
 
 #### Crawler {#crawler}
 
@@ -186,15 +186,15 @@ Three page sets select the pages. Cloud Manager uses the access logs from the AE
 
 * **Popular Live Pages** - Ensures that the most popular pages accessed by live customers are tested. Cloud Manager reads the access log and determines the top 25 most-accessed pages by live customers to generate a list of top `Popular Live Pages`. The intersection of these pages that are also present in the staging environment are then crawled in the staging environment. 
 
-* **Other Live Pages** - Ensures that the pages that fall outside the top 25 popular live pages that may not be popular, but are important to test, are tested. Similar to popular live pages, they are extracted from the access log and must also be present in the staging environment.
+* **Other Live Pages** - Ensures that the pages that fall outside the top 25 popular live pages that are not popular, but are important to test, are tested. Similar to popular live pages, they are extracted from the access log and must also be present in the staging environment.
 
-* **New Pages** - Tests new pages that may have only been deployed to the staging and not yet to production, but must be tested. 
+* **New Pages** - Tests new pages that were only deployed to the staging and not yet to production, but must be tested. 
 
 ##### Distribution of traffic across page sets selected {#distribution-of-traffic}
 
 You can choose anywhere from one to all three sets on the **Testing** tab of your [pipeline configuration](/help/using/production-pipelines.md). The distribution of traffic is based on the number of sets selected. That is, if all three are selected, 33% of the total page views are put into each set. If two are selected, 50% goes to each set. If one is selected, 100% of the traffic goes to that set.
 
-Let us consider this example.
+Consider this example.
 
 * There is a 50/50 split between the popular live pages and new pages sets.
 * Other live pages are not used.
@@ -244,7 +244,7 @@ To set these variables using the Cloud Manager CLI, run:
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-See [Patch user pipeline variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentation to learn how to use the API. 
+To learn how to use the API, see [Patch user pipeline variables](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#operation/patchPipelineVariables) API documentation. 
 
 ### AEM Assets {#aem-assets}
 
@@ -254,11 +254,11 @@ Cloud Manager runs performance testing for AEM Assets programs by repeatedly upl
 
 For Assets performance testing, your Customer Success Engineer creates a `cloudmanager` user and password during the onboarding of the author to staging environment. The performance test steps require a user called `cloudmanager` and the associated password set up by your CSE. 
 
-This method should remain in the author instance with its permissions unchanged. Altering or removing it can cause Assets performance testing to fail.
+This method remains in the author instance with its permissions unchanged. Altering or removing it can cause Assets performance testing to fail.
 
 #### Images and Assets for testing {#assets-for-testing}
 
-Customers can upload their own assets for testing. This process can be done from the **Pipeline Setup** or **Edit** screen. Common image formats such as JPEG, PNG, GIF and BMP are supported along with Photoshop, Illustrator and Postscript files.
+Customers can upload their own assets for testing. This process can be done from the **Pipeline Setup** or **Edit** screen. Common image formats like JPEG, PNG, GIF, BMP, and Adobe formats are supported.
 
 If no images are uploaded, Cloud Manager uses a default image and PDF documents for testing.
 
@@ -266,15 +266,15 @@ If no images are uploaded, Cloud Manager uses a default image and PDF documents 
 
 The distribution of how many assets of each type are uploaded per minute is set in the **Pipeline Setup** or **Edit** screen.
 
-For example, if a 70/30 split is used, and there are 10 assets uploaded per minute, 7 images and 3 documents are uploaded per minute.
+For example, with a 70/30 split and 10 assets per minute, 7 images and 3 documents are uploaded.
 
 #### Test and report {#testing-and-reporting}
 
-Cloud Manager creates a folder on the author instance using the username and password that the CSE setup. Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library](https://github.com/adobe/toughday2). Both processing time for each asset and various system-level metrics are measured across the 30-minute testing duration. This feature can upload both images and PDF documents.
+Cloud Manager creates a folder on the author instance using the username and password that the CSE set up. Assets are then uploaded to the folder using an open-source library. The tests run by the Assets testing step are written using an [open source library](https://github.com/adobe/toughday2). Both processing time for each asset and various system-level metrics are measured across the 30-minute testing duration. This feature can upload both images and PDF documents.
 
 >[!TIP]
 >
->See [Configure production pipelines](/help/using/production-pipelines.md) to learn more. See [Program Setup](/help/getting-started/program-setup.md) to learn how to set up your program and define your KPIs.
+>To learn more, see [Configure production pipelines](/help/using/production-pipelines.md). To learn how to set up your program and define your KPIs, see [Program Setup](/help/getting-started/program-setup.md).
 
 ### Performance testing results graphs {#performance-testing-results-graphs}
 
@@ -308,17 +308,17 @@ This functionality is available for the following metrics.
 
 As part of the quality analysis process, Cloud Manager performs analysis of the content packages produced by the Maven build. Cloud Manager offers optimizations to accelerate this process, which is effective when certain packaging constraints are observed. 
 
-The key optimization is for projects outputting a single 'all' package, containing other content packages produced by the build, which are marked as skipped. When Cloud Manager detects this scenario, rather than unpack the "all" package, the individual content packages are scanned directly and sorted based on dependencies. For example, consider the following build output.
+The key optimization is for projects outputting a single 'all' package. This package contains other content packages produced by the build, which are marked as skipped. When Cloud Manager detects this scenario, rather than unpack the "all" package, the individual content packages are scanned directly and sorted based on dependencies. For example, consider the following build output.
 
 * `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
 * `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 * `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-If the only items inside `myco-all-1.0.0-SNAPSHOT.zip` are the two skipped content packages, then the two embedded packages are scanned in lieu of the "all" content package.
+If the only items inside `myco-all-1.0.0-SNAPSHOT.zip` are the two skipped content packages, then the two embedded packages are scanned instead of the "all" content package.
 
-For projects that produce dozens of embedded packages, this optimization has been shown to save upwards of 10 minutes per pipeline execution.
+For projects that produce dozens of embedded packages, this optimization has been shown to save more than 10 minutes per pipeline execution.
 
-A special case can occur when the "all" content package contains a combination of skipped content packages and OSGi bundles. For example, if `myco-all-1.0.0-SNAPSHOT.zip` contained the two embedded packages previously mentioned and one or more OSGi bundles, then a new, minimal content package is constructed with only the OSGi bundles. This package is always named `cloudmanager-synthetic-jar-package` and the contained bundles are placed in `/apps/cloudmanager-synthetic-installer/install`.
+A special case can occur when the "all" content package contains a combination of skipped content packages and OSGi bundles. For example, if `myco-all-1.0.0-SNAPSHOT.zip` contained the two embedded packages and OSGi bundles, a new, minimal content package is constructed with only the OSGi bundles. This package is always named `cloudmanager-synthetic-jar-package` and the contained bundles are placed in `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >
