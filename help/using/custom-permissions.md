@@ -17,7 +17,7 @@ role_v2:
 ---
 # Custom permissions {#custom-permissions}
 
-Learn how you can use custom permissions to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines and environments for Cloud Managers users.
+Learn how you can use custom permissions to create new custom permission profiles with configurable permissions to restrict access to programs, pipelines and environments for Cloud Manager users.
 
 ## Introduction {#introduction}
 
@@ -28,7 +28,7 @@ Cloud Manager has a set of pre-defined roles that govern access to various Cloud
 * Deployment Manager
 * Developer
 
-Custom permissions allow users to create new custom permission profiles with configurable permissions to restrict access for Cloud Managers users to programs, pipelines and environments.
+Custom permissions allow users to create new custom permission profiles with configurable permissions to restrict access for Cloud Manager users to programs, pipelines and environments.
 
 >[!TIP]
 >
@@ -42,21 +42,23 @@ Creating and using your own custom permissions requires the following three step
 1. [Assign custom permissions to the new product profile](#assign-permissions).
 1. [Assign users to the new product profile](#assign-users).
 
-This section details these steps. You may find it useful to see the [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
+This section details these steps. See the [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
 
 >[!NOTE]
 >
->You must have product administrator rights in the Admin Console to create new profiles and manage permissions for Cloud Manager.
+>To create new profiles and manage permissions for Cloud Manager, you must have product administrator rights in the Admin Console.
 
 ### Create a new product profile {#create}
 
 First create a new product profile to which you can assign custom permissions.
 
+**To create a new product profile:**
+
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)
 
 1. Select the product **AEM Managed Services**.
 
-1. Search for and instance with name matching the pattern `*-cloud-manager` and click to manage users and permissions.
+1. Search for an instance with name matching the pattern `*-cloud-manager` and select it to manage users and permissions.
 
 1. You are redirected to the **Products** tab of the Admin Console, where you can manage users and permissions for Cloud Manager. In the Admin Console, click **New Profile**.
 
@@ -77,7 +79,9 @@ The new product profile is saved and is visible in the list of product profiles 
 
 Now that you have a new product profile, you can assign custom permissions to it.
 
-1. In the Admin Console, click the name of the [new product profile you just created](#create).
+**To assign custom permissions to the new product profile:**
+
+1. In the Admin Console, click the name of the [new product profile](#create).
 
 1. In the window that opens, select the **Permissions** tab to view a list of editable permissions.
 
@@ -104,13 +108,15 @@ Your new product profile is now saved with its custom permissions.
 
 You can now assign users to the new product profile you created with custom permissions.
 
-1. In the Admin Console, click the name of the [new product profile to which you just assigned custom permissions](#assign-permissions).
+**To assign users to the new product profile:**
+
+1. In the Admin Console, click the name of the [new product profile to which you assigned custom permissions](#assign-permissions).
 
 1. In the window that opens, select the **Users** tab.
 
 1. Click **Add Users** and assign users to your new product profile with custom permissions.
 
-See **Add users and user groups to a product profile** of the document [Manage product profiles for enterprise users](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) for more details on how to use the Admin Console.
+See **Add users and user groups to a product profile** of the document [Manage product profiles for enterprise users](https://helpx.adobe.com/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html) for more details on how to use the Admin Console.
 
 ## Configurable permissions {#configurable-permissions}
 
@@ -139,7 +145,7 @@ The following permissions are available for creating custom profiles.
 
 Organization-level permissions are always applied across all programs within an organization.
 
-One example of an organization-level permission in Cloud Manager is **Repository Info Access**. This permission lets users generate a username, password, and repository URL for accessing and contributing to customer projects. While the username and password remain consistent across all repositories in the organization, each program has a unique repository URL.
+One example of an organization-level permission in Cloud Manager is **Repository Info Access**. This permission lets users generate a username, password, and repository URL for accessing and contributing to customer projects. While the username and password are the same across all repositories in the organization, each program has a unique repository URL.
 
 See the [Source Code Repository](/help/requirements/source-code-repository.md) for more information.
 
@@ -166,15 +172,15 @@ Permission items refer to the scope where permissions are applied. Typically, it
 
 ## Limitations {#limitations}
 
-Keep in mind the following limitations when using custom permissions:
+Consider the following limitations when using custom permissions:
 
 * A [limited set of permissions is available](#configurable-permissions) for creating custom profiles.
-* Resources like program, environment, pipeline etc. created in Cloud Manager may take up two minutes to display in Admin Console for permission configuration.
-* In rare scenarios where a custom permissions service fails to respond, predefined profiles are still available and users in predefined profiles still have appropriate access.
+* Resources like programs, environments, and pipelines created in Cloud Manager require two minutes to display in Admin Console for permission configuration.
+* If a custom permissions service fails to respond, pre-defined profiles are still available and users in pre-defined profiles still have appropriate access.
 
 ## Frequently asked questions {#faq}
 
-### Which permission profiles are predefined permission profiles?
+### Which permission profiles are predefined?
 
 * Business Owner
 * Program Manager
@@ -183,13 +189,13 @@ Keep in mind the following limitations when using custom permissions:
 
 For details on pre-defined roles, see [Role-Based Permissions](/help/requirements/role-based-permissions.md).
 
-### What happens to predefined permission profiles with introduction to custom profiles?
+### What happens to predefined permission profiles when custom profiles are introduced?
 
 Default product profiles and Cloud Manager roles continue to work the same as before.
 
 ### Can I edit predefined permission profiles?
 
-No, default profiles are non-editable. You cannot add or remove permissions to the default permission profile. You can only add or remove users from predefined profiles.
+No, default profiles are non-editable. You cannot add or remove permissions from the default permission profile. You can only add or remove users from predefined profiles.
 
 ### Should I delete predefined permission profiles since custom profiles are now available?
 
@@ -197,7 +203,7 @@ Predefined permission profiles must not be deleted from the Admin Console.
 
 ### Can I add users to multiple permission profiles?
 
-Yes, A user can be part of multiple profiles including predefined and custom permission profiles. When a user is assigned to multiple profiles, the combined permissions from all the assigned permission profiles are available to that user.
+Yes. Users can be part of multiple profiles including predefined and custom permission profiles. When a user is assigned to multiple profiles, the combined permissions from all the assigned permission profiles are available to that user.
 
 ### What happens if a user has permission to edit an environment/pipeline but doesn't have access to a program that contains the environment/pipeline?
 
