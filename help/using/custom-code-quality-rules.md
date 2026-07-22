@@ -32,7 +32,7 @@ Learn details about the custom code quality rules executed by Cloud Manager as p
 
 >[!NOTE]
 >
->The code samples provided here are for illustrative purposes only. See [SonarQube's Concepts documentation](https://docs.sonarsource.com/sonarqube-server/latest/) to learn about its concepts and quality rules.
+>The code samples provided here are for illustrative purposes only. To learn about its concepts and quality rules, see [SonarQube's Concepts documentation](https://docs.sonarsource.com/sonarqube-server).
 
 Full SonarQube rules are not available for download due to Adobe proprietary information. You can download the complete list of rules [using this link](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Continue reading this document for descriptions and examples of the rules.
 
@@ -100,14 +100,14 @@ public class DoThis implements Runnable {
 }
 ```
 
-### Do not use format strings that may be externally controlled {#do-not-use-format-strings-which-may-be-externally-controlled}
+### Do not use format strings that are externally controlled {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 * **Key**: CQRules:CWE-134
 * **Type**: Vulnerability
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
-Using a format string from an external source (such as a request parameter or user-generated content) can expose an application to denial of service attacks. There are circumstances where a format string may be externally controlled, but is only allowed from trusted sources.
+Using a format string from an external source (such as a request parameter or user-generated content) can expose an application to denial of service attacks. There are circumstances where a format string is externally controlled, but is only allowed from trusted sources.
 
 #### Non-compliant code {#non-compliant-code-1}
 
@@ -126,7 +126,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Severity**: Critical
 * **Since**: Version 2018.6.0
 
-When executing HTTP requests from inside an AEM application, it is critical that proper timeouts are configured to avoid unnecessary thread consumption. Unfortunately, both Java&trade;'s default HTTP Client, `java.net.HttpUrlConnection`, and the widely used Apache HTTP Components client do not have a default timeout. Therefore, timeouts must be explicitly configured. As a best practice, these timeouts should be no more than 60 seconds.
+When executing HTTP requests from inside an AEM application, it is critical that proper timeouts are configured to avoid unnecessary thread consumption. Unfortunately, both Java&trade;'s default HTTP Client, `java.net.HttpUrlConnection`, and the widely used Apache HTTP Components client do not have a default timeout. Therefore, timeouts must be explicitly configured. As a best practice, these timeouts are no more than 60 seconds.
 
 #### Non-compliant code {#non-compliant-code-2}
 
@@ -243,7 +243,7 @@ public void orDoThis(Session session) throws Exception {
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
-As described in [Sling documentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html), binding servlets by paths are discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
+As described in [Sling documentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html), binding servlets by paths is discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
 
 #### Non-compliant code {#non-compliant-code-5}
 
@@ -305,7 +305,7 @@ public void orDoThis() throws MyCustomException {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Another common pattern to avoid is to log a message and then immediately throw an exception. This issue generally indicates that the exception message ends up duplicated in log files.
+Another common pattern to avoid is to log a message and then immediately throw an exception. This issue indicates that the exception message is duplicated in log files.
 
 #### Non-compliant code {#non-compliant-code-7}
 
@@ -330,7 +330,7 @@ public void doThis() throws Exception {
 * **Type**: `Code Smell`
 * **Severity**: Minor
 
-In general, the INFO log level should be used to demarcate important actions and, by default, AEM is configured to log at the INFO level or above. GET and HEAD methods should only ever be read-only operations and thus do not constitute important actions. Logging at the INFO level in response to GET or HEAD requests is likely to create significant log noise, making it harder to identify useful information in log files. When handling GET or HEAD requests, logging should be at the WARN or ERROR levels if something has gone wrong. For deeper troubleshooting information, logging should be at the DEBUG or TRACE levels.
+In general, the INFO log level should be used to demarcate important actions and, by default, AEM is configured to log at the INFO level or above. GET and HEAD methods should only ever be read-only operations and thus do not constitute important actions. Logging at the INFO level in response to GET or HEAD requests creates significant log noise, making it harder to identify useful information in log files. When handling GET or HEAD requests, log at the WARN or ERROR levels if something has gone wrong. For deeper troubleshooting information, log at the DEBUG or TRACE levels.
 
 >[!NOTE]
 >
@@ -359,7 +359,7 @@ public void doGet() throws Exception {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-As a best practice, log messages should provide contextual information about where in the application an exception has occurred. While context can also be determined by using stack traces, in general the log message is going to be easier to read and understand. As a result, when logging an exception, it is a bad practice to use the exception's message as the log message. The exception message should detail what went wrong. In contrast, the log message should inform the reader about what the application was doing when the exception occurred. The exception message is still logged. By specifying your own message, the logs are easier to understand.
+As a best practice, log messages should provide contextual information about where in the application an exception has occurred. While you determine context by using stack traces, in general the log message is easier to read and understand. As a result, when logging an exception, it is a bad practice to use the exception's message as the log message. The exception message details what went wrong. In contrast, the log message informs the reader about what the application was doing when the exception occurred. The exception message is still logged. By specifying your own message, the logs are easier to understand.
 
 #### Non-compliant code {#non-compliant-code-9}
 
@@ -385,7 +385,7 @@ public void doThis() {
 }
 ```
 
-### Logging in catch blocks should be at the WARN or ERROR level {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### Logging in catch blocks is at the WARN or ERROR level {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **Key**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
 * **Type**: `Code Smell`
@@ -425,7 +425,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Context is critical when understanding log messages. Using `Exception.printStackTrace()` causes only the stack trace to be output to the standard error stream, losing all context. Further, in a multi-threaded application like AEM, if multiple exceptions are printed using this method in parallel, their stack traces may overlap which produces significant confusion. Exceptions should be logged through the logging framework only.
+Context is critical when understanding log messages. Using `Exception.printStackTrace()` causes only the stack trace to be output to the standard error stream, omitting all context. Further, in a multi-threaded application like AEM, parallel stack trace output causes issues. Exceptions should be logged through the logging framework only.
 
 #### Non-compliant code {#non-compliant-code-11}
 
@@ -458,7 +458,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Logging in AEM should always be done through the logging framework, SLF4J. Outputting directly to the standard output or standard error streams loses the structural and contextual information provided by the logging framework and may, sometimes, cause performance issues.
+Logging in AEM should always be done through the logging framework, SLF4J. Outputting directly to the standard output or standard error streams loses the structural and contextual information provided by the logging framework and sometimes causes performance issues.
 
 #### Non-compliant code {#non-compliant-code-12}
 
@@ -491,7 +491,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Paths starting with `/libs` and `/apps` should generally not be hardcoded. These paths are typically stored relative to the `Sling` search path, which defaults to `/libs,/apps`. Using the absolute path may introduce subtle defects that would only appear later in the project lifecycle.
+Paths starting with `/libs` and `/apps` are not hardcoded. These paths are typically stored relative to the `Sling` search path, which defaults to `/libs,/apps`. Using the absolute path introduces subtle defects that only appear later in the project lifecycle.
 
 #### Non-compliant code {#non-compliant-code-13}
 
@@ -516,11 +516,11 @@ public void doThis(Resource resource) {
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-Do not use Sling Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
+Do not use Sling Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and are better suited for both clustered and non-clustered environments. 
 
-See [Apache Sling Eventing and Job Handling documentation](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in clustered environments.
+To learn more about how Sling Jobs are handled in clustered environments, see [Apache Sling Eventing and Job Handling documentation](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
 
-### AEM deprecated APIs should not be use {#sonarqube-aem-deprecated}
+### Do not use AEM deprecated APIs {#sonarqube-aem-deprecated}
 
 * **Key**: AMSCORE-553
 * **Type**: `Code Smell` / Cloud Service Compatibility
@@ -529,9 +529,9 @@ See [Apache Sling Eventing and Job Handling documentation](https://sling.apache.
 
 The AEM API surface is under constant revision to identify APIs for which usage is discouraged and thus considered deprecated. 
 
-Often, these APIs are deprecated using the standard Java&trade; *@Deprecated* annotation and, as such, as identified by `squid:CallToDeprecatedMethod`. 
+Often, these APIs are deprecated using the standard Java&trade; *@Deprecated* annotation identifies this as `squid:CallToDeprecatedMethod`. 
 
-However, there are cases where an API is deprecated in the context of AEM but may not be deprecated in other contexts. This rule identifies this second class.
+However, there are cases where an API is deprecated in the context of AEM but is not deprecated in other contexts. This rule identifies this second class.
 
 ## OakPAL content rules {#oakpal-rules}
 
@@ -539,9 +539,9 @@ The following section details the OakPAL checks executed by Cloud Manager.
 
 >[!NOTE]
 >
->OakPAL is a framework, which validates content packages using a standalone Oak repository. An AEM Partner and winner of the 2019 AEM Rock Star North America award developed it.
+>OakPAL is a framework, which validates content packages using a standalone Oak repository. An AEM Partner and winner of the 2019 "AEM Rock Star North America" award developed it.
 
-### Customers should not implement or extend product APIs annotated with @ProviderType {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### Do not implement or extend product APIs annotated with @ProviderType {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 * **Key**: CQBP-84
 * **Type**: Bug
@@ -564,14 +564,14 @@ public class DontDoThis implements Page {
 }
 ```
 
-### Customer packages should not create or edit nodes under `/libs` {#oakpal-customer-package}
+### Do not create or edit nodes under `/libs` in customer packages {#oakpal-customer-package}
 
 * **Key**: BannedPath
 * **Type**: Bug
 * **Severity**: Blocker
 * **Since**: Version 2019.6.0
 
-It has been a long-standing best practice that the `/libs` content tree in the AEM content repository should be considered read-only by customers. Modifying nodes and properties under `/libs` creates significant risk for major and minor updates. Edits to `/libs` are only made by Adobe through official channels.
+It has been a long-standing best practice that the `/libs` content tree in the AEM content repository should be considered read-only by customers. Modifying nodes and properties under `/libs` creates significant risk for major and minor updates. Adobe makes edits to `/libs` only through official channels.
 
 ### Packages should not contain duplicate OSGi configurations {#oakpal-package-osgi}
 
@@ -633,16 +633,16 @@ A common problem is use of nodes named `config` within component dialog boxes or
       + rtePlugins [nt:unstructured]
 ```
 
-### Packages should not overlap {#oakpal-no-overlap}
+### Packages must not overlap {#oakpal-no-overlap}
 
 * **Key**: PackageOverlaps
 * **Type**: Bug
 * **Severity**: Major
 * **Since**: Version 2019.6.0
 
-Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule](#oakpal-package-osgi), this issue is a common problem on complex projects where the same node path is written to by multiple separate content packages. While using content package dependencies can be used to ensure a consistent result, it is better to avoid overlaps entirely. 
+Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule](#oakpal-package-osgi), this issue is a common problem on complex projects where multiple separate content packages write to the same node path. While using content package dependencies can be used to ensure a consistent result, it is better to avoid overlaps entirely. 
 
-### The default authoring mode should not be Classic UI {#oakpal-default-authoring}
+### The default authoring mode is not Classic UI {#oakpal-default-authoring}
 
 * **Key**: ClassicUIAuthoringMode
 * **Type**: `Code Smell` / Cloud Service Compatibility
@@ -651,7 +651,7 @@ Similar to the [Packages Should Not Contain Duplicate OSGi Configurations rule](
 
 The OSGi configuration `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` defines the default authoring mode within AEM. Because the Classic UI has been deprecated since AEM 6.4, an issue is now raised when the default authoring mode is configured to Classic UI.
 
-### Components with dialog boxes should have touch UI dialog boxes {#oakpal-components-dialogs}
+### Components with dialog boxes require touch UI dialog boxes {#oakpal-components-dialogs}
 
 * **Key**: ComponentWithOnlyClassicUIDialog
 * **Type**: `Code Smell` / Cloud Service Compatibility
@@ -677,14 +677,14 @@ Support for reverse replication is not available in Cloud Service deployments, a
 
 Customers using reverse replication should contact Adobe for alternative solutions.
 
-### Resources contained in proxy-enabled client libraries should be in a folder named resources {#oakpal-resources-proxy}
+### Resources contained in proxy-enabled client libraries reside in a folder named resources {#oakpal-resources-proxy}
 
 * **Key**: ClientlibProxyResource
 * **Type**: Bug
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-AEM client libraries may contain static resources like images and fonts. As described in the [Using Client-Side Libraries documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
+AEM client libraries can contain static resources like images and fonts. As described in the [Using Client-Side Libraries documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), when using proxied client libraries these static resources must be contained in a child folder named `resources` to be effectively referenced on the publish instances.
 
 #### Non-compliant code {#non-compliant-proxy-enabled}
 
@@ -726,7 +726,7 @@ The migration tool in the [AEM Assets as a Cloud Service GitHub repository](http
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-While the use of static templates has historically been common in AEM Projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found in the [Page Templates - Editable documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
+While the use of static templates has historically been common in AEM Projects, editable templates are highly recommended as they provide the most flexibility and support additional features not present in static templates. More information can be found in the [Page Templates — Editable documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
 
 Migration from static to editable templates can be largely automated using the [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/).
 
@@ -852,14 +852,14 @@ AEM Cloud Service prohibits custom search index definitions (that is, nodes of t
 >
 >You are urged to address this issue as soon as possible because it can cause pipelines to fail starting with the [Cloud Manager August 2024 release](/help/release-notes/current.md).
 
-### Customizing of certain out-of-the-box index definitions is prohibited {#oakpal-customizing-ootb-index}
+### Customizing of certain standard index definitions is prohibited {#oakpal-customizing-ootb-index}
 
 * **Key**: RestrictIndexCustomization
 * **Type**: Improvement
 * **Severity**: Major
 * **Since**: Version 2024.6.0
 
-AEM Cloud Service prohibits unauthorized modifications of the following OOTB indexes:
+AEM Cloud Service prohibits unauthorized modifications of the following standard indexes:
 
 * `nodetypeLucene`
 * `slingResourceResolver`
@@ -948,20 +948,20 @@ The following section lists the Dispatcher Optimization Tool (DOT) checks execut
 
 * [Dispatcher configuration general](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
 
-* [The Dispatcher publish farm cache should have `serveStaleOnError` enabled](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+* [The Dispatcher publish farm cache has `serveStaleOnError` enabled](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
 
 * [The Dispatcher publish farm filters should contain the default deny rules from the 6.x.x version of the AEM archetype](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
 
-* [The Dispatcher publish farm cache `statfileslevel` property should be >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+* [The Dispatcher publish farm cache `statfileslevel` property is >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
 
-* [The Dispatcher publish farm `gracePeriod` property should be >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+* [The Dispatcher publish farm `gracePeriod` property is >= 2](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
 
-* [Each Dispatcher farm should have a unique name](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+* [Each Dispatcher farm has a unique name](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
 
-* [The Dispatcher publish farm cache should have its `ignoreUrlParams` rules configured in an allowlist manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+* [The Dispatcher publish farm cache has its `ignoreUrlParams` rules configured in an allowlist manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
 
-* [The Dispatcher publish farm filters should specify the allowed Sling selectors in an allowlist manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+* [The Dispatcher publish farm filters specify the allowed Sling selectors in an allowlist manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
 
-* [The Dispatcher publish farm filters should specify the allowed Sling suffix patterns in an allowlist manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+* [The Dispatcher publish farm filters specify the allowed Sling suffix patterns in an allowlist manner](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
 * [Do not use the 'Require all granted' directive in a VirtualHost Directory section with a root directory-path](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
