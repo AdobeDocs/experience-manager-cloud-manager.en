@@ -30,11 +30,11 @@ Learn how to deploy your code and what happens in Cloud Manager when you do.
 
 Once you have configured your production pipeline, including the necessary repository and environments, you are ready to deploy your code.
 
-1. Click **Deploy** from the Cloud Manager to start the deployment process.
+1. To start the deployment process, click **Deploy**.
 
    ![Deploy button](/help/assets/Deploy1.png)
 
-1. The **Pipeline Execution** screen displays. Click **Build** to start the process.
+1. The **Pipeline Execution** screen displays. Click **Build** to start the build process.
 
    ![Build button](/help/assets/Deploy2.png)
 
@@ -48,7 +48,7 @@ You can review the steps from various deployment processes by viewing logs, or r
 
 ## Deployment steps {#deployment-steps}
 
-A number of actions occur during each step of the deployment, which is described in this section. See [Deployment Process Details](#deployment-process) for technical details of how the code itself is deployed behind-the-scenes.
+Several actions occur during each step of the deployment, which are described in this section. See [Deployment Process Details](#deployment-process) for technical details of how the code itself is deployed.
 
 ### Stage deployment step {#stage-deployment}
 
@@ -104,14 +104,14 @@ The following steps time out if left waiting for user feedback:
 
 ## Deployment process details {#deployment-process}
 
-Cloud Manager uploads all target/*.zip files produced by the build process to a storage location. These artifacts are retrieved from this location during the deploy phases of the pipeline.
+Cloud Manager uploads all `target/*.zip` files produced by the build process to a storage location. These artifacts are retrieved from this location during the deploy phases of the pipeline.
 
-When Cloud Manager deploys to non-production topologies, the goal is to complete the deployment as quickly as possible and therefore the artifacts are deployed to all nodes simultaneously as follows:
+When Cloud Manager deploys to non-production topologies, the goal is to complete the deployment as efficiently as possible and therefore the artifacts are deployed to all nodes simultaneously as follows:
 
 1. Cloud Manager determines whether each artifact is an AEM or Dispatcher package.
 1. Cloud Manager removes all dispatchers from the load balancer to isolate the environment during the deployment.
 
-   * Unless configured otherwise, you can skip load balancer changes in development and staging Deployments. That is, for the development environment, detach and attach steps in both non-production pipelines, and for staging environment the production pipeline.
+   * Unless configured otherwise, you can skip load balancer changes in development and staging Deployments. That is, for the development environment, detach and attach steps in both non-production pipelines; and for the staging environment, the production pipeline steps.
 
    ![Skip load balancer](/help/assets/load_balancer.png)
 
@@ -121,7 +121,7 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
 1. Each AEM artifact is deployed to each AEM instance via Package Manager APIs, with package dependencies determining the deployment order.
 
-   * To learn more about how you can use packages to install new functionality, transfer content between instances, and back up repository content. See [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+   * Learn more about how you can use packages to install new functionality, transfer content between instances, and back up repository content. See [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
    >[!NOTE]
    >
@@ -130,8 +130,8 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 1. The Dispatcher artifact is deployed to each Dispatcher as follows:
 
    1. Current configurations are backed up and copied to a temporary location.
-   1. All configurations are deleted except the immutable files. See [Dispatcher Configurations](/help/getting-started/dispatcher-configurations.md) for more details. This approach clears the directories to ensure that no orphaned files are left behind.
-   1. The artifact is extracted to the `httpd` directory. Immutable files are not overwritten. Any changes you make to immutable files in your Git repository are ignored at the time of deployment. These files are core to the AMS Dispatcher framework and cannot be changed.
+   1. All configurations are deleted except the immutable files. See [Dispatcher Configurations](/help/getting-started/dispatcher-configurations.md) for more details. This approach clears the directories to ensure that no orphaned files remain.
+   1. The artifact is extracted to the `httpd` directory. Immutable files are not overwritten. Any changes you make to immutable files in your Git repository are ignored at the time of deployment. These files are essential to the AMS Dispatcher framework and cannot be changed.
    1. Apache performs a configuration test. If no errors are found, the service is reloaded. If errors are found, configurations are restored from backup, the service is reloaded, and the error is reported back to Cloud Manager.
    1. Each path specified in the pipeline configuration is invalidated or flushed from the Dispatcher cache.
    
@@ -149,7 +149,7 @@ When Cloud Manager deploys to non-production topologies, the goal is to complete
 
 The process for deploying to production topologies differs slightly to minimize impact to AEM site visitors. 
 
-Production deployments generally follow the same steps as above, but in a rolling manner:
+Production deployments follow the same steps as above, but in a rolling manner:
 
 1. Deploy AEM packages to author.
 1. Detach dispatcher1 from the load balancer.
@@ -163,13 +163,13 @@ This process continues until the deployment has reached all publishers and dispa
 
 ## Emergency pipeline execution mode {#emergency-pipeline}
 
-In critical situations, Adobe Managed Services customers might need to deploy code changes to their stage and production environments immediately. This ability lets them bypass the full Cloud Manager test cycle.
+In urgent scenarios, Adobe Managed Services customers need to deploy code changes to their stage and production environments immediately. This ability allows them to bypass the full Cloud Manager test cycle.
 
-To address these situations, the Cloud Manager production pipeline may be executed in an emergency mode. When this mode is used, the security and performance test steps are not executed. All other steps, including any configured approval steps, are executed as in the normal pipeline execution mode. 
+To address these situations, the Cloud Manager production pipeline can be executed in an emergency mode. When this mode is used, the security and performance test steps are not executed. All other steps, including any configured approval steps, are executed as in the normal pipeline execution mode. 
 
 >[!NOTE]
 >
->The emergency pipeline execution mode feature is activated on a program-by-program basis. The activation is done by Customer Success Engineers.
+>The emergency pipeline execution mode feature is activated on a program-by-program basis. Customer Success Engineers perform the activation.
 
 ### Use emergency pipeline execution mode {#using-emergency-pipeline}
 
@@ -189,10 +189,10 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## Re-executing a production deployment {#reexecute-deployment}
 
-In rare cases, production deployment steps may fail for transient reasons. In these cases, you can re-execute the production deployment step as long as it was completed, regardless of whether it was successful, canceled, or unsuccessful. Re-execution is supported by using the same pipeline that consists of the following three steps: 
+In rare cases, production deployment steps can fail for transient reasons. In these cases, you can re-execute the production deployment step as long as it was completed, regardless of whether it was successful, canceled, or unsuccessful. Re-execution is supported by using the same pipeline that consists of the following three steps: 
 
 1. **The validate step** - The same validation that occurs during a normal pipeline execution.
-1. **The build step** - In the context of a re-execution, the build step copies artifacts and does not actually execute a new build process.
+1. **The build step** - In the context of a re-execution, the build step copies artifacts and does not execute a new build process.
 1. **The production deployment step** - Uses the same configuration and options as the production deployment step in a normal pipeline execution.
 
 In such circumstances where a re-execution is possible, the production pipeline status page provides the **Re-execute** option next to the usual **Download build log** option.
@@ -212,7 +212,7 @@ In such circumstances where a re-execution is possible, the production pipeline 
 
 ### Re-execute API {#reexecute-api}
 
-In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) to trigger re-executions and identify executions that were triggered as re-executions.
+In addition to being available in the UI, you can use [the Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api#tag/Pipeline-Execution) to trigger re-executions and identify executions that were triggered as re-executions.
 
 #### Trigger a re-execution {#triggering}
 
