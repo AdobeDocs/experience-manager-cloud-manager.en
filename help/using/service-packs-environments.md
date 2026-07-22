@@ -29,7 +29,7 @@ Learn how you can initiate service pack updates for Development environments thr
 
 >[!NOTE]
 >
->This feature is only available to [the private beta program](/help/release-notes/current.md#beta-program).
+>This feature is only available in [the private beta program](/help/release-notes/current.md#beta-program).
 
 ## Overview {#service-pack-updates-overview}
 
@@ -72,7 +72,7 @@ After initiating the update, you can monitor the progress in Cloud Manager's Act
 **To track the service pack update:**
 
 1. Navigate to the Activity Page from the Cloud Manager dashboard.
-1. Look for the Service Pack Installation entry.
+1. Locate the Service Pack Installation entry.
 
     ![Service Pack installations](/help/using/assets/service-pack-installation.png)
 
@@ -96,7 +96,7 @@ Once the installation completes, your approval&mdash;or rejection&mdash;is requi
 
     ![Reject or Approve the service pack update](/help/using/assets/service-pack-reject-approve.png)
 
-1. Do either one of the following:
+1. Do one of the following:
 
     * To finalize the update, click **Approve**.
 
