@@ -34,12 +34,12 @@ Each of the listed environments displays its associated status.
 
 The **Environments** tile displays the production and staging environments provisioned in your program along with the status.
 
-The status is the rolled-up power state across the nodes in the environment in the following order of priority.
+The status is the aggregate power state across the environment nodes listed in order.
 
 * Green - All nodes are running
-* Red - One or more node is stopped.
-* Blue - One or more node is coming up.
-* Yellow - One or more node has a power state unavailable.
+* Red - One or more nodes are stopped.
+* Blue - One or more nodes are starting.
+* Yellow - One or more nodes have a power state unavailable.
 
 ![Environments tile](/help/assets/Environments-card-new.png)
 
@@ -47,7 +47,7 @@ The status is the rolled-up power state across the nodes in the environment in t
 
 On the **Environments** tile, click the row of any environment to display the **Environments** screen.
 
-The **Environments** screen displays each production and staging environments in your program. The name of the environment is seen above each card. The card includes a table of nodes in the environment along with the t-shirt size of the cpu, the storage, the region, and the status.
+The **Environments** screen displays each production and staging environment in your program. The name of the environment appears above each card. The card includes a table of nodes in the environment along with the size of the CPU, storage, region, and status.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ The **Environments** screen displays each production and staging environments in
 
 * Green - Running
 * Red - Stopped
-* Blue - Coming up
+* Blue - Starting
 * Yellow - Unavailable
 
 ![Environments tab](/help/assets/Environments-tab.png)
@@ -66,11 +66,11 @@ The **Environments** screen displays each production and staging environments in
 
 >[!NOTE]
 >
->Request your environment logs through your Customer Success Engineer.
+>Request your environment logs through your Customer Success representative.
 
 ## Video tutorial {#video-tutorial}
 
-This video provides an overview to Cloud Manager environments that are composed of AEM authoring, publishing, and Dispatcher instances.
+This video provides an introduction to Cloud Manager environments that are composed of AEM authoring, publishing, and Dispatcher instances.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/)
 
