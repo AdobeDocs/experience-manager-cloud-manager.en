@@ -17,13 +17,13 @@ topic_v2:
 ---
 # Add a production pipeline {#configuring-production-pipelines}
 
-Learn how to use Cloud Manager to create and configure production pipelines to deploy your code. If you would first like a more conceptual overview of how pipelines work in Cloud Manager, see [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md).
+Learn how to use Cloud Manager to create and configure production pipelines to deploy your code. For a more conceptual overview of how pipelines work in Cloud Manager, see [CI/CD Pipelines](/help/overview/ci-cd-pipelines.md).
 
 ## Overview {#overview}
 
 Using the **Pipeline Settings** tile in [!UICONTROL Cloud Manager] you can create two different types of pipelines.
 
-* **Production Pipelines** - A production pipelines is a purpose-built pipeline made of a series of orchestrated steps to take source code from your Git repository all the way into production.
+* **Production Pipelines** - A production pipeline is a purpose-built pipeline made of a series of orchestrated steps to take source code from your Git repository to production.
 * **Non-Production Pipelines** - A non-production pipeline primarily serves to run code-quality scans or to deploy source code into a development environment.
 
 This document focuses on production pipelines. For details on how to configure non-production pipelines see the document [Configuring Non-Production Pipelines](/help/using/non-production-pipelines.md).
@@ -38,7 +38,7 @@ The **Deployment Manager** role is responsible for setting up the pipeline. Pipe
 >
 >A pipeline cannot be set up until its associated Git repository has at least one branch and [program setup](/help/getting-started/program-setup.md) is complete.
 
-## Add a production pipeline {#adding-production-pipeline}
+## Add a production pipeline {#add-a-production-pipeline}
 
 After you have used the [!UICONTROL Cloud Manager] UI to set up your program and have at least one environment, you are ready to add a production pipeline.
 
@@ -79,7 +79,7 @@ After you have used the [!UICONTROL Cloud Manager] UI to set up your program and
 
          ![Staging deployment options](/help/assets/configure-pipelines/add-prod4.png)
 
-         * **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure, do the following:
+         * **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure, do the following:
         
            1. Under **PATH** provide a content path.
            1. Under **TYPE**, select the action to be taken on that path.
@@ -148,7 +148,7 @@ After you have used the [!UICONTROL Cloud Manager] UI to set up your program and
 
       * Define your own custom assets by uploading them.
 
-        1. **FORMAT** - Choose whether your custom asset is a PDF of an image.
+        1. **FORMAT** - Choose whether your custom asset is a PDF or an image.
         1. **FILENAME** - Use the file browser button to select an image from your local machine.
         1. **Add Test File** - Click to upload your selected asset.
 
@@ -168,14 +168,14 @@ A full-stack code pipeline deploys back-end and front-end code builds along with
 
 1. On the **Source Code** tab, define the following options.
 
-   * **Repository** - Defines which Git repo the pipeline should retrieve the code.
+   * **Repository** - Defines which Git repository the pipeline retrieves the code from.
 
    >[!TIP]
    >
    >See the document [Program Setup](/help/getting-started/program-setup.md) to learn how to add and manage repositories in Cloud Manager.
 
-   * **Git Branch** - Defines from which branch the pipeline should retrieve the code.
-   * **Ignore Web Tier Configuration** - When checked, the pipeline does not deploy your web tier configuration. If a web tier config pipeline already exists for the same environment, this check box is automatically selected and disabled because the web tier configuration is managed by that pipeline instead. When no web tier config pipeline exists, you can select or clear this option to control whether the full stack pipeline deploys the Dispatcher configuration.
+   * **Git Branch** - Defines from which branch the pipeline retrieves the code.
+   * **Ignore Web Tier Configuration** - When checked, the pipeline does not deploy your web tier configuration. If a web tier configuration pipeline already exists for the same environment, this check box is automatically selected and disabled because that pipeline manages the web tier configuration instead. When no web tier config pipeline exists, you can select or clear this option to control whether the full stack pipeline deploys the Dispatcher configuration.
 
    ![Full stack code source](/help/assets/configure-pipelines/add-prod-fullstack-source.png)
 
@@ -208,7 +208,7 @@ If you create a web tier config pipeline for an environment with an existing ful
 1. Click **Continue** to advance to the **Stage Testing** tab. See [Stage Testing](#stage-testing) for details.
 
 
-## About using Smart Build in a production pipeline{#about-smart-build}
+## Use Smart Build in a production pipeline{#about-smart-build}
 
 **Smart Build** in Cloud Manager is an optimized build strategy for production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
 
@@ -240,7 +240,7 @@ The performance gain from using Smart Build depends on several factors including
 * The frequency and scope of code changes.
 * The distribution of dependencies across modules.
 
-Generally, projects with many independent modules can see the greatest improvement.
+Projects with many independent modules can see the greatest improvement.
 
 ### Per-module cache opt-out{#smart-build-cache-optout}
 
@@ -267,13 +267,13 @@ This syntax forces the module to rebuild on every pipeline execution while other
 Keep the following in mind when you use Smart Build:
 
 * Smart Build relies on Maven dependency analysis.
-* Changes outside the dependency graph may not trigger rebuilds.
-* Some plug-ins may not be fully compatible with caching.
-* You can switch back to **Full Build** at any time by editing the non-production pipeline.
+* Changes outside the dependency graph do not trigger rebuilds.
+* Some plugins are not fully compatible with caching.
+* You can switch back to **Full Build** at any time by editing the production pipeline.
 
 If you encounter unexpected build behavior, consider disabling caching for specific modules or temporarily switching your build strategy to **Full Build**.
 
-### Troubleshooting Smart Build issues{#smart-build-troubleshoot}
+### Resolve Smart Build issues{#smart-build-troubleshoot}
 
    | Issue | Suggested solutions |
    | --- | --- |
@@ -281,7 +281,7 @@ If you encounter unexpected build behavior, consider disabling caching for speci
    | No performance improvement | &bull; Ensure that multiple runs have occurred (cache warm-up).<br>&bull; Check if most modules are changing frequently.  |
    | Unexpected artifacts or missing changes | &bull; Review whether changes are outside Maven dependency tracking.<br>&bull; Use **Full Build** for verification. |
 
-See [Add a production pipeline](#adding-production-pipeline) the enable Smart Build.
+To enable Smart Build, see [Add a production pipeline](#add-a-production-pipeline).
 
 
 ## The next steps {#the-next-steps}
