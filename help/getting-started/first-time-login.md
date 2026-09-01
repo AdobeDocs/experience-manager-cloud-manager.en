@@ -57,4 +57,4 @@ Cloud Manager provides a consolidated view of a program's activity. It lists all
 
 >[!NOTE]
 >
->By default, a user with access to an AEM environment also has the Cloud Manager User role. This role does not grant the user access to the program details view. A user with only the Cloud Manager User role can navigate using the program menu options to the AEM environment author URL (if environments exist). These users must contact their administrators if they want to get program-level access.
+>By default, a user with access to an AEM environment also has the Cloud Manager User role. This role does not provide the user access to the program details view. A user with only the Cloud Manager User role can navigate using the program menu options to the AEM environment author URL (if environments exist). These users must contact their administrators if they want to get program-level access.

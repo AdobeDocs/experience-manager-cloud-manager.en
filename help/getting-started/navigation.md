@@ -102,7 +102,7 @@ If you are beginning the setup of your organization, there is guidance on next s
 
 The main content of the My Programs console is the **My Programs** section that lists your programs as individual cards. Click a card to access the **Program Overview** page of the program for details about the program.
 
-Depending on your privileges, you might be unable to select certain programs.
+Depending on your privileges, you are unable to select certain programs.
 
 You can use the following sort options to find the program you want quickly:
 
