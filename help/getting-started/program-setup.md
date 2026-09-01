@@ -79,7 +79,7 @@ If you have not yet created a pipeline, see [Configuring Production Pipelines](/
 
 ## Switch between programs {#swithing-programs}
 
-When working on a program, you can quickly switch to another program without returning to the Cloud Manager overview page.
+When working on a program, you can switch to another program without returning to the Cloud Manager overview page.
 
 Use the action bar to switch to another program, edit the current program, or add a new program.
 
@@ -89,11 +89,11 @@ Use the action bar to switch to another program, edit the current program, or ad
 
 Sites KPIs are measured on tests run in the staging environment. Typically, these KPIs are adjusted to match the capabilities of the staging environment.
 
-For example, a user expecting an average of 1000 page views per minute in their production environment, and who has four Dispatcher/publishing servers in production, reduces this scenario to 250 page views per minute. This scenario assumes that their staging environment consists of only a single Dispatcher/publish server pair.
+For example, a team expecting an average of 1000 page views per minute in their production environment and that has four Dispatcher/publishing servers in production scales this scenario to 250 page views per minute. This scenario assumes that their staging environment consists of only a single Dispatcher/publishing server pair.
 
 Assets performance testing involves repeatedly uploading assets over a 30-minute period. The processing time for each asset and various system-level metrics are measured throughout the test.
 
-You have a content delivery network (CDN) such as Akamai or CloudFront configured for your production environment. Because [!UICONTROL Cloud Manager] tests against the staging environment directly, the KPI reflects only the traffic expected to pass through the CDN. That is, the cache misses. Typically, this traffic is a relatively small subset of the total production traffic.
+You have a content delivery network (CDN) such as Akamai or CloudFront configured for your production environment. Because [!UICONTROL Cloud Manager] tests against the staging environment directly, the KPI reflects only the traffic expected to pass through the CDN. This refers to cache misses. Typically, this traffic is a relatively small subset of the total production traffic.
 
 ## Video overview {#video}
 
