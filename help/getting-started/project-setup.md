@@ -112,7 +112,7 @@ And if you want to output a simple message only when the build runs outside of C
 
 ## Password-protected Maven repository support {#password-protected-maven-repositories}
 
-Artifacts from a password-protected Maven repository should be used with caution because code deployed this way is not fully subject to the quality checks enforced by Cloud Manager's quality standards. Adobe also advises that you deploy the Java sources and the whole project source code alongside the binary.
+Artifacts from a password-protected Maven repository should be used cautiously because code deployed this way is not fully subject to the quality checks enforced by Cloud Manager's quality standards. Adobe also advises that you deploy the Java sources and the whole project source code alongside the binary.
 
 >[!TIP]
 >
@@ -336,7 +336,7 @@ If desired, the reuse behavior can be disabled for specific pipelines by setting
 
 * Build artifacts are not reused across different programs, regardless of whether the commit hash is identical.
 * Build artifacts are reused within the same program even if the branch and/or pipeline is different.
-* [Maven version handling](/help/managing-code/maven-project-version.md) replaces the project version only in production pipelines. If the same commit is used for both development and production pipelines, and the development pipeline runs first, the versions are deployed to staging and production unchanged. However, a tag is still created in this case.
+* [Maven version handling](/help/managing-code/maven-project-version.md) replaces the project version only in production pipelines. If the same commit is used for both development and production pipelines, and the development pipeline is run first, the versions are deployed to staging and production unchanged. However, a tag is still created in this case.
 * If the retrieval of the stored artifacts is not successful, the build step is executed as if no artifacts were stored.
 * Pipeline variables other than `CM_DISABLE_BUILD_REUSE` are not considered when Cloud Manager decides to reuse previously created build artifacts.
 
