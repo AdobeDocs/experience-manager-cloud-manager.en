@@ -2,6 +2,11 @@
 title: GitHub Check Annotations
 description: Learn how GitHub checks annotate PRs for your private repositories to provide you with helpful feedback.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
 ---
 
 # GitHub check annotations {#github-annotations}
