@@ -2,7 +2,8 @@
 title: The Build Environment
 description: Learn about the specialized build environment that Cloud Manager users to build and test your code.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-TQID: https://experienceleague.adobe.com/AdGVWjyF0DXEX7jH5S39JQ506oVnNYGtYqAWNHcQeP8
+autotag-review: '2026-09-28T18:27:41.054Z'
+TQID: 'https://experienceleague.adobe.com/DNcpDvFCu798nnK81kUEN8JmIv8DP72cas0YaVKPw40'
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
     internal-label: Experience Manager Cloud Manager
@@ -13,6 +14,16 @@ feature_v2:
     internal-label: APIs
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
     internal-label: Environments
+  - id: 143cda9c-8952-5316-be5f-2cd421ad8ecc
+    internal-label: Dispatcher
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+  - id: 2e0e1a8a-56e7-5bd5-b805-f35a7c0c2ca7
+    internal-label: Projects
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: d54b7e32-ec14-504f-8821-22c27fbf278b
+    internal-label: Production
 subfeature_v2:
   - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
     internal-label: Cloud Manager APIs
