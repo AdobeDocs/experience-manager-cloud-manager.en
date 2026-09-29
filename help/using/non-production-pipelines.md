@@ -55,27 +55,27 @@ After you set up a program and at least one environment in the Cloud Manager UI,
 
 >[!TAB Code Quality Pipeline - Configuration tab]
 
-   | Section | Option | Description |
-   | --- | --- | --- |
-   | **Pipeline Configuration** | **Non-production Pipeline Name** | Enter a description for your pipeline in the **Non-Production Pipeline Name** field. |
-   |  | **Testing**  | Visible only when editing a non-production pipeline.<br>The UI shows the testing categories that the pipeline runs as part of code quality validation.<ul><li>**Static Code Testing** - Analyzes the code for quality and correctness issues.<li>**Load/Performance Testing** - Evaluates performance-related behavior as part of pipeline testing.<li>**Security Testing** - Checks the code and pipeline output for security-related issues. |
-   | **Deployment Options** | **Deployment Trigger** | <ul><li>**Manual** - Lets you manually start the pipeline.<li>**On Git Changes** - Starts the pipeline when commits are added to the configured Git branch. With this option, you can still start the pipeline manually, as required. |
-   |  | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - This behavior is the default setting and requires manual intervention on any important failure.<li>**Fail immediately** - If selected, the pipeline is canceled whenever an important failure occurs. It essentially emulates a user manually rejecting each failure.<li>**Continue immediately** - If selected, the pipeline procedes automatically whenever an important failure occurs. It essentially emulates a user manually approving each failure.</li></ul> |
-   |  | **Approve after Stage Deployment** check box  | Visible only when editing a non-production pipeline.<br>Select this option to require approval after deployment to the stage environment before the pipeline can continue. If this option is not selected, the pipeline continues based on the configured behavior. |
+| Section | Option | Description |
+| --- | --- | --- |
+| **Pipeline Configuration** | **Non-production Pipeline Name** | Enter a description for your pipeline in the **Non-Production Pipeline Name** field. |
+|  | **Testing**  | Visible only when editing a non-production pipeline.<br>The UI shows the testing categories that the pipeline runs as part of code quality validation.<ul><li>**Static Code Testing** - Analyzes the code for quality and correctness issues.<li>**Load/Performance Testing** - Evaluates performance-related behavior as part of pipeline testing.<li>**Security Testing** - Checks the code and pipeline output for security-related issues. |
+| **Deployment Options** | **Deployment Trigger** | <ul><li>**Manual** - Lets you manually start the pipeline.<li>**On Git Changes** - Starts the pipeline when commits are added to the configured Git branch. With this option, you can still start the pipeline manually, as required. |
+|  | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - This behavior is the default setting and requires manual intervention on any important failure.<li>**Fail immediately** - If selected, the pipeline is canceled whenever an important failure occurs. It essentially emulates a user manually rejecting each failure.<li>**Continue immediately** - If selected, the pipeline procedes automatically whenever an important failure occurs. It essentially emulates a user manually approving each failure.</li></ul> |
+|  | **Approve after Stage Deployment** check box  | Visible only when editing a non-production pipeline.<br>Select this option to require approval after deployment to the stage environment before the pipeline can continue. If this option is not selected, the pipeline continues based on the configured behavior. |
 
 >[!TAB Deployment Pipeline - Configuration tab]
 
-   | Section | Option | Description |
-   | --- | --- | --- |
-   | **Pipeline Configuration** | **Non-production Pipeline Name** | Enter a description for your pipeline in the **Non-Production Pipeline Name** field. |
-   |   | **Eligible Deployment Environment** | If your pipeline is a deployment pipeline, you must select which environments where Cloud Manager deploys the code.  |
-   |   | **Testing** | Visible only when editing a non-production pipeline.<br>The UI shows the testing categories that the pipeline runs as part of code quality validation.<ul><li>**Static Code Testing** - Analyzes the code for quality and correctness issues.<li>**Load/Performance Testing** - Evaluates performance-related behavior as part of pipeline testing.<li>**Security Testing** - Checks the code and pipeline output for security-related issues.</li></ul>  |
-   | **Deployment Options** | **Deployment Trigger** | <ul><li>**Manual** - Lets you manually start the pipeline.<li>**On Git Changes** - Starts the pipeline when commits are added to the configured Git branch. With this option, you can still start the pipeline manually, as required. |
-   |   | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - The default setting and prompts the user to decide how to proceed when an important metric fails.<li>**Fail Immediately** - The pipeline is canceled whenever an important metric fails. It is essentially emulating a user manually rejecting each failure.<li>**Continue Immediately** - The pipeline proceeds automatically whenever an important metric fails. It is essentially emulating a user manually approving each failure.</li></ul> |
-   |  | **Approve after Stage Deployment** check box | Visible only when editing a non-production pipeline.<br>Select this option to require approval after deployment to the stage environment before the pipeline can continue. If this option is not selected, the pipeline continues based on the configured behavior. |
-   |  | **Skip Load Balancer changes** check box  | Select this option to prevent the pipeline from making load balancer changes during deployment. |
-   |  | **Dispatcher Configuration** | The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. Cloud Manager runs these cache actions as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure `Dispatcher`, do the following:<ul><li>Under **PATH**, provide a content path that you want the pipeline to flush or invalidate.<li>Under **TYPE**, select the action to be taken on that path.<ul><li>**Flush** - Perform a cache deletion on the specified path.</li><li>**Invalidate** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.</li><li>Click **Add Path** to add your specified path. You can add up to 100 paths per environment.</li></ul> |
-   | **Pipeline** | **Experience Audit** check box | Select this option to include an Experience Audit step in the pipeline. When enabled, the pipeline includes the Experience Audit step after the Source Code tab. |
+| Section | Option | Description |
+| --- | --- | --- |
+| **Pipeline Configuration** | **Non-production Pipeline Name** | Enter a description for your pipeline in the **Non-Production Pipeline Name** field. |
+|   | **Eligible Deployment Environment** | If your pipeline is a deployment pipeline, you must select which environments where Cloud Manager deploys the code.  |
+|   | **Testing** | Visible only when editing a non-production pipeline.<br>The UI shows the testing categories that the pipeline runs as part of code quality validation.<ul><li>**Static Code Testing** - Analyzes the code for quality and correctness issues.<li>**Load/Performance Testing** - Evaluates performance-related behavior as part of pipeline testing.<li>**Security Testing** - Checks the code and pipeline output for security-related issues.</li></ul>  |
+| **Deployment Options** | **Deployment Trigger** | <ul><li>**Manual** - Lets you manually start the pipeline.<li>**On Git Changes** - Starts the pipeline when commits are added to the configured Git branch. With this option, you can still start the pipeline manually, as required. |
+|   | **Important Metric Failures Behavior** | <ul><li>**Ask every time** - The default setting and prompts the user to decide how to proceed when an important metric fails.<li>**Fail Immediately** - The pipeline is canceled whenever an important metric fails. It is essentially emulating a user manually rejecting each failure.<li>**Continue Immediately** - The pipeline proceeds automatically whenever an important metric fails. It is essentially emulating a user manually approving each failure.</li></ul> |
+|  | **Approve after Stage Deployment** check box | Visible only when editing a non-production pipeline.<br>Select this option to require approval after deployment to the stage environment before the pipeline can continue. If this option is not selected, the pipeline continues based on the configured behavior. |
+|  | **Skip Load Balancer changes** check box  | Select this option to prevent the pipeline from making load balancer changes during deployment. |
+|  | **Dispatcher Configuration** | The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. Cloud Manager runs these cache actions as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure `Dispatcher`, do the following:<ul><li>Under **PATH**, provide a content path that you want the pipeline to flush or invalidate.<li>Under **TYPE**, select the action to be taken on that path.<ul><li>**Flush** - Perform a cache deletion on the specified path.</li><li>**Invalidate** - Perform a cache invalidation, similar to when content is activated from an authoring instance to a publishing instance.</li><li>Click **Add Path** to add your specified path. You can add up to 100 paths per environment.</li></ul> |
+| **Pipeline** | **Experience Audit** check box | Select this option to include an Experience Audit step in the pipeline. When enabled, the pipeline includes the Experience Audit step after the Source Code tab. |
 
 >[!ENDTABS]
 
@@ -86,39 +86,39 @@ After you set up a program and at least one environment in the Cloud Manager UI,
 
 >[!TAB Source Code tab - Full Stack Code]
 
-   Deploys the complete AEM application, including application code and, by default, web tier configuration.
+Deploys the complete AEM application, including application code and, by default, web tier configuration.
 
-   >[!NOTE]
-   >
-   >If a full-stack code pipeline already exists for the selected environment, this selection is disabled.
+>[!NOTE]
+>
+>If a full-stack code pipeline already exists for the selected environment, this selection is disabled.
 
-   | Section | Option | Description |
-   | --- | --- | --- |
-   | **Source code** | **Repository** | From the drop-down list, choose the Git repository that the pipeline uses as its source. Cloud Manager builds code from the repository that you choose here. |
-   |   | **Git Branch** | From the drop-down list, choose which branch in the selected repository the pipeline should build from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list. |
-   |   | **Build Strategy** | <ul><li>**Full Build** - Builds all modules in the repository every time<li>**Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build).</li></ol> |
-   |   | **Ignore Web Tier Configuration** check box | Select this option to skip deployment of web tier configuration in a Full Stack code pipeline. Leave the option unselected to deploy web tier configuration together with the pipeline's code.|
-   | **Pipeline** | **Experience Audit** check box | Select this option to include an Experience Audit step in the pipeline. When enabled, the pipeline includes the Experience Audit step after the Source Code tab. |
+| Section | Option | Description |
+| --- | --- | --- |
+| **Source code** | **Repository** | From the drop-down list, choose the Git repository that the pipeline uses as its source. Cloud Manager builds code from the repository that you choose here. |
+|   | **Git Branch** | From the drop-down list, choose which branch in the selected repository the pipeline should build from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list. |
+|   | **Build Strategy** | <ul><li>**Full Build** - Builds all modules in the repository every time<li>**Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build).</li></ol> |
+|   | **Ignore Web Tier Configuration** check box | Select this option to skip deployment of web tier configuration in a Full Stack code pipeline. Leave the option unselected to deploy web tier configuration together with the pipeline's code.|
+| **Pipeline** | **Experience Audit** check box | Select this option to include an Experience Audit step in the pipeline. When enabled, the pipeline includes the Experience Audit step after the Source Code tab. |
 
 >[!TAB Source Code - Web Tier Config]
 
-   Deploys only web tier configuration, such as Dispatcher properties used to store, process, and deliver web pages to the client. When you select **Web Tier Config**, Cloud Manager creates a pipeline dedicated to web tier configuration deployment.
+Deploys only web tier configuration, such as Dispatcher properties used to store, process, and deliver web pages to the client. When you select **Web Tier Config**, Cloud Manager creates a pipeline dedicated to web tier configuration deployment.
 
-   If a full stack pipeline already exists, Cloud Manager displays a notice that creating a web tier configuration pipeline causes the existing full stack pipeline to ignore web tier configuration. After you create the web tier configuration pipeline, Cloud Manager manages web tier configuration deployments through that pipeline instead of the full stack pipeline.
+If a full stack pipeline already exists, Cloud Manager displays a notice that creating a web tier configuration pipeline causes the existing full stack pipeline to ignore web tier configuration. After you create the web tier configuration pipeline, Cloud Manager manages web tier configuration deployments through that pipeline instead of the full stack pipeline.
 
-   >[!NOTE]
-   >
-   >If a web-tier config pipeline already exists for the selected environment, this selection is disabled. At any time, there can only be one web tier config pipeline per environment.
+>[!NOTE]
+>
+>If a web-tier config pipeline already exists for the selected environment, this selection is disabled. At any time, there can only be one web tier config pipeline per environment.
 
-   | Section | Option | Description |
-   | --- | --- | --- |
-   | **Source code** | **Repository** | From the drop-down list, select the Git repository that contains the web tier configuration. |
-   |   | **Git Branch** | Select the branch in the chosen repository that Cloud Manager uses for the deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list. |
-   |   | **Code Location** | Enter the path in the selected repository that contains the web tier configuration to deploy. The default location is the repository root (`/`). |
+| Section | Option | Description |
+| --- | --- | --- |
+| **Source code** | **Repository** | From the drop-down list, select the Git repository that contains the web tier configuration. |
+|   | **Git Branch** | Select the branch in the chosen repository that Cloud Manager uses for the deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list. |
+|   | **Code Location** | Enter the path in the selected repository that contains the web tier configuration to deploy. The default location is the repository root (`/`). |
 
-   >[!NOTE]
-   >
-   >If Code Location does not point to the dispatcher code location, additional application code could be pulled into the artifact package and deployed to the dispatcher, causing Apache to fail on restart and the pipeline to fail. Make sure to set the correct path to the dispatcher files in the repository.
+>[!NOTE]
+>
+>If Code Location does not point to the dispatcher code location, additional application code could be pulled into the artifact package and deployed to the dispatcher, causing Apache to fail on restart and the pipeline to fail. Make sure to set the correct path to the dispatcher files in the repository.
 
 >[!ENDTABS]
 
