@@ -66,7 +66,7 @@ To join the Beta, contact your Adobe Customer Success Engineer to learn more.
 
 ## Bug fixes {#bug-fixes}
 
-* 
+
 
 <!--
 Known Issues {#known-issues}
