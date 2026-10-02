@@ -42,7 +42,7 @@ The next planned release is Thursday, November 5, 2026.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-## What's new {#what-is-new}
+## New features {#new-features}
 
 There are no significant new features in the October 2026 Cloud Manager on AMS release.
 
@@ -53,7 +53,7 @@ To get exclusive access to upcoming features before their general release, parti
 
 >[!IMPORTANT]
 >
->Beta releases contain defects and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (through Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk. Do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain issues and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (through Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk. Do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 The following beta program opportunity is currently available:
 
@@ -66,7 +66,7 @@ To join the Beta, contact your Adobe Customer Success Engineer to learn more.
 
 ## Bug fixes {#bug-fixes}
 
-
+* Post-deployment security test fails intermittently. On Adobe Managed Services programs, the post-deployment security test's SSL configuration check fails intermittently across many programs and then passes on retry, causing unnecessary pipeline failures. The check has been stabilized so it no longer fails unexpectedly. (CMGR-79870)
 
 <!--
 Known Issues {#known-issues}
