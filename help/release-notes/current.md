@@ -1,6 +1,6 @@
 ---
-title: Release Notes for Cloud Manager 2026.10.0
-description: Learn about the release of Cloud Manager 2026.10.0 in Adobe Managed Services.
+title: Release Notes for Cloud Manager 2026.11.0
+description: Learn about the release of Cloud Manager 2026.11.0 in Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: 'https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro'
@@ -23,28 +23,28 @@ topic_v2:
     internal-label: Optimization
 ---
 
-# Release notes for Cloud Manager 2026.10.0 in Adobe Managed Services {#release-notes}
+# Release notes for Cloud Manager 2026.11.0 in Adobe Managed Services {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Learn about the release of [!UICONTROL Cloud Manager] 2026.10.0 in Adobe Managed Services.
+Learn about the release of [!UICONTROL Cloud Manager] 2026.11.0 in Adobe Managed Services.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Release dates {#release-date}
 
-The release date for [!UICONTROL Cloud Manager] 2026.10.0 is Thursday, October 1, 2026. 
+The release date for [!UICONTROL Cloud Manager] 2026.11.0 is Thursday, November 5, 2026. 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-The next planned release is Thursday, November 5, 2026.
+The next planned release is Thursday, December 3, 2026.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## New features {#new-features}
 
-There are no significant new features in the October 2026 Cloud Manager on AMS release.
+There are no significant new features in the November 2026 Cloud Manager on AMS release.
 
 
 ## Beta programs {#beta-program}
@@ -66,7 +66,7 @@ To join the Beta, contact your Adobe Customer Success Engineer to learn more.
 
 ## Bug fixes {#bug-fixes}
 
-* Post-deployment security test fails intermittently. On Adobe Managed Services programs, the post-deployment security test's SSL configuration check fails intermittently across many programs and then passes on retry, causing unnecessary pipeline failures. The check has been stabilized so it no longer fails unexpectedly. (CMGR-79870)
+* Post-deployment security test fails intermittently. On Adobe Managed Services programs, the post-deployment security test's SSL configuration check fails intermittently across many programs and then passes on retry, causing unnecessary pipeline failures. The check has been updated so it no longer fails incorrectly. (CMGR-79870)
 
 <!--
 Known Issues {#known-issues}
