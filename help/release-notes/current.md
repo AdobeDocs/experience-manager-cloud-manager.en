@@ -44,11 +44,19 @@ The next planned release is Thursday, December 3, 2026.
 
 ## New features {#new-features}
 
-There are no significant new features in the November 2026 Cloud Manager on AMS release.
+### Web Tier Pipelines for AEM Managed Services {#web-tier-pipelines}
 
+Cloud Manager now supports dedicated Web Tier Pipelines for AMS programs, allowing teams to deploy Dispatcher and web tier configurations independently from full stack deployments. This enables faster iteration on web tier changes while reducing unnecessary full pipeline executions. 
+
+When a Web Tier Pipeline is configured, full stack pipelines automatically skip web tier deployment for that environment to prevent deployment conflicts. Removing the Web Tier Pipeline restores the default deployment behavior automatically. <!-- CMGR-27553 -->
+
+See [Web tier config pipelines](/help/overview/ci-cd-pipelines.md#web-tier-config-pipelines).
 
 ## Beta programs {#beta-program}
 
+There are no beta program opportunities currently available.
+
+<!--
 To get exclusive access to upcoming features before their general release, participate in Cloud Manager's beta programs.
 
 >[!IMPORTANT]
@@ -56,17 +64,17 @@ To get exclusive access to upcoming features before their general release, parti
 >Beta releases contain issues and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (through Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk. Do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 The following beta program opportunity is currently available:
-
-### Web Tier Pipelines for AEM Managed Services {#web-tier-pipelines}
-
-Cloud Manager now supports dedicated Web Tier Pipelines for AMS programs, allowing teams to deploy Dispatcher and web tier configurations independently from full stack deployments. This enables faster iteration on web tier changes while reducing unnecessary full pipeline executions. When a Web Tier Pipeline is configured, full stack pipelines automatically skip web tier deployment for that environment to prevent deployment conflicts. Removing the Web Tier Pipeline restores the default deployment behavior automatically. 
-
-To join the Beta, contact your Adobe Customer Success Engineer to learn more. 
-
+-->
 
 ## Bug fixes {#bug-fixes}
 
-* Post-deployment security test fails intermittently. On Adobe Managed Services programs, the post-deployment security test's SSL configuration check fails intermittently across many programs and then passes on retry, causing unnecessary pipeline failures. The check has been updated so it no longer fails incorrectly. (CMGR-79870)
+
+* Code quality scan fails on large projects. The code quality (SonarQube) scan generates multi-gigabyte debug logs and is killed when scanning certain bundled libraries, failing the build. The scan has been corrected so it completes normally on affected projects. (CMGR-80025)
+
+* Sites usage CSV export showed month labels shifted by one month. On the License > Sites Usage Details page, the CSV export shows month labels shifted one month earlier for users in time zones behind UTC. The export now shows the correct month labels regardless of the user's time zone. (CMGR-80903)
+
+* Reusing an access token name no longer overwrites the existing token. Reusing an existing access token name within a program overwrites the shared token and creates duplicate access secrets. Cloud Manager now handles token name reuse correctly, preventing accidental overwrites and duplicates. (CMGR-81236)
+
 
 <!--
 Known Issues {#known-issues}
